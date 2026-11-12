@@ -1,1 +1,21 @@
-mmmmmmmmmmmmmmm
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>네빌 고다드 294 강의 실시간 강독 스튜디오</title>
+  <!-- 1. 디자인 도구(Tailwind) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 2. React 엔진 -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <!-- 3. JSX 번역기(Babel) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body class="bg-[#faf9f5] text-[#292929]">
+  <div id="root"></div>
+
+  <!-- 4. 최종 app.jsx 연결 (캐시 방지 적용) -->
+  <script type="text/babel" src="./app.jsx?v=final"></script>
+</body>
+</html>
