@@ -25,6 +25,8 @@ const INITIAL_LECTURE = [
   }
 ];
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 function App() {
   const [openVol, setOpenVol] = useState(null);
   const [loadingVol, setLoadingVol] = useState(false);
@@ -49,6 +51,8 @@ function App() {
   const [analyzing, setAnalyzing] = useState(false);
   const [statusMsg, setStatusMsg] = useState("");
   const [quizMode, setQuizMode] = useState(false);
+  // 진행 중이던 구간(Chunk) 번호를 기억하여 끊긴 곳부터 이어하기 지원
+  const [resumeChunkIdx, setResumeChunkIdx] = useState(0);
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
   const [store, setStore] = useState(() => {
@@ -83,16 +87,14 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // PDF 저장(인쇄) 실행 함수
+  // A4 PDF 다운로드(인쇄) 함수
   const handleDownloadPdf = () => {
     if (sentences.length === 0) {
       alert("저장할 강독 노트가 없습니다. 먼저 강독 노트를 생성해 주세요.");
       return;
     }
-    // 해석 가리기 모드가 켜져 있으면 PDF 저장 시 자동으로 해제하여 해석이 보이게 처리
     if (quizMode) setQuizMode(false);
 
-    // PDF 저장 시 파일명으로 자동 제안되도록 문서 제목 임시 변경
     const originalTitle = document.title;
     const prefix = selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
     document.title = prefix + selectedLec.title + "_강독노트";
@@ -157,6 +159,7 @@ function App() {
   const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
+    setResumeChunkIdx(0);
     setStatusMsg("🌐 [" + (titleToSet || selectedLec.title) + "] 강의의 영어 본문 전체를 읽어오는 중...");
     try {
       const response = await fetch("https://r.jina.ai/" + finalUrl);
@@ -182,13 +185,80 @@ function App() {
       cleanBody = lines.join("\n\n");
 
       setRawText(cleanBody.trim());
-      setStatusMsg("✅ 강의 전체 원문 추출 완료! 이제 [2. 읽어온 원문 전체 끝까지 강독 노트 생성]을 눌러주세요.");
+      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. 강독 노트 생성]을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
     } finally {
       setFetching(false);
     }
+  };
+
+  // ★ 핵심: High demand(과부하) 발생 시 4개 서버를 자동으로 돌아가며 재시도하는 함수
+  const callGeminiWithFallback = async (promptText, chunkIdx, totalChunks) => {
+    const models = [
+      "gemini-2.5-flash-lite",
+      "gemini-2.5-flash",
+      "gemini-2.0-flash",
+      "gemini-1.5-flash"
+    ];
+
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      for (let m = 0; m < models.length; m++) {
+        const modelName = models[m];
+        try {
+          if (attempt > 1 || m > 0) {
+            setStatusMsg(
+              "🔄 기본 서버가 혼잡하여 [" + modelName + "] 서버로 우회 분석 중... (" +
+              (chunkIdx + 1) + "/" + totalChunks + " 구간)"
+            );
+          }
+
+          const res = await fetch(
+            "https://generativelanguage.googleapis.com/v1beta/models/" + modelName + ":generateContent?key=" + apiKey.trim(),
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: promptText }] }],
+                generationConfig: { responseMimeType: "application/json" }
+              })
+            }
+          );
+
+          const data = await res.json();
+
+          if (data.error) {
+            const msg = (data.error.message || "").toLowerCase();
+            // 과부하, 수요 폭증(high demand), 할당량 초과 시 2초 쉬고 바로 다음 모델로 우회!
+            if (
+              msg.indexOf("demand") !== -1 ||
+              msg.indexOf("overloaded") !== -1 ||
+              msg.indexOf("quota") !== -1 ||
+              msg.indexOf("unavailable") !== -1 ||
+              res.status === 503 ||
+              res.status === 429
+            ) {
+              await sleep(2000);
+              continue;
+            }
+            throw new Error(data.error.message);
+          }
+
+          let textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
+          textOutput = textOutput.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
+          return JSON.parse(textOutput);
+        } catch (err) {
+          if (m === models.length - 1 && attempt === 4) {
+            throw err;
+          }
+          await sleep(1500);
+        }
+      }
+      setStatusMsg("⏳ 구글 AI 서버 대기열 통과 중... 4초 후 자동 재시도합니다 (" + attempt + "/4)");
+      await sleep(4000);
+    }
+    throw new Error("구글 무료 서버가 모두 혼잡합니다. 잠시 후 버튼을 다시 누르시면 이어서 진행됩니다.");
   };
 
   const handleAnalyze = async () => {
@@ -210,7 +280,7 @@ function App() {
 
       for (let i = 0; i < paragraphs.length; i++) {
         const p = paragraphs[i];
-        if ((currentChunk + "\n\n" + p).length > 3500 && currentChunk.length > 0) {
+        if ((currentChunk + "\n\n" + p).length > 3200 && currentChunk.length > 0) {
           chunks.push(currentChunk.trim());
           currentChunk = p;
         } else {
@@ -219,10 +289,13 @@ function App() {
       }
       if (currentChunk.trim()) chunks.push(currentChunk.trim());
 
-      let allParsedSentences = [];
-      setStore(prev => ({ ...prev, [selectedLec.title]: [] }));
+      // 처음부터 시작하는 경우에만 초기화, 이어하기인 경우 기존 문장 유지
+      let allParsedSentences = resumeChunkIdx > 0 ? (store[selectedLec.title] || []) : [];
+      if (resumeChunkIdx === 0) {
+        setStore(prev => ({ ...prev, [selectedLec.title]: [] }));
+      }
 
-      for (let i = 0; i < chunks.length; i++) {
+      for (let i = resumeChunkIdx; i < chunks.length; i++) {
         setStatusMsg("⏳ 전체 " + chunks.length + "구간 중 [" + (i + 1) + "/" + chunks.length + " 구간] 분석 중... (현재 " + allParsedSentences.length + "문장 완료)");
 
         const prompt = [
@@ -237,36 +310,26 @@ function App() {
           chunks[i]
         ].join("\n");
 
-        const res = await fetch(
-          "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + apiKey.trim(),
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              contents: [{ parts: [{ text: prompt }] }],
-              generationConfig: { responseMimeType: "application/json" }
-            })
-          }
-        );
-
-        const data = await res.json();
-        if (data.error) throw new Error(data.error.message);
-
-        const textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
-        const parsed = JSON.parse(textOutput);
+        const parsed = await callGeminiWithFallback(prompt, i, chunks.length);
 
         allParsedSentences = allParsedSentences.concat(parsed);
+        setResumeChunkIdx(i + 1);
 
         setStore(prev => ({
           ...prev,
           [selectedLec.title]: allParsedSentences
         }));
+
+        if (i < chunks.length - 1) {
+          await sleep(1500);
+        }
       }
 
+      setResumeChunkIdx(0);
       setStatusMsg("🎉 강의 끝까지 총 " + allParsedSentences.length + "개 문장 전체의 강독 노트가 완성되었습니다!");
     } catch (err) {
-      alert("AI 분석 오류: " + err.message);
-      setStatusMsg("⚠️ 일부 구간 분석 중 오류가 발생했습니다. 완료된 문장까지는 자동 저장되었습니다.");
+      alert("일시적 서버 혼잡 안내: " + err.message);
+      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다! [⚡ 2. 이어서 강독 노트 생성] 버튼을 누르면 남은 구간부터 이어서 분석합니다.");
     } finally {
       setAnalyzing(false);
     }
@@ -274,35 +337,6 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* PDF 저장(인쇄) 전용 A4 레이아웃 스타일 */}
-      <style>{`
-        @media print {
-          @page {
-            size: A4;
-            margin: 15mm 14mm;
-          }
-          body {
-            background-color: #ffffff !important;
-          }
-          .no-print {
-            display: none !important;
-          }
-          .print-container {
-            max-width: 100% !important;
-            padding: 0 !important;
-            margin: 0 !important;
-          }
-          .print-card {
-            break-inside: avoid;
-            page-break-inside: avoid;
-            box-shadow: none !important;
-            border: 1px solid #cbd5e1 !important;
-            margin-bottom: 14px !important;
-          }
-        }
-      `}</style>
-
-      {/* 왼쪽 사이드바 (인쇄 시 자동 숨김) */}
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
@@ -363,9 +397,7 @@ function App() {
         </div>
       </aside>
 
-      {/* 오른쪽 메인 영역 */}
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
-        {/* API 키 입력창 (인쇄 시 자동 숨김) */}
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className="font-bold text-amber-900">🔑 Gemini API Key (1회 입력 시 자동 저장):</span>
           <div className="flex gap-2 flex-1 max-w-md">
@@ -387,7 +419,6 @@ function App() {
           </div>
         </div>
 
-        {/* 크롤링 및 분석 컨트롤러 (인쇄 시 자동 숨김) */}
         <div className="no-print bg-white border rounded-xl p-4 mb-6 shadow-sm">
           <div className="text-xs font-bold text-slate-600 mb-2">
             🌐 선택된 강의의 실제 웹페이지 주소(URL):
@@ -410,36 +441,43 @@ function App() {
 
           <textarea
             value={rawText}
-            onChange={e => setRawText(e.target.value)}
+            onChange={e => {
+              setRawText(e.target.value);
+              setResumeChunkIdx(0);
+            }}
             rows={5}
             placeholder="왼쪽에서 권(Volume)을 눌러 50개 목록을 펼친 뒤, 원하는 강의를 클릭하면 이곳에 해당 강의의 영어 본문 전체가 자동으로 채워집니다!"
             className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
           />
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <span className="text-xs font-bold text-blue-700">{statusMsg}</span>
-            <button
-              onClick={handleAnalyze}
-              disabled={analyzing}
-              className="px-5 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
-            >
-              {analyzing ? "⏳ 전체 구간 연속 분석 중..." : "⚡ 2. 읽어온 원문 전체 끝까지 강독 노트 생성"}
-            </button>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={handleAnalyze}
+                disabled={analyzing}
+                className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
+              >
+                {analyzing
+                  ? "⏳ 전체 구간 연속 분석 중..."
+                  : resumeChunkIdx > 0
+                  ? "⚡ 2. 이어서 강독 노트 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
+                  : "⚡ 2. 강독 노트 생성 (서버 자동우회)"}
+              </button>
+              <button
+                onClick={handleDownloadPdf}
+                className="px-4 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg text-xs font-bold shadow-sm"
+              >
+                📄 3. PDF 다운로드
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* 강의 제목 및 기능 버튼 바 */}
         <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
-          <div>
-            <div className="text-xs text-slate-500 font-semibold mb-1">
-              Neville Goddard Lecture Study Guide ({sentences.length} Sentences)
-            </div>
-            <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
-              {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
-            </h2>
-          </div>
-
-          {/* 버튼 그룹 (인쇄 시 자동 숨김) */}
+          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
+            {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
+          </h2>
           <div className="no-print flex gap-2">
             <button
               onClick={handleDownloadPdf}
@@ -449,14 +487,13 @@ function App() {
             </button>
             <button
               onClick={() => setQuizMode(!quizMode)}
-              className="px-4 py-2 rounded bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold"
+              className="px-4 py-2 rounded bg-slate-800 text-white text-xs font-bold"
             >
               {quizMode ? "🙈 해석 보이기" : "🙈 해석 가리기 연습"}
             </button>
           </div>
         </div>
 
-        {/* 문장별 강독 카드 목록 */}
         <div className="space-y-6">
           {sentences.map((s, idx) => (
             <div key={idx} className="print-card bg-white p-6 rounded-xl border shadow-sm">
