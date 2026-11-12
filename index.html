@@ -15,15 +15,24 @@
 <body class="bg-[#faf9f5] text-[#292929]">
   <div id="root"></div>
 
-  <!-- 4. 크롬 등 모든 브라우저에서 캐시/보안 차단 없이 app.jsx를 안전하게 불러오는 로더 -->
+  <!-- 4. import/export 에러 자동 제거 + 크롬 완벽 호환 로더 -->
   <script>
     fetch('./app.jsx?t=' + Date.now())
       .then(res => {
         if (!res.ok) throw new Error('app.jsx 파일을 찾을 수 없습니다.');
         return res.text();
       })
-      .then(code => {
-        const compiled = Babel.transform(code, { presets: ['react'] }).code;
+      .then(rawCode => {
+        // 혹시 app.jsx 안에 import 나 export 문법이 섞여 있어도 자동으로 제거/변환
+        const cleanedCode = rawCode
+          .replace(/^\s*import\s+.*?from\s+['"].*?['"];?\s*$/gm, '')
+          .replace(/^\s*export\s+default\s+/gm, '');
+
+        // Babel로 순수 브라우저용 코드로 컴파일 후 실행
+        const compiled = Babel.transform(cleanedCode, {
+          presets: ['env', 'react']
+        }).code;
+
         new Function(compiled)();
       })
       .catch(err => {
