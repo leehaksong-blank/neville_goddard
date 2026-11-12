@@ -62,8 +62,8 @@ function App() {
   const [openVol, setOpenVol] = useState(null);
   const [loadingVol, setLoadingVol] = useState(false);
 
-  // 기본 모델을 gemini-2.5-pro로 설정 (원할 때 화면에서 변경 가능)
-  const [selectedModel, setSelectedModel] = useState("gemini-2.5-pro");
+  // 기본 모드를 Pro 우선 모드로 설정
+  const [selectedTier, setSelectedTier] = useState("pro");
 
   const [volLectures, setVolLectures] = useState(() => {
     try {
@@ -217,7 +217,7 @@ function App() {
       cleanBody = lines.join("\n\n");
 
       setRawText(cleanBody.trim());
-      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. Pro 강독 노트 생성]을 눌러주세요.");
+      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. 강독 노트 생성]을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
@@ -226,11 +226,22 @@ function App() {
     }
   };
 
-  // ★ Pro 1순위 실행 + 과부하 시 자동 백업 + 65536 최대 토큰 확장
+  // ★ 핵심 수정: 최신 3.5 모델 반영 (gemini-2.5-flash-lite 완전 제거 및 모든 모델 에러 자동 우회)
   const callGeminiWithFallback = async (promptText, chunkIdx, totalChunks) => {
-    const models = selectedModel === "gemini-2.5-pro"
-      ? ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.5-flash-lite"]
-      : ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.5-flash-lite"];
+    const models = selectedTier === "pro"
+      ? [
+          "gemini-2.5-pro",
+          "gemini-3.5-pro",
+          "gemini-3.5-flash",
+          "gemini-2.5-flash",
+          "gemini-3.5-flash-lite"
+        ]
+      : [
+          "gemini-3.5-flash",
+          "gemini-2.5-flash",
+          "gemini-3.5-flash-lite",
+          "gemini-2.5-pro"
+        ];
 
     const strictSchema = {
       type: "ARRAY",
@@ -266,6 +277,8 @@ function App() {
       }
     };
 
+    let lastErrorMsg = "";
+
     for (let attempt = 1; attempt <= 3; attempt++) {
       for (let m = 0; m < models.length; m++) {
         const modelName = models[m];
@@ -295,33 +308,32 @@ function App() {
           const data = await res.json();
 
           if (data.error) {
-            const msg = (data.error.message || "").toLowerCase();
-            if (
-              msg.indexOf("demand") !== -1 ||
-              msg.indexOf("overloaded") !== -1 ||
-              msg.indexOf("quota") !== -1 ||
-              msg.indexOf("unavailable") !== -1 ||
-              res.status === 503 ||
-              res.status === 429
-            ) {
-              await sleep(2000);
-              continue;
+            lastErrorMsg = data.error.message || "알 수 없는 오류";
+            const msg = lastErrorMsg.toLowerCase();
+
+            // API 키 자체가 잘못된 경우에만 즉시 중단하고 안내
+            if (msg.indexOf("api key not valid") !== -1 || msg.indexOf("api_key_invalid") !== -1) {
+              throw new Error("입력하신 Gemini API Key가 올바르지 않습니다. 다시 확인해 주세요.");
             }
-            throw new Error(data.error.message);
+
+            // 그 외 모든 모델 에러(지원 종료, 과부하, 할당량 초과, 404 등)는 멈추지 않고 즉시 다음 모델로 자동 전환!
+            await sleep(1000);
+            continue;
           }
 
           const textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
           return safeParseJSON(textOutput);
         } catch (err) {
-          if (m === models.length - 1 && attempt === 3) {
+          lastErrorMsg = err.message;
+          if (err.message.indexOf("API Key가 올바르지 않습니다") !== -1) {
             throw err;
           }
-          await sleep(1500);
+          await sleep(1000);
         }
       }
-      await sleep(3000);
+      await sleep(2500);
     }
-    throw new Error("서버 응답이 지연되고 있습니다. 다시 버튼을 누르시면 이어서 진행됩니다.");
+    throw new Error(lastErrorMsg || "서버 응답이 지연되고 있습니다. 다시 버튼을 누르시면 이어서 진행됩니다.");
   };
 
   const handleAnalyze = async () => {
@@ -337,7 +349,6 @@ function App() {
     setAnalyzing(true);
 
     try {
-      // Pro 모델이 깊고 정밀하게 분석하고 JSON이 절대 잘리지 않도록 1800자 단위로 분할
       const paragraphs = rawText.split("\n\n");
       const chunks = [];
       let currentChunk = "";
@@ -386,10 +397,10 @@ function App() {
       }
 
       setResumeChunkIdx(0);
-      setStatusMsg("🎉 [Gemini 2.5 Pro] 총 " + allParsedSentences.length + "개 문장 전체의 최고급 강독 노트가 완성되었습니다!");
+      setStatusMsg("🎉 총 " + allParsedSentences.length + "개 문장 전체의 최고급 강독 노트가 완성되었습니다!");
     } catch (err) {
       alert("분석 중 일시 정지: " + err.message);
-      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다! [⚡ 2. 이어서 강독 노트 생성]을 누르면 남은 부분부터 계속됩니다.");
+      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다! [⚡ 2. 이어서 강독 생성]을 누르면 남은 부분부터 계속됩니다.");
     } finally {
       setAnalyzing(false);
     }
@@ -458,17 +469,16 @@ function App() {
       </aside>
 
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
-        {/* 상단 Pro API 키 및 모델 선택 바 */}
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <div className="flex items-center gap-2">
-            <span className="font-bold text-amber-900">👑 AI 엔진 선택:</span>
+            <span className="font-bold text-amber-900">👑 AI 엔진 우선순위:</span>
             <select
-              value={selectedModel}
-              onChange={e => setSelectedModel(e.target.value)}
+              value={selectedTier}
+              onChange={e => setSelectedTier(e.target.value)}
               className="px-2.5 py-1.5 rounded border border-amber-400 bg-white font-bold text-slate-900"
             >
-              <option value="gemini-2.5-pro">Gemini 2.5 Pro (최고급 정밀 번역·해설)</option>
-              <option value="gemini-2.5-flash">Gemini 2.5 Flash (초고속 표준 분석)</option>
+              <option value="pro">Pro 최우선 (2.5 Pro / 3.5 Pro ➔ 3.5 Flash)</option>
+              <option value="flash">Flash 최우선 (3.5 Flash / 2.5 Flash ➔ 3.5 Lite)</option>
             </select>
           </div>
           <div className="flex gap-2 flex-1 max-w-md">
@@ -530,10 +540,10 @@ function App() {
                 className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
               >
                 {analyzing
-                  ? "⏳ Pro 엔진 정밀 분석 중..."
+                  ? "⏳ 정밀 분석 중..."
                   : resumeChunkIdx > 0
-                  ? "⚡ 2. 이어서 Pro 강독 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
-                  : "⚡ 2. Pro 강독 노트 생성"}
+                  ? "⚡ 2. 이어서 강독 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
+                  : "⚡ 2. 강독 노트 생성 (3.5/Pro 호환)"}
               </button>
               <button
                 onClick={handleDownloadPdf}
