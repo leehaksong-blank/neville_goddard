@@ -13,32 +13,43 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body class="bg-[#faf9f5] text-[#292929]">
-  <div id="root"></div>
+  <div id="root">
+    <div style="padding:24px;color:#475569;font-weight:bold;">⏳ 강독 스튜디오를 불러오는 중입니다...</div>
+  </div>
 
-  <!-- 4. import/export 에러 자동 제거 + 크롬 완벽 호환 로더 -->
+  <!-- 4. import 에러를 원천 차단하는 순수 JSX 스크립트 주입 로더 (v3.0) -->
   <script>
-    fetch('./app.jsx?t=' + Date.now())
-      .then(res => {
-        if (!res.ok) throw new Error('app.jsx 파일을 찾을 수 없습니다.');
-        return res.text();
-      })
-      .then(rawCode => {
-        // 혹시 app.jsx 안에 import 나 export 문법이 섞여 있어도 자동으로 제거/변환
-        const cleanedCode = rawCode
-          .replace(/^\s*import\s+.*?from\s+['"].*?['"];?\s*$/gm, '')
-          .replace(/^\s*export\s+default\s+/gm, '');
+    (async function loadStudio() {
+      try {
+        const res = await fetch('./app.jsx?v=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('app.jsx 파일을 찾을 수 없습니다 (HTTP ' + res.status + ')');
+        let rawCode = await res.text();
 
-        // Babel로 순수 브라우저용 코드로 컴파일 후 실행
-        const compiled = Babel.transform(cleanedCode, {
-          presets: ['env', 'react']
+        // 혹시 남아있을지 모를 import / export 문장 완전 제거
+        rawCode = rawCode
+          .replace(/^\s*import\s+[\s\S]*?from\s+['"][^'"]+['"];?\s*$/gm, '')
+          .replace(/^\s*import\s+['"][^'"]+['"];?\s*$/gm, '')
+          .replace(/^\s*export\s+default\s+/gm, '')
+          .replace(/^\s*export\s+/gm, '');
+
+        // 주의: 'env' 프리셋을 빼고 오직 'react'(JSX 태그)만 변환해야 import 문이 생성되지 않습니다!
+        const compiled = Babel.transform(rawCode, {
+          presets: ['react'],
+          sourceType: 'script'
         }).code;
 
-        new Function(compiled)();
-      })
-      .catch(err => {
+        // new Function 대신 표준 script 태그로 주입하여 실행
+        const scriptEl = document.createElement('script');
+        scriptEl.type = 'text/javascript';
+        scriptEl.text = compiled;
+        document.body.appendChild(scriptEl);
+      } catch (err) {
         document.getElementById('root').innerHTML =
-          '<div style="padding:24px;color:#b91c1c;font-weight:bold;">로딩 오류: ' + err.message + '</div>';
-      });
+          '<div style="padding:24px;color:#b91c1c;font-weight:bold;background:#fef2f2;border:1px solid #f87171;margin:20px;border-radius:8px;">' +
+          '⚠️ 로딩 오류 (v3.0): ' + err.message +
+          '</div>';
+      }
+    })();
   </script>
 </body>
 </html>
