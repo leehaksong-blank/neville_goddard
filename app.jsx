@@ -27,6 +27,41 @@ const INITIAL_LECTURE = [
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+// ★ 핵심 안전장치: 만약 JSON이 너무 길어 끝이 잘리거나 따옴표 오류가 나도 자동으로 복구하는 파서
+const safeParseJSON = (rawStr) => {
+  if (!rawStr) return [];
+  let text = rawStr.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
+
+  // 1차: 정상 파싱 시도
+  try {
+    const parsed = JSON.parse(text);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (e1) {
+    // 2차: 배열 시작점([)과 마지막으로 정상 닫힌 객체(})를 찾아 잘린 뒷부분을 버리고 복구
+    const firstBracket = text.indexOf("[");
+    if (firstBracket !== -1) {
+      let cutText = text.slice(firstBracket);
+      let searchPos = cutText.length;
+
+      while (searchPos > 0) {
+        const lastBrace = cutText.lastIndexOf("}", searchPos - 1);
+        if (lastBrace === -1) break;
+        const candidate = cutText.slice(0, lastBrace + 1) + "]";
+        try {
+          const recovered = JSON.parse(candidate);
+          if (Array.isArray(recovered) && recovered.length > 0) {
+            return recovered;
+          }
+        } catch (e2) {
+          // 계속 이전 닫는 괄호(}) 탐색
+        }
+        searchPos = lastBrace;
+      }
+    }
+    throw e1;
+  }
+};
+
 function App() {
   const [openVol, setOpenVol] = useState(null);
   const [loadingVol, setLoadingVol] = useState(false);
@@ -51,7 +86,6 @@ function App() {
   const [analyzing, setAnalyzing] = useState(false);
   const [statusMsg, setStatusMsg] = useState("");
   const [quizMode, setQuizMode] = useState(false);
-  // 진행 중이던 구간(Chunk) 번호를 기억하여 끊긴 곳부터 이어하기 지원
   const [resumeChunkIdx, setResumeChunkIdx] = useState(0);
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
@@ -194,23 +228,57 @@ function App() {
     }
   };
 
-  // ★ 핵심: High demand(과부하) 발생 시 4개 서버를 자동으로 돌아가며 재시도하는 함수
+  // ★ 엄격한 JSON 스키마(responseSchema) + 4단계 서버 우회 + 자동 JSON 복구
   const callGeminiWithFallback = async (promptText, chunkIdx, totalChunks) => {
     const models = [
       "gemini-2.5-flash-lite",
       "gemini-2.5-flash",
-      "gemini-2.0-flash",
-      "gemini-1.5-flash"
+      "gemini-2.0-flash"
     ];
 
-    for (let attempt = 1; attempt <= 4; attempt++) {
+    // 구글 AI 엔진이 따옴표 실수를 절대 하지 않도록 강제하는 공식 스키마
+    const strictSchema = {
+      type: "ARRAY",
+      items: {
+        type: "OBJECT",
+        properties: {
+          en: { type: "STRING" },
+          ko: { type: "STRING" },
+          vocab: {
+            type: "ARRAY",
+            items: {
+              type: "OBJECT",
+              properties: {
+                word: { type: "STRING" },
+                mean: { type: "STRING" }
+              },
+              required: ["word", "mean"]
+            }
+          },
+          grammar: {
+            type: "ARRAY",
+            items: {
+              type: "OBJECT",
+              properties: {
+                tag: { type: "STRING" },
+                desc: { type: "STRING" }
+              },
+              required: ["tag", "desc"]
+            }
+          }
+        },
+        required: ["en", "ko", "vocab", "grammar"]
+      }
+    };
+
+    for (let attempt = 1; attempt <= 3; attempt++) {
       for (let m = 0; m < models.length; m++) {
         const modelName = models[m];
         try {
           if (attempt > 1 || m > 0) {
             setStatusMsg(
-              "🔄 기본 서버가 혼잡하여 [" + modelName + "] 서버로 우회 분석 중... (" +
-              (chunkIdx + 1) + "/" + totalChunks + " 구간)"
+              "🔄 [" + modelName + "] 서버로 안전 분석 중... (" +
+              (chunkIdx + 1) + "/" + totalChunks + " 구간, 시도 " + attempt + ")"
             );
           }
 
@@ -221,7 +289,12 @@ function App() {
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
                 contents: [{ parts: [{ text: promptText }] }],
-                generationConfig: { responseMimeType: "application/json" }
+                generationConfig: {
+                  responseMimeType: "application/json",
+                  responseSchema: strictSchema,
+                  maxOutputTokens: 8192,
+                  temperature: 0.2
+                }
               })
             }
           );
@@ -230,7 +303,6 @@ function App() {
 
           if (data.error) {
             const msg = (data.error.message || "").toLowerCase();
-            // 과부하, 수요 폭증(high demand), 할당량 초과 시 2초 쉬고 바로 다음 모델로 우회!
             if (
               msg.indexOf("demand") !== -1 ||
               msg.indexOf("overloaded") !== -1 ||
@@ -245,20 +317,19 @@ function App() {
             throw new Error(data.error.message);
           }
 
-          let textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
-          textOutput = textOutput.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
-          return JSON.parse(textOutput);
+          const textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
+          return safeParseJSON(textOutput);
         } catch (err) {
-          if (m === models.length - 1 && attempt === 4) {
+          // JSON 문법 에러나 네트워크 에러가 나도 다음 모델로 즉시 재시도!
+          if (m === models.length - 1 && attempt === 3) {
             throw err;
           }
           await sleep(1500);
         }
       }
-      setStatusMsg("⏳ 구글 AI 서버 대기열 통과 중... 4초 후 자동 재시도합니다 (" + attempt + "/4)");
-      await sleep(4000);
+      await sleep(3000);
     }
-    throw new Error("구글 무료 서버가 모두 혼잡합니다. 잠시 후 버튼을 다시 누르시면 이어서 진행됩니다.");
+    throw new Error("서버 응답이 지연되고 있습니다. 다시 버튼을 누르시면 이어서 진행됩니다.");
   };
 
   const handleAnalyze = async () => {
@@ -274,13 +345,14 @@ function App() {
     setAnalyzing(true);
 
     try {
+      // ★ 토큰 초과로 JSON이 잘리지 않도록 1구간 크기를 1500자 단위로 촘촘하게 분할
       const paragraphs = rawText.split("\n\n");
       const chunks = [];
       let currentChunk = "";
 
       for (let i = 0; i < paragraphs.length; i++) {
         const p = paragraphs[i];
-        if ((currentChunk + "\n\n" + p).length > 3200 && currentChunk.length > 0) {
+        if ((currentChunk + "\n\n" + p).length > 1500 && currentChunk.length > 0) {
           chunks.push(currentChunk.trim());
           currentChunk = p;
         } else {
@@ -289,7 +361,6 @@ function App() {
       }
       if (currentChunk.trim()) chunks.push(currentChunk.trim());
 
-      // 처음부터 시작하는 경우에만 초기화, 이어하기인 경우 기존 문장 유지
       let allParsedSentences = resumeChunkIdx > 0 ? (store[selectedLec.title] || []) : [];
       if (resumeChunkIdx === 0) {
         setStore(prev => ({ ...prev, [selectedLec.title]: [] }));
@@ -300,12 +371,11 @@ function App() {
 
         const prompt = [
           "당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.",
-          "아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.",
+          "아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 순서대로 분리하여 JSON 배열로 반환하세요.",
           "규칙:",
           "1. 반복 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.",
-          "2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적 맥락만 grammar에 설명하세요.",
-          "3. 반드시 순수 JSON 배열만 출력하세요.",
-          '형식: [{"en":"영어 원문","ko":"한글 번역","vocab":[{"word":"단어","mean":"뜻"}],"grammar":[{"tag":"구문 포인트","desc":"해설"}]}]',
+          "2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적 맥락만 grammar에 간결하게 설명하세요.",
+          "3. 설명 안에 큰따옴표(\") 대신 작은따옴표(')를 사용하여 JSON 문법 오류를 방지하세요.",
           "강의 본문:",
           chunks[i]
         ].join("\n");
@@ -321,15 +391,15 @@ function App() {
         }));
 
         if (i < chunks.length - 1) {
-          await sleep(1500);
+          await sleep(1200);
         }
       }
 
       setResumeChunkIdx(0);
       setStatusMsg("🎉 강의 끝까지 총 " + allParsedSentences.length + "개 문장 전체의 강독 노트가 완성되었습니다!");
     } catch (err) {
-      alert("일시적 서버 혼잡 안내: " + err.message);
-      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다! [⚡ 2. 이어서 강독 노트 생성] 버튼을 누르면 남은 구간부터 이어서 분석합니다.");
+      alert("분석 중 일시 정지: " + err.message);
+      setStatusMsg("⚠️ 현재까지 완료된 문장은 모두 저장되었습니다! [⚡ 2. 이어서 강독 노트 생성]을 누르면 남은 부분부터 계속됩니다.");
     } finally {
       setAnalyzing(false);
     }
@@ -459,10 +529,10 @@ function App() {
                 className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
               >
                 {analyzing
-                  ? "⏳ 전체 구간 연속 분석 중..."
+                  ? "⏳ 전체 구간 안전 분석 중..."
                   : resumeChunkIdx > 0
                   ? "⚡ 2. 이어서 강독 노트 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
-                  : "⚡ 2. 강독 노트 생성 (서버 자동우회)"}
+                  : "⚡ 2. 강독 노트 생성 (JSON 오류 방지 탑재)"}
               </button>
               <button
                 onClick={handleDownloadPdf}
