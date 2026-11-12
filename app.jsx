@@ -1,16 +1,58 @@
 const { useState, useEffect } = React;
 
-// 네빌 고다드 온라인 강의 6개 권(Volume 1 ~ 6 : 총 294개 강의 수록 페이지)
-const VOLUME_PAGES = [
-  { vol: 1, range: "001 ~ 050번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
-  { vol: 2, range: "051 ~ 100번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
-  { vol: 3, range: "101 ~ 150번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-3" },
-  { vol: 4, range: "151 ~ 200번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-4" },
-  { vol: 5, range: "201 ~ 250번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-5" },
-  { vol: 6, range: "251 ~ 294번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-6" }
+// 제1권 (1~50번) 실제 개별 강의 본문 직통 URL 목록
+const VOL1_LECTURES = [
+  { id: 1, title: "A Divine Event", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/" },
+  { id: 2, title: "A Lesson in Scripture", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-lesson-in-scripture-neville-goddard-lecture/" },
+  { id: 3, title: "A Movement of Mind", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-movement-of-mind-neville-goddard-lecture/" },
+  { id: 4, title: "A Movement Within God", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-movement-within-god-neville-goddard-lecture/" },
+  { id: 5, title: "A Parabolic Revelation", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-parabolic-revelation-neville-goddard-lectures/" },
+  { id: 6, title: "A Prophecy", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-prophecy-neville-goddard-lecture/" },
+  { id: 7, title: "A Riddle", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-riddle-neville-goddard-lecture/" },
+  { id: 8, title: "A State Called Moses", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-state-called-moses-neville-goddard-lecture/" },
+  { id: 9, title: "All Powerful Human Word", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-powerfull-human-words-neville-goddard-lecture/" },
+  { id: 10, title: "All That is Divine", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-that-is-divine-neville-goddard-lecture/" },
+  { id: 11, title: "All That You Behold", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-that-you-behold-neville-goddard-lecture/" },
+  { id: 12, title: "All Things are Possible 1", url: "https://www.neville-goddard.com/neville-goddard-lectures/att-things-are-possible-1-neville-goddard-lecture/" },
+  { id: 13, title: "All Things are Possible 2", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-things-are-possible-2-neville-goddard-lecture/" },
+  { id: 14, title: "All Things Exist", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-things-exist-neville-goddard-lecture/" },
+  { id: 15, title: "An Assured Understanding", url: "https://www.neville-goddard.com/neville-goddard-lectures/an-assured-understanding-neville-goddard-lecture/" },
+  { id: 16, title: "An Inner Conviction", url: "https://www.neville-goddard.com/neville-goddard-lectures/an-inner-conviction-neville-goddard-lecture/" },
+  { id: 17, title: "Arise", url: "https://www.neville-goddard.com/neville-goddard-lectures/arise-neville-goddard-lecture/" },
+  { id: 18, title: "At Your Command", url: "https://www.neville-goddard.com/neville-goddard-books/neville-goddard-at-your-command-audio-book-mp3-and-pdf" },
+  { id: 19, title: "Awake o Sleeper 1", url: "https://www.neville-goddard.com/neville-goddard-lectures/awake-o-sleeper-1-neville-goddard-lecture/" },
+  { id: 20, title: "Awake o Sleeper 2", url: "https://www.neville-goddard.com/neville-goddard-lectures/awake-o-sleeper-2-neville-goddard-lecture/" },
+  { id: 21, title: "Barabbas or Jesus", url: "https://www.neville-goddard.com/neville-goddard-lectures/barabbas-or-jesus-neville-goddard-lecture/" },
+  { id: 22, title: "Be Imitators of God", url: "https://www.neville-goddard.com/neville-goddard-lectures/be-imitators-of-god-neville-goddard-lecture/" },
+  { id: 23, title: "Bear Ye One Another's Burdens", url: "https://www.neville-goddard.com/neville-goddard-lectures/bear-ye-one-anothers-burdens-neville-goddard-lecture/" },
+  { id: 24, title: "Before Abraham was I AM", url: "https://www.neville-goddard.com/neville-goddard-lectures/before-abraham-was-i-am-neville-goddard-lecture/" },
+  { id: 25, title: "Behold The Dreamer Cometh", url: "https://www.neville-goddard.com/neville-goddard-lectures/behold-the-dreamer-cometh-neville-goddard-lecture/" },
+  { id: 26, title: "Believe In Him", url: "https://www.neville-goddard.com/neville-goddard-lectures/believe-in-him-neville-goddard-lecture/" },
+  { id: 27, title: "Believe It In", url: "https://www.neville-goddard.com/neville-goddard-lectures/believe-it-in-neville-goddard-lecture/" },
+  { id: 28, title: "Biblical Language", url: "https://www.neville-goddard.com/neville-goddard-lectures/biblical-language-neville-goddard-lecture/" },
+  { id: 29, title: "Blake On Religion", url: "https://www.neville-goddard.com/neville-goddard-lectures/blake-on-religion-neville-goddard-lecture/" },
+  { id: 30, title: "Brazen Impudence", url: "https://www.neville-goddard.com/neville-goddard-lectures/brazen-impudence-neville-goddard-lecture/" },
+  { id: 31, title: "Building Your Temple", url: "https://www.neville-goddard.com/neville-goddard-lectures/building-your-temple-neville-goddard-lecture/" },
+  { id: 32, title: "By Water And By Blood", url: "https://www.neville-goddard.com/neville-goddard-lectures/by-water-and-by-blood-neville-goddard-lecture/" },
+  { id: 33, title: "Catch The Mood", url: "https://www.neville-goddard.com/neville-goddard-lectures/catch-the-mood-neville-goddard-lecture/" },
+  { id: 34, title: "Changing The Feeling of I", url: "https://www.neville-goddard.com/neville-goddard-lectures/changing-the-feeling-of-i-neville-goddard-lecture/" },
+  { id: 35, title: "Christ Bears Our Sins", url: "https://www.neville-goddard.com/neville-goddard-lectures/christ-bears-our-sins-neville-goddard-lecture/" },
+  { id: 36, title: "Christ in Man", url: "https://www.neville-goddard.com/neville-goddard-lectures/christ-in-man-neville-goddard-lecture/" },
+  { id: 37, title: "Christ in You", url: "https://www.neville-goddard.com/neville-goddard-lectures/christ-in-you-neville-goddard-lecture/" },
+  { id: 38, title: "Christ is Your Life", url: "https://www.neville-goddard.com/neville-goddard-lectures/christ-is-your-life-neville-goddard-lecture/" },
+  { id: 39, title: "Christ Unveiled", url: "https://www.neville-goddard.com/neville-goddard-lectures/christ-unveiled-neville-goddard-lecture/" },
+  { id: 40, title: "Christmas - Man's Birth As God", url: "https://www.neville-goddard.com/neville-goddard-lectures/christmas-mans-birth-as-god-neville-goddard-lecture/" },
+  { id: 41, title: "Come o Blessed", url: "https://www.neville-goddard.com/neville-goddard-lectures/come-o-blessed-neville-goddard-lecture/" },
+  { id: 42, title: "Conception", url: "https://www.neville-goddard.com/neville-goddard-lectures/conception-neville-goddard-lecture/" },
+  { id: 43, title: "Consigned To Disobedience", url: "https://www.neville-goddard.com/neville-goddard-lectures/consigned-to-disobedience-neville-goddard-lecture/" },
+  { id: 44, title: "Control Your Inner Conversations", url: "https://www.neville-goddard.com/neville-goddard-lectures/control-your-inner-conversation/" },
+  { id: 45, title: "Creation Faith", url: "https://www.neville-goddard.com/neville-goddard-lectures/creation-faith-neville-goddard-lecture/" },
+  { id: 46, title: "Divine Signs", url: "https://www.neville-goddard.com/neville-goddard-lectures/divine-signs-neville-goddard-lecture/" },
+  { id: 47, title: "Election And Change Of Consciousness", url: "https://www.neville-goddard.com/neville-goddard-lectures/election-and-change-of-consciousness-neville-goddard-lecture/" },
+  { id: 48, title: "Enter The Dream", url: "https://www.neville-goddard.com/neville-goddard-lectures/enter-the-dream-neville-goddard-lecture/" },
+  { id: 49, title: "Esau And Jacob", url: "https://www.neville-goddard.com/neville-goddard-lectures/esau-and-jacob-neville-goddard-lecture/" }
 ];
 
-// 기본 1번 강의 샘플 데이터
 const INITIAL_LECTURE = [
   {
     en: "Christmas is the proclamation of a divine event to which all creation aspires.",
@@ -24,26 +66,13 @@ const INITIAL_LECTURE = [
     grammar: [
       { tag: "전치사 + 관계대명사 (to which)", desc: "선행사 a divine event를 수식합니다. 본래 all creation aspires to the event 구조에서 전치사 to가 관계대명사 which 앞으로 이동하여 결합했습니다." }
     ]
-  },
-  {
-    en: "It is an event which puts an entirely different light upon human life, for it proclaims that man has been saved.",
-    ko: "이 사건은 인간의 삶을 완전히 다른 시각으로 보게 만드는데, 왜냐하면 인간이 이미 구원받았음을 선포하기 때문입니다.",
-    vocab: [
-      { word: "put ~ upon a different light", mean: "~을 새로운 각도/시각에서 보게 하다" },
-      { word: "entirely", mean: "전적으로, 완전히" },
-      { word: "for", mean: "[접속사] 왜냐하면 ~이므로 (앞 절의 근거 제시)" },
-      { word: "man", mean: "[무관사 단수] 인류, 인간 일반" }
-    ],
-    grammar: [
-      { tag: "주격 관계대명사 (which)", desc: "선행사 an event를 수식하는 형용사절을 이끕니다." },
-      { tag: "현재완료 수동태 (has been saved)", desc: "구원이 미래의 조건부 사건이 아니라 이미 완료되어 현재까지 확정된 상태임을 나타냅니다." }
-    ]
   }
 ];
 
 function App() {
-  const [targetUrl, setTargetUrl] = useState(VOLUME_PAGES[0].url);
-  const [lectureTitle, setLectureTitle] = useState("A Divine Event (1969-12-08)");
+  const [selectedLec, setSelectedLec] = useState(VOL1_LECTURES[0]);
+  const [targetUrl, setTargetUrl] = useState(VOL1_LECTURES[0].url);
+  const [search, setSearch] = useState("");
   const [rawText, setRawText] = useState("");
   const [fetching, setFetching] = useState(false);
   const [analyzing, setAnalyzing] = useState(false);
@@ -51,21 +80,22 @@ function App() {
   const [quizMode, setQuizMode] = useState(false);
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
-  const [sentences, setSentences] = useState(() => {
-    const saved = localStorage.getItem("neville_live_sentences");
-    return saved ? JSON.parse(saved) : INITIAL_LECTURE;
+  const [store, setStore] = useState(() => {
+    const saved = localStorage.getItem("neville_vol1_store");
+    return saved ? JSON.parse(saved) : { 1: INITIAL_LECTURE };
   });
 
   useEffect(() => {
-    localStorage.setItem("neville_live_sentences", JSON.stringify(sentences));
-  }, [sentences]);
+    localStorage.setItem("neville_vol1_store", JSON.stringify(store));
+  }, [store]);
 
   const saveApiKey = (val) => {
     setApiKey(val);
     localStorage.setItem("gemini_api_key", val);
   };
 
-  // 원어민 발음 듣기 (TTS)
+  const sentences = store[selectedLec.id] || [];
+
   const speak = (text) => {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
@@ -74,18 +104,31 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // 1. 실시간으로 외부 웹사이트(neville-goddard.com)의 본문을 읽어오는 함수 (Jina Reader API 활용)
+  // 실시간으로 선택한 강의의 '진짜 본문'만 깔끔하게 추출해서 읽어오는 함수
   const handleFetchLiveSite = async (urlToFetch) => {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
-    setStatusMsg("🌐 실시간으로 네빌 고다드 사이트에서 강의 본문을 읽어오는 중입니다...");
+    setStatusMsg("🌐 네빌 고다드 사이트에서 해당 강의의 영어 본문을 실시간으로 가져오는 중...");
     try {
-      // r.jina.ai를 통해 외부 웹페이지를 실시간 텍스트로 추출
       const response = await fetch(`https://r.jina.ai/${finalUrl}`);
       if (!response.ok) throw new Error("사이트 접속 실패");
-      const text = await response.text();
-      setRawText(text);
-      setStatusMsg("✅ 실시간 원문 불러오기 완료! 원하는 구간을 남기고 [AI 자동 강독 생성]을 눌러주세요.");
+      const fullText = await response.text();
+
+      // 상단 메뉴·사이드바 링크들을 자동으로 잘라내고 진짜 강의 본문만 추출
+      let cleanBody = fullText;
+      const startMarker = cleanBody.indexOf("Markdown Content:");
+      if (startMarker !== -1) cleanBody = cleanBody.slice(startMarker + 17);
+      // 메뉴 끝나는 지점 이후 본문 찾기
+      const lines = cleanBody.split("\n").filter(line => {
+        const t = line.trim();
+        if (!t) return false;
+        if (t.startsWith("*   [") || t.startsWith("[Got it!]") || t.startsWith("This website uses cookies")) return false;
+        return true;
+      });
+      cleanBody = lines.join("\n\n");
+
+      setRawText(cleanBody.trim());
+      setStatusMsg("✅ 강의 원문 추출 완료! 이제 오른쪽의 [2. 읽어온 원문으로 강독 노트 자동 생성] 버튼을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
@@ -94,27 +137,25 @@ function App() {
     }
   };
 
-  // 2. 읽어온 영어 원문을 Gemini AI로 문장별 분석 (번역 + 핵심 어휘 + 직관적 문법)
+  // 읽어온 강의 본문을 문장별로 번역 + 어휘 + 문법 분석
   const handleAnalyze = async () => {
     if (!apiKey.trim()) {
-      alert("상단에 무료 Gemini API 키를 먼저 입력해 주세요!");
+      alert("상단 노란색 박스에 무료 Gemini API Key를 먼저 입력해 주세요!");
       return;
     }
     if (!rawText.trim()) {
-      alert("먼저 [실시간 원문 읽어오기]를 누르거나 영어 원문을 입력해 주세요.");
+      alert("먼저 왼쪽에서 강의를 클릭하거나 [1. 사이트 실시간 읽어오기]를 눌러주세요.");
       return;
     }
 
     setAnalyzing(true);
-    setStatusMsg("⏳ AI가 실시간 원문을 문장별로 쪼개어 번역·어휘·문법 노트를 생성 중입니다...");
+    setStatusMsg("⏳ AI가 영어 강의 본문을 한 문장씩 번역·어휘·구문 분석 중입니다 (약 5~10초 소요)...");
 
     try {
-      // 한 번에 너무 긴 페이지 전체를 보내면 시간이 오래 걸리므로 앞부분 4500자 기준으로 정밀 분석
       const targetChunk = rawText.slice(0, 4500);
-
       const prompt = `
 당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.
-다음 웹페이지에서 실시간으로 읽어온 텍스트 중 메뉴/링크 등 불필요한 부분을 제외하고, 실제 네빌 고다드의 강의 본문 문장만 한 문장씩 순서대로 분리하여 JSON 배열로 반환하세요.
+아래 텍스트에서 웹사이트 메뉴나 링크 목록을 모두 무시하고, 오직 네빌 고다드의 실제 영어 강의 본문 문장만 순서대로 분리하여 JSON 배열로 반환하세요.
 
 규칙:
 1. 반복되는 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.
@@ -131,7 +172,7 @@ function App() {
   }
 ]
 
-실시간 추출 원문:
+강의 원문 텍스트:
 ${targetChunk}
       `.trim();
 
@@ -153,8 +194,11 @@ ${targetChunk}
       const textOutput = data.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
       const parsed = JSON.parse(textOutput);
 
-      setSentences(parsed);
-      setStatusMsg(`🎉 총 ${parsed.length}개 문장을 실시간 분석하여 화면에 표시했습니다!`);
+      setStore(prev => ({
+        ...prev,
+        [selectedLec.id]: parsed
+      }));
+      setStatusMsg(`🎉 성공! 총 ${parsed.length}개 문장의 강독 노트가 생성되었습니다!`);
     } catch (err) {
       alert("AI 분석 오류: " + err.message);
       setStatusMsg("");
@@ -165,39 +209,50 @@ ${targetChunk}
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 좌측: 실시간 연결된 6개 권(294개 강의) 선택 패널 */}
-      <aside className="w-full md:w-72 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
-        <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
-        <h1 className="text-lg font-bold mb-4">네빌 고다드 294 실시간 강독</h1>
+      {/* 왼쪽 사이드바: 개별 강의 바로 선택 */}
+      <aside className="w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
+        <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Lecture Reader</div>
+        <h1 className="text-lg font-bold mb-3">네빌 고다드 실시간 강독</h1>
 
-        <div className="text-xs text-slate-400 mb-2">실시간 원문 서버 선택 (Vol.1 ~ 6)</div>
-        <div className="space-y-2 mb-6">
-          {VOLUME_PAGES.map(v => (
-            <button
-              key={v.vol}
-              onClick={() => {
-                setTargetUrl(v.url);
-                setLectureTitle(`Vol.${v.vol} (${v.range})`);
-                handleFetchLiveSite(v.url);
-              }}
-              className={`w-full text-left px-3 py-2.5 rounded-lg text-xs font-semibold transition flex justify-between items-center ${
-                targetUrl === v.url ? "bg-amber-500 text-slate-900 font-bold" : "bg-slate-800 hover:bg-slate-700 text-slate-200"
-              }`}
-            >
-              <span>📚 제{v.vol}권 ({v.range})</span>
-              <span>실시간 읽기 ➔</span>
-            </button>
-          ))}
-        </div>
+        <input
+          type="text"
+          placeholder="강의 제목 또는 번호 검색..."
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          className="mb-3 px-3 py-2 rounded bg-slate-800 border border-slate-700 text-xs text-white"
+        />
 
-        <div className="text-xs text-slate-400 leading-relaxed border-t border-slate-800 pt-4">
-          💡 왼쪽의 권(Volume) 버튼을 누르거나 원하는 강의 웹페이지 주소를 입력하면, <b>파일을 따로 만들 필요 없이 실시간으로 사이트 내용을 읽어와</b> 영어 강독 노트로 변환합니다.
+        <div className="text-xs text-slate-400 mb-2">클릭하면 해당 강의 본문을 바로 읽어옵니다:</div>
+        <div className="flex-1 overflow-y-auto space-y-1.5 pr-1">
+          {VOL1_LECTURES.filter(l => l.title.toLowerCase().includes(search.toLowerCase()) || String(l.id).includes(search)).map(lec => {
+            const savedCount = (store[lec.id] || []).length;
+            return (
+              <button
+                key={lec.id}
+                onClick={() => {
+                  setSelectedLec(lec);
+                  setTargetUrl(lec.url);
+                  handleFetchLiveSite(lec.url);
+                }}
+                className={`w-full text-left px-3 py-2.5 rounded-lg text-xs font-semibold transition flex justify-between items-center ${
+                  selectedLec.id === lec.id ? "bg-amber-500 text-slate-900 font-bold" : "bg-slate-800 hover:bg-slate-700 text-slate-200"
+                }`}
+              >
+                <span className="truncate">#{String(lec.id).padStart(3, "0")}. {lec.title}</span>
+                {savedCount > 0 ? (
+                  <span className="text-[10px] px-1.5 py-0.5 rounded bg-black/20 shrink-0">{savedCount}문장</span>
+                ) : (
+                  <span className="text-[10px] opacity-70 shrink-0">본문 읽기 ➔</span>
+                )}
+              </button>
+            );
+          })}
         </div>
       </aside>
 
-      {/* 우측: 메인 학습 스튜디오 */}
+      {/* 오른쪽 메인 화면 */}
       <main className="flex-1 p-6 max-w-4xl mx-auto w-full">
-        {/* 1. Gemini API 키 입력창 */}
+        {/* 상단 API 키 입력 */}
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className="font-bold text-amber-900">🔑 Gemini API Key (1회 입력 시 자동 저장):</span>
           <div className="flex gap-2 flex-1 max-w-md">
@@ -219,10 +274,10 @@ ${targetChunk}
           </div>
         </div>
 
-        {/* 2. 실시간 URL 읽어오기 컨트롤러 */}
+        {/* 실시간 본문 추출 컨트롤러 */}
         <div className="bg-white border rounded-xl p-4 mb-6 shadow-sm">
           <div className="text-xs font-bold text-slate-600 mb-2">
-            🌐 실시간으로 읽어올 네빌 고다드 강의 웹페이지 주소(URL):
+            🌐 현재 선택된 강의의 실제 본문 주소(URL):
           </div>
           <div className="flex flex-wrap gap-2 mb-3">
             <input
@@ -230,22 +285,21 @@ ${targetChunk}
               value={targetUrl}
               onChange={e => setTargetUrl(e.target.value)}
               className="flex-1 px-3 py-2 border rounded-lg text-sm"
-              placeholder="https://www.neville-goddard.com/..."
             />
             <button
               onClick={() => handleFetchLiveSite(targetUrl)}
               disabled={fetching}
               className="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-bold hover:bg-slate-800 disabled:opacity-50"
             >
-              {fetching ? "⏳ 사이트 읽는 중..." : "🌐 1. 사이트 실시간 읽어오기"}
+              {fetching ? "⏳ 본문 읽는 중..." : "🌐 1. 사이트 실시간 읽어오기"}
             </button>
           </div>
 
           <textarea
             value={rawText}
             onChange={e => setRawText(e.target.value)}
-            rows={4}
-            placeholder="위의 [1. 사이트 실시간 읽어오기] 버튼을 누르면 이곳에 웹사이트의 영어 원문이 자동으로 채워집니다! (분석하고 싶은 강의 구간만 남기고 지우셔도 됩니다)"
+            rows={5}
+            placeholder="왼쪽 목록에서 강의를 클릭하면 이곳에 목차 링크가 아닌 '진짜 영어 강의 본문'이 자동으로 들어옵니다!"
             className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
           />
 
@@ -261,10 +315,10 @@ ${targetChunk}
           </div>
         </div>
 
-        {/* 3. 강의 제목 및 퀴즈 버튼 */}
+        {/* 강의 제목 헤더 */}
         <div className="flex justify-between items-center mb-6 pb-3 border-b">
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
-            {lectureTitle}
+            #{String(selectedLec.id).padStart(3, "0")}. {selectedLec.title}
           </h2>
           <button
             onClick={() => setQuizMode(!quizMode)}
@@ -274,7 +328,7 @@ ${targetChunk}
           </button>
         </div>
 
-        {/* 4. 문장별 강독 결과 카드 (Georgia 14pt, 줄간격 1.55, 글자색 #292929) */}
+        {/* 문장별 강독 카드 (Georgia 14pt, 줄간격 1.55, 글자색 #292929) */}
         <div className="space-y-6">
           {sentences.map((s, idx) => (
             <div key={idx} className="bg-white p-6 rounded-xl border shadow-sm">
