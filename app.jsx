@@ -1,6 +1,5 @@
 const { useState, useEffect } = React;
 
-// 6개 권(Volume 1 ~ 6 : 총 294개 강의 목차 서버 주소)
 const VOLUMES = [
   { vol: 1, title: "제1권 (001 ~ 050번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
   { vol: 2, title: "제2권 (051 ~ 100번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
@@ -84,7 +83,7 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // 1. 왼쪽 권(Vol.1~6) 클릭 시 해당 권의 50개 강의 목록을 실시간으로 가져와 펼치는 함수
+  // 정규표현식 기호 충돌을 피하기 위해 안전한 문자열 파싱으로 50개 목록 추출
   const handleToggleVolume = async (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
@@ -95,24 +94,36 @@ function App() {
     if (!volLectures[volObj.vol] || volLectures[volObj.vol].length === 0) {
       setLoadingVol(true);
       try {
-        const res = await fetch(`https://r.jina.ai/${volObj.indexUrl}`);
+        const res = await fetch("https://r.jina.ai/" + volObj.indexUrl);
         const text = await res.text();
-        const regex = /\[([^\]]+)\]\((https?:\/\/(?:www\.)?neville-goddard\.com\/(?:neville-goddard-lectures|neville-goddard-books)\/[^)\s"]+)/g;
+        const lines = text.split("\n");
         const list = [];
-        const seen = new Set();
-        let match;
+        const seen = {};
         let startNum = (volObj.vol - 1) * 50 + 1;
 
-        while ((match = regex.exec(text)) !== null) {
-          const title = match[1].trim();
-          const url = match[2].trim().replace(/^http:/, "https:");
-          if (
-            !["Neville Goddard Original", "Neville Goddard Lectures", "Neville Goddard Books + Audio", "Read Here"].includes(title) &&
-            !url.includes("read-neville-goddard-lectures-on-line") &&
-            !seen.has(url)
-          ) {
-            seen.add(url);
-            list.push({ num: startNum++, title, url });
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          const openBracket = line.indexOf("[");
+          const closeBracket = line.indexOf("](http");
+          if (openBracket !== -1 && closeBracket !== -1) {
+            const title = line.slice(openBracket + 1, closeBracket).trim();
+            const rest = line.slice(closeBracket + 2);
+            const endUrl = rest.search(/[\s)"]/);
+            const rawUrl = (endUrl !== -1 ? rest.slice(0, endUrl) : rest).trim();
+            const url = rawUrl.replace("http://", "https://");
+
+            if (
+              (url.indexOf("/neville-goddard-lectures/") !== -1 || url.indexOf("/neville-goddard-books/") !== -1) &&
+              url.indexOf("read-neville-goddard-lectures-on-line") === -1 &&
+              title !== "Neville Goddard Original" &&
+              title !== "Neville Goddard Lectures" &&
+              title !== "Neville Goddard Books + Audio" &&
+              title !== "Read Here" &&
+              !seen[url]
+            ) {
+              seen[url] = true;
+              list.push({ num: startNum++, title: title, url: url });
+            }
           }
         }
         setVolLectures(prev => ({ ...prev, [volObj.vol]: list }));
@@ -124,13 +135,12 @@ function App() {
     }
   };
 
-  // 2. 웹사이트 하단 광고/댓글을 잘라내고 순수 강의 본문 전체만 가져오는 함수
   const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
-    setStatusMsg(`🌐 [${titleToSet || selectedLec.title}] 강의의 영어 본문 전체를 읽어오는 중...`);
+    setStatusMsg("🌐 [" + (titleToSet || selectedLec.title) + "] 강의의 영어 본문 전체를 읽어오는 중...");
     try {
-      const response = await fetch(`https://r.jina.ai/${finalUrl}`);
+      const response = await fetch("https://r.jina.ai/" + finalUrl);
       if (!response.ok) throw new Error("사이트 접속 실패");
       const fullText = await response.text();
 
@@ -139,17 +149,15 @@ function App() {
       if (startMarker !== -1) cleanBody = cleanBody.slice(startMarker + 17);
 
       const endMarkers = ["### Neville Goddard Lectures 1-50:", "#### About[Neville Goddard]", "## Primary Sidebar", "### **Appreciation Snippets**"];
-      for (const marker of endMarkers) {
-        const idx = cleanBody.indexOf(marker);
-        if (idx !== -1) {
-          cleanBody = cleanBody.slice(0, idx);
-        }
+      for (let m = 0; m < endMarkers.length; m++) {
+        const idx = cleanBody.indexOf(endMarkers[m]);
+        if (idx !== -1) cleanBody = cleanBody.slice(0, idx);
       }
 
       const lines = cleanBody.split("\n").filter(line => {
         const t = line.trim();
         if (!t) return false;
-        if (t.startsWith("*   [") || t.startsWith("[Got it!]") || t.startsWith("This website uses cookies") || t.startsWith("[Cookie Consent")) return false;
+        if (t.indexOf("*   [") === 0 || t.indexOf("[Got it!]") === 0 || t.indexOf("This website uses cookies") === 0 || t.indexOf("[Cookie Consent") === 0) return false;
         return true;
       });
       cleanBody = lines.join("\n\n");
@@ -164,7 +172,6 @@ function App() {
     }
   };
 
-  // 3. 50문장 제한 없이 끝까지 단락을 나누어 100% 전체 문장을 다 분석하는 함수
   const handleAnalyze = async () => {
     if (!apiKey.trim()) {
       alert("상단 노란색 칸에 무료 Gemini API Key를 먼저 입력해 주세요!");
@@ -178,11 +185,12 @@ function App() {
     setAnalyzing(true);
 
     try {
-      const paragraphs = rawText.split(/\n\s*\n/);
+      const paragraphs = rawText.split("\n\n");
       const chunks = [];
       let currentChunk = "";
 
-      for (const p of paragraphs) {
+      for (let i = 0; i < paragraphs.length; i++) {
+        const p = paragraphs[i];
         if ((currentChunk + "\n\n" + p).length > 3500 && currentChunk.length > 0) {
           chunks.push(currentChunk.trim());
           currentChunk = p;
@@ -196,33 +204,22 @@ function App() {
       setStore(prev => ({ ...prev, [selectedLec.title]: [] }));
 
       for (let i = 0; i < chunks.length; i++) {
-        setStatusMsg(`⏳ 전체 ${chunks.length}구간 중 [${i + 1}/${chunks.length} 구간] 분석 중... (현재 ${allParsedSentences.length}문장 완료)`);
+        setStatusMsg("⏳ 전체 " + chunks.length + "구간 중 [" + (i + 1) + "/" + chunks.length + " 구간] 분석 중... (현재 " + allParsedSentences.length + "문장 완료)");
 
-        const prompt = `
-당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.
-아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.
-
-규칙:
-1. 반복 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.
-2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적 맥락만 grammar에 설명하세요.
-3. 반드시 순수 JSON 배열만 출력하세요.
-
-형식:
-[
-  {
-    "en": "영어 원문 문장",
-    "ko": "자연스럽고 품격 있는 한글 번역",
-    "vocab": [{"word": "단어/숙어", "mean": "한글 뜻"}],
-    "grammar": [{"tag": "핵심 구문 포인트 제목", "desc": "직관적인 문법·구조 해설"}]
-  }
-]
-
-강의 본문 (${i + 1}/${chunks.length} 파트):
-${chunks[i]}
-        `.trim();
+        const prompt = [
+          "당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.",
+          "아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.",
+          "규칙:",
+          "1. 반복 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.",
+          "2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적 맥락만 grammar에 설명하세요.",
+          "3. 반드시 순수 JSON 배열만 출력하세요.",
+          '형식: [{"en":"영어 원문","ko":"한글 번역","vocab":[{"word":"단어","mean":"뜻"}],"grammar":[{"tag":"구문 포인트","desc":"해설"}]}]',
+          "강의 본문:",
+          chunks[i]
+        ].join("\n");
 
         const res = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey.trim()}`,
+          "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + apiKey.trim(),
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -236,10 +233,10 @@ ${chunks[i]}
         const data = await res.json();
         if (data.error) throw new Error(data.error.message);
 
-        const textOutput = data.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+        const textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
         const parsed = JSON.parse(textOutput);
 
-        allParsedSentences = [...allParsedSentences, ...parsed];
+        allParsedSentences = allParsedSentences.concat(parsed);
 
         setStore(prev => ({
           ...prev,
@@ -247,7 +244,7 @@ ${chunks[i]}
         }));
       }
 
-      setStatusMsg(`🎉 강의 끝까지 총 ${allParsedSentences.length}개 문장 전체의 강독 노트가 완성되었습니다!`);
+      setStatusMsg("🎉 강의 끝까지 총 " + allParsedSentences.length + "개 문장 전체의 강독 노트가 완성되었습니다!");
     } catch (err) {
       alert("AI 분석 오류: " + err.message);
       setStatusMsg("⚠️ 일부 구간 분석 중 오류가 발생했습니다. 완료된 문장까지는 자동 저장되었습니다.");
@@ -258,7 +255,6 @@ ${chunks[i]}
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 왼쪽 사이드바 */}
       <aside className="w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
@@ -273,9 +269,7 @@ ${chunks[i]}
               <div key={v.vol} className="rounded-lg overflow-hidden border border-slate-800">
                 <button
                   onClick={() => handleToggleVolume(v)}
-                  className={`w-full text-left px-3 py-3 text-xs font-bold transition flex justify-between items-center ${
-                    isOpen ? "bg-amber-500 text-slate-900" : "bg-slate-800 hover:bg-slate-700 text-slate-200"
-                  }`}
+                  className={"w-full text-left px-3 py-3 text-xs font-bold transition flex justify-between items-center " + (isOpen ? "bg-amber-500 text-slate-900" : "bg-slate-800 hover:bg-slate-700 text-slate-200")}
                 >
                   <span>📚 {v.title}</span>
                   <span>{isOpen ? "▲ 접기" : "▼ 펼치기"}</span>
@@ -299,11 +293,7 @@ ${chunks[i]}
                               setTargetUrl(lec.url);
                               handleFetchLectureBody(lec.url, lec.title);
                             }}
-                            className={`w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center ${
-                              isSelected
-                                ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold"
-                                : "text-slate-300 hover:bg-slate-800"
-                            }`}
+                            className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold" : "text-slate-300 hover:bg-slate-800")}
                           >
                             <span className="truncate pr-2">{lec.num}. {lec.title}</span>
                             {savedCount > 0 ? (
@@ -325,7 +315,6 @@ ${chunks[i]}
         </div>
       </aside>
 
-      {/* 오른쪽 메인 영역 */}
       <main className="flex-1 p-6 max-w-4xl mx-auto w-full">
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className="font-bold text-amber-900">🔑 Gemini API Key (1회 입력 시 자동 저장):</span>
@@ -390,7 +379,7 @@ ${chunks[i]}
 
         <div className="flex justify-between items-center mb-6 pb-3 border-b">
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
-            {selectedLec.num ? `#${String(selectedLec.num).padStart(3, "0")}. ` : ""}{selectedLec.title}
+            {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
           </h2>
           <button
             onClick={() => setQuizMode(!quizMode)}
@@ -421,7 +410,7 @@ ${chunks[i]}
 
               <p
                 style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}
-                className={`p-3 bg-stone-50 border-l-4 border-stone-800 rounded mb-4 ${quizMode ? "blur-sm hover:blur-none transition cursor-pointer" : ""}`}
+                className={"p-3 bg-stone-50 border-l-4 border-stone-800 rounded mb-4 " + (quizMode ? "blur-sm hover:blur-none transition cursor-pointer" : "")}
               >
                 {s.ko}
               </p>
