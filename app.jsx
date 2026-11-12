@@ -1,21 +1,6 @@
-저는 2번(소스 코드에서 50개 목록을 빼고, 1~6권 모두 클릭할 때 실시간으로 목록을 불러오는 방식 + 한 번 불러온 목록은 브라우저에 자동 저장)을 가장 추천합니다!
-
-이 방식을 추천하는 이유는 명확합니다:
-
-* **소스 코드가 절반 길이로 확 줄어들어 깔끔해집니다:** 50개나 되는 URL을 코드 안에 하드코딩해 둘 필요가 없으므로 `app.jsx` 파일이 아주 가벼워지고 관리하기 쉬워집니다.
-* **1권부터 6권까지 작동 방식이 100% 통일됩니다:** 모든 권이 동일한 원리로 작동하므로 구조가 일관적입니다.
-* **속도 문제도 간단히 해결됩니다 (캐싱 적용):** 처음 1권을 클릭할 때만 1~2초 동안 목록을 실시간으로 가져오고, **한 번 가져온 50개 목록은 내 브라우저(`localStorage`)에 자동 저장**되게 만들면 다음번에 사이트를 열 때는 0초 만에 즉시 펼쳐집니다.
-
----
-
-### 💡 추천 방식으로 다이어트한 최종 `app.jsx` 코드
-
-아래 코드는 50개 목록 하드코딩을 싹 빼서 훨씬 짧고 깔끔하며, **권(Vol.1~6) 클릭 시 실시간 목록 펼침 + 브라우저 자동 기억**까지 적용된 버전입니다. 깃허브의 `app.jsx`에 그대로 덮어쓰시면 됩니다.
-
-```jsx
 const { useState, useEffect } = React;
 
-// 6개 권(Volume 1 ~ 6) 마스터 주소만 깔끔하게 유지[cite: 2]
+// 6개 권(Volume 1 ~ 6 : 총 294개 강의 목차 서버 주소)
 const VOLUMES = [
   { vol: 1, title: "제1권 (001 ~ 050번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
   { vol: 2, title: "제2권 (051 ~ 100번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
@@ -25,6 +10,7 @@ const VOLUMES = [
   { vol: 6, title: "제6권 (251 ~ 294번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-6" }
 ];
 
+// 기본 1번 강의 초기 샘플
 const INITIAL_LECTURE = [
   {
     en: "Christmas is the proclamation of a divine event to which all creation aspires.",
@@ -45,7 +31,7 @@ function App() {
   const [openVol, setOpenVol] = useState(null);
   const [loadingVol, setLoadingVol] = useState(false);
 
-  // 한 번 실시간으로 불러온 각 권의 50개 목록을 브라우저에 자동 저장 (다음 접속 시 0초 로드)[cite: 2]
+  // 한 번 불러온 권별 하위 강의 목록을 브라우저에 자동 저장
   const [volLectures, setVolLectures] = useState(() => {
     const saved = localStorage.getItem("neville_vol_menus");
     return saved ? JSON.parse(saved) : {};
@@ -92,7 +78,7 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // 권(Vol.1~6) 클릭 시 실시간으로 50개 하위 강의 목록 추출[cite: 2]
+  // 1. 왼쪽 권(Vol.1~6) 클릭 시 해당 권의 50개 강의 목록을 실시간으로 가져와 펼치는 함수
   const handleToggleVolume = async (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
@@ -125,18 +111,18 @@ function App() {
         }
         setVolLectures(prev => ({ ...prev, [volObj.vol]: list }));
       } catch (e) {
-        alert("목차 불러오기 오류: " + e.message);
+        alert("강의 목록 불러오기 오류: " + e.message);
       } finally {
         setLoadingVol(false);
       }
     }
   };
 
-  // 개별 강의 클릭 시 해당 강의의 영어 본문만 추출[cite: 2]
+  // 2. 펼쳐진 목록에서 개별 강의를 클릭했을 때 그 강의의 '영어 본문'만 실시간으로 가져오는 함수
   const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
-    setStatusMsg(`🌐 [${titleToSet || selectedLec.title}] 강의 본문을 실시간으로 읽어오는 중...`);
+    setStatusMsg(`🌐 [${titleToSet || selectedLec.title}] 강의의 영어 본문을 실시간으로 읽어오는 중...`);
     try {
       const response = await fetch(`https://r.jina.ai/${finalUrl}`);
       if (!response.ok) throw new Error("사이트 접속 실패");
@@ -155,7 +141,7 @@ function App() {
       cleanBody = lines.join("\n\n");
 
       setRawText(cleanBody.trim());
-      setStatusMsg("✅ 강의 원문 추출 완료! 이제 [2. 읽어온 원문으로 강독 노트 자동 생성]을 눌러주세요.");
+      setStatusMsg("✅ 강의 원문 추출 완료! 이제 오른쪽의 [2. 읽어온 원문으로 강독 노트 자동 생성]을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
@@ -164,7 +150,7 @@ function App() {
     }
   };
 
-  // 읽어온 본문을 AI로 문장별 강독 노트로 변환[cite: 2]
+  // 3. 읽어온 영어 본문을 Gemini AI로 문장별 분석 (번역 + 어휘 + 구문 해설)
   const handleAnalyze = async () => {
     if (!apiKey.trim()) {
       alert("상단 노란색 칸에 무료 Gemini API Key를 먼저 입력해 주세요!");
@@ -236,7 +222,7 @@ ${targetChunk}
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 왼쪽 사이드바: Vol.1 ~ Vol.6 아코디언 */}
+      {/* 왼쪽 사이드바: Vol.1 ~ Vol.6 클릭 시 50개 강의 목록 펼침 */}
       <aside className="w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
@@ -431,7 +417,3 @@ ${targetChunk}
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-
-```
-
-이 코드로 `app.jsx`를 업데이트해 보시고, 왼쪽에서 **제1권 ~ 제6권**을 눌렀을 때 하위 50개 목록이 잘 펼쳐지는지 확인해 보세요!
