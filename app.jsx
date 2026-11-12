@@ -10,7 +10,6 @@ const VOLUMES = [
   { vol: 6, title: "제6권 (251 ~ 294번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-6" }
 ];
 
-// 기본 1번 강의 초기 샘플
 const INITIAL_LECTURE = [
   {
     en: "Christmas is the proclamation of a divine event to which all creation aspires.",
@@ -31,10 +30,13 @@ function App() {
   const [openVol, setOpenVol] = useState(null);
   const [loadingVol, setLoadingVol] = useState(false);
 
-  // 한 번 불러온 권별 하위 강의 목록을 브라우저에 자동 저장
   const [volLectures, setVolLectures] = useState(() => {
-    const saved = localStorage.getItem("neville_vol_menus");
-    return saved ? JSON.parse(saved) : {};
+    try {
+      const saved = localStorage.getItem("neville_vol_menus");
+      return saved ? JSON.parse(saved) : {};
+    } catch (e) {
+      return {};
+    }
   });
 
   const [selectedLec, setSelectedLec] = useState({
@@ -51,16 +53,20 @@ function App() {
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
   const [store, setStore] = useState(() => {
-    const saved = localStorage.getItem("neville_vol_accordion_store");
-    return saved ? JSON.parse(saved) : { "A Divine Event": INITIAL_LECTURE };
+    try {
+      const saved = localStorage.getItem("neville_vol_accordion_store");
+      return saved ? JSON.parse(saved) : { "A Divine Event": INITIAL_LECTURE };
+    } catch (e) {
+      return { "A Divine Event": INITIAL_LECTURE };
+    }
   });
 
   useEffect(() => {
-    localStorage.setItem("neville_vol_menus", JSON.stringify(volLectures));
+    try { localStorage.setItem("neville_vol_menus", JSON.stringify(volLectures)); } catch (e) {}
   }, [volLectures]);
 
   useEffect(() => {
-    localStorage.setItem("neville_vol_accordion_store", JSON.stringify(store));
+    try { localStorage.setItem("neville_vol_accordion_store", JSON.stringify(store)); } catch (e) {}
   }, [store]);
 
   const saveApiKey = (val) => {
@@ -118,11 +124,11 @@ function App() {
     }
   };
 
-  // 2. 펼쳐진 목록에서 개별 강의를 클릭했을 때 그 강의의 '영어 본문'만 실시간으로 가져오는 함수
+  // 2. 웹사이트 하단 광고/댓글을 잘라내고 순수 강의 본문 전체만 가져오는 함수
   const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
-    setStatusMsg(`🌐 [${titleToSet || selectedLec.title}] 강의의 영어 본문을 실시간으로 읽어오는 중...`);
+    setStatusMsg(`🌐 [${titleToSet || selectedLec.title}] 강의의 영어 본문 전체를 읽어오는 중...`);
     try {
       const response = await fetch(`https://r.jina.ai/${finalUrl}`);
       if (!response.ok) throw new Error("사이트 접속 실패");
@@ -132,16 +138,24 @@ function App() {
       const startMarker = cleanBody.indexOf("Markdown Content:");
       if (startMarker !== -1) cleanBody = cleanBody.slice(startMarker + 17);
 
+      const endMarkers = ["### Neville Goddard Lectures 1-50:", "#### About[Neville Goddard]", "## Primary Sidebar", "### **Appreciation Snippets**"];
+      for (const marker of endMarkers) {
+        const idx = cleanBody.indexOf(marker);
+        if (idx !== -1) {
+          cleanBody = cleanBody.slice(0, idx);
+        }
+      }
+
       const lines = cleanBody.split("\n").filter(line => {
         const t = line.trim();
         if (!t) return false;
-        if (t.startsWith("*   [") || t.startsWith("[Got it!]") || t.startsWith("This website uses cookies")) return false;
+        if (t.startsWith("*   [") || t.startsWith("[Got it!]") || t.startsWith("This website uses cookies") || t.startsWith("[Cookie Consent")) return false;
         return true;
       });
       cleanBody = lines.join("\n\n");
 
       setRawText(cleanBody.trim());
-      setStatusMsg("✅ 강의 원문 추출 완료! 이제 오른쪽의 [2. 읽어온 원문으로 강독 노트 자동 생성]을 눌러주세요.");
+      setStatusMsg("✅ 강의 전체 원문 추출 완료! 이제 [2. 읽어온 원문 전체 끝까지 강독 노트 생성]을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
@@ -150,7 +164,7 @@ function App() {
     }
   };
 
-  // 3. 읽어온 영어 본문을 Gemini AI로 문장별 분석 (번역 + 어휘 + 구문 해설)
+  // 3. 50문장 제한 없이 끝까지 단락을 나누어 100% 전체 문장을 다 분석하는 함수
   const handleAnalyze = async () => {
     if (!apiKey.trim()) {
       alert("상단 노란색 칸에 무료 Gemini API Key를 먼저 입력해 주세요!");
@@ -162,13 +176,31 @@ function App() {
     }
 
     setAnalyzing(true);
-    setStatusMsg("⏳ AI가 문장별 번역·어휘·구문 해설을 생성하고 있습니다...");
 
     try {
-      const targetChunk = rawText.slice(0, 4500);
-      const prompt = `
+      const paragraphs = rawText.split(/\n\s*\n/);
+      const chunks = [];
+      let currentChunk = "";
+
+      for (const p of paragraphs) {
+        if ((currentChunk + "\n\n" + p).length > 3500 && currentChunk.length > 0) {
+          chunks.push(currentChunk.trim());
+          currentChunk = p;
+        } else {
+          currentChunk += (currentChunk ? "\n\n" : "") + p;
+        }
+      }
+      if (currentChunk.trim()) chunks.push(currentChunk.trim());
+
+      let allParsedSentences = [];
+      setStore(prev => ({ ...prev, [selectedLec.title]: [] }));
+
+      for (let i = 0; i < chunks.length; i++) {
+        setStatusMsg(`⏳ 전체 ${chunks.length}구간 중 [${i + 1}/${chunks.length} 구간] 분석 중... (현재 ${allParsedSentences.length}문장 완료)`);
+
+        const prompt = `
 당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.
-아래 텍스트에서 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 순서대로 분리하여 JSON 배열로 반환하세요.
+아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.
 
 규칙:
 1. 반복 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.
@@ -185,36 +217,40 @@ function App() {
   }
 ]
 
-강의 본문:
-${targetChunk}
-      `.trim();
+강의 본문 (${i + 1}/${chunks.length} 파트):
+${chunks[i]}
+        `.trim();
 
-      const res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey.trim()}`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { responseMimeType: "application/json" }
-          })
-        }
-      );
+        const res = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey.trim()}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: { responseMimeType: "application/json" }
+            })
+          }
+        );
 
-      const data = await res.json();
-      if (data.error) throw new Error(data.error.message);
+        const data = await res.json();
+        if (data.error) throw new Error(data.error.message);
 
-      const textOutput = data.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
-      const parsed = JSON.parse(textOutput);
+        const textOutput = data.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+        const parsed = JSON.parse(textOutput);
 
-      setStore(prev => ({
-        ...prev,
-        [selectedLec.title]: parsed
-      }));
-      setStatusMsg(`🎉 총 ${parsed.length}개 문장의 강독 노트가 생성되었습니다!`);
+        allParsedSentences = [...allParsedSentences, ...parsed];
+
+        setStore(prev => ({
+          ...prev,
+          [selectedLec.title]: allParsedSentences
+        }));
+      }
+
+      setStatusMsg(`🎉 강의 끝까지 총 ${allParsedSentences.length}개 문장 전체의 강독 노트가 완성되었습니다!`);
     } catch (err) {
       alert("AI 분석 오류: " + err.message);
-      setStatusMsg("");
+      setStatusMsg("⚠️ 일부 구간 분석 중 오류가 발생했습니다. 완료된 문장까지는 자동 저장되었습니다.");
     } finally {
       setAnalyzing(false);
     }
@@ -222,7 +258,7 @@ ${targetChunk}
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 왼쪽 사이드바: Vol.1 ~ Vol.6 클릭 시 50개 강의 목록 펼침 */}
+      {/* 왼쪽 사이드바 */}
       <aside className="w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
@@ -336,7 +372,7 @@ ${targetChunk}
             value={rawText}
             onChange={e => setRawText(e.target.value)}
             rows={5}
-            placeholder="왼쪽에서 권(Volume)을 눌러 50개 목록을 펼친 뒤, 원하는 강의를 클릭하면 이곳에 해당 강의의 영어 본문이 자동으로 채워집니다!"
+            placeholder="왼쪽에서 권(Volume)을 눌러 50개 목록을 펼친 뒤, 원하는 강의를 클릭하면 이곳에 해당 강의의 영어 본문 전체가 자동으로 채워집니다!"
             className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
           />
 
@@ -347,7 +383,7 @@ ${targetChunk}
               disabled={analyzing}
               className="px-5 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
             >
-              {analyzing ? "⏳ AI가 강독 노트 생성 중..." : "⚡ 2. 읽어온 원문으로 강독 노트 자동 생성"}
+              {analyzing ? "⏳ 전체 구간 연속 분석 중..." : "⚡ 2. 읽어온 원문 전체 끝까지 강독 노트 생성"}
             </button>
           </div>
         </div>
