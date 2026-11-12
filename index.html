@@ -11,32 +11,52 @@
 </head>
 <body class="bg-[#faf9f5] text-[#292929]">
   <div id="root">
-    <div style="padding:24px;color:#475569;font-weight:bold;">⏳ 강독 스튜디오를 불러오는 중입니다...</div>
+    <div style="padding:24px;color:#475569;font-weight:bold;">⏳ 1강독 스튜디오를 불러오는 중입니다...</div>
   </div>
 
   <script>
-    // 화면이 멈출 때 무슨 에러인지 즉시 화면에 빨간 글씨로 보여주는 감시기
     window.onerror = function(msg, url, lineNo) {
       document.getElementById('root').innerHTML =
         '<div style="padding:24px;color:#b91c1c;background:#fef2f2;border:2px solid #ef4444;margin:20px;border-radius:8px;font-weight:bold;">' +
-        '🚨 실행 오류 발견: ' + msg + ' (줄 번호: ' + lineNo + ')' +
+        '🚨 실행 오류: ' + msg + ' (줄 번호: ' + lineNo + ')' +
         '</div>';
     };
 
     (async function() {
       try {
         const res = await fetch('./app.jsx?t=' + Date.now(), { cache: 'no-store' });
-        if (!res.ok) throw new Error('깃허브에 app.jsx 파일이 없거나 이름이 다릅니다 (HTTP ' + res.status + ')');
-        const code = await res.text();
+        if (!res.ok) throw new Error('app.jsx 파일을 찾을 수 없습니다 (HTTP ' + res.status + ')');
+        const rawText = await res.text();
 
-        // 혹시 사용자가 app.jsx 안에 HTML 태그(<script> 등)를 같이 복사해 넣었을 경우 자동 제거
-        const cleanCode = code
-          .replace(/<!DOCTYPE[\s\S]*?<script[^>]*>/i, '')
-          .replace(/<\/script>[\s\S]*$/i, '');
+        // ★ 핵심: app.jsx 안에 import 나 export 로 시작하는 줄이 있으면 한 줄씩 찾아서 100% 완전 삭제!
+        const safeLines = rawText.split('\n').map(function(line) {
+          const trimmed = line.trim();
+          if (trimmed.indexOf('import ') === 0 || trimmed.indexOf('import{') === 0 || trimmed.indexOf('import*') === 0) {
+            return '// ' + line; // import 줄 무력화
+          }
+          if (trimmed.indexOf('export default ') === 0) {
+            return line.replace('export default ', '');
+          }
+          if (trimmed.indexOf('export ') === 0) {
+            return line.replace('export ', '');
+          }
+          return line;
+        });
 
-        const compiled = Babel.transform(cleanCode, { presets: ['react'] }).code;
+        // 맨 위에 React 훅 선언을 안전하게 자동 보장
+        const finalSource = 'const { useState, useEffect, useMemo, useRef } = React;\n' +
+          safeLines.join('\n').replace(/const\s+\{\s*useState.*?\}\s*=\s*React\s*;?/g, '');
+
+        const compiled = Babel.transform(finalSource, {
+          presets: ['react']
+        }).code;
+
+        // 혹시 변환된 코드에도 import가 남아있다면 한 번 더 제거 후 모듈이 아닌 일반 스크립트로 실행
+        const cleanCompiled = compiled.replace(/import\s+.*?from\s+['"].*?['"];?/g, '');
+
         const s = document.createElement('script');
-        s.text = compiled;
+        s.type = 'text/javascript';
+        s.textContent = cleanCompiled;
         document.body.appendChild(s);
       } catch (err) {
         document.getElementById('root').innerHTML =
