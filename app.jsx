@@ -83,7 +83,26 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // 정규표현식 기호 충돌을 피하기 위해 안전한 문자열 파싱으로 50개 목록 추출
+  // PDF 저장(인쇄) 실행 함수
+  const handleDownloadPdf = () => {
+    if (sentences.length === 0) {
+      alert("저장할 강독 노트가 없습니다. 먼저 강독 노트를 생성해 주세요.");
+      return;
+    }
+    // 해석 가리기 모드가 켜져 있으면 PDF 저장 시 자동으로 해제하여 해석이 보이게 처리
+    if (quizMode) setQuizMode(false);
+
+    // PDF 저장 시 파일명으로 자동 제안되도록 문서 제목 임시 변경
+    const originalTitle = document.title;
+    const prefix = selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
+    document.title = prefix + selectedLec.title + "_강독노트";
+
+    setTimeout(() => {
+      window.print();
+      document.title = originalTitle;
+    }, 150);
+  };
+
   const handleToggleVolume = async (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
@@ -255,7 +274,36 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      <aside className="w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
+      {/* PDF 저장(인쇄) 전용 A4 레이아웃 스타일 */}
+      <style>{`
+        @media print {
+          @page {
+            size: A4;
+            margin: 15mm 14mm;
+          }
+          body {
+            background-color: #ffffff !important;
+          }
+          .no-print {
+            display: none !important;
+          }
+          .print-container {
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+          }
+          .print-card {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            box-shadow: none !important;
+            border: 1px solid #cbd5e1 !important;
+            margin-bottom: 14px !important;
+          }
+        }
+      `}</style>
+
+      {/* 왼쪽 사이드바 (인쇄 시 자동 숨김) */}
+      <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
         <div className="text-xs text-slate-400 mb-2">권(Volume)을 클릭하면 50개 강의 목록이 펼쳐집니다:</div>
@@ -315,8 +363,10 @@ function App() {
         </div>
       </aside>
 
-      <main className="flex-1 p-6 max-w-4xl mx-auto w-full">
-        <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
+      {/* 오른쪽 메인 영역 */}
+      <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
+        {/* API 키 입력창 (인쇄 시 자동 숨김) */}
+        <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className="font-bold text-amber-900">🔑 Gemini API Key (1회 입력 시 자동 저장):</span>
           <div className="flex gap-2 flex-1 max-w-md">
             <input
@@ -337,7 +387,8 @@ function App() {
           </div>
         </div>
 
-        <div className="bg-white border rounded-xl p-4 mb-6 shadow-sm">
+        {/* 크롤링 및 분석 컨트롤러 (인쇄 시 자동 숨김) */}
+        <div className="no-print bg-white border rounded-xl p-4 mb-6 shadow-sm">
           <div className="text-xs font-bold text-slate-600 mb-2">
             🌐 선택된 강의의 실제 웹페이지 주소(URL):
           </div>
@@ -377,28 +428,45 @@ function App() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center mb-6 pb-3 border-b">
-          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
-            {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
-          </h2>
-          <button
-            onClick={() => setQuizMode(!quizMode)}
-            className="px-4 py-2 rounded bg-slate-800 text-white text-xs font-bold"
-          >
-            {quizMode ? "🙈 해석 보이기" : "🙈 해석 가리기 연습"}
-          </button>
+        {/* 강의 제목 및 기능 버튼 바 */}
+        <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
+          <div>
+            <div className="text-xs text-slate-500 font-semibold mb-1">
+              Neville Goddard Lecture Study Guide ({sentences.length} Sentences)
+            </div>
+            <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
+              {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
+            </h2>
+          </div>
+
+          {/* 버튼 그룹 (인쇄 시 자동 숨김) */}
+          <div className="no-print flex gap-2">
+            <button
+              onClick={handleDownloadPdf}
+              className="px-4 py-2 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shadow-sm"
+            >
+              📄 PDF 다운로드
+            </button>
+            <button
+              onClick={() => setQuizMode(!quizMode)}
+              className="px-4 py-2 rounded bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold"
+            >
+              {quizMode ? "🙈 해석 보이기" : "🙈 해석 가리기 연습"}
+            </button>
+          </div>
         </div>
 
+        {/* 문장별 강독 카드 목록 */}
         <div className="space-y-6">
           {sentences.map((s, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-xl border shadow-sm">
+            <div key={idx} className="print-card bg-white p-6 rounded-xl border shadow-sm">
               <div className="flex justify-between items-center mb-2 border-b pb-2">
                 <span style={{ fontFamily: "Georgia, serif", fontSize: "17pt", color: "#292929" }} className="font-bold">
                   Sentence {String(idx + 1).padStart(2, "0")}
                 </span>
                 <button
                   onClick={() => speak(s.en)}
-                  className="px-3 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
+                  className="no-print px-3 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
                 >
                   🔊 발음 듣기
                 </button>
