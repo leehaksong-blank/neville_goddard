@@ -1,9 +1,18 @@
 const { useState, useEffect } = React;
 
-// 기본 내장된 1번 강의 샘플 (나중에 lectures/001.json 파일을 만들면 자동으로 그 파일을 불러옵니다)
-const DEFAULT_LECTURE_1 = [
+// 네빌 고다드 온라인 강의 6개 권(Volume 1 ~ 6 : 총 294개 강의 수록 페이지)
+const VOLUME_PAGES = [
+  { vol: 1, range: "001 ~ 050번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
+  { vol: 2, range: "051 ~ 100번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
+  { vol: 3, range: "101 ~ 150번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-3" },
+  { vol: 4, range: "151 ~ 200번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-4" },
+  { vol: 5, range: "201 ~ 250번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-5" },
+  { vol: 6, range: "251 ~ 294번 강의", url: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-6" }
+];
+
+// 기본 1번 강의 샘플 데이터
+const INITIAL_LECTURE = [
   {
-    id: 1, p: 1,
     en: "Christmas is the proclamation of a divine event to which all creation aspires.",
     ko: "크리스마스는 모든 피조물이 열망하는 신적 사건을 선포하는 날입니다.",
     vocab: [
@@ -17,7 +26,6 @@ const DEFAULT_LECTURE_1 = [
     ]
   },
   {
-    id: 2, p: 1,
     en: "It is an event which puts an entirely different light upon human life, for it proclaims that man has been saved.",
     ko: "이 사건은 인간의 삶을 완전히 다른 시각으로 보게 만드는데, 왜냐하면 인간이 이미 구원받았음을 선포하기 때문입니다.",
     vocab: [
@@ -33,66 +41,230 @@ const DEFAULT_LECTURE_1 = [
   }
 ];
 
-// 294개 강의 목록 자동 생성
-const LECTURE_LIST = Array.from({ length: 294 }, (_, i) => ({
-  id: i + 1,
-  title: i === 0 ? "A Divine Event (1969-12-08)" : i === 1 ? "A Lesson in Scripture" : `Lecture #${i + 1}`
-}));
-
 function App() {
-  const [selectedId, setSelectedId] = useState(1);
-  const [sentences, setSentences] = useState(DEFAULT_LECTURE_1);
+  const [targetUrl, setTargetUrl] = useState(VOLUME_PAGES[0].url);
+  const [lectureTitle, setLectureTitle] = useState("A Divine Event (1969-12-08)");
+  const [rawText, setRawText] = useState("");
+  const [fetching, setFetching] = useState(false);
+  const [analyzing, setAnalyzing] = useState(false);
+  const [statusMsg, setStatusMsg] = useState("");
   const [quizMode, setQuizMode] = useState(false);
 
-  // 강의를 클릭할 때마다 lectures/001.json 같은 데이터 파일을 자동으로 찾아오는 기능
+  const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
+  const [sentences, setSentences] = useState(() => {
+    const saved = localStorage.getItem("neville_live_sentences");
+    return saved ? JSON.parse(saved) : INITIAL_LECTURE;
+  });
+
   useEffect(() => {
-    const fileNum = String(selectedId).padStart(3, "0");
-    fetch(`./lectures/${fileNum}.json`)
-      .then(res => {
-        if (!res.ok) throw new Error("파일 없음");
-        return res.json();
-      })
-      .then(data => setSentences(data))
-      .catch(() => {
-        // 아직 json 파일이 없으면 1번 강의는 기본 데이터, 나머지는 빈 화면 표시
-        setSentences(selectedId === 1 ? DEFAULT_LECTURE_1 : []);
-      });
-  }, [selectedId]);
+    localStorage.setItem("neville_live_sentences", JSON.stringify(sentences));
+  }, [sentences]);
+
+  const saveApiKey = (val) => {
+    setApiKey(val);
+    localStorage.setItem("gemini_api_key", val);
+  };
 
   // 원어민 발음 듣기 (TTS)
   const speak = (text) => {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "en-US";
-    u.rate = 0.9;
+    u.rate = 0.92;
     window.speechSynthesis.speak(u);
+  };
+
+  // 1. 실시간으로 외부 웹사이트(neville-goddard.com)의 본문을 읽어오는 함수 (Jina Reader API 활용)
+  const handleFetchLiveSite = async (urlToFetch) => {
+    const finalUrl = urlToFetch || targetUrl;
+    setFetching(true);
+    setStatusMsg("🌐 실시간으로 네빌 고다드 사이트에서 강의 본문을 읽어오는 중입니다...");
+    try {
+      // r.jina.ai를 통해 외부 웹페이지를 실시간 텍스트로 추출
+      const response = await fetch(`https://r.jina.ai/${finalUrl}`);
+      if (!response.ok) throw new Error("사이트 접속 실패");
+      const text = await response.text();
+      setRawText(text);
+      setStatusMsg("✅ 실시간 원문 불러오기 완료! 원하는 구간을 남기고 [AI 자동 강독 생성]을 눌러주세요.");
+    } catch (err) {
+      alert("실시간 읽어오기 오류: " + err.message);
+      setStatusMsg("");
+    } finally {
+      setFetching(false);
+    }
+  };
+
+  // 2. 읽어온 영어 원문을 Gemini AI로 문장별 분석 (번역 + 핵심 어휘 + 직관적 문법)
+  const handleAnalyze = async () => {
+    if (!apiKey.trim()) {
+      alert("상단에 무료 Gemini API 키를 먼저 입력해 주세요!");
+      return;
+    }
+    if (!rawText.trim()) {
+      alert("먼저 [실시간 원문 읽어오기]를 누르거나 영어 원문을 입력해 주세요.");
+      return;
+    }
+
+    setAnalyzing(true);
+    setStatusMsg("⏳ AI가 실시간 원문을 문장별로 쪼개어 번역·어휘·문법 노트를 생성 중입니다...");
+
+    try {
+      // 한 번에 너무 긴 페이지 전체를 보내면 시간이 오래 걸리므로 앞부분 4500자 기준으로 정밀 분석
+      const targetChunk = rawText.slice(0, 4500);
+
+      const prompt = `
+당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.
+다음 웹페이지에서 실시간으로 읽어온 텍스트 중 메뉴/링크 등 불필요한 부분을 제외하고, 실제 네빌 고다드의 강의 본문 문장만 한 문장씩 순서대로 분리하여 JSON 배열로 반환하세요.
+
+규칙:
+1. 반복되는 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.
+2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적 맥락만 grammar에 설명하세요.
+3. 반드시 순수 JSON 배열만 출력하세요.
+
+형식:
+[
+  {
+    "en": "영어 원문 문장",
+    "ko": "자연스럽고 품격 있는 한글 번역",
+    "vocab": [{"word": "단어/숙어", "mean": "한글 뜻"}],
+    "grammar": [{"tag": "핵심 구문 포인트 제목", "desc": "직관적인 문법·구조 해설"}]
+  }
+]
+
+실시간 추출 원문:
+${targetChunk}
+      `.trim();
+
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey.trim()}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { responseMimeType: "application/json" }
+          })
+        }
+      );
+
+      const data = await res.json();
+      if (data.error) throw new Error(data.error.message);
+
+      const textOutput = data.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+      const parsed = JSON.parse(textOutput);
+
+      setSentences(parsed);
+      setStatusMsg(`🎉 총 ${parsed.length}개 문장을 실시간 분석하여 화면에 표시했습니다!`);
+    } catch (err) {
+      alert("AI 분석 오류: " + err.message);
+      setStatusMsg("");
+    } finally {
+      setAnalyzing(false);
+    }
   };
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 왼쪽 294개 강의 목록 */}
-      <aside className="w-full md:w-72 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 overflow-y-auto">
-        <h1 className="text-lg font-bold text-amber-400 mb-3">네빌 고다드 294 강의</h1>
-        <div className="space-y-1">
-          {LECTURE_LIST.map(lec => (
+      {/* 좌측: 실시간 연결된 6개 권(294개 강의) 선택 패널 */}
+      <aside className="w-full md:w-72 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
+        <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
+        <h1 className="text-lg font-bold mb-4">네빌 고다드 294 실시간 강독</h1>
+
+        <div className="text-xs text-slate-400 mb-2">실시간 원문 서버 선택 (Vol.1 ~ 6)</div>
+        <div className="space-y-2 mb-6">
+          {VOLUME_PAGES.map(v => (
             <button
-              key={lec.id}
-              onClick={() => setSelectedId(lec.id)}
-              className={`w-full text-left px-3 py-2 rounded text-sm ${
-                selectedId === lec.id ? "bg-amber-500 text-slate-900 font-bold" : "hover:bg-slate-800"
+              key={v.vol}
+              onClick={() => {
+                setTargetUrl(v.url);
+                setLectureTitle(`Vol.${v.vol} (${v.range})`);
+                handleFetchLiveSite(v.url);
+              }}
+              className={`w-full text-left px-3 py-2.5 rounded-lg text-xs font-semibold transition flex justify-between items-center ${
+                targetUrl === v.url ? "bg-amber-500 text-slate-900 font-bold" : "bg-slate-800 hover:bg-slate-700 text-slate-200"
               }`}
             >
-              #{String(lec.id).padStart(3, "0")} {lec.title}
+              <span>📚 제{v.vol}권 ({v.range})</span>
+              <span>실시간 읽기 ➔</span>
             </button>
           ))}
         </div>
+
+        <div className="text-xs text-slate-400 leading-relaxed border-t border-slate-800 pt-4">
+          💡 왼쪽의 권(Volume) 버튼을 누르거나 원하는 강의 웹페이지 주소를 입력하면, <b>파일을 따로 만들 필요 없이 실시간으로 사이트 내용을 읽어와</b> 영어 강독 노트로 변환합니다.
+        </div>
       </aside>
 
-      {/* 오른쪽 영어 학습 화면 */}
-      <main className="flex-1 p-6 max-w-4xl mx-auto">
-        <div className="flex justify-between items-center mb-6 pb-4 border-b">
-          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt" }} className="font-bold">
-            #{String(selectedId).padStart(3, "0")}. {LECTURE_LIST[selectedId - 1]?.title}
+      {/* 우측: 메인 학습 스튜디오 */}
+      <main className="flex-1 p-6 max-w-4xl mx-auto w-full">
+        {/* 1. Gemini API 키 입력창 */}
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
+          <span className="font-bold text-amber-900">🔑 Gemini API Key (1회 입력 시 자동 저장):</span>
+          <div className="flex gap-2 flex-1 max-w-md">
+            <input
+              type="password"
+              placeholder="여기에 무료 Gemini API Key 붙여넣기"
+              value={apiKey}
+              onChange={e => saveApiKey(e.target.value)}
+              className="w-full px-3 py-1.5 rounded border border-amber-300 bg-white"
+            />
+            <a
+              href="https://aistudio.google.com/app/apikey"
+              target="_blank"
+              rel="noreferrer"
+              className="shrink-0 px-3 py-1.5 bg-amber-600 text-white rounded font-bold"
+            >
+              무료 발급 ↗
+            </a>
+          </div>
+        </div>
+
+        {/* 2. 실시간 URL 읽어오기 컨트롤러 */}
+        <div className="bg-white border rounded-xl p-4 mb-6 shadow-sm">
+          <div className="text-xs font-bold text-slate-600 mb-2">
+            🌐 실시간으로 읽어올 네빌 고다드 강의 웹페이지 주소(URL):
+          </div>
+          <div className="flex flex-wrap gap-2 mb-3">
+            <input
+              type="text"
+              value={targetUrl}
+              onChange={e => setTargetUrl(e.target.value)}
+              className="flex-1 px-3 py-2 border rounded-lg text-sm"
+              placeholder="https://www.neville-goddard.com/..."
+            />
+            <button
+              onClick={() => handleFetchLiveSite(targetUrl)}
+              disabled={fetching}
+              className="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-bold hover:bg-slate-800 disabled:opacity-50"
+            >
+              {fetching ? "⏳ 사이트 읽는 중..." : "🌐 1. 사이트 실시간 읽어오기"}
+            </button>
+          </div>
+
+          <textarea
+            value={rawText}
+            onChange={e => setRawText(e.target.value)}
+            rows={4}
+            placeholder="위의 [1. 사이트 실시간 읽어오기] 버튼을 누르면 이곳에 웹사이트의 영어 원문이 자동으로 채워집니다! (분석하고 싶은 강의 구간만 남기고 지우셔도 됩니다)"
+            className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
+          />
+
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-bold text-blue-700">{statusMsg}</span>
+            <button
+              onClick={handleAnalyze}
+              disabled={analyzing}
+              className="px-5 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
+            >
+              {analyzing ? "⏳ AI가 강독 노트 생성 중..." : "⚡ 2. 읽어온 원문으로 강독 노트 자동 생성"}
+            </button>
+          </div>
+        </div>
+
+        {/* 3. 강의 제목 및 퀴즈 버튼 */}
+        <div className="flex justify-between items-center mb-6 pb-3 border-b">
+          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
+            {lectureTitle}
           </h2>
           <button
             onClick={() => setQuizMode(!quizMode)}
@@ -102,53 +274,54 @@ function App() {
           </button>
         </div>
 
-        {sentences.length === 0 ? (
-          <div className="p-8 bg-white rounded-xl border text-center text-stone-500">
-            아직 <code>lectures/{String(selectedId).padStart(3, "0")}.json</code> 파일이 업로드되지 않았습니다.
-          </div>
-        ) : (
-          <div className="space-y-6">
-            {sentences.map((s, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-xl border shadow-sm">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-xs font-bold text-slate-500">SENTENCE {idx + 1}</span>
-                  <button
-                    onClick={() => speak(s.en)}
-                    className="px-3 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold"
-                  >
-                    🔊 발음 듣기
-                  </button>
+        {/* 4. 문장별 강독 결과 카드 (Georgia 14pt, 줄간격 1.55, 글자색 #292929) */}
+        <div className="space-y-6">
+          {sentences.map((s, idx) => (
+            <div key={idx} className="bg-white p-6 rounded-xl border shadow-sm">
+              <div className="flex justify-between items-center mb-2 border-b pb-2">
+                <span style={{ fontFamily: "Georgia, serif", fontSize: "17pt", color: "#292929" }} className="font-bold">
+                  Sentence {String(idx + 1).padStart(2, "0")}
+                </span>
+                <button
+                  onClick={() => speak(s.en)}
+                  className="px-3 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
+                >
+                  🔊 발음 듣기
+                </button>
+              </div>
+
+              <p style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }} className="mb-3">
+                {s.en}
+              </p>
+
+              <p
+                style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}
+                className={`p-3 bg-stone-50 border-l-4 border-stone-800 rounded mb-4 ${quizMode ? "blur-sm hover:blur-none transition cursor-pointer" : ""}`}
+              >
+                {s.ko}
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-dashed" style={{ fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}>
+                <div>
+                  <div className="font-bold mb-1">[핵심 어휘 및 숙어]</div>
+                  <ul className="list-disc pl-5 space-y-1">
+                    {(s.vocab || []).map((v, i) => (
+                      <li key={i}><b>{v.word}</b> : {v.mean}</li>
+                    ))}
+                  </ul>
                 </div>
-
-                {/* 영문 (Georgia 14pt, 줄간격 1.55) */}
-                <p style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55" }} className="font-semibold mb-3">
-                  {s.en}
-                </p>
-
-                {/* 한글 해석 */}
-                <p className={`p-3 bg-slate-50 border-l-4 border-slate-700 rounded mb-4 ${quizMode ? "blur-sm hover:blur-none transition" : ""}`}>
-                  {s.ko}
-                </p>
-
-                {/* 핵심 단어 & 문법 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t text-sm">
-                  <div>
-                    <div className="font-bold text-xs text-slate-500 mb-1">[핵심 어휘]</div>
-                    {s.vocab.map((v, i) => (
-                      <div key={i}><b>{v.word}</b> : {v.mean}</div>
+                <div>
+                  <div className="font-bold mb-1">[구문 및 문법 해설]</div>
+                  <ul className="list-disc pl-5 space-y-1">
+                    {(s.grammar || []).map((g, i) => (
+                      <li key={i}><b>{g.tag}</b> — {g.desc}</li>
                     ))}
-                  </div>
-                  <div>
-                    <div className="font-bold text-xs text-slate-500 mb-1">[구문 포인트]</div>
-                    {s.grammar.map((g, i) => (
-                      <div key={i}><b className="text-blue-800">{g.tag}</b> — {g.desc}</div>
-                    ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
-            ))}
-          </div>
-        )}
+            </div>
+          ))}
+        </div>
       </main>
     </div>
   );
