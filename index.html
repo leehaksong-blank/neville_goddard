@@ -4,12 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>네빌 고다드 294 강의 실시간 강독 스튜디오</title>
-  <!-- 1. 디자인 도구(Tailwind) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- 2. React 엔진 -->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <!-- 3. JSX 번역기(Babel) -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body class="bg-[#faf9f5] text-[#292929]">
@@ -17,36 +14,34 @@
     <div style="padding:24px;color:#475569;font-weight:bold;">⏳ 강독 스튜디오를 불러오는 중입니다...</div>
   </div>
 
-  <!-- 4. import 에러를 원천 차단하는 순수 JSX 스크립트 주입 로더 (v3.0) -->
   <script>
-    (async function loadStudio() {
+    // 화면이 멈출 때 무슨 에러인지 즉시 화면에 빨간 글씨로 보여주는 감시기
+    window.onerror = function(msg, url, lineNo) {
+      document.getElementById('root').innerHTML =
+        '<div style="padding:24px;color:#b91c1c;background:#fef2f2;border:2px solid #ef4444;margin:20px;border-radius:8px;font-weight:bold;">' +
+        '🚨 실행 오류 발견: ' + msg + ' (줄 번호: ' + lineNo + ')' +
+        '</div>';
+    };
+
+    (async function() {
       try {
-        const res = await fetch('./app.jsx?v=' + Date.now(), { cache: 'no-store' });
-        if (!res.ok) throw new Error('app.jsx 파일을 찾을 수 없습니다 (HTTP ' + res.status + ')');
-        let rawCode = await res.text();
+        const res = await fetch('./app.jsx?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('깃허브에 app.jsx 파일이 없거나 이름이 다릅니다 (HTTP ' + res.status + ')');
+        const code = await res.text();
 
-        // 혹시 남아있을지 모를 import / export 문장 완전 제거
-        rawCode = rawCode
-          .replace(/^\s*import\s+[\s\S]*?from\s+['"][^'"]+['"];?\s*$/gm, '')
-          .replace(/^\s*import\s+['"][^'"]+['"];?\s*$/gm, '')
-          .replace(/^\s*export\s+default\s+/gm, '')
-          .replace(/^\s*export\s+/gm, '');
+        // 혹시 사용자가 app.jsx 안에 HTML 태그(<script> 등)를 같이 복사해 넣었을 경우 자동 제거
+        const cleanCode = code
+          .replace(/<!DOCTYPE[\s\S]*?<script[^>]*>/i, '')
+          .replace(/<\/script>[\s\S]*$/i, '');
 
-        // 주의: 'env' 프리셋을 빼고 오직 'react'(JSX 태그)만 변환해야 import 문이 생성되지 않습니다!
-        const compiled = Babel.transform(rawCode, {
-          presets: ['react'],
-          sourceType: 'script'
-        }).code;
-
-        // new Function 대신 표준 script 태그로 주입하여 실행
-        const scriptEl = document.createElement('script');
-        scriptEl.type = 'text/javascript';
-        scriptEl.text = compiled;
-        document.body.appendChild(scriptEl);
+        const compiled = Babel.transform(cleanCode, { presets: ['react'] }).code;
+        const s = document.createElement('script');
+        s.text = compiled;
+        document.body.appendChild(s);
       } catch (err) {
         document.getElementById('root').innerHTML =
-          '<div style="padding:24px;color:#b91c1c;font-weight:bold;background:#fef2f2;border:1px solid #f87171;margin:20px;border-radius:8px;">' +
-          '⚠️ 로딩 오류 (v3.0): ' + err.message +
+          '<div style="padding:24px;color:#b91c1c;background:#fef2f2;border:2px solid #ef4444;margin:20px;border-radius:8px;font-weight:bold;">' +
+          '⚠️ 변환 오류: ' + err.message +
           '</div>';
       }
     })();
