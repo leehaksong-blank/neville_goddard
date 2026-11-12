@@ -27,17 +27,15 @@ const INITIAL_LECTURE = [
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// ★ 핵심 안전장치: 만약 JSON이 너무 길어 끝이 잘리거나 따옴표 오류가 나도 자동으로 복구하는 파서
+// JSON 잘림 및 따옴표 오류 자동 복구 파서
 const safeParseJSON = (rawStr) => {
   if (!rawStr) return [];
   let text = rawStr.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
 
-  // 1차: 정상 파싱 시도
   try {
     const parsed = JSON.parse(text);
     return Array.isArray(parsed) ? parsed : [];
   } catch (e1) {
-    // 2차: 배열 시작점([)과 마지막으로 정상 닫힌 객체(})를 찾아 잘린 뒷부분을 버리고 복구
     const firstBracket = text.indexOf("[");
     if (firstBracket !== -1) {
       let cutText = text.slice(firstBracket);
@@ -52,9 +50,7 @@ const safeParseJSON = (rawStr) => {
           if (Array.isArray(recovered) && recovered.length > 0) {
             return recovered;
           }
-        } catch (e2) {
-          // 계속 이전 닫는 괄호(}) 탐색
-        }
+        } catch (e2) {}
         searchPos = lastBrace;
       }
     }
@@ -65,6 +61,9 @@ const safeParseJSON = (rawStr) => {
 function App() {
   const [openVol, setOpenVol] = useState(null);
   const [loadingVol, setLoadingVol] = useState(false);
+
+  // 기본 모델을 gemini-2.5-pro로 설정 (원할 때 화면에서 변경 가능)
+  const [selectedModel, setSelectedModel] = useState("gemini-2.5-pro");
 
   const [volLectures, setVolLectures] = useState(() => {
     try {
@@ -121,7 +120,6 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // A4 PDF 다운로드(인쇄) 함수
   const handleDownloadPdf = () => {
     if (sentences.length === 0) {
       alert("저장할 강독 노트가 없습니다. 먼저 강독 노트를 생성해 주세요.");
@@ -219,7 +217,7 @@ function App() {
       cleanBody = lines.join("\n\n");
 
       setRawText(cleanBody.trim());
-      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. 강독 노트 생성]을 눌러주세요.");
+      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. Pro 강독 노트 생성]을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
@@ -228,15 +226,12 @@ function App() {
     }
   };
 
-  // ★ 엄격한 JSON 스키마(responseSchema) + 4단계 서버 우회 + 자동 JSON 복구
+  // ★ Pro 1순위 실행 + 과부하 시 자동 백업 + 65536 최대 토큰 확장
   const callGeminiWithFallback = async (promptText, chunkIdx, totalChunks) => {
-    const models = [
-      "gemini-2.5-flash-lite",
-      "gemini-2.5-flash",
-      "gemini-2.0-flash"
-    ];
+    const models = selectedModel === "gemini-2.5-pro"
+      ? ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.5-flash-lite"]
+      : ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.5-flash-lite"];
 
-    // 구글 AI 엔진이 따옴표 실수를 절대 하지 않도록 강제하는 공식 스키마
     const strictSchema = {
       type: "ARRAY",
       items: {
@@ -275,12 +270,10 @@ function App() {
       for (let m = 0; m < models.length; m++) {
         const modelName = models[m];
         try {
-          if (attempt > 1 || m > 0) {
-            setStatusMsg(
-              "🔄 [" + modelName + "] 서버로 안전 분석 중... (" +
-              (chunkIdx + 1) + "/" + totalChunks + " 구간, 시도 " + attempt + ")"
-            );
-          }
+          setStatusMsg(
+            "👑 [" + modelName + "] 정밀 분석 중... (" +
+            (chunkIdx + 1) + "/" + totalChunks + " 구간" + (attempt > 1 ? ", 재시도 " + attempt : "") + ")"
+          );
 
           const res = await fetch(
             "https://generativelanguage.googleapis.com/v1beta/models/" + modelName + ":generateContent?key=" + apiKey.trim(),
@@ -292,7 +285,7 @@ function App() {
                 generationConfig: {
                   responseMimeType: "application/json",
                   responseSchema: strictSchema,
-                  maxOutputTokens: 8192,
+                  maxOutputTokens: 65536,
                   temperature: 0.2
                 }
               })
@@ -320,7 +313,6 @@ function App() {
           const textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
           return safeParseJSON(textOutput);
         } catch (err) {
-          // JSON 문법 에러나 네트워크 에러가 나도 다음 모델로 즉시 재시도!
           if (m === models.length - 1 && attempt === 3) {
             throw err;
           }
@@ -334,7 +326,7 @@ function App() {
 
   const handleAnalyze = async () => {
     if (!apiKey.trim()) {
-      alert("상단 노란색 칸에 무료 Gemini API Key를 먼저 입력해 주세요!");
+      alert("상단 노란색 칸에 Gemini API Key를 먼저 입력해 주세요!");
       return;
     }
     if (!rawText.trim()) {
@@ -345,14 +337,14 @@ function App() {
     setAnalyzing(true);
 
     try {
-      // ★ 토큰 초과로 JSON이 잘리지 않도록 1구간 크기를 1500자 단위로 촘촘하게 분할
+      // Pro 모델이 깊고 정밀하게 분석하고 JSON이 절대 잘리지 않도록 1800자 단위로 분할
       const paragraphs = rawText.split("\n\n");
       const chunks = [];
       let currentChunk = "";
 
       for (let i = 0; i < paragraphs.length; i++) {
         const p = paragraphs[i];
-        if ((currentChunk + "\n\n" + p).length > 1500 && currentChunk.length > 0) {
+        if ((currentChunk + "\n\n" + p).length > 1800 && currentChunk.length > 0) {
           chunks.push(currentChunk.trim());
           currentChunk = p;
         } else {
@@ -367,14 +359,12 @@ function App() {
       }
 
       for (let i = resumeChunkIdx; i < chunks.length; i++) {
-        setStatusMsg("⏳ 전체 " + chunks.length + "구간 중 [" + (i + 1) + "/" + chunks.length + " 구간] 분석 중... (현재 " + allParsedSentences.length + "문장 완료)");
-
         const prompt = [
           "당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.",
-          "아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 순서대로 분리하여 JSON 배열로 반환하세요.",
+          "아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.",
           "규칙:",
           "1. 반복 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.",
-          "2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적 맥락만 grammar에 간결하게 설명하세요.",
+          "2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적·신비주의적 맥락을 깊이 있게 grammar에 설명하세요.",
           "3. 설명 안에 큰따옴표(\") 대신 작은따옴표(')를 사용하여 JSON 문법 오류를 방지하세요.",
           "강의 본문:",
           chunks[i]
@@ -391,15 +381,15 @@ function App() {
         }));
 
         if (i < chunks.length - 1) {
-          await sleep(1200);
+          await sleep(1000);
         }
       }
 
       setResumeChunkIdx(0);
-      setStatusMsg("🎉 강의 끝까지 총 " + allParsedSentences.length + "개 문장 전체의 강독 노트가 완성되었습니다!");
+      setStatusMsg("🎉 [Gemini 2.5 Pro] 총 " + allParsedSentences.length + "개 문장 전체의 최고급 강독 노트가 완성되었습니다!");
     } catch (err) {
       alert("분석 중 일시 정지: " + err.message);
-      setStatusMsg("⚠️ 현재까지 완료된 문장은 모두 저장되었습니다! [⚡ 2. 이어서 강독 노트 생성]을 누르면 남은 부분부터 계속됩니다.");
+      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다! [⚡ 2. 이어서 강독 노트 생성]을 누르면 남은 부분부터 계속됩니다.");
     } finally {
       setAnalyzing(false);
     }
@@ -408,7 +398,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
-        <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Live Web Crawler</div>
+        <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Pro Studio</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
         <div className="text-xs text-slate-400 mb-2">권(Volume)을 클릭하면 50개 강의 목록이 펼쳐집니다:</div>
 
@@ -468,12 +458,23 @@ function App() {
       </aside>
 
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
+        {/* 상단 Pro API 키 및 모델 선택 바 */}
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
-          <span className="font-bold text-amber-900">🔑 Gemini API Key (1회 입력 시 자동 저장):</span>
+          <div className="flex items-center gap-2">
+            <span className="font-bold text-amber-900">👑 AI 엔진 선택:</span>
+            <select
+              value={selectedModel}
+              onChange={e => setSelectedModel(e.target.value)}
+              className="px-2.5 py-1.5 rounded border border-amber-400 bg-white font-bold text-slate-900"
+            >
+              <option value="gemini-2.5-pro">Gemini 2.5 Pro (최고급 정밀 번역·해설)</option>
+              <option value="gemini-2.5-flash">Gemini 2.5 Flash (초고속 표준 분석)</option>
+            </select>
+          </div>
           <div className="flex gap-2 flex-1 max-w-md">
             <input
               type="password"
-              placeholder="여기에 무료 Gemini API Key 붙여넣기"
+              placeholder="Gemini API Key 입력 (자동 저장)"
               value={apiKey}
               onChange={e => saveApiKey(e.target.value)}
               className="w-full px-3 py-1.5 rounded border border-amber-300 bg-white"
@@ -484,7 +485,7 @@ function App() {
               rel="noreferrer"
               className="shrink-0 px-3 py-1.5 bg-amber-600 text-white rounded font-bold"
             >
-              무료 발급 ↗
+              API 키 관리 ↗
             </a>
           </div>
         </div>
@@ -529,10 +530,10 @@ function App() {
                 className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
               >
                 {analyzing
-                  ? "⏳ 전체 구간 안전 분석 중..."
+                  ? "⏳ Pro 엔진 정밀 분석 중..."
                   : resumeChunkIdx > 0
-                  ? "⚡ 2. 이어서 강독 노트 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
-                  : "⚡ 2. 강독 노트 생성 (JSON 오류 방지 탑재)"}
+                  ? "⚡ 2. 이어서 Pro 강독 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
+                  : "⚡ 2. Pro 강독 노트 생성"}
               </button>
               <button
                 onClick={handleDownloadPdf}
