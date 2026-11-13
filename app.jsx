@@ -62,8 +62,8 @@ function App() {
   const [openVol, setOpenVol] = useState(null);
   const [loadingVol, setLoadingVol] = useState(false);
 
-  // 기본 모드를 Pro 우선 모드로 설정
-  const [selectedTier, setSelectedTier] = useState("pro");
+  // 기본 모델을 gemini-2.5-pro로 설정 (원할 때 화면에서 변경 가능)
+  const [selectedModel, setSelectedModel] = useState("gemini-2.5-pro");
 
   const [volLectures, setVolLectures] = useState(() => {
     try {
@@ -88,6 +88,8 @@ function App() {
   const [resumeChunkIdx, setResumeChunkIdx] = useState(0);
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
+
+  // 1. store 초기화 (내 브라우저 localStorage 불러오기)
   const [store, setStore] = useState(() => {
     try {
       const saved = localStorage.getItem("neville_vol_accordion_store");
@@ -96,6 +98,18 @@ function App() {
       return { "A Divine Event": INITIAL_LECTURE };
     }
   });
+
+  // 깃허브 저장소에 올려둔 공용 데이터(neville_data.json)가 있으면 자동 병합
+  useEffect(() => {
+    fetch("./neville_data.json?t=" + Date.now())
+      .then(res => (res.ok ? res.json() : {}))
+      .then(publicData => {
+        if (publicData && typeof publicData === "object") {
+          setStore(prev => ({ ...publicData, ...prev }));
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     try { localStorage.setItem("neville_vol_menus", JSON.stringify(volLectures)); } catch (e) {}
@@ -108,6 +122,36 @@ function App() {
   const saveApiKey = (val) => {
     setApiKey(val);
     localStorage.setItem("gemini_api_key", val);
+  };
+
+  // 전체 번역 데이터를 JSON 파일(neville_data.json)로 내려받기
+  const handleExportAllJson = () => {
+    const jsonString = JSON.stringify(store, null, 2);
+    const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "neville_data.json";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  // 다른 PC에서 백업한 JSON 파일 불러오기
+  const handleImportAllJson = (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const imported = JSON.parse(event.target.result);
+        setStore(prev => ({ ...prev, ...imported }));
+        alert("✅ 모든 번역 노트가 성공적으로 복원되었습니다!");
+      } catch (err) {
+        alert("올바른 JSON 파일이 아닙니다.");
+      }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
   };
 
   const sentences = store[selectedLec.title] || [];
@@ -217,7 +261,7 @@ function App() {
       cleanBody = lines.join("\n\n");
 
       setRawText(cleanBody.trim());
-      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. 강독 노트 생성]을 눌러주세요.");
+      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. Pro 강독 노트 생성]을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
@@ -226,22 +270,11 @@ function App() {
     }
   };
 
-  // ★ 핵심 수정: 최신 3.5 모델 반영 (gemini-2.5-flash-lite 완전 제거 및 모든 모델 에러 자동 우회)
+  // Pro 1순위 실행 + 과부하 시 자동 백업 + 65536 최대 토큰 확장
   const callGeminiWithFallback = async (promptText, chunkIdx, totalChunks) => {
-    const models = selectedTier === "pro"
-      ? [
-          "gemini-2.5-pro",
-          "gemini-3.5-pro",
-          "gemini-3.5-flash",
-          "gemini-2.5-flash",
-          "gemini-3.5-flash-lite"
-        ]
-      : [
-          "gemini-3.5-flash",
-          "gemini-2.5-flash",
-          "gemini-3.5-flash-lite",
-          "gemini-2.5-pro"
-        ];
+    const models = selectedModel === "gemini-2.5-pro"
+      ? ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.5-flash-lite"]
+      : ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.5-flash-lite"];
 
     const strictSchema = {
       type: "ARRAY",
@@ -277,8 +310,6 @@ function App() {
       }
     };
 
-    let lastErrorMsg = "";
-
     for (let attempt = 1; attempt <= 3; attempt++) {
       for (let m = 0; m < models.length; m++) {
         const modelName = models[m];
@@ -308,32 +339,33 @@ function App() {
           const data = await res.json();
 
           if (data.error) {
-            lastErrorMsg = data.error.message || "알 수 없는 오류";
-            const msg = lastErrorMsg.toLowerCase();
-
-            // API 키 자체가 잘못된 경우에만 즉시 중단하고 안내
-            if (msg.indexOf("api key not valid") !== -1 || msg.indexOf("api_key_invalid") !== -1) {
-              throw new Error("입력하신 Gemini API Key가 올바르지 않습니다. 다시 확인해 주세요.");
+            const msg = (data.error.message || "").toLowerCase();
+            if (
+              msg.indexOf("demand") !== -1 ||
+              msg.indexOf("overloaded") !== -1 ||
+              msg.indexOf("quota") !== -1 ||
+              msg.indexOf("unavailable") !== -1 ||
+              res.status === 503 ||
+              res.status === 429
+            ) {
+              await sleep(2000);
+              continue;
             }
-
-            // 그 외 모든 모델 에러(지원 종료, 과부하, 할당량 초과, 404 등)는 멈추지 않고 즉시 다음 모델로 자동 전환!
-            await sleep(1000);
-            continue;
+            throw new Error(data.error.message);
           }
 
           const textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
           return safeParseJSON(textOutput);
         } catch (err) {
-          lastErrorMsg = err.message;
-          if (err.message.indexOf("API Key가 올바르지 않습니다") !== -1) {
+          if (m === models.length - 1 && attempt === 3) {
             throw err;
           }
-          await sleep(1000);
+          await sleep(1500);
         }
       }
-      await sleep(2500);
+      await sleep(3000);
     }
-    throw new Error(lastErrorMsg || "서버 응답이 지연되고 있습니다. 다시 버튼을 누르시면 이어서 진행됩니다.");
+    throw new Error("서버 응답이 지연되고 있습니다. 다시 버튼을 누르시면 이어서 진행됩니다.");
   };
 
   const handleAnalyze = async () => {
@@ -397,10 +429,10 @@ function App() {
       }
 
       setResumeChunkIdx(0);
-      setStatusMsg("🎉 총 " + allParsedSentences.length + "개 문장 전체의 최고급 강독 노트가 완성되었습니다!");
+      setStatusMsg("🎉 [Gemini 2.5 Pro] 총 " + allParsedSentences.length + "개 문장 전체의 최고급 강독 노트가 완성되었습니다!");
     } catch (err) {
       alert("분석 중 일시 정지: " + err.message);
-      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다! [⚡ 2. 이어서 강독 생성]을 누르면 남은 부분부터 계속됩니다.");
+      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다! [⚡ 2. 이어서 강독 노트 생성]을 누르면 남은 부분부터 계속됩니다.");
     } finally {
       setAnalyzing(false);
     }
@@ -408,6 +440,35 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
+      {/* PDF 저장(인쇄) 전용 A4 레이아웃 스타일 */}
+      <style>{`
+        @media print {
+          @page {
+            size: A4;
+            margin: 15mm 14mm;
+          }
+          body {
+            background-color: #ffffff !important;
+          }
+          .no-print {
+            display: none !important;
+          }
+          .print-container {
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+          }
+          .print-card {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            box-shadow: none !important;
+            border: 1px solid #cbd5e1 !important;
+            margin-bottom: 14px !important;
+          }
+        }
+      `}</style>
+
+      {/* 왼쪽 사이드바 */}
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Pro Studio</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
@@ -468,17 +529,19 @@ function App() {
         </div>
       </aside>
 
+      {/* 오른쪽 메인 영역 */}
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
+        {/* 상단 Pro API 키 및 모델 선택 바 */}
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <div className="flex items-center gap-2">
-            <span className="font-bold text-amber-900">👑 AI 엔진 우선순위:</span>
+            <span className="font-bold text-amber-900">👑 AI 엔진 선택:</span>
             <select
-              value={selectedTier}
-              onChange={e => setSelectedTier(e.target.value)}
+              value={selectedModel}
+              onChange={e => setSelectedModel(e.target.value)}
               className="px-2.5 py-1.5 rounded border border-amber-400 bg-white font-bold text-slate-900"
             >
-              <option value="pro">Pro 최우선 (2.5 Pro / 3.5 Pro ➔ 3.5 Flash)</option>
-              <option value="flash">Flash 최우선 (3.5 Flash / 2.5 Flash ➔ 3.5 Lite)</option>
+              <option value="gemini-2.5-pro">Gemini 2.5 Pro (최고급 정밀 번역·해설)</option>
+              <option value="gemini-2.5-flash">Gemini 2.5 Flash (초고속 표준 분석)</option>
             </select>
           </div>
           <div className="flex gap-2 flex-1 max-w-md">
@@ -500,6 +563,7 @@ function App() {
           </div>
         </div>
 
+        {/* 크롤링 및 분석 컨트롤러 */}
         <div className="no-print bg-white border rounded-xl p-4 mb-6 shadow-sm">
           <div className="text-xs font-bold text-slate-600 mb-2">
             🌐 선택된 강의의 실제 웹페이지 주소(URL):
@@ -540,10 +604,10 @@ function App() {
                 className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
               >
                 {analyzing
-                  ? "⏳ 정밀 분석 중..."
+                  ? "⏳ Pro 엔진 정밀 분석 중..."
                   : resumeChunkIdx > 0
-                  ? "⚡ 2. 이어서 강독 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
-                  : "⚡ 2. 강독 노트 생성 (3.5/Pro 호환)"}
+                  ? "⚡ 2. 이어서 Pro 강독 생성 (" + (resumeChunkIdx + 1) + "구간부터)"
+                  : "⚡ 2. Pro 강독 노트 생성"}
               </button>
               <button
                 onClick={handleDownloadPdf}
@@ -555,26 +619,38 @@ function App() {
           </div>
         </div>
 
+        {/* 2. 강의 제목 및 기능 버튼 바 (JSON 백업/불러오기 추가됨) */}
         <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
             {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
           </h2>
-          <div className="no-print flex gap-2">
+          <div className="no-print flex flex-wrap gap-2">
+            <button
+              onClick={handleExportAllJson}
+              className="px-3 py-2 rounded bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-sm"
+            >
+              💾 전체 JSON 백업
+            </button>
+            <label className="px-3 py-2 rounded bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-bold cursor-pointer shadow-sm">
+              📂 JSON 불러오기
+              <input type="file" accept=".json" onChange={handleImportAllJson} className="hidden" />
+            </label>
             <button
               onClick={handleDownloadPdf}
-              className="px-4 py-2 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shadow-sm"
+              className="px-3 py-2 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shadow-sm"
             >
               📄 PDF 다운로드
             </button>
             <button
               onClick={() => setQuizMode(!quizMode)}
-              className="px-4 py-2 rounded bg-slate-800 text-white text-xs font-bold"
+              className="px-3 py-2 rounded bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold"
             >
               {quizMode ? "🙈 해석 보이기" : "🙈 해석 가리기 연습"}
             </button>
           </div>
         </div>
 
+        {/* 문장별 강독 카드 목록 */}
         <div className="space-y-6">
           {sentences.map((s, idx) => (
             <div key={idx} className="print-card bg-white p-6 rounded-xl border shadow-sm">
