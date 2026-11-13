@@ -31,24 +31,6 @@
 <body class="bg-[#faf9f5] text-[#292929]">
   <div id="root"></div>
 
-  <script>
-    fetch('./app.jsx?t=' + Date.now(), { cache: 'no-store' })
-      .then(res => {
-        if (!res.ok) throw new Error('app.jsx 파일을 찾을 수 없습니다.');
-        return res.text();
-      })
-      .then(code => {
-        const compiled = Babel.transform(code, { presets: ['react'] }).code;
-        const s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.text = compiled;
-        document.body.appendChild(s);
-      })
-      .catch(err => {
-        // 혹시 에러가 나면 백지 화면 대신 원인을 빨간 글씨로 친절하게 표시
-        document.getElementById('root').innerHTML =
-          '<div style="padding:24px;color:#b91c1c;font-weight:bold;">로딩 오류: ' + err.message + '</div>';
-      });
-  </script>
+  <script type="text/babel" src="./app.jsx?v=json2"></script>
 </body>
 </html>
