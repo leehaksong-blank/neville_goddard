@@ -78,7 +78,7 @@ const safeParseJSON = (rawStr) => {
 
 function App() {
   const [openBooksMenu, setOpenBooksMenu] = useState(false);
-  const [openVol, setOpenVol] = useState(1);
+  const [openVol, setOpenVol] = useState(false);
   const [loadingVol, setLoadingVol] = useState(false);
   const [loadedFiles, setLoadedFiles] = useState({});
 
