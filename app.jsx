@@ -59,8 +59,9 @@ const safeParseJSON = (rawStr) => {
 };
 
 function App() {
-  const [openVol, setOpenVol] = useState(null);
+  const [openVol, setOpenVol] = useState(1);
   const [loadingVol, setLoadingVol] = useState(false);
+  const [loadedVolJsons, setLoadedVolJsons] = useState({});
 
   // 기본 모드를 Pro 우선 모드로 설정
   const [selectedTier, setSelectedTier] = useState("pro");
@@ -99,24 +100,45 @@ function App() {
     }
   });
 
-  // 2. 깃허브 저장소의 공용 데이터(neville_data.json) 자동 병합 (문장 수가 더 많은 쪽 우선 적용)
+  // 공용 JSON 데이터를 store에 스마트 병합하는 공통 함수 (문장 수가 더 많은 쪽 우선)
+  const mergePublicDataToStore = (publicData) => {
+    if (!publicData || typeof publicData !== "object") return;
+    setStore(prev => {
+      const merged = { ...prev };
+      Object.keys(publicData).forEach(key => {
+        const pubArr = Array.isArray(publicData[key]) ? publicData[key] : [];
+        const locArr = Array.isArray(prev[key]) ? prev[key] : [];
+        merged[key] = pubArr.length >= locArr.length ? pubArr : locArr;
+      });
+      return merged;
+    });
+  };
+
+  // 권별 JSON 파일(vol1.json ~ vol6.json)을 깃허브에서 불러오는 함수
+  const loadVolumeJson = async (volNum) => {
+    if (loadedVolJsons[volNum]) return;
+    try {
+      const res = await fetch("./vol" + volNum + ".json?t=" + Date.now(), { cache: "no-store" });
+      if (res.ok) {
+        const data = await res.json();
+        mergePublicDataToStore(data);
+        setLoadedVolJsons(prev => ({ ...prev, [volNum]: true }));
+      }
+    } catch (e) {}
+  };
+
+  // 2. 앱 최초 실행 시: neville_data.json(기존 통합본)과 vol1.json(1권 분리본)을 모두 확인하여 자동 병합
   useEffect(() => {
     fetch("./neville_data.json?t=" + Date.now(), { cache: "no-store" })
-      .then(res => (res.ok ? res.json() : {}))
-      .then(publicData => {
-        if (publicData && typeof publicData === "object") {
-          setStore(prev => {
-            const merged = { ...prev };
-            Object.keys(publicData).forEach(key => {
-              const pubArr = publicData[key] || [];
-              const locArr = prev[key] || [];
-              merged[key] = pubArr.length >= locArr.length ? pubArr : locArr;
-            });
-            return merged;
-          });
-        }
-      })
+      .then(res => (res.ok ? res.json() : null))
+      .then(data => { if (data) mergePublicDataToStore(data); })
       .catch(() => {});
+
+    loadVolumeJson(1);
+    // 첫 실행 시 제1권 강의 목차도 아직 없으면 자동 로드
+    if (!volLectures[1] || volLectures[1].length === 0) {
+      fetchVolumeIndexList(VOLUMES[0]);
+    }
   }, []);
 
   useEffect(() => {
@@ -132,7 +154,40 @@ function App() {
     localStorage.setItem("gemini_api_key", val);
   };
 
-  // 3. 전체 번역 데이터를 JSON 파일(neville_data.json)로 내려받기
+  // 현재 선택된 강의가 속한 권(Volume 1~6) 번호 계산
+  const currentVolNum = openVol || Math.min(6, Math.max(1, Math.ceil((selectedLec.num || 1) / 50)));
+
+  // 3-A. 현재 권(Volume)의 번역 데이터만 골라서 vol1.json ~ vol6.json 파일로 내려받기
+  const handleExportVolJson = () => {
+    const subList = volLectures[currentVolNum] || [];
+    let exportObj = {};
+
+    if (subList.length > 0) {
+      subList.forEach(lec => {
+        if (store[lec.title] && store[lec.title].length > 0) {
+          exportObj[lec.title] = store[lec.title];
+        }
+      });
+    } else {
+      exportObj = store;
+    }
+
+    if (Object.keys(exportObj).length === 0) {
+      exportObj = store;
+    }
+
+    const fileName = "vol" + currentVolNum + ".json";
+    const jsonString = JSON.stringify(exportObj, null, 2);
+    const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  // 3-B. 전체 번역 데이터를 통합 파일(neville_data.json)로 내려받기
   const handleExportAllJson = () => {
     const jsonString = JSON.stringify(store, null, 2);
     const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
@@ -144,7 +199,7 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
-  // 4. 다른 PC에서 백업한 JSON 파일 불러오기
+  // 4. 백업한 JSON 파일(vol1.json 또는 neville_data.json) 불러오기
   const handleImportAllJson = (e) => {
     const file = e.target.files && e.target.files[0];
     if (!file) return;
@@ -152,8 +207,8 @@ function App() {
     reader.onload = (event) => {
       try {
         const imported = JSON.parse(event.target.result);
-        setStore(prev => ({ ...prev, ...imported }));
-        alert("✅ 모든 번역 노트가 성공적으로 복원되었습니다!");
+        mergePublicDataToStore(imported);
+        alert("✅ [" + file.name + "] 번역 노트가 성공적으로 복원·병합되었습니다!");
       } catch (err) {
         alert("올바른 JSON 파일이 아닙니다.");
       }
@@ -189,6 +244,51 @@ function App() {
     }, 150);
   };
 
+  // 권별 50개 강의 목차 크롤링 함수
+  const fetchVolumeIndexList = async (volObj) => {
+    setLoadingVol(true);
+    try {
+      const res = await fetch("https://r.jina.ai/" + volObj.indexUrl);
+      const text = await res.text();
+      const lines = text.split("\n");
+      const list = [];
+      const seen = {};
+      let startNum = (volObj.vol - 1) * 50 + 1;
+
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        const openBracket = line.indexOf("[");
+        const closeBracket = line.indexOf("](http");
+        if (openBracket !== -1 && closeBracket !== -1) {
+          const title = line.slice(openBracket + 1, closeBracket).trim();
+          const rest = line.slice(closeBracket + 2);
+          const endUrl = rest.search(/[\s)"]/);
+          const rawUrl = (endUrl !== -1 ? rest.slice(0, endUrl) : rest).trim();
+          const url = rawUrl.replace("http://", "https://");
+
+          if (
+            (url.indexOf("/neville-goddard-lectures/") !== -1 || url.indexOf("/neville-goddard-books/") !== -1) &&
+            url.indexOf("read-neville-goddard-lectures-on-line") === -1 &&
+            title !== "Neville Goddard Original" &&
+            title !== "Neville Goddard Lectures" &&
+            title !== "Neville Goddard Books + Audio" &&
+            title !== "Read Here" &&
+            !seen[url]
+          ) {
+            seen[url] = true;
+            list.push({ num: startNum++, title: title, url: url });
+          }
+        }
+      }
+      setVolLectures(prev => ({ ...prev, [volObj.vol]: list }));
+    } catch (e) {
+      alert("강의 목록 불러오기 오류: " + e.message);
+    } finally {
+      setLoadingVol(false);
+    }
+  };
+
+  // 왼쪽 사이드바에서 제1권~제6권 펼치기 클릭 시: 해당 권의 JSON(vol1.json~vol6.json)도 자동 로드!
   const handleToggleVolume = async (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
@@ -196,47 +296,11 @@ function App() {
     }
     setOpenVol(volObj.vol);
 
+    // 해당 권의 공용 JSON 파일(예: vol1.json, vol2.json...) 자동 불러오기
+    loadVolumeJson(volObj.vol);
+
     if (!volLectures[volObj.vol] || volLectures[volObj.vol].length === 0) {
-      setLoadingVol(true);
-      try {
-        const res = await fetch("https://r.jina.ai/" + volObj.indexUrl);
-        const text = await res.text();
-        const lines = text.split("\n");
-        const list = [];
-        const seen = {};
-        let startNum = (volObj.vol - 1) * 50 + 1;
-
-        for (let i = 0; i < lines.length; i++) {
-          const line = lines[i];
-          const openBracket = line.indexOf("[");
-          const closeBracket = line.indexOf("](http");
-          if (openBracket !== -1 && closeBracket !== -1) {
-            const title = line.slice(openBracket + 1, closeBracket).trim();
-            const rest = line.slice(closeBracket + 2);
-            const endUrl = rest.search(/[\s)"]/);
-            const rawUrl = (endUrl !== -1 ? rest.slice(0, endUrl) : rest).trim();
-            const url = rawUrl.replace("http://", "https://");
-
-            if (
-              (url.indexOf("/neville-goddard-lectures/") !== -1 || url.indexOf("/neville-goddard-books/") !== -1) &&
-              url.indexOf("read-neville-goddard-lectures-on-line") === -1 &&
-              title !== "Neville Goddard Original" &&
-              title !== "Neville Goddard Lectures" &&
-              title !== "Neville Goddard Books + Audio" &&
-              title !== "Read Here" &&
-              !seen[url]
-            ) {
-              seen[url] = true;
-              list.push({ num: startNum++, title: title, url: url });
-            }
-          }
-        }
-        setVolLectures(prev => ({ ...prev, [volObj.vol]: list }));
-      } catch (e) {
-        alert("강의 목록 불러오기 오류: " + e.message);
-      } finally {
-        setLoadingVol(false);
-      }
+      await fetchVolumeIndexList(volObj);
     }
   };
 
@@ -278,7 +342,6 @@ function App() {
     }
   };
 
-  // 최신 3.5 모델 반영 및 모든 모델 에러 자동 우회
   const callGeminiWithFallback = async (promptText, chunkIdx, totalChunks) => {
     const models = selectedTier === "pro"
       ? [
@@ -461,7 +524,7 @@ function App() {
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Pro Studio</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
-        <div className="text-xs text-slate-400 mb-2">권(Volume)을 클릭하면 50개 강의 목록이 펼쳐집니다:</div>
+        <div className="text-xs text-slate-400 mb-2">권(Volume)을 클릭하면 50개 목록과 권별 JSON이 로드됩니다:</div>
 
         <div className="flex-1 overflow-y-auto space-y-2 pr-1">
           {VOLUMES.map(v => {
@@ -605,17 +668,25 @@ function App() {
           </div>
         </div>
 
-        {/* 강의 제목 및 JSON 백업/불러오기/PDF/퀴즈 버튼 */}
+        {/* 강의 제목 및 권별/전체 JSON 백업·불러오기·PDF·퀴즈 버튼 */}
         <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
           <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
             {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
           </h2>
           <div className="no-print flex flex-wrap gap-2">
             <button
-              onClick={handleExportAllJson}
+              onClick={handleExportVolJson}
               className="px-3 py-2 rounded bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-sm"
+              title="현재 열려 있는 권의 강의만 vol1.json ~ vol6.json 이름으로 저장합니다"
             >
-              💾 전체 JSON 백업
+              {"💾 제" + currentVolNum + "권(vol" + currentVolNum + ".json) 백업"}
+            </button>
+            <button
+              onClick={handleExportAllJson}
+              className="px-3 py-2 rounded bg-stone-600 hover:bg-stone-700 text-white text-xs font-bold shadow-sm"
+              title="모든 권의 데이터를 neville_data.json 하나로 통합 저장합니다"
+            >
+              💾 전체 백업
             </button>
             <label className="px-3 py-2 rounded bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-bold cursor-pointer shadow-sm">
               📂 JSON 불러오기
