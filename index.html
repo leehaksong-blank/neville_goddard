@@ -32,6 +32,18 @@
   <div id="root"></div>
 
   <!-- 5. 새로운 PDF 버전의 app.jsx 강제 연결 (캐시 갱신!) -->
-  <script type="text/babel" src="./app.jsx?v=pdf6"></script>
+  // [수정된 index.html 하단 스크립트]
+fetch('./app.jsx?t=' + Date.now(), { cache: 'no-store' })
+  .then(res => {
+    if (!res.ok) throw new Error('app.jsx 파일을 찾을 수 없습니다.');
+    return res.text();
+  })
+  .then(code => {
+    const compiled = Babel.transform(code, { presets: ['react'] }).code;
+    const s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.text = compiled;
+    document.body.appendChild(s);
+  })
 </body>
 </html>
