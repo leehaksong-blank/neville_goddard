@@ -1,5 +1,24 @@
 const { useState, useEffect } = React;
 
+// 1. 네빌 고다드 14권 정규 저서 (1939 ~ 1970) - 각각 book1.json ~ book14.json 으로 매칭
+const BOOKS = [
+  { bookNum: 1, year: 1939, title: "At Your Command", koTitle: "당신의 명령대로", url: "https://thenevillegoddard.com/at-your-command/" },
+  { bookNum: 2, year: 1941, title: "Your Faith Is Your Fortune", koTitle: "당신의 믿음이 당신의 행운이다", url: "https://thenevillegoddard.com/your-faith-is-your-fortune/" },
+  { bookNum: 3, year: 1942, title: "Freedom For All", koTitle: "모두를 위한 자유", url: "https://thenevillegoddard.com/freedom-for-all/" },
+  { bookNum: 4, year: 1944, title: "Feeling Is The Secret", koTitle: "느낌이 비밀이다", url: "https://thenevillegoddard.com/feeling-is-the-secret/" },
+  { bookNum: 5, year: 1945, title: "Prayer, The Art Of Believing", koTitle: "기도, 믿음의 기술", url: "https://thenevillegoddard.com/prayer-the-art-of-believing/" },
+  { bookNum: 6, year: 1946, title: "The Search", koTitle: "탐구", url: "https://thenevillegoddard.com/the-search/" },
+  { bookNum: 7, year: 1949, title: "Out Of This World", koTitle: "이 세상의 것이 아닌", url: "https://thenevillegoddard.com/out-of-this-world/" },
+  { bookNum: 8, year: 1952, title: "The Power Of Awareness", koTitle: "자각의 힘", url: "https://thenevillegoddard.com/the-power-of-awareness/" },
+  { bookNum: 9, year: 1954, title: "Awakened Imagination", koTitle: "깨어난 상상력", url: "https://thenevillegoddard.com/awakened-imagination/" },
+  { bookNum: 10, year: 1956, title: "Seedtime And Harvest", koTitle: "씨 뿌릴 때와 거둘 때", url: "https://thenevillegoddard.com/seedtime-and-harvest/" },
+  { bookNum: 11, year: 1961, title: "The Law And The Promise", koTitle: "법칙과 약속", url: "https://thenevillegoddard.com/the-law-and-the-promise/" },
+  { bookNum: 12, year: 1965, title: "I Know My Father", koTitle: "나는 내 아버지를 안다", url: "https://thenevillegoddard.com/i-know-my-father/" },
+  { bookNum: 13, year: 1966, title: "Resurrection", koTitle: "부활, 신앙 고백", url: "https://thenevillegoddard.com/resurrection/" },
+  { bookNum: 14, year: 1970, title: "He Breaks The Shell", koTitle: "그가 껍질을 깨뜨리다", url: "https://thenevillegoddard.com/he-breaks-the-shell/" }
+];
+
+// 2. 네빌 고다드 294개 강의 (제1권 ~ 제6권) - 각각 vol1.json ~ vol6.json 으로 매칭
 const VOLUMES = [
   { vol: 1, title: "제1권 (001 ~ 050번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
   { vol: 2, title: "제2권 (051 ~ 100번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
@@ -27,7 +46,6 @@ const INITIAL_LECTURE = [
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// JSON 잘림 및 따옴표 오류 자동 복구 파서
 const safeParseJSON = (rawStr) => {
   if (!rawStr) return [];
   let text = rawStr.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
@@ -59,11 +77,11 @@ const safeParseJSON = (rawStr) => {
 };
 
 function App() {
+  const [openBooksMenu, setOpenBooksMenu] = useState(false);
   const [openVol, setOpenVol] = useState(1);
   const [loadingVol, setLoadingVol] = useState(false);
-  const [loadedVolJsons, setLoadedVolJsons] = useState({});
+  const [loadedFiles, setLoadedFiles] = useState({});
 
-  // 기본 모드를 Pro 우선 모드로 설정
   const [selectedTier, setSelectedTier] = useState("pro");
 
   const [volLectures, setVolLectures] = useState(() => {
@@ -75,7 +93,9 @@ function App() {
     }
   });
 
+  // 현재 선택된 항목 (isBook: true면 14권 저서 중 하나, false면 294개 강의 중 하나)
   const [selectedLec, setSelectedLec] = useState({
+    isBook: false,
     num: 1,
     title: "A Divine Event",
     url: "https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/"
@@ -90,7 +110,6 @@ function App() {
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
 
-  // 1. store 초기화 (내 브라우저 localStorage 불러오기)
   const [store, setStore] = useState(() => {
     try {
       const saved = localStorage.getItem("neville_vol_accordion_store");
@@ -100,46 +119,61 @@ function App() {
     }
   });
 
-  // 공용 JSON 데이터를 store에 스마트 병합하는 공통 함수 (문장 수가 더 많은 쪽 우선)
-  const mergePublicDataToStore = (publicData) => {
-    if (!publicData || typeof publicData !== "object") return;
+  // 공용 JSON 데이터를 store에 스마트 병합 (문장 수가 더 많은 쪽 우선)
+  const mergePublicDataToStore = (publicData, fallbackTitle) => {
+    if (!publicData) return;
     setStore(prev => {
       const merged = { ...prev };
-      Object.keys(publicData).forEach(key => {
-        const pubArr = Array.isArray(publicData[key]) ? publicData[key] : [];
-        const locArr = Array.isArray(prev[key]) ? prev[key] : [];
-        merged[key] = pubArr.length >= locArr.length ? pubArr : locArr;
-      });
+      // 만약 파일 내용이 배열([...]) 형태라면 해당 책 제목에 바로 매칭
+      if (Array.isArray(publicData) && fallbackTitle) {
+        const locArr = Array.isArray(prev[fallbackTitle]) ? prev[fallbackTitle] : [];
+        merged[fallbackTitle] = publicData.length >= locArr.length ? publicData : locArr;
+        return merged;
+      }
+      // 객체({"제목": [...]}) 형태라면 키별로 비교 병합
+      if (typeof publicData === "object") {
+        Object.keys(publicData).forEach(key => {
+          const pubArr = Array.isArray(publicData[key]) ? publicData[key] : [];
+          const locArr = Array.isArray(prev[key]) ? prev[key] : [];
+          merged[key] = pubArr.length >= locArr.length ? pubArr : locArr;
+        });
+      }
       return merged;
     });
   };
 
-  // 권별 JSON 파일(vol1.json ~ vol6.json)을 깃허브에서 불러오는 함수
-  const loadVolumeJson = async (volNum) => {
-    if (loadedVolJsons[volNum]) return;
+  // 지정한 JSON 파일(예: vol1.json, book1.json 등)을 깃허브에서 불러오는 함수
+  const loadJsonFile = async (fileName, fallbackTitle) => {
+    if (loadedFiles[fileName]) return;
     try {
-      const res = await fetch("./vol" + volNum + ".json?t=" + Date.now(), { cache: "no-store" });
+      const res = await fetch("./" + fileName + "?t=" + Date.now(), { cache: "no-store" });
       if (res.ok) {
         const data = await res.json();
-        mergePublicDataToStore(data);
-        setLoadedVolJsons(prev => ({ ...prev, [volNum]: true }));
+        mergePublicDataToStore(data, fallbackTitle);
+        setLoadedFiles(prev => ({ ...prev, [fileName]: true }));
       }
     } catch (e) {}
   };
 
-  // 2. 앱 최초 실행 시: neville_data.json(기존 통합본)과 vol1.json(1권 분리본)을 모두 확인하여 자동 병합
+  // 앱 최초 실행 시: neville_data.json과 vol1.json 자동 확인
   useEffect(() => {
-    fetch("./neville_data.json?t=" + Date.now(), { cache: "no-store" })
-      .then(res => (res.ok ? res.json() : null))
-      .then(data => { if (data) mergePublicDataToStore(data); })
-      .catch(() => {});
-
-    loadVolumeJson(1);
-    // 첫 실행 시 제1권 강의 목차도 아직 없으면 자동 로드
+    loadJsonFile("neville_data.json");
+    loadJsonFile("vol1.json");
     if (!volLectures[1] || volLectures[1].length === 0) {
       fetchVolumeIndexList(VOLUMES[0]);
     }
   }, []);
+
+  // 14권 저서 메뉴를 펼칠 때 book1.json ~ book14.json도 백그라운드에서 자동 확인(배지 표시용)
+  const handleToggleBooksMenu = () => {
+    const nextState = !openBooksMenu;
+    setOpenBooksMenu(nextState);
+    if (nextState) {
+      BOOKS.forEach(b => {
+        loadJsonFile("book" + b.bookNum + ".json", b.title);
+      });
+    }
+  };
 
   useEffect(() => {
     try { localStorage.setItem("neville_vol_menus", JSON.stringify(volLectures)); } catch (e) {}
@@ -154,11 +188,30 @@ function App() {
     localStorage.setItem("gemini_api_key", val);
   };
 
-  // 현재 선택된 강의가 속한 권(Volume 1~6) 번호 계산
   const currentVolNum = openVol || Math.min(6, Math.max(1, Math.ceil((selectedLec.num || 1) / 50)));
 
-  // 3-A. 현재 권(Volume)의 번역 데이터만 골라서 vol1.json ~ vol6.json 파일로 내려받기
-  const handleExportVolJson = () => {
+  // ★ 맞춤 백업: 책을 보고 있으면 book1.json~book14.json으로, 강의를 보고 있으면 vol1.json~vol6.json으로 저장!
+  const handleExportCurrentTargetJson = () => {
+    if (selectedLec.isBook) {
+      const bookData = store[selectedLec.title] || [];
+      if (bookData.length === 0) {
+        alert("아직 이 책의 강독 노트가 없습니다. 먼저 강독 노트를 생성해 주세요.");
+        return;
+      }
+      const exportObj = { [selectedLec.title]: bookData };
+      const fileName = "book" + selectedLec.num + ".json";
+      const jsonString = JSON.stringify(exportObj, null, 2);
+      const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = fileName;
+      a.click();
+      URL.revokeObjectURL(url);
+      return;
+    }
+
+    // 강의일 경우 해당 권(vol1.json ~ vol6.json) 백업
     const subList = volLectures[currentVolNum] || [];
     let exportObj = {};
 
@@ -187,7 +240,7 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
-  // 3-B. 전체 번역 데이터를 통합 파일(neville_data.json)로 내려받기
+  // 전체 통합 백업 (neville_data.json)
   const handleExportAllJson = () => {
     const jsonString = JSON.stringify(store, null, 2);
     const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
@@ -199,7 +252,7 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
-  // 4. 백업한 JSON 파일(vol1.json 또는 neville_data.json) 불러오기
+  // JSON 파일 불러오기
   const handleImportAllJson = (e) => {
     const file = e.target.files && e.target.files[0];
     if (!file) return;
@@ -207,7 +260,7 @@ function App() {
     reader.onload = (event) => {
       try {
         const imported = JSON.parse(event.target.result);
-        mergePublicDataToStore(imported);
+        mergePublicDataToStore(imported, selectedLec.title);
         alert("✅ [" + file.name + "] 번역 노트가 성공적으로 복원·병합되었습니다!");
       } catch (err) {
         alert("올바른 JSON 파일이 아닙니다.");
@@ -235,7 +288,9 @@ function App() {
     if (quizMode) setQuizMode(false);
 
     const originalTitle = document.title;
-    const prefix = selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
+    const prefix = selectedLec.isBook
+      ? "Book" + String(selectedLec.num).padStart(2, "0") + "_"
+      : selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
     document.title = prefix + selectedLec.title + "_강독노트";
 
     setTimeout(() => {
@@ -244,7 +299,6 @@ function App() {
     }, 150);
   };
 
-  // 권별 50개 강의 목차 크롤링 함수
   const fetchVolumeIndexList = async (volObj) => {
     setLoadingVol(true);
     try {
@@ -288,16 +342,13 @@ function App() {
     }
   };
 
-  // 왼쪽 사이드바에서 제1권~제6권 펼치기 클릭 시: 해당 권의 JSON(vol1.json~vol6.json)도 자동 로드!
   const handleToggleVolume = async (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
       return;
     }
     setOpenVol(volObj.vol);
-
-    // 해당 권의 공용 JSON 파일(예: vol1.json, vol2.json...) 자동 불러오기
-    loadVolumeJson(volObj.vol);
+    loadJsonFile("vol" + volObj.vol + ".json");
 
     if (!volLectures[volObj.vol] || volLectures[volObj.vol].length === 0) {
       await fetchVolumeIndexList(volObj);
@@ -308,7 +359,7 @@ function App() {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
     setResumeChunkIdx(0);
-    setStatusMsg("🌐 [" + (titleToSet || selectedLec.title) + "] 강의의 영어 본문 전체를 읽어오는 중...");
+    setStatusMsg("🌐 [" + (titleToSet || selectedLec.title) + "] 영어 원문 전체를 읽어오는 중...");
     try {
       const response = await fetch("https://r.jina.ai/" + finalUrl);
       if (!response.ok) throw new Error("사이트 접속 실패");
@@ -318,7 +369,13 @@ function App() {
       const startMarker = cleanBody.indexOf("Markdown Content:");
       if (startMarker !== -1) cleanBody = cleanBody.slice(startMarker + 17);
 
-      const endMarkers = ["### Neville Goddard Lectures 1-50:", "#### About[Neville Goddard]", "## Primary Sidebar", "### **Appreciation Snippets**"];
+      const endMarkers = [
+        "### Neville Goddard Lectures 1-50:",
+        "#### About[Neville Goddard]",
+        "## Primary Sidebar",
+        "### **Appreciation Snippets**",
+        "Copyright © The Neville Goddard"
+      ];
       for (let m = 0; m < endMarkers.length; m++) {
         const idx = cleanBody.indexOf(endMarkers[m]);
         if (idx !== -1) cleanBody = cleanBody.slice(0, idx);
@@ -327,7 +384,13 @@ function App() {
       const lines = cleanBody.split("\n").filter(line => {
         const t = line.trim();
         if (!t) return false;
-        if (t.indexOf("*   [") === 0 || t.indexOf("[Got it!]") === 0 || t.indexOf("This website uses cookies") === 0 || t.indexOf("[Cookie Consent") === 0) return false;
+        if (
+          t.indexOf("*   [") === 0 ||
+          t.indexOf("[Got it!]") === 0 ||
+          t.indexOf("This website uses cookies") === 0 ||
+          t.indexOf("[Cookie Consent") === 0 ||
+          t.indexOf("[Skip to content]") === 0
+        ) return false;
         return true;
       });
       cleanBody = lines.join("\n\n");
@@ -455,7 +518,7 @@ function App() {
       return;
     }
     if (!rawText.trim()) {
-      alert("먼저 왼쪽에서 강의를 선택해 본문을 불러와 주세요.");
+      alert("먼저 왼쪽에서 저서나 강의를 선택해 본문을 불러와 주세요.");
       return;
     }
 
@@ -484,13 +547,13 @@ function App() {
 
       for (let i = resumeChunkIdx; i < chunks.length; i++) {
         const prompt = [
-          "당신은 네빌 고다드(Neville Goddard) 강의 전문 번역가이자 영어 구문 강독 전문가입니다.",
-          "아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 강의 본문 문장만 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.",
+          "당신은 네빌 고다드(Neville Goddard) 저서 및 강의 전문 번역가이자 영어 구문 강독 전문가입니다.",
+          "아래 텍스트에서 웹사이트 메뉴나 링크를 제외하고 실제 네빌 고다드의 영어 본문 문장만 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.",
           "규칙:",
           "1. 반복 기초 어휘는 제외하고 핵심 어휘/숙어만 vocab에 넣으세요.",
           "2. 기계적인 1~5형식 분류는 절대 쓰지 말고, 직관적인 독해/구문 구조와 성경적·신비주의적 맥락을 깊이 있게 grammar에 설명하세요.",
           "3. 설명 안에 큰따옴표(\") 대신 작은따옴표(')를 사용하여 JSON 문법 오류를 방지하세요.",
-          "강의 본문:",
+          "본문:",
           chunks[i]
         ].join("\n");
 
@@ -521,12 +584,65 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
+      {/* 왼쪽 사이드바: 14권 저서(Books) + 294개 강의(Volumes 1~6) */}
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Pro Studio</div>
-        <h1 className="text-lg font-bold mb-3">네빌 고다드 294 실시간 강독</h1>
-        <div className="text-xs text-slate-400 mb-2">권(Volume)을 클릭하면 50개 목록과 권별 JSON이 로드됩니다:</div>
+        <h1 className="text-lg font-bold mb-3">네빌 고다드 14권 저서 & 294 강의</h1>
 
         <div className="flex-1 overflow-y-auto space-y-2 pr-1">
+          {/* ★ 새로 추가된 [네빌 고다드 14권 정규 저서] 아코디언 메뉴 */}
+          <div className="mb-3">
+            <div className="text-[11px] text-emerald-400 font-bold mb-1">📖 정규 출간 단행본 (book1~14.json)</div>
+            <div className="rounded-lg overflow-hidden border border-emerald-700/60">
+              <button
+                onClick={handleToggleBooksMenu}
+                className={"w-full text-left px-3 py-3 text-xs font-bold transition flex justify-between items-center " + (openBooksMenu ? "bg-emerald-500 text-slate-950" : "bg-emerald-950/80 hover:bg-emerald-900 text-emerald-200")}
+              >
+                <span>📖 네빌 고다드 14권 저서 (1939~1970)</span>
+                <span>{openBooksMenu ? "▲ 접기" : "▼ 펼치기"}</span>
+              </button>
+
+              {openBooksMenu && (
+                <div className="bg-slate-950 p-2 space-y-1 max-h-80 overflow-y-auto border-t border-emerald-800/50">
+                  {BOOKS.map((b) => {
+                    const isSelected = selectedLec.isBook && selectedLec.title === b.title;
+                    const savedCount = (store[b.title] || []).length;
+                    return (
+                      <button
+                        key={b.bookNum}
+                        onClick={() => {
+                          const bookItem = { isBook: true, num: b.bookNum, title: b.title, koTitle: b.koTitle, url: b.url };
+                          setSelectedLec(bookItem);
+                          setTargetUrl(b.url);
+                          // 클릭 즉시 해당 책의 JSON(book1.json ~ book14.json) 자동 로드 시도
+                          loadJsonFile("book" + b.bookNum + ".json", b.title);
+                          handleFetchLectureBody(b.url, b.title);
+                        }}
+                        className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold" : "text-slate-300 hover:bg-slate-800")}
+                      >
+                        <div className="truncate pr-2">
+                          <div>{b.bookNum}. {b.title} ({b.year})</div>
+                          <div className="text-[10px] text-slate-400 truncate">{b.koTitle}</div>
+                        </div>
+                        {savedCount > 0 ? (
+                          <span className="text-[10px] bg-emerald-500 text-slate-950 px-1.5 py-0.5 rounded font-bold shrink-0">
+                            {savedCount}문장
+                          </span>
+                        ) : (
+                          <span className="text-[10px] text-slate-500 shrink-0">book{b.bookNum}</span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* 기존 294개 강의 (제1권 ~ 제6권) 아코디언 메뉴 */}
+          <div className="text-[11px] text-amber-400 font-bold mb-1 pt-2 border-t border-slate-800">
+            📚 294개 실시간 강의록 (vol1~6.json)
+          </div>
           {VOLUMES.map(v => {
             const isOpen = openVol === v.vol;
             const subList = volLectures[v.vol] || [];
@@ -549,13 +665,13 @@ function App() {
                       </div>
                     ) : (
                       subList.map((lec, i) => {
-                        const isSelected = selectedLec.title === lec.title;
+                        const isSelected = !selectedLec.isBook && selectedLec.title === lec.title;
                         const savedCount = (store[lec.title] || []).length;
                         return (
                           <button
                             key={i}
                             onClick={() => {
-                              setSelectedLec(lec);
+                              setSelectedLec({ isBook: false, num: lec.num, title: lec.title, url: lec.url });
                               setTargetUrl(lec.url);
                               handleFetchLectureBody(lec.url, lec.title);
                             }}
@@ -581,6 +697,7 @@ function App() {
         </div>
       </aside>
 
+      {/* 오른쪽 메인 영역 */}
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <div className="flex items-center gap-2">
@@ -615,7 +732,7 @@ function App() {
 
         <div className="no-print bg-white border rounded-xl p-4 mb-6 shadow-sm">
           <div className="text-xs font-bold text-slate-600 mb-2">
-            🌐 선택된 강의의 실제 웹페이지 주소(URL):
+            🌐 선택된 {selectedLec.isBook ? "단행본 저서" : "강의"}의 실제 웹페이지 주소(URL):
           </div>
           <div className="flex flex-wrap gap-2 mb-3">
             <input
@@ -640,7 +757,7 @@ function App() {
               setResumeChunkIdx(0);
             }}
             rows={5}
-            placeholder="왼쪽에서 권(Volume)을 눌러 50개 목록을 펼친 뒤, 원하는 강의를 클릭하면 이곳에 해당 강의의 영어 본문 전체가 자동으로 채워집니다!"
+            placeholder="왼쪽에서 [14권 저서] 또는 [294개 강의] 중 원하는 항목을 클릭하면 이곳에 영어 원문 전체가 자동으로 채워집니다!"
             className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
           />
 
@@ -668,23 +785,33 @@ function App() {
           </div>
         </div>
 
-        {/* 강의 제목 및 권별/전체 JSON 백업·불러오기·PDF·퀴즈 버튼 */}
+        {/* 제목 및 책별(book1~14.json) / 권별(vol1~6.json) 맞춤 백업 버튼 */}
         <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
-          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
-            {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
-          </h2>
+          <div>
+            {selectedLec.isBook && (
+              <div className="text-xs font-bold text-emerald-700 mb-1">
+                📖 NEVILLE GODDARD BOOK #{String(selectedLec.num).padStart(2, "0")} {selectedLec.koTitle ? "— " + selectedLec.koTitle : ""}
+              </div>
+            )}
+            <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
+              {selectedLec.isBook
+                ? "Book " + selectedLec.num + ". " + selectedLec.title
+                : (selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : "") + selectedLec.title}
+            </h2>
+          </div>
+
           <div className="no-print flex flex-wrap gap-2">
             <button
-              onClick={handleExportVolJson}
-              className="px-3 py-2 rounded bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-sm"
-              title="현재 열려 있는 권의 강의만 vol1.json ~ vol6.json 이름으로 저장합니다"
+              onClick={handleExportCurrentTargetJson}
+              className={"px-3 py-2 rounded text-white text-xs font-bold shadow-sm " + (selectedLec.isBook ? "bg-emerald-600 hover:bg-emerald-700" : "bg-amber-600 hover:bg-amber-700")}
             >
-              {"💾 제" + currentVolNum + "권(vol" + currentVolNum + ".json) 백업"}
+              {selectedLec.isBook
+                ? "💾 이 책(book" + selectedLec.num + ".json) 백업"
+                : "💾 제" + currentVolNum + "권(vol" + currentVolNum + ".json) 백업"}
             </button>
             <button
               onClick={handleExportAllJson}
               className="px-3 py-2 rounded bg-stone-600 hover:bg-stone-700 text-white text-xs font-bold shadow-sm"
-              title="모든 권의 데이터를 neville_data.json 하나로 통합 저장합니다"
             >
               💾 전체 백업
             </button>
