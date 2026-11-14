@@ -25,9 +25,39 @@
   </style>
 </head>
 <body class="bg-[#faf9f5] text-[#292929]">
-  <div id="root"></div>
+  <div id="root">
+    <div style="padding:32px; text-align:center; font-weight:bold; color:#475569;">
+      ⏳ 네빌 고다드 강독 아카이브를 불러오는 중입니다...
+    </div>
+  </div>
 
-  <!-- 조회 전용 viewer.jsx 연결 -->
-  <script type="text/babel" src="./viewer.jsx?v=1"></script>
+  <!-- 분리된 viewer.jsx를 캐시/보안 차단 없이 안전하게 불러와 실행하는 로더 -->
+  <script>
+    window.onerror = function(msg, url, lineNo) {
+      document.getElementById('root').innerHTML =
+        '<div style="padding:24px;color:#b91c1c;background:#fef2f2;border:2px solid #ef4444;margin:20px;border-radius:8px;font-weight:bold;">' +
+        '🚨 실행 오류: ' + msg + ' (줄 번호: ' + lineNo + ')' +
+        '</div>';
+    };
+
+    (async function() {
+      try {
+        const res = await fetch('./viewer.jsx?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('깃허브에 viewer.jsx 파일이 없습니다 (HTTP ' + res.status + ')');
+        const rawCode = await res.text();
+
+        const compiled = Babel.transform(rawCode, { presets: ['react'] }).code;
+        const s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.textContent = compiled;
+        document.body.appendChild(s);
+      } catch (err) {
+        document.getElementById('root').innerHTML =
+          '<div style="padding:24px;color:#b91c1c;background:#fef2f2;border:2px solid #ef4444;margin:20px;border-radius:8px;font-weight:bold;">' +
+          '⚠️ viewer.jsx 로딩 오류: ' + err.message +
+          '</div>';
+      }
+    })();
+  </script>
 </body>
 </html>
