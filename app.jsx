@@ -598,12 +598,12 @@ function App() {
 
   // ★ 핵심 수정: gemini-3.8-flash 1순위 탑재 + 구글이 새 모델명을 요구하면 에러 메시지에서 모델명을 스스로 추출해 즉시 재호출!
   const callGeminiWithFallback = async (promptText, schemaObj, chunkInfo) => {
-    const models = [
-      "gemini-3.8-flash",
-      "gemini-3.1-pro-preview",
-      "gemini-3.5-flash-lite",
-      "gemini-3.5-flash",
-      "gemini-3.5-pro"
+const models = [
+      "gemini-3.5-flash",      // 1순위: 빠르고 정확한 메인 모델
+      "gemini-3.5-pro",        // 2순위: 최고급 Pro 모델
+      "gemini-3.5-flash-lite", // 3순위: 대기열 없는 초고속 모델
+      "gemini-2.5-flash",      // 4순위: 안정적인 2.5 호환 모델
+      "gemini-2.5-pro"         // 5순위: 2.5 Pro 백업 모델
     ];
     let lastErr = "";
 
