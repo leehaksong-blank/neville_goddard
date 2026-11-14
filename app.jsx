@@ -100,7 +100,7 @@ const parseBibleRef = (refStr) => {
   return { bookEn: bookEn, chapter: chapter, verse: verse, order: order };
 };
 
-// 안전한 JSON 복구 파서 (정규표현식 미사용)
+// 안전한 JSON 복구 파서
 const safeParseJSON = (rawStr) => {
   if (!rawStr) return [];
   let text = rawStr.trim();
@@ -131,7 +131,6 @@ const safeParseJSON = (rawStr) => {
 };
 
 function App() {
-  // 상단 메인 탭: 'study' (강독 스튜디오) | 'bible_menu' (네빌성경구문 독립 메뉴)
   const [activeMenu, setActiveMenu] = useState("study");
 
   const [openBooksMenu, setOpenBooksMenu] = useState(false);
@@ -165,7 +164,6 @@ function App() {
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
 
-  // 강의/저서 강독 데이터 저장소
   const [store, setStore] = useState(() => {
     try {
       const saved = localStorage.getItem("neville_vol_accordion_store");
@@ -175,7 +173,6 @@ function App() {
     }
   });
 
-  // 별도 bible.json 전용 저장소
   const [bibleList, setBibleList] = useState(() => {
     try {
       const saved = localStorage.getItem("neville_bible_json_store");
@@ -185,34 +182,39 @@ function App() {
     }
   });
 
-  // [네빌성경구문] 메뉴에서 현재 선택된 문장 인덱스 & 앞절/다음절 이동 상태
   const [selectedBibleIdx, setSelectedBibleIdx] = useState(0);
   const [viewChapter, setViewChapter] = useState(12);
   const [viewVerse, setViewVerse] = useState(3);
   const [liveVerseData, setLiveVerseData] = useState({ kjv: "", loading: false });
 
-  // 데이터 병합 도우미 (문장 수나 bible 정보가 더 풍부한 쪽을 유지)
   const mergeDataToStore = (publicData, fallbackTitle) => {
     if (!publicData) return;
     setStore(prev => {
       const merged = Object.assign({}, prev);
+      const chooseBetterArray = (pubArr, locArr) => {
+        if (pubArr.length > locArr.length) return pubArr;
+        if (locArr.length > pubArr.length) return locArr;
+        const pubBibleCount = pubArr.filter(s => s && Array.isArray(s.bible) && s.bible.length > 0).length;
+        const locBibleCount = locArr.filter(s => s && Array.isArray(s.bible) && s.bible.length > 0).length;
+        return locBibleCount >= pubBibleCount ? locArr : pubArr;
+      };
+
       if (Array.isArray(publicData) && fallbackTitle) {
         const locArr = Array.isArray(prev[fallbackTitle]) ? prev[fallbackTitle] : [];
-        merged[fallbackTitle] = publicData.length >= locArr.length ? publicData : locArr;
+        merged[fallbackTitle] = chooseBetterArray(publicData, locArr);
         return merged;
       }
       if (typeof publicData === "object") {
         Object.keys(publicData).forEach(key => {
           const pubArr = Array.isArray(publicData[key]) ? publicData[key] : [];
           const locArr = Array.isArray(prev[key]) ? prev[key] : [];
-          merged[key] = pubArr.length >= locArr.length ? pubArr : locArr;
+          merged[key] = chooseBetterArray(pubArr, locArr);
         });
       }
       return merged;
     });
   };
 
-  // 외부 JSON 파일(vol1~6.json, book1~14.json, bible.json) 로드
   const loadJsonFile = async (fileName, fallbackTitle) => {
     if (loadedFiles[fileName]) return;
     try {
@@ -248,7 +250,6 @@ function App() {
     try { localStorage.setItem("neville_bible_json_store", JSON.stringify(bibleList)); } catch (e) {}
   }, [bibleList]);
 
-  // store 안의 문장들에 포함된 bible 배열도 자동으로 bibleList에 합치고 성경 분류순 정렬
   const sortedBibleItems = useMemo(() => {
     const map = {};
     bibleList.forEach(item => {
@@ -307,7 +308,6 @@ function App() {
     }
   }, [selectedBibleIdx, currentBibleItem && currentBibleItem.ref]);
 
-  // [앞절 / 다음절] 클릭 시 실시간 성경 원문 조회 (bible-api.com)
   const handleMoveVerse = async (delta) => {
     if (!currentBibleItem) return;
     const parsed = parseBibleRef(currentBibleItem.ref);
@@ -353,7 +353,6 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // PDF 인쇄/다운로드
   const handleDownloadPdf = () => {
     if (sentences.length === 0) {
       alert("저장할 강독 노트가 없습니다.");
@@ -371,7 +370,6 @@ function App() {
     }, 150);
   };
 
-  // JSON 파일 다운로드 공통 함수
   const downloadJson = (dataObj, filename) => {
     const jsonString = JSON.stringify(dataObj, null, 2);
     const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
@@ -383,12 +381,10 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
-  // bible.json 전용 백업 다운로드
   const handleExportBibleJson = () => {
     downloadJson(sortedBibleItems, "bible.json");
   };
 
-  // bible.json 불러오기
   const handleImportBibleJson = (e) => {
     const file = e.target.files && e.target.files[0];
     if (!file) return;
@@ -410,12 +406,10 @@ function App() {
     e.target.value = "";
   };
 
-  // 전체 강독 데이터 JSON 백업
   const handleExportAllJson = () => {
     downloadJson(store, "neville_data.json");
   };
 
-  // 현재 권(vol1~6.json) 또는 책(book1~14.json) 개별 백업
   const handleExportCurrentTargetJson = () => {
     if (selectedLec.isBook) {
       const bookData = { [selectedLec.title]: store[selectedLec.title] || [] };
@@ -436,7 +430,6 @@ function App() {
     }
   };
 
-  // 강독 데이터 JSON 복원
   const handleImportAllJson = (e) => {
     const file = e.target.files && e.target.files[0];
     if (!file) return;
@@ -454,7 +447,6 @@ function App() {
     e.target.value = "";
   };
 
-  // ★ 핵심: 3중 프록시 자동 우회 웹 크롤러 (Jina Reader ➔ AllOrigins ➔ Codetabs)
   const fetchWebTextWithFallback = async (targetPageUrl) => {
     let cleanUrl = (targetPageUrl || "").trim();
     if (cleanUrl.indexOf("http://") === 0) {
@@ -462,7 +454,6 @@ function App() {
     }
     if (!cleanUrl) throw new Error("유효한 URL이 없습니다.");
 
-    // 1순위: Jina Reader API
     try {
       const res1 = await fetch("https://r.jina.ai/" + cleanUrl);
       if (res1.ok) {
@@ -471,7 +462,6 @@ function App() {
       }
     } catch (e) {}
 
-    // HTML을 마크다운 링크 + 본문 텍스트로 변환하는 보조 파서
     const htmlToCleanText = (htmlStr) => {
       const doc = new DOMParser().parseFromString(htmlStr, "text/html");
       const removeSelectors = ["script", "style", "nav", "header", "footer", ".sidebar", "#genesis-sidebar-primary"];
@@ -487,7 +477,6 @@ function App() {
       return (mainContent ? mainContent.innerText || mainContent.textContent : "").trim();
     };
 
-    // 2순위: AllOrigins 프록시 우회
     try {
       const res2 = await fetch("https://api.allorigins.win/get?url=" + encodeURIComponent(cleanUrl));
       if (res2.ok) {
@@ -498,7 +487,6 @@ function App() {
       }
     } catch (e) {}
 
-    // 3순위: Codetabs 프록시 우회
     try {
       const res3 = await fetch("https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(cleanUrl));
       if (res3.ok) {
@@ -512,7 +500,6 @@ function App() {
     throw new Error("모든 우회 프록시 서버 접속이 지연되고 있습니다. 원문 주소를 새 창에서 열어 본문을 복사해 아래 입력창에 붙여넣어 주세요.");
   };
 
-  // 권별 목록 불러오기 (3중 프록시 자동 우회 적용)
   const handleToggleVolume = async (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
@@ -573,7 +560,6 @@ function App() {
     }
   };
 
-  // 본문 크롤링 (3중 프록시 자동 우회 적용)
   const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
@@ -610,40 +596,67 @@ function App() {
     }
   };
 
-  // ★ 최신 Gemini 3.1 Pro Preview 1순위 + Flash 자동 우회 호출기
+  // ★ 핵심 수정: gemini-3.8-flash 1순위 탑재 + 구글이 새 모델명을 요구하면 에러 메시지에서 모델명을 스스로 추출해 즉시 재호출!
   const callGeminiWithFallback = async (promptText, schemaObj, chunkInfo) => {
-    // 기존 코드 (삭제):
-  // const models = ["gemini-3.1-pro-preview", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
-
-  // ★ 수정 코드 (아래 한 줄로 교체):
-  const models = ["gemini-3.1-pro-preview", "gemini-3.5-pro", "gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"];
+    const models = [
+      "gemini-3.8-flash",
+      "gemini-3.1-pro-preview",
+      "gemini-3.5-flash-lite",
+      "gemini-3.5-flash",
+      "gemini-3.5-pro"
+    ];
     let lastErr = "";
+
+    const requestModel = async (modelName) => {
+      setStatusMsg("⏳ AI 분석 중 (" + modelName + ") " + chunkInfo);
+      const res = await fetch(
+        "https://generativelanguage.googleapis.com/v1beta/models/" + modelName + ":generateContent?key=" + apiKey.trim(),
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: promptText }] }],
+            generationConfig: {
+              responseMimeType: "application/json",
+              responseSchema: schemaObj,
+              temperature: 0.15
+            }
+          })
+        }
+      );
+      return await res.json();
+    };
 
     for (let attempt = 1; attempt <= 2; attempt++) {
       for (let m = 0; m < models.length; m++) {
-        const modelName = models[m];
+        const currentModel = models[m];
         try {
-          setStatusMsg("⏳ AI 분석 중 (" + modelName + ") " + chunkInfo);
-          const res = await fetch(
-            "https://generativelanguage.googleapis.com/v1beta/models/" + modelName + ":generateContent?key=" + apiKey.trim(),
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                contents: [{ parts: [{ text: promptText }] }],
-                generationConfig: {
-                  responseMimeType: "application/json",
-                  responseSchema: schemaObj,
-                  temperature: 0.15
-                }
-              })
-            }
-          );
+          let data = await requestModel(currentModel);
 
-          const data = await res.json();
+          // 구글이 "Please update your code to use models/gemini-..." 에러를 반환하면 해당 모델명을 즉시 추출해 재시도
+          if (data.error && data.error.message && data.error.message.indexOf("models/gemini-") !== -1) {
+            const msg = data.error.message;
+            const startIdx = msg.lastIndexOf("models/gemini-");
+            if (startIdx !== -1) {
+              const sub = msg.slice(startIdx + 7);
+              const spaceIdx = sub.indexOf(" ");
+              let suggestedModel = (spaceIdx !== -1 ? sub.slice(0, spaceIdx) : sub).trim();
+              while (suggestedModel.length > 0 && ". ,;'\")".indexOf(suggestedModel[suggestedModel.length - 1]) !== -1) {
+                suggestedModel = suggestedModel.slice(0, -1);
+              }
+              if (suggestedModel && models.indexOf(suggestedModel) === -1) {
+                models.unshift(suggestedModel);
+                data = await requestModel(suggestedModel);
+              }
+            }
+          }
+
           if (data.error) {
-            lastErr = data.error.message || "모델 응답 오류";
-            await sleep(900);
+            const errMsg = data.error.message || "모델 응답 오류";
+            if (errMsg.indexOf("no longer available") === -1 && errMsg.indexOf("not found") === -1) {
+              lastErr = errMsg;
+            }
+            await sleep(700);
             continue;
           }
 
@@ -651,14 +664,13 @@ function App() {
           return safeParseJSON(textOutput);
         } catch (err) {
           lastErr = err.message;
-          await sleep(1000);
+          await sleep(900);
         }
       }
     }
-    throw new Error(lastErr || "AI 모델 응답 실패. API Key를 확인해 주세요.");
+    throw new Error(lastErr || "AI 모델 응답 실패. 상단의 API Key를 확인하거나 잠시 후 다시 시도해 주세요.");
   };
 
-  // 신규 강의/책 전체 강독 노트 + 성경 구문 동시 생성
   const handleAnalyze = async () => {
     if (!apiKey.trim()) {
       alert("상단 노란색 칸에 Gemini API Key를 먼저 입력해 주세요!");
@@ -768,7 +780,6 @@ function App() {
     }
   };
 
-  // ★ 이미 번역된 현재 노트에서 성경 인용 문장만 추출하여 매핑하는 함수
   const handleExtractBibleFromCurrent = async () => {
     if (!apiKey.trim()) {
       alert("상단 노란색 칸에 Gemini API Key를 먼저 입력해 주세요!");
@@ -782,7 +793,7 @@ function App() {
     setScanningBible(true);
     try {
       const updated = sentences.slice();
-      const batchSize = 30;
+      const batchSize = 25;
       const totalBatches = Math.ceil(updated.length / batchSize);
 
       const scanSchema = {
@@ -851,12 +862,10 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 좌측 사이드바 */}
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Studio</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 강독 & 성경구문</h1>
 
-        {/* 상단 핵심 메뉴 분리 버튼: [강의·저서 강독] vs [네빌성경구문] */}
         <div className="grid grid-cols-2 gap-1.5 bg-slate-800 p-1.5 rounded-xl mb-4">
           <button
             onClick={() => setActiveMenu("study")}
@@ -872,10 +881,8 @@ function App() {
           </button>
         </div>
 
-        {/* 사이드바 1: 강의·저서 목록 */}
         {activeMenu === "study" && (
           <div className="flex-1 overflow-y-auto space-y-2 pr-1">
-            {/* 14권 저서 아코디언 */}
             <div className="rounded-lg overflow-hidden border border-emerald-700/60 mb-2">
               <button
                 onClick={() => setOpenBooksMenu(!openBooksMenu)}
@@ -913,7 +920,6 @@ function App() {
               )}
             </div>
 
-            {/* 제1권 ~ 제6권 (294 강의) 아코디언 */}
             {VOLUMES.map(v => {
               const isOpen = openVol === v.vol;
               const subList = volLectures[v.vol] || [];
@@ -962,7 +968,6 @@ function App() {
           </div>
         )}
 
-        {/* 사이드바 2: [네빌성경구문] 선택 시 성경 1, 2, 3... 빠른 목차 표시 */}
         {activeMenu === "bible_menu" && (
           <div className="flex-1 flex flex-col overflow-hidden">
             <div className="text-xs text-amber-300 font-bold mb-2">
@@ -991,11 +996,9 @@ function App() {
         )}
       </aside>
 
-      {/* 우측 메인 영역 */}
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
-        {/* 상단 Gemini API Key 입력바 */}
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-5 flex flex-wrap items-center justify-between gap-2 text-xs">
-          <span className="font-bold text-amber-900">🔑 Gemini API Key (3.1 Pro 자동 호환):</span>
+          <span className="font-bold text-amber-900">🔑 Gemini API Key (3.8 Flash & 신모델 자동 감지):</span>
           <div className="flex gap-2 flex-1 max-w-md">
             <input
               type="password"
@@ -1010,9 +1013,6 @@ function App() {
           </div>
         </div>
 
-        {/* ============================================================
-            화면 1: [📖 네빌성경구문] 독립 메뉴 화면
-           ============================================================ */}
         {activeMenu === "bible_menu" && (
           <div className="space-y-6">
             <div className="flex flex-wrap justify-between items-center gap-3 pb-4 border-b border-stone-300">
@@ -1036,7 +1036,6 @@ function App() {
               </div>
             </div>
 
-            {/* 상단: 성경 분류순 1, 2, 3... 문장 리스트 */}
             <div className="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden">
               <div className="bg-stone-100 px-4 py-2.5 border-b text-xs font-bold text-stone-700 flex justify-between items-center">
                 <span>📋 성경 분류순 인용 문장 목록 (문장을 클릭하면 아래에 성경 원문 장/절이 열립니다)</span>
@@ -1069,7 +1068,6 @@ function App() {
               </div>
             </div>
 
-            {/* 하단: 클릭한 문장의 [성경 원문 장/절 뷰어] + [앞절 / 다음절 이동 버튼] */}
             {currentBibleItem && (
               <div className="bg-amber-50/80 rounded-2xl border-2 border-amber-300 p-6 shadow-md space-y-4">
                 <div className="flex flex-wrap justify-between items-center gap-3 border-b border-amber-200 pb-3">
@@ -1097,7 +1095,6 @@ function App() {
                   </div>
                 </div>
 
-                {/* 네빌의 인용 문장 박스 */}
                 <div className="bg-white p-4 rounded-xl border border-amber-200">
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-xs font-bold text-stone-500">
@@ -1118,7 +1115,6 @@ function App() {
                   </p>
                 </div>
 
-                {/* 성경 장/절 앞절·다음절 컨트롤 바 */}
                 <div className="flex flex-wrap items-center justify-between gap-2 bg-amber-200/70 px-4 py-3 rounded-xl border border-amber-300">
                   <button
                     onClick={() => handleMoveVerse(-1)}
@@ -1142,7 +1138,6 @@ function App() {
                   </button>
                 </div>
 
-                {/* 성경 원본 (KJV 영어 & 개역개정 한글) */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-white p-4 rounded-xl border border-amber-200">
                     <div className="flex justify-between items-center mb-2">
@@ -1181,7 +1176,6 @@ function App() {
                   </div>
                 </div>
 
-                {/* 네빌의 성경 해석 포인트 */}
                 {currentBibleItem.nevilleContext && (
                   <div className="p-4 bg-amber-100/80 rounded-xl border border-amber-300 text-xs text-amber-950 leading-relaxed">
                     <b>💡 네빌 고다드의 성경 해석 핵심:</b> {currentBibleItem.nevilleContext}
@@ -1192,9 +1186,6 @@ function App() {
           </div>
         )}
 
-        {/* ============================================================
-            화면 2: 기존 [📚 강의·저서 강독] 스튜디오 화면
-           ============================================================ */}
         {activeMenu === "study" && (
           <div>
             <div className="no-print bg-white border rounded-xl p-4 mb-6 shadow-sm">
