@@ -1,6 +1,5 @@
 const { useState, useEffect } = React;
 
-// 1. 네빌 고다드 14권 정규 저서 (book1.json ~ book14.json 매칭)
 const BOOKS = [
   { bookNum: 1, year: 1939, title: "At Your Command", koTitle: "당신의 명령대로" },
   { bookNum: 2, year: 1941, title: "Your Faith Is Your Fortune", koTitle: "당신의 믿음이 당신의 행운이다" },
@@ -18,7 +17,6 @@ const BOOKS = [
   { bookNum: 14, year: 1970, title: "He Breaks The Shell", koTitle: "그가 껍질을 깨뜨리다" }
 ];
 
-// 2. 네빌 고다드 294개 강의 (vol1.json ~ vol6.json 매칭)
 const VOLUMES = [
   { vol: 1, title: "제1권 (001 ~ 050번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
   { vol: 2, title: "제2권 (051 ~ 100번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
@@ -34,7 +32,6 @@ function ViewerApp() {
   const [loadingVol, setLoadingVol] = useState(false);
   const [loadingData, setLoadingData] = useState(false);
   const [loadedFiles, setLoadedFiles] = useState({});
-
   const [volLectures, setVolLectures] = useState({});
   const [store, setStore] = useState({});
   const [selectedLec, setSelectedLec] = useState({
@@ -44,7 +41,6 @@ function ViewerApp() {
   });
   const [quizMode, setQuizMode] = useState(false);
 
-  // JSON 데이터를 store에 병합 (단일 배열/객체 구조 모두 호환)
   const mergeDataToStore = (publicData, fallbackTitle) => {
     if (!publicData) return;
     setStore(prev => {
@@ -65,7 +61,6 @@ function ViewerApp() {
     });
   };
 
-  // JSON 파일(vol1~6.json, book1~14.json, neville_data.json) 자동 로드
   const loadJsonFile = async (fileName, fallbackTitle, showSpinner) => {
     if (loadedFiles[fileName]) return;
     if (showSpinner) setLoadingData(true);
@@ -82,7 +77,6 @@ function ViewerApp() {
     }
   };
 
-  // 첫 실행 시 데이터 및 제1권 강의 목록 불러오기
   useEffect(() => {
     loadJsonFile("vol1.json", null, true);
     loadJsonFile("neville_data.json", null, false);
@@ -102,7 +96,6 @@ function ViewerApp() {
     }
   };
 
-  // 정규표현식 충돌 없이 안전하게 각 권의 강의 목록 추출
   const fetchVolumeList = async (volObj) => {
     if (volLectures[volObj.vol] && volLectures[volObj.vol].length > 0) return;
     setLoadingVol(true);
@@ -174,20 +167,19 @@ function ViewerApp() {
   const handleDownloadPdf = () => {
     if (sentences.length === 0) return;
     if (quizMode) setQuizMode(false);
-    const originalTitle = document.title;
+    const saveTitle = document.title;
     const prefix = selectedLec.isBook
       ? "Book" + String(selectedLec.num).padStart(2, "0") + "_"
       : selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
     document.title = prefix + selectedLec.title + "_강독노트";
     setTimeout(() => {
       window.print();
-      document.title = originalTitle;
+      document.title = saveTitle;
     }, 150);
   };
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 왼쪽 사이드바: 14권 저서 + 294개 강의 목차 */}
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Archive</div>
         <h1 className="text-lg font-bold mb-1">네빌 고다드 강독 아카이브</h1>
@@ -196,7 +188,6 @@ function ViewerApp() {
         </div>
 
         <div className="flex-1 overflow-y-auto space-y-2 pr-1">
-          {/* 1. 네빌 고다드 14권 정규 저서 */}
           <div className="mb-3">
             <div className="text-[11px] text-emerald-400 font-bold mb-1">📖 정규 출간 단행본 (14권)</div>
             <div className="rounded-lg overflow-hidden border border-emerald-700/60">
@@ -210,7 +201,7 @@ function ViewerApp() {
 
               {openBooksMenu && (
                 <div className="bg-slate-950 p-2 space-y-1 max-h-80 overflow-y-auto border-t border-emerald-800/50">
-                  {BOOKS.map((b) => {
+                  {BOOKS.map(b => {
                     const isSelected = selectedLec.isBook && selectedLec.title === b.title;
                     const savedCount = (store[b.title] || []).length;
                     return (
@@ -241,7 +232,6 @@ function ViewerApp() {
             </div>
           </div>
 
-          {/* 2. 294개 강의록 (제1권 ~ 제6권) */}
           <div className="text-[11px] text-amber-400 font-bold mb-1 pt-2 border-t border-slate-800">
             📚 294개 강의록 (제1권 ~ 제6권)
           </div>
@@ -296,7 +286,6 @@ function ViewerApp() {
         </div>
       </aside>
 
-      {/* 오른쪽 본문: 조회 · 발음 듣기 · 해석 가리기 · PDF 출력 전용 */}
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
         <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
           <div>
@@ -392,3 +381,4 @@ function ViewerApp() {
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<ViewerApp />);
+// === END OF FILE ===
