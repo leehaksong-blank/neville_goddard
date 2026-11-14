@@ -3,15 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>네빌 고다드 294 강의 실시간 강독 스튜디오</title>
-  <!-- 1. 디자인 도구(Tailwind) -->
+  <title>네빌 고다드 강독 & 성경 구절 스튜디오</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- 2. React 엔진 -->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <!-- 3. JSX 번역기(Babel) -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <!-- 4. A4 PDF 다운로드(인쇄) 전용 스타일 -->
+  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <style>
     @media print {
       @page { size: A4; margin: 15mm 14mm; }
@@ -29,8 +25,21 @@
   </style>
 </head>
 <body class="bg-[#faf9f5] text-[#292929]">
-  <div id="root"></div>
+  <div id="root">
+    <div style="padding:32px; font-weight:bold; color:#475569;">
+      ⏳ 네빌 고다드 강독 스튜디오를 불러오는 중입니다...
+    </div>
+  </div>
 
-  <script type="text/babel" src="./app.jsx?v=json6"></script>
+  <script>
+    window.onerror = function(msg, url, lineNo) {
+      var r = document.getElementById('root');
+      if (r) {
+        r.innerHTML = '<div style="padding:24px;color:#b91c1c;background:#fef2f2;border:2px solid #ef4444;margin:20px;border-radius:8px;font-weight:bold;">🚨 오류 발생: ' + msg + ' (줄: ' + lineNo + ')</div>';
+      }
+    };
+  </script>
+
+  <script type="text/babel" src="./app.jsx?v=resume_fixed_v1"></script>
 </body>
 </html>
