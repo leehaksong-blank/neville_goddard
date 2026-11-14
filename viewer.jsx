@@ -1,5 +1,24 @@
 const { useState, useEffect } = React;
 
+// 1. 네빌 고다드 14권 정규 저서 (book1.json ~ book14.json 매칭)
+const BOOKS = [
+  { bookNum: 1, year: 1939, title: "At Your Command", koTitle: "당신의 명령대로" },
+  { bookNum: 2, year: 1941, title: "Your Faith Is Your Fortune", koTitle: "당신의 믿음이 당신의 행운이다" },
+  { bookNum: 3, year: 1942, title: "Freedom For All", koTitle: "모두를 위한 자유" },
+  { bookNum: 4, year: 1944, title: "Feeling Is The Secret", koTitle: "느낌이 비밀이다" },
+  { bookNum: 5, year: 1945, title: "Prayer, The Art Of Believing", koTitle: "기도, 믿음의 기술" },
+  { bookNum: 6, year: 1946, title: "The Search", koTitle: "탐구" },
+  { bookNum: 7, year: 1949, title: "Out Of This World", koTitle: "이 세상의 것이 아닌" },
+  { bookNum: 8, year: 1952, title: "The Power Of Awareness", koTitle: "자각의 힘" },
+  { bookNum: 9, year: 1954, title: "Awakened Imagination", koTitle: "깨어난 상상력" },
+  { bookNum: 10, year: 1956, title: "Seedtime And Harvest", koTitle: "씨 뿌릴 때와 거둘 때" },
+  { bookNum: 11, year: 1961, title: "The Law And The Promise", koTitle: "법칙과 약속" },
+  { bookNum: 12, year: 1965, title: "I Know My Father", koTitle: "나는 내 아버지를 안다" },
+  { bookNum: 13, year: 1966, title: "Resurrection", koTitle: "부활, 신앙 고백" },
+  { bookNum: 14, year: 1970, title: "He Breaks The Shell", koTitle: "그가 껍질을 깨뜨리다" }
+];
+
+// 2. 네빌 고다드 294개 강의 (vol1.json ~ vol6.json 매칭)
 const VOLUMES = [
   { vol: 1, title: "제1권 (001 ~ 050번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
   { vol: 2, title: "제2권 (051 ~ 100번 강의)", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
@@ -10,31 +29,78 @@ const VOLUMES = [
 ];
 
 function ViewerApp() {
+  const [openBooksMenu, setOpenBooksMenu] = useState(true);
   const [openVol, setOpenVol] = useState(1);
   const [loadingVol, setLoadingVol] = useState(false);
+  const [loadingData, setLoadingData] = useState(false);
+  const [loadedFiles, setLoadedFiles] = useState({});
+
   const [volLectures, setVolLectures] = useState({});
   const [store, setStore] = useState({});
-  const [loadingData, setLoadingData] = useState(true);
-  const [selectedLec, setSelectedLec] = useState({ num: 1, title: "A Divine Event" });
+  const [selectedLec, setSelectedLec] = useState({
+    isBook: false,
+    num: 1,
+    title: "A Divine Event"
+  });
   const [quizMode, setQuizMode] = useState(false);
 
-  // 1. 깃허브의 neville_data.json 공용 데이터만 읽기 전용으로 불러오기
-  useEffect(() => {
-    fetch("./neville_data.json?t=" + Date.now(), { cache: "no-store" })
-      .then(res => (res.ok ? res.json() : {}))
-      .then(data => {
-        setStore(data || {});
-        const titles = Object.keys(data || {});
-        if (titles.length > 0 && !data["A Divine Event"]) {
-          setSelectedLec({ num: "", title: titles[0] });
-        }
-      })
-      .catch(() => {})
-      .finally(() => setLoadingData(false));
+  // JSON 데이터를 store에 병합 (배열 형태와 객체 형태 모두 호환)
+  const mergeDataToStore = (publicData, fallbackTitle) => {
+    if (!publicData) return;
+    setStore(prev => {
+      const merged = { ...prev };
+      if (Array.isArray(publicData) && fallbackTitle) {
+        const locArr = Array.isArray(prev[fallbackTitle]) ? prev[fallbackTitle] : [];
+        merged[fallbackTitle] = publicData.length >= locArr.length ? publicData : locArr;
+        return merged;
+      }
+      if (typeof publicData === "object") {
+        Object.keys(publicData).forEach(key => {
+          const pubArr = Array.isArray(publicData[key]) ? publicData[key] : [];
+          const locArr = Array.isArray(prev[key]) ? prev[key] : [];
+          merged[key] = pubArr.length >= locArr.length ? pubArr : locArr;
+        });
+      }
+      return merged;
+    });
+  };
 
-    // 첫 화면에서 제1권 목록 자동 로드
+  // 지정한 JSON 파일(vol1~6.json, book1~14.json, neville_data.json) 불러오기
+  const loadJsonFile = async (fileName, fallbackTitle, showSpinner = false) => {
+    if (loadedFiles[fileName]) return;
+    if (showSpinner) setLoadingData(true);
+    try {
+      const res = await fetch("./" + fileName + "?t=" + Date.now(), { cache: "no-store" });
+      if (res.ok) {
+        const data = await res.json();
+        mergeDataToStore(data, fallbackTitle);
+        setLoadedFiles(prev => ({ ...prev, [fileName]: true }));
+      }
+    } catch (e) {
+    } finally {
+      if (showSpinner) setLoadingData(false);
+    }
+  };
+
+  // 앱 첫 실행 시: vol1.json, neville_data.json 및 14권 책 JSON 확인 + 제1권 목차 로드
+  useEffect(() => {
+    loadJsonFile("vol1.json", null, true);
+    loadJsonFile("neville_data.json");
+    BOOKS.forEach(b => {
+      loadJsonFile("book" + b.bookNum + ".json", b.title);
+    });
     fetchVolumeList(VOLUMES[0]);
   }, []);
+
+  const handleToggleBooksMenu = () => {
+    const nextState = !openBooksMenu;
+    setOpenBooksMenu(nextState);
+    if (nextState) {
+      BOOKS.forEach(b => {
+        loadJsonFile("book" + b.bookNum + ".json", b.title);
+      });
+    }
+  };
 
   const fetchVolumeList = async (volObj) => {
     if (volLectures[volObj.vol] && volLectures[volObj.vol].length > 0) return;
@@ -85,6 +151,7 @@ function ViewerApp() {
       return;
     }
     setOpenVol(volObj.vol);
+    loadJsonFile("vol" + volObj.vol + ".json", null, true);
     fetchVolumeList(volObj);
   };
 
@@ -102,156 +169,10 @@ function ViewerApp() {
     if (sentences.length === 0) return;
     if (quizMode) setQuizMode(false);
     const originalTitle = document.title;
-    const prefix = selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
+    const prefix = selectedLec.isBook
+      ? "Book" + String(selectedLec.num).padStart(2, "0") + "_"
+      : selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
     document.title = prefix + selectedLec.title + "_강독노트";
     setTimeout(() => {
       window.print();
-      document.title = originalTitle;
-    }, 150);
-  };
-
-  return (
-    <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 왼쪽 사이드바 (목차 조회 전용) */}
-      <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
-        <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Archive</div>
-        <h1 className="text-lg font-bold mb-1">네빌 고다드 강독 아카이브</h1>
-        <div className="text-xs text-slate-400 mb-3">
-          노란색 문장 배지가 있는 강의를 선택해 열람하세요.
-        </div>
-
-        <div className="flex-1 overflow-y-auto space-y-2 pr-1">
-          {VOLUMES.map(v => {
-            const isOpen = openVol === v.vol;
-            const subList = volLectures[v.vol] || [];
-
-            return (
-              <div key={v.vol} className="rounded-lg overflow-hidden border border-slate-800">
-                <button
-                  onClick={() => handleToggleVolume(v)}
-                  className={"w-full text-left px-3 py-3 text-xs font-bold transition flex justify-between items-center " + (isOpen ? "bg-amber-500 text-slate-900" : "bg-slate-800 hover:bg-slate-700 text-slate-200")}
-                >
-                  <span>📚 {v.title}</span>
-                  <span>{isOpen ? "▲ 접기" : "▼ 펼치기"}</span>
-                </button>
-
-                {isOpen && (
-                  <div className="bg-slate-950 p-2 space-y-1 max-h-80 overflow-y-auto border-t border-slate-800">
-                    {loadingVol && subList.length === 0 ? (
-                      <div className="text-xs text-amber-400 p-3 text-center">⏳ 목록 불러오는 중...</div>
-                    ) : (
-                      subList.map((lec, i) => {
-                        const isSelected = selectedLec.title === lec.title;
-                        const savedCount = (store[lec.title] || []).length;
-                        return (
-                          <button
-                            key={i}
-                            onClick={() => setSelectedLec(lec)}
-                            className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold" : savedCount > 0 ? "text-slate-200 hover:bg-slate-800" : "text-slate-500 hover:bg-slate-900")}
-                          >
-                            <span className="truncate pr-2">{lec.num}. {lec.title}</span>
-                            {savedCount > 0 ? (
-                              <span className="text-[10px] bg-amber-500 text-slate-900 px-1.5 py-0.5 rounded font-bold shrink-0">
-                                {savedCount}문장
-                              </span>
-                            ) : (
-                              <span className="text-[10px] text-slate-600 shrink-0">준비중</span>
-                            )}
-                          </button>
-                        );
-                      })
-                    )}
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </aside>
-
-      {/* 오른쪽 본문 (조회 · 음성 듣기 · 퀴즈 · PDF 출력 전용) */}
-      <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
-        <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
-          <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
-            {selectedLec.num ? "#" + String(selectedLec.num).padStart(3, "0") + ". " : ""}{selectedLec.title}
-          </h2>
-          {sentences.length > 0 && (
-            <div className="no-print flex flex-wrap gap-2">
-              <button
-                onClick={handleDownloadPdf}
-                className="px-4 py-2 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shadow-sm"
-              >
-                📄 PDF 저장
-              </button>
-              <button
-                onClick={() => setQuizMode(!quizMode)}
-                className="px-4 py-2 rounded bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold"
-              >
-                {quizMode ? "🙈 해석 보이기" : "🙈 해석 가리기 연습"}
-              </button>
-            </div>
-          )}
-        </div>
-
-        {loadingData ? (
-          <div className="p-12 text-center text-slate-500 text-sm">⏳ 강독 데이터를 불러오는 중입니다...</div>
-        ) : sentences.length === 0 ? (
-          <div className="bg-white border rounded-xl p-10 text-center text-slate-500">
-            <div className="text-base font-bold text-slate-700 mb-2">아직 강독 노트가 등록되지 않은 강의입니다.</div>
-            <div className="text-xs">왼쪽 목록에서 노란색 문장 수 배지가 표시된 강의를 선택해 주세요.</div>
-          </div>
-        ) : (
-          <div className="space-y-6">
-            {sentences.map((s, idx) => (
-              <div key={idx} className="print-card bg-white p-6 rounded-xl border shadow-sm">
-                <div className="flex justify-between items-center mb-2 border-b pb-2">
-                  <span style={{ fontFamily: "Georgia, serif", fontSize: "17pt", color: "#292929" }} className="font-bold">
-                    Sentence {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <button
-                    onClick={() => speak(s.en)}
-                    className="no-print px-3 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
-                  >
-                    🔊 발음 듣기
-                  </button>
-                </div>
-
-                <p style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }} className="mb-3">
-                  {s.en}
-                </p>
-
-                <p
-                  style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}
-                  className={"p-3 bg-stone-50 border-l-4 border-stone-800 rounded mb-4 " + (quizMode ? "blur-sm hover:blur-none transition cursor-pointer" : "")}
-                >
-                  {s.ko}
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-dashed" style={{ fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}>
-                  <div>
-                    <div className="font-bold mb-1">[핵심 어휘 및 숙어]</div>
-                    <ul className="list-disc pl-5 space-y-1">
-                      {(s.vocab || []).map((v, i) => (
-                        <li key={i}><b>{v.word}</b> : {v.mean}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <div className="font-bold mb-1">[구문 및 문법 해설]</div>
-                    <ul className="list-disc pl-5 space-y-1">
-                      {(s.grammar || []).map((g, i) => (
-                        <li key={i}><b>{g.tag}</b> — {g.desc}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </main>
-    </div>
-  );
-}
-
-ReactDOM.createRoot(document.getElementById("root")).render(<ViewerApp />);
+      document.
