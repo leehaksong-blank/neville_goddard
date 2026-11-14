@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>네빌 고다드 강독 아카이브</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    @media print {
+      @page { size: A4; margin: 15mm 14mm; }
+      body { background-color: #ffffff !important; }
+      .no-print { display: none !important; }
+      .print-container { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      .print-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        margin-bottom: 14px !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#faf9f5] text-[#292929]">
+  <div id="root"></div>
+
+  <!-- 조회 전용 viewer.jsx 연결 -->
+  <script type="text/babel" src="./viewer.jsx?v=1"></script>
+</body>
+</html>
