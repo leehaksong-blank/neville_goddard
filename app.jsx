@@ -612,7 +612,11 @@ function App() {
 
   // ★ 최신 Gemini 3.1 Pro Preview 1순위 + Flash 자동 우회 호출기
   const callGeminiWithFallback = async (promptText, schemaObj, chunkInfo) => {
-    const models = ["gemini-3.1-pro-preview", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
+    // 기존 코드 (삭제):
+  // const models = ["gemini-3.1-pro-preview", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
+
+  // ★ 수정 코드 (아래 한 줄로 교체):
+  const models = ["gemini-3.1-pro-preview", "gemini-3.5-pro", "gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"];
     let lastErr = "";
 
     for (let attempt = 1; attempt <= 2; attempt++) {
