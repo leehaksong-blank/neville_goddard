@@ -1,0 +1,6154 @@
+{
+  "Feeling Is The Secret": [
+    {
+      "en": "THIS book is concerned with the art of realizing your desire.",
+      "ko": "이 책은 당신의 소망을 실현하는 기술과 관련이 있습니다.",
+      "vocab": [
+        {
+          "word": "be concerned with",
+          "mean": "~와 관련이 있다"
+        },
+        {
+          "word": "realizing",
+          "mean": "실현하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 수식",
+          "desc": "'be concerned with'는 '관심을 두다, 관련되다'라는 뜻이며, 뒤의 전치사구 'with the art'가 그 대상을 이룹니다."
+        }
+      ]
+    },
+    {
+      "en": "It gives you an account of the mechanism used in the production of the visible world.",
+      "ko": "그것은 가시적인 세계의 창조에 사용되는 메커니즘에 대한 설명을 당신에게 제공합니다.",
+      "vocab": [
+        {
+          "word": "account",
+          "mean": "설명, 기술"
+        },
+        {
+          "word": "mechanism",
+          "mean": "메커니즘, 구조"
+        },
+        {
+          "word": "visible world",
+          "mean": "가시적 세계, 현상계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구의 후치수식",
+          "desc": "과거분사구 'used in the production ~'가 앞의 명사 'mechanism'을 수식하여 보이지 않는 의식이 현상계로 구현되는 과정을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is a small book but not slight.",
+      "ko": "그것은 작은 책이지만 가볍지 않습니다.",
+      "vocab": [
+        {
+          "word": "slight",
+          "mean": "가벼운, 하찮은, 내용이 빈약한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구조",
+          "desc": "접속사 'but'을 통해 물리적인 크기의 작음과 영적/실천적 내용의 깊이(not slight)를 대조하여 책의 가치를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "There is a treasure in it — a clearly defined road to the realization of your dreams.",
+      "ko": "그 안에는 보물이 있습니다. 그것은 바로 여러분의 꿈을 실현하는 명확하게 정의된 길입니다.",
+      "vocab": [
+        {
+          "word": "treasure",
+          "mean": "보물, 귀중한 것"
+        },
+        {
+          "word": "clearly defined",
+          "mean": "명확히 정의된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대시(—)를 통한 동격 설명",
+          "desc": "대시 기호 뒤의 'a clearly defined road'는 앞의 'treasure'가 상징하는 구체적인 실천의 길이 무엇인지를 명확히 밝혀줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Were it possible to carry conviction to another by means of reasoned arguments and detailed instances, this book would be many times its size.",
+      "ko": "이성적인 논거와 상세한 사례를 통해 타인에게 확신을 전달하는 것이 가능했다면, 이 책은 지금 분량의 몇 배가 되었을 것입니다.",
+      "vocab": [
+        {
+          "word": "carry conviction",
+          "mean": "확신을 주다"
+        },
+        {
+          "word": "reasoned arguments",
+          "mean": "이성적 논거"
+        },
+        {
+          "word": "instances",
+          "mean": "사례, 예시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거완료 도치",
+          "desc": "'If it were possible'에서 접속사 'If'를 생략하고 동사 'Were'를 주어 앞으로 도치시켜 네빌 고다드 특유의 단호하고 격식 있는 어조를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "It is seldom possible, however, to do so by means of written statements or arguments, since to the suspended judgment, it always seems plausible to say that the author was dishonest or deluded and, therefore, his evidence was tainted.",
+      "ko": "그러나 글이나 논거를 통해 그렇게 하는 것은 거의 불가능합니다. 왜냐하면 유예된 판단(열리지 않은 마음)을 가진 이들에게는, 저자가 정직하지 못하거나 망상에 사로잡혀 있으며, 따라서 그의 증거가 오염되었다고 말하는 것이 그럴듯하게 보이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "seldom",
+          "mean": "좀처럼 ~ 않는"
+        },
+        {
+          "word": "suspended judgment",
+          "mean": "판단을 보류한, 혹은 확신이 결여된 상태"
+        },
+        {
+          "word": "plausible",
+          "mean": "그럴듯한"
+        },
+        {
+          "word": "deluded",
+          "mean": "망상에 빠진"
+        },
+        {
+          "word": "tainted",
+          "mean": "오염된, 훼손된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 구문과 인과관계",
+          "desc": "'It is seldom possible... to do so'라는 가주어 구문 뒤에 'since'절이 이어져 논리적 증명의 한계를 지적하며, 영적 진리는 논증이 아니라 직접 체험되어야 함을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Consequently, I have purposely omitted all arguments and testimonials and simply challenge the open-minded reader to practice the law of consciousness as revealed in this book.",
+      "ko": "결과적으로, 나는 모든 논거와 추천사를 고의로 생략하고, 열린 마음을 가진 독자에게 이 책에 계시된 의식의 법칙을 실천해 볼 것을 단순하게 권유합니다.",
+      "vocab": [
+        {
+          "word": "purposely",
+          "mean": "고의로, 의도적으로"
+        },
+        {
+          "word": "testimonials",
+          "mean": "추천사, 증언"
+        },
+        {
+          "word": "open-minded",
+          "mean": "마음이 열린, 편견 없는"
+        },
+        {
+          "word": "revealed",
+          "mean": "계시된, 드러난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재완료와 현재시제의 병렬",
+          "desc": "과거의 결정이 현재까지 영향을 미침을 나타내는 'have omitted'와 저자의 변함없는 태도를 나타내는 'challenge'가 병렬되어 네빌의 단호한 선언적 어조를 구성합니다."
+        }
+      ]
+    },
+    {
+      "en": "Personal success will prove far more convincing than all the books that could be written on the subject.",
+      "ko": "개인의 성공은 그 주제에 대해 쓰여질 수 있는 모든 책들보다 훨씬 더 설득력 있음을 증명해 줄 것입니다.",
+      "vocab": [
+        {
+          "word": "convincing",
+          "mean": "설득력 있는"
+        },
+        {
+          "word": "the subject",
+          "mean": "그 주제 (의식의 법칙)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교급 강조",
+          "desc": "비교급 'more convincing' 앞에 'far'를 사용하여 이론적 설명보다 주관적 체험(Personal success)이 가지는 절대적인 우위를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The world and all within it is man’s conditioned consciousness objectified.",
+      "ko": "세계와 그 안의 모든 것은 인간의 조건화된 의식이 객관화된 것입니다.",
+      "vocab": [
+        {
+          "word": "conditioned consciousness",
+          "mean": "조건화된 의식"
+        },
+        {
+          "word": "objectified",
+          "mean": "객관화된, 물질화된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적격 보어를 동반한 분사 수식",
+          "desc": "'man's conditioned consciousness'가 주격 보어 자리에서 후치분사 'objectified'에 의해 수식되며, '내면의 의식이 곧 외면의 현실'이라는 네빌 철학의 핵심 명제를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Consciousness is the cause as well as the substance of the entire world.",
+      "ko": "의식은 전 세계의 원인이자 동시에 본질입니다.",
+      "vocab": [
+        {
+          "word": "cause",
+          "mean": "원인"
+        },
+        {
+          "word": "substance",
+          "mean": "본질, 실체"
+        },
+        {
+          "word": "entire world",
+          "mean": "온 세상, 전체 세계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상관접속사 'A as well as B'",
+          "desc": "'B뿐만 아니라 A도'라는 의미로, 의식이 물질세계의 배후에 작용하는 힘(cause)일 뿐만 아니라 그 세계를 이루는 근본 재료(substance)임을 동등하게 격상시킵니다."
+        }
+      ]
+    },
+    {
+      "en": "So it is to consciousness that we must turn if we would discover the secret of creation.",
+      "ko": "그러므로 우리가 창조의 비밀을 발견하고자 한다면, 우리가 향해야 할 곳은 바로 의식입니다.",
+      "vocab": [
+        {
+          "word": "turn",
+          "mean": "향하다, 의지하다"
+        },
+        {
+          "word": "secret of creation",
+          "mean": "창조의 비밀"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조구문 (It is ~ that)",
+          "desc": "전치사구 'to consciousness'를 강조하기 위해 'It is ~ that' 구문을 사용하여 외적인 수단이 아닌 오직 내면의 의식으로 향해야 함을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "Knowledge of the law of consciousness and the method of operating this law will enable you to accomplish all you desire in life.",
+      "ko": "의식의 법칙에 대한 지들과 이 법칙을 운용하는 방식은 당신이 인생에서 바라는 모든 것을 성취할 수 있게 해 줄 것입니다.",
+      "vocab": [
+        {
+          "word": "law of consciousness",
+          "mean": "의식의 법칙"
+        },
+        {
+          "word": "operating",
+          "mean": "운용하는, 작동시키는"
+        },
+        {
+          "word": "accomplish",
+          "mean": "성취하다, 이루다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "오형식 구조 (enable + 목적어 + to 부정사)",
+          "desc": "주어(Knowledge and method)가 목적어(you)로 하여금 to부정사(to accomplish) 이하의 행동을 가능하게 한다는 구조로, 법칙 이해의 실천적 효용성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Armed with a working knowledge of this law, you can build and maintain an ideal world.",
+      "ko": "이 법칙에 대한 실용적 지식으로 무장하면, 여러분은 이상적인 세계를 건설하고 유지할 수 있습니다.",
+      "vocab": [
+        {
+          "word": "armed with",
+          "mean": "~로 무장한"
+        },
+        {
+          "word": "working knowledge",
+          "mean": "실용적 지식"
+        },
+        {
+          "word": "maintain",
+          "mean": "유지하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "'Armed with ~'는 이유나 조건을 나타내는 분사구문으로, 법칙을 아는 것이 삶을 창조하는 무기가 됨을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Consciousness is the one and only reality, not figuratively but actually.",
+      "ko": "의식은 비유적으로가 아니라 실제로 유일무이한 실재입니다.",
+      "vocab": [
+        {
+          "word": "consciousness",
+          "mean": "의식"
+        },
+        {
+          "word": "figuratively",
+          "mean": "비유적으로"
+        },
+        {
+          "word": "actually",
+          "mean": "실제로, 현실로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조구문",
+          "desc": "'not A but B' 구문을 사용하여 네빌 고다드 사상의 핵심인 '의식의 절대적 실재성'을 강조하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "This reality may for the sake of clarity be likened unto a stream which is divided into two parts, the conscious and the subconscious.",
+      "ko": "이 실재는 명확성을 위해 의식과 잠의식이라는 두 부분으로 나뉘는 강물에 비유될 수 있습니다.",
+      "vocab": [
+        {
+          "word": "for the sake of",
+          "mean": "~를 위하여"
+        },
+        {
+          "word": "liken unto",
+          "mean": "~에 비유하다"
+        },
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "'which is divided ~'가 'a stream'을 수식하며, 마음의 구조를 강물의 흐름으로 설명하는 비유적 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "In order to intelligently operate the law of consciousness, it is necessary to understand the relationship between the conscious and the subconscious.",
+      "ko": "의식의 법칙을 지혜롭게 운용하기 위해서는, 의식과 잠재의식 사이의 관계를 이해하는 것이 필요합니다.",
+      "vocab": [
+        {
+          "word": "intelligently",
+          "mean": "지혜롭게, 영적으로 깨달아"
+        },
+        {
+          "word": "operate",
+          "mean": "작동시키다, 운용하다"
+        },
+        {
+          "word": "relationship",
+          "mean": "관계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어",
+          "desc": "'It is necessary to ~' 구문을 사용하여 법칙 운용을 위한 필수적인 선행 조건을 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "The conscious is personal and selective; the subconscious is impersonal and non-selective.",
+      "ko": "의식은 인격적이고 선택적이며, 잠재의식은 비인격적이고 비선택적입니다.",
+      "vocab": [
+        {
+          "word": "personal",
+          "mean": "인격적인, 개인적인"
+        },
+        {
+          "word": "selective",
+          "mean": "선택적인"
+        },
+        {
+          "word": "non-selective",
+          "mean": "비선택적인, 가리지 않는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "세미콜론 대조",
+          "desc": "세미콜론을 통해 의식(남성적/선택적)과 잠재의식(여성적/무차별적 수용)의 성질을 명확히 대조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The conscious is the realm of effect; the subconscious is the realm of cause.",
+      "ko": "의식은 결과의 영역이고, 잠재의식은 원인의 영역입니다.",
+      "vocab": [
+        {
+          "word": "realm",
+          "mean": "영역, 범위"
+        },
+        {
+          "word": "effect",
+          "mean": "결과"
+        },
+        {
+          "word": "cause",
+          "mean": "원인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유적 정의",
+          "desc": "의식과 잠재의식을 '원인과 결과'라는 형이상학적 관계로 규정하는 핵심 문장입니다."
+        }
+      ]
+    },
+    {
+      "en": "These two aspects are the male and female divisions of consciousness.",
+      "ko": "이 두 측면은 의식의 남성과 여성적 구별입니다.",
+      "vocab": [
+        {
+          "word": "aspect",
+          "mean": "측면"
+        },
+        {
+          "word": "division",
+          "mean": "구분, 분할"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "신비주의적 성격",
+          "desc": "마음의 작용을 성경적/신비주의적 관점인 '남성과 여성'의 창조적 원리로 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The conscious is male; the subconscious is female.",
+      "ko": "의식은 남성이며, 잠재의식은 여성입니다.",
+      "vocab": [
+        {
+          "word": "male",
+          "mean": "남성적인"
+        },
+        {
+          "word": "female",
+          "mean": "여성적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "간결한 단문",
+          "desc": "짧은 대등절을 통해 앞서 언급한 창조의 성별 원리를 확정 짓습니다."
+        }
+      ]
+    },
+    {
+      "en": "The conscious generates ideas and impresses these ideas on the subconscious; the subconscious receives ideas and gives form and expression to them.",
+      "ko": "의식은 아이디어를 생성하고 이 아이디어들을 잠재의식에 각인시키며, 잠재의식은 아이디어를 받아들여 그것들에 형태와 표현을 부여합니다.",
+      "vocab": [
+        {
+          "word": "generate",
+          "mean": "생성하다"
+        },
+        {
+          "word": "impress",
+          "mean": "각인시키다"
+        },
+        {
+          "word": "expression",
+          "mean": "표현, 발현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상호작용 구조",
+          "desc": "의식(파송/각인)과 잠재의식(수용/현상화)의 구체적인 창조 메커니즘을 대조적으로 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "By this law — first conceiving an idea and then impressing the idea conceived on the subconscious — all things evolve out of consciousness; and without this sequence, there is not anything made that is made.",
+      "ko": "이 법칙에 의해 — 먼저 아이디어를 잉태하고 그런 다음 잉태된 아이디어를 잠재의식에 각인함으로써 — 모든 만물이 의식으로부터 진화해 나옵니다; 그리고 이 순서가 없다면, 지어진 것은 지어진 것이 하나도 없습니다.",
+      "vocab": [
+        {
+          "word": "conceive",
+          "mean": "잉태하다, 품다"
+        },
+        {
+          "word": "evolve out of",
+          "mean": "~로부터 진화하다, 전개되다"
+        },
+        {
+          "word": "sequence",
+          "mean": "순서"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용 구문",
+          "desc": "후반부 'there is not anything made that is made'는 요한복음 1:3의 성경적 어조를 차용하여 의식의 창조적 절대성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The conscious impresses the subconscious, while the subconscious expresses all that is impressed upon it.",
+      "ko": "의식은 잠재의식에 각인하고, 반면에 잠재의식은 그 위에 각인된 모든 것을 표현합니다.",
+      "vocab": [
+        {
+          "word": "while",
+          "mean": "반면에, ~하는 동안"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 that",
+          "desc": "'all that is impressed'에서 선행사 all을 수식하는 주격 관계대명사절이 쓰여 각인된 내용의 100% 발현을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious does not originate ideas, but accepts as true those which the conscious mind feels to be true and — in a way known only to itself — objectifies the accepted ideas.",
+      "ko": "잠재의식은 아이디어를 스스로 창조해내지 않으며, 의식적인 마음이 참으로 느끼는 것들을 진실로 받아들이고 — 오직 자신만이 아는 방식으로 — 받아들여진 아이디어들을 객관화합니다.",
+      "vocab": [
+        {
+          "word": "originate",
+          "mean": "발생시키다, 창조하다"
+        },
+        {
+          "word": "objectify",
+          "mean": "객관화하다, 현실화하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입구",
+          "desc": "대시(--) 사이에 삽입된 부사구는 잠재의식의 현상화 과정이 인간의 이성으로 다 헤아릴 수 없는 신비로운 영역임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Therefore, through his power to imagine and feel and his freedom to choose the idea he will entertain, man has control over creation.",
+      "ko": "그러므로 상상하고 느낄 수 있는 그의 능력과 그가 품을 아이디어를 선택할 수 있는 그의 자유를 통하여, 인간은 창조를 통제할 수 있습니다.",
+      "vocab": [
+        {
+          "word": "entertain",
+          "mean": "품다, 마음에 두다"
+        },
+        {
+          "word": "control",
+          "mean": "통제, 지배"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구와 형용사적 용법",
+          "desc": "'power to imagine'과 'freedom to choose'는 인간에게 부여된 신성한 창조의 도구를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Control of the subconscious is accomplished through control of your ideas and feelings.",
+      "ko": "잠재의식의 통제는 여러분의 아이디어와 느낌의 통제를 통해 이루어집니다.",
+      "vocab": [
+        {
+          "word": "accomplished",
+          "mean": "성취되는, 달성되는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "결과의 통제('Control of the subconscious')가 원인의 통제('control of your ideas and feelings')를 통해 달성됨을 수동태로 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "The mechanism of creation is hidden in the very depth of the subconscious — the female aspect or womb of creation.",
+      "ko": "창조의 메커니즘은 잠재의식의 바로 그 깊은 곳 — 창조의 여성적 측면 혹은 자궁 — 에 숨겨져 있습니다.",
+      "vocab": [
+        {
+          "word": "mechanism",
+          "mean": "메커니즘, 구조"
+        },
+        {
+          "word": "depth",
+          "mean": "깊은 곳, 심층"
+        },
+        {
+          "word": "womb",
+          "mean": "자궁, 태중"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 표현",
+          "desc": "대시 뒤의 'the female aspect or womb of creation'은 잠재의식을 생명을 잉태하는 자궁에 비유하는 신비주의적 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious transcends reason and is independent of induction.",
+      "ko": "잠재의식은 이성을 초월하며 귀납법에 구애받지 않는다.",
+      "vocab": [
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        },
+        {
+          "word": "transcend",
+          "mean": "초월하다"
+        },
+        {
+          "word": "induction",
+          "mean": "귀납법"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 병렬 술어",
+          "desc": "The subconscious가 주어이고 transcends와 is가 등위접속사 and로 연결되어 잠재의식의 초월성과 독립성을 설명한다."
+        }
+      ]
+    },
+    {
+      "en": "It contemplates a feeling as a fact existing within itself and on this assumption proceeds to give expression to it.",
+      "ko": "잠재의식은 느낌을 자기 자신 안에 존재하는 사실로 숙고하며, 이 가정에 근거하여 그것을 표현해 나간다.",
+      "vocab": [
+        {
+          "word": "contemplate",
+          "mean": "숙고하다, 응시하다"
+        },
+        {
+          "word": "assumption",
+          "mean": "가정"
+        },
+        {
+          "word": "proceed",
+          "mean": "나아가다, 진행하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구의 수식",
+          "desc": "existing within itself는 현재분사구로 a fact를 뒤에서 수식하여 느낌이 내면의 실제임을 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "The creative process begins with an idea and its cycle runs its course as a feeling and ends in a volition to act.",
+      "ko": "창조 과정은 아이디어로 시작하여 느낌으로서 그 주기를 다하고, 행동하려는 의지로 끝난다.",
+      "vocab": [
+        {
+          "word": "volition",
+          "mean": "의지, 결단"
+        },
+        {
+          "word": "run its course",
+          "mean": "주기를 다하다, 당연한 과정을 밟다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위절의 연결",
+          "desc": "and로 연결된 세 개의 동사구(begins, runs, ends)가 창조의 3단계(생상-과정-완성)를 명확히 보여준다."
+        }
+      ]
+    },
+    {
+      "en": "Ideas are impressed on the subconscious through the medium of feeling.",
+      "ko": "아이디어는 느낌이라는 매체를 통해 잠재의식에 각인된다.",
+      "vocab": [
+        {
+          "word": "impress",
+          "mean": "각인시키다, 새기다"
+        },
+        {
+          "word": "medium",
+          "mean": "매체, 수단"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "주어 Ideas가 수동태(are impressed)로 쓰여 외부의 아이디어가 잠재의식에 새겨지는 과정을 객관적으로 서술한다."
+        }
+      ]
+    },
+    {
+      "en": "No idea can be impressed on the subconscious until it is felt, but once felt — be it good, bad or indifferent — it must be expressed.",
+      "ko": "어떤 아이디어도 느껴지기 전에는 잠재의식에 각인될 수 없지만, 일단 느껴지기만 하면 그것이 좋든 나쁘든 혹은 무관하든 반드시 표현되어야 한다.",
+      "vocab": [
+        {
+          "word": "indifferent",
+          "mean": "무관한, 그저 그런"
+        },
+        {
+          "word": "once",
+          "mean": "일단 ~하면"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "양보 의미의 가정법",
+          "desc": "be it good, bad or indifferent는 'whether it is good...'의 축약형으로 조건에 상관없이 법칙이 작용함을 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "Feeling is the one and only medium through which ideas are conveyed to the subconscious.",
+      "ko": "느낌은 아이디어가 잠재의식으로 전달되는 유일무이한 매체이다.",
+      "vocab": [
+        {
+          "word": "convey",
+          "mean": "전달하다"
+        },
+        {
+          "word": "the one and only",
+          "mean": "유일무이한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "through which는 전치사+관계대명사로, 선행사 medium을 받아 느낌이 유일한 통로임을 수식한다."
+        }
+      ]
+    },
+    {
+      "en": "Therefore, the man who does not control his feeling may easily impress the subconscious with undesirable states.",
+      "ko": "그러므로 자신의 느낌을 통제하지 못하는 사람은 원치 않는 상태를 잠재의식에 쉽게 각인시킬 수 있다.",
+      "vocab": [
+        {
+          "word": "undesirable",
+          "mean": "원치 않는, 바람직하지 않은"
+        },
+        {
+          "word": "state",
+          "mean": "상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 관계대명사절",
+          "desc": "who does not control his feeling이 the man을 수식하며 감정 통제의 중요성을 대조적으로 도입한다."
+        }
+      ]
+    },
+    {
+      "en": "By control of feeling is not meant restraint or suppression of your feeling, but rather the disciplining of self to imagine and entertain only such feeling as contributes to your happiness.",
+      "ko": "느낌의 통인이란 느낌의 억제나 억압을 의미하는 것이 아니라, 오직 당신의 행복에 기여하는 느낌만을 상상하고 품도록 자신을 훈련하는 것을 뜻한다.",
+      "vocab": [
+        {
+          "word": "restraint",
+          "mean": "제한, 통제"
+        },
+        {
+          "word": "suppression",
+          "mean": "억압"
+        },
+        {
+          "word": "discipline",
+          "mean": "훈련하다, 단련하다"
+        },
+        {
+          "word": "entertain",
+          "mean": "(생각·느낌을) 품다, 마음에 품다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not A but rather B 구문",
+          "desc": "수동태 문장에서 보어가 강조되어 앞으로 도치되었으며, 억압적 통제가 아닌 생산적 상상력으로서의 훈련을 정의한다."
+        }
+      ]
+    },
+    {
+      "en": "Control of your feeling is all important to a full and happy life.",
+      "ko": "풍요롭고 행복한 삶을 위해서는 느낌을 통제하는 것이 무엇보다 중요하다.",
+      "vocab": [
+        {
+          "word": "all important",
+          "mean": "지극히 중요한"
+        },
+        {
+          "word": "full",
+          "mean": "풍요로운, 충만한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "형용사의 부사적 용법",
+          "desc": "all이 부사로 쓰여 important를 수식하며 절대적인 가치를 부여한다."
+        }
+      ]
+    },
+    {
+      "en": "r entertain an undesirable feeling, nor think sympathetically about wrong in any shape or form.",
+      "ko": "원치 않는 느낌을 품지도 말고, 어떤 형태나 모양으로든 악에 대해 동정적으로 생각하지도 마라.",
+      "vocab": [
+        {
+          "word": "sympathetically",
+          "mean": "동정적으로, 호의적으로"
+        },
+        {
+          "word": "in any shape or form",
+          "mean": "어떤 형태로나마"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정어구의 도치/생략",
+          "desc": "문맥상 앞선 명령문의 연속으로 nor를 통해 부정의 의미를 이어받아 잘못된 대상에 대한 마음의 동조를 금지한다."
+        }
+      ]
+    },
+    {
+      "en": "Do not dwell on the imperfection of yourself or others.",
+      "ko": "자신이나 다른 사람의 불완전함에 집착하지 마라.",
+      "vocab": [
+        {
+          "word": "dwell on",
+          "mean": "~에 집착하다, 심사숙고하다"
+        },
+        {
+          "word": "imperfection",
+          "mean": "불완전함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정 명령문",
+          "desc": "Do not으로 시작하여 불완전한 상태에 주의를 기울이는 것을 경고한다."
+        }
+      ]
+    },
+    {
+      "en": "To do so is to impress the subconscious with these limitations.",
+      "ko": "그렇게 하는 것은 이러한 한계들을 잠재의식에 각인시키는 것이다.",
+      "vocab": [
+        {
+          "word": "limitation",
+          "mean": "한계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "to부정사의 명사적 용법",
+          "desc": "주어 자리의 to do so와 보어 자리의 to impress가 연결되어 '그렇게 행동하는 것=한계의 각인'이라는 등식을 이룬다."
+        }
+      ]
+    },
+    {
+      "en": "What you do not want done unto you, do not feel that it is done unto you or another.",
+      "ko": "네가 당하고 싶지 않은 일은, 그것이 너나 다른 사람에게 행해지고 있다고 느끼지 마라.",
+      "vocab": [
+        {
+          "word": "unto",
+          "mean": "~에게 (~to의 고어체)"
+        },
+        {
+          "word": "want done",
+          "mean": "~가 행해지기를 원하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 어조와 목적어 도치",
+          "desc": "What you do not want done이 목적어로 앞으로 도치되었으며, 황금률을 네빌의 의식 법칙으로 재해석하고 있다."
+        }
+      ]
+    },
+    {
+      "en": "This is the whole law of a full and happy life.",
+      "ko": "이것이 풍요롭고 행복한 삶의 모든 율법이다.",
+      "vocab": [
+        {
+          "word": "whole law",
+          "mean": "모든 율법, 전체 법칙"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "지시형용사",
+          "desc": "This를 통해 앞서 언급한 감정의 법칙이 성경적 의미의 완전한 율법임을 선언한다."
+        }
+      ]
+    },
+    {
+      "en": "Everything else is commentary.",
+      "ko": "나머지 모든 것은 주해(해설)일 뿐이다.",
+      "vocab": [
+        {
+          "word": "commentary",
+          "mean": "주해, 해설, 논평"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "간결한 단언",
+          "desc": "짧은 문장을 통해 감정 통제라는 원리 외의 다른 교리는 모두 부차적인 것에 불과함을 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "Every feeling makes a subconscious impression and, unless it is counteracted by a more powerful feeling of an opposite nature, must be expressed.",
+      "ko": "모든 느낌은 잠재의식에 인상을 남기며, 반대 성격의 더 강력한 느낌에 의해 상쇄되지 않는 한 반드시 표현되어야 한다.",
+      "vocab": [
+        {
+          "word": "counteract",
+          "mean": "상쇄하다, 대응하다"
+        },
+        {
+          "word": "opposite",
+          "mean": "반대의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입된 조건절",
+          "desc": "unless 이하의 삽입된 조건절이 주어(Every feeling)에 대한 동사들(makes와 must be expressed) 사이에 개입하여 예외 조항을 설명한다."
+        }
+      ]
+    },
+    {
+      "en": "The dominant of two feelings is the one expressed.",
+      "ko": "두 가지 느낌 중 지배적인 것이 표현되는 느낌이다.",
+      "vocab": [
+        {
+          "word": "dominant",
+          "mean": "지배적인, 우세한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사 수식",
+          "desc": "expressed가 뒤에서 the one을 수식하여 우세한 감정만이 현실화된다는 법칙을 압축적으로 보여준다."
+        }
+      ]
+    },
+    {
+      "en": "‘I am healthy ’ is a stronger feeling than ‘I will be healthy ’ .",
+      "ko": "'나는 건강하다'는 '나는 건강해질 것이다'보다 더 강한 느낌이다.",
+      "vocab": [
+        {
+          "word": "stronger",
+          "mean": "더 강한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "직접 인용구 주어",
+          "desc": "절 전체가 주어로 사용되어 존재 양태의 시제(현재형)가 지니는 창조적 우위성을 비교급으로 설명한다."
+        }
+      ]
+    },
+    {
+      "en": "To feel ‘I will be’ is to confess ‘I am not’; ‘I am’ is stronger than ‘I am not’ .",
+      "ko": "'내가 ~가 될 것이다'라고 느끼는 것은 '내가 지금은 아니다'라고 자백하는 것이며, '나는 이다'는 '나는 아니다'보다 강하다.",
+      "vocab": [
+        {
+          "word": "confess",
+          "mean": "자백하다, 인정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재론적 현재시제 강조",
+          "desc": "미래형 표현은 결핍을 자인하는 것임을 지적하며, 네빌 사상의 핵심인 '지금 이미 존재함(I AM)'의 원리를 대조법으로 증명한다."
+        }
+      ]
+    },
+    {
+      "en": "What you feel you are always dominates what you feel you would like to be; therefore to be realized, the wish must be felt as a state that is rather than a state that is not",
+      "ko": "당신이 느끼기에 당신이 '존재하는 것'은 언제나 당신이 되고 싶다고 느끼는 것을 압도합니다. 그러므로 소망이 실현되기 위해서는, 그것이 존재하지 않는 상태가 아니라 존재하는 상태로서 느껴져야 합니다.",
+      "vocab": [
+        {
+          "word": "dominate",
+          "mean": "압도하다, 지배하다"
+        },
+        {
+          "word": "realize",
+          "mean": "실현하다"
+        },
+        {
+          "word": "sensation",
+          "mean": "감각, 느낌"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "What절",
+          "desc": "'What you feel you are'는 주어 역할을 하며, 삽입절 'you feel'이 포함된 구조로 네빌 고다드의 존재론적 핵심을 드러냅니다."
+        },
+        {
+          "tag": "comparison",
+          "desc": "'rather than'을 사용하여 상상 속의 존재 상태와 결핍된 상태를 대조하며, 이미 이루어진 상태의 실재성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Sensation precedes manifestation and is the foundation upon which all manifestation rests.",
+      "ko": "느낌은 현현에 앞서며, 모든 현현이 그 위에 기초하는 토대입니다.",
+      "vocab": [
+        {
+          "word": "precede",
+          "mean": "선행하다, ~보다 앞서다"
+        },
+        {
+          "word": "manifestation",
+          "mean": "현현, 나타남"
+        },
+        {
+          "word": "foundation",
+          "mean": "기초, 토대"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Preposition + Relative Pronoun",
+          "desc": "'upon which'는 선행사 'the foundation'을 받는 전치사+관계대명사 구조로, 느낌이 모든 창조의 절대적 기반임을 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "Be careful of your moods and feelings, for there is an unbroken connection between your feelings and your visible world.",
+      "ko": "당신의 기분과 느낌을 주의 깊게 살피십시오. 당신의 느낌과 보이는 세계 사이에는 끊어지지 않는 연결이 있기 때문입니다.",
+      "vocab": [
+        {
+          "word": "mood",
+          "mean": "기분, 분위기"
+        },
+        {
+          "word": "unbroken",
+          "mean": "끊어지지 않는, 연속적인"
+        },
+        {
+          "word": "visible world",
+          "mean": "보이는 세계, 현상계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Imperative + Conjunction",
+          "desc": "명령문 뒤의 'for'는 단순한 이유를 넘어 내면의 상태가 외부 세계를 결정한다는 인과법칙의 엄숙한 진리를 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your body is an emotional filter and bears the unmistakable marks of your prevalent emotions.",
+      "ko": "당신의 신체는 감정의 필터이며, 만연한 감정의 오인할 수 없는 흔적들을 지니고 있습니다.",
+      "vocab": [
+        {
+          "word": "emotional filter",
+          "mean": "감정의 여과기"
+        },
+        {
+          "word": "unmistakable",
+          "mean": "명백한, 오인할 수 없는"
+        },
+        {
+          "word": "prevalent",
+          "mean": "만연한, 지배적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Compound Predicate",
+          "desc": "주어 'Your body'가 두 개의 동사 'is'와 'bears'를 취하며, 심신이원론을 초월해 육체는 마음의 현현임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Emotional disturbances —especially suppressed emotions — are the causes of all disease.",
+      "ko": "감정적인 동요 — 특히 억압된 감정들은 — 모든 질병의 원인입니다.",
+      "vocab": [
+        {
+          "word": "disturbance",
+          "mean": "동요, 혼란"
+        },
+        {
+          "word": "suppress",
+          "mean": "억압하다, 참다"
+        },
+        {
+          "word": "disease",
+          "mean": "질병, 부조화"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Emphatic Dashes",
+          "desc": "대시 사이에 삽입된 구절을 통해 네빌은 억압된 감정이야말로 존재의 조화를 깨는 주범임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "To feel intensely about a wrong without voicing or expressing that feeling is the beginning of disease (“dis-ease”) in both body and environment.",
+      "ko": "어떤 잘못에 대해 목소리를 내거나 표현하지 않은 채 강렬하게 느끼는 것은, 신체와 환경 모두에서 질병(불조화, 'dis-ease')의 시작입니다.",
+      "vocab": [
+        {
+          "word": "intensely",
+          "mean": "강렬하게"
+        },
+        {
+          "word": "voice",
+          "mean": "말로 표현하다"
+        },
+        {
+          "word": "dis-ease",
+          "mean": "불안, 부조화 (병의 어원적 해석)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Infinitive Subject",
+          "desc": "부정사구 'To feel intensely...'가 문장의 주어로 와서, 내면의 반응 방식 자체가 육체적·환경적 현실을 창조함을 논증합니다."
+        }
+      ]
+    },
+    {
+      "en": "Do not entertain the feeling of regret or failure for frustration or detachment from your objective results in disease.",
+      "ko": "후회나 실패의 느낌을 품지 마십시오. 좌절이나 목표로부터의 단절은 질병을 초래하기 때문입니다.",
+      "vocab": [
+        {
+          "word": "entertain",
+          "mean": "(생각·마음을) 품다, 환대하다"
+        },
+        {
+          "word": "regret",
+          "mean": "후회"
+        },
+        {
+          "word": "detachment",
+          "mean": "분리, 단절"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Negative Imperative",
+          "desc": "부정 명령문을 통해 부정적 감정의 수용을 엄격히 금지하며, 마음의 상태를 온전하게 지킬 것을 요구합니다."
+        }
+      ]
+    },
+    {
+      "en": "Think feelingly only of the state you desire to realize.",
+      "ko": "당신이 실현하고자 하는 상태만을 느낌을 담아 생각하십시오.",
+      "vocab": [
+        {
+          "word": "feelingly",
+          "mean": "느껴서, 감정을 담아"
+        },
+        {
+          "word": "desire",
+          "mean": "갈망하다, 바라다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Adverbial Modification",
+          "desc": "'think'를 수식하는 부사 'feelingly'는 단순한 지적 사고가 아닌 감정이 동반된 상상력만이 창조력을 갖는다는 네빌의 핵심 교리를 요약합니다."
+        }
+      ]
+    },
+    {
+      "en": "Feeling the reality of the state sought and living and acting on that conviction is the way of all seeming miracles.",
+      "ko": "추구하는 상태의 실재성을 느끼고 그 확신 속에서 살아가며 행동하는 것이야말로 모든 겉보기의 기적들이 일어나는 길입니다.",
+      "vocab": [
+        {
+          "word": "conviction",
+          "mean": "확신, 신념"
+        },
+        {
+          "word": "seeming",
+          "mean": "겉보기의, 외견상의"
+        },
+        {
+          "word": "miracle",
+          "mean": "기적"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Gerund Phrase Subject",
+          "desc": "동명사구들이 결합하여 단수 주어로 작동하며, 느낌과 삶의 태도, 행동의 일치가 기적을 낳는 유일한 법칙임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "All changes of expression are brought about through a change of feeling.",
+      "ko": "표현의 모든 변화는 느낌의 변화를 통해 일어납니다.",
+      "vocab": [
+        {
+          "word": "bring about",
+          "mean": "야기하다, 초래하다"
+        },
+        {
+          "word": "expression",
+          "mean": "표현, 발현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Passive Voice",
+          "desc": "수동태 'are brought about'를 통해 현상계의 변화가 스스로 일어나는 것이 아니라 내면의 원인(느낌)에 의해 유도됨을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "A change of feeling is a change of destiny.",
+      "ko": "느낌의 변화는 운명의 변화입니다.",
+      "vocab": [
+        {
+          "word": "destiny",
+          "mean": "운명"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Equative Copula",
+          "desc": "주격 보어와 주어가 동격('=')을 이루며, 인간의 운명이 외부의 별이나 환경이 아니라 오직 내면의 감정적 태도에 달려 있음을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "All creation occurs in the domain of the subconscious.",
+      "ko": "모든 창조는 잠재의식의 영역에서 일어납니다.",
+      "vocab": [
+        {
+          "word": "creation",
+          "mean": "창조"
+        },
+        {
+          "word": "domain",
+          "mean": "영역, 범위"
+        },
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Locative Prepositional Phrase",
+          "desc": "'in the domain of'는 창조가 물리적 세계가 아닌 보이지 않는 잠재의식의 차원에서 완결됨을 밝히는 공간적 배경입니다."
+        }
+      ]
+    },
+    {
+      "en": "What you must acquire, then, is a reflective control of the operation of the subconscious; that is, control of your ideas and feelings.",
+      "ko": "그렇다면 당신이 획득해야 하는 것은 잠재의식의 작용에 대한 반성적 통제, 즉 당신의 생각과 느낌에 대한 통제입니다.",
+      "vocab": [
+        {
+          "word": "acquire",
+          "mean": "획득하다, 얻다"
+        },
+        {
+          "word": "reflective",
+          "mean": "반성적용의, 숙고하는"
+        },
+        {
+          "word": "operation",
+          "mean": "작용, 운행"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Apposition",
+          "desc": "세미콜론 뒤의 'that is'를 통해 앞의 추상적인 표현(잠재의식의 작용에 대한 통제)을 구체적인 실천 지침(생각과 느낌의 통제)으로 명확히 규정합니다."
+        }
+      ]
+    },
+    {
+      "en": "Chance or accident is not responsible for the things that happen to you, nor is predestined fate the author of your fortune or misfortune.",
+      "ko": "우연이나 사고는 여러분에게 일어나는 일들에 대한 책임이 없으며, 예정된 운명 또한 여러분의 행운이나 불행의 저자가 아닙니다.",
+      "vocab": [
+        {
+          "word": "responsible for",
+          "mean": "~에 대해 책임이 있는"
+        },
+        {
+          "word": "predestined",
+          "mean": "사전에 정해진, 예정된"
+        },
+        {
+          "word": "fortune",
+          "mean": "행운, 부"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어 확장과 상관 접속",
+          "desc": "'Chance or accident'가 복합 주어로 쓰였으며, 'nor is ~' 도치 구문을 통해 앞의 부정문을 자연스럽게 이어받아 운명론을 배제하고 있습니다."
+        },
+        {
+          "tag": "은유적 표현",
+          "desc": "운명을 'author(저자/창조자)'에 비유하여 삶의 각본을 쓰는 주체가 운명이 아님을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your subconscious impressions determine the conditions of your world.",
+      "ko": "여러분의 잠재의식적 인상이 여러분의 세계의 조건을 결정합니다.",
+      "vocab": [
+        {
+          "word": "subconscious",
+          "mean": "잠재의식의"
+        },
+        {
+          "word": "impression",
+          "mean": "인상, 각인"
+        },
+        {
+          "word": "condition",
+          "mean": "조건, 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "핵심 명제 제시",
+          "desc": "네빌 고다드 사상의 핵심인 '잠재의식의 각인이 현실을 결정한다'는 인과관계를 간결한 주어-동사-목적어(SVO) 구조로 선언하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious is not selective; it is impersonal and no respecter of persons [Acts 10:34; Romans 2:11].",
+      "ko": "잠재의식은 까다롭지 않으며, 그것은 비인격적이고 사람을 차별하지 않습니다.",
+      "vocab": [
+        {
+          "word": "selective",
+          "mean": "까다로운, 선별적인"
+        },
+        {
+          "word": "impersonal",
+          "mean": "비인격적인, 무차별적인"
+        },
+        {
+          "word": "respecter of persons",
+          "mean": "사람을 차별하는 자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용",
+          "desc": "'no respecter of persons'는 성경 사도행전과 로마서의 구절을 차용한 것으로, 잠재의식은 선악이나 신분을 가리지 않고 누구에게나 평등하게 작동한다는 신비주의적 속성을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious is not concerned with the truth or falsity of your feeling.",
+      "ko": "잠재의식은 여러분의 감정이 진실인지 허위인지에 관여하지 않습니다.",
+      "vocab": [
+        {
+          "word": "be concerned with",
+          "mean": "~에 관계하다, 관여하다"
+        },
+        {
+          "word": "falsity",
+          "mean": "거짓, 허위"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "법칙의 무분별성",
+          "desc": "잠재의식은 도덕적 판단(참과 거짓)을 내리지 않는 중립적인 법칙임을 강조하는 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "It always accepts as true that which you feel to be true.",
+      "ko": "그것은 여러분이 진실이라고 느끼는 것을 항상 진실로 받아들입니다.",
+      "vocab": [
+        {
+          "word": "accept as true",
+          "mean": "진실로 받아들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 what의 변형",
+          "desc": "'that which ~' 구문을 사용하여 '~하는 것'이라는 의미를 강조하며, 주관적 느낌이 곧 잠재의식의 수용으로 이어진다는 구조를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Feeling is the assent of the subconscious to the truth of that which is declared to be true.",
+      "ko": "느낌이란 진실이라고 선언된 것의 진리성에 대한 잠재의식의 동의입니다.",
+      "vocab": [
+        {
+          "word": "assent",
+          "mean": "동의, 찬성"
+        },
+        {
+          "word": "declare",
+          "mean": "선언하다, 공표하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명사절과 동격 구조",
+          "desc": "여기서 'feeling(느낌)'은 단순한 감정이 아니라, 의식이 선언한 것에 대한 잠재의식의 깊은 승낙이자 동의(assent)라는 영적 정의를 내리고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "Because of this quality of the subconscious there is nothing impossible to man.",
+      "ko": "잠재의식의 이러한 속성 때문에 인간에게 불가능한 것은 아무것도 없습니다.",
+      "vocab": [
+        {
+          "word": "quality",
+          "mean": "속성, 특성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "유도부사 there is",
+          "desc": "'there is nothing impossible'을 통해 잠재의식의 중립성과 수용성이 곧 인간의 전능함(가능성)의 근거가 됨을 논리적으로 도출합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whatever the mind of man can conceive and feel as true, the subconscious can and must objectify.",
+      "ko": "인간의 마음이 상상하고 진실로 느낄 수 있는 것이 무엇이든, 잠재의식은 그것을 객관화할 수 있으며 반드시 객관화해야 합니다.",
+      "vocab": [
+        {
+          "word": "conceive",
+          "mean": "상상하다, 마음에 품다"
+        },
+        {
+          "word": "objectify",
+          "mean": "객관화하다, 현실화하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적어 도치와 조동사 강조",
+          "desc": "복합관계대명사절 'Whatever ~'가 문두로 도치되어 강조되고 있으며, 'can and must' 조동사 병치를 통해 상상된 것은 예외 없이 현실화된다는 강한 확신을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Your feelings create the pattern from which your world is fashioned, and a change of feeling is a change of pattern.",
+      "ko": "여러분의 느낌은 여러분의 세계가 만들어지는 틀을 창조하며, 느낌의 변화는 곧 틀의 변화입니다.",
+      "vocab": [
+        {
+          "word": "pattern",
+          "mean": "틀, 양식, 무늬"
+        },
+        {
+          "word": "fashion",
+          "mean": "만들다, 빚어내다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사+관계대명사",
+          "desc": "'from which'를 사용하여 세계가 형성되는 원천이 다름 아닌 '느낌의 틀'임을 수식하고 있으며, 대칭 구조를 통해 핵심 법칙을 요약합니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious never fails to express that which has been impressed upon it.",
+      "ko": "잠재의식은 그것에 각인된 것을 표현하는 데 결코 실패하지 않습니다.",
+      "vocab": [
+        {
+          "word": "fail to",
+          "mean": "~하지 못하다"
+        },
+        {
+          "word": "impress upon",
+          "mean": "~에 각인시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "이중 부정과 수동태",
+          "desc": "'never fails to(반드시 ~하다)'라는 강한 긍정 표현과 현재완료 수동태 'has been impressed'를 결합하여 법칙의 절대적 확실성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The moment it receives an impression, it begins to work out the ways of its expression.",
+      "ko": "인상을 받는 그 순간에, 그것은 그것의 표현 방식을 찾아내기 시작합니다.",
+      "vocab": [
+        {
+          "word": "the moment",
+          "mean": "~하는 바로 그 순간 (접속사구)"
+        },
+        {
+          "word": "work out",
+          "mean": "풀어내다, 마련하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절",
+          "desc": "'The moment'가 접속사로 쓰여 각인과 표현의 시차가 거의 없음을, 즉 잠재의식의 즉각적인 작동 방식을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "It accepts the feeling impressed upon it, your feeling, as a fact existing within itself and immediately sets about to produce in the outer or objective world the exact likeness of that feeling.",
+      "ko": "그것은 자신에게 각인된 느낌, 즉 여러분의 느낌을 자신 안에 존재하는 사실로 받아들이고, 즉시 외부 또는 객관적 세계에 그 느낌의 정확한 닮은꼴을 만들어내기 시작합니다.",
+      "vocab": [
+        {
+          "word": "set about",
+          "mean": "착수하다, 시작하다"
+        },
+        {
+          "word": "likeness",
+          "mean": "닮은꼴, 유사함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입구와 동사구 병렬",
+          "desc": "'your feeling'이 동격으로 삽입되어 주관적 느낌과 잠재의식의 수용 과정을 밀착시키며, 'accepts'와 'sets about'이 주어를 공유하며 연속적인 작용을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious never alters the accepted beliefs of man.",
+      "ko": "잠재의식은 인간이 받아들인 믿음을 결코 변경하지 않는다.",
+      "vocab": [
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        },
+        {
+          "word": "alter",
+          "mean": "변경하다, 바꾸다"
+        },
+        {
+          "word": "accepted belief",
+          "mean": "받아들인 믿음, 수용된 신념"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어 + 동사 + 목적어 구조",
+          "desc": "The subconscious(주어) never alters(동사) the accepted beliefs(목적어) 구조로 잠재의식의 절대적인 법칙을 선언하는 문장입니다."
+        },
+        {
+          "tag": "accepted 분사 수식",
+          "desc": "과거분사 accepted가 beliefs를 수식하여 '마음으로 받아들여진' 신념이라는 의미를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "It out-pictures them to the last detail whether or not they are beneficial.",
+      "ko": "잠재의식은 그것이 유익하든 아니든 마지막 세세한 부분까지 그대로 형상화해 낸다.",
+      "vocab": [
+        {
+          "word": "out-picture",
+          "mean": "외화하다, 형상화하다, 그림처럼 밖으로 그려내다"
+        },
+        {
+          "word": "to the last detail",
+          "mean": "세세한 부분까지, 낱낱이"
+        },
+        {
+          "word": "beneficial",
+          "mean": "유익한, 이로운"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "whether or not 양보절",
+          "desc": "whether or not they are beneficial은 '그것이 유익하든 아니든 간에'라는 의미의 부사절로 잠재의식의 무차별적인 형상화 능력을 뒷받침합니다."
+        },
+        {
+          "tag": "대명사 지칭",
+          "desc": "out-pictures의 목적어 'them'은 앞 문장의 'the accepted beliefs'를 가리킵니다."
+        }
+      ]
+    },
+    {
+      "en": "To impress the subconscious with the desirable state, you must assume the feeling that would be yours had you already realized your wish.",
+      "ko": "잠재의식에 바람직한 상태를 각인시키기 위해, 여러분은 이미 소원을 이뤘더라면 가졌을 그 느낌을 가정해야(품어야) 합니다.",
+      "vocab": [
+        {
+          "word": "impress A with B",
+          "mean": "A에게 B를 각인시키다, 심어주다"
+        },
+        {
+          "word": "desirable state",
+          "mean": "바람직한 상태, 원하는 경지"
+        },
+        {
+          "word": "assume",
+          "mean": "가정하다, (태도나 느낌을) 취하다, ~인 체하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정사의 부사적 용법 (목적)",
+          "desc": "문두의 'To impress~'는 '각인시키기 위해서'라는 목적을 나타내는 투부정사구입니다."
+        },
+        {
+          "tag": "가정법 과거완료 도치",
+          "desc": "had you already realized your wish는 조건절 if you had already realized your wish에서 if가 생략되고 주어와 동사가 도치된 형태입니다."
+        }
+      ]
+    },
+    {
+      "en": "In defining your objective, you must be concerned only with the objective itself.",
+      "ko": "여러분의 목표를 정의할 때, 여러분은 오직 목표 그 자체에만 관심을 두어야 합니다.",
+      "vocab": [
+        {
+          "word": "define",
+          "mean": "정의하다, 규정하다"
+        },
+        {
+          "word": "objective",
+          "mean": "목표, 목적"
+        },
+        {
+          "word": "be concerned with",
+          "mean": "~에 관계하다, 관심을 두다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 + 동명사",
+          "desc": "In defining~은 '정의하는 것에 있어서'라는 의미이며, 네빌 가르침의 핵심인 '방법에 매몰되지 말고 결과에 집중하라'는 원칙을 보여줍니다."
+        },
+        {
+          "tag": "only with 강조",
+          "desc": "only with the objective itself를 통해 오직 최종 결과(목표) 외의 수단이나 과정은 배제해야 함을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The manner of expression or the difficulties involved are not to be considered by you.",
+      "ko": "표현되는 방식이나 수반되는 어려움들은 여러분이 고려해야 할 대상이 아닙니다.",
+      "vocab": [
+        {
+          "word": "manner of expression",
+          "mean": "표현 방식, 실현되는 방법"
+        },
+        {
+          "word": "involved",
+          "mean": "수반되는, 관련된"
+        },
+        {
+          "word": "be to부정사 (의무/예정)",
+          "mean": "~해야 한다, ~될 운명이다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "are not to be considered by you는 의무를 나타내는 be to 용법과 수동태가 결합하여 '고려되어서는 안 된다'라는 엄격한 지침을 전달합니다."
+        },
+        {
+          "tag": "후치 수식 분사",
+          "desc": "difficulties 뒤의 'involved'가 형용사구로서 뒤에서 앞으로 수식하여 '연루된/수반된 어려움'을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "To think feelingly on any state impresses it on the subconscious.",
+      "ko": "어떤 상태에 대해 느낌을 담아 생각하는 것은 그것을 잠재의식에 각인시킨다.",
+      "vocab": [
+        {
+          "word": "feelingly",
+          "mean": "느낌을 담아, 감정을 싣어"
+        },
+        {
+          "word": "state",
+          "mean": "상태, 의식의 경지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동명사 주어",
+          "desc": "문장의 주어로 쓰인 투부정사구 'To think feelingly on any state'는 '느낌을 담아 생각하는 것'이라는 행위 자체를 단수 주어로 취급합니다."
+        },
+        {
+          "tag": "핵심 법칙 요약",
+          "desc": "네빌의 사상에서 단순한 생각이 아닌 '느낌(Feeling)'이 동반된 생각이 창조의 원동력임을 단문으로 명확히 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Therefore, if you dwell on difficulties, barriers, or delay, the subconscious — by its very non-selective nature — accepts the feeling of difficulties and obstacles as your request and proceeds to produce them in your outer world.",
+      "ko": "그러므로 만약 여러분이 어려움, 장애, 또는 지연에 집착한다면, 잠재의식은 그 고유의 무차별적인(가리지 않는) 본성으로 인해 어려움과 장애의 느낌을 여러분의 요청으로 받아들이고 그것들을 여러분의 외부 세계에 실현해 내기 시작합니다.",
+      "vocab": [
+        {
+          "word": "dwell on",
+          "mean": "~에 집착하다, 곰곰이 생각하다"
+        },
+        {
+          "word": "barrier",
+          "mean": "장애물, 장벽"
+        },
+        {
+          "word": "non-selective",
+          "mean": "비선택적인, 가리지 않는, 무차별적인"
+        },
+        {
+          "word": "proceed to",
+          "mean": "나아가 ~하다, 계속해서 ~하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입구문 (대시)",
+          "desc": "주어와 동사 사이에 끼어든 '— by its very non-selective nature —'는 잠재의식이 선악이나 유불리를 따지지 않고 입력된 대로 반응하는 기계적 성질을 강조합니다."
+        },
+        {
+          "tag": "병렬 구조 동사",
+          "desc": "accepts와 proceeds가 주어(the subconscious)에 연결되는 동사 병렬 구조를 이루고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious is the womb of creation.",
+      "ko": "잠재의식은 창조의 자궁이다.",
+      "vocab": [
+        {
+          "word": "womb",
+          "mean": "자궁, 태원(모든 것이 태어나는 근원)"
+        },
+        {
+          "word": "creation",
+          "mean": "창조, 피조물"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유적 정의",
+          "desc": "잠재의식을 '창조의 자궁'이라는 신비주의적 메타포로 정의하여 씨앗(생각/느낌)을 받아 자라게 하는 모체로서의 성격을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It receives the idea unto itself through the feelings of man.",
+      "ko": "그것은 인간의 느낌을 통해 그 아이디어를 자기 자신 안으로 받아들인다.",
+      "vocab": [
+        {
+          "word": "unto",
+          "mean": "~에게로, ~안으로 (성경적이고 고전적인 표현)"
+        },
+        {
+          "word": "receive",
+          "mean": "받다, 수용하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 unto의 용법",
+          "desc": "고전적 어조를 띠는 'unto itself'를 사용하여 잠재의식이 단순히 외부의 정보를 듣는 것을 넘어 내면 깊이 수용함을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "It never changes the idea received, but always gives it form.",
+      "ko": "그것은 받아들인 아이디어를 결코 변경하지 않으며, 언제나 그것에 형체를 부여한다.",
+      "vocab": [
+        {
+          "word": "give form to",
+          "mean": "~에 형태를 부여하다, 형상화하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위접속사 but 대조",
+          "desc": "A를 하지 않고 B를 한다는 'not A but B'의 의미를 'never ~ , but ~' 구문으로 표현하여 잠재의식의 불변성과 창조적 집행력을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Hence the subconscious out-pictures the idea in the image and likeness of the feeling received.",
+      "ko": "따라서 잠재의식은 받아들인 느낌의 이미지와 형상대로 그 아이디어를 외화한다(형상화한다).",
+      "vocab": [
+        {
+          "word": "hence",
+          "mean": "따라서, 그러므로"
+        },
+        {
+          "word": "image and likeness",
+          "mean": "형상과 모양 (창세기의 인간 창조 구절을 연상시키는 성경적 표현)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 영감의 어휘",
+          "desc": "'image and likeness'는 창세기 1장 26절의 하나님의 형상과 모양(image and likeness)을 차용한 것으로, 느낌이 곧 형태를 빚어내는 신성한 창조 원리임을 비유합니다."
+        }
+      ]
+    },
+    {
+      "en": "To feel a state as hopeless or impossible is to impress the subconscious with the idea of failure.",
+      "ko": "어떤 상태를 절망적이거나 불가능하다고 느끼는 것은 잠재의식에 실패라는 관념을 각인시키는 것이다.",
+      "vocab": [
+        {
+          "word": "hopeless",
+          "mean": "희망 없는, 절망적인"
+        },
+        {
+          "word": "failure",
+          "mean": "실패"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 보어로 쓰인 투부정사",
+          "desc": "To feel~ (주어) is (동사) to impress~ (보어) 구조로, '~라고 느끼는 행위가 곧 ~를 각인시키는 것이다'라는 등가의 관계를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Although the subconscious faithfully serves man, it must not be inferred that the relation is that of a servant to a master as was anciently conceived.",
+      "ko": "비록 잠재의식이 충실하게 인간을 섬기지만, 그 관계가 고대인들이 생각했던 것처럼 하인과 주인의 관계라고 추론해서는 안 된다.",
+      "vocab": [
+        {
+          "word": "infer",
+          "mean": "추론하다, 짐작하다"
+        },
+        {
+          "word": "anciently",
+          "mean": "고대에"
+        },
+        {
+          "word": "conceive",
+          "mean": "상상하다, 생각하다, 품다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 수동태 구문",
+          "desc": "it(가주어) must not be inferred that(진주어) 구문을 통해 일반적인 오해를 바로잡고 있습니다."
+        },
+        {
+          "tag": "관계대명사/부사적 비교",
+          "desc": "as was anciently conceived는 고대인들이 과거에 생각했던 방식 그대로를 나타내는 삽입된 양보/비교절입니다."
+        }
+      ]
+    },
+    {
+      "en": "The ancient prophets called it the slave and servant of man.",
+      "ko": "고대 예언자들은 그것을 인간의 노예이자 하인이라고 불렀다.",
+      "vocab": [
+        {
+          "word": "prophet",
+          "mean": "예언자, 선지자"
+        },
+        {
+          "word": "slave",
+          "mean": "노예"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "5형식 문장 (Call A B)",
+          "desc": "called(동사) + it(목적어) + the slave and servant of man(목적격 보어) 형태로 고대인들의 관점을 서술합니다."
+        }
+      ]
+    },
+    {
+      "en": "St. Paul personified it as a “woman” and said, “The woman should be subject to man in everything” [Ephesians 5:24; also, 1Corinthians 14:34, Ephesians 5:22, Colossians 3:18, 1Peter 3:1].",
+      "ko": "성 바울은 그것을 '여인'으로 의인화하며 말하기를, '아내는 모든 일에 남편에게 복종해야 합니다'라고 했다 [에베소서 5:24 등].",
+      "vocab": [
+        {
+          "word": "personify",
+          "mean": "의인화하다"
+        },
+        {
+          "word": "be subject to",
+          "mean": "~에 복종하다, 종속되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용과 의인화",
+          "desc": "바울의 서신서를 인용하여 잠재의식과 의식(남성과 여성, 주종관계가 아닌 협력과 수용의 메타포)의 성경적 비유를 들고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious does serve man and faithfully gives form to his feelings.",
+      "ko": "잠재의식은 진정 인간을 섬기며 그의 느낌에 충실하게 형태를 부여한다.",
+      "vocab": [
+        {
+          "word": "do + 동사원형 (강조)",
+          "mean": "정말로 ~하다, 결코 ~하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조동사 do의 강조",
+          "desc": "does serve에서 'do'는 강한 긍정 및 강조의 조동사로, 앞서 언급한 노예 개념은 부정하되 인간을 위해 일하는 봉사적 특성 자체는 진실임을 확언합니다."
+        }
+      ]
+    },
+    {
+      "en": "However, the subconscious has a distinct distaste for compulsion and responds to persuasion rather than to command; consequently, it resembles the beloved wife more than the servant.",
+      "ko": "그러나 잠재의식은 강요에 대해 뚜렷한 거부감을 가지고 있으며, 명령보다는 설득에 반응합니다. 결과적으로 그것은 하인보다는 사랑하는 아내를 더 닮았습니다.",
+      "vocab": [
+        {
+          "word": "distinct",
+          "mean": "뚜렷한, 명백한"
+        },
+        {
+          "word": "distaste",
+          "mean": "혐오, 반감, 싫증"
+        },
+        {
+          "word": "compulsion",
+          "mean": "강요, 강제"
+        },
+        {
+          "word": "persuasion",
+          "mean": "설득"
+        },
+        {
+          "word": "command",
+          "mean": "명령"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "A rather than B 구문",
+          "desc": "responds to persuasion rather than to command는 명령에 굴복하는 강제적 대상이 아니라 자발적 설득에 반응하는 심리적 특성을 대조합니다."
+        },
+        {
+          "tag": "결론적 비유 (resembles X more than Y)",
+          "desc": "it resembles the beloved wife more than the servant 구문을 통해 잠재의식은 맹종하는 노예가 아니라 사랑으로 대하고 설득해야 하는 아내와 같다는 네빌의 심리적/영적 핵심 비유를 완성합니다."
+        }
+      ]
+    },
+    {
+      "en": "The husband is head of the wife may not be true of man and woman in their earthly relationship, but it is true of the conscious and the subconscious — or the male and female aspects of consciousness.",
+      "ko": "남편은 아내의 머리라는 말은 세상적인 관계에서의 남녀에게는 사실이 아닐지 모릅니다. 그러나 그것은 의식과 잠재의식, 즉 의식의 남성적 측면과 여성적 측면에는 진실입니다.",
+      "vocab": [
+        {
+          "word": "earthly relationship",
+          "mean": "세상적인 관계"
+        },
+        {
+          "word": "conscious and subconscious",
+          "mean": "의식과 잠재의식"
+        },
+        {
+          "word": "aspects of consciousness",
+          "mean": "의식의 측면들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "may not be ~ but it is true",
+          "desc": "'~가 아닐지도 모르지만, 이것은 사실이다'라는 대조 구문을 통해 물리적 현실과 내면적 진실을 극명하게 대조합니다."
+        },
+        {
+          "tag": "— or the male and female aspects",
+          "desc": "대시(-)를 이용해 의식과 잠재의식을 각각 남성과 여성의 원리로 비유하여 성경적 비유의 본질을 명확히 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "The mystery to which Paul referred when he wrote, 'This is a great mystery… He that loveth his wife loveth himself… And they two shall be one flesh' is simply the mystery of consciousness.",
+      "ko": "바울이 '이것은 큰 비밀이라… 자기 아내를 사랑하는 자는 자기를 사랑하는 것이니라… 그 둘이 한 육체가 될지니라'라고 썼을 때 그가 언급했던 신비는, 단지 의식의 신비일 뿐입니다.",
+      "vocab": [
+        {
+          "word": "refer to",
+          "mean": "언급하다"
+        },
+        {
+          "word": "one flesh",
+          "mean": "한 몸, 하나"
+        },
+        {
+          "word": "mystery of consciousness",
+          "mean": "의식의 신비"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "The mystery to which Paul referred when he wrote ... is simply the mystery",
+          "desc": "주어부가 매우 긴 구조로, 'to which' 관계대명사절이 'The mystery'를 수식하며, 'is'가 본동사로 연결되는 정교한 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "Consciousness is really one and undivided, but for creation's sake it appears to be divided into two.",
+      "ko": "의식은 진실로 하나이며 나뉘어 있지 않습니다. 그러나 창조를 위해 그것은 둘로 나뉜 것처럼 보입니다.",
+      "vocab": [
+        {
+          "word": "undivided",
+          "mean": "나뉘지 않은, 통일된"
+        },
+        {
+          "word": "for creation's sake",
+          "mean": "창조의 목적을 위하여"
+        },
+        {
+          "word": "appear to be",
+          "mean": "~인 것처럼 보이다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "for creation's sake",
+          "desc": "'for the sake of ~'(~를 위하여) 표현을 사용하여 창조라는 목적을 위해 의식이 분화된 것처럼 경험된다는 네빌의 형이상학적 전제를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The conscious (objective) or male aspect truly is the head and dominates the subconscious (subjective) or female aspect.",
+      "ko": "의식적(객관적) 혹은 남성적 측면은 진실로 머리이며, 잠재의식적(주관적) 혹은 여성적 측면을 지배합니다.",
+      "vocab": [
+        {
+          "word": "objective",
+          "mean": "객관적인"
+        },
+        {
+          "word": "subjective",
+          "mean": "주관적인"
+        },
+        {
+          "word": "dominate",
+          "mean": "지배하다, 주도하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "objective / subjective",
+          "desc": "괄호를 활용하여 의식(conscious)을 객관적 차원으로, 잠재의식(subconscious)을 주관적 차원으로 정의하여 심리학적 개념과 연결합니다."
+        }
+      ]
+    },
+    {
+      "en": "However, this leadership is not that of the tyrant, but of the lover.",
+      "ko": "그러나 이 지배력은 폭군의 그것이 아니라, 연인의 그것입니다.",
+      "vocab": [
+        {
+          "word": "leadership",
+          "mean": "지배력, 이끄는 힘"
+        },
+        {
+          "word": "tyrant",
+          "mean": "폭군"
+        },
+        {
+          "word": "lover",
+          "mean": "연인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not that of ~, but of ~",
+          "desc": "'that'은 앞의 'leadership'을 받는 대명사로, 폭군의 지배가 아니라 사랑하는 이의 헌신적인 이끔이라는 점을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "So, by assuming the feeling that would be yours were you already in possession of your objective, the subconscious is moved to build the exact likeness of your assumption.",
+      "ko": "그러므로 당신이 이미 목표를 소유했을 때 당신의 것이 되었을 그 느낌을 가정함으로써, 잠재의식은 당신의 가정과 정확히 닮은 것을 구축하도록 움직여집니다.",
+      "vocab": [
+        {
+          "word": "assume the feeling",
+          "mean": "느낌을 가정하다(상상으로 체화하다)"
+        },
+        {
+          "word": "in possession of",
+          "mean": "~를 소유한"
+        },
+        {
+          "word": "exact likeness",
+          "mean": "정확한 닮은꼴, 형상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "were you already in possession",
+          "desc": "가정법 과거 문장으로 'If you were already in possession'에서 'If'가 생략되고 주어와 동사가 도치된 고급 문법 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "Your desires are not subconsciously accepted until you assume the feeling of their reality, for only through feeling is an idea subconsciously accepted and only through this subconscious acceptance is it ever expressed.",
+      "ko": "당신의 소망은 그 현실성에 대한 느낌을 가정하기 전까지는 잠재의식에 의해 받아들여지지 않습니다. 왜냐하면 오직 느낌을 통해서만 아이디어가 잠재의식적으로 받아들여지고, 오직 이 잠재의식적 수용을 통해서만 그것이 비로소 표현되기 때문입니다.",
+      "vocab": [
+        {
+          "word": "subconsciously accepted",
+          "mean": "잠재의식적으로 받아들여지는"
+        },
+        {
+          "word": "reality",
+          "mean": "현실성, 실체"
+        },
+        {
+          "word": "expressed",
+          "mean": "표현되는, 발현되는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not ~ until ... / only through ~",
+          "desc": "'~할 때까지는 …않다'와 '오직 ~를 통해서만'이라는 한정어구 도치(only through feeling IS, only through acceptance IS)를 사용하여 법칙의 절대성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is easier to ascribe your feeling to events in the world than to admit that the conditions of the world reflect your feeling.",
+      "ko": "세상의 조건들이 당신의 느낌을 반영한다는 것을 인정하는 것보다, 당신의 느낌을 세상의 사건들 탓으로 돌리는 것이 더 쉽습니다.",
+      "vocab": [
+        {
+          "word": "ascribe ~ to ...",
+          "mean": "~를 …의 탓으로 돌리다, 귀인하다"
+        },
+        {
+          "word": "events in the world",
+          "mean": "세상의 사건들"
+        },
+        {
+          "word": "reflect",
+          "mean": "반영하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It is easier to ~ than to ...",
+          "desc": "가주어 It과 진주어 투정사구의 비교 구문을 통해 인간이 외부 현실의 거울 법칙을 받아들이기 얼마나 저항하는지 심리적 관성으로 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "However, it is eternally true that the outside mirrors the inside.",
+      "ko": "그러나 바깥이 안쪽을 비춘다는 것은 영원한 진리입니다.",
+      "vocab": [
+        {
+          "word": "eternally true",
+          "mean": "영원히 진실인"
+        },
+        {
+          "word": "mirror",
+          "mean": "거울처럼 비추다, 반영하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "it is eternally true that ~",
+          "desc": "가주어 it과 진주어 that절을 사용하여 네빌 사상의 핵심 철학인 내면 반영의 법칙을 단언합니다."
+        }
+      ]
+    },
+    {
+      "en": "As within, so without.",
+      "ko": "안에서 그러하듯 밖에서도 그러하다.",
+      "vocab": [
+        {
+          "word": "within",
+          "mean": "내면, 안쪽"
+        },
+        {
+          "word": "without",
+          "mean": "외면, 바깥쪽"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As ~, so ...",
+          "desc": "고대 헤르메스 주의의 전통적 대응(Correspondence) 법칙을 나타내는 대구법으로, 원인(내면)과 결과(외면)의 동시성을 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "As above, so below; as below, so above; as within, so without; as without, so within.",
+      "ko": "위에서 그러하듯 아래에서도 그러하고, 아래에서 그러하듯 위에서도 그러하며, 안에서 그러하듯 밖에서도 그러하고, 밖에서 그러하듯 안에서도 그러하다.",
+      "vocab": [
+        {
+          "word": "above",
+          "mean": "위, 영적 차원"
+        },
+        {
+          "word": "below",
+          "mean": "아래, 물질 차원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Correspondence Principle",
+          "desc": "우주의 대법칙인 상응의 원리를 반복과 대칭 구조를 통해 마술적·신비주의적 확신으로 전달합니다."
+        }
+      ]
+    },
+    {
+      "en": "A man can receive nothing unless it is given him from heaven.",
+      "ko": "사람이 하늘에서 주신 바가 아니면 아무것도 받을 수 없느니라.",
+      "vocab": [
+        {
+          "word": "receive",
+          "mean": "받다"
+        },
+        {
+          "word": "unless",
+          "mean": "~가 아니면"
+        },
+        {
+          "word": "heaven",
+          "mean": "하늘 (내면의 의식 영역)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "unless it is given him",
+          "desc": "조건절을 통해 모든 외부적 성취와 소유의 원천이 오직 내면(하늘)에 있음을 성경 구절 인용을 통해 뒷받침합니다."
+        }
+      ]
+    },
+    {
+      "en": "The kingdom of heaven is within you.",
+      "ko": "하나님의 나라는 너희 안에 있느니라.",
+      "vocab": [
+        {
+          "word": "kingdom of heaven",
+          "mean": "천국, 하나님의 나라"
+        },
+        {
+          "word": "within you",
+          "mean": "너희 안에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "is within you",
+          "desc": "장소를 나타내는 전치사구를 통해 천국이 물리적인 저 하늘이 아니라 인간의 내면 의식 속에 존재함을 명확히 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Nothing comes from without; all things come from within – from the subconscious.",
+      "ko": "바깥에서 오는 것은 아무것도 없습니다. 모든 것은 안에서, 즉 잠재의식으로부터 옵니다.",
+      "vocab": [
+        {
+          "word": "come from",
+          "mean": "~로부터 오다"
+        },
+        {
+          "word": "all things",
+          "mean": "모든 것"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "– from the subconscious",
+          "desc": "대시(-)를 통해 '내면(within)'의 정체가 다름 아닌 '잠재의식(subconscious)'임을 최종적으로 정의하며 강의를 결론짓습니다."
+        }
+      ]
+    },
+    {
+      "en": "It is impossible for you to see other than the contents of your consciousness.",
+      "ko": "여러분이 의식의 내용물 외에는 다른 것을 보는 것이 불가능합니다.",
+      "vocab": [
+        {
+          "word": "contents of your consciousness",
+          "mean": "의식의 내용물, 마음의 상태"
+        },
+        {
+          "word": "other than",
+          "mean": "~외에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It ... for you to see",
+          "desc": "가주어 'It'과 진주어 'to부정사' 구문이며, 의미상 주어 'for you'를 통해 보는 주체가 당신임을 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your world in its every detail is your consciousness objectified.",
+      "ko": "여러분의 세계는 그 모든 세세한 부분에서 객관화된 여러분의 의식입니다.",
+      "vocab": [
+        {
+          "word": "objectified",
+          "mean": "객관화된, 형상화된"
+        },
+        {
+          "word": "in its every detail",
+          "mean": "모든 세부 사항에서"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "후치 분사 수식",
+          "desc": "과거분사 'objectified'가 앞의 명사구 'your consciousness'를 뒤에서 수식하여 의식이 곧 현실로 투영됨을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Objective states bear witness of subconscious impressions.",
+      "ko": "객관적인 상태들은 잠재의식적 인상의 증거를 보여줍니다.",
+      "vocab": [
+        {
+          "word": "objective states",
+          "mean": "객관적 상태, 현실"
+        },
+        {
+          "word": "bear witness of",
+          "mean": "~의 증거가 되다, 증언하다"
+        },
+        {
+          "word": "subconscious impressions",
+          "mean": "잠재의식적 인상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인과 관계 표현",
+          "desc": "내면의 원인(잠재의식의 인상)이 외면의 결과(객관적 상태)로 나타난다는 네빌의 핵심 사상을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "A change of impression results in a change of expression.",
+      "ko": "인상의 변화는 표현의 변화를 낳습니다.",
+      "vocab": [
+        {
+          "word": "impression",
+          "mean": "인상, 내면의 각인"
+        },
+        {
+          "word": "expression",
+          "mean": "표현, 외면의 현현"
+        },
+        {
+          "word": "result in",
+          "mean": "~라는 결과를 초래하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대구법",
+          "desc": "impression(원인)과 expression(결과)의 운율적 대조를 통해 법칙의 명확성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious accepts as true that which you feel as true, and because creation is the result of subconscious impressions, you — by your feeling — determine creation.",
+      "ko": "잠재의식은 여러분이 진실로 느끼는 것을 진실로 받아들이며, 창조는 잠재의식적 인상의 결과이기 때문에, 여러분은 자신의 느낌을 통해 창조를 결정합니다.",
+      "vocab": [
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        },
+        {
+          "word": "creation",
+          "mean": "창조, 현실화"
+        },
+        {
+          "word": "determine",
+          "mean": "결정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "that which",
+          "desc": "'~하는 것'을 뜻하는 관계대명사절로 잠재의식의 수용 대상을 구체화합니다."
+        }
+      ]
+    },
+    {
+      "en": "You are already that which you want to be, and your refusal to believe this is the only reason you do not see it.",
+      "ko": "여러분은 이미 되고자 하는 바로 그 존재이며, 이를 믿기를 거부하는 것이 그것을 보지 못하는 유일한 이유입니다.",
+      "vocab": [
+        {
+          "word": "refusal",
+          "mean": "거부"
+        },
+        {
+          "word": "already",
+          "mean": "이미 (완료된 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재형의 신비적 의미",
+          "desc": "소망이 미래에 이루어지는 것이 아니라 '이미 존재함(I AM)'을 선언하는 네빌의 현재 완료형 존재론을 담고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "To seek on the outside for that which you do not feel you are is to seek in vain, for we never find that which we want; we find only that which we are.",
+      "ko": "자신이 그것이라고 느끼지 않는 것을 바깥에서 찾는 것은 헛되이 찾는 것입니다. 왜냐하면 우리는 우리가 원하는 것을 결코 찾지 못하고, 오직 우리가 존재하고 있는 것만을 찾기 때문입니다.",
+      "vocab": [
+        {
+          "word": "in vain",
+          "mean": "헛되이"
+        },
+        {
+          "word": "seek",
+          "mean": "찾다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어부의 to부정사구",
+          "desc": "문장의 주어로 사용된 'To seek ~'는 외적 추구의 허황됨을 강조하며, 뒤의 'for'는 '왜냐하면'이라는 이유를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "In short, you express and have only that which you are conscious of being or possessing.",
+      "ko": "요컨대, 여러분은 자신이 의식하고 있는 존재이거나 소유하고 있는 것만을 표현하고 가지게 됩니다.",
+      "vocab": [
+        {
+          "word": "in short",
+          "mean": "요컨대"
+        },
+        {
+          "word": "conscious of",
+          "mean": "~를 의식하는"
+        },
+        {
+          "word": "possessing",
+          "mean": "소유함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 + 동명사",
+          "desc": "'of being or possessing'은 앞의 형용사 'conscious'를 수식하며 의식의 상태가 곧 소유와 표현을 결정함을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "“To him that hath it is given.”",
+      "ko": "\"있는 자는 받고.\"",
+      "vocab": [
+        {
+          "word": "hath",
+          "mean": "(고어) 가지고 있다 (has)"
+        },
+        {
+          "word": "is given",
+          "mean": "주어진다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용구 도치",
+          "desc": "마태복음 등의 성경 구절을 인용하여 의식의 풍요로움이 더 큰 현실화로 이어진다는 영적 법칙을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Denying the evidence of the senses and appropriating the feeling of the wish fulfilled is the way to the realization of your desire.",
+      "ko": "감각의 증거를 부인하고 소망이 성취된 느낌을 취하는 것이 여러분의 소망을 실현하는 길입니다.",
+      "vocab": [
+        {
+          "word": "evidence of the senses",
+          "mean": "감각의 증거, 오감의 현실"
+        },
+        {
+          "word": "appropriating",
+          "mean": "취하는 것, 내 것으로 만드는 것"
+        },
+        {
+          "word": "wish fulfilled",
+          "mean": "소망이 성취된 상태"
+        },
+        {
+          "word": "realization",
+          "mean": "실현, 현실화"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동명사구 주어",
+          "desc": "두 개의 동명사구('Denying ~'와 'appropriating ~')가 하나의 단수 주어로 기능하며, 상상력의 실천 방법을 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Mastery of self-control of your thoughts and feelings is your highest achievement.",
+      "ko": "생각과 감정에 대한 자기 통제력의 숙달은 여러분의 가장 높은 성취입니다.",
+      "vocab": [
+        {
+          "word": "mastery",
+          "mean": "숙달, 통달"
+        },
+        {
+          "word": "self-control",
+          "mean": "자기 통제"
+        },
+        {
+          "word": "achievement",
+          "mean": "성취"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명사구 중첩",
+          "desc": "'Mastery of self-control of ~' 형태로 내면의 마음을 다스리는 것이 영적 작업의 정점임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "However, until perfect self-control is attained, so that in spite of appearances you feel all that you want to feel, use sleep and prayer to aid you in realizing your desired states.",
+      "ko": "그러나 완벽한 자기 통제에 도달하여, 겉모습에도 불구하고 느끼고 싶은 모든 것을 느낄 수 있게 될 때까지는, 수면과 기도를 사용하여 원하는 상태를 실현하는 데 도움을 받으십시오.",
+      "vocab": [
+        {
+          "word": "attained",
+          "mean": "달성된, 도달된"
+        },
+        {
+          "word": "in spite of",
+          "mean": "~에도 불구하고"
+        },
+        {
+          "word": "appearances",
+          "mean": "겉모습, 현상계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "so that 부사절",
+          "desc": "목적이나 결과를 나타내는 'so that' 구문을 통해 완전한 통제 상태가 무엇인지 부가 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "These are the two gateways into the subconscious.",
+      "ko": "이것들이 잠재의식으로 들어가는 두 개의 관문입니다.",
+      "vocab": [
+        {
+          "word": "gateways",
+          "mean": "관문, 통로"
+        },
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "지시대명사 구문",
+          "desc": "앞서 언급한 '수면과 기도'가 잠재의식에 닿는 유효한 수단임을 명확히 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "SLEEP SLEEP, the life that occupies one-third of our stay on earth, is the natural door into the subconscious.",
+      "ko": "수면, 지구에서의 체류 기간 중 3분의 1을 차지하는 삶은 잠재의식으로 들어가는 자연스러운 문입니다.",
+      "vocab": [
+        {
+          "word": "occupies",
+          "mean": "차지하다"
+        },
+        {
+          "word": "stay on earth",
+          "mean": "지구에서의 삶"
+        },
+        {
+          "word": "natural door",
+          "mean": "자연스러운 문"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격의 콤마",
+          "desc": "수면을 '지구에서의 삶의 3분의 1을 차지하는 삶'으로 동격 처리하여 그 중요성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "So it is with sleep that we are now concerned.",
+      "ko": "그러므로 우리가 지금 관심을 두는 것은 바로 수면입니다.",
+      "vocab": [
+        {
+          "word": "be concerned with",
+          "mean": "~에 관계하다, 관심을 두다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It is ~ that 강조구문",
+          "desc": "전치사구 'with sleep'을 강조하여 앞으로 다룰 주제가 오직 수면임을 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "The conscious two-thirds of our life on earth is measured by the degree of attention we give sleep.",
+      "ko": "지구상에서의 삶 중 의식적인 3분의 2는 우리가 수면에 기울이는 주의의 정도에 의해 측정됩니다.",
+      "vocab": [
+        {
+          "word": "is measured by",
+          "mean": "~에 의해 측정된다"
+        },
+        {
+          "word": "degree of attention",
+          "mean": "주의의 정도"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적격 관계대명사 생략",
+          "desc": "'attention' 뒤에 목적격 관계대명사가 생략되어 있으며, 수면에 대한 태도가 깨어 있는 삶의 질을 결정함을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Our understanding of and delight in what sleep has to bestow will cause us, night after night, to set out for it as though we were keeping an appointment with a lover.",
+      "ko": "수면이 부여하는 것에 대한 우리의 이해와 기쁨은, 마치 연인과의 약속을 지키듯, 밤마다 그것을 향해 출발하도록 우리를 이끌 것입니다.",
+      "vocab": [
+        {
+          "word": "bestow",
+          "mean": "부여하다, 수여하다"
+        },
+        {
+          "word": "night after night",
+          "mean": "밤마다"
+        },
+        {
+          "word": "set out for",
+          "mean": "~을 향해 나서다"
+        },
+        {
+          "word": "appointment with a lover",
+          "mean": "연인과의 약속"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거 (as though)",
+          "desc": "'as though we were'를 통해 수면으로 드는 과정을 연인을 만나는 듯한 황홀하고 신비로운 의식으로 비유합니다."
+        }
+      ]
+    },
+    {
+      "en": "In a dream, in a vision of the night, when deep sleep falleth upon men, in slumbering upon the bed; then he openeth the ears of men and sealeth their instruction.",
+      "ko": "꿈속에서, 밤의 환상 중에서, 깊은 잠이 사람들에게 임할 때, 침상에서 졸 때; 그때 그분은 사람들의 귀를 여시고 그들의 가르침을 인치십니다.",
+      "vocab": [
+        {
+          "word": "falleth",
+          "mean": "임하다, 내리다 (fall의 고어형)"
+        },
+        {
+          "word": "slumbering",
+          "mean": "졸음, 선잠"
+        },
+        {
+          "word": "sealeth",
+          "mean": "인치다, 봉하다, 확정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간/조건 부사절의 누적",
+          "desc": "‘in a dream~’, ‘in a vision~’, ‘when~’, ‘in slumbering~’ 등 여러 전치사구와 부사절이 중첩되어 주절인 ‘then he openeth~’로 수렴되는 성경적 평행법 구조입니다."
+        },
+        {
+          "tag": "고어 형태(~eth)",
+          "desc": "‘falleth’, ‘openeth’, ‘sealeth’는 3인칭 단수 현재형에 붙는 고어(KJB 스타일) 어미로, 신성한 진리의 영원성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is in sleep and in prayer, a state akin to sleep, that man enters the subconscious to make his impressions and receive his instructions.",
+      "ko": "사람이 잠에 들어가 자신의 인상을 심고 가르침을 받기 위해 잠재의식으로 들어가는 것은 바로 잠과 기호(잠과 유사한 상태)인 기도를 통해서입니다.",
+      "vocab": [
+        {
+          "word": "akin to",
+          "mean": "~와 유사한, 가까운"
+        },
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        },
+        {
+          "word": "impression",
+          "mean": "인상, 각인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It is ~ that 강조구문",
+          "desc": "‘in sleep and in prayer’를 강조하여, 잠과 기도가 잠재의식으로 들어가는 유일하고 절대적인 통로임을 명시합니다."
+        },
+        {
+          "tag": "동격 구조",
+          "desc": "‘a state akin to sleep’은 바로 앞의 ‘prayer’를 부연 설명하며, 기도가 곧 깊은 수면 상태와 같은 의식의 변형임을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "In these states the conscious and subconscious are creatively joined.",
+      "ko": "이러한 상태들 속에서 의식과 잠재의식은 창조적으로 결합합니다.",
+      "vocab": [
+        {
+          "word": "creatively",
+          "mean": "창조적으로"
+        },
+        {
+          "word": "joined",
+          "mean": "결합된, 연합된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "‘are creatively joined’를 통해 의식과 잠재의식의 결합이 인간의 육체적 노력에 의해서가 아니라, 그러한 상태(잠/기도) 속에서 자연스럽고 창조적인 원리에 의해 이루어짐을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "The male and female become one flesh.",
+      "ko": "남성과 여성은 한 몸이 됩니다.",
+      "vocab": [
+        {
+          "word": "one flesh",
+          "mean": "한 몸, 연합된 상태 (성경적 표현)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상징적 은유",
+          "desc": "의식(남성/씨 뿌리는 자)과 잠재의식(여성/받아들이는 자)의 결합을 창세기의 ‘한 몸’ 개념에 빗대어 설명하는 신비주의적 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "Sleep is the time when the male or conscious mind turns from the world of sense to seek its lover or subconscious self.",
+      "ko": "잠은 남성적 혹은 의식적 마음이 감각의 세계로부터 돌이켜 자신의 연인이자 잠재의식적 자아를 찾는 시간입니다.",
+      "vocab": [
+        {
+          "word": "turns from",
+          "mean": "~로부터 돌아서다"
+        },
+        {
+          "word": "world of sense",
+          "mean": "감각의 세계, 현상계"
+        },
+        {
+          "word": "lover",
+          "mean": "연인 (잠재의식의 비유)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계부사절 (when)",
+          "desc": "‘the time’을 선행사로 하는 관계부사절이 수면의 영적 의미(감각 세계의 차단과 내면으로의 회귀)를 정의합니다."
+        },
+        {
+          "tag": "동격 및 은유",
+          "desc": "‘the male or conscious mind’와 ‘its lover or subconscious self’는 의식과 잠재의식을 남녀의 사랑과 결합으로 설명하는 핵심 비유입니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious — unlike the woman of the world who marries her husband to change him — has no desire to change the conscious, waking state, but loves it as it is and faithfully reproduces its likeness in the outer world of form.",
+      "ko": "잠재의식은 — 남편을 바꾸기 위해 결혼하는 세상의 여인과 달리 — 의식적이고 깨어 있는 상태를 바꾸려는 욕망이 없으며, 그것을 있는 그대로 사랑하고 외적인 형식의 세계에서 그것의 닮은 꼴을 충실히 재현해 냅니다.",
+      "vocab": [
+        {
+          "word": "unlike",
+          "mean": "~와 달리"
+        },
+        {
+          "word": "waking state",
+          "mean": "깨어 있는 상태, 각성 상태"
+        },
+        {
+          "word": "reproduces",
+          "mean": "재현하다, 복제하다"
+        },
+        {
+          "word": "outer world of form",
+          "mean": "외적인 형식의 세계, 현상계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입구 (Dash)",
+          "desc": "대시(—) 사이에 삽입된 비교 표현은 잠재의식의 무조건적 수용성과 순종적인 본질을 극적으로 대조하여 설명합니다."
+        },
+        {
+          "tag": "병렬 구조",
+          "desc": "‘has no desire ~ , but loves ~ and faithfully reproduces ~’는 잠재의식이 의식을 개조하려 하지 않고 오직 반영하기만 하는 거울임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The conditions and events of your life are your children formed from the molds of your subconscious impressions in sleep.",
+      "ko": "당신의 삶의 조건과 사건들은 수면 중 잠재의식적 인상의 틀에서 형성된 당신의 자녀들입니다.",
+      "vocab": [
+        {
+          "word": "conditions",
+          "mean": "조건, 상황"
+        },
+        {
+          "word": "molds",
+          "mean": "틀, 주조틀"
+        },
+        {
+          "word": "impressions",
+          "mean": "인상, 각인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구의 후치 수식",
+          "desc": "‘formed from the molds ~’ 과거분사구가 ‘your children’을 뒤에서 수식하여, 현실의 사건들이 잠재의식에 새겨진 생각의 결과물임을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "They are made in the image and likeness of your innermost feeling that they may reveal you to yourself.",
+      "ko": "그것들은 당신 자신을 당신에게 드러내기 위하여 당신의 가장 깊은 느낌의 형상과 모양대로 만들어집니다.",
+      "vocab": [
+        {
+          "word": "innermost",
+          "mean": "가장 깊은, 내면의"
+        },
+        {
+          "word": "reveal",
+          "mean": "드러내다, 계시하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 어구 (image and likeness)",
+          "desc": "창세기의 ‘형사와 모양(image and likeness)’을 차용하여, 현상계의 결과물이 내면의 감정을 그대로 투영함을 강조합니다."
+        },
+        {
+          "tag": "목적을 나타내는 부사절 (that ~ may)",
+          "desc": "‘~가 ~하도록 하기 위해’라는 조동사 may와 함께 쓰여 현상 세계의 존재 이유가 결국 자기 인식(자기발견)에 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "“As in heaven, so on earth.”",
+      "ko": "“하늘에서와 같이 땅에서도.”",
+      "vocab": [
+        {
+          "word": "heaven",
+          "mean": "하늘 (의식/내면의 비유)"
+        },
+        {
+          "word": "earth",
+          "mean": "땅 (현상계/외면의 비유)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "생략 구문",
+          "desc": "‘It is as in heaven, so it is on earth’의 문장에서 반복되는 서술어가 생략된 관용적 도치/대구 표현으로, 내면(원인)과 외면(결과)의 절대적 일치 법칙을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "[Matthew 6:10; Luke 11:2] As in the subconscious, so on earth.",
+      "ko": "[마태복음 6:10; 누가복음 11:2] 잠재의식에서와 같이, 땅에서도 그러하다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "성경 구절의 치환",
+          "desc": "네빌 고다드는 성경의 ‘하늘(heaven)’을 심리학적 용어인 ‘잠재의식(subconscious)’으로 치환하여 성경이 인간 의식의 법칙을 기록한 책임을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whatever you have in consciousness as you go to sleep is the measure of your expression in the waking two-thirds of your life on earth.",
+      "ko": "당신이 잠들 때 의식 속에 가지고 있는 것은 무엇이든, 땅 위에서의 삶 중 깨어 있는 3분의 2의 시간 동안 당신의 표현의 척도가 됩니다.",
+      "vocab": [
+        {
+          "word": "Whatever",
+          "mean": "~하는 것은 무엇이든"
+        },
+        {
+          "word": "measure",
+          "mean": "척도, 기준"
+        },
+        {
+          "word": "expression",
+          "mean": "표현, 발현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "복합관계대명사절 (Whatever)",
+          "desc": "‘Whatever you have in consciousness’가 문장의 주어로 기능하여, 잠들기 직전의 의식 상태가 인생의 창조적 기준점임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Nothing stops you from realizing your objective save your failure to feel that you are already that which you wish to be, or that you are already in possession of the thing sought.",
+      "ko": "당신이 되고자 하는 그 존재가 이미 되었다는 것, 혹은 구하던 것을 이미 소유하고 있다는 것을 느끼는 데 실패하는 것 외에는, 그 어떤 것도 당신이 목표를 실현하는 것을 막지 못합니다.",
+      "vocab": [
+        {
+          "word": "objective",
+          "mean": "목표, 목적"
+        },
+        {
+          "word": "save",
+          "mean": "~를 제외하고 (전치사/접속사)"
+        },
+        {
+          "word": "in possession of",
+          "mean": "~을 소유하여"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "이중 부정/제외 구문",
+          "desc": "‘Nothing stops ~ save failure ~’는 오직 ‘느낌의 부재(failure to feel)’만이 유일한 장애물이라는 점을 강조하는 강한 긍정의 수사학입니다."
+        },
+        {
+          "tag": "명사절 병렬 (that ~ or that ~)",
+          "desc": "‘feel’의 목적어로 쓰인 두 개의 ‘that’절이 병렬을 이루며, 이미 이루어졌음을 느끼는 ‘존재의 상태(being)’가 창조의 핵심임을 규정합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your subconscious gives form to your desires only when you feel your wish fulfilled.",
+      "ko": "당신의 잠재의식은 당신이 소원이 성취되었다고 느낄 때에만 당신의 소망에 형상을 부여합니다.",
+      "vocab": [
+        {
+          "word": "gives form to",
+          "mean": "~에 형상을 부여하다, 구체화하다"
+        },
+        {
+          "word": "fulfilled",
+          "mean": "성취된, 실현된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건 부사절 (only when)",
+          "desc": "‘only when ~’ 구문을 통해 잠재의식이 작동하는 유일한 조건이 바로 ‘소원의 성취감을 느끼는 것’임을 명확히 못 박습니다."
+        }
+      ]
+    },
+    {
+      "en": "The unconsciousness of sleep is the normal state of the subconscious.",
+      "ko": "수면의 무의식은 잠재의식의 정상적인 상태입니다.",
+      "vocab": [
+        {
+          "word": "unconsciousness",
+          "mean": "무의식, 의식 없음"
+        },
+        {
+          "word": "normal state",
+          "mean": "정상 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 보어의 등식",
+          "desc": "‘The unconsciousness = the normal state’ 구조를 통해, 잠잘 때의 무의식 상태가 비정상적인 도피가 아니라 잠재의식의 본래 자리임을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Because all things come from within yourself, and your conception of yourself determines that which comes, you should always feel the wish fulfilled before you drop off to sleep.",
+      "ko": "모든 것이 당신의 내면에서 오고, 당신에 대한 당신의 개념이 다가오는 것을 결정하므로, 당신은 잠에 빠져들기 전에 항상 소원이 성취되었다고 느껴야 합니다.",
+      "vocab": [
+        {
+          "word": "conception",
+          "mean": "개념, 자아상"
+        },
+        {
+          "word": "determines",
+          "mean": "결정하다"
+        },
+        {
+          "word": "drop off to sleep",
+          "mean": "잠들다, 잠에 빠져들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "이유를 나타내는 부사절 (Because)",
+          "desc": "두 개의 ‘and’로 연결된 원인절(Because all things ~ , and your conception ~) 뒤에 결론을 이끄는 주절(you should always feel ~)이 이어지는 인과관계 구조입니다."
+        },
+        {
+          "tag": "실천적 명령법",
+          "desc": "조동사 ‘should’를 통해 네빌 고다드 사상의 핵심 실천법인 ‘잠들기 전 소원 성취의 느낌 가정(Assume the feeling of the wish fulfilled)’을 강력하게 권고합니다."
+        }
+      ]
+    },
+    {
+      "en": "You never draw out of the deep of yourself that which you want; you always draw that which you are, and you are that which you feel yourself to be as well as that which you feel as true of others.",
+      "ko": "당신은 당신이 원하는 것을 자신의 깊은 곳에서 끌어내지 않습니다; 당신은 언제나 당신인 것을 끌어내며, 당신이 다른 사람들에게 진실이라고 느끼는 것뿐만 아니라 스스로 그렇다고 느끼는 바로 그것이 당신입니다.",
+      "vocab": [
+        {
+          "word": "draw out",
+          "mean": "끌어내다"
+        },
+        {
+          "word": "that which",
+          "mean": "~하는 것"
+        },
+        {
+          "word": "as well as",
+          "mean": "~뿐만 아니라"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구조",
+          "desc": "세미콜론을 기준으로 '원하는 것'을 얻는 것이 아니라 '존재하는 바'를 끌어낸다는 네빌 고다드의 핵심 법칙(존재의 법칙)을 대조하여 강조합니다."
+        },
+        {
+          "tag": "관계대명사 what(~하는 것)",
+          "desc": "'that which'는 선행사를 포함한 관계대명사 'what'과 같은 의미로, 네빌의 가르침에서 소유가 아닌 '존재(Being)'의 상태를 나타낼 때 자주 사용됩니다."
+        }
+      ]
+    },
+    {
+      "en": "To be realized, then, the wish must be resolved into the feeling of being or having or witnessing the state sought.",
+      "ko": "그러므로 소망이 실현되려면, 그것은 추구하는 상태가 되거나, 그것을 소유하거나, 그것을 목격하는 느낌으로 녹아들어야 합니다.",
+      "vocab": [
+        {
+          "word": "realize",
+          "mean": "실현하다"
+        },
+        {
+          "word": "resolve into",
+          "mean": "~로 분해되다, 녹아들다"
+        },
+        {
+          "word": "witness",
+          "mean": "목격하다, 증거하다"
+        },
+        {
+          "word": "sought",
+          "mean": "추구되는 (seek의 과거분사)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부사적 투사구",
+          "desc": "문장 맨 앞의 'To be realized'는 목적을 나타내는 투사구로, 소망이 현실로 나타나기 위한 선행 조건을 제시합니다."
+        },
+        {
+          "tag": "명사적 동명사 병치",
+          "desc": "전치사 'into' 뒤에 'being', 'having', 'witnessing'이 병치되어 존재, 소유, 관조라는 세 가지 의식의 형태를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "This is accomplished by assuming the feeling of the wish fulfilled.",
+      "ko": "이것은 소망이 성취되었다는 느낌을 가정함으로써 성취됩니다.",
+      "vocab": [
+        {
+          "word": "accomplish",
+          "mean": "성취하다, 달성하다"
+        },
+        {
+          "word": "assume",
+          "mean": "(태도나 느낌을) 취하다, 가정하다"
+        },
+        {
+          "word": "fulfilled",
+          "mean": "성취된, 충족된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "주어가 행해지는 대상('This is accomplished')으로 처리되어, 기도가 인간의 노력이나 외부 조작이 아닌 의식의 가정(assumption)을 통해 이루어짐을 나타냅니다."
+        },
+        {
+          "tag": "과거분사 후치수식",
+          "desc": "'the wish fulfilled'에서 과거분사 'fulfilled'가 명사 뒤에서 수식하여 이미 완료된 상태의 느낌을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The feeling which comes in response to the question “How would I feel were my wish realized?” is the feeling which should monopolize and immobilize your attention as you relax into sleep.",
+      "ko": "‘내 소망이 실현되었다면 나는 어떤 기분이 들까?’라는 질문에 응답하여 찾아오는 느낌은, 당신이 잠 속으로 이완되어 들어갈 때 당신의 주의를 독점하고 고정시켜야 하는 느낌입니다.",
+      "vocab": [
+        {
+          "word": "in response to",
+          "mean": "~에 응답하여"
+        },
+        {
+          "word": "monopolize",
+          "mean": "독점하다"
+        },
+        {
+          "word": "immobilize",
+          "mean": "고정시키다, 움직이지 않게 하다"
+        },
+        {
+          "word": "relax into",
+          "mean": "~로 이완되어 들어가다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거",
+          "desc": "'were my wish realized'는 if가 생략된 도치된 가정법 과거 구문으로, 현재 사실의 반대나 상상 속의 성취 상태를 가정합니다."
+        },
+        {
+          "tag": "이중 관계대명사 절",
+          "desc": "두 개의 'which' 절이 각각 주어와 보어를 수식하며, 상상의 느낌이 어떻게 의식을 지배해야 하는지 구체적으로 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "You must be in the consciousness of being or having that which you want to be or to have before you drop off to sleep.",
+      "ko": "당신은 잠에 빠져들기 전에, 당신이 되고자 하거나 소유하고자 하는 그것을 이미 '이고 있는' 혹은 '가지고 있는' 의식 상태에 있어야 합니다.",
+      "vocab": [
+        {
+          "word": "consciousness",
+          "mean": "의식"
+        },
+        {
+          "word": "drop off to sleep",
+          "mean": "잠이 들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재의 의식 (Consciousness of Being)",
+          "desc": "네빌 사상의 핵심인 '이미 그러함(I AM)'의 상태를 나타내며, 미래의 성취가 아니라 현재의 의식적 점유를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Once asleep, man has no freedom of choice.",
+      "ko": "일단 잠이 들면, 인간은 선택의 자유가 없습니다.",
+      "vocab": [
+        {
+          "word": "once",
+          "mean": "일단 ~하면"
+        },
+        {
+          "word": "freedom of choice",
+          "mean": "선택의 자유"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 축약",
+          "desc": "'Once he is asleep'에서 주어와 be동사가 생략된 형태로, 수면 상태에서의 무방비성과 의식의 절대성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "His entire slumber is dominated by his last waking concept of self.",
+      "ko": "그의 전체 수면은 잠들기 직전의 마지막 자아 개념에 의해 지배됩니다.",
+      "vocab": [
+        {
+          "word": "slumber",
+          "mean": "잠, 수면"
+        },
+        {
+          "word": "dominate",
+          "mean": "지배하다"
+        },
+        {
+          "word": "waking concept of self",
+          "mean": "깨어있을 때의 자아 개념"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태를 통한 법칙 전달",
+          "desc": "잠들기 직전의 느낌이 무의식에 각인되어 수면 시간을 지배한다는 법칙을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It follows, therefore, that he should always assume the feeling of accomplishment and satisfaction before he retires in sleep.",
+      "ko": "그러므로, 그는 잠자리에 들기 전에 항상 성취와 만족의 느낌을 가정해야 한다는 결론이 도출됩니다.",
+      "vocab": [
+        {
+          "word": "it follows that",
+          "mean": "결과적으로 ~라는 결론이 되다"
+        },
+        {
+          "word": "accomplishment",
+          "mean": "성취"
+        },
+        {
+          "word": "retire in sleep",
+          "mean": "잠자리에 들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 구문",
+          "desc": "'It'은 가주어이며 'that절'이 진주어로, 앞선 논리적 전제로부터 필연적인 행동 지침을 도출합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Come before me with singing and thanksgiving.”",
+      "ko": "“노래와 감사함으로 내 앞에 나아갈지어다.”",
+      "vocab": [
+        {
+          "word": "come before",
+          "mean": "~앞에 나아가다"
+        },
+        {
+          "word": "thanksgiving",
+          "mean": "감사"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용 (시편 95:2)",
+          "desc": "영적 상태로 진입할 때 기쁨과 감사(이미 이루어졌음에 대한 찬양)의 감정으로 접근해야 함을 성경 구절을 통해 신비주의적으로 해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "[Psalm 95:2] “Enter into his gates with thanksgiving and into his courts with praise.”",
+      "ko": "[시편 95:2] “감사함으로 그의 문에 들어가며 찬송함으로 그의 궁정에 들어갈지어다.”",
+      "vocab": [
+        {
+          "word": "gates",
+          "mean": "문, 입구"
+        },
+        {
+          "word": "courts",
+          "mean": "뜰, 궁정"
+        },
+        {
+          "word": "praise",
+          "mean": "찬양"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "평행법(Parallelism)",
+          "desc": "히브리 시가의 특징인 의미상 대구법을 사용하여 의식의 깊은 차원(성소)으로 들어가는 마음가짐을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "[Psalm 100:4] Your mood prior to sleep defines your state of consciousness as you enter into the presence of your everlasting lover — the subconscious.",
+      "ko": "[시편 100:4] 잠들기 전의 기분은 당신이 영원한 연인인 '잠재의식'의 임재 안으로 들어갈 때의 의식 상태를 규정합니다.",
+      "vocab": [
+        {
+          "word": "prior to",
+          "mean": "~전에"
+        },
+        {
+          "word": "presence",
+          "mean": "임재, 존재"
+        },
+        {
+          "word": "everlasting",
+          "mean": "영원한"
+        },
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격의 대시 (Appositive Dash)",
+          "desc": "'your everlasting lover' 뒤의 대시는 그것이 바로 '잠재의식(subconscious)'임을 밝히며, 신비주의적이고 친밀한 관점에서 잠재의식을 의인화합니다."
+        }
+      ]
+    },
+    {
+      "en": "She sees you exactly as you feel yourself to be.",
+      "ko": "그녀는 당신이 스스로 느끼는 그대로 정확하게 당신을 봅니다.",
+      "vocab": [
+        {
+          "word": "exactly as",
+          "mean": "~인 그대로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "여성형 대명사 (She)",
+          "desc": "잠재의식(Subconscious)을 여성형 'She'로 지칭하여, 씨앗(생각/느낌)을 받아들여 잉태하고 현실로 형상화하는 수동적·창조적 어머니의 속성을 부여합니다."
+        }
+      ]
+    },
+    {
+      "en": "If, as you prepare for sleep, you assume and maintain the consciousness of success by feeling “I am successful”, you must be successful.",
+      "ko": "만약 잠을 준비하면서 “나는 성공했다”라고 느낌으로써 성공의 의식을 가정하고 유지한다면, 당신은 반드시 성공할 것입니다.",
+      "vocab": [
+        {
+          "word": "prepare for",
+          "mean": "~를 준비하다"
+        },
+        {
+          "word": "maintain",
+          "mean": "유지하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건절과 필연성의 조동사",
+          "desc": "If 조건절 안의 현재 시제와 'I am successful'이라는 정체성의 선언이 주절의 'must be'라는 절대적 법칙과 연결되어 확고한 결과를 도출합니다."
+        }
+      ]
+    },
+    {
+      "en": "Lie flat on your back with your head on a level with your body.",
+      "ko": "등을 대고 반듯이 누워 머리를 몸과 수평이 되게 하세요.",
+      "vocab": [
+        {
+          "word": "lie flat on your back",
+          "mean": "등을 대고 반듯이 눕다"
+        },
+        {
+          "word": "on a level with",
+          "mean": "~와 수평인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부대상황 with 분사구",
+          "desc": "'with your head on a level with your body'는 신체적 이완을 통해 육체적 감각을 최소화하고 의식에 집중하기 위한 물리적 자세를 지시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Feel as you would were you in possession of your wish and quietly relax into unconsciousness.",
+      "ko": "당신의 소망을 소유하고 있을 때 느낄 법한 그대로 느끼고, 조용히 무의식 속으로 이완되어 들어가십시오.",
+      "vocab": [
+        {
+          "word": "in possession of",
+          "mean": "~을 소유하여"
+        },
+        {
+          "word": "unconsciousness",
+          "mean": "무의식, 수면 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 도치와 생략",
+          "desc": "'were you in possession'은 'if you were in possession'에서 if가 생략된 도치 구문으로, 상상의 실감을 극대화합니다."
+        }
+      ]
+    },
+    {
+      "en": "“He that keepeth Israel shall neither slumber nor sleep.”",
+      "ko": "“이스라엘을 지키시는 이는 졸지도 아니하시고 주무시지도 아니하시리로다.”",
+      "vocab": [
+        {
+          "word": "keepeth",
+          "mean": "지키다 (keep의 고어형)"
+        },
+        {
+          "word": "neither A nor B",
+          "mean": "A도 B도 아닌"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용 (시편 121:4)",
+          "desc": "인간은 잠들지만, 내면의 깨어있는 의식(하나님/잠재의식)은 결코 잠들지 않고 우리의 상태를 유지·현실화한다는 영적 진리를 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "[Psalm 121:4]",
+      "ko": "[시편 121:4]",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "출처 표기",
+          "desc": "인용된 성경 구절의 출처를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "rtheless, “He giveth his beloved sleep.”",
+      "ko": "그럼에도 불구하고, “여호와께서 그 사랑하시는 자에게는 잠을 주시는도다.”",
+      "vocab": [
+        {
+          "word": "giveth",
+          "mean": "주신다 (give의 고어형)"
+        },
+        {
+          "word": "beloved",
+          "mean": "사랑받는 자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용 (시편 127:2)",
+          "desc": "앞서 언급된 '깨어 지키는 힘'과 조화를 이루어, 수면이 곧 잠재의식의 창조적 작업 시간임을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious never sleeps.",
+      "ko": "잠재의식은 결코 잠들지 않는다.",
+      "vocab": [
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어 + 부사 + 동사",
+          "desc": "인간의 내면에서 끊임없이 작동하는 잠재의식의 절대적이고 영원한 속성을 선언하는 문장입니다."
+        }
+      ]
+    },
+    {
+      "en": "Sleep is the door through which the conscious, waking mind passes to be creatively joined to the subconscious.",
+      "ko": "수면은 의식적이고 깨어 있는 마음이 통과하여 창조적으로 잠재의식과 결합하는 문이다.",
+      "vocab": [
+        {
+          "word": "waking mind",
+          "mean": "깨어 있는 의식"
+        },
+        {
+          "word": "creatively joined",
+          "mean": "창조적으로 결합된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절 (through which)",
+          "desc": "전치사+관계대명사 구조를 통해 '의식이 수면이라는 문을 통과해 지나간다'는 공간적·상태적 이동을 시각화합니다."
+        }
+      ]
+    },
+    {
+      "en": "Sleep conceals the creative act, while the objective world reveals it.",
+      "ko": "수면은 창조적 행위를 감추고, 반면 객관적 세계는 그것을 드러낸다.",
+      "vocab": [
+        {
+          "word": "conceals",
+          "mean": "감추다, 숨기다"
+        },
+        {
+          "word": "objective world",
+          "mean": "객관적 세계, 현실 세계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문 (while)",
+          "desc": "보이지 않는 내면의 수면 상태(원인)와 보이는 외부 현실(결과)의 대조를 통해 창조의 메커니즘을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "In sleep, man impresses the subconscious with his conception of himself.",
+      "ko": "잠 속에서 인간은 자신에 대한 개념을 잠재의식에 각인시킨다.",
+      "vocab": [
+        {
+          "word": "impress A with B",
+          "mean": "A에게 B를 각인시키다"
+        },
+        {
+          "word": "conception",
+          "mean": "개념, 상상, 태아의 잉태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 + 주어 + 동사 + 목적어",
+          "desc": "네빌의 핵심 가르침인 '상상력과 자아 개념의 각인'이 일어나는 통로가 바로 수면 상태임을 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "What more beautiful description of this romance of the conscious and subconscious is there than that told in the “Song of Solomon”: “By night on my bed I sought him whom my soul loveth … I found him whom my soul loveth; I held him and I not let him go, until I had brought him into my mother’s house, and into the chamber of her that conceived me.”",
+      "ko": "의식과 잠재의식의 이 로맨스에 대해 '아가(Song of Solomon)'에 묘사된 것보다 더 아름다운 설명이 어디에 있겠는가? '내가 밤에 침상에서 내 마음이 사랑하는 자를 찾았으나… 내가 그를 만나고 내 어머니의 집으로, 그리고 나를 잉태한 이의 방으로 데려오기까지 그를 놓지 아니하였노라.'",
+      "vocab": [
+        {
+          "word": "romance",
+          "mean": "로맨스, 결합, 사랑의 이야기"
+        },
+        {
+          "word": "chamber",
+          "mean": "방, 내실"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수사학적 의문문 + 성경 인용",
+          "desc": "성경의 '아가'를 의식(신랑/찾는 자)과 잠재의식(신부/잉태하는 어머니의 방)의 신비로운 합일로 재해석하는 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "Preparing to sleep, you feel yourself into the state of the answered wish and then relax into unconsciousness.",
+      "ko": "잠잘 준비를 할 때, 당신은 소원이 이미 이루어진 상태 속으로 자신을 느끼고 나서 무의식 속으로 편안히 빠져든다.",
+      "vocab": [
+        {
+          "word": "answered wish",
+          "mean": "응답받은 소원, 성취된 소원"
+        },
+        {
+          "word": "relax into unconsciousness",
+          "mean": "이완하여 무의식으로 들어가다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 + 연속 동작",
+          "desc": "실천적 상상(Feeling)의 구체적인 방법을 'feel yourself into(그 상태를 느낌)'라는 표현으로 직접 지시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your realized wish is he whom you seek.",
+      "ko": "당신의 실현된 소원이 바로 당신이 찾는 그이다.",
+      "vocab": [
+        {
+          "word": "realized wish",
+          "mean": "실현된 소원"
+        },
+        {
+          "word": "seek",
+          "mean": "찾다, 구하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 보어절",
+          "desc": "성경 속 사랑하는 대상('그')을 객관적 외부에 있는 존재가 아니라 자신의 '실현된 소원'과 동일시하는 신비주의적 선언입니다."
+        }
+      ]
+    },
+    {
+      "en": "By night on your bed, you seek the feeling of the wish fulfilled that you may take it with you into the chamber of her that conceived you — into sleep or the subconscious which gave you form — that this wish also may be given expression.",
+      "ko": "밤에 침상에서 당신은 소원이 성취된 느낌을 찾는데, 이는 당신이 그것을 당신을 잉태한 이의 방, 즉 당신에게 형상을 부여한 수면 혹은 잠재의식 속으로 가지고 들어가서, 이 소원 역시 표현되도록(실현되도록) 하기 위함이다.",
+      "vocab": [
+        {
+          "word": "wish fulfilled",
+          "mean": "성취된 소원"
+        },
+        {
+          "word": "gave you form",
+          "mean": "너에게 형상을 주다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적을 나타내는 부사절 (that you may...) + 동격구",
+          "desc": "성경 구절의 '어머니의 방'을 '잠재의식'과 동격으로 해석하며, 소원을 잠재의식 속으로 가져가야 하는 영적 목적을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "This is the way to discover and conduct your wishes into the subconscious.",
+      "ko": "이것이 당신의 소원을 발견하여 잠재의식으로 인도하는 방법이다.",
+      "vocab": [
+        {
+          "word": "conduct",
+          "mean": "인도하다, 이끌다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "투부정사 형용사적 용법",
+          "desc": "앞서 설명한 수면 명상의 전 과정을 요약하며 핵심 실천법을 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Feel yourself in the state of the realized wish and quietly drop off to sleep.",
+      "ko": "실현된 소원의 상태 안에 있는 자신을 느끼고 조용히 잠에 빠져들어라.",
+      "vocab": [
+        {
+          "word": "drop off to sleep",
+          "mean": "스르륵 잠들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문 + 병렬 구조",
+          "desc": "독자에게 직접 실행을 요구하는 명령문으로, 상태의 감정과 수면의 진입을 연결합니다."
+        }
+      ]
+    },
+    {
+      "en": "Night after night, you should assume the feeling of being, having, and witnessing that which you seek to be, possess, and see manifested.",
+      "ko": "밤마다 당신은 자신이 되고자 하고, 소유하고자 하며, 발현된 것을 보고자 하는 그것이 이미 되고, 갖고, 목격하고 있는 느낌을 가정(채택)해야 한다.",
+      "vocab": [
+        {
+          "word": "assume",
+          "mean": "가정하다, (태도·느낌을) 취하다"
+        },
+        {
+          "word": "manifested",
+          "mean": "현현된, 나타난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조동사 should + 병렬 목적어",
+          "desc": "반복적인 상상(Assumption)의 중요성을 강조하며, 존재(Being)·소유(Having)·현현(Witnessing)의 3차원적 체상을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "r go to sleep feeling discouraged or dissatisfied.",
+      "ko": "낙심하거나 불만족스러운 채로 잠에 들지 마라.",
+      "vocab": [
+        {
+          "word": "discouraged",
+          "mean": "낙심한"
+        },
+        {
+          "word": "dissatisfied",
+          "mean": "불만족스러운"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정 명령문 + 분사구문",
+          "desc": "잠들기 직전의 부정적인 감정이 잠재의식에 그대로 각인되므로 이를 경고하는 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "r sleep in the consciousness of failure.",
+      "ko": "실패의 의식을 가진 채 잠들지 마라.",
+      "vocab": [
+        {
+          "word": "consciousness of failure",
+          "mean": "실패의 의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정 명령문 + 전치사구",
+          "desc": "수면 상태로 들어갈 때 머무는 '의식의 질'이 곧 현실을 창조하므로 실패의식을 경계합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your subconscious, whose natural state is sleep, sees you as you believe yourself to be; and whether it be good, bad or indifferent, the subconscious will faithfully embody your belief.",
+      "ko": "자연스러운 상태가 수면인 당신의 잠재의식은 당신이 스스로를 믿는 대로 당신을 바라보며, 그것이 좋든 나쁘든 무관하든 간에 잠재의식은 당신의 믿음을 충실히 구체화할 것이다.",
+      "vocab": [
+        {
+          "word": "indifferent",
+          "mean": "무관한, 그저그런"
+        },
+        {
+          "word": "embody",
+          "mean": "구체화하다, 구현하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소유격 관계대명사 (whose) + 양보절 (whether...)",
+          "desc": "잠재의식의 절대적 법칙을 설명합니다. 잠재의식은 가치 판단을 하지 않고 오직 믿음의 내용(Good/Bad)을 그대로 현실에 구현(Embody)합니다."
+        }
+      ]
+    },
+    {
+      "en": "As you feel so do you impress her; and she, the perfect lover, gives form to these impressions and out-pictures them as the children of her beloved.",
+      "ko": "여러분이 느끼는 대로 여러분은 그녀에게 각인시킵니다. 그리고 완벽한 연인인 그녀는 이 인상들에 형체를 부여하고, 그녀의 연인의 자녀들로서 그것들을 외부로 그려냅니다.",
+      "vocab": [
+        {
+          "word": "impress",
+          "mean": "각인시키다, 심어주다"
+        },
+        {
+          "word": "out-picture",
+          "mean": "형상화하다, 외부로 그려내다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As ~, so ...",
+          "desc": "~하는 대로, 그처럼 …하다라는 비례와 상응의 구조로, 내면의 느낌과 외면의 현상이 즉각적으로 일치함을 나타냅니다."
+        },
+        {
+          "tag": "Apposition",
+          "desc": "the perfect lover는 'she(상상/잠재의식)'를 부연 설명하는 동격 어구입니다."
+        }
+      ]
+    },
+    {
+      "en": "“Thou art all fair, my love; there is no spot in thee” [Song of Solomon 4:7] is the attitude of mind to adopt before dropping off to sleep.",
+      "ko": "\"나의 사랑, 너는 어레이고 흠이 전혀 없다\" [아가 4:7]는 잠들기 전에 취해야 할 마음의 태도입니다.",
+      "vocab": [
+        {
+          "word": "fair",
+          "mean": "아름다운, 순수한"
+        },
+        {
+          "word": "spot",
+          "mean": "점, 흠, 결점"
+        },
+        {
+          "word": "drop off to sleep",
+          "mean": "잠들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Quotation as Subject",
+          "desc": "성경 구절 전체가 문장의 주어 역할을 하며, 잠들기 전 의식 상태의 중요성을 강조합니다."
+        },
+        {
+          "tag": "Infinitive Modifier",
+          "desc": "to adopt가 앞에 있는 the attitude of mind를 수식하여 취해야 할 태도를 지정합니다."
+        }
+      ]
+    },
+    {
+      "en": "Disregard appearances and feel that things are as you wish them to be; for “He calleth things that are not seen as though they were” [Romans 4:17], and the unseen becomes seen.",
+      "ko": "현상들을 무시하고 일들이 여러분이 바라는 그대로라고 느끼십시오. 왜냐하면 \"그는 보이지 않는 것들을 마치 있는 것 같이 부르시느니라\" [로마서 4:17] 하였고, 보이지 않는 것이 보이는 것이 되기 때문입니다.",
+      "vocab": [
+        {
+          "word": "disregard",
+          "mean": "무시하다, 개의치 않다"
+        },
+        {
+          "word": "appearance",
+          "mean": "외양, 겉모습, 현상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Imperative Structure",
+          "desc": "Disregard와 feel로 시작하는 명령문 구조를 통해 독자에게 직접적인 심리적 실천을 요구합니다."
+        },
+        {
+          "tag": "as though",
+          "desc": "마치 ~인 것처럼이라는 가정법 의미를 통해 현재의 감각적 현실을 초월하라는 가르침을 줍니다."
+        }
+      ]
+    },
+    {
+      "en": "To assume the feeling of satisfaction is to call conditions into being which will mirror satisfaction.",
+      "ko": "만족의 느낌을 가정하는 것은 만족을 반영할 조건들을 존재 안으로 불러들이는 것입니다.",
+      "vocab": [
+        {
+          "word": "assume",
+          "mean": "가정하다, (태도·느낌을) 취하다"
+        },
+        {
+          "word": "mirror",
+          "mean": "반사하다, 반영하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Infinitive Subject and Complement",
+          "desc": "To assume ~가 주어, to call ~가 보어로 쓰여 '느낌의 가정 = 조건의 창조'라는 Neville의 핵심 법칙을 명료하게 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "Signs follow, they do not precede.",
+      "ko": "표징들은 뒤따르는 것이지, 앞서는 것이 아닙니다.",
+      "vocab": [
+        {
+          "word": "precede",
+          "mean": "선행하다, 앞서다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Asyndeton",
+          "desc": "접속사 없이 문장을 병치하여 내면의 원인(의식)과 외면의 결과(표징) 사이의 절대적인 선후 관계를 강하게 단언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Proof that you are will follow the consciousness that you are; it will not precede it.",
+      "ko": "여러분이 존재한다는 것에 대한 증거는 여러분이 존재한다는 의식을 뒤따를 것이며, 그것을 앞서지 않을 것입니다.",
+      "vocab": [
+        {
+          "word": "consciousness",
+          "mean": "의식, 자각"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Noun Complement Clause",
+          "desc": "that you are는 Proof와 consciousness를 구체화하는 동격 또는 명사절로 사용되어 존재와 의식의 일치를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "You are an eternal dreamer dreaming non-eternal dreams.",
+      "ko": "여러분은 영원한 꿈꾸는 자이며 영원하지 않은 꿈들을 꾸고 있습니다.",
+      "vocab": [
+        {
+          "word": "eternal",
+          "mean": "영원한"
+        },
+        {
+          "word": "non-eternal",
+          "mean": "비영원한, 일시적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Present Participle",
+          "desc": "dreaming non-eternal dreams가 eternal dreamer를 수식하며 인간의 본질이 창조적인 관찰자(상상력)임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Your dreams take form as you assume the feeling of their reality.",
+      "ko": "여러분의 꿈들은 그 현실성에 대한 느낌을 가정할 때 형상을 취합니다.",
+      "vocab": [
+        {
+          "word": "take form",
+          "mean": "형상을 갖추다, 구체화되다"
+        },
+        {
+          "word": "reality",
+          "mean": "현실성, 실재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Adverbial Clause of Time",
+          "desc": "as you assume ~는 주절의 내용이 실현되는 조건이자 시간적 계기를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Do not limit yourself to the past.",
+      "ko": "자신을 과거에 국한시키지 마십시오.",
+      "vocab": [
+        {
+          "word": "limit",
+          "mean": "제한하다, 국한시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Negative Imperative",
+          "desc": "Do not + 동사원형을 통해 과거의 기억이나 경험에 얽매이지 않는 주체적 상상을 권고합니다."
+        }
+      ]
+    },
+    {
+      "en": "Knowing that nothing is impossible to consciousness, begin to imagine states beyond the experiences of the past.",
+      "ko": "의식에게 불가능한 것은 아무것도 없음을 알기에, 과거의 경험들을 넘어선 상태들을 상상하기 시작하십시오.",
+      "vocab": [
+        {
+          "word": "impossible",
+          "mean": "불가능한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Participle Construction",
+          "desc": "현재분사구 Knowing ~가 이유(~때문에)를 나타내며 주절인 명령문(begin to imagine)의 근거를 제공합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whatever the mind of man can imagine, man can realize.",
+      "ko": "인간의 마음이 상상할 수 있는 것이 무엇이든, 인간은 그것을 실현할 수 있습니다.",
+      "vocab": [
+        {
+          "word": "realize",
+          "mean": "실현하다, 현실화하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Whatever Concessive/Conditional",
+          "desc": "Whatever ~ imagine이 목적어 역할을 하는 명사절 또는 양보절로 쓰여 상상의 무한한 가능성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "All objective (visible) states were first subjective (invisible) states, and you called them into visible by assuming the feeling of their reality.",
+      "ko": "모든 객관적(보이는) 상태들은 먼저 주관적(보이지 않는) 상태들이었으며, 여러분은 그것들의 현실성에 대한 느낌을 가정함으로써 그것들을 보이는 상태로 불러들였습니다.",
+      "vocab": [
+        {
+          "word": "objective",
+          "mean": "객관적인, 보이는"
+        },
+        {
+          "word": "subjective",
+          "mean": "주관적인, 보이지 않는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Parenthetical Gloss",
+          "desc": "괄호 안의 visible과 invisible을 통해 Neville 철학의 핵심인 주관(내면)=원인, 객관(외면)=결과의 도식을 명확히 합니다."
+        }
+      ]
+    },
+    {
+      "en": "The creative process is first imagining and then believing the state imagined.",
+      "ko": "창조 과정은 먼저 상상하고 그런 다음 상상된 상태를 믿는 것입니다.",
+      "vocab": [
+        {
+          "word": "creative process",
+          "mean": "창조 과정"
+        },
+        {
+          "word": "believing",
+          "mean": "믿음, 확신"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Gerund Complement",
+          "desc": "imagining과 believing이 동명사 보어로 쓰여 창조의 두 단계(상상과 믿음)를 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Always imagine and expect the best.",
+      "ko": "언제나 최선을 상상하고 기대하십시오.",
+      "vocab": [
+        {
+          "word": "expect",
+          "mean": "기대하다, 대망하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Compound Imperative",
+          "desc": "imagine과 expect가 병렬로 연결되어 끊임없는 긍정적 상상 습관을 독려합니다."
+        }
+      ]
+    },
+    {
+      "en": "The world cannot change until you change your conception of it.",
+      "ko": "세계는 여러분이 그것에 대한 개념을 바꿀 때까지는 변할 수 없습니다.",
+      "vocab": [
+        {
+          "word": "conception",
+          "mean": "개념, 관념, 생각"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "until Clause",
+          "desc": "until 이하의 부사절을 통해 외부 세계의 변화는 오직 내부 개념의 변화에 선행될 수 없음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“As within, so without”",
+      "ko": "\"안에서와 같이, 밖에서도 그러하다\"",
+      "vocab": [
+        {
+          "word": "within",
+          "mean": "안에, 내부"
+        },
+        {
+          "word": "without",
+          "mean": "밖에, 외부"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Hermetic Axiom",
+          "desc": "고대 헤르메스주의 격언을 인용하여 내면 세계와 외면 세계의 절대적인 상응 관계를 요약합니다."
+        }
+      ]
+    },
+    {
+      "en": "Nations, as well as people, are only what you believe them to be.",
+      "ko": "사람들뿐만 아니라 국가들도 오직 여러분이 그들이 그렇다고 믿는 바대로 존재합니다.",
+      "vocab": [
+        {
+          "word": "nation",
+          "mean": "국가, 민족"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "A as well as B",
+          "desc": "개인을 넘어 집단적 현실(국가)마저도 관찰자의 신념에 종속됨을 보여주는 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "No matter what the problem is, no matter where it is, no matter whom it concerns, you have no one to change but yourself; and you have neither opponent nor helper in bringing about the change within yourself.",
+      "ko": "문제가 무엇이든, 그것이 어디에 있든, 그것이 누구와 관련되든, 여러분은 자기 자신 외에는 바꿀 사람이 아무도 없습니다. 그리고 여러분은 자기 자신 안에서 변화를 가져오는 데 있어서 반대자도 조력자도 없습니다.",
+      "vocab": [
+        {
+          "word": "concern",
+          "mean": "~와 관계가 있다, 관련되다"
+        },
+        {
+          "word": "opponent",
+          "mean": "반대자, 적수"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Concessive Clauses",
+          "desc": "No matter what/where/whom 반복을 통해 어떤 예외도 없이 모든 문제의 근원이 내면에 있음을 강조합니다."
+        },
+        {
+          "tag": "Correlative Conjunction",
+          "desc": "neither A nor B 구문을 사용하여 변화 과정에서의 완전한 자주성과 단독성을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "You have nothing to do but convince yourself of the truth of that which you desire to see manifested.",
+      "ko": "여러분이 보고자 원하는 것이 실현된 그 진실을 스스로에게 확신시키는 것 외에는 여러분이 할 일이 아무것도 없습니다.",
+      "vocab": [
+        {
+          "word": "convince",
+          "mean": "확신시키다, 납득시키다"
+        },
+        {
+          "word": "manifest",
+          "mean": "나타내다, 현현시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "have nothing to do but",
+          "desc": "~외에는 할 일이 없다(오직 ~해야 한다)는 뜻으로, Neville이 말하는 멘탈 다이어리와 상상의 완결성을 최종적으로 요약합니다."
+        }
+      ]
+    },
+    {
+      "en": "As soon as you succeed in convincing yourself of the reality of the state sought, results follow to confirm your fixed belief.",
+      "ko": "여러분이 추구하는 상태의 실체를 스스로 확신하는 데 성공하자마자, 확고한 믿음을 확증하는 결과들이 뒤따릅니다.",
+      "vocab": [
+        {
+          "word": "state sought",
+          "mean": "추구하는 상태"
+        },
+        {
+          "word": "fixed belief",
+          "mean": "확고한 믿음"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As soon as",
+          "desc": "~하자마자 라는 의미로 두 사건의 즉각적인 인과 관계를 나타냅니다."
+        },
+        {
+          "tag": "success in -ing",
+          "desc": "-하는 데 성공하다 라는 표현으로 내면의 확신이 가지는 창조적 힘을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "You never suggest to another the state which you desire to see him express; instead, you convince yourself that he is already that which you desire him to be.",
+      "ko": "당신은 다른 사람이 표현하기를 바라는 상태를 그에게 결코 제안하지 않습니다. 대신, 그가 이미 당신이 바라는 바로 그 존재가 되었다고 스스로를 설득합니다.",
+      "vocab": [
+        {
+          "word": "suggest to",
+          "mean": "~에게 제안하다"
+        },
+        {
+          "word": "convince yourself",
+          "mean": "스스로를 확신시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "instead",
+          "desc": "외부를 바꾸려 하지 않고 내면의 상상을 통제하는 네빌의 핵심 법칙을 대조를 통해 강조합니다."
+        },
+        {
+          "tag": "that which",
+          "desc": "~한 것 이라는 의미로 주관적 소망이 객관적 실재가 되는 과정을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Realization of your wish is accomplished by assuming the feeling of the wish fulfilled.",
+      "ko": "당신의 소망의 실현은 소망이 이루어진 느낌을 가정함으로써 성취됩니다.",
+      "vocab": [
+        {
+          "word": "realization",
+          "mean": "실현"
+        },
+        {
+          "word": "assuming",
+          "mean": "가정함, 태도를 취함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "feeling of the wish fulfilled",
+          "desc": "소망이 이미 성취된 상태의 느낌으로, 네빌 사상의 가장 핵심이 되는 개념입니다."
+        }
+      ]
+    },
+    {
+      "en": "You cannot fail unless you fail to convince yourself of the reality of your wish.",
+      "ko": "당신의 소망의 실체를 스스로 확신하는 데 실패하지 않는 한, 당신은 실패할 수 없습니다.",
+      "vocab": [
+        {
+          "word": "unless",
+          "mean": "~하지 않는 한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Double negative",
+          "desc": "cannot fail과 fail to를 중첩 사용하여 내면의 확신이 절대적인 성공 법칙임을 역설적으로 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "A change of belief is confirmed by a change of expression.",
+      "ko": "믿음의 변화는 표현(현실)의 변화에 의해 확증됩니다.",
+      "vocab": [
+        {
+          "word": "expression",
+          "mean": "표현, 현현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Passive structure",
+          "desc": "내면의 원인(belief)과 외부의 결과(expression) 사이의 필연적 대응 관계를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Every night as you drop off to sleep, feel satisfied and spotless, for your subjective lover always forms the objective world in the image and likeness of your conception of it — the conception defined by your feeling.",
+      "ko": "매일 밤 잠에 빠져들 때, 만족스럽고 흠 없음을 느끼십시오. 왜냐하면 당신의 주관적 연인(잠재의식)은 항상 그것에 대한 당신의 개념의 이미지와 닮은 꼴로 객관적 세계를 형성하기 때문입니다. 즉, 당신의 느낌에 의해 정의된 개념 말입니다.",
+      "vocab": [
+        {
+          "word": "drop off to sleep",
+          "mean": "잠에 빠져들다"
+        },
+        {
+          "word": "subjective lover",
+          "mean": "주관적 연인 (잠재의식을 비유)"
+        },
+        {
+          "word": "image and likeness",
+          "mean": "형사와 모양 (창세기적 표현)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Dash application",
+          "desc": "대시(-)를 사용하여 앞서 언급한 conception을 느낌에 의해 정의된다고 부연 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The waking two-thirds of your life on earth ever corroborates or bears witness to your subconscious impressions.",
+      "ko": "지상에서의 삶 중 깨어 있는 3분의 2의 시간은 언제나 당신의 잠재의식적 인상을 확증하거나 증언합니다.",
+      "vocab": [
+        {
+          "word": "corroborate",
+          "mean": "확증하다"
+        },
+        {
+          "word": "bear witness to",
+          "mean": "~을 증언하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Modifier",
+          "desc": "지상에서의 삶의 비율을 나타내는 표현을 통해 깨어있을 때의 현실이 결국 잠재의식의 투사임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The actions and events of the day are effects; they are not causes.",
+      "ko": "그날의 행동과 사건들은 결과일 뿐, 원인이 아닙니다.",
+      "vocab": [
+        {
+          "word": "effects",
+          "mean": "결과"
+        },
+        {
+          "word": "causes",
+          "mean": "원인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Parallel structure",
+          "desc": "원인과 결과의 도식을 명확히 대조하여 현상계의 허구성을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Free will is only freedom of choice.",
+      "ko": "자유 의지는 오직 선택의 자유일 뿐입니다.",
+      "vocab": [
+        {
+          "word": "free will",
+          "mean": "자유 의지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "only",
+          "desc": "자유 의지의 범위를 '선택'으로 한정 지으며, 일단 선택한 이후의 결과는 법칙에 종속됨을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Choose ye this day whom ye shall serve” [Joshua 24:15] is your freedom to choose the kind of mood you assume; but the expression of the mood is the secret of the subconscious.",
+      "ko": "'너희가 섬길 자를 오늘 택하라' [여호수아 24:15]는 것은 당신이 취할 기분의 종류를 선택할 자유이지만, 그 기분의 표현은 잠재의식의 비밀입니다.",
+      "vocab": [
+        {
+          "word": "mood",
+          "mean": "기분, 심리 상태"
+        },
+        {
+          "word": "secret of the subconscious",
+          "mean": "잠재의식의 비밀"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical quotation",
+          "desc": "구약 성경 구절을 인용하여 성경이 인간의 심리학적 메커니즘을 다룬 책임을 증명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The subconscious receives impressions only through the feelings of man and, in a way known only to itself, gives these impressions form and expression.",
+      "ko": "잠재의식은 오직 인간의 느낌을 통해서만 인상을 받아들이며, 오직 자신만이 아는 방식으로 이 인상들에 형태와 표현을 부여합니다.",
+      "vocab": [
+        {
+          "word": "impressions",
+          "mean": "인상, 각인"
+        },
+        {
+          "word": "form and expression",
+          "mean": "형태와 표현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Parenthetical insertion",
+          "desc": "in a way known only to itself 삽입구를 통해 잠재의식의 신비롭고 절대적인 작동 방식을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The actions of man are determined by his subconscious impressions.",
+      "ko": "인간의 행동은 그의 잠재의식적 인상에 의해 결정됩니다.",
+      "vocab": [
+        {
+          "word": "determined by",
+          "mean": "~에 의해 결정되는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Passive voice",
+          "desc": "인간이 주체적으로 행동하는 것처럼 보이지만 실상은 내면의 인상에 지배받는 피동적 존재임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "His illusion of free will, his belief in freedom of action, is but ignorance of the causes which make him act.",
+      "ko": "자유 의지에 대한 그의 환상, 행동의 자유에 대한 그의 믿음은 그를 행동하게 만드는 원인들에 대한 무지일 뿐입니다.",
+      "vocab": [
+        {
+          "word": "illusion",
+          "mean": "환상"
+        },
+        {
+          "word": "ignorance",
+          "mean": "무지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "is but",
+          "desc": "only와 같은 의미로 인간의 자유 의지 신앙을 강하게 비판하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "He thinks himself free because he has forgotten the link between himself and the event.",
+      "ko": "그는 자신과 사건 사이의 연결 고리를 잊어버렸기 때문에 자신이 자유롭다고 생각합니다.",
+      "vocab": [
+        {
+          "word": "link",
+          "mean": "연결 고리"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "because clause",
+          "desc": "인간이 착각을 일으키는 근본 원인(기억 상실)을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Man awake is under compulsion to express his subconscious impressions.",
+      "ko": "잠에서 깨어 있는 인간은 자신의 잠재의식적 인상을 표현해야 하는 강박 아래에 있습니다.",
+      "vocab": [
+        {
+          "word": "under compulsion",
+          "mean": "강박을 받아, 마지못해"
+        },
+        {
+          "word": "subconscious impression",
+          "mean": "잠재의식적 인상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Man awake",
+          "desc": "후치 수식 구조로, '깨어 있는 인간'을 뜻하며 네빌 사상의 깨어난 의식을 지칭합니다."
+        },
+        {
+          "tag": "be under compulsion to V",
+          "desc": "~해야만 하는 강박에 처해 있다는 의미로, 내면의 잠재의식이 반드시 현실로 발현되는 법칙성을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "If in the past he unwisely impressed himself, then let him begin to change his thought and feeling, for only as he does so will he change his world.",
+      "ko": "만약 과거에 그가 현명하지 못하게 자신에게 각인시켰다면, 이제 그의 생각과 느낌을 바꾸기 시작하십시오. 오직 그렇게 할 때만이 그는 자신의 세계를 바꿀 수 있기 때문입니다.",
+      "vocab": [
+        {
+          "word": "unwisely",
+          "mean": "현명하지 못하게"
+        },
+        {
+          "word": "impress",
+          "mean": "각인시키다, 깊은 인상을 주다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "for only as he does so will he change",
+          "desc": "부정어구 'only'가 부사절과 함께 문두로 도치되어 주절(will he change)의 주어와 조동사가 도치된 구문으로, 오직 조건이 충족될 때만 결과가 바뀐다는 절대성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Do not waste one moment in regret, for to think feelingly of the mistakes of the past is to reinfect yourself.",
+      "ko": "후회하며 단 1분도 낭비하지 마십시오. 왜냐고요? 과거의 실수를 감정을 담아 생각하는 것은 스스로를 다시 감염시키는 것이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "feelingly",
+          "mean": "감정을 담아, 절실히"
+        },
+        {
+          "word": "reinfect",
+          "mean": "다시 감염시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "to think feelingly ~ is to reinfect ~",
+          "desc": "부정사구가 주어와 보어로 쓰여 '과거의 실수에 감정을 쏟는 행위 자체가 곧 과거의 상처를 재발시키는 것'이라는 영적 인과관계를 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "Turn from appearances and assume the feeling that would be yours were you already the one you wish to be.",
+      "ko": "현상(오감의 세계)으로부터 돌이키고, 만약 당신이 이미 되고자 하는 그 사람이 되었다면 가졌을 그 느낌을 가정하십시오.",
+      "vocab": [
+        {
+          "word": "turn from",
+          "mean": "~로부터 돌아서다"
+        },
+        {
+          "word": "appearance",
+          "mean": "외양, 현상 (오감으로 지각되는 세계)"
+        },
+        {
+          "word": "assume",
+          "mean": "가정하다, (상태나 태도를) 취하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "were you already the one",
+          "desc": "가정법 과거 문장으로 'If you were'에서 주어와 동사가 도치된 형태이며, 현재의 사실(아직 그가 아님)에 반대되는 상상적 가정 상태를 요구합니다."
+        }
+      ]
+    },
+    {
+      "en": "Feeling a state produces that state.",
+      "ko": "어떤 상태를 느끼는 것이 그 상태를 만들어냅니다.",
+      "vocab": [
+        {
+          "word": "produce",
+          "mean": "생산하다, 만들어내다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Feeling a state",
+          "desc": "동명사구가 주어로 사용되어 '느낌(Feeling)' 자체가 창조의 유일한 원인임을 명쾌하게 선언하는 네빌의 핵심 법칙 문장입니다."
+        }
+      ]
+    },
+    {
+      "en": "The part you play on the world’s stage is determined by your conception of yourself.",
+      "ko": "당신이 세상이라는 무대에서 연기하는 배역은 당신 자신의 개념에 의해 결정됩니다.",
+      "vocab": [
+        {
+          "word": "conception of yourself",
+          "mean": "자아 개념, 자아상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "The part you play",
+          "desc": "관계대명사가 생략된 구조로 '당신이 연기하는 역할'을 수식하며, 인생을 연극 무대로 보는 신비주의적 세계관을 반영합니다."
+        }
+      ]
+    },
+    {
+      "en": "By feeling your wish fulfilled and quietly relaxing into sleep, you cast yourself in a star role to be played on earth tomorrow, and, while asleep, you are rehearsed and instructed in your part.",
+      "ko": "소원이 성취된 것을 느끼고 조용히 잠에 이완되어 들어감으로써, 당신은 내일 지구상에서 연행될 주연 배우로 자신을 캐스팅하는 것이며, 잠자는 동안 당신은 당신의 배역을 리허설하고 교육받게 됩니다.",
+      "vocab": [
+        {
+          "word": "wish fulfilled",
+          "mean": "성취된 소원"
+        },
+        {
+          "word": "cast",
+          "mean": "(역을) 맡기다, 캐스팅하다"
+        },
+        {
+          "word": "star role",
+          "mean": "주연"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "By feeling ~ and quietly relaxing ~",
+          "desc": "전치사 By의 목적어로 두 개의 동명사구가 병렬 연결되어 수면 전 상상의 기술을 실천하는 방법을 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "The acceptance of the end automatically wills the means of realization.",
+      "ko": "결과(종착점)의 수용은 자동으로 실현의 수단을 의지작용으로 이끌어냅니다.",
+      "vocab": [
+        {
+          "word": "acceptance of the end",
+          "mean": "끝(결과)의 수용/인정"
+        },
+        {
+          "word": "realization",
+          "mean": "실현, 현실화"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "wills the means",
+          "desc": "명사 'will(의지)'이 동사로 쓰여, 결말을 받아들이기만 하면 과정과 수단은 의식의 힘에 의해 자연스럽게 창조된다는 법칙을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Make no mistake about this.",
+      "ko": "이 점에 대해 오해하지 마십시오.",
+      "vocab": [
+        {
+          "word": "make no mistake",
+          "mean": "오해하지 않다, 틀림없다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Make no mistake",
+          "desc": "독자의 주의를 강력하게 환기시키는 명령문으로, 앞서 말한 법칙의 절대적 진실성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "If, as you prepare for sleep, you do not consciously feel yourself into the state of the answered wish, then you will take with you into the chamber of her who conceived you the sum total of the reactions and feelings of the waking day; and while asleep, you will be instructed in the manner in which they will be expressed tomorrow.",
+      "ko": "만약 잠을 준비할 때 의식적으로 응답받은 소원의 상태 속으로 자신을 느끼며 들어가지 않는다면, 당신은 깨어 있는 동안 겪은 반응들과 느낌들의 총합을 가지고 당신을 잉태한 자(잠재의식)의 방으로 들어가게 될 것이며, 잠자는 동안 그것들이 내일 어떻게 표현될지 교육받게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "answered wish",
+          "mean": "응답받은 소원"
+        },
+        {
+          "word": "sum total",
+          "mean": "총합"
+        },
+        {
+          "word": "waking day",
+          "mean": "깨어 있는 낮 시간"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "her who conceived you",
+          "desc": "여기서 'her'는 성경적 알레고리인 예루살렘이자 모든 것을 낳는 자궁인 잠재의식을 의인화한 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "You will rise believing that you are a free agent, not realizing that every action and event of the day is predetermined by your concept of self as you fell asleep.",
+      "ko": "당신은 잠에서 깨어날 때 자신이 자유 의지적 존재라고 믿겠지만, 그날의 모든 행동과 사건이 잠들 때 가졌던 자아 개념에 의해 이미 결정되었다는 사실은 깨닫지 못할 것입니다.",
+      "vocab": [
+        {
+          "word": "free agent",
+          "mean": "자유 행동 주체, 독립된 자유인"
+        },
+        {
+          "word": "predetermined",
+          "mean": "미리 결정된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not realizing that ~",
+          "desc": "분사구문으로, 인간이 무의식적으로 전날 밤의 자아상에 사로잡혀 로봇처럼 반응하면서도 스스로 자유롭다고 착각하는 영적 무지를 지적합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your only freedom, then, is your freedom of reaction.",
+      "ko": "그렇다면 당신의 유일한 자유는 반응의 자유뿐입니다.",
+      "vocab": [
+        {
+          "word": "freedom of reaction",
+          "mean": "반응의 자유"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Your only freedom is ~",
+          "desc": "이미 예정된 세상의 각본 속에서 인간이 개입할 수 있는 유일한 신성한 영역은 눈앞의 현상에 어떻게 반응할지 선택하는 권한뿐이라는 선언입니다."
+        }
+      ]
+    },
+    {
+      "en": "You are free to choose how you feel and react to the day’s drama, but the drama — the actions, events and circumstances of the day — have already been determined.",
+      "ko": "당신은 그날의 드라마에 대해 어떻게 느끼고 반응할지 자유롭게 선택할 수 있지만, 그 드라마—즉 그날의 행동과 사건, 환경—는 이미 결정되어 있습니다.",
+      "vocab": [
+        {
+          "word": "day's drama",
+          "mean": "하루 동안 펼쳐지는 연극/상황"
+        },
+        {
+          "word": "circumstance",
+          "mean": "환경, 상황"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "how you feel and react",
+          "desc": "의문사절이 동사의 목적어로 쓰여 내면의 태도(Feeling)를 선택하는 의식적 주체성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Unless you consciously and purposely define the attitude of mind with which you go to sleep, you unconsciously go to sleep in the composite attitude of mind made up of all feelings and reactions of the day.",
+      "ko": "잠자리에 들 때 취할 마음의 태도를 의식적이고 의도적으로 정의하지 않는다면, 여러분은 그날의 모든 감정과 반응으로 이루어진 복합적인 마음의 태도를 지닌 채 무의식적으로 잠들게 됩니다.",
+      "vocab": [
+        {
+          "word": "unless",
+          "mean": "~가 아니라면"
+        },
+        {
+          "word": "attitude of mind",
+          "mean": "마음의 태도"
+        },
+        {
+          "word": "composite",
+          "mean": "합성의, 복합적인"
+        },
+        {
+          "word": "reaction",
+          "mean": "반응"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건의 부사절",
+          "desc": "'Unless'로 시작하여 ~하지 않는다면이라는 부정 조건을 제시하며, 주절의 행동 방향을 결정하는 핵심 전제 역할을 합니다."
+        },
+        {
+          "tag": "전치사구와 과거분사구",
+          "desc": "'with which'는 선행사 attitude를 수식하는 관계대명사절이며, 'made up of'는 앞선 명사구를 뒤에서 수식하는 과거분사구입니다."
+        }
+      ]
+    },
+    {
+      "en": "Every reaction makes a subconscious impression, and — unless counteracted by an opposite and more dominant feeling — is the cause of future action.",
+      "ko": "모든 반응은 잠재의식에 인상을 남기며, — 반대되는 더 지배적인 감정에 의해 상쇄되지 않는 한 — 미래 행동의 원인이 됩니다.",
+      "vocab": [
+        {
+          "word": "subconscious impression",
+          "mean": "잠재의식적 인상"
+        },
+        {
+          "word": "counteract",
+          "mean": "상쇄하다, 대응하다"
+        },
+        {
+          "word": "dominant",
+          "mean": "지배적인, 우세한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입구",
+          "desc": "대시(—) 사이에 놓인 'unless counteracted...'는 조건의 의미를 더하는 삽입구로, 잠재의식의 각인이 어떻게 지워지거나 유지되는지를 설명합니다."
+        },
+        {
+          "tag": "병렬 구조",
+          "desc": "주어 'Every reaction'에 대해 동사 'makes'와 'is'가 병렬로 이어져 반응의 결과와 미래 행동 유발을 연결합니다."
+        }
+      ]
+    },
+    {
+      "en": "Ideas enveloped in feeling are creative actions.",
+      "ko": "감정으로 감싸인 아이디어는 창조적인 행동입니다.",
+      "vocab": [
+        {
+          "word": "envelop",
+          "mean": "감싸다, 싸다"
+        },
+        {
+          "word": "creative action",
+          "mean": "창조적 행동"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "과거분사 수식",
+          "desc": "'enveloped in feeling'이 주어 'Ideas'를 후치 수식하여, 단순한 생각에 감정이 실릴 때 비로소 창조성이 발현된다는 네빌의 핵심 법칙을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Use your divine right wisely.",
+      "ko": "당신의 신성한 권리를 현명하게 사용하십시오.",
+      "vocab": [
+        {
+          "word": "divine right",
+          "mean": "신성한 권리"
+        },
+        {
+          "word": "wisely",
+          "mean": "현명하게"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문",
+          "desc": "동사원형 'Use'로 시작하여 독자에게 상상력의 주권을 행사할 것을 촉구하는 직접적인 권고입니다."
+        }
+      ]
+    },
+    {
+      "en": "Through your ability to think and feel, you have dominion over all creation.",
+      "ko": "사고하고 느끼는 능력을 통해, 여러분은 모든 피조물에 대한 지배권을 가집니다.",
+      "vocab": [
+        {
+          "word": "dominion",
+          "mean": "지배권, 통치권"
+        },
+        {
+          "word": "creation",
+          "mean": "피조물, 창조물"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구",
+          "desc": "'Through ~'는 수단을 나타내며, 인간의 생각과 감정이 창조 세계를 다스리는 근원적 힘임을 선언하는 문맥입니다."
+        }
+      ]
+    },
+    {
+      "en": "While you are awake, you are a gardener selecting seed for your garden, but “Except a corn of wheat fall into the ground and die, it abideth alone; but if it die, it bringeth forth much fruit.”",
+      "ko": "깨어 있는 동안 여러분은 자신의 정원을 위해 씨앗을 고르는 정원사이지만, '한 알의 밀이 땅에 떨어져 죽지 않으면 그대로 남아 있고, 죽으면 많은 열매를 맺느니라' 하였습니다.",
+      "vocab": [
+        {
+          "word": "gardener",
+          "mean": "정원사"
+        },
+        {
+          "word": "corn of wheat",
+          "mean": "밀알"
+        },
+        {
+          "word": "abide",
+          "mean": "머무다, 살다"
+        },
+        {
+          "word": "bring forth",
+          "mean": "낳다, 결실을 맺다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조와 인용",
+          "desc": "깨어있을 때의 의식적 선택과 성경 구절(요한복음)의 영적 원리를 대조 및 인용하여, 잠재의식에 씨앗을 심는 과정의 본질을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "[John 12:24] Your conception of yourself as you fall asleep is the seed you drop into the ground of the subconscious.",
+      "ko": "[요한복음 12:24] 잠에 빠져들 때 자신에 대한 개념은 여러분이 잠재의식의 땅에 떨어뜨리는 씨앗입니다.",
+      "vocab": [
+        {
+          "word": "conception",
+          "mean": "개념, 관념"
+        },
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 생략",
+          "desc": "'seed' 뒤에 목적격 관계대명사가 생략되어 있으며, 'as you fall asleep'은 시간의 부사절로 자아 개념이 심어지는 결정적 순간을 가리킵니다."
+        }
+      ]
+    },
+    {
+      "en": "Dropping off to sleep feeling satisfied and happy compels conditions and events to appear in your world which confirm these attitudes of mind.",
+      "ko": "만족스럽고 행복한 기분으로 잠에 빠져드는 것은 이러한 마음의 태도를 확증하는 조건과 사건들이 여러분의 세계에 나타나도록 강제합니다.",
+      "vocab": [
+        {
+          "word": "drop off to sleep",
+          "mean": "잠들다"
+        },
+        {
+          "word": "compel",
+          "mean": "강제하다, 불가피하게 만들다"
+        },
+        {
+          "word": "confirm",
+          "mean": "확증하다, 확인하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동명사 주어",
+          "desc": "문장의 주어로 쓰인 'Dropping off...' 동명사구 안에 'feeling satisfied and happy'라는 분사구문이 포함되어 수면 전의 심리 상태를 규정합니다."
+        },
+        {
+          "tag": "5형식 구조",
+          "desc": "'compels'가 동사로 쓰여 목적어(conditions and events)와 목적격 보어(to appear)를 취하며, 현현의 필연성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Sleep is the door into heaven.",
+      "ko": "잠은 천국으로 들어가는 문입니다.",
+      "vocab": [
+        {
+          "word": "heaven",
+          "mean": "천국, 하늘"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유적 정의",
+          "desc": "잠을 천국(이상향의 현실화)으로 향하는 통로로 정의하는 신비주의적 선언입니다."
+        }
+      ]
+    },
+    {
+      "en": "What you take in as a feeling you bring out as a condition, action, or object in space.",
+      "ko": "여러분이 감정으로서 받아들인 것은 공간 속에서 조건, 행동 또는 객체로서 밖으로 드러나게 됩니다.",
+      "vocab": [
+        {
+          "word": "bring out",
+          "mean": "끌어내다, 드러내다"
+        },
+        {
+          "word": "in space",
+          "mean": "공간 속에, 현실에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 What",
+          "desc": "'What you take in'은 '~하는 것'을 뜻하는 선행사를 포함한 관계대명사절로 문장의 목적어 역할을 하며 도치 형태로 강조되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "So sleep in the feeling of the wish fulfilled.",
+      "ko": "그러므로 소원이 성취된 감정 속에서 잠드십시오.",
+      "vocab": [
+        {
+          "word": "wish fulfilled",
+          "mean": "소원 성취"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "핵심 명령문",
+          "desc": "네빌 가르침의 대원칙인 소원 성취의 느낌을 수면 상태와 결합할 것을 지시하는 최종 명령문입니다."
+        }
+      ]
+    },
+    {
+      "en": "PRAYER PRAYER, like sleep, is also an entrance into the subconscious.",
+      "ko": "기도. 기도는 잠과 마찬가지로 잠재의식으로 들어가는 입구이기도 합니다.",
+      "vocab": [
+        {
+          "word": "entrance",
+          "mean": "입구, 들어감"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동일어 반복과 비교",
+          "desc": "'PRAYER PRAYER'는 장 제목이나 강조의 형태이며, 'like sleep'이라는 삽입구를 통해 기도를 수면과 동등한 심리적 상태로 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "“When you pray, enter into your closet, and when you have shut your door, pray to your Father which is in secret and your Father which is in secret shall reward you openly.”",
+      "ko": "'너는 기도할 때에 네 골방에 들어가 문을 닫고 은밀한 중에 계신 네 아버지께 기도하라 은밀한 중에 보시는 네 아버지께서 갚으시리라.'",
+      "vocab": [
+        {
+          "word": "closet",
+          "mean": "골방, 비밀 장소"
+        },
+        {
+          "word": "in secret",
+          "mean": "은밀한 중에"
+        },
+        {
+          "word": "reward",
+          "mean": "상 주다, 갚아주다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용문",
+          "desc": "마태복음 구절을 인용하여 외적인 소음을 차단하고 내면의 잠재의식(은밀한 아버지)과 교감하는 기도의 방식을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Prayer is an illusion of sleep which diminishes the impression of the outer world and renders the mind more receptive to suggestion from within.",
+      "ko": "기도는 외부 세계의 인상을 약화시키고 마음이 내면으로부터의 암시에 더 잘 반응하도록 만드는, 잠의 일종의 유사 상태입니다.",
+      "vocab": [
+        {
+          "word": "illusion",
+          "mean": "환상, 유사 상태"
+        },
+        {
+          "word": "diminish",
+          "mean": "줄이다, 약화시키다"
+        },
+        {
+          "word": "receptive",
+          "mean": "잘 받아들이는, 수용적인"
+        },
+        {
+          "word": "suggestion",
+          "mean": "암시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 관계대명사절",
+          "desc": "'which' 이하의 절이 'an illusion of sleep'을 수신하며, 기도가 외부 감각을 차단하고 내적 암시 수용성을 높이는 메커니즘을 서술합니다."
+        }
+      ]
+    },
+    {
+      "en": "The mind in prayer is in a state of relaxation and receptivity akin to the feeling attained just before dropping off to sleep.",
+      "ko": "기도 중의 마음은 잠들기 직전에 도달하는 느낌과 유사한 이완과 수용의 상태에 있습니다.",
+      "vocab": [
+        {
+          "word": "relaxation",
+          "mean": "이완, 긴장 완화"
+        },
+        {
+          "word": "akin to",
+          "mean": "~와 유사한"
+        },
+        {
+          "word": "attain",
+          "mean": "달성하다, 도달하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문과 형용사구",
+          "desc": "'akin to ~'는 앞의 상태를 보충 설명하는 형용사구이며, 'attained'는 과거분사로서 앞의 'feeling'을 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "Prayer is not so much what you ask for, as how you prepare for its reception.",
+      "ko": "기도는 무엇을 구하느냐의 문제라기보다는 그것을 맞이할 준비를 어떻게 하느냐의 문제입니다.",
+      "vocab": [
+        {
+          "word": "not so much A as B",
+          "mean": "A라기보다는 B인"
+        },
+        {
+          "word": "reception",
+          "mean": "수용, 받아들임"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상관 접속사 구문",
+          "desc": "'not so much A as B' 구문을 사용하여 기도의 본질이 청원의 내용이 아니라 마음의 태도와 수용성에 있음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whatsoever things ye desire, when ye pray believe that you have received them, and ye shall have them.",
+      "ko": "무엇이든지 기도하고 구하는 것은 받은 줄로 믿으라 그리하면 너희에게 그대로 되리라.",
+      "vocab": [
+        {
+          "word": "Whatsoever",
+          "mean": "무엇이든지"
+        },
+        {
+          "word": "receive",
+          "mean": "받다, 이미 성취하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용 구문",
+          "desc": "마가복음 11장 24절의 고대 영어 번역투를 사용해 이미 이루어졌음을 확신하는 기도의 원리를 강조합니다."
+        },
+        {
+          "tag": "시제 일치와 현재완료",
+          "desc": "미래의 성취가 아니라 '이미 받았다(have received)'는 완료 시제를 사용하여 소망의 실현을 선행시키는 네빌의 핵심 법칙을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The only condition required is that you believe that your prayers are already realized.",
+      "ko": "요구되는 유일한 조건은 당신의 기도가 이미 실현되었다고 믿는 것입니다.",
+      "vocab": [
+        {
+          "word": "condition",
+          "mean": "조건"
+        },
+        {
+          "word": "realized",
+          "mean": "실현된, 현실화된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "that절 보어",
+          "desc": "주격 보어 자리에 온 that절로, 기도의 성취 조건이 믿음의 시점 변화에 있음을 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Your prayer must be answered if you assume the feeling that would be yours were you already in possession of your objective.",
+      "ko": "만약 당신이 이미 목표를 소유했을 때 가질 그 감정을 가정한다면, 당신의 기도는 반드시 응답받을 것입니다.",
+      "vocab": [
+        {
+          "word": "assume",
+          "mean": "(태도나 감정을) 취하다, 가정하다"
+        },
+        {
+          "word": "in possession of",
+          "mean": "~을 소유한"
+        },
+        {
+          "word": "objective",
+          "mean": "목표"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 도치 구문",
+          "desc": "if절의 가정법 과거완료(were you already in possession)에서 주어와 동사가 도치되어 네빌의 신비주의적 전제조건을 극적으로 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The moment you accept the wish as an accomplished fact, the subconscious finds means for its realization.",
+      "ko": "당신이 소망을 이미 성취된 사실로 받아들이는 그 순간, 잠재의식은 그것을 실현할 수단을 찾아냅니다.",
+      "vocab": [
+        {
+          "word": "accomplished",
+          "mean": "성취된, 완성된"
+        },
+        {
+          "word": "subconscious",
+          "mean": "잠재의식"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "접속사 기능의 명사구",
+          "desc": "'The moment [주어] [동사]' 형태로 '~하는 순간'이라는 부사절 역할을 하며 잠재의식의 즉각적인 작용을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "To pray successfully then, you must yield to the wish, that is, feel the wish fulfilled.",
+      "ko": "따라서 성공적으로 기도하기 위해, 당신은 소망에 굴복해야 합니다. 즉, 소망이 성취되었다고 느껴야 합니다.",
+      "vocab": [
+        {
+          "word": "yield to",
+          "mean": "~에 굴복하다, 내어 맡기다"
+        },
+        {
+          "word": "fulfilled",
+          "mean": "성취된, 충족된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격의 연결 (that is)",
+          "desc": "소망에 '굴복한다'는 추상적 표현을 '소망의 성취를 느낀다'는 구체적 행위로 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "The perfectly disciplined man is always in tune with the wish as an accomplished fact.",
+      "ko": "완벽하게 훈련된 사람은 언제나 성취된 사실로서의 소망과 조화를 이룹니다.",
+      "vocab": [
+        {
+          "word": "disciplined",
+          "mean": "훈련된, 단련된"
+        },
+        {
+          "word": "in tune with",
+          "mean": "~와 조화를 이루는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 형용사구",
+          "desc": "주어의 상태를 묘사하는 전치사구가 주격 보어로 기능하여 의식의 일치 상태를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "He knows that consciousness is the one and only reality, that ideas and feelings are facts of consciousness and are as real as objects in space; therefore he never entertains a feeling which does not contribute to his happiness, for feelings are the causes of the actions and circumstances of his life.",
+      "ko": "그는 의식이 유일무이한 실재이며, 생각과 느낌은 의식의 사실들이자 공간 속의 객체들만큼이나 실제적임을 압니다. 그러므로 그는 자신의 행복에 기여하지 않는 느낌은 결코 품지 않습니다. 왜냐하면 느낌들이 그의 삶의 행동과 환경의 원인이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "consciousness",
+          "mean": "의식"
+        },
+        {
+          "word": "entertain",
+          "mean": "(생각·느낌을) 품다, 마음에 두다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "병렬 구조와 인과관계",
+          "desc": "that절들이 병렬로 이어져 네빌 사상의 대전제(의식만이 유일한 실재)를 구성하고, 등위접속사 therefore와 for가 논리적 인과관계를 완성합니다."
+        }
+      ]
+    },
+    {
+      "en": "On the other hand, the undisciplined man finds it difficult to believe that which is denied by the senses and usually accepts or rejects solely on appearances of the senses.",
+      "ko": "반면에 훈련되지 않은 사람은 감각들에 의해 부인되는 것을 믿기 어려워하며, 대개 오직 감각들의 겉모습에 근거해서만 받아들이거나 거부합니다.",
+      "vocab": [
+        {
+          "word": "undisciplined",
+          "mean": "훈련되지 않은, 통제되지 않은"
+        },
+        {
+          "word": "solely",
+          "mean": "오직, 단지"
+        },
+        {
+          "word": "appearance",
+          "mean": "겉모습, 현상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가목적어 구문",
+          "desc": "find it difficult to 부정사 구조를 사용하여 감각을 초월한 믿음의 난이도를 객관적으로 서술합니다."
+        }
+      ]
+    },
+    {
+      "en": "Because of this tendency to rely on the evidence of the senses, it is necessary to shut them out before starting to pray, before attempting to feel that which they deny.",
+      "ko": "감각의 증거에 의존하는 이러한 경향 때문에, 기도를 시작하기 전에, 그리고 감각들이 부인하는 것을 느끼려고 시도하기 전에 감각들을 차단하는 것이 필요합니다.",
+      "vocab": [
+        {
+          "word": "tendency",
+          "mean": "경향"
+        },
+        {
+          "word": "shut out",
+          "mean": "차단하다, 가두다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 구문",
+          "desc": "it is necessary to 부정사 구문을 통해 외적인 감각을 닫는 명상의 선행 단계를 당위성으로 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whenever you are in the state of mind 'I should like to, but I cannot', the harder you try, the less you are able to yield to the wish.",
+      "ko": "'하고는 싶지만, 할 수 없어'라는 마음 상태에 있을 때마다, 더 열심히 노력할수록 소망에 굴복하기는 더 어려워집니다.",
+      "vocab": [
+        {
+          "word": "state of mind",
+          "mean": "마음의 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "더 비교급, 더 비교급 구문",
+          "desc": "the harder you try, the less you are able 구문을 사용하여 애쓰면 애쓸수록 의식적 저항이 커지는 역설적 법칙을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "You never attract that which you want, but always attract that which you are conscious of being.",
+      "ko": "당신은 당신이 원하는 것을 결코 끌어당기지 못하며, 언제나 당신이 존재하고 있다고 의식하는 것을 끌어당깁니다.",
+      "vocab": [
+        {
+          "word": "attract",
+          "mean": "끌어당기다"
+        },
+        {
+          "word": "conscious of",
+          "mean": "~을 의식하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not A but B 대조 구문",
+          "desc": "소망하는 대상(want)과 존재의 상태(being)를 극적으로 대조하여 존재론적 끌어당김의 법칙을 확립합니다."
+        }
+      ]
+    },
+    {
+      "en": "Prayer is the art of assuming the feeling of being and having that which you want.",
+      "ko": "기도란 당신이 원하는 것을 이미 존재하고 소유하고 있다는 감정을 가정하는 기술입니다.",
+      "vocab": [
+        {
+          "word": "art",
+          "mean": "기술, 예술"
+        },
+        {
+          "word": "assuming",
+          "mean": "가정함, 태도를 취함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동명사구 수식",
+          "desc": "전치사 of의 목적어로 두 개의 동명사(assuming)와 그에 딸린 목적어구들이 연결되어 기도의 정의를 완성합니다."
+        }
+      ]
+    },
+    {
+      "en": "When the senses confirm the absence of your wish, all conscious effort to counteract this suggestion is futile and tends to intensify the suggestion.",
+      "ko": "감각들이 당신 소망의 부재를 확인할 때, 이 암시에 대항하려는 모든 의식적인 노력은 헛되며 오히려 그 암시를 강화시키는 경향이 있습니다.",
+      "vocab": [
+        {
+          "word": "confirm",
+          "mean": "확인하다, 확증하다"
+        },
+        {
+          "word": "absence",
+          "mean": "부재, 없음"
+        },
+        {
+          "word": "counteract",
+          "mean": "대항하다, 상쇄하다"
+        },
+        {
+          "word": "futile",
+          "mean": "헛된, 소용없는"
+        },
+        {
+          "word": "intensify",
+          "mean": "강화하다, 심화시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 동사의 연결",
+          "desc": "all conscious effort가 주어이며 병렬로 연결된 서술어(is futile and tends to)를 통해 투쟁적 기도의 무용론을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "Prayer is the art of yielding to the wish and not the forcing of the wish.",
+      "ko": "기도는 소망에 굴복하는 예술이지, 소망을 강제하는 것이 아닙니다.",
+      "vocab": [
+        {
+          "word": "yielding",
+          "mean": "굴복함, 내맡김"
+        },
+        {
+          "word": "forcing",
+          "mean": "강요, 억지로 함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "A and not B",
+          "desc": "'A이고 B가 아니다'라는 대조 구조를 통해 네빌의 핵심 기도법인 '능동적 투쟁이 아닌 수동적 수용'을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whenever your feeling is in conflict with your wish, feeling will be the victor.",
+      "ko": "여러분의 감정이 소망과 충돌할 때마다, 감정이 언제나 승자가 될 것입니다.",
+      "vocab": [
+        {
+          "word": "in conflict with",
+          "mean": "~와 충돌하여"
+        },
+        {
+          "word": "victor",
+          "mean": "승자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Whenever절",
+          "desc": "조건과 반복을 나타내는 부사절로, 의지(wish)보다 잠재의식적 느낌(feeling)이 현실 창조에서 우위에 있음을 절대적 법칙으로 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The dominant feeling invariably expresses itself.",
+      "ko": "지배적인 감정은 예외 없이 스스로를 표현(현실화)합니다.",
+      "vocab": [
+        {
+          "word": "dominant",
+          "mean": "지배적인, 우세한"
+        },
+        {
+          "word": "invariably",
+          "mean": "예외 없이, 변함없이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "relexive pronoun",
+          "desc": "expresses itself에서 재귀대명사를 사용하여 감정이 외부의 도움 없이도 본성상 스스로 형태를 갖추어 나타나는 속성을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "Prayer must be without effort.",
+      "ko": "기도에는 노력이 없어야 합니다.",
+      "vocab": [
+        {
+          "word": "effort",
+          "mean": "애씀, 노력"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "without effort",
+          "desc": "전치사구를 통해 에고(ego)의 억지로 짜내는 의지력이 기도의 방해물이 됨을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "In attempting to fix an attitude of mind which is denied by the senses, effort is fatal.",
+      "ko": "감각들에 의해 부정되는 마음의 태도를 고정시키려 시도할 때, 애씀은 치명적입니다.",
+      "vocab": [
+        {
+          "word": "attempting",
+          "mean": "시도함"
+        },
+        {
+          "word": "denied",
+          "mean": "부인되는, 거부되는"
+        },
+        {
+          "word": "fatal",
+          "mean": "치명적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "participial construction",
+          "desc": "In attempting~ 전치사구 안에서 동명사가 쓰였으며, 주절의 'effort'가 의미상 주어와 일치하여 오감의 증거를 거스르며 무리하게 믿으려 할 때 발생하는 모순을 지적합니다."
+        }
+      ]
+    },
+    {
+      "en": "To yield successfully to the wish as an accomplished fact, you must create a passive state, a kind of reverie or meditative reflection similar to the feeling which precedes sleep.",
+      "ko": "소망을 이미 성취된 사실로 받아들이며 성공적으로 굴복하려면, 여러분은 수동적 상태, 즉 잠들기 전에 선행하는 느낌과 유사한 일종의 몽상이나 명상적 성찰을 만들어내야 합니다.",
+      "vocab": [
+        {
+          "word": "accomplished fact",
+          "mean": "성취된 사실"
+        },
+        {
+          "word": "passive state",
+          "mean": "수동적 상태"
+        },
+        {
+          "word": "reverie",
+          "mean": "몽상, 공상"
+        },
+        {
+          "word": "precedes",
+          "mean": "~보다 앞서다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "as an accomplished fact",
+          "desc": "전치사 as를 사용하여 아직 미래인 일이 아니라 '이미 완료된 사실(The Promise/Law)'로서 소망을 대하는 네빌의 핵심 전제 조건을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "In such a relaxed state, the mind is turned from the objective world and easily senses the reality of a subjective state.",
+      "ko": "그러한 이완된 상태에서, 마음은 객관적 세계로부터 돌이켜져 주관적 상태의 실재성을 쉽게 감지합니다.",
+      "vocab": [
+        {
+          "word": "objective world",
+          "mean": "객관적 세계(현실)"
+        },
+        {
+          "word": "subjective state",
+          "mean": "주관적 상태(상상/내면)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "passive voice",
+          "desc": "is turned와 senses가 병치되어 의지가 아닌 이완을 통해 감각의 문이 닫히고 내면의 시각이 열리는 자연스러운 전환을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is a state in which you are conscious and quite able to move or open your eyes but have no desire to do so.",
+      "ko": "그것은 여러분이 의식이 있고 움직이거나 눈을 뜨는 것이 완전히 가능하지만 그렇게 하고 싶은 욕구는 전혀 없는 상태입니다.",
+      "vocab": [
+        {
+          "word": "conscious",
+          "mean": "의식이 있는"
+        },
+        {
+          "word": "desire",
+          "mean": "욕구, 갈망"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "relational clause with preposition",
+          "desc": "in which를 사용하여 앞의 state를 수식하며, 깊은 최면이나 수면이 아닌 '깨어 있으면서도 행동할 의지가 가라앉은' 독특한 상상 작업 상태를 정밀하게 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "An easy way to create this passive state is to relax in a comfortable chair or on a bed.",
+      "ko": "이 수동적 상태를 만들어내는 쉬운 방법은 편안한 의자나 침대에서 이완하는 것입니다.",
+      "vocab": [
+        {
+          "word": "relax",
+          "mean": "긴장을 풀다, 이완하다"
+        },
+        {
+          "word": "comfortable",
+          "mean": "편안한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "infinitive as complement",
+          "desc": "to relax~가 주격 보어로 쓰여 실천 가능한 구체적 행동 지침을 독자에게 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "If on a bed, lie flat on your back with your head on a level with your body, close the eyes and imagine that you are sleepy.",
+      "ko": "만약 침대라면, 머리를 몸과 수평이 되게 한 채 등을 대고 평평하게 눕고, 눈을 감고 졸리다고 상상하세요.",
+      "vocab": [
+        {
+          "word": "lie flat",
+          "mean": "납작하게 눕다"
+        },
+        {
+          "word": "on a level with",
+          "mean": "~와 수평을 이루어"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "imperative chain",
+          "desc": "lie, close, imagine 등 명령문이 연달아 나오며 구체적인 신체 자세와 정신적 태도를 실시간으로 코칭합니다."
+        }
+      ]
+    },
+    {
+      "en": "Feel: I am sleepy, so sleepy, so very sleepy.",
+      "ko": "느끼세요: 나는 졸려, 너무 졸려, 정말 아주 졸려.",
+      "vocab": [
+        {
+          "word": "sleepy",
+          "mean": "졸린"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "direct quotation feeling",
+          "desc": "대사나 인용 부호 없이 느낌 자체를 언어화(I am sleepy)하여 잠재의식을 유도하는 자기 암시적 기법을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "In a little while, a faraway feeling accompanied by a general lassitude and loss of all desire to move envelops you.",
+      "ko": "잠시 후에, 전반적인 나른함과 움직이고자 하는 모든 욕구의 상실을 동반한 아득한 느낌이 여러분을 휘감습니다.",
+      "vocab": [
+        {
+          "word": "lassitude",
+          "mean": "나른함, 권태, 무기력"
+        },
+        {
+          "word": "envelops",
+          "mean": "감싸다, 휘감다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "past participle modifier",
+          "desc": "accompanied by~가 a faraway feeling을 후치 수식하여 신체적 이완이 가져오는 자연스러운 의식의 변형 상태를 생생하게 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "You feel a pleasant, comfortable rest and not inclined to alter your position, although under other circumstances you would not be at all comfortable.",
+      "ko": "비록 다른 상황이었다면 전혀 편안하지 않을지라도, 여러분은 유쾌하고 편안한 안식을 느끼며 자세를 바꾸고 싶어 하지 않게 됩니다.",
+      "vocab": [
+        {
+          "word": "inclined",
+          "mean": "~하고 싶어 하는, 마음이 기는"
+        },
+        {
+          "word": "alter",
+          "mean": "바꾸다, 변경하다"
+        },
+        {
+          "word": "circumstances",
+          "mean": "상황, 환경"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "subjunctive mood hint",
+          "desc": "although under other circumstances you would not be~ 구문에서 가정법 과거의 뉘앙스를 사용하여 평소라면 불편할 자세조차도 이완된 상태 속에서는 축복 같은 안식으로 느껴지는 역설을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "When this passive state is reached, imagine that you have realized your wish — not how it was realized, but simply the wish fulfilled.",
+      "ko": "이 수동적 상태에 도달했을 때, 여러분의 소망이 실현되었다고 상상하세요 — 그것이 어떻게 실현되었는지가 아니라, 오직 소망이 성취된 그 자체를요.",
+      "vocab": [
+        {
+          "word": "realized",
+          "mean": "실현된, 깨달은"
+        },
+        {
+          "word": "fulfilled",
+          "mean": "성취된, 충족된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not A but B",
+          "desc": "과정(how)을 따지지 말고 결과(fulfilled state) 그 자체에 집중하라는 네빌 사상의 핵심 원리를 대조 구문을 통해 각인시킵니다."
+        }
+      ]
+    },
+    {
+      "en": "Imagine in picture form what you desire to achieve in life; then feel yourself as having already achieved it.",
+      "ko": "인생에서 성취하고자 하는 바를 그림 형태로 상상하고, 그런 다음 여러분 자신이 그것을 이미 성취한 존재로 느끼십시오.",
+      "vocab": [
+        {
+          "word": "picture form",
+          "mean": "그림 형태, 시각적 이미지"
+        },
+        {
+          "word": "achieved",
+          "mean": "성취한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "feel + reflexive + as having p.p.",
+          "desc": "완료형 분사구문을 사용하여 과거가 아닌 현재 완료형의 실재로서 자아를 인식하도록 강제합니다."
+        }
+      ]
+    },
+    {
+      "en": "Thoughts produce tiny little speech movements which may be heard in the passive state of prayer as pronouncements from without.",
+      "ko": "생각들은 기도의 수동적 상태에서 외부로부터의 선언처럼 들릴 수 있는 아주 미세한 말하기 움직임들을 만들어냅니다.",
+      "vocab": [
+        {
+          "word": "speech movements",
+          "mean": "발성 운동, 말하려는 움직임"
+        },
+        {
+          "word": "pronouncements",
+          "mean": "선언, 공식 발표"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "relative clause",
+          "desc": "주격 관계대명사 which절이 내면의 미세한 생각 진동이 외부에서 들려오는 음성처럼 지각되는 신비적 현상을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "However, this degree of passivity is not essential to the",
+      "ko": "그러나, 이러한 수준의 수동성은 ~에 필수적인 것은 아닙니다.",
+      "vocab": [
+        {
+          "word": "passivity",
+          "mean": "수동성, 수동적 상태"
+        },
+        {
+          "word": "essential",
+          "mean": "필수적인, 본질적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "partial negation",
+          "desc": "not essential to 구조를 통해 앞서 언급한 극도의 수동 상태나 환청 같은 현상이 기도의 절대적 유일 조건은 아님을 보충 설명하며 문장이 끊깁니다."
+        }
+      ]
+    },
+    {
+      "en": "All that is necessary is to create a passive state and feel the wish fulfilled.",
+      "ko": "필요한 전부는 수동적인 상태를 만들고 소망이 성취된 것을 느끼는 것입니다.",
+      "vocab": [
+        {
+          "word": "passive state",
+          "mean": "수동적 상태, 긴장이 풀린 마음의 상태"
+        },
+        {
+          "word": "wish fulfilled",
+          "mean": "소망의 성취, 이미 이루어진 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "All that is necessary is [to create...]",
+          "desc": "'All that + 주어 + 동사' 구문으로 '~하는 모든 것은 ~이다'를 뜻하며, 보어 자리에 to부정사구가 와서 수동적 상태 창조와 느낌을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "All you can possibly need or desire is already yours.",
+      "ko": "여러분이 필요로 하거나 바랄 수 있는 모든 것은 이미 여러분의 것입니다.",
+      "vocab": [
+        {
+          "word": "possibly",
+          "mean": "도저히, 가능한 한"
+        },
+        {
+          "word": "already yours",
+          "mean": "이미 당신의 소유인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 생략 구문",
+          "desc": "All 뒤에 목적격 관계대명사가 생략되어 있으며, can possibly need or desire가 All을 수식하는 형용사절 역할을 합니다."
+        }
+      ]
+    },
+    {
+      "en": "You need no helper to give it to you; it is yours now.",
+      "ko": "당신에게 그것을 줄 조력자는 필요 없습니다; 그것은 지금 당신의 것입니다.",
+      "vocab": [
+        {
+          "word": "helper",
+          "mean": "조력자, 도움을 주는 이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정문과 to부정사의 형용사적 용법",
+          "desc": "need no로 강한 부정을 나타내며, to give it은 앞에 있는 helper를 수식하여 외부의 도움이 필요 없음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Call your desires into being by imagining and feeling your wish fulfilled.",
+      "ko": "당신의 소망이 성취되었다고 상상하고 느낌으로써 당신의 소망을 존재 속으로 불러내십시오.",
+      "vocab": [
+        {
+          "word": "call into being",
+          "mean": "존재하게 하다, 창조하다"
+        },
+        {
+          "word": "imagining and feeling",
+          "mean": "상상하고 느끼기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문 + by -ing",
+          "desc": "'~함으로써'라는 수단을 나타내는 전치사 by 뒤에 동명사병렬(imagining and feeling)을 사용하여 구체적인 실현 방법을 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "As the end is accepted, you become totally indifferent as to possible failure, for acceptance of the end wills the means to that end.",
+      "ko": "결말이 받아들여짐에 따라, 여러분은 가능한 실패에 대해 완전히 무관심해집니다. 왜냐하면 결말의 수용이 그 결말에 이르는 수단을 결정하기 때문입니다.",
+      "vocab": [
+        {
+          "word": "the end",
+          "mean": "결말, 궁극적 성취"
+        },
+        {
+          "word": "indifferent as to",
+          "mean": "~에 대해 무관심한"
+        },
+        {
+          "word": "wills",
+          "mean": "의지하다, 실현시키다, 결의하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As (~함에 따라)와 for (~이기 때문에)",
+          "desc": "상태의 변화 과정을 As로 이끌고, 전반부 주장의 근거를 for 접속사를 통해 신비주의적 인과법칙으로 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "When you emerge from the moment of prayer, it is as though you were shown the happy and successful end of a play although you were not shown how that end was achieved.",
+      "ko": "기도의 순간에서 나올 때, 마치 그 결말이 어떻게 달성되었는지는 보지 못했더라도 연극의 행복하고 성공적인 결말을 본 것과 같습니다.",
+      "vocab": [
+        {
+          "word": "emerge from",
+          "mean": "~에서 빠져나오다, 나오다"
+        },
+        {
+          "word": "as though 가정법",
+          "mean": "마치 ~인 것처럼"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "as though 가정법 과거",
+          "desc": "실제 사실과 다른 비유를 할 때 쓰는 가정법으로, were shown을 사용하여 기도의 결과로 얻는 내적 확신의 성격을 비유적으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "However, having witnessed the end, regardless of any anticlimactic sequence, you remain calm and secure in the knowledge that the end has been perfectly defined.",
+      "ko": "그러나 일단 결말을 목격했기에, 어떠한 맥빠지는 과정과 무관하게, 여러분은 그 결말이 완벽하게 정의되었다는 지식 안에서 차분하고 안전하게 머뭅니다.",
+      "vocab": [
+        {
+          "word": "anticlimactic sequence",
+          "mean": "김빠지는 전개, 과정상의 장애"
+        },
+        {
+          "word": "secure",
+          "mean": "안전한, 확신하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문(완료형)과 동격 that절",
+          "desc": "having witnessed로 주절보다 앞선 시점의 확신을 나타내며, knowledge 뒤의 that절은 지식의 구체적 내용을 설명하는 동격절입니다."
+        }
+      ]
+    },
+    {
+      "en": "Not by might, nor by power, but by my spirit, saith the Lord of hosts.",
+      "ko": "힘으로 되지 아니하며 능으로 되지 아니하고 오직 나의 신으로 되느니라 만군의 여호와의 말씀이니라.",
+      "vocab": [
+        {
+          "word": "might",
+          "mean": "힘, 물리적 권력"
+        },
+        {
+          "word": "spirit",
+          "mean": "영, 신, 의식의 상태"
+        },
+        {
+          "word": "Lord of hosts",
+          "mean": "만군의 여호와"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "A가 아니라 B인(Not A, but B) 병렬구조",
+          "desc": "인간적 노력(might, power)을 배제하고 오직 의식의 영(spirit)에 의한 창조를 강조하는 성경적 선언 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "GET into the spirit of the state desired by assuming the feeling that would be yours were you already the one you want to be.",
+      "ko": "당신이 되고자 하는 바로 그 사람이 이미 되었다면 당신의 것이 되었을 그 느낌을 가정함으로써, 원하는 상태의 영으로 들어가십시오.",
+      "vocab": [
+        {
+          "word": "state desired",
+          "mean": "원하는 상태"
+        },
+        {
+          "word": "assuming",
+          "mean": "가정하기, 태도를 취하기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치된 가정법 조건절",
+          "desc": "were you already~는 if you were already~에서 if가 생략되고 주어와 동사가 도치된 형태로, 네빌 가르침의 핵심인 '이미 된 것처럼 느끼기' 기법을 문법적으로 구현합니다."
+        }
+      ]
+    },
+    {
+      "en": "As you capture the feeling of the state sought, you are relieved of all effort to make it so, for it is already so.",
+      "ko": "추구하는 상태의 느낌을 포착함에 따라, 여러분은 그것을 이루려는 모든 노력으로부터 해방됩니다. 왜냐하면 그것은 이미 그러하기 때문입니다.",
+      "vocab": [
+        {
+          "word": "state sought",
+          "mean": "추구된 상태, 갈구하던 경지"
+        },
+        {
+          "word": "be relieved of",
+          "mean": "~에서 해방되다, 짐을 덜다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태와 인과관계 접속사",
+          "desc": "you are relieved of로 행위의 주체에 대한 집착을 내려놓음을 수동태로 표현하고, for를 통해 이미 존재한다는 형이상학적 진리를 뒷받침합니다."
+        }
+      ]
+    },
+    {
+      "en": "There is a definite feeling associated with every idea in the mind of man.",
+      "ko": "인간의 마음속에 있는 모든 관념에는 그와 연관된 명확한 느낌이 존재합니다.",
+      "vocab": [
+        {
+          "word": "definite feeling",
+          "mean": "확고한 느낌, 뚜렷한 감각"
+        },
+        {
+          "word": "associated with",
+          "mean": "~와 연관된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "There is 유도부사 구문과 과거분사 수식",
+          "desc": "존재를 나타내는 There is 뒤에 주어 a definite feeling이 오고, associated with 이하의 분사구가 뒤에서 수식하여 관념과 느낌의 필연적 결합을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Capture the feeling associated with your realized wish by assuming the feeling that would be yours were you already in possession of the thing you desire, and your wish will objectify itself.",
+      "ko": "당신이 갈구하는 것을 이미 소유하고 있다면 당신의 것이 되었을 그 느낌을 가정함으로써 이미 실현된 소망과 연관된 느낌을 포착하십시오. 그러면 당신의 소망이 스스로 객관화될 것입니다.",
+      "vocab": [
+        {
+          "word": "realized wish",
+          "mean": "실현된 소망"
+        },
+        {
+          "word": "objectify itself",
+          "mean": "스스로 객관화되다, 현실화되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문 + and 구문",
+          "desc": "'~하라, 그러면…할 것이다'라는 조건/결과의 의미를 지닌 명령문과 등위접속사 and의 결합으로, 법칙의 확실한 결과를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Faith is feeling: “According to your faith [feeling] be it unto you.”",
+      "ko": "믿음은 느낌입니다: '너희 믿음[느낌]대로 될지어다.'",
+      "vocab": [
+        {
+          "word": "Faith",
+          "mean": "믿음, 굳은 확신"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "콜론(:)을 통한 정의와 성경 인용",
+          "desc": "Faith는 곧 feeling이라는 저자의 독트린을 콜론으로 명시하고, 성경 구절을 인용하여 이를 신학적으로 뒷받침합니다."
+        }
+      ]
+    },
+    {
+      "en": "You never attract that which you want but always that which you are.",
+      "ko": "당신은 당신이 원하는 것을 결코 끌어당기지 못하며, 언제나 당신이 존재하고 있는 그 자체를 끌어당깁니다.",
+      "vocab": [
+        {
+          "word": "attract",
+          "mean": "끌어당기다, 자석처럼 모으다"
+        },
+        {
+          "word": "that which",
+          "mean": "~하는 것"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "A가 아니라 B인(not that A but that B) 구조",
+          "desc": "소유(want)의 법칙이 아닌 존재(are)의 법칙이 끌림을 지배한다는 네빌 철학의 핵심 명제를 대조법으로 서술합니다."
+        }
+      ]
+    },
+    {
+      "en": "As a man is, so does he see.",
+      "ko": "사람이 존재 하는 대로, 그는 봅니다.",
+      "vocab": [
+        {
+          "word": "As ~, so ...",
+          "mean": "~하는 대로, 그와 같이 …하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상관접속사 As ~, so ...",
+          "desc": "주체의 존재 상태(As a man is)가 인식과 투사의 현실(so does he see)을 결정한다는 인식론적 원리를 간결한 도치 구문으로 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“To him that hath it shall be given and to him that hath not it shall be taken away…”",
+      "ko": "“무릇 있는 자는 받아 풍족하게 되고 없는 자는 그 있는 것까지 빼앗기리라…”",
+      "vocab": [
+        {
+          "word": "hath",
+          "mean": "가가지고 있다 (has의 고어)"
+        },
+        {
+          "word": "taken away",
+          "mean": "빼앗기다, 박탈되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적어 도치 수동태",
+          "desc": "전치사구(To him that hath)가 문두로 도치되고 조동사 수동태(it shall be given)를 사용하여 의식의 풍요와 결핍 법칙의 절대성을 성경적 어조로 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "That which you feel yourself to be, you are; and you are given that which you are.",
+      "ko": "스스로 느끼는 그 존재가 곧 당신이며, 당신이 존재하는 그 상태가 당신에게 주어집니다.",
+      "vocab": [
+        {
+          "word": "feel oneself to be",
+          "mean": "~라고 스스로 느끼다"
+        },
+        {
+          "word": "in possession of",
+          "mean": "~를 소유한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "That which ~",
+          "desc": "'~하는 것'을 뜻하는 관계대명사절로 문장의 주어로 기능합니다."
+        },
+        {
+          "tag": "수동태 구문",
+          "desc": "you are given that ~ 형태는 존재의 상태가 곧 현실의 경험으로 주어진다는 네빌의 법칙을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "So assume the feeling that would be yours were you already in possession of your wish, and your wish must be realized.",
+      "ko": "그러므로 당신의 소원을 이미 이룬 상태라면 가졌을 그 느낌을 가정하십시오. 그러면 당신의 소원은 반드시 실현될 것입니다.",
+      "vocab": [
+        {
+          "word": "assume",
+          "mean": "(태도나 느낌을) 취하다, 가정하다"
+        },
+        {
+          "word": "realize",
+          "mean": "실현하다, 깨닫다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 도치",
+          "desc": "were you already는 If you were already의 if가 생략되고 도치된 형태로, 현재 사실의 반대를 가정합니다."
+        },
+        {
+          "tag": " 명령문 + and",
+          "desc": "~하라, 그러면 …할 것이다라는 의미로 조건과 그에 따른 확실한 결과를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "So God created man in his own image, in the image of God created he him",
+      "ko": "하나님이 자기 형상 곧 하나님의 형상대로 사람을 창조하시되",
+      "vocab": [
+        {
+          "word": "image",
+          "mean": "형상, 이미지"
+        },
+        {
+          "word": "create",
+          "mean": "창조하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용",
+          "desc": "창세기 구절을 인용하여 인간의 본질이 신성 그 자체임을 강조합니다."
+        },
+        {
+          "tag": "전치사구 강조",
+          "desc": "in his own image를 반복하여 인간이 하나님의 본질을 그대로 지니고 있음을 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "Let this mind be in you which was also in Christ Jesus, who being in the form of God, thought it not robbery to be equal with God.",
+      "ko": "너희 안에 이 마음을 품으라 곧 그리스도 예수의 마음이니 그는 근본 하나님의 본체시나 하나님과 동등됨을 취할 것으로 여기지 아니하시고",
+      "vocab": [
+        {
+          "word": "form",
+          "mean": "형태, 본체"
+        },
+        {
+          "word": "robbery",
+          "mean": "강도질, 당연하지 않은 것을 억지로 취함"
+        },
+        {
+          "word": "equal",
+          "mean": "동등한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "being in the form of God는 그리스도가 하나님의 본질과 하나임을 나타내는 원인/상태의 분사구문입니다."
+        },
+        {
+          "tag": "가목적어 it",
+          "desc": "thought it not robbery에서 it은 가목적어이며, 진목적어는 to be equal with God입니다."
+        }
+      ]
+    },
+    {
+      "en": "You are that which you believe yourself to be.",
+      "ko": "당신은 스스로 믿는 그 존재입니다.",
+      "vocab": [
+        {
+          "word": "believe oneself to be",
+          "mean": "스스로 ~라고 믿다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재론적 선언",
+          "desc": "신념이 곧 존재 상태를 결정한다는 네빌 사상의 핵심 명제입니다."
+        }
+      ]
+    },
+    {
+      "en": "Instead of believing in God or in Jesus – believe you are God or you are Jesus.",
+      "ko": "하나님이나 예수를 '믿는(대상으로 바라보는)' 것 대신에, 당신이 하나님 혹은 예수라고 믿으십시오.",
+      "vocab": [
+        {
+          "word": "instead of",
+          "mean": "~ 대신에"
+        },
+        {
+          "word": "believe in",
+          "mean": "(외적인 존재로서) ~을 믿다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문 대조",
+          "desc": "외적인 믿음(believe in)에서 내적인 정체화(believe you are)로의 패러다임 전환을 요구하는 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "He that believeth on Me, the works that I do shall he do also",
+      "ko": "나를 믿는 자는 내가 하는 일을 그도 할 것이요",
+      "vocab": [
+        {
+          "word": "believeth",
+          "mean": "믿는다 (고어체)"
+        },
+        {
+          "word": "works",
+          "mean": "(기적적인) 일들, 업적"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적어 도치",
+          "desc": "the works that I do를 문장 앞으로 도치하여 강조하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "should be “He that believes as I believe, the works that I do shall he do also”",
+      "ko": "'내가 믿는 대로 믿는 자는 내가 하는 일을 그도 할 것이요'가 되어야 합니다.",
+      "vocab": [
+        {
+          "word": "as",
+          "mean": "~처럼, ~대로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "원문 재해석",
+          "desc": "단순한 인물 숭배적 믿음이 아니라 그리스도와 동일한 의식의 상태를 갖는 것을 진정한 믿음으로 재정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "Jesus found it not strange to do the works of God because He believed Himself to be God.",
+      "ko": "예수는 자신이 하나님이라고 믿었기 때문에 하나님의 일을 하는 것을 이상하게 여기지 않았습니다.",
+      "vocab": [
+        {
+          "word": "find it strange",
+          "mean": "~을 이상하게 여기다"
+        },
+        {
+          "word": "the works of God",
+          "mean": "하나님의 일"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가목적어 구문",
+          "desc": "found it not strange에서 it은 가목적어, 진목적어는 to do the works of God입니다."
+        }
+      ]
+    },
+    {
+      "en": "I and My Father are one.",
+      "ko": " 나와 내 아버지는 하나이니라.",
+      "vocab": [
+        {
+          "word": "Father",
+          "mean": "아버지 (신)"
+        },
+        {
+          "word": "one",
+          "mean": "하나, 단일한 존재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주보어 일치",
+          "desc": "인간의 의식(I)과 근원적식(Father)이 분리되지 않은 단 하나의 존재임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is natural to do the works of the one you believe yourself to be.",
+      "ko": "자신이 그렇다고 믿는 그 존재의 일을 하는 것은 자연스러운 법입니다.",
+      "vocab": [
+        {
+          "word": "natural",
+          "mean": "당연한, 자연스러운"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어",
+          "desc": "It은 가주어이며 to do ~가 진주어로 사용되어 자아 정체성과 행위의 필연성을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "So live in the feeling of being the one you want to be and that you shall be.",
+      "ko": "그러므로 당신이 되고자 하는 그 존재가 되었다는 느낌 안에서 살아가십시오. 그리하면 당신은 그렇게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "live in",
+          "mean": "~안에서 살아가다, 거주하다"
+        },
+        {
+          "word": "feeling of being",
+          "mean": "~라는 존재의 느낌"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "병렬 구조",
+          "desc": "being the one you want to be와 that you shall be가 결합하여 상상 속의 존재 상태 유지를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "When a man believes in the value of the advice given him and applies it, he establishes within himself the reality of success.",
+      "ko": "사람이 자신에게 주어진 조언의 가치를 믿고 그것을 적용할 때, 그는 자신 내면에 성공의 실상을 확립하게 됩니다.",
+      "vocab": [
+        {
+          "word": "apply",
+          "mean": "적용하다, 실행하다"
+        },
+        {
+          "word": "establish",
+          "mean": "세우다, 확립하다"
+        },
+        {
+          "word": "reality",
+          "mean": "실상, 현실"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절",
+          "desc": "When절 안에서 given him이 과거분사구로서 the advice를 후치 수식합니다."
+        },
+        {
+          "tag": "내면화 구조",
+          "desc": "establish within himself를 통해 모든 성공의 원천이 외부가 아닌 내면에 있음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "4 of 14 · All fourteen books",
+      "ko": "14권 중 4권 · 14권 전체",
+      "vocab": [
+        {
+          "word": "books",
+          "mean": "책"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "메타 텍스트",
+          "desc": "본문 내용이 아닌 전자책 페이지 및 내비게이션 정보 요소입니다."
+        }
+      ]
+    }
+  ]
+}
