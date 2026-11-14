@@ -299,9 +299,7 @@ function App() {
     const models = [
       "gemini-3.5-flash",      // 1순위: 최신 3.5 고속 모델
       "gemini-3.5-pro",        // 2순위: 최신 3.5 최고급 Pro 모델
-      "gemini-3.5-flash-lite", // 3순위: 구글 권장 최신 3.5 경량 백업 모델
-      "gemini-2.5-flash",      // 4순위: 안정적인 2.5 표준 호환 모델
-      "gemini-2.5-pro"         // 5순위: 안정적인 2.5 Pro 호환 모델
+      "gemini-3.5-flash-lite" // 3순위: 구글 권장 최신 3.5 경량 백업 모델
     ];
     let lastError = null;
 
