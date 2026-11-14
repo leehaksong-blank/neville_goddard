@@ -1,0 +1,2292 @@
+{
+  "The Search": [
+    {
+      "en": "Once in an idle interval at sea, I meditated on the perfect state, and wondered what I would be, were I of too pure eyes to behold iniquity, if to me all things were pure and were I without condemnation.",
+      "ko": "바다에서의 한가로운 휴식 시간에, 나는 '완벽한 상태'에 대해 명상했고, 만약 내가 너무나 순수한 눈을 가져 죄악을 바라볼 수 없고, 내게 모든 것이 순수하며, 정죄함이 없는 존재라면 내가 어떤 모습일지 궁금해했다.",
+      "vocab": [
+        {
+          "word": "interval",
+          "mean": "간격, 휴식 시간"
+        },
+        {
+          "word": "meditate on",
+          "mean": "~에 대해 깊이 생각하다, 명상하다"
+        },
+        {
+          "word": "iniquity",
+          "mean": "죄악, 부당성"
+        },
+        {
+          "word": "condemnation",
+          "mean": "정죄, 비난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 가정법 (Were I ...)",
+          "desc": "if I were 대신 접속사 if를 생략하고 동사 Were를 주어 앞으로 도치시켜 문학적이고 강렬한 가정법 과거를 표현함."
+        },
+        {
+          "tag": "성경적 알레고리",
+          "desc": "하박국 1장 13절의 '주께서는 눈이 정결하시므로 악을 차마 보지 못하시며'라는 구절을 차용하여 인간의 신성한 본질을 암시함."
+        }
+      ]
+    },
+    {
+      "en": "As I became lost in this fiery brooding, I found myself lifted above the dark environment of the senses.",
+      "ko": "내가 이 불타는 사색에 깊이 빠져들었을 때, 나는 감각의 어두운 환경 위로 들어 올려진 나 자신을 발견했다.",
+      "vocab": [
+        {
+          "word": "fiery",
+          "mean": "불타는, 열렬한"
+        },
+        {
+          "word": "brooding",
+          "mean": "사색, 몰두"
+        },
+        {
+          "word": "environment of the senses",
+          "mean": "감각적 세계, 육체적 차원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "지각동사/상태동사 5형식 구문 (found myself lifted)",
+          "desc": "목적어(myself)가 타의로 들어 올려진 수동의 상태임을 나타내기 위해 과거분사(lifted)를 목적격 보어로 사용함."
+        }
+      ]
+    },
+    {
+      "en": "So intense was the feeling, I felt myself a being of fire dwelling in a body of air.",
+      "ko": "그 느낌이 너무나 강렬하여, 나는 공기로 된 몸 안에 거주하는 불의 존재가 된 것만 같았다.",
+      "vocab": [
+        {
+          "word": "intense",
+          "mean": "강렬한, 극심한"
+        },
+        {
+          "word": "dwelling",
+          "mean": "거주하는, 사는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "보어 도치구문",
+          "desc": "강조를 위해 주격보어(So intense)를 문장 맨 앞으로 도치시키고 동사(was)와 주어(the feeling)의 순서를 바꿈. 결과의 that이 생략된 형태로 해석함."
+        }
+      ]
+    },
+    {
+      "en": "Voices as from a heavenly chorus, with the exaltation of those who had been conquerors in a conflict with death, were singing He is risen – He is risen, and intuitively I knew they meant me.",
+      "ko": "죽음과의 투쟁에서 승리했던 자들의 환희를 담은, 마치 천상의 합창단 같은 목소리들이 '그가 살아나셨다 – 그가 살아나셨다'라고 노래하고 있었고, 나는 직관적으로 그들이 나를 의미한다는 것을 알았다.",
+      "vocab": [
+        {
+          "word": "exaltation",
+          "mean": "환희, 의기양양함"
+        },
+        {
+          "word": "conqueror",
+          "mean": "정복자, 승리자"
+        },
+        {
+          "word": "intuitively",
+          "mean": "직관적으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 및 수식 구조",
+          "desc": "전치사구(with the exaltation...)가 주어(Voices)의 성격을 부연 설명하며, 대문자로 처리된 인용구는 부활의 상징적 의미를 직접 전달함."
+        }
+      ]
+    },
+    {
+      "en": "Then I seemed to be walking in the night.",
+      "ko": "그러고 나서 나는 밤 속을 걷고 있는 것처럼 느껴졌다.",
+      "vocab": [
+        {
+          "word": "seem to",
+          "mean": "~인 것 같다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "진행형 부정사",
+          "desc": "seem 뒤에 단순 부정사가 아닌 진행형 부정사(to be walking)를 사용하여 환상 속에서 행동이 현재 진행되고 있음을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "I soon came upon a scene that might have been the ancient Pool of Bethesda, for in this place lay a great multitude of impotent folk – blind, halt, withered – waiting not for the moving of the water as of tradition, but waiting for me.",
+      "ko": "나는 곧 고대의 베데스다 연못이었을지도 모를 장소와 마주쳤는데, 그곳에는 눈멀고, 절뚝거리고, 쇠약해진 무력한 사람들이 전통에 따른 물의 움직임을 기다리는 것이 아니라 나를 기다리며 누워 있었기 때문이다.",
+      "vocab": [
+        {
+          "word": "come upon",
+          "mean": "우연히 마주치다"
+        },
+        {
+          "word": "multitude",
+          "mean": "다수, 군중"
+        },
+        {
+          "word": "impotent",
+          "mean": "무력한, 쇠약한"
+        },
+        {
+          "word": "halt",
+          "mean": "다리를 절는"
+        },
+        {
+          "word": "withered",
+          "mean": "시든, 마비된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조동사 과거완료 추측 (might have been)",
+          "desc": "과거의 상황에 대한 주관적 추측을 나타내며, 요한복음 5장에 등장하는 베데스다 연못의 기적을 영적 비전 속으로 끌어들이는 장치임."
+        }
+      ]
+    },
+    {
+      "en": "As I came near, without thought or effort on my part they were, one after the other, molded as by the Magician of the Beautiful.",
+      "ko": "내가 가까이 다가가자, 나의 생각이나 노력도 없이 그들은 마치 '아름다움의 마법사'에 의해서처럼 차례차례 빚어졌다.",
+      "vocab": [
+        {
+          "word": "on my part",
+          "mean": "나의 입장에서, 내가 한"
+        },
+        {
+          "word": "one after the other",
+          "mean": "차례차례, 잇따라"
+        },
+        {
+          "word": "molded",
+          "mean": "빚어진, 형성된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문과 부사구 삽입",
+          "desc": "주어(they)가 외부의 힘에 의해 변화함을 보여주는 수동태(were molded) 사이에 삽입구(one after the other)를 넣어 현장의 생동감을 부여함."
+        }
+      ]
+    },
+    {
+      "en": "Eyes, hands, feet – all missing members – were drawn from some invisible reservoir and molded in harmony with that perfection which I felt springing within me.",
+      "ko": "눈, 손, 발 등 모든 잃어버린 지체들이 보이지 않는 어떤 저수지로부터 끌어내어져, 내 안에서 솟아나는 것을 느꼈던 그 완벽함과 조화를 이루며 빚어졌다.",
+      "vocab": [
+        {
+          "word": "member",
+          "mean": "지체, 신체 부위"
+        },
+        {
+          "word": "reservoir",
+          "mean": "저수지, 저장소"
+        },
+        {
+          "word": "spring",
+          "mean": "솟아나다, 샘솟다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절의 중첩",
+          "desc": "선행사(that perfection)를 목적격 관계대명사(which)가 이끄는 절(I felt springing within me)이 수식하며, 네빌 고다드가 말하는 내면의 신성(God within)을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "When all were made perfect, the chorus exulted, It is finished.",
+      "ko": "모든 것이 완전해졌을 때, 합창단은 '다 이루어졌다'고 환희를 터뜨렸다.",
+      "vocab": [
+        {
+          "word": "exult",
+          "mean": "크게 기뻐하다, 환희에 차다"
+        },
+        {
+          "word": "finished",
+          "mean": "완성된, 다 이루어진"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용구 (It is finished)",
+          "desc": "예수가 십자가에서 마지막으로 남긴 요한복음의 말씀(다 이루었다)을 인용하여, 의식의 창조 작업이 완결되었음을 선언함."
+        }
+      ]
+    },
+    {
+      "en": "Then the scene dissolved and I awoke.",
+      "ko": "그러자 그 광경이 사라졌고 나는 깨어났다.",
+      "vocab": [
+        {
+          "word": "dissolve",
+          "mean": "녹아 사라지다, 해체되다"
+        },
+        {
+          "word": "awake",
+          "mean": "잠에서 깨어나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위접속사 and에 의한 시점 전환",
+          "desc": "환상(vision)의 세계에서 현실의 육체적 자각으로 돌아오는 순간을 간결한 동사로 표현하여 환상의 여운을 극대화함."
+        }
+      ]
+    },
+    {
+      "en": "I know this vision was the result of my intense meditation upon the idea of perfection, for my meditations invariably bring about union with the state contemplated.",
+      "ko": "나는 이 환상이 완전함이라는 개념에 대한 나의 강렬한 명상의 결과임을 아는데, 나의 명상은 변함없이 명상된 상태와의 합일을 가져오기 때문이다.",
+      "vocab": [
+        {
+          "word": "intense",
+          "mean": "강렬한"
+        },
+        {
+          "word": "invariably",
+          "mean": "변함없이, 예외 없이"
+        },
+        {
+          "word": "contemplate",
+          "mean": "묵상하다, 응시하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "접속사 for",
+          "desc": "'왜냐하면 ~ 때문이다'라는 의미로 앞 문장의 원인이나 근거를 부연 설명합니다."
+        },
+        {
+          "tag": "과거분사 후치수식",
+          "desc": "'the state contemplated'에서 분사구이가 뒤에서 앞으로 명사를 수식하며 '명상된 상태'를 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "I had been so completely absorbed within the idea that for a while I had become what I contemplated, and the high purpose with which I had for that moment identified myself drew the companionship of high things and fashioned the vision in harmony with my inner nature.",
+      "ko": "나는 그 아이디어에 너무나 완전히 몰입한 나머지 잠시 동안 내가 묵상하던 그 존재가 되었고, 그 순간 내가 자신과 동일시했던 고결한 목적은 고차원적인 것들의 동반을 끌어내어 내면의 본성과 조화를 이루는 환상을 빚어냈다.",
+      "vocab": [
+        {
+          "word": "absorb",
+          "mean": "몰두시키다, 흡수하다"
+        },
+        {
+          "word": "identify",
+          "mean": "동일시하다"
+        },
+        {
+          "word": "companionship",
+          "mean": "동반, 동행"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소구문 so ~ that",
+          "desc": "'너무 ~해서 그 결과 ~하다'라는 인과 관계를 나타내는 전형적인 구문입니다."
+        },
+        {
+          "tag": "관계대명사 with which",
+          "desc": "전치사 with가 관계대명사 앞으로 이동하여 선행사 'the high purpose'를 수식하며, '동일시하다'의 도구적 의미를 부여합니다."
+        }
+      ]
+    },
+    {
+      "en": "The ideal with which we are united works by association of ideas to awaken a thousand moods to create a drama in keeping with the central idea.",
+      "ko": "우리가 하나로 결합되는 그 이상은 관념의 연상을 통해 수많은 무드를 깨우고 중심 사상과 조화를 이루는 드라마를 창조하도록 작용한다.",
+      "vocab": [
+        {
+          "word": "association",
+          "mean": "연상, 결합"
+        },
+        {
+          "word": "mood",
+          "mean": "무드, 기분, 상태"
+        },
+        {
+          "word": "in keeping with",
+          "mean": "~와 일치하여, 조화되어"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정사의 부사적 용법",
+          "desc": "문장 끝의 'to awaken'과 'to create'는 결과나 목적을 나타내며 앞의 작용(works)이 가져오는 단계적 결과를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "I first discovered this close relationship of moods to vision when I was aged about seven.",
+      "ko": "나는 일곱 살쯤 되었을 때 무드와 환상 사이의 이 긴밀한 관계를 처음 발견했다.",
+      "vocab": [
+        {
+          "word": "relationship",
+          "mean": "관계"
+        },
+        {
+          "word": "aged",
+          "mean": "~살의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절 when",
+          "desc": "과거의 특정 시점을 한정하며, 네빌 고다드가 어린 시절부터 이 원리를 체득했음을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "I became aware of a mysterious life quickening within me like a stormy ocean of frightening might.",
+      "ko": "나는 끔찍한 힘을 가진 폭풍우 치는 바다처럼 내 안에서 살아 움직이는 신비한 생명의 약동을 인식하게 되었다.",
+      "vocab": [
+        {
+          "word": "quickening",
+          "mean": "태동, 살아 움직임"
+        },
+        {
+          "word": "frightening",
+          "mean": "무서운, 두려움을 주는"
+        },
+        {
+          "word": "might",
+          "mean": "힘, 권능"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재분사 수식",
+          "desc": "'a mysterious life quickening'에서 현재분사구가 'life'를 수식하여 살아 움직이는 생동감을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "I always knew when I would be united with this hidden identity, for my senses were expectant on the nights of these visitations and I knew beyond all doubt that before morning I would be alone with immensity.",
+      "ko": "나는 이 숨겨진 정체성과 언제 하나가 될지 항상 알고 있었는데, 이러한 방문의 밤이면 나의 감각들이 기대에 차 있었고 아침이 되기 전에 거대함과 홀로 마주하게 될 것임을 추호의 의심도 없이 알았기 때문이다.",
+      "vocab": [
+        {
+          "word": "identity",
+          "mean": "정체성, 본질"
+        },
+        {
+          "word": "visitation",
+          "mean": "방문, 현현"
+        },
+        {
+          "word": "immensity",
+          "mean": "거대함, 광대함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "접속사 that절",
+          "desc": "'knew beyond all doubt that ~' 구문에서 that은 명사절을 이끌어 확실한 내면의 앎을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "I so dreaded these visitations that I would lie awake until my eyes from sheer exhaustion closed.",
+      "ko": "나는 이러한 방문들을 너무나 두려워한 나머지 순전한 탈진으로 눈이 감길 때까지 깨어 있곤 했다.",
+      "vocab": [
+        {
+          "word": "dread",
+          "mean": "두려워하다"
+        },
+        {
+          "word": "sheer",
+          "mean": "순전한, 완전한"
+        },
+        {
+          "word": "exhaustion",
+          "mean": "탈진, 극도의 피로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조동사 would",
+          "desc": "과거의 반복적인 습관이나 성향(~하곤 했다)을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "As my eyes closed in sleep, I was no longer solitary but smitten through and through with another being, and yet I knew it to be myself.",
+      "ko": "잠 속으로 눈이 감길 때, 나는 더 이상 혼자가 아니었으며 다른 존재에 의해 온통 사로잡혔지만, 나는 그것이 바로 나 자신임을 알았다.",
+      "vocab": [
+        {
+          "word": "solitary",
+          "mean": "혼자의, 고립된"
+        },
+        {
+          "word": "smitten",
+          "mean": "사로잡힌, 강한 타격을 입은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상관접속사 not A but B",
+          "desc": "'no longer solitary but smitten'을 통해 자아의 확장이 단순한 고립이 아니라 초월적 존재와의 결합임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "It seemed older than life, yet nearer to me than my boyhood.",
+      "ko": "그것은 삶보다 더 오래된 것 같았지만, 나의 소년 시절보다 내게 더 가까이 느껴졌다.",
+      "vocab": [
+        {
+          "word": "boyhood",
+          "mean": "소년 시절"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교급 구문",
+          "desc": "'older than ~', 'nearer to me than ~'를 통해 초월적 자아가 시공간을 초월하면서도 가장 친밀한 본질임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "If I tell what I discovered on these nights, I do so not to impose my ideas on others but that I may give hope to those who seek the law of life.",
+      "ko": "내가 이 밤들에 발견한 것을 말한다면, 그것은 나의 생각을 다른 이들에게 강요하기 위해서가 아니라 삶의 법칙을 찾는 이들에게 희망을 주기 위해서이다.",
+      "vocab": [
+        {
+          "word": "impose",
+          "mean": "강요하다, 부과하다"
+        },
+        {
+          "word": "law of life",
+          "mean": "삶의 법칙"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "나열된 부사구",
+          "desc": "'not to impose ~ but that I may give ~' 구문에서 부정사와 명사절이 대조를 이루어 저자의 순수한 의도를 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "I discovered that my expectant mood worked as a magnet to unite me with this Greater Me, while my fears made It appear as a stormy sea.",
+      "ko": "나는 나의 기대에 찬 무드가 자석처럼 작용하여 나를 이 더 위대한 나(Greater Me)와 결합시키는 반면, 나의 두려움은 그것이 폭풍우 치는 바다처럼 보이게 만들었다는 것을 발견했다.",
+      "vocab": [
+        {
+          "word": "expectant",
+          "mean": "기대하는, 기다리는"
+        },
+        {
+          "word": "magnet",
+          "mean": "자석"
+        },
+        {
+          "word": "Greater Me",
+          "mean": "더 위대한 나(신성한 자아)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "사역동사 make",
+          "desc": "'made It appear' 구조에서 동사원형 appear를 사용하여 두려움이 현실(환상)을 어떻게 왜곡하는지 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "As a boy, I conceived of this mysterious self as might, and in my union with It I felt its majesty as a stormy sea which drenched me, then rolled and tossed me as a helpless wave.",
+      "ko": "소년 시절, 나는 이 신비로운 자아를 권능으로 여겼고, 그것과의 결합 속에서 나를 흠뻑 적시며 무력한 파도처럼 나를 굴리고 내던지는 폭풍우 치는 바다와 같은 그 위엄을 느꼈다.",
+      "vocab": [
+        {
+          "word": "conceive",
+          "mean": "상상하다, 여기다"
+        },
+        {
+          "word": "drench",
+          "mean": "흠뻑 적시다"
+        },
+        {
+          "word": "toss",
+          "mean": "던지다, 뒤척이게 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 as",
+          "desc": "'conceived of A as B' 구문을 통해 자아를 '권능'으로 규정하는 인식의 방식을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "As a man I conceived of It as love and myself the son of It, and in my union with It, now, what a love enfolds me!",
+      "ko": "인간으로서 나는 그것을 사랑으로, 그리고 나 자신을 그것의 아들로 상상했으며, 지금 그것과의 결합 속에서, 얼마나 큰 사랑이 나를 감싸 안는가!",
+      "vocab": [
+        {
+          "word": "conceive of",
+          "mean": "상상하다, 여기다"
+        },
+        {
+          "word": "union",
+          "mean": "결합, 합일"
+        },
+        {
+          "word": "enfold",
+          "mean": "감싸다, 안다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As + 명사",
+          "desc": "여기서 'As'는 자격을 나타내며 '인간으로서'라는 의미로 쓰여, 신적 존재와의 대비 속에서 인간의 관점을 드러냅니다."
+        },
+        {
+          "tag": "감탄문 (What a + 명사 + 주어 + 동사!)",
+          "desc": "경이로운 신비적 합일의 감정을 강조하는 감탄문 구조로, 네빌 고다드가 체험한 사랑의 실감을 극대화합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is a mirror to all.",
+      "ko": "그것은 모든 이에게 거울이다.",
+      "vocab": [
+        {
+          "word": "mirror",
+          "mean": "거울, 반영하는 것"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유적 표현",
+          "desc": "외부 세계가 인간 의식의 반영이라는 네빌의 핵심 사상을 '거울'이라는 메타포를 통해 간결하게 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whatever we conceive It as being, that It is to us.",
+      "ko": "우리가 그것이 어떠하다고 상상하든, 그것은 우리에게 그대로 이루어진다.",
+      "vocab": [
+        {
+          "word": "Whatever",
+          "mean": "무엇이든 간에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "복합관계대명사절 (Whatever ~)",
+          "desc": "양보와 조건의 의미를 겸하며, 인간의 상상력(conceive)이 신성(It)의 성격을 결정한다는 법칙을 강조하는 도치 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "I believe It to be the center through which all the threads of the universe are drawn; therefore I have altered my values and changed my ideas so that they now depend upon and are in harmony with this sole cause of all that is.",
+      "ko": "나는 그것이 우주의 모든 실이 끌어당겨지는 중심이라고 믿는다. 그러므로 나는 나의 가치관을 바꾸고 생각을 변화시켜, 그것들이 이제 모든 것의 유일한 원인인 이 존재에 의존하고 그와 조화를 이루도록 하였다.",
+      "vocab": [
+        {
+          "word": "thread",
+          "mean": "실, 가닥"
+        },
+        {
+          "word": "alter",
+          "mean": "바꾸다, 수정하다"
+        },
+        {
+          "word": "sole cause",
+          "mean": "유일한 원인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적격 보어를 취하는 5형식 구조",
+          "desc": "'believe A to be B' 구문을 통해 주체적인 신념이 존재의 본질을 어떻게 정의하는지 보여줍니다."
+        },
+        {
+          "tag": "관계대명사절 (through which)",
+          "desc": "우주의 모든 만물이 하나의 중심(의식)으로부터 연결되어 파생된다는 신비주의적 우주관을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is to me that changeless reality which fashions circumstances in harmony with our concepts of ourselves.",
+      "ko": "그것은 우리 자신에 대한 우리의 개념과 조화를 이루어 상황을 빚어내는 변하지 않는 실재이다.",
+      "vocab": [
+        {
+          "word": "changeless",
+          "mean": "변치 않는"
+        },
+        {
+          "word": "fashion",
+          "mean": "만들다, 빚어내다"
+        },
+        {
+          "word": "concept",
+          "mean": "개념, 자아상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 관계대명사절",
+          "desc": "선행사 'that changeless reality'를 수식하며, 내면의 자아상(concept of ourselves)이 외부 환경을 창조한다는 원리를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "My mystical experiences have convinced me that there is no way to bring about the outer perfection we seek other than by the transformation of ourselves.",
+      "ko": "나의 신비적 체험들은 우리 자신의 변화 외에는 우리가 추구하는 외적 완벽함을 가져올 방법이 없다는 것을 나에게 확신시켜 주었다.",
+      "vocab": [
+        {
+          "word": "mystical experience",
+          "mean": "신비적 체험"
+        },
+        {
+          "word": "bring about",
+          "mean": "야기하다, 이끌어내다"
+        },
+        {
+          "word": "transformation",
+          "mean": "변형, 변화"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "other than 구문",
+          "desc": "'~외에는'이라는 배타적 의미를 지니며, 외적인 수정이 아니라 오직 내적인 자아 변형만이 유일한 해결책임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "As soon as we succeed in transforming ourselves, the world will melt magically before our eyes and reshape itself in harmony with that which our transformation affirms.",
+      "ko": "우리가 우리 자신을 변화시키는 데 성공하자마자, 세상은 우리 눈앞에서 마법처럼 녹아내려 우리의 변화가 확증하는 것과 조화를 이루어 스스로를 재조형할 것이다.",
+      "vocab": [
+        {
+          "word": "As soon as",
+          "mean": "~하자마자"
+        },
+        {
+          "word": "melt magically",
+          "mean": "마법처럼 녹아내리다"
+        },
+        {
+          "word": "affirm",
+          "mean": "확증하다, 긍정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절 (As soon as)",
+          "desc": "내면의 변화와 외면의 재창조가 시간적 간격 없이 즉각적으로 일어난다는 네빌의 법칙(Law of Assumption)을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Two other visions I will tell because they bear out the truth of my assertion that we, by intensity of love and hate, become what we contemplate.",
+      "ko": "우리가 사랑과 미움의 강렬함에 의해 우리가 응시하는 그것이 된다는 나의 주장의 진실을 뒷받침하기 때문에, 나는 다른 두 가지 환상을 이야기할 것이다.",
+      "vocab": [
+        {
+          "word": "vision",
+          "mean": "환상, 영적 체험"
+        },
+        {
+          "word": "bear out",
+          "mean": "뒷받침하다, 증명하다"
+        },
+        {
+          "word": "contemplate",
+          "mean": "응시하다, 깊이 생각하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적어 도치",
+          "desc": "목적어인 'Two other visions'를 문두에 놓아 강조함으로써 앞으로 서술할 영적 체험들의 중요성을 부각합니다."
+        }
+      ]
+    },
+    {
+      "en": "Once, with closed eyes made radiant from brooding, I meditated on the eternal question, 'Who Am I?' and felt myself gradually dissolve into a shoreless sea of vibrant light, imagination passing beyond all fear of death.",
+      "ko": "언제였던가, 깊은 사색으로 빛나는 감은 눈을 한 채, 나는 영원한 질문인 '나는 누구인가?'를 명상하였고, 마침내 상상력이 모든 죽음의 두려움을 넘어 확장되면서, 활기찬 빛의 해안 없는 바다 속으로 나 자신이 서서히 녹아드는 것을 느꼈다.",
+      "vocab": [
+        {
+          "word": "brooding",
+          "mean": "깊은 사색, 몰두"
+        },
+        {
+          "word": "shoreless",
+          "mean": "해안이 없는, 끝없는"
+        },
+        {
+          "word": "vibrant light",
+          "mean": "생동하는 빛"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 및 지각동사구조",
+          "desc": "'felt myself gradually dissolve'에서 지각동사 뒤의 원형부정사를 사용하여 자아가 빛의 바다로 완전히 용해되는 순간을 생생하게 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "In this state nothing existed but myself, a boundless ocean of liquid light.",
+      "ko": "이 상태에서는 액체로 된 빛의 끝없는 바다인 나 자신 외에는 아무것도 존재하지 않았다.",
+      "vocab": [
+        {
+          "word": "boundless",
+          "mean": "무한한, 끝없는"
+        },
+        {
+          "word": "liquid light",
+          "mean": "액체 빛 (신비적 에너지의 표현)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 도치 및 동격",
+          "desc": "'nothing existed but myself'에서 'but'은 '~를 제외하고(except)'의 뜻이며, 뒤의 'a boundless ocean~'은 'myself'와 동격을 이루어 순수한 의식의 상태를 시적으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "Copyright ©The Neville Goddard",
+      "ko": "저작권 ©더 네빌 고다드",
+      "vocab": [
+        {
+          "word": "Copyright",
+          "mean": "저작권"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "권리 표기 명사구",
+          "desc": "문학적 본문이 아닌 출판 및 저작권 표기 문장입니다."
+        }
+      ]
+    },
+    {
+      "en": "r have I felt more intimate with Being.",
+      "ko": "나는 존재(Being)와 더 친밀함을 느낀 적이 없다.",
+      "vocab": [
+        {
+          "word": "intimate",
+          "mean": "친밀한, 깊이 연결된"
+        },
+        {
+          "word": "Being",
+          "mean": "존재, 근원적 실재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정어구 도치",
+          "desc": "원문 오탈자 또는 잘린 구문으로 보이며, 부정어(Never 등)가 생략되거나 앞 문장과 연결되어 최상급의 의미를 강조하는 도치 구문 형태를 띱니다."
+        }
+      ]
+    },
+    {
+      "en": "How long this experience lasted I do not know, but my return to earth was accompanied by a distinct feeling of crystallizing again into human shape.",
+      "ko": "이 경험이 얼마나 오래 지속되었는지 나는 모른다, 그러나 지구로의 나의 귀환은 다시 인간의 형상으로 결정(結晶)된다는 뚜렷한 느낌을 동반했다.",
+      "vocab": [
+        {
+          "word": "last",
+          "mean": "지속되다"
+        },
+        {
+          "word": "distinct",
+          "mean": "뚜렷한, 명확한"
+        },
+        {
+          "word": "crystallize",
+          "mean": "결정화하다, 형체를 갖추다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "의문사절 목적어 도치",
+          "desc": "'How long this experience lasted'가 동사 'know'의 목적어로 앞으로 도치되어 영적 체험의 시공간 초월성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "At another time, I lay on my bed and with my eyes shut as in sleep I brooded on the mystery of Buddha.",
+      "ko": "또 다른 때에, 나는 침대에 누워 잠잘 때처럼 눈을 감은 채 붓다의 신비에 대해 깊이 사색했다.",
+      "vocab": [
+        {
+          "word": "mystery",
+          "mean": "신비, 비밀"
+        },
+        {
+          "word": "brood on",
+          "mean": "~에 대해 골몰히 생각하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부대상황 with 분사구문",
+          "desc": "'with my eyes shut' 구문을 통해 외적인 감각을 차단하고 내적인 의식의 집중 상태로 진입하는 과정을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "In a little while, the dark caverns of my brain began to grow luminous.",
+      "ko": "잠시 후, 내 두뇌의 어두운 동굴들이 빛나기 시작했다.",
+      "vocab": [
+        {
+          "word": "cavern",
+          "mean": "동굴, 뇌의 깊은 공간"
+        },
+        {
+          "word": "luminous",
+          "mean": "빛나는, 눈부신"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "불완전 자동사 (begin to grow + 형용사)",
+          "desc": "'grow luminous'를 통해 내면의 명상을 통해 의식이 각성되고 영적인 빛이 발현되는 내면의 생생한 변화를 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "I seemed to be surrounded by luminous clouds which emanated from my head as fiery, pulsating rings.",
+      "ko": "나는 내 머리에서 불타는 맥동하는 고리 모양으로 뿜어져 나오는 빛나는 구름들에 둘러싸여 있는 듯했다.",
+      "vocab": [
+        {
+          "word": "luminous",
+          "mean": "빛나는, 야광의"
+        },
+        {
+          "word": "emanate",
+          "mean": "내뿜다, 발산하다"
+        },
+        {
+          "word": "pulsating",
+          "mean": "맥동하는, 박동하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "seemed to be",
+          "desc": "주관적 환상이나 의식 속 경험을 나타내는 네빌의 표현 방식"
+        },
+        {
+          "tag": "which 주격관계대명사",
+          "desc": "머리에서 발산되는 빛나는 구름들을 수식하는 관계절"
+        }
+      ]
+    },
+    {
+      "en": "I saw nothing but these luminous rings for a time.",
+      "ko": "나는 한동안 이 빛나는 고리들 외에는 아무것도 보지 못했다.",
+      "vocab": [
+        {
+          "word": "nothing but",
+          "mean": "오직 ~뿐인, ~외에는 아무것도 아님"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "nothing but",
+          "desc": "오직 대상에만 집중된 깊은 명상적 몰입 상태를 강조"
+        }
+      ]
+    },
+    {
+      "en": "Then there appeared before my eyes a rock of quartz crystal.",
+      "ko": "그러고 나서 내 눈앞에 석영 수정 바위가 나타났다.",
+      "vocab": [
+        {
+          "word": "quartz crystal",
+          "mean": "석영 수정"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "desc": "장소를 나타내는 부사구(before my eyes)가 문두로 오면서 주어와 동사가 도치되어 시각적 현현을 극적임"
+        }
+      ]
+    },
+    {
+      "en": "While I gazed upon it, the crystal broke into pieces which invisible hands quickly shaped into the living Buddha.",
+      "ko": "내가 그것을 응시하는 동안, 수정은 조각들로 부서졌고 보이지 않는 손들이 그것들을 빠르게 살아있는 부처의 형상으로 빚어냈다.",
+      "vocab": [
+        {
+          "word": "gaze upon",
+          "mean": "응시하다, 바라보다"
+        },
+        {
+          "word": "break into pieces",
+          "mean": "산조각나다, 부서지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "shape A into B",
+          "desc": "A를 B의 형태로 만들다라는 구문으로 내면의 상상이 형상화되는 과정을 묘사"
+        }
+      ]
+    },
+    {
+      "en": "As I looked on this meditative figure, I saw that it was myself.",
+      "ko": "이 명상하는 형상을 바라보았을 때, 나는 그것이 바로 나 자신임을 알았다.",
+      "vocab": [
+        {
+          "word": "meditative",
+          "mean": "명상적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As (~할 때)",
+          "desc": "동시 동작과 깨달음의 순간을 연결하는 접속사"
+        },
+        {
+          "tag": "that 명사절",
+          "desc": "외부의 형상과 내면의 자아가 하나라는 신비주의적 합일의 깨달음"
+        }
+      ]
+    },
+    {
+      "en": "I was the living Buddha whom I contemplated.",
+      "ko": "내가 명상하던 그 대상이 바로 살아있는 부처인 나 자신이었다.",
+      "vocab": [
+        {
+          "word": "contemplate",
+          "mean": "응시하다, 심사숙고하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적격 관계대명사 whom",
+          "desc": "관찰자와 피관찰자가 일치하는 논(Non-duality)의 경지를 나타냄"
+        }
+      ]
+    },
+    {
+      "en": "A light like the sun glowed from this living image of myself with increasing intensity until it exploded.",
+      "ko": "태양과 같은 빛이 나 자신의 이 살아있는 형상으로부터 점점 더 강렬하게 빛을 발하다가 마침내 폭발했다.",
+      "vocab": [
+        {
+          "word": "intensity",
+          "mean": "강렬함, 강도"
+        },
+        {
+          "word": "explode",
+          "mean": "폭발하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "until절",
+          "desc": "의식의 각성이 최고조에 달해 영적 폭발(Illumination)에 이르는 과정을 묘사"
+        }
+      ]
+    },
+    {
+      "en": "Then the light gradually faded and once more I was back within the blackness of my room.",
+      "ko": "그러자 빛은 점차 잦아들었고 나는 다시 내 방의 어둠 속으로 돌아와 있었다.",
+      "vocab": [
+        {
+          "word": "fade",
+          "mean": "희미해지다, 사라지다"
+        },
+        {
+          "word": "blackness",
+          "mean": "어둠, 흑암"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위접속사 and",
+          "desc": "환상의 세계에서 육체적 감각의 세계로 의식이 전환되는 대조적 결말"
+        }
+      ]
+    },
+    {
+      "en": "Out of what sphere or treasury of design came this being mightier than human, his garments, the crystal, the light?",
+      "ko": "인간보다 더 위대한 이 존재, 그의 의복, 수정, 그리고 빛은 도대체 어떤 영역이나 설계의 보물창고에서 나온 것인가?",
+      "vocab": [
+        {
+          "word": "sphere",
+          "mean": "영역, 구체"
+        },
+        {
+          "word": "treasury",
+          "mean": "보물창고, 기금"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문 (came this being)",
+          "desc": "의문사구(Out of what sphere)의 강조를 위해 주어와 동사가 도치되어 경외감을 유발"
+        }
+      ]
+    },
+    {
+      "en": "If I saw, heard and moved in a world of real beings when I seemed to myself to be walking in the night, when the lame, the halt, the blind were transformed in harmony with my inner nature, then I am justified in assuming that I have a more subtile body than the physical, a body that can be detached from the physical and used in other spheres; for to see, to hear, to move are functions of an organism however ethereal.",
+      "ko": "내가 밤에 걷고 있다고 스스로 여겼을 때 실재하는 존재들의 세계에서 보고 듣고 움직였으며, 다리 절는 이, 저는 이, 눈먼 이들이 내 내면의 본성과 조화롭게 변화되었다면, 나는 육체보다 더 미세한 몸, 즉 육체로부터 분리되어 다른 영역에서 사용될 수 있는 몸을 가지고 있다고 가정할 정당성이 있다. 왜냐하면 보고, 듣고, 움직이는 것은 아무리 영묘할지라도 유기체의 기능이기 때문이다.",
+      "vocab": [
+        {
+          "word": "subtile",
+          "mean": "미세한, 미묘한 (subtle의 고어적 형태)"
+        },
+        {
+          "word": "detached",
+          "mean": "분리된, 독립된"
+        },
+        {
+          "word": "ethereal",
+          "mean": "천상의, 영묘한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "If 가정법 조건절",
+          "desc": "내적 경험의 실재성을 바탕으로 영체(Astral body)의 존재를 논리적으로 유추하는 추론 구문"
+        },
+        {
+          "tag": "동격 관계",
+          "desc": "a more subtile body와 뒤의 a body that can be detached...가 동격을 이루어 영체의 특성을 부연 설명"
+        }
+      ]
+    },
+    {
+      "en": "If I brood over the alternative that my psychic experiences were self-begotten fantasy, no less am I moved to wonder at this mightier self who flashes on my mind a drama as real as those I experience when I am fully awake.",
+      "ko": "나의 영적 경험들이 스스로 자라난 환상에 불과하다는 대안을 곰곰이 생각해보더라도, 나는 내 마음에 완전한 생체로 깨어있을 때 경험하는 것만큼이나 생생한 드라마를 번쩍이듯 비추어주는 이 더 위대한 자아에 대해 경탄하지 않을 수 없다.",
+      "vocab": [
+        {
+          "word": "brood over",
+          "mean": "곰곰이 생각하다, 훌륭하다"
+        },
+        {
+          "word": "self-begotten",
+          "mean": "스스로 생겨난, 자가 생성된"
+        },
+        {
+          "word": "flash on",
+          "mean": "번뜩이다, 마음에 떠오르게 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "no less am I moved",
+          "desc": "부정어구 도치로 인해 강조의 의미를 가지며 자아의 위대함에 대한 경외를 강조"
+        }
+      ]
+    },
+    {
+      "en": "On these fiery meditations I have entered again and again, and I know beyond all doubt that both assumptions are true.",
+      "ko": "나는 이 불타는 명상 속으로 거듭거듭 들어갔으며, 두 가지 가정 모두 참이라는 것을 조금의 의심도 없이 알고 있다.",
+      "vocab": [
+        {
+          "word": "beyond all doubt",
+          "mean": "모든 의심을 넘어, 의심할 여지 없이"
+        },
+        {
+          "word": "assumption",
+          "mean": "가정, 추정"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 도치 (On these fiery meditations)",
+          "desc": "명상에 대한 반복적 진입 경험을 강조하기 위해 목적 전치사구를 문두로 도치"
+        }
+      ]
+    },
+    {
+      "en": "Housed within this form of earth is a body attuned to a world of light, and I have, by intense meditation, lifted it as with a magnet through the skull of this dark house of flesh.",
+      "ko": "이 흙의 형상 안에 빛의 세계에 주파수가 맞춰진 몸이 깃들어 있으며, 나는 강렬한 명상을 통해 마치 자석을 사용하듯 이 어두운 육신의 해골을 통해 그것을 끌어올렸다.",
+      "vocab": [
+        {
+          "word": "attuned",
+          "mean": "~에 조화된, 주파수가 맞춰진"
+        },
+        {
+          "word": "skull",
+          "mean": "두개골"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "보어 도치 (Housed within...)",
+          "desc": "육신(earth)과 영체(body of light)의 이중 구조를 강조하기 위한 분사구 도치"
+        },
+        {
+          "tag": "as with a magnet",
+          "desc": "의식의 집중력을 자석의 인력에 빗댄 네빌 특유의 비유적 표현"
+        }
+      ]
+    },
+    {
+      "en": "The first time I awoke the fires within me I thought my head would explode.",
+      "ko": "내가 내 안의 불꽃을 처음 깨웠을 때, 나는 내 머리가 폭발할 거라고 생각했다.",
+      "vocab": [
+        {
+          "word": "awoke",
+          "mean": "깨우다"
+        },
+        {
+          "word": "explode",
+          "mean": "폭발하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계부사 생략",
+          "desc": "'The first time' 뒤에 시간의 관계부사 when이 생략되어 주어동사절이 수식하는 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "There was intense vibration at the base of my skull, then sudden oblivion of all.",
+      "ko": "두개골 밑부분에서 강렬한 진동이 있었고, 이어서 모든 것에 대한 갑작스러운 망각이 찾아왔다.",
+      "vocab": [
+        {
+          "word": "intense",
+          "mean": "강렬한"
+        },
+        {
+          "word": "vibration",
+          "mean": "진동"
+        },
+        {
+          "word": "oblivion",
+          "mean": "망각"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "생략 구문",
+          "desc": "후반부의 'then sudden oblivion of all'은 앞의 'There was'가 생략된 형태로, 의식의 초월 상태를 압축적으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "Then I found myself clothed in a garment of light and attached by a silvery elastic cord to the slumbering body on the bed.",
+      "ko": "그런 다음 나는 빛의 옷을 입고 은빛의 신축성 있는 끈으로 침대 위에 잠들어 있는 육체와 연결되어 있는 나 자신을 발견했다.",
+      "vocab": [
+        {
+          "word": "garment",
+          "mean": "의복"
+        },
+        {
+          "word": "slumbering",
+          "mean": "잠자는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구 목적격 보어",
+          "desc": "'found myself clothed~' 구조로, 목적어(myself)의 상태를 두 개의 과거분사구(clothed..., attached...)가 부연 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "So exalted were my feelings, I felt related to the stars.",
+      "ko": "나의 감정이 너무나 고양되었기에, 나는 별들과 연결되어 있다고 느꼈다.",
+      "vocab": [
+        {
+          "word": "exalted",
+          "mean": "고양된"
+        },
+        {
+          "word": "related",
+          "mean": "연관된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "desc": "강조를 위해 보어인 'So exalted'가 문두로 나가고 동사 'were'와 주어 'my feelings'가 도치되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "In this garment I roamed spheres more familiar than earth, but found that, as on earth, conditions were molded in harmony with my nature.",
+      "ko": "이 옷을 입은 채 나는 지구보다 더 친숙한 차원들을 돌아다녔으나, 지구에서와 마찬가지로 조건들이 나의 본성과 조화를 이루어 주조된다는 것을 발견했다.",
+      "vocab": [
+        {
+          "word": "roamed",
+          "mean": "돌아다니다"
+        },
+        {
+          "word": "spheres",
+          "mean": "차원, 영역"
+        },
+        {
+          "word": "molded",
+          "mean": "주조되다, 형성되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입구와 접속사",
+          "desc": "'as on earth'가 삽입되어 상위 차원과 현실 세계의 법칙이 동일함을 비유적으로 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Selfbegotten fantasy",
+      "ko": "스스로 낳은 환상",
+      "vocab": [
+        {
+          "word": "selfbegotten",
+          "mean": "스스로 잉태한"
+        },
+        {
+          "word": "fantasy",
+          "mean": "환상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명사구",
+          "desc": "독자의 회의적인 반응을 인용한 명사구로, 영적 체험을 환상으로 치부하는 시각을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "I hear you say.",
+      "ko": "나는 당신이 그렇게 말하는 소리를 듣는다.",
+      "vocab": [
+        {
+          "word": "hear",
+          "mean": "듣다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "지각동사 구문",
+          "desc": "목적격 보어로 원형부정사(say)가 와서 독자의 반응을 생생하게 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "No more so than the things of earth.",
+      "ko": "세상의 일들도 그 이상은 아니다.",
+      "vocab": [
+        {
+          "word": "no more so than",
+          "mean": "~와 다를 바 없다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교 구문",
+          "desc": "물리적 현실 또한 마음이 지어낸 환상과 다르지 않음을 함축하는 축약된 비교급 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "I am an immortal being conceiving myself as man and forming worlds in the likeness and image of my concept of self.",
+      "ko": "나는 스스로를 인간으로 상상하고 나의 자아 개념의 형상과 이미지 안에서 세계를 형성하는 불멸의 존재이다.",
+      "vocab": [
+        {
+          "word": "immortal",
+          "mean": "불멸의"
+        },
+        {
+          "word": "conceiving",
+          "mean": "상상하다, 임신하다"
+        },
+        {
+          "word": "likeness",
+          "mean": "닮음, 형상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구의 수식",
+          "desc": "현재분사구 'conceiving~'과 'forming~'이 주어인 'an immortal being'을 후위 수식하며 창조의 주체성을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "What we imagine, that we are.",
+      "ko": "우리가 상상하는 것, 그것이 바로 우리 자신이다.",
+      "vocab": [
+        {
+          "word": "imagine",
+          "mean": "상상하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 및 목적어 전치",
+          "desc": "관계대명사절 'What we imagine'이 목적어로 문두에 나와 강조되었으며 'that we are'로 주어-동사가 도치되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "By our imagination, we have created this dream of life, and by our imagination we will re-enter that eternal world of light, becoming that which we were before we imagined the world.",
+      "ko": "우리의 상상력을 통해 우리는 이 삶의 꿈을 창조했으며, 우리의 상상력을 통해 우리는 우리가 세상을 상상하기 전에 존재했던 그곳이 되어 영원한 빛의 세계로 다시 들어갈 것이다.",
+      "vocab": [
+        {
+          "word": "imagination",
+          "mean": "상상력"
+        },
+        {
+          "word": "eternal",
+          "mean": "영원한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "문장 끝의 'becoming~'은 상상력을 통한 귀환의 최종 결과를 나타내는 결과의 분사구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "In the divine economy nothing is lost.",
+      "ko": "신성한 섭리 안에서 그 어떤 것도 소실되지 않는다.",
+      "vocab": [
+        {
+          "word": "divine",
+          "mean": "신성한"
+        },
+        {
+          "word": "economy",
+          "mean": "섭리, 체계"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 부사구",
+          "desc": "'In the divine economy'가 문두에 와서 영적 우주의 질서라는 맥락을 설정합니다."
+        }
+      ]
+    },
+    {
+      "en": "We cannot lose anything save by descent from the sphere where the thing has its natural life.",
+      "ko": "우리는 그 사물이 그것의 자연스러운 삶을 지닌 차원으로부터의 하락에 의해서가 아니고서는 아무것도 잃을 수 없다.",
+      "vocab": [
+        {
+          "word": "save",
+          "mean": "~를 제외하고"
+        },
+        {
+          "word": "descent",
+          "mean": "하락, 강림"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 수식",
+          "desc": "관계부사절 'where the thing has its natural life'가 'sphere'를 수식하며 본래의 영적 차원을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "There is no transforming power in death and, whether we are here or there, we fashion the world that surrounds us by the intensity of our imagination and feeling, and we illuminate or darken our lives by the concepts we hold of ourselves.",
+      "ko": "죽음에는 어떠한 변형력도 없으며, 우리가 여기에 있든 저기에 있든 우리는 상상력과 느낌의 강렬함으로 우리를 둘러싼 세상을 형성하고, 우리 자신에 대해 품고 있는 개념으로 우리의 삶을 밝히거나 어둡게 만든다.",
+      "vocab": [
+        {
+          "word": "transforming",
+          "mean": "변형하는"
+        },
+        {
+          "word": "fashion",
+          "mean": "형성하다, 빚어내다"
+        },
+        {
+          "word": "illuminate",
+          "mean": "비추다, 밝히다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위접속과 양보절",
+          "desc": "'whether ~ or there' 양보절 뒤에 and로 연결된 긴 대등절들이 이어지며 마음의 상태가 곧 환경을 결정함을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "Nothing is more important to us than our conception of ourselves, and especially is this true of our concept of the deep, hidden One within us.",
+      "ko": "우리 자신에 대한 개념보다 우리에게 더 중요한 것은 없으며, 이는 우리 내면의 깊고 숨겨진 그분(자아)에 대한 우리의 개념에 있어 특히 그러하다.",
+      "vocab": [
+        {
+          "word": "conception",
+          "mean": "개념, 관념"
+        },
+        {
+          "word": "hidden",
+          "mean": "숨겨진"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교급 최상급 표현과 도치",
+          "desc": "'Nothing is more important than'을 통한 최상급 의미 전달과, 후반부 'is this true'의 도치로 강조 효과를 극대화했습니다."
+        }
+      ]
+    },
+    {
+      "en": "Those that help or hinder us, whether they know it or not, are the servants of that law which shapes outward circumstances in harmony with our inner nature.",
+      "ko": "우리를 돕거나 방해하는 이들은, 그들이 그것을 알든 모르든, 우리의 내적 본성과 조화를 이루어 외적인 환경을 빚어내는 그 법의 하인들이다.",
+      "vocab": [
+        {
+          "word": "hinder",
+          "mean": "방해하다"
+        },
+        {
+          "word": "circumstances",
+          "mean": "환경, 상황"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입절과 관계대명사",
+          "desc": "'whether they know it or not'이 삽입되었고, 'which' 주격 관계대명사절이 'that law'를 수식하여 외적 환경의 원인을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is our conception of ourselves which frees or constrains us, though it may use material agencies to achieve its purpose.",
+      "ko": "비록 목적을 달성하기 위해 물질적 매개체를 사용할지라도, 우리를 자유롭게 하거나 구속하는 것은 바로 우리 자신에 대한 우리의 개념이다.",
+      "vocab": [
+        {
+          "word": "frees",
+          "mean": "자유롭게 하다"
+        },
+        {
+          "word": "constrains",
+          "mean": "구속하다, 억제하다"
+        },
+        {
+          "word": "agencies",
+          "mean": "매개체, 작용"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조구문",
+          "desc": "'It is ~ which' 강조구문을 사용하여 인간을 엶어매거나 해방시키는 유일한 원인이 오직 자아 개념에 있음을 단언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Because life molds the outer world to reflect the inner arrangement of our minds, there is no way of bringing about the outer perfection we seek other than by the transformation of ourselves.",
+      "ko": "삶은 우리의 마음속 내면적 배치를 반영하도록 바깥 세계를 빚어내기 때문에, 우리 자신의 변화에 의하지 않고는 우리가 추구하는 외적 완전함을 가져올 방법이 없다.",
+      "vocab": [
+        {
+          "word": "mold",
+          "mean": "빚어내다, 형성하다"
+        },
+        {
+          "word": "inner arrangement",
+          "mean": "내면적 배치/구조"
+        },
+        {
+          "word": "bring about",
+          "mean": "가져오다, 야기하다"
+        },
+        {
+          "word": "transformation",
+          "mean": "변화, 변형"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Because절",
+          "desc": "이유를 나타내는 부사절로, 외적 현실이 내적 의식의 반영임을 선언하는 네빌의 핵심 사상을 담고 있다."
+        },
+        {
+          "tag": "other than",
+          "desc": "~외에 다른 [것이 없는]이라는 뜻으로, 오직 자기 자신의 변화만이 유일한 해결책임을 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "No help cometh from without; the hills to which we lift our eyes are those of an inner range.",
+      "ko": "어떤 도움도 외부에서 오지 않는다. 우리가 눈을 들어 바라보는 언덕은 내면의 산맥에 속한 것들이다.",
+      "vocab": [
+        {
+          "word": "cometh",
+          "mean": "comes의 고어체 형태 (성경적 어조)"
+        },
+        {
+          "word": "without",
+          "mean": "외부로부터"
+        },
+        {
+          "word": "range",
+          "mean": "(산)맥, 범위"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용 및 변형",
+          "desc": "시편 121편의 '내가 산을 향하여 눈을 들리라'는 구절을 인용하여, 도움의 근원이 물리적 외부에 있는 것이 아니라 내면의 의식에 있음을 시적인 비유로 풀어낸다."
+        }
+      ]
+    },
+    {
+      "en": "It is thus to our own consciousness that we must turn as to the only reality, the only foundation on which all phenomena can be explained.",
+      "ko": "그러므로 우리는 모든 현상이 설명될 수 있는 유일한 실재이자 유일한 기초로서 오직 우리의 의식으로 돌아서야만 한다.",
+      "vocab": [
+        {
+          "word": "consciousness",
+          "mean": "의식"
+        },
+        {
+          "word": "foundation",
+          "mean": "기초, 토대"
+        },
+        {
+          "word": "phenomena",
+          "mean": "현상들 (phenomenon의 복수형)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It is ~ that 강조구문",
+          "desc": "전치사구 'to our own consciousness'를 강조하여, 외부가 아닌 내면의 의식으로 향해야 함을 강하게 역설한다."
+        }
+      ]
+    },
+    {
+      "en": "We can rely absolutely on the justice of this law to give us only that which is of the nature of ourselves",
+      "ko": "우리는 우리 자신의 본성과 같은 것만을 우리에게 가져다주는 이 법의 공정함을 절대적으로 신뢰할 수 있다.",
+      "vocab": [
+        {
+          "word": "rely absolutely",
+          "mean": "절대적으로 의지하다/신뢰하다"
+        },
+        {
+          "word": "justice of this law",
+          "mean": "이 법칙의 공정함/정의"
+        },
+        {
+          "word": "nature of ourselves",
+          "mean": "우리 자신의 본성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 that/what",
+          "desc": "'that which'는 '~하는 것'으로 해석되며, 의식의 상태가 곧 현상으로 나타나는 존재의 절대적 법칙을 설명한다."
+        }
+      ]
+    },
+    {
+      "en": "To attempt to change the world before we change our concept of ourselves is to struggle against the nature of things.",
+      "ko": "우리 자신에 대한 개념을 바꾸기도 전에 세상을 바꾸려고 시도하는 것은 사물의 본성에 거슬러 싸우는 것이다.",
+      "vocab": [
+        {
+          "word": "concept of ourselves",
+          "mean": "우리 자신에 대한 자아 개념"
+        },
+        {
+          "word": "struggle against",
+          "mean": "~에 거슬러 싸우다"
+        },
+        {
+          "word": "nature of things",
+          "mean": "사물의 본성, 우주의 이치"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동명사 주어와 보어",
+          "desc": "문장의 주어(To attempt ~)와 보어(to struggle ~) 모두 투부정사 구로 이루어져 있으며, 내면을 바꾸지 않는 외적 노력의 무익함을 경고한다."
+        }
+      ]
+    },
+    {
+      "en": "There can be no outer change until there is first an inner change.",
+      "ko": "먼저 내면의 변화가 있기 전에는 어떠한 외적 변화도 있을 수 없다.",
+      "vocab": [
+        {
+          "word": "outer change",
+          "mean": "외적 변화"
+        },
+        {
+          "word": "inner change",
+          "mean": "내면적 변화"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not ~ until 구문",
+          "desc": "'~할 때까지는 …가 없다' 즉, '먼저 내면이 바뀌어야 비로소 외면이 바뀐다'는 인과관계의 철칙을 명확하게 제시한다."
+        }
+      ]
+    },
+    {
+      "en": "As within, so without.",
+      "ko": "안에서와 같이, 밖에서도 그러하다.",
+      "vocab": [
+        {
+          "word": "within",
+          "mean": "안에, 내면"
+        },
+        {
+          "word": "without",
+          "mean": "밖에서, 외면"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "헤르메스주의 격언",
+          "desc": "고대 에메랄드 타블렛의 핵심 명제인 'As above, so below; as within, so without'의 차용으로, 우주의 대응 법칙을 함축한다."
+        }
+      ]
+    },
+    {
+      "en": "I am not advocating philosophical indifference when I suggest that we should imagine ourselves as already that which we want- to be, living in a mental atmosphere of greatness, rather than using physical means and arguments to bring about the desired change.",
+      "ko": "원하는 변화를 이끌어내기 위해 물리적인 수단과 논쟁을 사용하는 것보다, 우리가 이미 되고자 하는 바로 그 존재인 것처럼 상상하고 위대함의 정신적 분위기 속에서 살아야 한다고 제안할 때, 나는 철학적 무관심을 옹호하는 것이 아니다.",
+      "vocab": [
+        {
+          "word": "advocate",
+          "mean": "옹호하다, 주장하다"
+        },
+        {
+          "word": "philosophical indifference",
+          "mean": "철학적 무관심/방관"
+        },
+        {
+          "word": "mental atmosphere",
+          "mean": "정신적 분위기, 의식의 상태"
+        },
+        {
+          "word": "physical means",
+          "mean": "물리적 수단"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "rather than 구문",
+          "desc": "물리적 노력(행동, 논쟁)보다 '이미 된 것을 상상하는 정신적 태도'가 우선임을 대조하여 강조하는 긴 호흡의 문장 구조이다."
+        }
+      ]
+    },
+    {
+      "en": "Everything we do, unaccompanied by a change of consciousness, is but futile readjustment of surfaces.",
+      "ko": "의식의 변화를 동반하지 않은 우리가 하는 모든 일은 단지 헛된 표면적 재조정에 불과하다.",
+      "vocab": [
+        {
+          "word": "unaccompanied by",
+          "mean": "~를 동반하지 않은"
+        },
+        {
+          "word": "futile",
+          "mean": "헛된, 소용없는"
+        },
+        {
+          "word": "readjustment of surfaces",
+          "mean": "표면의 재조정 (근본적이지 않은 변화)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구와 but의 용법",
+          "desc": "'unaccompanied by ~'는 앞의 명사를 수식하는 분사구이며, 여기서 'but'은 'only(단지)'의 의미로 쓰여 표면적 행동의 무력함을 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "However we toil or struggle, we can receive no more than our subconscious assumptions affirm.",
+      "ko": "우리가 아무리 애쓰고 발버둥 치더라도, 우리의 잠재의식적 가정들이 확언하는 것 이상을 받을 수 없다.",
+      "vocab": [
+        {
+          "word": "toil",
+          "mean": "고생하며 일하다, 애쓰다"
+        },
+        {
+          "word": "subconscious assumptions",
+          "mean": "잠재의식적 가정/믿음"
+        },
+        {
+          "word": "affirm",
+          "mean": "확언하다, 긍정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "양보의 복합관계부사 (However)",
+          "desc": "'However we toil or struggle'은 'No matter how ~'의 의미로, 인간의 맹목적인 육체적 노력의 한계를 지적하고 잠재의식의 법칙을 부각한다."
+        }
+      ]
+    },
+    {
+      "en": "To protest against anything which happens to us is to protest against the law of our being and our rulership over our own destiny.",
+      "ko": "우리에게 일어나는 그 어떤 것에 대해서든 항의하는 것은 우리 존재의 법칙과 우리 자신의 운명에 대한 우리의 통치권에 항의하는 것이다.",
+      "vocab": [
+        {
+          "word": "protest against",
+          "mean": "~에 항의하다, 반대하다"
+        },
+        {
+          "word": "law of our being",
+          "mean": "우리 존재의 법칙"
+        },
+        {
+          "word": "rulership",
+          "mean": "통치권, 지배력"
+        },
+        {
+          "word": "destiny",
+          "mean": "운명"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대칭적 구조",
+          "desc": "주어부의 'To protest ~'와 보어부의 'to protest ~'가 대구를 이루어, 외부 상황을 탓하는 것이 곧 자기 자신의 신적 창조력을 부인하는 모순임을 날카롭게 지적한다."
+        }
+      ]
+    },
+    {
+      "en": "The circumstances of my life are too closely related to my conception of myself not to have been launched by my own spirit from some magical storehouse of my being.",
+      "ko": "내 삶의 환경들은 나의 존재 속 어떤 마법의 곳간으로부터 나의 영에 의해 시작된 것이 아닐 수 없을 만큼, 나의 자아 개념과 너무나 밀접하게 연관되어 있다.",
+      "vocab": [
+        {
+          "word": "circumstances",
+          "mean": "환경, 처지"
+        },
+        {
+          "word": "conception of myself",
+          "mean": "나에 대한 개념/자화상"
+        },
+        {
+          "word": "launch",
+          "mean": "쏘아 올리다, 시작하다, 발사하다"
+        },
+        {
+          "word": "storehouse",
+          "mean": "곳간, 창고"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "too ~ not to 구문",
+          "desc": "'너무 ~해서 …하지 않을 수 없다'는 강한 긍정의 의미를 담아, 삶의 모든 조건이 100% 내면의 자아 개념에서 비롯되었다는 확신을 표현한다."
+        }
+      ]
+    },
+    {
+      "en": "If there is pain to me in these happenings, I should look within myself for the cause, for I am moved here and there and made to live in a world in harmony with my concept of myself.",
+      "ko": "만약 이러한 일들 속에서 내게 고통이 있다면, 나는 그 원인을 내 안에서 찾아야 한다. 왜냐하면 나는 이리저리 이끌려 다니며 나 자신의 자아 개념과 조화를 이루는 세상에서 살아가도록 만들어졌기 때문이다.",
+      "vocab": [
+        {
+          "word": "happenings",
+          "mean": "일어난 일들, 사건들"
+        },
+        {
+          "word": "look within",
+          "mean": "내면을 살피다"
+        },
+        {
+          "word": "in harmony with",
+          "mean": "~와 조화를 이루어"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문과 인과관계",
+          "desc": "'I am moved'와 'made to live'라는 수동태를 통해 인간이 자아 개념이라는 보이지 않는 법칙에 의해 필연적으로 이끌리는 존재임을 신비주의적 관점에서 설명한다."
+        }
+      ]
+    },
+    {
+      "en": "Intense meditation brings about a union with the state contemplated, and during this union we see visions, have experiences, and behave in keeping with our change of consciousness.",
+      "ko": "강렬한 명상은 관조된 상태와의 결합을 가져오며, 이 결합 동안 우리는 환상을 보고, 경험을 하며, 의식의 변화에 걸맞게 행동합니다.",
+      "vocab": [
+        {
+          "word": "intense",
+          "mean": "강렬한"
+        },
+        {
+          "word": "contemplate",
+          "mean": "관조하다, 심사숙고하다"
+        },
+        {
+          "word": "in keeping with",
+          "mean": "~에 맞춰, ~와 일치하여"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "bring about",
+          "desc": "어떤 결과를 초래하다 또는 가져오다라는 의미의 구동사입니다."
+        },
+        {
+          "tag": "분사 후치수식",
+          "desc": "the state contemplated에서 과거분사 contemplated가 명사 뒤에서 수식하여 '관조된 상태'라는 의미를 완성합니다."
+        }
+      ]
+    },
+    {
+      "en": "This shows us that a transformation of consciousness will result in a change of environment and behavior.",
+      "ko": "이것은 의식의 변화가 환경과 행동의 변화로 이어진다는 것을 우리에게 보여줍니다.",
+      "vocab": [
+        {
+          "word": "transformation",
+          "mean": "변형, 변모"
+        },
+        {
+          "word": "result in",
+          "mean": "~라는 결과를 낳다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "접속사 that",
+          "desc": "동사 shows의 목적어절을 이끄는 명사절 접속사입니다."
+        }
+      ]
+    },
+    {
+      "en": "However, our ordinary alterations of consciousness, as we pass from one state to another, are not transformations, because each of them is so rapidly succeeded by another in the reverse direction; but whenever one state grows so stable as to definitely expel its rivals, then that central habitual state defines the character and is a true transformation.",
+      "ko": "그러나 우리가 한 상태에서 다른 상태로 넘어갈 때 일어나는 우리의 평범한 의식의 변화들은 변모가 아닙니다. 왜냐하면 그것들 각각은 반대 방향의 다른 상태에 의해 너무나 빠르게 계승되기 때문입니다. 하지만 어떤 상태가 너무나 안정되어 자신의 라이벌들을 확실히 몰아내게 될 때, 바로 그 중심적이고 습관적인 상태가 성격을 규정하고 진정한 변모가 됩니다.",
+      "vocab": [
+        {
+          "word": "alteration",
+          "mean": "변경, 변화"
+        },
+        {
+          "word": "succeed",
+          "mean": "계승하다, 잇따르다"
+        },
+        {
+          "word": "expel",
+          "mean": "축출하다, 몰아내다"
+        },
+        {
+          "word": "rival",
+          "mean": "경쟁자, 라이벌"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "so ~ that 용법 (결과)",
+          "desc": "so stable as to 부정사 구문을 통해 '너무 안정되어서 ~할 정도이다'라는 결과를 나타냅니다."
+        },
+        {
+          "tag": "상관 접속사 구조",
+          "desc": "whenever절과 then절이 호응하여 '언제 ~할 때, 그에 따라 ~하다'라는 반복적이고 확정적인 법칙을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "To say that we are transformed means that ideas previously peripheral in our consciousness now take a central place and form the habitual center of our energy.",
+      "ko": "우리가 변화되었다고 말하는 것은, 이전에 우리의 의식 속에서 변방에 있던 아이디어들이 이제 중심 자리를 차지하고 우리 에너지의 습관적 중심을 형성한다는 것을 의미합니다.",
+      "vocab": [
+        {
+          "word": "peripheral",
+          "mean": "주변의, 지엽적인, 변방의"
+        },
+        {
+          "word": "habitual",
+          "mean": "습관적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "to부정사 주어",
+          "desc": "문장 맨 앞의 To say가 주어로 쓰여 '말한다는 것은'이라는 의미를 갖습니다."
+        },
+        {
+          "tag": "과거분사구 후치수식",
+          "desc": "ideas previously peripheral in our consciousness에서 형용사구 previously peripheral이 ideas를 뒤에서 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "All wars prove that violent emotions are extremely potent in precipitating mental rearrangements.",
+      "ko": "모든 전쟁은 격렬한 감정들이 정신적 재배열을 촉발하는 데 극도로 강력하다는 것을 증명합니다.",
+      "vocab": [
+        {
+          "word": "potent",
+          "mean": "강력한, 유력한"
+        },
+        {
+          "word": "precipitate",
+          "mean": "촉발하다, 재촉하다"
+        },
+        {
+          "word": "rearrangement",
+          "mean": "재배열, 재조정"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 in + 동명사",
+          "desc": "in precipitating은 '~하는 데 있어서'라는 의미로 조건이나 영역을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Every great conflict has been followed by an era of materialism and greed in which the ideals for which the conflict ostensibly was waged are submerged.",
+      "ko": "모든 위대한 갈등 뒤에는 물질주의와 탐욕의 시대가 이어졌으며, 그 시대 속에서는 그 갈등이 표면적으로 수행되었던 이상들이 가라앉게 됩니다.",
+      "vocab": [
+        {
+          "word": "ostensibly",
+          "mean": "표면적으로, 겉보기에는"
+        },
+        {
+          "word": "wage",
+          "mean": "전쟁이나 투쟁을 벌이다"
+        },
+        {
+          "word": "submerge",
+          "mean": "물에 잠기게 하다, 가라앉히다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 + 관계대명사",
+          "desc": "in which는 an era를 선행사로 받는 관계부사절 역할을 하며, 그 시대 안에서 이상들이 침몰함을 표현합니다."
+        },
+        {
+          "tag": "전치사구 + 관계대명사",
+          "desc": "for which는 ideals를 선행사로 하여 '그 이상들을 위해 전쟁이 벌어졌다'는 의미를 구조화합니다."
+        }
+      ]
+    },
+    {
+      "en": "This is inevitable because war evokes hate, which impels a descent in consciousness from the plane of the ideal to the level where the conflict is waged.",
+      "ko": "이것은 불가피합니다. 왜냐하면 전쟁은 증오를 불러일으키고, 그 증오는 의식을 이상이라는 차원에서 갈등이 벌어지는 수준으로 하강하도록 이끌기 때문입니다.",
+      "vocab": [
+        {
+          "word": "inevitable",
+          "mean": "불가피한, 피할 수 없는"
+        },
+        {
+          "word": "evoke",
+          "mean": "환기하다, 불러일으키다"
+        },
+        {
+          "word": "impel",
+          "mean": "강요하다, 밀고 나가다"
+        },
+        {
+          "word": "descent",
+          "mean": "하강, 내려감"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "계속적 용법의 관계대명사",
+          "desc": ", which는 앞 문장의 내용(전쟁이 증오를 불러일으키는 것)을 부연하며 주관적으로 의식을 추락시키는 작용을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "If we would become as emotionally aroused over our ideals as we become over our dislikes, we would ascend to the plane of our ideals as easily as we now descend to the level of our hates.",
+      "ko": "우리가 혐오하는 것들에 대해 감정적으로 동요하는 것만큼 우리의 이상들에 대해서도 감정적으로 고조될 수 있다면, 우리는 현재 우리의 증오 수준으로 쉽게 하강하듯이 우리의 이상의 차원으로 쉽게 상승할 것입니다.",
+      "vocab": [
+        {
+          "word": "arouse",
+          "mean": "자극하다, 불러일으키다"
+        },
+        {
+          "word": "dislike",
+          "mean": "혐오, 싫어함"
+        },
+        {
+          "word": "ascend",
+          "mean": "오르다, 상승하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거",
+          "desc": "If절의 과거형 동사와 주절의 조동사 과거형(would)을 사용하여 현재의 사실과 반대되거나 실현 가능성을 가정한 영적 법칙을 설파합니다."
+        },
+        {
+          "tag": "원급 비교구문",
+          "desc": "as emotionally aroused as ~ 구문과 as easily as ~ 구문을 통해 감정의 에너지 크기가 상승과 하강을 결정하는 대칭 구조임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Love and hate have a magical transforming power, and we grow through their exercise into the likeness of what we contemplate.",
+      "ko": "사랑과 미움은 마법 같은 변화의 힘을 가지고 있으며, 우리는 그것들을 행함으로써 우리가 묵상하는 것의 닮은 꼴로 성장합니다.",
+      "vocab": [
+        {
+          "word": "transforming power",
+          "mean": "변화시키는 힘"
+        },
+        {
+          "word": "exercise",
+          "mean": "행사, 사용"
+        },
+        {
+          "word": "likeness",
+          "mean": "닮음, 유사성"
+        },
+        {
+          "word": "contemplate",
+          "mean": "묵상하다, 응시하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "and 등위절 연결",
+          "desc": "두 개의 주절이 'and'로 연결되어 사랑과 미움이 가진 힘과 그로 인한 인간의 의식적 변화 과정을 인과적으로 엮어냅니다."
+        },
+        {
+          "tag": "into the likeness of",
+          "desc": "전치사 'into'를 사용하여 내면의 응시 대상이 곧 존재의 형태적 변화로 귀결됨을 시각화합니다."
+        }
+      ]
+    },
+    {
+      "en": "By intensity of hatred we create in ourselves the character we imagine in our enemies.",
+      "ko": "미움의 강렬함에 의해 우리는 적들 안에서 상상하는 그 성격을 우리 자신 안에 창조합니다.",
+      "vocab": [
+        {
+          "word": "intensity",
+          "mean": "강렬함"
+        },
+        {
+          "word": "character",
+          "mean": "성격, 인격"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적격 관계대명사 생략",
+          "desc": "‘the character (that) we imagine in our enemies’ 구조로, 우리가 타인에게 투사한 모습이 곧 자아가 된다는 네빌의 거울 원리를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Qualities die for want of attention, so the unlovely states might best be rubbed out by imagining “beauty for ashes and joy for mourning” [Isaiah 61:3] rather than by direct attacks on the state from which we would be free.",
+      "ko": "성품들은 주의를 받지 못해 죽어갑니다. 그러므로 사랑스럽지 못한 상태들은 우리가 벗어나고자 하는 그 상태를 직접 공격하기보다는 ‘재 대신 아름다움을, 슬픔 대신 희랍을’ [이사야 61:3] 상상함으로써 가장 잘 지워질 수 있습니다.",
+      "vocab": [
+        {
+          "word": "for want of",
+          "mean": "~의 부족으로, ~가 없어서"
+        },
+        {
+          "word": "unlovely state",
+          "mean": "사랑스럽지 못한 상태"
+        },
+        {
+          "word": "rub out",
+          "mean": "지우다, 없애다"
+        },
+        {
+          "word": "mourning",
+          "mean": "애도, 슬픔"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소외를 통한 소멸",
+          "desc": "부정적인 것에 대한 저항(direct attack)이 아니라 주의(attention)를 거둠으로써 상태를 전환하는 네빌의 핵심 실천법을 담은 긴 대조 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "“Whatsoever things are lovely and of good report, think on these things” [Philippians 4:8], for we become that with which we are en rapport.",
+      "ko": "“무엇이든지 사랑스럽고 칭찬할 만한 것들을 생각하라” [빌립보서 4:8], 왜냐하면 우리는 우리가 교감하는 그것이 되기 때문입니다.",
+      "vocab": [
+        {
+          "word": "of good report",
+          "mean": "칭찬할 만한, 평판이 좋은"
+        },
+        {
+          "word": "en rapport",
+          "mean": "(프랑스어) 교감하는, 조화를 이루는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용과 인과 전개",
+          "desc": "성경 구절을 직접 인용('think on these things')한 뒤 'for(~때문에)'를 통해 의식의 대상과 존재의 일치라는 신비주의적 명제를 증명합니다."
+        }
+      ]
+    },
+    {
+      "en": "There is nothing to change but our concept of self.",
+      "ko": "우리의 자아 개념 외에는 바꿀 것이 아무것도 없습니다.",
+      "vocab": [
+        {
+          "word": "concept of self",
+          "mean": "자아 개념"
+        },
+        {
+          "word": "nothing to change but",
+          "mean": "~외에는 바꿀 것이 없다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "유일성의 강조",
+          "desc": "‘There is nothing ~ but(~외에는 없다)’ 구문을 통해 외부 세계의 변화가 아닌 오직 내면의 자아 개념(I AM) 수정만이 유일한 창조의 열쇠임을 단언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Humanity is a single being in spite of its many forms and faces, and there is in it only such seeming separation as we find in our own being when we are dreaming.",
+      "ko": "인류는 그 수많은 형태와 얼굴들에도 불구하고 단 하나의 존재이며, 그 안에는 우리가 꿈을 꿀 때 우리 자신의 존재 안에서 발견하는 것과 같은 외견상의 분리만이 있을 뿐입니다.",
+      "vocab": [
+        {
+          "word": "single being",
+          "mean": "단 하나의 존재"
+        },
+        {
+          "word": "in spite of",
+          "mean": "~에도 불구하고"
+        },
+        {
+          "word": "seeming separation",
+          "mean": "외견상의 분리"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "범신론적/통합적 비유",
+          "desc": "만유일체(Humanity is a single being)의 개념을 꿈속의 분신들에 비유하여, 타인과의 분리가 허상임을 설명하는 복문 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "The pictures and circumstances we see in dreams are creations of our own imagination and have no existence save in ourselves.",
+      "ko": "우리가 꿈속에서 보는 그림들과 환경들은 우리 자신의 상상의 창조물들이며 우리 자신 안에 외에는 아무런 존재도 가지고 있지 않습니다.",
+      "vocab": [
+        {
+          "word": "circumstance",
+          "mean": "환경, 상황"
+        },
+        {
+          "word": "save in",
+          "mean": "~안에 외에는, ~을 제외하고는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "내면성 주창",
+          "desc": "‘save in ourselves’는 모든 객관적 현실이 주관적 상상력의 투사체에 불과하다는 네빌 사상의 핵심인 환상(Dream)론을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The same is true of the pictures and circumstances we see in this dream of life.",
+      "ko": "우리가 이 삶의 꿈에서 보는 그림들과 환경들에 대해서도 마찬가지입니다.",
+      "vocab": [
+        {
+          "word": "The same is true of",
+          "mean": "~에 대해서도 마찬가지이다"
+        },
+        {
+          "word": "dream of life",
+          "mean": "인생이라는 꿈"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "유추 구조",
+          "desc": "야간 수면몽과 주간 현실몽을 등치시키며, 깨어 있는 상태 역시 고도로 조직된 상상의 소산임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "They reveal our concepts of ourselves.",
+      "ko": " 그것들은 우리 자신에 대한 우리의 개념들을 드러냅니다.",
+      "vocab": [
+        {
+          "word": "reveal",
+          "mean": "드러내다, 폭로하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결과로서의 현상",
+          "desc": "주어 'They(현실의 그림들)'가 원인이 아닌 자아 개념의 거울이자 결과물임을 간결한 3형식 문장으로 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "As soon as we succeed in transforming self, our world will dissolve and reshape itself in harmony with that which our change affirms.",
+      "ko": "우리가 자아를 변화시키는 데 성공하자마자, 우리의 세계는 해체될 것이며 우리의 변화가 확증하는 것과 조화를 이루어 스스로를 재형성할 것입니다.",
+      "vocab": [
+        {
+          "word": "As soon as",
+          "mean": "~하자마자"
+        },
+        {
+          "word": "dissolve",
+          "mean": "녹다, 해체되다"
+        },
+        {
+          "word": "affirm",
+          "mean": "확증하다, 긍정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시제 일치와 자동적 재조정",
+          "desc": "조건/시간의 부사절(As soon as ~ transforming self)에서는 현재시제가 미래를 대신하며, 내면의 '확증(affirms)'이 외면의 형태를 자동 재편(reshape itself)함을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "The universe which we study with such care is a dream, and we the dreamers of the dream, eternal dreamers dreaming non-eternal dreams.",
+      "ko": "우리가 그렇게 주의를 기울여 연구하는 우주는 하나의 꿈이며, 우리는 그 꿈의 꿈꾸는 자들이요, 비영원한 꿈들을 꾸는 영원한 꿈꾸는 자들입니다.",
+      "vocab": [
+        {
+          "word": "with such care",
+          "mean": "그토록 주의 깊게"
+        },
+        {
+          "word": "eternal",
+          "mean": "영원한"
+        },
+        {
+          "word": "non-eternal",
+          "mean": "비영원한, 덧없는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조와 동격의 수식",
+          "desc": "'eternal dreamers dreaming non-eternal dreams'라는 대조적 어구의 반복을 통해 불멸의 존재(God/Imagination)가 일시적 환영을 경험하는 실존적 구조를 시적으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "One day, like Nebuchadnezzar, we shall awaken from the dream, from the nightmare in which we fought with demons, to find that we really never left our eternal home; that we were never born and have never died save in our dream.",
+      "ko": "어느 날, 느부갓네살처럼 우리는 그 꿈에서, 우리가 악마들과 싸웠던 그 악몽에서 깨어나, 우리가 결코 우리의 영원한 고향을 떠난 적이 없음을, 우리가 결코 태어난 적이 없고 우리의 꿈 속에서 외에는 결코 죽은 적이 없음을 발견하게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "Nebuchadnezzar",
+          "mean": "느부갓네살 (바빌론의 왕, 성경적 인물)"
+        },
+        {
+          "word": "awaken",
+          "mean": "깨어나다"
+        },
+        {
+          "word": "nightmare",
+          "mean": "악몽"
+        },
+        {
+          "word": "eternal home",
+          "mean": "영원한 고향 (근원)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결과의 투사 (to find that)",
+          "desc": "투쟁과 고통의 악몽(nightmare) 끝에 도달하는 궁극적 깨달음의 순간을 'to부정사 용법(결과)'으로 묘사하며, 탄생과 죽음조차 상상의 꿈에 불과하다는 신비주의적 귀결을 완성합니다."
+        }
+      ]
+    },
+    {
+      "en": "6 of 14 · All fourteen books",
+      "ko": "14개 중 6번째 · 14권의 책 모두",
+      "vocab": [
+        {
+          "word": "books",
+          "mean": "책, 저서"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "웹사이트 메타데이터",
+          "desc": "본문 내용이 아닌 페이지네이션 및 네비게이션 정보입니다."
+        }
+      ]
+    }
+  ]
+}
