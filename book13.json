@@ -1,0 +1,6198 @@
+{
+  "Resurrection": [
+    {
+      "en": "Now after John was arrested, Jesus came into Galilee, preaching the gospel of God, and saying, The time is fulfilled, and the Kingdom of God is at hand; repent, and believe in the gospel.",
+      "ko": "요한이 잡힌 후에 예수께서 갈릴리에 오셔서 하나님의 복음을 전파하며 가라사대 때가 찼고 하나님의 나라가 가까왔으니 회개하고 복음을 믿으라 하시더라.",
+      "vocab": [
+        {
+          "word": "arrested",
+          "mean": "체포된"
+        },
+        {
+          "word": "gospel",
+          "mean": "복음"
+        },
+        {
+          "word": "at hand",
+          "mean": "가까운"
+        },
+        {
+          "word": "repent",
+          "mean": "회개하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": " 분사구문 (preaching, saying)",
+          "desc": "주절 뒤에서 연속적인 동작을 나타내며, 예수의 사역이 선포와 가르침의 연속임을 강조합니다."
+        },
+        {
+          "tag": " 완료 시제 (is fulfilled)와 상태 시제 (is at hand)",
+          "desc": "신비주의적 관점에서 시간의 완성과 내면의 의식 상태 변화가 이미 도래했음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Jesus’ ministry began after that of John ended in Judea.",
+      "ko": "예수의 사역은 요한의 사역이 유대에서 끝난 후에 시작되었다.",
+      "vocab": [
+        {
+          "word": "ministry",
+          "mean": "사역"
+        },
+        {
+          "word": "end",
+          "mean": "끝나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대명사 that",
+          "desc": "앞서 언급된 'ministry'의 반복을 피하기 위해 사용된 지시 대명사입니다."
+        }
+      ]
+    },
+    {
+      "en": "Jesus, when He began His ministry, was about thirty years of age.",
+      "ko": "예수께서 그 사역을 시작하실 때에 삼십 세쯤 되셨더라.",
+      "vocab": [
+        {
+          "word": "about",
+          "mean": "약, 대략"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입절 (when He began His ministry)",
+          "desc": "주어와 동사 사이에 위치하여 예수의 사역 시작 시점을 구체적으로 특정합니다."
+        }
+      ]
+    },
+    {
+      "en": "The soil of the centuries had been ploughed and harrowed for the gospel of God.",
+      "ko": "수세기의 토양이 하나님의 복음을 위해 갈리고 고라졌다.",
+      "vocab": [
+        {
+          "word": "soil",
+          "mean": "토양, 마음밭"
+        },
+        {
+          "word": "plough",
+          "mean": "갈다, 경작하다"
+        },
+        {
+          "word": "harrow",
+          "mean": "써래질하다, 고르다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 완료 (had been ploughed and harrowed)",
+          "desc": "인류의 의식이 오랜 역사적 과정을 통해 영적 깨달음을 위한 상태로 준비되어 왔음을 비유적으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "And men began to experience God’s plan of salvation.",
+      "ko": "그리고 사람들은 하나님의 구원 계획을 경험하기 시작했다.",
+      "vocab": [
+        {
+          "word": "salvation",
+          "mean": "구원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "to부정사 목적어 (to experience)",
+          "desc": "과거의 준비 단계에서 주관적인 영적 체험의 단계로 전환됨을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "The authors of the gospel of God are anonymous, and all that we can really know about them must be derived from our own experience of scripture.",
+      "ko": "하나님의 복음 저자들은 익명이며, 우리가 그들에 대해 진정으로 알 수 있는 모든 것은 성경에 대한 우리 자신의 경험으로부터 도출되어야 한다.",
+      "vocab": [
+        {
+          "word": "anonymous",
+          "mean": "익명의"
+        },
+        {
+          "word": "derive",
+          "mean": "끌어내다, 유래하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절 (that we can really know)",
+          "desc": "all을 수식하며, 네빌 고다드의 핵심 주장인 '외부 권위가 아닌 내면의 성경적 경험'의 중요성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Their authority was not in scripture as a dead written code but in their own experience of scripture.",
+      "ko": "그들의 권위는 죽은 문자로 된 성경에 있는 것이 아니라 성경에 대한 그들 자신의 경험에 있었다.",
+      "vocab": [
+        {
+          "word": "authority",
+          "mean": "권위"
+        },
+        {
+          "word": "code",
+          "mean": "규범, 암호, 법전"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상관접속사 (not A but B)",
+          "desc": "외적인 문자주의를 거부하고 내적인 영적 실재(Experience)를 강조하는 네빌의 신비주의적 시각을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Their gospel was not a new religion but the fulfillment of one as old as the faith of Abraham.",
+      "ko": "그들의 복음은 새로운 종교가 아니라 아브라함의 믿음만큼이나 오래된 것의 성취였다.",
+      "vocab": [
+        {
+          "word": "fulfillment",
+          "mean": "성취, 실현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "원급 비교 (as old as)",
+          "desc": "기독교 복음이 단회적 사건이 아니라 인류 역사와 함께해 온 영적 진리의 완성이란 점을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "And the scripture, foreseeing that God would justify the heathen by faith, preached the gospel beforehand to Abraham.",
+      "ko": "또한 성경은 하나님이 믿음으로 이방인을 의롭다 하실 것을 미리 알고 사전에 아브라함에게 복음을 전파하였다.",
+      "vocab": [
+        {
+          "word": "foresee",
+          "mean": "예견하다"
+        },
+        {
+          "word": "justify",
+          "mean": "의롭다 하다"
+        },
+        {
+          "word": "heathen",
+          "mean": "이방인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 (foreseeing)",
+          "desc": "성경을 의인화하여 영적 진리가 아브라함 시대부터 이미 계시되었음을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "And Abraham believed God and lived in accordance with the preview of the story of salvation that God granted to him.",
+      "ko": "그리고 아브라함은 하나님을 믿었으며 하나님이 그에게 허락하신 구원 이야기의 미리보기에 따라 살았다.",
+      "vocab": [
+        {
+          "word": "in accordance with",
+          "mean": "~에 따라"
+        },
+        {
+          "word": "preview",
+          "mean": "시사, 미리보기"
+        },
+        {
+          "word": "grant",
+          "mean": "부여하다, 허락하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절 (that God granted to him)",
+          "desc": "아브라함이 본 비전이 하나님으로부터 비롯된 구원의 환영임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The unknown authors of the gospel emphasize the fulfillment of scripture in the life of Jesus Christ.",
+      "ko": "복음의 알려지지 않은 저자들은 예수 그리스도의 삶 속에서 성경의 성취를 강조한다.",
+      "vocab": [
+        {
+          "word": "emphasize",
+          "mean": "강조하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 수식 (in the life of Jesus Christ)",
+          "desc": "성경의 성취가 추상적인 개념이 아니라 구체적인 한 인간의 삶(그리고 곧 우리의 삶)을 통해 이루어짐을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Christ in us fulfills the scripture.",
+      "ko": "우리 안에 계신 그리스도가 성경을 성취하신다.",
+      "vocab": [
+        {
+          "word": "fulfills",
+          "mean": "성취하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "핵심 명제 (Christ in us)",
+          "desc": "네빌 신비주의의 알파이자 오메가인 '내면의 그리스도(Christ within)' 개념을 가장 명확하게 드러내는 주술 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "Do you not realize that Jesus Christ is in you?",
+      "ko": "너희 안에 예수 그리스도가 계신 줄을 너희가 알지 못하느냐?",
+      "vocab": [
+        {
+          "word": "realize",
+          "mean": "깨닫다, 실감하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "의문문과 명사절 (that Jesus Christ is in you)",
+          "desc": "독자에게 직접 질문을 던짐으로써 외부에 있는 신을 찾는 미신에서 벗어나 내면의 신성을 자각할 것을 촉구합니다."
+        }
+      ]
+    },
+    {
+      "en": "I have been crucified with Christ; it is no longer I who live, but Christ Who lives in me.",
+      "ko": "내가 그리스도와 함께 십자가에 못 박혔나니 그런즉 이제는 내가 산 것이 아니요 오직 내 안에 그리스도께서 사시는 것이라.",
+      "vocab": [
+        {
+          "word": "crucified",
+          "mean": "십자가에 못 박힌"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조구문 (it is no longer I who live, but Christ)",
+          "desc": "에고(Ego)의 죽음과 내면의 신성(Christ)의 부활이라는 신비주의적 정체성 전환을 극적으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "For if we have been united with Him in a death like his, we shall certainly be united with Him in a resurrection like his.",
+      "ko": "만약 우리가 그의 죽음과 같은 죽음으로 그와 연합되었다면, 우리는 분명 그의 부활과 같은 부활로 그와 연합될 것입니다.",
+      "vocab": [
+        {
+          "word": "united",
+          "mean": "연합된, 일치된"
+        },
+        {
+          "word": "resurrection",
+          "mean": "부활"
+        },
+        {
+          "word": "certainly",
+          "mean": "분명히, 확실히"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건절 (For if ~)",
+          "desc": "과거 완료 수동태(have been united)를 사용하여 그리스도의 죽음과의 신비적 합일을 가정하고, 주절에서는 미래 조동사(shall)를 통해 그 합일이 가져올 영적 결과(부활)를 확신합니다."
+        }
+      ]
+    },
+    {
+      "en": "The repetition in us, through His indwelling, has been expressed by Johann Scheffler, a seventeenth-century mystic.",
+      "ko": "그분의 내주하심을 통한 우리 안의 반복은 17세기 신비가인 요한 셰플러에 의해 표현되었습니다.",
+      "vocab": [
+        {
+          "word": "indwelling",
+          "mean": "내주, 마음속에 깃듦"
+        },
+        {
+          "word": "mystic",
+          "mean": "신비가"
+        },
+        {
+          "word": "repetition",
+          "mean": "반복"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 및 전치사구 (through His indwelling)",
+          "desc": "주어 'The repetition'이 'has been expressed'라는 현재완료 수동태를 통해 신비가에 의해 언어화되었음을 나타내며, 'through'는 그리스도의 내주가 그 영적 진리의 통로임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Though Christ a thousand times In Bethlehem be born, If He’s not born in thee, Thy soul is still forlorn.",
+      "ko": "그리스도가 베들레헴에서 천 번 태어난다 할지라도, 만약 그가 그대 안에 태어나지 않는다면, 그대의 영혼은 여전히 버려져 있으리라.",
+      "vocab": [
+        {
+          "word": "thee",
+          "mean": "그대, 너 (고어)"
+        },
+        {
+          "word": "thy",
+          "mean": "그대의, 너의 (고어)"
+        },
+        {
+          "word": "forlorn",
+          "mean": "버림받은, 쓸쓸한, 절망적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 및 도치/생략",
+          "desc": "역사적 장소(베들레헴)에서의 탄생보다 인간 의식(thee) 내에서의 영적 탄생(Christ in you)이 구원의 본질임을 강조하는 시적 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "Edward Thomas And He said to them, 'O foolish men, and slow of heart to believe all that the prophets have spoken!'",
+      "ko": "에드워드 토마스 그리고 그분은 그들에게 말씀하셨습니다. '오, 어리석고 선지자들이 말한 모든 것을 믿기에 마음이 더딘 자들이여!'",
+      "vocab": [
+        {
+          "word": "foolish",
+          "mean": "어리석은"
+        },
+        {
+          "word": "slow of heart",
+          "mean": "마음이 더딘, 깨닫지 못하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "형용사구 수식 (slow of heart to believe)",
+          "desc": "마음의 무딤(slow of heart)이 진리를 믿지 못하는 원인임을 나타내며, 성경적 맥락에서 영적 눈이 가려진 상태를 질책하는 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "Was it not necessary that the Christ should suffer these things and enter into His glory?",
+      "ko": "그리스도가 이러한 고난을 당하고 자신의 영광에 들어가는 것이 필연적이지 않았는가?",
+      "vocab": [
+        {
+          "word": "necessary",
+          "mean": "필연적인, 꼭 필요한"
+        },
+        {
+          "word": "suffer",
+          "mean": "고난을 받다, 겪다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 구문 (It ~ that)",
+          "desc": "의문문 형태로 'It was necessary that ~' 구조를 취하여, 그리스도의 고난과 영광이 신성한 계획 안에서 예정된 필연임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "And beginning with Moses and all the prophets, He interpreted to them in all the scriptures the things concerning Himself… everything written about Me in the law of Moses and the prophets and the psalms must be fulfilled.",
+      "ko": "그리고 모세와 모든 선지자로부터 시작하여, 그분은 모든 성경에서 자기에 관한 것들을 그들에게 풀어주셨습니다… 모세의 율법과 선지자와 시편에 내게 관하여 기록된 모든 것이 반드시 성취되어야 합니다.",
+      "vocab": [
+        {
+          "word": "interpret",
+          "mean": "해석하다, 풀어주다"
+        },
+        {
+          "word": "concerning",
+          "mean": "~에 관한"
+        },
+        {
+          "word": "fulfill",
+          "mean": "성취하다, 이루다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 (beginning with) 및 조동사 수동태 (must be fulfilled)",
+          "desc": "구약 전체(모세, 선지자, 시편)가 그리스도 자신에 대한 예표이자 자서전임을 선포하는 구조로, 성경의 모든 기록이 인간 의식 속에서 완성될 신비적 운명을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Then He opened their minds to understand the scriptures.",
+      "ko": "그때 그분은 성경을 깨닫도록 그들의 마음을 열어주셨습니다.",
+      "vocab": [
+        {
+          "word": "open one's mind",
+          "mean": "마음을 열다, 깨닫게 하다"
+        },
+        {
+          "word": "understand",
+          "mean": "이해하다, 깨닫다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "5형식 목적보어 (to understand)",
+          "desc": "지적 독해가 아니라 영적 깨달음(illumination)이 신성한 개입(He opened)을 통해 이루어짐을 보여주는 직관적 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "And they read from the book, from the law of God, with interpretation, and they gave the sense, so that the people understood the reading.",
+      "ko": "그리고 그들은 책에서, 하나님의 율법에서 해석을 곁들여 읽었고, 의미를 전달하여 백성들이 그 읽은 바를 깨달았습니다.",
+      "vocab": [
+        {
+          "word": "interpretation",
+          "mean": "해석"
+        },
+        {
+          "word": "sense",
+          "mean": "의미, 뜻"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결과 부사절 (so that)",
+          "desc": "단순한 글자의 낭독을 넘어 그 속에 담긴 영적 의미(sense)를 풀어줌으로써 대중이 깨달음에 이르는 과정을 인과관계로 연결합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Old Testament is a prophetic blueprint of the life of Jesus Christ.",
+      "ko": "구약성경은 예수 그리스도의 삶에 대한 예언적 청사진입니다.",
+      "vocab": [
+        {
+          "word": "prophetic",
+          "mean": "예언적인"
+        },
+        {
+          "word": "blueprint",
+          "mean": "청사진, 설계도"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명사구 수식 (prophetic blueprint)",
+          "desc": "구약을 역사적 사실의 기록이 아니라, 인간 의식 속에서 펼쳐질 그리스도 드라마의 '설계도'로 정의하는 네빌의 핵심 신비주의적 관점을 담고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "The gospel of God is the revelation of the future granted to Abraham.",
+      "ko": "하나님의 복음은 아브라함에게 주어진 미래의 계시입니다.",
+      "vocab": [
+        {
+          "word": "gospel",
+          "mean": "복음"
+        },
+        {
+          "word": "revelation",
+          "mean": "계시, 드러냄"
+        },
+        {
+          "word": "grant",
+          "mean": "부여하다, 주다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사 후치수식 (granted to Abraham)",
+          "desc": "과거분사구(granted ~)가 'revelation of the future'를 뒤에서 수식하여, 복음이 아브라함 시대부터 이미 약속된 영적 비전임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Abraham rejoiced that he was to see My day.",
+      "ko": "아브라함은 나의 날을 보게 될 것을 기뻐했습니다.",
+      "vocab": [
+        {
+          "word": "rejoice",
+          "mean": "기뻐하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "be to 용법 (was to see)",
+          "desc": "과거 시점에서 미래의 운명적 사건(그리스도의 날을 보는 것)을 나타내는 표현으로, 아브라함의 의식이 이미 영원한 현재 속에서 메시아적 각성을 경험했음을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is about the risen Christ.",
+      "ko": "그것은 부활하신 그리스도에 관한 것입니다.",
+      "vocab": [
+        {
+          "word": "risen",
+          "mean": "부활한, 일어난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "지시대명사 (It) 및 형용사적 분사 (risen)",
+          "desc": "성경의 모든 내용이 역사적 인물이 아니라 지금 여기서 의식 속에서 부활한 그리스도를 향하고 있음을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Participation in the life of the age to come depends on God’s act of raising the dead.",
+      "ko": "다올 시대의 삶에 참여하는 것은 죽은 자들을 일으키시는 하나님의 행위에 달려 있습니다.",
+      "vocab": [
+        {
+          "word": "participation",
+          "mean": "참여"
+        },
+        {
+          "word": "depend on",
+          "mean": "~에 달리다, 의존하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동명사구 주어 및 전치사구 (depends on)",
+          "desc": "인간의 도덕적 행위가 아니라 오직 죽은 상태(무지)로부터 인간을 깨워내는 하나님의 신성한 능력(act of raising the dead)만이 구원의 유일한 조건임을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "The resurrection of Jesus Christ is God’s victory.",
+      "ko": "예수 그리스도의 부활은 하나님의 승리입니다.",
+      "vocab": [
+        {
+          "word": "victory",
+          "mean": "승리"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소유격 명사 (God's victory)",
+          "desc": "부활을 종교적 교리가 아니라, 인간의 에고가 죽고 신성함이 승리하는 의식의 대전환으로 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "That we shall be 'united with Him in a resurrection like His' is the promise of God’s victory for all.",
+      "ko": "우리가 '그분의 부활과 같은 부활로 그분과 연합될' 것이라는 점은 모든 이들을 향한 하나님의 승리의 약속입니다.",
+      "vocab": [
+        {
+          "word": "promise",
+          "mean": "약속"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명사절 주어 (That ~)",
+          "desc": "긴 절(That we shall be ~) 전체가 문장의 주어로 기능하며, 하나님의 승리가 소수에게 국한되지 않고 모든 인간의 최종적 영적 귀결임을 선포합니다."
+        }
+      ]
+    },
+    {
+      "en": "But before the day of victory, man must be refined in the furnace of affliction.",
+      "ko": "그러나 승리의 날이 오기 전에, 인간은 고난의 용광로에서 연단되어야 합니다.",
+      "vocab": [
+        {
+          "word": "refined",
+          "mean": "정제된, 연단된"
+        },
+        {
+          "word": "furnace",
+          "mean": "용광로"
+        },
+        {
+          "word": "affliction",
+          "mean": "고난, 시련"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 및 은유적 표현 (furnace of affliction)",
+          "desc": "에고의 불순물을 태워버리는 인생의 시련을 '고난의 용광로'라는 연금술적 은유로 표현하며, 수동태(must be refined)를 통해 인간이 자발적으로 당하는 것이 아니라 신성한 정화 과정임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "I have tried you in the furnace of affliction.",
+      "ko": "내가 너희를 고난의 용광로에서 연단하였다.",
+      "vocab": [
+        {
+          "word": "try",
+          "mean": "시험하다, 연단하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재완료 (I have tried)",
+          "desc": "신의 목소리를 빌어 인간 내면의 의식이 겪는 시련의 목적이 파멸이 아닌 정화와 시험에 있음을 직접 화법으로 전달합니다."
+        }
+      ]
+    },
+    {
+      "en": "For My own sake, for My own sake, I do it, for how should My Name be profaned?",
+      "ko": "나를 위하여, 오직 나를 위하여 내가 이를 행한다. 어찌 내 이름이 더럽혀지게 하겠느냐?",
+      "vocab": [
+        {
+          "word": "sake",
+          "mean": "이익, 목적"
+        },
+        {
+          "word": "profane",
+          "mean": "더럽히다, 모독하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수사학적 의문문 (how should ~?)",
+          "desc": "반복어구(For My own sake)를 통해 신의 절대적 주권과 순수성을 강조하며, 의문문을 통해 신의 본성(이름)이 결코 무시될 수 없는 절대적 진리임을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "My glory I will not give to another",
+      "ko": "나의 영광을 다른 이에게 주지 않으리라.",
+      "vocab": [
+        {
+          "word": "glory",
+          "mean": "영광"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적어 도치 구문 (My glory I will not give)",
+          "desc": "강조를 위해 목적어(My glory)를 문장 앞으로 도치시켜, 인간 안의 신성(God in man) 외에는 어떤 다른 존재나 에고도 궁극적 영광을 가질 수 없음을 단호하게 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "It takes the furnace of affliction to conform us to the image of His Son, and therefore to the image of the Father, for the Father and the Son are one.",
+      "ko": "우리를 그분의 아들의 형상으로, 따라서 아버지의 형상으로 빚어내는 데는 고난의 용광로가 필요합니다. 아버지와 아들은 하나이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "furnace of affliction",
+          "mean": "고난의 용광로"
+        },
+        {
+          "word": "conform",
+          "mean": "순응시키다, 닮게 하다"
+        },
+        {
+          "word": "one",
+          "mean": "하나인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It takes ~ to ...",
+          "desc": "~하는 데는 ...가 필요하다는 의미로, 인간의 영적 성장에 고난이라는 연금술적 과정이 필수적임을 강조합니다."
+        },
+        {
+          "tag": "for the Father and the Son are one",
+          "desc": "등위접속사 'for'를 통해 앞선 주장의 신학적 근거(아들을 닮는 것이 곧 아버지를 닮는 것)를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Then came to him all his brothers and sisters and all who had known him before… and comforted him for all the evil that the Lord had brought upon him… And the Lord blessed the latter days of Job more than his beginning”",
+      "ko": "“그때에 그의 모든 형제와 자매와 전에 그를 알던 자들이 다 와서... 주께서 그에게 내리신 모든 재앙에 대하여 그를 위로하고... 여호와께서 욥의 말년에 전보다 더 복을 주시니”",
+      "vocab": [
+        {
+          "word": "comfort",
+          "mean": "위로하다"
+        },
+        {
+          "word": "bring upon",
+          "mean": "(-에게) 가져오다, 내리다"
+        },
+        {
+          "word": "latter days",
+          "mean": "말년, 나중 날들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "who had known him before",
+          "desc": "주격 관계대명사절로 선행사인 'all'을 수식하며 욥의 과거를 증언합니다."
+        },
+        {
+          "tag": "that the Lord had brought upon him",
+          "desc": "목적격 관계대명사 'that'이 생략된 절로, 욥이 겪은 시련의 궁극적 주체가 하나님(The Lord)임을 보여주는 네빌의 관점을 반영합니다."
+        }
+      ]
+    },
+    {
+      "en": "The story of Job is the story of man, the innocent victim of a cruel experiment on the part of God.",
+      "ko": "욥의 이야기는 인간의 이야기이며, 하나님 편에서의 잔인한 실험 속에서 무고하게 희생된 인간의 이야기입니다.",
+      "vocab": [
+        {
+          "word": "innocent victim",
+          "mean": "무고한 희생자"
+        },
+        {
+          "word": "cruel experiment",
+          "mean": "잔인한 실험"
+        },
+        {
+          "word": "on the part of",
+          "mean": "~의 입장에서, ~의 측에서"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Apposition (동격)",
+          "desc": "'man'과 'the innocent victim ~'이 동격을 이루어 욥의 고난이 모든 인간 보편의 영적 여정임을 비유적으로 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "“And God said, ‘Let us make man in our image’.”",
+      "ko": "“하나님이 이르시되 ‘우리의 형상을 따라 우리의 모양대로 우리가 사람을 만들자’.”",
+      "vocab": [
+        {
+          "word": "image",
+          "mean": "형상, 이미지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Imperative let us",
+          "desc": "청유형(let us)을 사용하여 창조의 내면적 합의와 다차원적 존재로서의 인간 탄생을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Yet “I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed in us” (Rom. 8:18) and that glory is nothing less than the unveiling of God the Father in us, as us.",
+      "ko": "그러나 “현재의 고난은 우리에게 장차 나타날 영광과 비교할 수 없다고 내가 생각하노라” (롬 8:18), 그리고 그 영광은 다름 아닌 우리 안에서, 우리로서 나타나는 아버지 하나님의 계시입니다.",
+      "vocab": [
+        {
+          "word": "not worth comparing with",
+          "mean": "~와 비교할 가치가 없는"
+        },
+        {
+          "word": "glory",
+          "mean": "영광"
+        },
+        {
+          "word": "unveiling",
+          "mean": "베일을 벗김, 드러냄, 계시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "nothing less than",
+          "desc": "'다름 아닌 ~인'이라는 뜻으로, 성경이 말하는 영광이 저 하늘의 추상적 개념이 아니라 우리 존재 자체의 각성임을 강조합니다."
+        },
+        {
+          "tag": "in us, as us",
+          "desc": "전치사 'in'과 'as'의 대조를 통해 하나님과 인간이 결국 하나로 합쳐지는 네빌의 핵심 신비주의 철학을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Nothing can take the place of personal witness to God’s plan of salvation.",
+      "ko": "그 어떤 것도 하나님의 구원 계획에 대한 개인적인 증언을 대신할 수 없습니다.",
+      "vocab": [
+        {
+          "word": "take the place of",
+          "mean": "~을 대신하다"
+        },
+        {
+          "word": "personal witness",
+          "mean": "개인적인 증언, 직접적 체험"
+        },
+        {
+          "word": "plan of salvation",
+          "mean": "구원 계획"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Nothing can ~",
+          "desc": "부정주어 구문을 통해 객관적인 교리나 신학적 지식보다 주관적인 영적 체험(personal witness)의 절대적 우위를 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "The plan of the mystery is inherent in the creation.",
+      "ko": "그 신비의 계획은 창조물 내부에 내재해 있습니다.",
+      "vocab": [
+        {
+          "word": "mystery",
+          "mean": "신비"
+        },
+        {
+          "word": "inherent",
+          "mean": "내재하는, 타고난"
+        },
+        {
+          "word": "creation",
+          "mean": "창조, 피조물"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "is inherent in",
+          "desc": "be동사와 형용사 'inherent'가 결합하여 외부에서 주어지는 것이 아니라 이미 존재 속에 심겨 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "What is so prophetically spoken to the world in the Old Testament is realized in one’s own personality.",
+      "ko": "구약성경에서 세상에 그토록 예언적으로 선포된 것은 개인의 인격(존재) 안에서 실현됩니다.",
+      "vocab": [
+        {
+          "word": "prophetically",
+          "mean": "예언적으로"
+        },
+        {
+          "word": "realize",
+          "mean": "실현하다, 깨닫다"
+        },
+        {
+          "word": "personality",
+          "mean": "인격, 개성, 존재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "What ~",
+          "desc": "관계대명사 what절이 문장의 주어로 쓰여, 구약의 예언이 역사적 사건이 아니라 개인 안에서 이루어질 심리적·영적 드라마임을 설파합니다."
+        }
+      ]
+    },
+    {
+      "en": "All was foretold me but naught could I foresee, but I learned who Jesus Christ really is after the story was re-enacted in me.",
+      "ko": "모든 것이 나에게 예언되었지만 나는 아무것도 미리 볼 수 없었습니다. 그러나 그 이야기가 내 안에서 재연된 후에야 나는 예수 그리스도가 진정 누구인지 알게 되었습니다.",
+      "vocab": [
+        {
+          "word": "foretell",
+          "mean": "예언하다"
+        },
+        {
+          "word": "naught",
+          "mean": "아무것도 아님, 영"
+        },
+        {
+          "word": "foresee",
+          "mean": "예견하다"
+        },
+        {
+          "word": "re-enact",
+          "mean": "재연하다, 다시 행해지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Inversion / Contrast",
+          "desc": "'naught could I foresee'에서 부정어 도치가 일어나 시적이고 극적인 어조를 형성하며, 지적인 예측 불가능성과 영적 체험의 불가피성을 대조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The man who has experienced Scripture cannot escape the responsibility of telling its meaning to his fellow men.",
+      "ko": "성경을 체험한 사람은 그 의미를 동료 인간들에게 전해야 할 책임에서 벗어날 수 없습니다.",
+      "vocab": [
+        {
+          "word": "experience Scripture",
+          "mean": "성경을 (문자가 아닌 실재로) 체험하다"
+        },
+        {
+          "word": "escape",
+          "mean": "피하다, 벗어나다"
+        },
+        {
+          "word": "fellow men",
+          "mean": "동료 인간들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "cannot escape ~",
+          "desc": "강한 의무감을 나타내며, 진리를 깨달은 자(네빌 자신을 포함한 각성자)의 전파 사명을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The unknown writers of the gospel of God were not describing situations and events of the past as historians.",
+      "ko": "하나님의 복음을 기록한 이름 모를 저자들은 역사가들처럼 과거의 상황과 사건들을 묘사하고 있었던 것이 아닙니다.",
+      "vocab": [
+        {
+          "word": "unknown writers",
+          "mean": "이름 모를 저자들"
+        },
+        {
+          "word": "gospel",
+          "mean": "복음"
+        },
+        {
+          "word": "historian",
+          "mean": "역사가"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "were not describing ~ as ~",
+          "desc": "과거진행형 부정문을 통해 성경 저자들이 역사가가 아님을 밝히며, 성경 역사가 세속적 역사(history)가 아닌 심리적 영성(psychology)임을 시사합니다."
+        }
+      ]
+    },
+    {
+      "en": "Their story of Jesus Christ is their own experience of God’s plan of redemption as men who themselves had experienced redemption.",
+      "ko": "그들의 예수 그리스도 이야기는, 자신들이 구속을 직접 체험한 사람들로서 하나님의 구속 계획을 자신들의 체험으로 쓴 것입니다.",
+      "vocab": [
+        {
+          "word": "redemption",
+          "mean": "구속, 구원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "as men who ~",
+          "desc": "자격과 속성을 나타내는 전치사 'as'와 관계대명사절이 복음서 저자들의 글이 단순한 전승이 아닌 1인칭 실존적 체험의 기록임을 뒷받침합니다."
+        }
+      ]
+    },
+    {
+      "en": "They related their own experiences.",
+      "ko": "그들은 그들의 고유한 체험을 이야기했습니다.",
+      "vocab": [
+        {
+          "word": "relate",
+          "mean": "이야기하다, 들려주다"
+        },
+        {
+          "word": "experience",
+          "mean": "체험, 경험"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct statement",
+          "desc": "간결한 주어-동사-목적어 구조를 통해 성경의 본질이 객관적 역사 서술이 아닌 주관적 의식의 기록임을 단호하게 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "They are witnesses of the first order testifying to the truth of God’s Word, not hesitating to interpret the Old Testament according to their own supernatural experiences.",
+      "ko": "그들은 하나님의 말씀의 진실성을 증언하는 최고의 증인들이며, 구약성경을 자신들 자신의 초자연적 체험에 따라 해석하는 것을 주저하지 않았습니다.",
+      "vocab": [
+        {
+          "word": "of the first order",
+          "mean": "최고급의, 일류의"
+        },
+        {
+          "word": "testify to",
+          "mean": "~을 증언하다"
+        },
+        {
+          "word": "supernatural experiences",
+          "mean": "초자연적 체험"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Present participle phrases",
+          "desc": "현재분사구('testifying ~', 'not hesitating ~')가 연달아 주절의 의미를 확장하며, 성경 해석의 기준이 교조적 권위가 아닌 개인의 영적 깨달음(초자연적 체험)에 있음을 확증합니다."
+        }
+      ]
+    },
+    {
+      "en": "Having experienced the story of salvation I can add my testimony to theirs and say that all is done as they have told it.",
+      "ko": "구원의 이야기를 직접 체험했기에, 나는 그들의 증언에 나의 증언을 보태어 모든 것이 그들이 말한 대로 이루어졌다고 말할 수 있다.",
+      "vocab": [
+        {
+          "word": "salvation",
+          "mean": "구원"
+        },
+        {
+          "word": "testimony",
+          "mean": "증언"
+        },
+        {
+          "word": "attested",
+          "mean": "증명된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "Having experienced는 주절의 주어인 I가 체험한 주체임을 나타내는 완료형 분사구문으로, 과거의 체험이 현재의 증언에 미치는 영향을 강조합니다."
+        },
+        {
+          "tag": "간접인용",
+          "desc": "say that절은 저자의 확신에 찬 신념을 전달하며, 성경적 진리의 객관성과 주관적 체험의 일치를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Their experiences, thus attested, confront men with the responsibility of accepting or rejecting their interpretation of the Old Testament.",
+      "ko": "그리하여 증명된 그들의 경험은 인간에게 구약성경에 대한 그들의 해석을 받아들이거나 거부해야 할 책임을 직면하게 한다.",
+      "vocab": [
+        {
+          "word": "confront",
+          "mean": "직면하게 하다"
+        },
+        {
+          "word": "interpretation",
+          "mean": "해석"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입구",
+          "desc": "thus attested는 과거분사구로 앞의 experiences를 수식하며 문장의 호흡을 조절하고 의미를 명확히 합니다."
+        },
+        {
+          "tag": "전치사구 수식",
+          "desc": "of accepting or rejecting은 responsibility를 수식하는 동명사구로, 인간의 자유의지와 영적 선택의 중요성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Their testimony should be heard and responded to.",
+      "ko": "그들의 증언은 경청되어야 하고 그에 응답해야 한다.",
+      "vocab": [
+        {
+          "word": "responded to",
+          "mean": "응답하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태와 전치사",
+          "desc": "respond to의 목적어가 주어로 간 수동태 구문으로, 전치사 to가 문장 끝에 남아있는 형태를 취합니다."
+        }
+      ]
+    },
+    {
+      "en": "One must experience Scripture for himself before he can begin to understand how wonderful it is.",
+      "ko": "사람은 그것이 얼마나 놀라운지 이해하기 시작하기 전에 스스로 성경을 체험해야 한다.",
+      "vocab": [
+        {
+          "word": "Scripture",
+          "mean": "성경"
+        },
+        {
+          "word": "for himself",
+          "mean": "스스로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "간접의문문",
+          "desc": "how wonderful it is는 의문사절이자 명사절로 understand의 목적어 역할을 하며, 성경 체험의 경이로움을 강조합니다."
+        },
+        {
+          "tag": "주관적 체험 강조",
+          "desc": "for himself를 통해 네빌 고다드가 강조하는 '성경은 역사적 기록이 아닌 인간 의식의 드라마'라는 핵심 사상을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "They give no account of the personal appearance of Jesus, because when the story of salvation is recreated in man, man will know that “I am He” [Luke 22:70; John 4:26; 8:18; 8:24; 8:28; 13:19; 18:5,6].",
+      "ko": "그들은 예수의 개인적인 외모에 대해서는 전혀 설명하지 않는다. 왜냐하면 구원의 이야기가 인간 안에서 재현될 때, 인간은 '내가 바로 그이다'라는 것을 알게 될 것이기 때문이다.",
+      "vocab": [
+        {
+          "word": "account",
+          "mean": "설명, 기술"
+        },
+        {
+          "word": "recreated",
+          "mean": "재현된, 다시 만들어진"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부사절과 주절",
+          "desc": "because절 안의 when 부사절은 영적 각성의 순간을 시공간적으로 묘사하며, 인용구 'I am He'는 자아(I Am)가 곧 신성임을 선언하는 네빌의 핵심 메시지입니다."
+        }
+      ]
+    },
+    {
+      "en": "“He who is united to the Lord becomes one spirit with Him.”",
+      "ko": "“주와 합하는 자는 그와 한 영이니라.”",
+      "vocab": [
+        {
+          "word": "united",
+          "mean": "연합된"
+        },
+        {
+          "word": "spirit",
+          "mean": "영"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "He who는 '∼하는 사람'이라는 뜻으로, 인간의 의식이 신과 완전히 하나로 합쳐지는 신비주의적 합일(Unio Mystica) 상태를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Being in the form of God… He emptied Himself, taking the form of a slave, being born in the likeness of men.”",
+      "ko": "“그는 근본 하나님의 본체시나… 오히려 자기를 비워 종의 형체를 가지사 사람들과 같이 되셨고.”",
+      "vocab": [
+        {
+          "word": "form",
+          "mean": "형태, 본체"
+        },
+        {
+          "word": "emptied",
+          "mean": "비우다"
+        },
+        {
+          "word": "likeness",
+          "mean": "닮음, 형상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문의 연속",
+          "desc": "Being과 taking, being born은 주절의 주어인 그리스도(신)가 스스로의 신성을 제한하고 인간의 차원으로 내려온 과정을 묘사하는 동시 상황 및 결과의 분사구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "“And being found in human form He humbled Himself and became obedient unto death, even death on the cross.”",
+      "ko": "“사람의 모양으로 나타나사 자기를 낮추시고 죽기까지 복종하셨으니 곧 십자가에 죽으심이라.”",
+      "vocab": [
+        {
+          "word": "humbled",
+          "mean": "자기를 낮추다"
+        },
+        {
+          "word": "obedient",
+          "mean": "복종하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "점층적 수식",
+          "desc": "unto death, even death on the cross는 죽음이라는 극한의 한계 속으로 자신을 내어 맡긴 신의 자기 비하와 사랑의 깊이를 극적으로 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "He abdicated His divine form and assumed the form of a slave.",
+      "ko": "그는 자신의 신성한 형태를 포기하고 종의 형태를 취하였다.",
+      "vocab": [
+        {
+          "word": "abdicated",
+          "mean": "포기하다, 퇴위하다"
+        },
+        {
+          "word": "assumed",
+          "mean": "취하다, 떠맡다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대등절",
+          "desc": "and를 중심으로 두 개의 동사구(abdicated와 assumed)가 병치되어, 신이 인간이 되기 위해 겪은 의식의 변형을 명확히 대조합니다."
+        }
+      ]
+    },
+    {
+      "en": "He did not merely disguise Himself as a slave but became one, subject to all human weaknesses and limitations.",
+      "ko": "그는 단순히 종인 것처럼 가장한 것이 아니라 진정한 종이 되었으며, 모든 인간적 약점과 한계에 종속되셨다.",
+      "vocab": [
+        {
+          "word": "disguise",
+          "mean": "가장하다, 변장하다"
+        },
+        {
+          "word": "subject to",
+          "mean": "~에 종속되는, 영향받는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "not merely A but B",
+          "desc": "단순한 연기가 아니라 실존적 전이를 의미하며, 형용사구 subject to는 앞의 one을 부연 설명하여 인간 육신의 한계를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "God who entered death’s door, the human skull, Golgotha, is now the world’s Savior.",
+      "ko": "죽음의 문인 인간의 두뇌, 즉 골고다에 들어가신 하나님은 이제 세상의 구세주이시다.",
+      "vocab": [
+        {
+          "word": "skull",
+          "mean": "두개골"
+        },
+        {
+          "word": "Golgotha",
+          "mean": "골고다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 구조",
+          "desc": "death’s door, the human skull, Golgotha는 연속된 동격으로, 성경 속 골고다 언덕이 곧 인간의 상상력이 거주하는 두뇌(인식의 자리)임을 나타내는 네빌의 심오한 해몽입니다."
+        }
+      ]
+    },
+    {
+      "en": "God is our salvation.",
+      "ko": "하나님은 우리의 구원이다.",
+      "vocab": [
+        {
+          "word": "salvation",
+          "mean": "구원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 보어",
+          "desc": "주어 God과 보어 salvation이 직접 연결되어 외적인 구원자가 아닌 내면의 하나님 자체가 구원이라는 진리를 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Our God is a God of salvation; and to God, the Lord, belongs escape from death.”",
+      "ko": "“우리 하나님은 구원의 하나님이시라 사망에서 벗어남은 주 여호와로 말미암거니와.”",
+      "vocab": [
+        {
+          "word": "escape",
+          "mean": "탈출, 면함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "desc": "to God, the Lord, belongs escape에서 전치사구가 앞으로 도치되어 소유와 주권이 오직 하나님께 있음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Unless I die thou canst not live; But if I die I shall arise again and thou with Me.”",
+      "ko": "“내가 죽지 않으면 네가 살 수 없고, 내가 죽으면 내가 다시 일어날 것이며 너도 나와 함께 하리라.”",
+      "vocab": [
+        {
+          "word": "arise",
+          "mean": "일어나다, 부활하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건문",
+          "desc": "Unless와 if 조건절을 통해 에고의 죽음과 신적 자아의 부활이라는 영적 변형의 메커니즘을 윌리엄 블레이크의 시구를 빌려 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The grain of wheat sets out the mystery of life through death.",
+      "ko": "밀알은 죽음을 통한 생명의 신비를 보여준다.",
+      "vocab": [
+        {
+          "word": "grain",
+          "mean": "곡물, 낱알"
+        },
+        {
+          "word": "mystery",
+          "mean": "신비"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 동사",
+          "desc": "The grain of wheat를 주어로 하여 자연의 비유를 통해 영적 진리를 시각화합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Unless a grain of wheat falls into the earth and dies, it remains alone; but if it dies, it bears much fruit.”",
+      "ko": "“밀알이 땅에 떨어져 죽지 않으면 한 알 그대로 있고, 죽으면 많은 열매를 맺느니라.”",
+      "vocab": [
+        {
+          "word": "falls",
+          "mean": "떨어지다"
+        },
+        {
+          "word": "remains",
+          "mean": "남아 있다"
+        },
+        {
+          "word": "fruit",
+          "mean": "열매"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "복합 조건절",
+          "desc": "Unless절과 but if절의 대조를 통해 씨앗의 소멸이 곧 새로운 형태의 확장된 생명으로 이어지는 부활의 원리를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "This is the secret of God’s plan of salvation.",
+      "ko": "이것이 하나님의 구원 계획의 비밀이다.",
+      "vocab": [
+        {
+          "word": "secret",
+          "mean": "비밀"
+        },
+        {
+          "word": "plan",
+          "mean": "계획"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소유격 중첩",
+          "desc": "God’s plan of salvation을 통해 구원이 우연이 아니라 신의 치밀한 영적 법칙임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "God achieves His purpose by self-limitation, by contraction in order to expand.",
+      "ko": "하나님은 자기 제한을 통해, 확장하기 위한 수축을 통해 자신의 목적을 달성하신다.",
+      "vocab": [
+        {
+          "word": "achieves",
+          "mean": "달성하다"
+        },
+        {
+          "word": "self-limitation",
+          "mean": "자기 제한"
+        },
+        {
+          "word": "contraction",
+          "mean": "수축"
+        },
+        {
+          "word": "expand",
+          "mean": "확장하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 병치",
+          "desc": "by self-limitation과 by contraction이 병치되어 신이 무한에서 유한으로 내려오는 창조의 역설적 원리(수축을 통한 확장)를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "God Himself",
+      "ko": "하나님 자신",
+      "vocab": [
+        {
+          "word": "Himself",
+          "mean": "스스로, 자신"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조 대명사",
+          "desc": "문장이 미완성 상태로 끝맺어지며, 구원의 주체가 타자가 아닌 바로 하나님 자신(우리 안의 인간 의식)임을 강렬하게 여운 남깁니다."
+        }
+      ]
+    },
+    {
+      "en": "enters Death’s Door, my skull, and lays down in the Grave with me.",
+      "ko": "죽음의 문, 즉 나의 두개골로 들어와 나와 함께 무덤에 누우신다.",
+      "vocab": [
+        {
+          "word": "skull",
+          "mean": "두개골, 네빌 고다드의 사상에서 골고다(Golgotha)이자 인간의 상상력이 갇힌 상징적 장소"
+        },
+        {
+          "word": "grave",
+          "mean": "무덤, 육신이라는 제한된 인간의 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어 생략 구문",
+          "desc": "앞 문장과 연결되는 구조로 주어 'God' 또는 'He'가 생략된 채 동사 enters와 lays가 병치되어 있습니다."
+        },
+        {
+          "tag": "동격 표현",
+          "desc": "Death’s Door와 my skull이 콤마로 연결되어 죽음의 문이 곧 인간의 두개골임을 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "And with apologies to William Blake: “What’er is done to me I cannot know, And if you’ll ask me I will swear it so.",
+      "ko": "그리고 윌리엄 블레이크에게 양해를 구하며 말하건대: '내게 무슨 일이 일어나는지 나는 알 수 없고, 그대가 내게 묻는다면 나는 맹세코 그렇다고 하리라.'",
+      "vocab": [
+        {
+          "word": "with apologies to",
+          "mean": "~에게 양해를 구하며"
+        },
+        {
+          "word": "What’er",
+          "mean": "Whatever의 축약형, 무엇이든"
+        },
+        {
+          "word": "swear",
+          "mean": "맹세하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 및 목적어 전치",
+          "desc": "What’er is done to me가 종속절의 목적어 강조를 위해 문두로 도치되었습니다."
+        },
+        {
+          "tag": "조건절과 주절의 시제",
+          "desc": "If you’ll ask(미래의 의지를 나타내는 will)와 I will swear가 만나 조건 속에서 확고한 미래의 행동을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Whether ’tis good or evil none’s to blame: Only God can take the pride, only God the shame.”",
+      "ko": "그것이 선이든 악이든 비난받을 사람은 아무도 없다: 오직 하나님만이 영광을 취하시고, 오직 하나님만이 수치를 취하신다.'",
+      "vocab": [
+        {
+          "word": "none’s",
+          "mean": "none is의 축약형, 아무도 ~않다"
+        },
+        {
+          "word": "blame",
+          "mean": "비난하다, 탓하다"
+        },
+        {
+          "word": "pride",
+          "mean": "자랑, 영광"
+        },
+        {
+          "word": "shame",
+          "mean": "수치, 부끄러움"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "be to 용법",
+          "desc": "none’s to blame은 '비난받아 마땅하다'라는 당위와 가능의 의미를 지닙니다."
+        },
+        {
+          "tag": "대구법과 동사 생략",
+          "desc": "only God can take the pride, only God [can take] the shame 형태로 두 번째 절에서 조동사와 본동사가 생략되어 운율감을 살렸습니다."
+        }
+      ]
+    },
+    {
+      "en": "“And I am sure that He who began a good work in me will bring it to completion at the day of Jesus Christ.”",
+      "ko": "'그리고 나는 내 안에서 선한 일을 시작하신 그분이 예수 그리스도의 날에 그것을 완성하실 것을 확신합니다.'",
+      "vocab": [
+        {
+          "word": "bring to completion",
+          "mean": "완성하다, 끝맺다"
+        },
+        {
+          "word": "the day of Jesus Christ",
+          "mean": "예수 그리스도의 날, 인간 안에서 그리스도가 깨어나는 각성의 순간"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "He who began a good work in me에서 who절이 주어 He를 수식하며, 내 안에서 역사하시는 신적 자아를 가리킵니다."
+        },
+        {
+          "tag": "확신의 명사절",
+          "desc": "am sure 뒤에 이어지는 that절은 주어의 내면적 확신 내용을 온전히 보완합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Phil. 1:6) When the image of the unbegotten is formed in me, then He who was so long tightly furled within me, unwinds Himself, and I am He.",
+      "ko": "(빌립보서 1:6) 피조되지 않은 자의 형상이 내 안에서 형성될 때, 오랫동안 내 안에 꽁꽁 말려 있던 그분이 스스로를 풀어내시고, 나는 그분이 된다.",
+      "vocab": [
+        {
+          "word": "unbegotten",
+          "mean": "피조되지 않은 자, 태어난 적이 없는 근원의 존재(하나님)"
+        },
+        {
+          "word": "tightly furled",
+          "mean": "단단히 말려 있는, 웅크려 있는"
+        },
+        {
+          "word": "unwinds",
+          "mean": "풀리다, 감긴 것을 풀다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "When-then 상관구문",
+          "desc": "When절(조건/시간)과 then절(결과)이 호응하여 내적 신성 발현의 인과관계를 명확히 보여줍니다."
+        },
+        {
+          "tag": "재귀대명사 용법",
+          "desc": "unwinds Himself에서 재귀대명사를 사용하여 하나님이 외부가 아닌 '자기 자신'을 스스로 펼쳐내심을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“No one has ascended into Heaven but He who descended from heaven, the Son of Man.”",
+      "ko": "'하늘에서 내려온 자, 곧 인자 외에는 하늘로 승천한 자가 아무도 없다.'",
+      "vocab": [
+        {
+          "word": "ascend",
+          "mean": "올라가다, 승천하다"
+        },
+        {
+          "word": "descend",
+          "mean": "내려오다, 육화하다"
+        },
+        {
+          "word": "the Son of Man",
+          "mean": "인자, 인간의 모습으로 나타난 신성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 but의 의미",
+          "desc": "여기서 but은 '~를 제외하고'라는 의미의 전치사로 except와 같은 기능을 합니다."
+        },
+        {
+          "tag": "동격 구조",
+          "desc": "He who descended from heaven과 the Son of Man이 동격으로 연결되어 내려온 자가 곧 인자임을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "(John 3:13) God Himself voluntarily descended into His grave Golgotha, my skull.",
+      "ko": "(요한복음 3:13) 하나님 자신은 자발적으로 자신의 무덤인 골고다, 즉 나의 두개골로 내려오셨다.",
+      "vocab": [
+        {
+          "word": "voluntarily",
+          "mean": "자발적으로, 기꺼이"
+        },
+        {
+          "word": "Golgotha",
+          "mean": "골고다, 해골이라는 뜻으로 인간의 두개골을 상징"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조 용법",
+          "desc": "주어 God 바로 뒤에 붙은 Himself는 하나님이 타의가 아닌 전적으로 자발적인 의도로 내려왔음을 강조합니다."
+        },
+        {
+          "tag": "격식 없는 동격",
+          "desc": "His grave Golgotha와 my skull이 연속 동격으로 묶여 무덤과 골고다와 나의 두개골이 모두 같은 실재임을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "“I lay down My life, that I may take it again.",
+      "ko": "'내가 내 목숨을 버리는 것은 그것을 다시 얻기 위함이다.",
+      "vocab": [
+        {
+          "word": "lay down",
+          "mean": "내려놓다, 버리다, 목숨을 바치다"
+        },
+        {
+          "word": "take again",
+          "mean": "다시 취하다, 부활하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적을 나타내는 부사절",
+          "desc": "that I may take it again은 목숨을 버리는 행위의 신성한 목적과 의도를 나타내는 조동사 may가 포함된 부사절입니다."
+        }
+      ]
+    },
+    {
+      "en": "No one takes it from Me, but I lay it down of My own accord.”",
+      "ko": "아무도 내게서 그것을 빼앗지 못하며, 오직 내가 내 뜻으로 그것을 버릴 뿐이다.'",
+      "vocab": [
+        {
+          "word": "of My own accord",
+          "mean": "자발적으로, 내 스스로의 의지로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조와 한정",
+          "desc": "No one takes it... but I lay it down 구조를 통해 타력에 의한 죽음이 아니라 전적인 자발적 몰입임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "(John 10:17-18) “For your maker is your husband, the Lord of hosts is His Name.”",
+      "ko": "(요한복음 10:17-18) '이는 너를 지으신 분이 네 남편이시며, 만군의 주가 그분의 이름이시기 때문이다.'",
+      "vocab": [
+        {
+          "word": "maker",
+          "mean": "조물주, 창조자"
+        },
+        {
+          "word": "husband",
+          "mean": "남편, 성경적 비유에서 영혼과 결합하는 신성한 반려자"
+        },
+        {
+          "word": "the Lord of hosts",
+          "mean": "만군의 주"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "독립된 두 절의 나열",
+          "desc": "주어와 보어가 명확히 대치되는 두 개의 평서문이 콤마로 이어져 신의 정체성을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Isa. 54:5) And, “He cleaves to his wife and they become one flesh.”",
+      "ko": "(이사야 54:5) 그리고, '그는 아내와 연합하여 둘이 한 육체가 된다.'",
+      "vocab": [
+        {
+          "word": "cleave",
+          "mean": "달라붙다, 굳게 결합하다, 연합하다"
+        },
+        {
+          "word": "one flesh",
+          "mean": "한 육체, 완전히 하나가 된 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재시제 진리 표현",
+          "desc": "cleaves와 become을 현재시제로 사용하여 영원히 변치 않는 신과 인간의 영적 결혼 상태를 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Gen. 2:24) For, “He who is united to the Lord becomes one Spirit with Him.”",
+      "ko": "(창세기 2:24) 왜냐하면, '주와 연합하는 자는 그와 한 영이 되기 때문이다.'",
+      "vocab": [
+        {
+          "word": "be united to",
+          "mean": "~와 연합되다"
+        },
+        {
+          "word": "one Spirit",
+          "mean": "한 영, 신과 인간이 완전히 합일된 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동분사구의 수식",
+          "desc": "He who is united to the Lord에서 수동태 분사구(is united)가 주어 He를 수식하여 주체적인 합일보다는 은총에 의한 연합을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "“What therefore God has joined together, let not man put asunder.”",
+      "ko": "'그러므로 하나님이 짝지어 주신 것을 사람이 나누지 못할지니라.'",
+      "vocab": [
+        {
+          "word": "join together",
+          "mean": "함께 묶다, 결합하다"
+        },
+        {
+          "word": "put asunder",
+          "mean": "갈라놓다, 분리하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적어 선행 도치",
+          "desc": "What therefore God has joined together에서 관계대명사절의 목적어 What이 문장 맨 앞으로 도치되어 강조되고 있습니다."
+        },
+        {
+          "tag": "금지의 명령법",
+          "desc": "let not man put asunder는 3인칭 주어 man에 대한 엄격한 금지를 나타내는 명령문 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "(Mark 10:9) Man is God’s emanation, yet his wife till the sleep of death is past.",
+      "ko": "(마가복음 10:9) 인간은 하나님의 유출이지만, 죽음의 잠이 끝날 때까지는 그분의 아내이다.",
+      "vocab": [
+        {
+          "word": "emanation",
+          "mean": "유출, 근원으로부터 흘러나온 존재"
+        },
+        {
+          "word": "sleep of death",
+          "mean": "죽음의 잠, 무지 속에서 잠들어 있는 인간의 육신적 삶"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "생략 구문",
+          "desc": "yet [man is] his wife 형태로 반복되는 주어와 동사가 생략되어 간결한 대조를 이룹니다."
+        },
+        {
+          "tag": "시간 부사절",
+          "desc": "till the sleep of death is past가 주절의 상태가 지속되는 기한을 한정합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Rouse thyself! Why slee-pest thou Lord? Awake!”",
+      "ko": "'스스로를 깨우라! 주여 어찌하여 주무시나이까? 깨어날지어다!'",
+      "vocab": [
+        {
+          "word": "rouse",
+          "mean": "깨우다, 분발시키다"
+        },
+        {
+          "word": "thyself",
+          "mean": "너 자신을 (thou의 재귀대명사 목적격)"
+        },
+        {
+          "word": "awake",
+          "mean": "깨어나다, 각성하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "고어체 대명사",
+          "desc": "thyself, thou 등 고어적 형태를 사용하여 성경적 엄숙함과 영적 호소력을 높였습니다."
+        },
+        {
+          "tag": "의문문과 명령문의 혼용",
+          "desc": "탄식 섞인 의문문(Why sleepest thou)과 직접적인 명령문(Awake)이 나란히 배치되어 내면의 신을 향해 각성을 촉구합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Ps. 44:23) When He awakes, “I am He.”",
+      "ko": "(시편 44:23) 그가 깨어날 때, '내가 바로 그이다.'",
+      "vocab": [
+        {
+          "word": "awake",
+          "mean": "깨어나다, 잠에서 깨다"
+        },
+        {
+          "word": "I am He",
+          "mean": "나는 그이다, 성경의 'I AM'이자 유일한 궁극적 실재 선언"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "단문 구조",
+          "desc": "When He awakes라는 시점 부사절 뒤에 곧바로 절대적 선언인 I am He가 이어지며 신비적 일체감을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "God laid Himself down within me to sleep, and as He slept He dreamed a dream;",
+      "ko": "하나님은 잠들기 위해 내 안에 스스로 누우셨고, 그가 잠든 동안 꿈을 꾸셨다.",
+      "vocab": [
+        {
+          "word": "lay down",
+          "mean": "눕다, 뉘이다"
+        },
+        {
+          "word": "dream a dream",
+          "mean": "꿈을 꾸다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위접속사 병치",
+          "desc": "and를 기준으로 God laid Himself down~과 He dreamed a dream이라는 두 개의 독립절이 대등하게 연결됩니다."
+        },
+        {
+          "tag": "시간 부사절",
+          "desc": "as He slept가 주절인 꿈을 꾼 시점을 동시에 포착합니다."
+        }
+      ]
+    },
+    {
+      "en": "He dreamed that He is I and when He awakes I am He.",
+      "ko": "그는 자신이 나라고 꿈꾸었으며, 그가 깨어날 때 나는 그가 된다.",
+      "vocab": [
+        {
+          "word": "dream",
+          "mean": "꿈꾸다, 상상하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "접속사 that절",
+          "desc": "dreamed의 목적어 역할을 하는 that절 내부에서 He is I라는 주격 보어 구문이 신과 인간의 정체성 전도를 보여줍니다."
+        },
+        {
+          "tag": "대칭적 구조",
+          "desc": "He is I(그가 나이다)와 I am He(내가 그이다)가 서로 상반되면서도 완벽한 거울상을 이룹니다."
+        }
+      ]
+    },
+    {
+      "en": "But how do I know that I am He?",
+      "ko": "그러나 내가 그라는 것을 어떻게 아는가?",
+      "vocab": [
+        {
+          "word": "how",
+          "mean": "어떻게, 어떤 방식으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "의문문 구문",
+          "desc": "조동사 do가 주어 I 앞으로 나와 의문문을 형성하며, 지적 탐구의 출발점을 제시합니다."
+        },
+        {
+          "tag": "동격의 명사절",
+          "desc": "know 뒤의 that절은 '내가 그이다'라는 앎의 구체적 내용을 이룹니다."
+        }
+      ]
+    },
+    {
+      "en": "Through the revelation of His Son David who in the Spirit calls me Father.",
+      "ko": "영 안에서 나를 아버지라 부르는 그의 아들 다윗의 계시를 통해서이다.",
+      "vocab": [
+        {
+          "word": "revelation",
+          "mean": "계시, 영적 진실의 드러남"
+        },
+        {
+          "word": "in the Spirit",
+          "mean": "영 안에서, 영적 의식 상태 속에서"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구의 주절 대용",
+          "desc": "문장이 Through로 시작하는 전치사구로 이루어져 앞 문장의 의문(how)에 대한 직접적인 수단을 설명합니다."
+        },
+        {
+          "tag": "관계대명사 계속적/한정적 수식",
+          "desc": "His Son David 뒤의 who절이 다윗의 영적 지위를 설명하며, 나(인간)의 정체가 곧 아버지 하나님임을 확증하는 근거를 제공합니다."
+        }
+      ]
+    },
+    {
+      "en": "## Chapter 3",
+      "ko": "## 제 3 장",
+      "vocab": [
+        {
+          "word": "Chapter",
+          "mean": "장, 챕터"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "제목 표기",
+          "desc": "텍스트의 구조적 단위를 나누는 장 제목입니다."
+        }
+      ]
+    },
+    {
+      "en": "“I am the way, and the truth, and the life; no one comes to the Father, but by Me… He who has seen Me has seen the Father.”",
+      "ko": "'나는 길이요, 진리요, 생명이다; 나로 말미암지 않고는 아버지께로 올 자가 없다… 나를 본 자는 아버지를 보았다.'",
+      "vocab": [
+        {
+          "word": "the way, the truth, and the life",
+          "mean": "길이요 진리요 생명, 인간 내면의 상상력(그리스도)의 다른 이름"
+        },
+        {
+          "word": "come to",
+          "mean": "~에게로 오다, 도달하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삼중 병치 구조",
+          "desc": "the way, the truth, and the life가 등위접속사 and로 연결되어 신의 본질을 세 가지 측면으로 강조합니다."
+        },
+        {
+          "tag": "관계대명사 선행 주어",
+          "desc": "He who has seen Me에서 who절이 주어 He를 수식하며, 외적인 시각이 아닌 내적 각성을 통한 신과의 합일을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Union with the risen Christ is the only way to the Father.",
+      "ko": "부활하신 그리스도와의 연합만이 아버지께로 가는 유일한 길입니다.",
+      "vocab": [
+        {
+          "word": "union",
+          "mean": "연합"
+        },
+        {
+          "word": "risen",
+          "mean": "부활한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 보어",
+          "desc": "'Union with the risen Christ'가 주어이며 'is'를 통해 아버지와의 하나됨이라는 신비적 진리를 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Because, “Christ and the Father are one” (John 10:30).",
+      "ko": "왜냐하면 “그리스도와 아버지는 하나이기 때문입니다” (요한복음 10:30).",
+      "vocab": [
+        {
+          "word": "one",
+          "mean": "하나"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용",
+          "desc": "네빌 고다드의 핵심 사상인 인간의 상상력(그리스도)과 근원적 존재(아버지)의 동일성을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The way leads through death to life eternal.",
+      "ko": "그 길은 죽음을 통하여 영원한 생명으로 이끕니다.",
+      "vocab": [
+        {
+          "word": "eternal",
+          "mean": "영원한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치적 여운",
+          "desc": "자아의 죽음(거듭남)을 통과해야만 참된 영적 실재에 도달한다는 신비주의적 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "Man’s search for Christ as the authority which he can trust, which he can respect, to which he can submit is his longing for the Father That lives in him, for That same Father Whom the Christ of the Gospel claims to be.",
+      "ko": "신뢰하고, 존경하고, 복종할 수 있는 권위로서의 그리스도를 찾는 인간의 탐구는, 그 안에 사는 아버지에 대한, 그리고 복음의 그리스도가 주장하는 바로 그 아버지에 대한 갈망입니다.",
+      "vocab": [
+        {
+          "word": "authority",
+          "mean": "권위"
+        },
+        {
+          "word": "longing",
+          "mean": "갈망"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절 중첩",
+          "desc": "주어 'Man's search'에 여러 관계대명사절('which he can trust' 등)이 이어져 주어와 동사 'is' 사이의 거리가 먼 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "The Christ of the Gospel is the Eternal Father in man.",
+      "ko": "복음의 그리스도는 인간 안에 계신 영원한 아버지이십니다.",
+      "vocab": [
+        {
+          "word": "Eternal Father",
+          "mean": "영원한 아버지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재론적 정체",
+          "desc": "역사적 인물이 아니라 인간 내면의 신성(하나님)이 곧 그리스도임을 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "This longing for the Father is the cry of man that ends the New Testament.",
+      "ko": "아버지에 대한 이 갈망은 신약성경을 끝맺는 인간의 부르짖음입니다.",
+      "vocab": [
+        {
+          "word": "cry",
+          "mean": "부르짖음"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 관계대명사",
+          "desc": "that절이 'the cry of man'을 수식하며 성경의 종착점이 내면의 외침임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Come, Lord Jesus!”",
+      "ko": "“오소서, 주 예수여!”",
+      "vocab": [
+        {
+          "word": "Come",
+          "mean": "오다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문",
+          "desc": "내면의 그리스도(상상력)의 발현을 촉구하는 성경적 기도의 형태입니다."
+        }
+      ]
+    },
+    {
+      "en": "“Do you not realize that Jesus Christ is in you?”",
+      "ko": "“예수 그리스도께서 여러분 안에 계신 것을 여러분은 알지 못합니까?”",
+      "vocab": [
+        {
+          "word": "realize",
+          "mean": "깨닫다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "의문문과 명사절",
+          "desc": "부정 의문문으로 독자의 자각을 강하게 요구하며, that절이 목적어 역할을 합니다."
+        }
+      ]
+    },
+    {
+      "en": "“And in Him the whole fullness of deity dwells bodily?” (Col.",
+      "ko": "“그리고 그분 안에는 신성의 모든 충만이 육체로 거하시지 않습니까?” (골로새서)",
+      "vocab": [
+        {
+          "word": "fullness",
+          "mean": "충만"
+        },
+        {
+          "word": "deity",
+          "mean": "신성"
+        },
+        {
+          "word": "bodily",
+          "mean": "육체로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "장소 부사구 도치",
+          "desc": "'in Him'이 문장 앞으로 나와 주어인 'the whole fullness'를 강조하는 도치 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "2:9), not figuratively, but genuinely in a body.",
+      "ko": "2:9), 비유적으로가 아니라 진정으로 육체 안에 말입니다.",
+      "vocab": [
+        {
+          "word": "figuratively",
+          "mean": "비유적으로"
+        },
+        {
+          "word": "genuinely",
+          "mean": "진정으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문",
+          "desc": "'not A but B' 구문을 통해 추상적 개념이 아닌 구체적 육체성(인간의 몸)을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "This is “the mystery hidden for ages and generations which is Christ in you, the hope of glory.”",
+      "ko": "이것은 “여러 시대와 세대 동안 감추어져 있던 비밀인데, 곧 여러분 안에 계신 그리스도요, 영광의 소망입니다.”",
+      "vocab": [
+        {
+          "word": "mystery",
+          "mean": "비밀"
+        },
+        {
+          "word": "hidden",
+          "mean": "감추어진"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사 수식",
+          "desc": "과거분사 'hidden'이 'mystery'를 뒤에서 수식하며 오랜 세월 봉인된 진리를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Imperfect knowledge of Jesus has blinded man to the true nature of the Father.",
+      "ko": "예수에 대한 불완전한 지식은 인간이 아버지의 참된 본성을 보지 못하게 눈멀게 했습니다.",
+      "vocab": [
+        {
+          "word": "imperfect",
+          "mean": "불완전한"
+        },
+        {
+          "word": "blinded",
+          "mean": "눈멀게 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "blind A to B",
+          "desc": "A에게서 B를 보지 못하게 가리다라는 의미의 구문으로, 오해로 인한 영적 무지를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Lord Jesus is God the Father Who became man that man might become the Lord Jesus, the Father.",
+      "ko": "주 예수님은 인간이 되신 하나님 아버지이시며, 이는 인간이 주 예수님 곧 아버지가 되게 하기 위함입니다.",
+      "vocab": [
+        {
+          "word": "became man",
+          "mean": "사람이 되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적을 나타내는 부사절",
+          "desc": "'that man might become'을 통해 성육신의 궁극적 목적이 인간의 신화(神化) 혹은 아버지와의 일체화에 있음을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "Historian’s researches cannot yield knowledge of who the Father is.",
+      "ko": "역사학자의 연구는 아버지가 누구인지에 대한 지식을 산출해낼 수 없습니다.",
+      "vocab": [
+        {
+          "word": "researches",
+          "mean": "연구"
+        },
+        {
+          "word": "yield",
+          "mean": "산출하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "간접의문문 목적어",
+          "desc": "전치사 'of'의 목적어로 'who the Father is'라는 의문사절이 사용되어 지적 연구의 한계를 지적합니다."
+        }
+      ]
+    },
+    {
+      "en": "“No one can say ‘Jesus is Lord’ except by the Holy Spirit.”",
+      "ko": "“성령으로 말미암지 않고는 누구든지 ‘예수는 주님이시다’라고 말할 수 없습니다.”",
+      "vocab": [
+        {
+          "word": "except",
+          "mean": "~를 제외하고"
+        },
+        {
+          "word": "Holy Spirit",
+          "mean": "성령"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "제외 구문",
+          "desc": "'except by'를 통해 내면의 깨달음(성령의 역사) 없이는 진정한 고백이 불가능함을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "Man’s goal is to find the Father, but God the Father is made known only through His Son.",
+      "ko": "인간의 목표는 아버지를 찾는 것이지만, 하나님 아버지는 오직 그의 아들을 통해서만 알려집니다.",
+      "vocab": [
+        {
+          "word": "goal",
+          "mean": "목표"
+        },
+        {
+          "word": "made known",
+          "mean": "알려지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대등절 연결",
+          "desc": "등위접속사 'but'을 중심으로 인간의 구도적 노력과 신의 계시적 방식이 대조를 이룹니다."
+        }
+      ]
+    },
+    {
+      "en": "“No one knows the Son except the Father, and no one knows the Father except the Son and any one to whom the Son chooses to reveal Him.”",
+      "ko": "“아버지 외에는 아들을 아는 자가 없고, 아들과 또 아들이 계시하기로 원하는 자 외에는 아버지를 아는 자가 없습니다.”",
+      "vocab": [
+        {
+          "word": "reveal",
+          "mean": "계시하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절 포함",
+          "desc": "'to whom' 이하의 관계대명사절이 선행사 'any one'을 수식하며 계시의 주권이 아들에게 있음을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Only the Father and the Son know each other.",
+      "ko": "오직 아버지와 아들만이 서로를 아십니다.",
+      "vocab": [
+        {
+          "word": "each other",
+          "mean": "서로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상호대명사",
+          "desc": "'each other'를 사용하여 아버지와 아들의 상호적이고 배타적인 일체감을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Call no man your Father on earth, for you have one Father, who is in Heaven” (Matt. 23:9) and Heaven is “within you” (Luke 17:21).",
+      "ko": "“땅에 있는 누구도 너희 아버지라 부르지 말라, 너희에게는 한 분 아버지가 계시니, 곧 하늘에 계신 분이시다” (마태복음 23:9) 그리고 하늘은 “너희 안에” 있습니다 (누가복음 17:21).",
+      "vocab": [
+        {
+          "word": "earth",
+          "mean": "땅"
+        },
+        {
+          "word": "Heaven",
+          "mean": "하늘"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "장소의 재정의",
+          "desc": "성경 구절들을 결합하여 전통적인 외적 천국 개념을 인간 내면의식의 각성으로 전환하는 네빌 고다드의 해석학적 절정입니다."
+        }
+      ]
+    },
+    {
+      "en": "And David said: “I will tell of the decree of the Lord; He said to me, ‘You are My son, today I have begotten you’ ” (Ps. 2:7).",
+      "ko": "그리고 다윗이 말했습니다. '내가 주의 법령을 선포하리라. 그가 내게 말씀하시기를, 너는 내 아들이라, 오늘 내가 너를 낳았도다 하셨도다' (시편 2:7).",
+      "vocab": [
+        {
+          "word": "decree",
+          "mean": "법령, 칙령"
+        },
+        {
+          "word": "begotten",
+          "mean": "낳은, 잉태된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct Quotation",
+          "desc": "큰따옴표와 작은따옴표의 중첩 구조를 통해 성경 구절을 정확히 인용하며, 신적인 선언의 권위를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "David’s divine sonship is unique, the only one of its kind and wholly supernatural.",
+      "ko": "다윗의 신성한 아들 됨은 독특하며, 그 종류 중 유일하고 전적으로 초자연적입니다.",
+      "vocab": [
+        {
+          "word": "divine sonship",
+          "mean": "신성한 아들 됨, 신자격"
+        },
+        {
+          "word": "supernatural",
+          "mean": "초자연적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Apposition",
+          "desc": "주어 'David's divine sonship'과 명사구 'the only one of its kind'가 동격으로 연결되어 영적 실체의 유일성을 부각합니다."
+        }
+      ]
+    },
+    {
+      "en": "He was “born, not of blood nor of the will of the flesh nor of the will of man, but of God” (John 1:13).",
+      "ko": "그는 '혈통으로나 육정으로나 사람의 뜻으로 나지 아니하고 오직 하나님께로부터 난' 자들이었습니다 (요한복음 1:13).",
+      "vocab": [
+        {
+          "word": "will of the flesh",
+          "mean": "육신의 뜻"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Correlative Conjunction",
+          "desc": "'not A nor B nor C, but D' 구문을 사용하여 인간적 기원을 전면 부인하고 신성한 탄생만을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Father will be found by man only in a first person singular, present tense experience when David in the Spirit calls him Father, that is, my Lord.",
+      "ko": "영 안에서 다윗이 그를 아버지, 즉 나의 주라고 부를 때, 아버지는 오직 1인칭 단수, 현재 시제의 경험 속에서만 인간에게 발견될 것입니다.",
+      "vocab": [
+        {
+          "word": "first person singular",
+          "mean": "1인칭 단수"
+        },
+        {
+          "word": "present tense experience",
+          "mean": "현재 시제의 경험"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mystical Realization",
+          "desc": "추상적인 교리가 아닌 주체적인 '1인칭 현재 경험'으로서의 영적 깨달음을 강조하는 문장 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "Jesus asked them a question, saying, “What do you think of the Christ? Whose Son is He?”",
+      "ko": "예수께서 그들에게 질문을 던지시며 말씀하셨습니다. '너희는 그리스도에 대해 어떻게 생각하느냐? 누구의 아들이냐?'",
+      "vocab": [
+        {
+          "word": "Christ",
+          "mean": "그리스도, 메시아"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct Question",
+          "desc": "현재분사구 'saying' 이하에 직접 의문문을 배치하여 독자의 내면적 성찰을 유도합니다."
+        }
+      ]
+    },
+    {
+      "en": "They said to him, “The son of David.”",
+      "ko": "그들이 그에게 말했습니다. '다윗의 아들이니이다.'",
+      "vocab": [
+        {
+          "word": "son of David",
+          "mean": "다윗의 자손"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Ellipsis",
+          "desc": "주어와 동사가 생략된 단답형 구조('He is the son of David'의 축약)로 대화의 속도감을 높입니다."
+        }
+      ]
+    },
+    {
+      "en": "He said to them, “How is it then that David, in the Spirit, calls Him Lord… If David thus calls Him Lord, how is He his Son?” (Matt. 22:41-45).",
+      "ko": "그가 그들에게 말씀하셨습니다. '그러면 어찌하여 다윗이 영에 감동되어 그를 주라 부르느냐… 만일 다윗이 이같이 그를 주라 부를진대 어찌 그의 자손이 되겠느냐?' (마태복음 22:41-45).",
+      "vocab": [
+        {
+          "word": "in the Spirit",
+          "mean": "영 안에 감동되어"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Socratic Irony",
+          "desc": "수사 의문을 사용하여 육신적 혈통을 뛰어넘는 영적 정체성의 비밀을 역설적으로 파헤칩니다."
+        }
+      ]
+    },
+    {
+      "en": "In Hebrew thought, history consists of all the generations of men and their experiences fused into one great whole and this concentrated time, into which all the generations are fused, and from which they spring, is called “Eternity.”",
+      "ko": "히브리 사상에서 역사란 인간의 모든 세대와 그들의 경험이 하나의 거대한 전체로 융합된 것으로 구성되며, 모든 세대가 융합되어 있고 또 그들로부터 솟아 나오는 이 응축된 시간을 '영원'이라고 부릅니다.",
+      "vocab": [
+        {
+          "word": "fused",
+          "mean": "융합된"
+        },
+        {
+          "word": "concentrated time",
+          "mean": "응축된 시간"
+        },
+        {
+          "word": "Eternity",
+          "mean": "영원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Extended Subject-Verb Relationship",
+          "desc": "관계대명사절('into which...', 'from which...')이 삽입되어 'this concentrated time'이라는 주어를 수식하며 시공간을 초월한 영원의 개념을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Scripture states that: “God has put eternity into man’s mind, yet so that man cannot find out what God has done from the beginning to the end.” (Ecc. 3:11)",
+      "ko": "성경은 이렇게 말합니다. '하나님이 그들에게 영원을 사모하는 마음을 주셨느니라 그러나 하나님이 하시는 일의 시종을 사람으로 측량할 수 없게 하셨도다' (전도서 3:11).",
+      "vocab": [
+        {
+          "word": "eternity",
+          "mean": "영원"
+        },
+        {
+          "word": "find out",
+          "mean": "알아내다, 측량하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Subordinate Clause",
+          "desc": "접속사 'so that' 구문을 통해 인간 내면에 심겨진 영원과 그것을 온전히 파악할 수 없는 인간의 한계를 대조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Hebrew word for “eternity” means also “youth, stripling, young man.”",
+      "ko": "'영원'을 뜻하는 히브리어는 또한 '청년, 풋내기, 젊은이'를 의미합니다.",
+      "vocab": [
+        {
+          "word": "stripling",
+          "mean": "풋내기, 젊은이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Lexical Equivalence",
+          "desc": "어원의 이중적 의미(영원=젊은이)를 연결하여 성경 속 다윗(젊은이)이 곧 영원의 화신임을 암시하는 네빌 특유의 해석 방식입니다."
+        }
+      ]
+    },
+    {
+      "en": "Saul saw David and said to Abner “Whose son is this youth… Inquire Whose son the stripling is?”",
+      "ko": "사울이 다윗을 보고 아브네르에게 말했습니다. '이 청년이 누구의 아들이냐… 저 젊은이가 누구의 아들인지 알아보라.'",
+      "vocab": [
+        {
+          "word": "Inquire",
+          "mean": "문의하다, 알아보다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Indirect Question embedded",
+          "desc": "의문사 'Whose'로 시작하는 간접의문문이 명사절 역할 및 인용구 내에서 반복되어 기원의 문제를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Then turning to David he said: “Whose son are you, young man?”",
+      "ko": "그러고 나서 다윗에게 돌이켜 그가 물었습니다. '젊은이여, 그대는 누구의 아들인가?'",
+      "vocab": [
+        {
+          "word": "turning to",
+          "mean": "~로 고개를 돌리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Participial Phrase",
+          "desc": "분사구문 'turning to David'가 주절의 행동을 생생하게 묘사하며 시선을 전환합니다."
+        }
+      ]
+    },
+    {
+      "en": "And David answered “I am the son of your servant Jesse the Bethemite” (1 Sam. 17:55-58).",
+      "ko": "그러자 다윗이 대답했습니다. '나는 주의 종 베들레헴 사람 이새의 아들입니다' (사무엘상 17:55-58).",
+      "vocab": [
+        {
+          "word": "servant",
+          "mean": "종, 하인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct Address",
+          "desc": "인물 간의 대화를 직접 인용하여 성경적 사실의 현장감을 부여합니다."
+        }
+      ]
+    },
+    {
+      "en": "Whose son…?",
+      "ko": "누구의 아들인가…?",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Fragment",
+          "desc": "단독으로 쓰인 의문사구로, 본문 전체를 관통하는 핵심 주제인 '기원과 아버지'에 대한 화두를 던집니다."
+        }
+      ]
+    },
+    {
+      "en": "Note in all the passages (1 Sam. 17:55,56,58; Matt. 22:42), the inquiry is not about the son, but about his Father.",
+      "ko": "모든 구절(삼상 17:55,56,58; 마 22:42)에서 그 질문이 아들에 관한 것이 아니라 그의 아버지에 관한 것임을 주목하십시오.",
+      "vocab": [
+        {
+          "word": "inquiry",
+          "mean": "질문, 조사"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Antithetical Structure",
+          "desc": "'not about A, but about B' 구문을 활용하여 표면적인 인물(아들)보다 근원적인 존재(아버지)가 핵심임을 독자에게 지시합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Father made known by David is the eternally true Father.",
+      "ko": "다윗을 통해 알려진 아버지는 영원히 참되신 아버지이십니다.",
+      "vocab": [
+        {
+          "word": "eternally true",
+          "mean": "영원히 진실한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Past Participle Modifier",
+          "desc": "과거분사구 'made known by David'가 주어 'The Father'를 후치 수식하며 계시의 통로를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is in us as persons that God the Father is revealed.",
+      "ko": "하나님 아버지가 계시되는 것은 다름 아닌 인격체로서의 우리 안에서입니다.",
+      "vocab": [
+        {
+          "word": "revealed",
+          "mean": "계시된, 드러난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Cleft Sentence",
+          "desc": "'It is ~ that' 강조 구문을 사용하여 신성의 계시가 추상적 공간이 아닌 인간 개개인의 내면임을 강력하게 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "David said “I am the son of Jesse.",
+      "ko": "다윗이 말했습니다. '나는 이새의 아들이다.'",
+      "vocab": [
+        {
+          "word": "son of Jesse",
+          "mean": "이새의 아들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conclusion Statement",
+          "desc": "간결한 인용문으로 글을 맺으며, 인간적 혈통이라는 외형 뒤에 숨겨진 영적 실체의 정답을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Jesse is any form of the verb to be.",
+      "ko": "이새는 존재하다라는 동사의 어떤 형태든 됩니다.",
+      "vocab": [
+        {
+          "word": "form",
+          "mean": "형태"
+        },
+        {
+          "word": "verb",
+          "mean": "동사"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 보어 구문",
+          "desc": "'is' 뒤에 명사구 'any form of the verb'가 와서 주어의 상태와 존재론적 의미를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "David’s answer was “I am the son of Him Whose Name is ‘I AM.'",
+      "ko": "다윗의 대답은 '나는 이름이 '나는 존재한다'이신 그분의 아들이다'였습니다.",
+      "vocab": [
+        {
+          "word": "answer",
+          "mean": "대답"
+        },
+        {
+          "word": "Whose",
+          "mean": "관계대명사의 소유격 (그분의 ~)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소유격 관계대명사",
+          "desc": "'Him'과 'Name'을 소유격 관계대명사 'Whose'로 연결하여 신성한 이름의 주체성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "‘ I am the son of the Lord.",
+      "ko": "'나는 주의 아들이다.'",
+      "vocab": [
+        {
+          "word": "Lord",
+          "mean": "주, 하나님"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "직설적 선언",
+          "desc": "인간의 영원한 본질이 신성으로부터 비롯되었음을 선언하는 단순 현재형 문장입니다."
+        }
+      ]
+    },
+    {
+      "en": "“",
+      "ko": "\"",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "따옴표 기호",
+          "desc": "텍스트 인용 부호입니다."
+        }
+      ]
+    },
+    {
+      "en": "One of the names for God is the name He gave to Moses.",
+      "ko": "하나님의 이름들 중 하나는 그분이 모세에게 주신 이름입니다.",
+      "vocab": [
+        {
+          "word": "revelation",
+          "mean": "계시"
+        },
+        {
+          "word": "gave",
+          "mean": "주었다 (give의 과거)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수식어구 생략",
+          "desc": "'name' 뒤에 목적격 관계대명사가 생략되어 'He gave to Moses'가 앞의 명사를 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Say to the people of Israel ‘I AM has sent me to you'” (Exod. 3:14).",
+      "ko": "'이스라엘 자손에게 이르기를 내가 너희에게 나를 보내셨다 하라' (출 3:14).",
+      "vocab": [
+        {
+          "word": "people",
+          "mean": "백성, 사람들"
+        },
+        {
+          "word": "sent",
+          "mean": "보냈다 (send의 과거분사)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "직접 인용문",
+          "desc": "성경 구절을 인용하여 'I AM(존재 자체)'이 모세를 파견한 주체임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "He is the Eternal “I AM.”",
+      "ko": "그분은 영원한 '나는 존재한다'이십니다.",
+      "vocab": [
+        {
+          "word": "Eternal",
+          "mean": "영원한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재론적 명명",
+          "desc": "하나님의 본질이 시간과 공간을 초월한 순수한 의식(I AM)임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "God’s first revelation of Himself is as “God Almighty” (Exod. 6:14).",
+      "ko": "하나님 자신의 첫 번째 계시는 '전능하신 하나님'으로서입니다 (출 6:14).",
+      "vocab": [
+        {
+          "word": "Almighty",
+          "mean": "전능한"
+        },
+        {
+          "word": "revelation",
+          "mean": "계시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 보어",
+          "desc": "'as'를 사용하여 하나님의 계시 단계와 속성을 비유적으로 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "His second self-revelation is as “The Eternal I AM” (Exod. 3:14).",
+      "ko": "그분의 두 번째 자기 계시는 '영원한 나는 존재한다'입니다 (출 3:14).",
+      "vocab": [
+        {
+          "word": "self-revelation",
+          "mean": "자기 계시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "단계별 전개",
+          "desc": "전능자에서 영원한 존재 자체(I AM)로의 내면적 깨달음의 진화를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "His final revelation of Himself is as “the Father” (John 17).",
+      "ko": "그분 자신의 최종 계시는 '아버지'로서입니다 (요한복음 17장).",
+      "vocab": [
+        {
+          "word": "final",
+          "mean": "최종의, 마지막의"
+        },
+        {
+          "word": "Father",
+          "mean": "아버지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "궁극적 정체성",
+          "desc": "네빌 신비주의의 핵심인 '하나님 = 아버지 = 인간의 의식(I AM)'이라는 최종 귀결을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Only the Son can reveal God as Father.",
+      "ko": "오직 아들만이 하나님을 아버지로 계시할 수 있습니다.",
+      "vocab": [
+        {
+          "word": "reveal",
+          "mean": "계시하다, 드러내다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "유일성 강조",
+          "desc": "'Only'를 통해 인간 내면의 아들(다윗/그리스도 의식)만이 신의 본질을 완성할 수 있음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“No one (i.e. no human eye) has ever seen God; the only begotten Son, Who is in the bosom of the Father, He has made Him known” (John 1:18).",
+      "ko": "'아무도(즉 어떤 인간의 눈도) 일찍이 하나님을 본 사람이 없습니다. 아버지의 품속에 계신 독생하신 아들이 그를 알게 하셨습니다' (요 1:18).",
+      "vocab": [
+        {
+          "word": "begotten",
+          "mean": "태어난, 낳은"
+        },
+        {
+          "word": "bosom",
+          "mean": "품, 가슴"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽화적 괄호와 동격",
+          "desc": "'i.e.'를 통해 'No one'의 의미를 '인간의 육안'으로 한정하고, 관계대명사절로 아들의 위치를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is God Himself, the Eternal I AM, and His only begotten Son, the eternal youth David, who entered man’s mind.",
+      "ko": "인간의 마음에 들어온 것은 바로 하나님 자신, 즉 영원한 '나는 존재한다'와 그의 독생자이신 영원한 청년 다윗입니다.",
+      "vocab": [
+        {
+          "word": "youth",
+          "mean": "젊은이, 청년"
+        },
+        {
+          "word": "entered",
+          "mean": "들어가다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It is ~ who 강조구문",
+          "desc": "주어인 하나님과 다윗을 강조하기 위해 'It is ... who' 구문을 사용하여 인간 의식의 기원을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "At the end of his journey through the fires of affliction in this Age of Eternal death, man will find David and exclaim: “I have found David… He shall cry to Me, Thou art my Father, my God, and the Rock of my salvation.”",
+      "ko": "영원한 죽음의 이 시대 속에서 고난의 불을 통과하는 여정의 끝에, 인간은 다윗을 발견하고 외칠 것입니다. '내가 다윗을 찾아내었다… 그가 내게 부르짖기를 주는 나의 아버지시요, 나의 하나님이시요, 내 구원의 반석이시라 하리로다.'",
+      "vocab": [
+        {
+          "word": "affliction",
+          "mean": "고통, 고난"
+        },
+        {
+          "word": "exclaim",
+          "mean": "외치다"
+        },
+        {
+          "word": "Rock",
+          "mean": "반석, 바위"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사구와 미래 시제",
+          "desc": "고난의 시대를 거친 후 깨달음에 이르는 영적 진화 과정을 미래 시제로 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Ps. 89:20,26) I do not reveal myself to myself directly as God or as Jesus Christ, but by implication parallel with Scripture, when David in the Spirit calls me Father.",
+      "ko": "(시편 89:20, 26) 나는 나 자신에게 직접적으로 하나님이나 예수 그리스도로서 계시하지 않고, 영 안에서 다윗이 나를 아버지라 부를 때 성경과 평행을 이루는 암시를 통해 계시합니다.",
+      "vocab": [
+        {
+          "word": "implication",
+          "mean": "암시, 함축"
+        },
+        {
+          "word": "parallel",
+          "mean": "평행의, 일치하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문 (not A but B)",
+          "desc": "'not ~ directly as ... but by implication' 구조를 사용하여 내면의 깨달음이 간접적인 성경적 상응을 통해 온다는 것을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "And this wisdom from within is without uncertainty.",
+      "ko": "그리고 이 내면으로부터의 지혜에는 불확실함이 없습니다.",
+      "vocab": [
+        {
+          "word": "wisdom",
+          "mean": "지혜"
+        },
+        {
+          "word": "uncertainty",
+          "mean": "불확실성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 형용사구",
+          "desc": "'from within'이 주어 'wisdom'을 수식하며, 내적 계시의 절대적 확실성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“When it pleased God to reveal His Son in me, I did not confer with flesh and blood.”",
+      "ko": "'하나님이 그의 아들을 내 안에 나타내시기를 기뻐하셨을 때, 나는 혈과 육과 의논하지 않았습니다.'",
+      "vocab": [
+        {
+          "word": "pleased",
+          "mean": "기뻐하다, 마음에 들다"
+        },
+        {
+          "word": "confer",
+          "mean": "의논하다, 상의하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 구문",
+          "desc": "'When it pleased God [to reveal...]'에서 'it'은 가주어이며, 신성한 계시의 주권적 성격을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "(Gal. 1:15-16) The man in whom the Son of God appears finds it difficult to convince others of the reality of the revelation, because these supernatural experiences of Scripture take place in a realm of action too remote from our common experience.",
+      "ko": "(갈라디아서 1:15-16) 하나님의 아들이 나타나는 그 사람은 다른 이들에게 그 계시의 실상을 납득시키는 것이 어렵다는 것을 알게 됩니다. 왜냐하면 성경의 이러한 초자연적 경험들은 우리의 흔한 경험과는 너무나 먼 행동의 영역에서 일어나기 때문입니다.",
+      "vocab": [
+        {
+          "word": "appear",
+          "mean": "나타나다, 출현하다"
+        },
+        {
+          "word": "convince",
+          "mean": "확신시키다, 설득하다"
+        },
+        {
+          "word": "supernatural",
+          "mean": "초자연적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가목적어 구문",
+          "desc": "'finds it difficult to convince'에서 'it'은 가목적어이며, 진목적어는 'to convince ~'입니다."
+        }
+      ]
+    },
+    {
+      "en": "The whole drama belongs to a world far more real and vital than that which the intellect inhabits for the historic imagination to understand it.",
+      "ko": "전체 드라마는 지성이 역사적 상상력으로 그것을 이해하기 위해 거주하는 세계보다 훨씬 더 실제적이고 생명력 있는 세계에 속합니다.",
+      "vocab": [
+        {
+          "word": "belong",
+          "mean": "속하다"
+        },
+        {
+          "word": "intellect",
+          "mean": "지성"
+        },
+        {
+          "word": "historic",
+          "mean": "역사적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교급 강조와 관계대명사",
+          "desc": "'far more real'을 통해 영적 세계의 실체적 우위를 강조하고, 'that which'로 물리적 지성의 한계를 지적합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Oh could I tell ye surely would believe it!",
+      "ko": "'오, 내가 말할 수 있다면 너희는 분명히 그것을 믿을 텐데!'",
+      "vocab": [
+        {
+          "word": "surely",
+          "mean": "확실히"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거",
+          "desc": "조동사 과거형을 사용하여 직접 전달하기 힘든 영적 체험에 대한 시적 염원을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Oh could I only say what I have seen!",
+      "ko": "오, 내가 본 것을 오직 말할 수만 있다면!",
+      "vocab": [
+        {
+          "word": "seen",
+          "mean": "보다 (see의 과거분사)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "감탄문과 가정적 소망",
+          "desc": "도치된 가정 표현을 통해 신비로운 환상을 목격한 자의 깊은 감정을 표출합니다."
+        }
+      ]
+    },
+    {
+      "en": "How should I tell or how can ye receive it,",
+      "ko": "내가 어떻게 말해야 할지, 혹은 너희가 그것을 어떻게 받아들일 수 있을지,",
+      "vocab": [
+        {
+          "word": "receive",
+          "mean": "받아들이다, 이해하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "의문문 구조",
+          "desc": "How로 시작하는 의문문으로, 진리의 난해함과 인간의 수용 한계를 표현하는 수사적 의문문입니다."
+        }
+      ]
+    },
+    {
+      "en": "How, till he bringeth you where I have been?",
+      "ko": "그가 너를 내가 있어본 곳으로 데려다줄 때까지, 어찌 그러하겠는가?",
+      "vocab": [
+        {
+          "word": "bringeth",
+          "mean": "데려다주다 (고어형)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부사절",
+          "desc": "till절을 통해 영적 체험의 장소에 도달하기 전까지는 이해할 수 없음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "F. W. H. Myers This entrance into the Father-Son relationship is truly by the Grace of God.",
+      "ko": "F. W. H. 마이어스 - 아버지와 아들의 관계로의 이 진입은 진정으로 하나님의 은혜로 이루어집니다.",
+      "vocab": [
+        {
+          "word": "entrance",
+          "mean": "진입, 들어감"
+        },
+        {
+          "word": "Grace of God",
+          "mean": "하나님의 은혜"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 보어",
+          "desc": "This entrance가 주어이며 전치사구 by the Grace of God이 주격 보어 역할을 하여 신비적 연합의 주체가 은혜임을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "For God so loved the world that He gave His only Son.",
+      "ko": "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니.",
+      "vocab": [
+        {
+          "word": "so... that",
+          "mean": "너무 ...해서 ~하다"
+        },
+        {
+          "word": "only Son",
+          "mean": "독생자, 유일한 아들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결과 구문",
+          "desc": "so... that 구문을 사용하여 하나님의 극극한 사랑이 아들의 선물로 구체화되었음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "(John 3:16) It was the eternal plan of God to give Himself to man.",
+      "ko": "(요한복음 3:16) 자신을 인간에게 주는 것은 하나님의 영원한 계획이었습니다.",
+      "vocab": [
+        {
+          "word": "eternal plan",
+          "mean": "영원한 계획"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어",
+          "desc": "It(가주어) to give Himself to man(진주어) 구문으로 하나님의 자기기증(Self-giving)이 본질임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "And it is the Son, calling Him Father, who makes Him sure that He really is the Father.",
+      "ko": "그리고 그를 아버지라 부르는 아들이야말로 그가 진정 아버지임을 그에게 확신시켜 주는 존재입니다.",
+      "vocab": [
+        {
+          "word": "make sure",
+          "mean": "확신하게 하다"
+        },
+        {
+          "word": "distinctive individuality",
+          "mean": "고유한 개성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조구문",
+          "desc": "It is ~ who 강조구문을 사용하여 아들의 호칭이 아버지의 정체성을 확증하는 핵심 열쇠임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "When David in the Spirit calls him Father, he does not lose his distinctive individuality or cease to be the self he was before, but that self now includes a far greater self, which is none other than Jesus Christ whom David in the Spirit called “Lord.”",
+      "ko": "다윗이 성령 안에서 그를 아버지라 부를 때, 그는 자신의 고유한 개성을 잃거나 이전의 자아기를 멈추는 것이 아니라, 그 자아는 이제 훨씬 더 위대한 자아를 포함하게 되는데, 그는 다윗이 성령 안에서 '주'라 부른 바로 그 예수 그리스도이십니다.",
+      "vocab": [
+        {
+          "word": "in the Spirit",
+          "mean": "성령 안에서, 영적 상태에서"
+        },
+        {
+          "word": "none other than",
+          "mean": "다름 아닌 ~인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 계속적용법",
+          "desc": "which절을 통해 더 큰 자아가 예수 그리스도와 동치임을 설명하며, 인간의 자아가 신성과의 합일을 이루는 신비주의적 확장을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Man is heir to a Promise and to a Presence!",
+      "ko": "인간은 약속과 임재의 상속자입니다!",
+      "vocab": [
+        {
+          "word": "heir",
+          "mean": "상속자"
+        },
+        {
+          "word": "Presence",
+          "mean": "임재, 현존"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 병치",
+          "desc": "to a Promise와 to a Presence가 병치되어 인간이 지닌 영적 지위의 양대 축을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Abraham having patiently endured, obtained the promise.”",
+      "ko": "“아브라함이 오래 참아 약속을 얻었느니라.”",
+      "vocab": [
+        {
+          "word": "patiently endured",
+          "mean": "오래 참아 견딘"
+        },
+        {
+          "word": "obtained",
+          "mean": "얻었다, 획득했다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "having patiently endured는 완료 분사구문으로 인내의 과정이 약속 성취의 선행 조건임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "(Heb. 6:15) Grace is the final expression of God’s love in action which man will experience when the Son is revealed in him, and who in turn reveals man as the Father.",
+      "ko": "(히브리서 6:15) 은혜는 아들이 그 안에 계시될 때 인간이 경험하게 될 행동으로 나타난 하나님의 사랑의 궁극적 표현이며, 그 아들은 차례로 인간을 아버지로 계시합니다.",
+      "vocab": [
+        {
+          "word": "in action",
+          "mean": "행동으로 나타난, 실현된"
+        },
+        {
+          "word": "in turn",
+          "mean": "결과적으로, 차례차례"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 복합 수식",
+          "desc": "which절과 who절이 복합적으로 연결되어 아들의 계시와 아버지로서의 자각이 상호적임을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "The authority which underlies the story of Jesus Christ is a two-fold witness; the inward testimony of the Father, and the external testimony of Scripture.",
+      "ko": "예수 그리스도 이야기의 기저에 있는 권위는 이중적 증거, 즉 아버지의 내적 증거와 성경의 외적 증거입니다.",
+      "vocab": [
+        {
+          "word": "underlie",
+          "mean": "...의 기저를 이루다"
+        },
+        {
+          "word": "two-fold",
+          "mean": "이중의"
+        },
+        {
+          "word": "testimony",
+          "mean": "증거, 증언"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 구두점",
+          "desc": "세미콜론 뒤에 이중 증거의 구체적인 두 가지 양상을 동격으로 열거하여 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "God Himself came, and comes, into human history in the person of the incarnate Jesus within us.",
+      "ko": "하나님 자신은 우리 안에 계신 육화된 예수의 인격으로 인간 역사 속에 들어오셨고, 또한 들어오고 계십니다.",
+      "vocab": [
+        {
+          "word": "incarnate",
+          "mean": "육신을 띤, 화신한"
+        },
+        {
+          "word": "in the person of",
+          "mean": "...의 인격으로, ...의 모습으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시제 결합",
+          "desc": "came과 comes를 병치하여 역사적 사건이자 현재 진행 중인 내면의 영적 실재임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "This will be confirmed by the “signs,” which will be experienced by man as foretold in Scripture.",
+      "ko": "이것은 성경에 예언된 대로 인간이 경험하게 될 '표적들'에 의해 확증될 것입니다.",
+      "vocab": [
+        {
+          "word": "confirmed",
+          "mean": "확증된, 확인된"
+        },
+        {
+          "word": "foretold",
+          "mean": "예언된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 및 분사구문",
+          "desc": "수동태(will be confirmed, will be experienced)를 사용하여 내면의 과정이 객관적 표적으로 증명됨을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "“The Father Who dwells in Me does His works.",
+      "ko": "“내 안에 거하시는 아버지는 그의 일을 하신다.",
+      "vocab": [
+        {
+          "word": "dwell",
+          "mean": "거주하다, 살다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 관계대명사",
+          "desc": "Who dwells in Me가 The Father를 수식하여 내주하시는 신성을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "Believe that I am in the Father and the Father in Me; or else believe for the sake of the works themselves.",
+      "ko": "내가 아버지 안에 있고 아버지께서 내 안에 계심을 믿으라; 그렇지 못하겠거든 행하여지는 그 일들 자체를 인하여 믿으라.",
+      "vocab": [
+        {
+          "word": "or else",
+          "mean": "그렇지 않으면"
+        },
+        {
+          "word": "for the sake of",
+          "mean": "...를 위하여"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문과 대안 제시",
+          "desc": "명령문 뒤에 or else를 사용하여 직관적 믿음이 어려울 경우 외적인 표적(works)을 통해서라도 믿을 것을 권유합니다."
+        }
+      ]
+    },
+    {
+      "en": "Truly, truly, I say to you, who believes in Me will also do the works that I do; and greater works than these will he do, because I go to the Father.”",
+      "ko": "진실로 진실로 너희에게 이르노니, 나를 믿는 자는 내가 하는 일을 그도 할 것이요, 또한 그보다 더 큰 일도 하리니, 이는 내가 아버지께로 감이라.”",
+      "vocab": [
+        {
+          "word": "Truly, truly",
+          "mean": "진실로 진실로 (엄숙한 선언)"
+        },
+        {
+          "word": "greater works",
+          "mean": "더 큰 일들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "복합관계대명사",
+          "desc": "who believes in Me는 주절의 주어 역할을 하며, 믿는 자가 그리스도와 동일한 권능을 행사하게 되는 신비주의적 잠재력을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "“I came from the Father and have come into world; again, I am leaving the world and going to the Father.”",
+      "ko": "“나는 아버지에게서 나와 세상에 왔고, 다시 세상을 떠나 아버지께로 가노라.”",
+      "vocab": [
+        {
+          "word": "leave",
+          "mean": "떠나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "순환적 여정",
+          "desc": "기원(출발)과 귀환(도착)의 대칭 구조를 통해 인간 의식의 본향이 신성(아버지)에 있음을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "“I and the Father are one.”",
+      "ko": "“ 나와 아버지는 하나이니라.”",
+      "vocab": [
+        {
+          "word": "one",
+          "mean": "하나, 단일한 존재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 보어",
+          "desc": "one이 주격 보어로 사용되어 인간의 궁극적 자아가 하나님과 분리되지 않은 단 하나의 존재임을 선언하는 네빌 가르침의 핵심 구절입니다."
+        }
+      ]
+    },
+    {
+      "en": "(John 10:30) The Vision of God is granted to those who have had the revelation of the Father in the life of the incarnate Jesus in them, when the only begotten Son David calls them Father.",
+      "ko": "(요한복음 10:30) 하나님의 비전은 그들 안에 성육신하신 예수의 삶 속에서 아버지의 계시를 경험한 이들에게 주어지며, 그때 독생자 다윗이 그들을 아버지라 부릅니다.",
+      "vocab": [
+        {
+          "word": "grant",
+          "mean": "수여하다, 주다"
+        },
+        {
+          "word": "revelation",
+          "mean": "계시"
+        },
+        {
+          "word": "incarnate",
+          "mean": "성육신한, 인간의 몸을 입은"
+        },
+        {
+          "word": "only begotten",
+          "mean": "독생자의, 외아들의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "'is granted to~' 구조를 통해 하나님의 비전이 인간의 공로가 아닌 은혜로 주어짐을 나타냅니다."
+        },
+        {
+          "tag": "관계대명사절",
+          "desc": "'who have had~'가 선행사 'those'를 수식하며, 내면의 영적 체험을 강조합니다."
+        },
+        {
+          "tag": "시간 부사절",
+          "desc": "'when'절은 다윗이 영적으로 우리를 아버지라 부르는 순간이 곧 구원의 완성임을 보여주는 신비적 시점을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "Only as the “signs” become our experience is God’s purpose – and therefore the Scripture’s purpose – fulfilled in us.",
+      "ko": "‘표적들’이 우리의 경험이 될 때 비로소 하나님의 목적—그리고 나아가 성경의 목적—이 우리 안에서 성취됩니다.",
+      "vocab": [
+        {
+          "word": "sign",
+          "mean": "표적, 징조"
+        },
+        {
+          "word": "fulfill",
+          "mean": "성취하다, 이루다"
+        },
+        {
+          "word": "therefore",
+          "mean": "그러므로, 나아가"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "desc": "문두의 'Only as~' 부사절 도치로 인해 'is God’s purpose~ fulfilled' 형태의 의문문 어순 도치가 발생하여 의미를 강조합니다."
+        },
+        {
+          "tag": "삽입구",
+          "desc": "대시(-) 사이의 삽입구를 통해 하나님의 목적과 성경의 목적이 동의어임을 강조하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "“Scripture must be fulfilled in Me… for what is written about Me has its fulfillment.”",
+      "ko": "“성경이 내 안에서 성취되어야 한다… 나에 관해 기록된 것은 성취되기 마련이므로.”",
+      "vocab": [
+        {
+          "word": "fulfillment",
+          "mean": "성취, 실현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조동사 must",
+          "desc": "성경의 역사적 외형적 성취가 아니라 네빌 사상에서의 내면적·심리학적 성취의 필연성을 나타냅니다."
+        },
+        {
+          "tag": "관계대명사 what",
+          "desc": "'what is written'은 '~것'으로 해석되며 주어 역할을 수행합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Luke 22:37) God gave Himself to all of us, to each of us.",
+      "ko": "(누가복음 22:37) 하나님은 우리 모두에게, 우리 각자에게 자신을 내어주셨습니다.",
+      "vocab": [
+        {
+          "word": "give oneself",
+          "mean": "자신을 내어주다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격/확장 전치사구",
+          "desc": "'to all of us' 뒤에 'to each of us'를 덧붙여 집단적 구원이 아닌 개별적이고 내밀한 존재론적 연합임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "And it is His only begotten Son David, in the Spirit, calling us Father, who makes us sure that it is really so.",
+      "ko": "그리고 성령 안에서 우리를 아버지라 부르는 분이 바로 그의 독생자 다윗이며, 그가 그것이 진실임을 우리에게 확신시켜 줍니다.",
+      "vocab": [
+        {
+          "word": "in the Spirit",
+          "mean": "성령 안에서, 영적으로"
+        },
+        {
+          "word": "make sure",
+          "mean": "확신하다, 확실히 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조구문",
+          "desc": "'It is ~ who ...' 강조 구문을 사용하여 다윗의 영적 외침이 구원의 확증을 주는 유일한 증거임을 강조합니다."
+        },
+        {
+          "tag": "현재분사구",
+          "desc": "'calling us Father'가 주어 'David'의 동작을 수식하며 능동적으로 아버지임을 자각시키는 과정을 그립니다."
+        }
+      ]
+    },
+    {
+      "en": "(John 8:36) “So if the Son makes you free, you will be free indeed.”",
+      "ko": "(요한복음 8:36) “그러므로 아들이 너희를 자유롭게 하면, 너희는 참으로 자유롭게 될 것이다.”",
+      "vocab": [
+        {
+          "word": "indeed",
+          "mean": "참으로, 진정으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건절",
+          "desc": "'if'절은 단순조건을 나타내며, 여기서 아들(The Son)은 인간 내면의 그리스도이자 다윗의 아버지로서의 자아를 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "(1 Sam. 17:57,58) “And as David returned from the slaughter of the Philistine… with the head of the Philistine in his hand, Saul said to him, ‘Whose son are you, young man?'”",
+      "ko": "(사무엘상 17:57,58) “다윗이 블레셋 사람을 죽이고 돌아올 때에… 그 블레셋 사람의 머리를 손에 든 채로, 사울이 그에게 물었다. ‘젊은이, 누구의 아들이냐?'”",
+      "vocab": [
+        {
+          "word": "slaughter",
+          "mean": "도살, 죽임"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부사구 동반",
+          "desc": "'with the head of the Philistine in his hand'는 부대상황을 나타내는 전치사구로 생생한 현장감을 부여합니다."
+        }
+      ]
+    },
+    {
+      "en": "for he did not know David’s father, whom he had promised (I Sam. 17:25) to make free in Israel.",
+      "ko": "사울은 다윗의 아버지를 알지 못했기 때문이다. 그는 이스라엘에서 그를 자유롭게 해주겠다고 (삼상 17:25에서) 약속했던 이였다.",
+      "vocab": [
+        {
+          "word": "promise",
+          "mean": "약속하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 목적격",
+          "desc": "'whom'은 'David's father'를 선행사로 받으며, 왕이 베풀기로 한 면제의 은총이 누구에게 향하는지 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "The king had promised to make free the father of the man who destroyed the enemy of Israel.",
+      "ko": "왕은 이스라엘의 원수를 무찌른 자의 아버지를 면제(자유)해주겠다고 약속했던 것이다.",
+      "vocab": [
+        {
+          "word": "destroy",
+          "mean": "파괴하다, 무찌르다"
+        },
+        {
+          "word": "enemy",
+          "mean": "적"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "과거완료 시제",
+          "desc": "'had promised'를 사용하여 본동사 시점보다 앞선 과거의 약속을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "We must not ignore the very personal and supernatural character of God’s plan of salvation.",
+      "ko": "우리는 하나님의 구원 계획이 지닌 지극히 개인적이고 초자연적인 성격을 무시해서는 안 됩니다.",
+      "vocab": [
+        {
+          "word": "ignore",
+          "mean": "무시하다"
+        },
+        {
+          "word": "supernatural",
+          "mean": "초자연적인"
+        },
+        {
+          "word": "salvation",
+          "mean": "구원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조 한정사",
+          "desc": "'very'가 형용사 앞에 쓰여 '바로 그 개인적인'이라는 의미로 신비주의적 내면성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The fulfillment of the plan takes place in man; it is inaugurated by the event called “His resurrection from the dead” [Acts 26:23; Romans 1:4 etc.].",
+      "ko": "그 계획의 성취는 인간 안에서 일어납니다. 그것은 ‘죽은 자들로부터의 그의 부활’이라 불리는 사건으로 개시됩니다 [사도행전 26:23; 로마서 1:4 등].",
+      "vocab": [
+        {
+          "word": "take place",
+          "mean": "일어나다, 발생하다"
+        },
+        {
+          "word": "inaugurate",
+          "mean": "시작하다, 개시하다"
+        },
+        {
+          "word": "resurrection",
+          "mean": "부활"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "세미콜론 용법",
+          "desc": "세미콜론으로 연결된 두 문장은 구원의 계획이 인간 내면에서 실현되며, 그 출발점이 부활 사건임을 논리적으로 연결합니다."
+        }
+      ]
+    },
+    {
+      "en": "“We have been born anew… through the resurrection of Jesus Christ from the dead.”",
+      "ko": "“우리는 예수 그리스도의 죽은 자 가운데서 부활하심을 통하여… 거듭났습니다.”",
+      "vocab": [
+        {
+          "word": "born anew",
+          "mean": "거듭나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재완료 수동태",
+          "desc": "'have been born'을 사용하여 과거의 사건이 현재까지 지속되는 영적 중생의 상태를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "(1 Peter 1:3) It is Christ in you —your I AM who is resurrected.",
+      "ko": "(베드로전서 1:3) 그것은 바로 여러분 안에 계신 그리스도, 즉 부활하시는 여러분의 ‘나는 존재한다(I AM)’입니다.",
+      "vocab": [
+        {
+          "word": "resurrect",
+          "mean": "부활시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 표현",
+          "desc": "'Christ in you'와 'your I AM'을 대시(-)로 연결하여, 성경 속 그리스도가 곧 인간의 가장 깊은 의식인 'I AM'임을 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "The resurrection marks the beginning of the freeing of Jesus Christ the Father from the body of sin and death, and His return to His divine body of Love, the human form divine.",
+      "ko": "부활은 아버지 예수 그리스도를 죄와 죽음의 몸으로부터 해방시키고, 그분이 신성한 사랑의 몸이자 신성한 인간의 형상으로 복귀하는 시작점을 알립니다.",
+      "vocab": [
+        {
+          "word": "mark",
+          "mean": "표시하다, 알리다"
+        },
+        {
+          "word": "freeing",
+          "mean": "해방, 자유롭게 함"
+        },
+        {
+          "word": "divine",
+          "mean": "신성한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소유격 중첩 및 동격",
+          "desc": "'Jesus Christ the Father' 및 'the human form divine' 같은 표현을 통해 삼위일체 개념을 네빌의 관점(인간의 상상력이 곧 하나님)으로 재해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "This was the Lord’s purpose from the beginning “which He set forth in Christ as a plan for the fullness of time” (Eph. 1:9,10).",
+      "ko": "이것은 처음부터 주님의 목적이었으며, “그분이 때가 차면 이루실 계획으로 그리스도 안에서 세우신 것”입니다 (에베소서 1:9,10).",
+      "vocab": [
+        {
+          "word": "set forth",
+          "mean": "제시하다, 세우다"
+        },
+        {
+          "word": "fullness of time",
+          "mean": "때가 찬 경륜, 충만한 때"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "'which He set forth~'가 선행사 'purpose'를 수식하며 창세전부터 예정된 신비적 계획의 완성을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "“The Lord of hosts has sworn: As I have planned, so shall it be, and as I have purposed, so shall it stand.”",
+      "ko": "“만군의 여호와께서 맹세하여 가라사대 나의 생각한 것이 반드시 된 것이며 나의 경영한 것이 반드시 이루어지리라 하셨느니라.”",
+      "vocab": [
+        {
+          "word": "Lord of hosts",
+          "mean": "만군의 여호와"
+        },
+        {
+          "word": "purposed",
+          "mean": "작정하다, 계획하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As ~, so ~",
+          "desc": "'~하는 것과 같이, 그와 같이'라는 의미로 하나님의 계획과 그 성취의 절대적 일치성을 강조하는 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "Live and act on the assurance that God has brought His plan to fulfillment and continues to do so.",
+      "ko": "하나님께서 그분의 계획을 성취하셨고 지금도 계속해서 그렇게 하고 계신다는 확신을 가지고 살고 행동하십시오.",
+      "vocab": [
+        {
+          "word": "assurance",
+          "mean": "확신"
+        },
+        {
+          "word": "fulfillment",
+          "mean": "성취, 실현"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "that 동격절",
+          "desc": "assurance의 내용을 구체적으로 설명하는 동격의 접속사 that 절입니다."
+        }
+      ]
+    },
+    {
+      "en": "God Himself came, and comes, into human history in the person of Jesus Christ in you, in me, in all.",
+      "ko": "하나님 자신은 당신 안에, 내 안에, 모든 이들 안에 있는 예수 그리스도라는 인격 속으로 인간 역사 안에 들어오셨으며, 지금도 들어오고 계십니다.",
+      "vocab": [
+        {
+          "word": "in the person of",
+          "mean": "~의 모습으로, ~라는 인격으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "과거와 현재의 병치",
+          "desc": "came과 comes를 함께 사용하여 하나님의 역사 개입이 과거의 역사적 사건에 국한되지 않고 현재에도 영원히 지속되는 실재임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "God awoke in the anonymous authors of the gospels, and continues to awake in individual man.",
+      "ko": "하나님은 복음서의 익명의 저자들 안에서 깨어나셨으며, 개별적인 인간 안에서 계속해서 깨어나고 계십니다.",
+      "vocab": [
+        {
+          "word": "anonymous",
+          "mean": "익명의"
+        },
+        {
+          "word": "gospel",
+          "mean": "복음"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "영적 각성의 내면화",
+          "desc": "성경 저자들 안에서의 하나님의 각성이 곧 개별 인간의 의식 속에서 일어나는 영적 부활과 동일함을 시사합니다."
+        }
+      ]
+    },
+    {
+      "en": "Believe their testimony; do not seek new ways of access to a goal already attained.",
+      "ko": "그들의 증언을 믿으십시오. 이미 달성된 목표에 도달하기 위한 새로운 접근 방식을 찾으려 하지 마십시오.",
+      "vocab": [
+        {
+          "word": "testimony",
+          "mean": "증언"
+        },
+        {
+          "word": "attained",
+          "mean": "달성된, 성취된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "이미 완성된 상태",
+          "desc": "목표가 미래에 성취되어야 할 것이 아니라 이미 영적으로 완성되어 있음을 'already attained'라는 표현으로 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Perhaps the best description of the unknown writers of the gospel of God is given in the words: “That which… we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, of the Word of life…",
+      "ko": "어쩌면 하나님의 복음을 쓴 알려지지 않은 저자들에 대한 가장 훌륭한 묘사는 다음의 말로 주어집니다: '우리가 들은 바요 눈으로 본 바요 주목하고 우리 손으로 만진 바 생명의 말씀에 관하여…'",
+      "vocab": [
+        {
+          "word": "description",
+          "mean": "묘사, 설명"
+        },
+        {
+          "word": "Word of life",
+          "mean": "생명의 말씀"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절의 반복",
+          "desc": "which로 시작하는 여러 관계대명사절이 'That'을 수식하며 영적 체험의 직접성과 확실성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "That which we have seen and heard declare we unto you.”",
+      "ko": "우리가 보고 들은 바를 너희에게도 전하노라.'",
+      "vocab": [
+        {
+          "word": "declare",
+          "mean": "선포하다, 전하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "desc": "목적어(That which...)를 문두로 도치시켜 사도들이 전하는 메시지가 추상적 교리가 아닌 생생한 실재적 체험임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "(1 John 1:1-3) Faith is not complete till it has become experience.",
+      "ko": "(요한일서 1:1-3) 믿음은 그것이 체험이 될 때까지는 완성된 것이 아닙니다.",
+      "vocab": [
+        {
+          "word": "experience",
+          "mean": "체험, 경험"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "till 접속사절",
+          "desc": "네빌 고다드 사상의 핵심인 '관념의 실현(체험)'이 믿음의 완성 조건임을 나타내는 부사절입니다."
+        }
+      ]
+    },
+    {
+      "en": "It is essential that those whose eyes have seen and whose hands have handled the Word of life, be sent and be conscious of themselves as sent, to declare it to the world.",
+      "ko": "눈으로 보고 손으로 생명의 말씀을 만진 사람들이 보냄을 받고, 세상을 향해 그것을 선포하도록 보냄받은 자로서 자신을 자각하는 것은 필수적입니다.",
+      "vocab": [
+        {
+          "word": "essential",
+          "mean": "필수적인"
+        },
+        {
+          "word": "conscious",
+          "mean": "의식하는, 자각하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 구문과 원형부정사",
+          "desc": "It is essential that 주어 + (should) 동사원형 구조로, 주절의 당위성을 나타내어 동사 원형(be sent, be conscious)이 사용되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "It is the resurrected Christ, the twice-born man, who says: “Take My yoke upon you, and learn from Me… and you will find rest for your souls.”",
+      "ko": "“내 멍에를 메고 내게 배우라… 그러면 너희 영혼이 쉼을 얻으리라”라고 말씀하시는 분은 바로 부활하신 그리스도, 곧 거듭난 사람입니다.",
+      "vocab": [
+        {
+          "word": "resurrected",
+          "mean": "부활한"
+        },
+        {
+          "word": "twice-born",
+          "mean": "거듭난, 두 번 태어난"
+        },
+        {
+          "word": "yoke",
+          "mean": "멍에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It is ~ who 강조구문",
+          "desc": "부활한 그리스도와 거듭난 인간이 동일한 존재라는 신비주의적 깨달음을 강조하기 위해 주어를 강조 구문 사이에 넣었습니다."
+        }
+      ]
+    },
+    {
+      "en": "(Matt. 11:29) He offers His knowledge of Scripture based on His own experience, for that of others based on speculation.",
+      "ko": "(마태복음 11:29) 그분은 추측에 기반한 다른 이들의 지식이 아니라, 자신의 체험에 기반한 성경 지식을 우리에게 제안하십니다.",
+      "vocab": [
+        {
+          "word": "speculation",
+          "mean": "추측, 억측"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대명사 that",
+          "desc": "앞의 'His knowledge of Scripture'를 반복하지 않기 위해 대명사 that을 사용하여 간결함을 유지했습니다."
+        }
+      ]
+    },
+    {
+      "en": "Accept His offer.",
+      "ko": "그분의 제안을 받아들이십시오.",
+      "vocab": [
+        {
+          "word": "offer",
+          "mean": "제안, 제공"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문",
+          "desc": "독자에게 직접적이고 단호한 행동 변화를 촉구하는 평서형 명령문입니다."
+        }
+      ]
+    },
+    {
+      "en": "And it will keep you from losing your way among the tangled speculations that pass for religious truth.",
+      "ko": "그리고 그것은 종교적 진리로 통용되는 얽히고설킨 추측들 속에서 당신이 길을 잃지 않도록 지켜줄 것입니다.",
+      "vocab": [
+        {
+          "word": "tangled",
+          "mean": "얽힌, 헝클어진"
+        },
+        {
+          "word": "pass for",
+          "mean": "~로 통용되다, ~로 여겨지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "keep A from B",
+          "desc": "A가 B하는 것을 막다라는 뜻으로, 거짓된 교리의 미로에서 독자를 보호하는 진리의 힘을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "And show you the only way to the Father.",
+      "ko": "그리고 아버지께로 가는 유일한 길을 당신에게 보여줄 것입니다.",
+      "vocab": [
+        {
+          "word": "Father",
+          "mean": "아버지 (하나님)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "병렬 구조",
+          "desc": "앞 문장의 will에 이어지는 동사원형 'show'가 문장을 이끌며 아버지(본원적 자아)와의 합일을 가리킵니다."
+        }
+      ]
+    },
+    {
+      "en": "The man who is sent to preach the gospel of God is first called, and taken in Spirit into the divine assembly where the gods hold judgment.",
+      "ko": "하나님의 복음을 전하도록 보냄을 받은 사람은 먼저 부름을 받고, 신들이 심판을 행하는 신성한 모임으로 영 안에서 이끌려 갑니다.",
+      "vocab": [
+        {
+          "word": "divine assembly",
+          "mean": "신성한 회중, 천상의 모임"
+        },
+        {
+          "word": "judgment",
+          "mean": "심판, 판단"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태의 연속",
+          "desc": "is called, is taken을 통해 영적 소명과 의식의 상승이 인간의 자의적 노력이 아니라 신적 주권에 의해 이루어짐을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "“God has taken His place in the divine council; in the midst of the gods He holds judgment.”",
+      "ko": "“하나님은 신성한 회중에 자리하셨으며; 신들 중에서 심판을 행하시는도다.”",
+      "vocab": [
+        {
+          "word": "divine council",
+          "mean": "신성한 의회, 천상의 회의"
+        },
+        {
+          "word": "in the midst of",
+          "mean": "~의 한가운데에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용구문",
+          "desc": "시편의 구문을 인용하여 인간이 영적 각성을 통해 신성한 의식의 차원에 도달함을 은유적으로 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Ps. 82:1)",
+      "ko": "(시편 82:1)",
+      "vocab": [
+        {
+          "word": "Ps.",
+          "mean": "시편 (Psalms의 약어)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "출처 표기",
+          "desc": "앞서 인용한 성경 구절의 출처를 나타내는 삽입구입니다."
+        }
+      ]
+    },
+    {
+      "en": "The Hebrew word Elokim is plural, a compound unity, one made up of others.",
+      "ko": "히브리어 단어 엘로힘은 복수형이며, 복합적 통합체이자 다른 것들로 이루어진 하나입니다.",
+      "vocab": [
+        {
+          "word": "plural",
+          "mean": "복수의"
+        },
+        {
+          "word": "compound unity",
+          "mean": "복합적 통합체"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격의 콤마",
+          "desc": "'plural' 뒤의 콤마들은 'a compound unity'와 'one made up of others'를 동격으로 연결하여 엘로힘의 본질을 신비주의적 관점에서 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "In this sentence it is translated as God and gods.",
+      "ko": "이 문장에서 그것은 하나님과 신들로 번역됩니다.",
+      "vocab": [
+        {
+          "word": "translate",
+          "mean": "번역하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "'it is translated' 형태를 통해 단어가 어떻게 옮겨지는지 객관적으로 서술합니다."
+        }
+      ]
+    },
+    {
+      "en": "The man who is called is brought before the Elokim, the risen Christ.",
+      "ko": "부름을 받은 사람은 엘로힘, 즉 부활하신 그리스도 앞에 인도됩니다.",
+      "vocab": [
+        {
+          "word": "risen",
+          "mean": "부활한"
+        },
+        {
+          "word": "bring before",
+          "mean": "~앞에 데려오다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 관계대명사절",
+          "desc": "'who is called'가 'The man'을 수식하며, 뒤이어 나오는 'the risen Christ'는 엘로힘과 그리스도를 동일시하는 네빌의 기독교적 영감론을 드러내는 동격어구입니다."
+        }
+      ]
+    },
+    {
+      "en": "He is asked to name the greatest thing in the world; he answers in the words of Paul, “faith, hope, and love, these three; but the greatest of these is love” (1 Cor. 13:13).",
+      "ko": "그는 세상에서 가장 위대한 것이 무엇인지 말해보라는 요청을 받고, 바울의 말로 대답합니다. '믿음, 소망, 사랑, 이 세 가지는 항상 있을 것인데 그 중의 제일은 사랑이라' (고전 13:13).",
+      "vocab": [
+        {
+          "word": "name",
+          "mean": "이름을 대다, 지칭하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "세미콜론의 활용",
+          "desc": "두 개의 독립된 절을 세미콜론으로 연결하여 질문과 응답의 연속성을 긴밀하게 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "At that moment, God embraces him, and they fuse and become One.",
+      "ko": "그 순간, 하나님이 그를 감싸 안으시고, 그들은 융합되어 하나가 됩니다.",
+      "vocab": [
+        {
+          "word": "embrace",
+          "mean": "포옹하다, 껴안다"
+        },
+        {
+          "word": "fuse",
+          "mean": "융합하다"
+        },
+        {
+          "word": "One",
+          "mean": "하나 (신과의 합일)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상승적 동사 연결",
+          "desc": "'fuse'와 'become'을 통해 인간과 신이 궁극적으로 분리될 수 없는 단일체로 통합되는 영적 합일의 절정을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "For “he who is united to the Lord becomes one spirit with Him” (1 Cor. 6:17).",
+      "ko": "왜냐하면 '주와 합하는 자는 그와 한 영이 되느니라' (고전 6:17) 하였기 때문입니다.",
+      "vocab": [
+        {
+          "word": "be united to",
+          "mean": "~와 연합되다"
+        },
+        {
+          "word": "spirit",
+          "mean": "영"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "이유를 나타내는 접속사 For",
+          "desc": "앞선 합일의 진실성을 성경 구절을 인용하여 권위 있게 뒷받침합니다."
+        }
+      ]
+    },
+    {
+      "en": "“So they are no longer two, but one.",
+      "ko": "‘그러므로 이제 둘이 아니요 하나니.’",
+      "vocab": [
+        {
+          "word": "no longer",
+          "mean": "더 이상 ~가 아닌"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문",
+          "desc": "'not... but...' 구문을 활용하여 분리 상태에서 통합 상태로의 근본적인 변화를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "What therefore God has joined together, let no man put asunder.”",
+      "ko": "‘그러므로 하나님이 짝지어 주신 것을 사람이 나누지 못할지니라.’",
+      "vocab": [
+        {
+          "word": "join together",
+          "mean": "결합하다, 짝짓다"
+        },
+        {
+          "word": "put asunder",
+          "mean": "갈라놓다, 나누다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문 구문",
+          "desc": "'let no man put asunder'는 신성한 결합의 불가분성(不可分性)을 강조하는 성경적 명령조입니다."
+        }
+      ]
+    },
+    {
+      "en": "(Matt. 19:6) Men are called one by one to unite into a single Man, who is God.",
+      "ko": "(마 19:6) 인간들은 하나님이신 단 한 사람으로 연합하기 위해 한 사람씩 부름을 받습니다.",
+      "vocab": [
+        {
+          "word": "one by one",
+          "mean": "하나씩, 개별적으로"
+        },
+        {
+          "word": "unite into",
+          "mean": "~로 연합하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태와 목적 부사구",
+          "desc": "인간이 주체적으로 가는 것이 아니라 신성한 섭리에 의해 부름받는 수동적 구조를 띱니다."
+        }
+      ]
+    },
+    {
+      "en": "“The Lord will thresh out the grain, and you will be gathered one by one, O people of Israel.”",
+      "ko": "‘주께서 곡식을 타작하실 것이요, 너희 오이스라엘 자손들아, 너희가 낱낱이 모아지리라.’",
+      "vocab": [
+        {
+          "word": "thresh out",
+          "mean": "타작하다, 걸러내다"
+        },
+        {
+          "word": "gather",
+          "mean": "모으다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "호격(Vocative) 표현",
+          "desc": "'O people of Israel'을 통해 구약의 선언적 어조를 살리며 집단적 이스라엘이 개인적 영적 각성으로 귀결됨을 시사합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Isa. 27:12) This union with the risen Christ is baptism with the Holy Spirit.",
+      "ko": "(사 27:12) 부활하신 그리스도와의 이 연합은 성령 세례입니다.",
+      "vocab": [
+        {
+          "word": "union",
+          "mean": "연합, 결합"
+        },
+        {
+          "word": "baptism",
+          "mean": "세례"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "지시형용사 This",
+          "desc": "앞서 언급된 신과의 합일이라는 영적 사건을 'This union'으로 받아 정의 내리는 서술 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "From his baptism with the Holy Spirit to his resurrection, fall the “days of the Messiah” [Babylonian Talmud: Sanhedrin 98], a period of thirty years.",
+      "ko": "그의 성령 세례부터 부활에 이르기까지, '메시아의 날들' [바빌로니아 탈무드: 산헤드린 98]이라 불리는 삼십 년의 기간이 속합니다.",
+      "vocab": [
+        {
+          "word": "resurrection",
+          "mean": "부활"
+        },
+        {
+          "word": "period",
+          "mean": "기간"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "desc": "전치사구('From his baptism...')가 문두로 나오면서 동사 'fall'과 주어인 'the "
+        }
+      ]
+    },
+    {
+      "en": "During this period, he is so overwhelmingly in love with his mission, as messenger and preacher of the Gospel of God, a gospel which has laid such constraint upon him that he can do no other, feels that “if I preach the gospel, that gives me no ground for boasting.",
+      "ko": "이 기간 동안 그는 하나님의 복음의 메신저이자 설교자로서신의 사명과 너무나 압도적인 사랑에 빠져 있으며, 그 복음은 그에게 너무나 큰 구속력을 지워서 그는 다른 것을 할 수 없고, '내가 복음을 전할지라도 내게 자랑할 것이 없음은'이라고 느낍니다.",
+      "vocab": [
+        {
+          "word": "overwhelmingly",
+          "mean": "압도적으로"
+        },
+        {
+          "word": "constraint",
+          "mean": "구속, 강제"
+        },
+        {
+          "word": "boasting",
+          "mean": "자랑"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "so ~ that 결과 구문",
+          "desc": "'so overwhelmingly in love... that he can do no other' 구조를 통해 사명감이 너무 강해 거부할 수 없는 상태를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "For necessity is laid upon me.",
+      "ko": "이는 부득불 할 일임이라.",
+      "vocab": [
+        {
+          "word": "necessity",
+          "mean": "필요성, 불가피함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "'is laid upon me'를 통해 의무가 외부의 거대한 힘에 의해 자신에게 부과되었음을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "Woe to me if I do not preach the gospel!” (1 Cor. 9:16).",
+      "ko": "만일 복음을 전하지 아니하면 내게 화가 있을지로다!' (고전 9:16).",
+      "vocab": [
+        {
+          "word": "woe",
+          "mean": "화, 비참"
+        },
+        {
+          "word": "preach",
+          "mean": "설교하다, 전파하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건문과 감탄조",
+          "desc": "'Woe to me if...' 패턴을 사용하여 사명을 거역할 때 오는 영적 파국을 극적으로 경고합니다."
+        }
+      ]
+    },
+    {
+      "en": "A divine compulsion drives him as it had Jeremiah, who said: “If I say, ‘I will not mention Him, or speak any more in His name, ‘ there is in my heart as it were a burning fire shut up in my bones, and I am weary with holding it in, and I cannot’.”",
+      "ko": "신성한 강제력이 그를 이끕니다. 마치 예레미야를 이끌었던 것처럼 말입니다. 그는 이렇게 말했습니다. '내가 선포하지 아니하며 그의 이름으로 말하지 아니하면 나의 마음이 불붙는 것 같아서 뼈 사무치니 답답하여 견딜 수 없나이다.'",
+      "vocab": [
+        {
+          "word": "compulsion",
+          "mean": "강박, 강제력"
+        },
+        {
+          "word": "burning fire",
+          "mean": "타오르는 불"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교 및 관계대명사절",
+          "desc": "'as it had Jeremiah'를 통한 선지자적 소명의 연속성 강조와 중첩된 인용문 구조로 신비주의적 필연성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Jer. 20:9) The end of this thirty year period arrives with such dramatic suddenness that he has no time to observe its coming.",
+      "ko": "(렘 20:9) 이 삼십 년 기간의 끝은 너무나 극적인 갑작스러움으로 찾아와서 그는 그것이 다가오는 것을 알아차릴 겨를도 없습니다.",
+      "vocab": [
+        {
+          "word": "dramatic suddenness",
+          "mean": "극적인 갑작스러움"
+        },
+        {
+          "word": "observe",
+          "mean": "관찰하다, 알아차리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "such ~ that 결과 구문",
+          "desc": "영적 여정의 완성이 예고 없이 불가항력적으로 들이닥치는 영적 각성의 순간을 문법적으로 구체화합니다."
+        }
+      ]
+    },
+    {
+      "en": "Jesus, when He began His ministry, was about thirty years of age.",
+      "ko": "예수께서 사역을 시작하실 때에 삼십 세쯤 되셨더라.",
+      "vocab": [
+        {
+          "word": "ministry",
+          "mean": "성직, (예수의) 공생애 사역"
+        },
+        {
+          "word": "about",
+          "mean": "~쯤, 대략"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "삽입절",
+          "desc": "주어 'Jesus'와 동사 'was' 사이에 삽입된 부사절 'when He began His ministry'로 인해 주어와 동사가 멀어져 있습니다."
+        },
+        {
+          "tag": "상징적 나이",
+          "desc": "성경에서 30세는 영적 성숙과 공적 사역을 시작할 수 있는 신비주의적 완성의 단계를 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "Now the story of Jesus Christ unfolds in him in a series of the most personal, first person singular, present tense experiences.",
+      "ko": "이제 예수 그리스도의 이야기는 가장 개인적이고, 1인칭 단수이며, 현재 시제인 일련의 경험들 속에서 그 안에서 펼쳐집니다.",
+      "vocab": [
+        {
+          "word": "unfolds",
+          "mean": "펼쳐지다, 전개되다"
+        },
+        {
+          "word": "first person singular",
+          "mean": "1인칭 단수"
+        },
+        {
+          "word": "present tense",
+          "mean": "현재 시제"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌의 핵심 교리",
+          "desc": "그리스도의 이야기가 먼 과거의 역사적 사건이 아니라 '지금(present)' '나(first person singular)'의 내면에서 직접 일어난다는 신비주의적 관점을 문법 용어를 빌려 강조하고 있습니다."
+        },
+        {
+          "tag": "전치사구 수식",
+          "desc": "'in a series of ~' 구문이 주어의 전개 양상을 구체적으로 한정하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "The entire series of events takes three and a half years.",
+      "ko": "이러한 전체 사건들은 삼 년 반이 걸립니다.",
+      "vocab": [
+        {
+          "word": "entire",
+          "mean": "전체의"
+        },
+        {
+          "word": "three and a half",
+          "mean": "삼 년 반"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 소요 표현",
+          "desc": "'take + 시간' 구문을 사용하여 영적 부활과 탄생의 드라마가 완성되는 기간을 명시합니다."
+        },
+        {
+          "tag": "상징적 기간",
+          "desc": "성경 속 3년 반은 고난과 완성의 영적 주기(42개월)를 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "It begins with his resurrection and birth from above.",
+      "ko": "그것은 그의 부활과 위로부터의 탄생으로 시작됩니다.",
+      "vocab": [
+        {
+          "word": "resurrection",
+          "mean": "부활"
+        },
+        {
+          "word": "birth from above",
+          "mean": "위로부터의 탄생, 거듭남"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 with",
+          "desc": "'begin with ~'를 통해 영적 여정의 출발점이 외부가 아닌 부활과 중생에 있음을 보여줍니다."
+        },
+        {
+          "tag": "birth from above",
+          "desc": "요한복음의 '중생(born again)'을 네빌은 '위로부터의 탄생(born from above)'으로 해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "“The dead heard the voice of the child And began to awake from sleep: All things heard the voice of the child And began to awake to life.”",
+      "ko": "“죽은 자들이 그 아이의 음성을 듣고 잠에서 깨어나기 시작했다: 모든 것이 그 아이의 음성을 듣고 생명으로 깨어나기 시작했다.”",
+      "vocab": [
+        {
+          "word": "awake from sleep",
+          "mean": "잠에서 깨어나다"
+        },
+        {
+          "word": "awake to life",
+          "mean": "생명으로 깨어나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시적 병치",
+          "desc": "윌리엄 블레이크의 시구를 인용하여, 내면의 '아이(그리스도의 의식)'가 깨어날 때 온 세상(만물)이 함께 깨어나는 영적 파동을 대구법으로 표현했습니다."
+        },
+        {
+          "tag": "상태의 변화",
+          "desc": "'begin to + 동사원형'을 반복 사용하여 영적 각성이 점진적이면서도 확실하게 일어나고 있음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "William Blake While sleeping on his bed and dreaming of the redeemed society of a city “full of boys and girls playing in the streets thereof” (Zech. 8:5), an intense vibration centered at the base of his skull awakens him: “Awake, O sleeper, and arise from the dead, and Christ shall give you light.”",
+      "ko": "윌리엄 블레이크가 자신의 침상에서 자며 “그 거리에는 장난치는 소년 소녀들로 가득한” (슥 8:5) 구원받은 도시의 사회를 꿈꾸고 있을 때, 그의 두개골 밑바닥에 집중된 강렬한 진동이 그를 깨운다: “잠자는 자여 깨어 죽은 자들 가운데서 일어나라, 그리스도가 너에게 빛을 주리라.”",
+      "vocab": [
+        {
+          "word": "redeemed",
+          "mean": "구원받은, 속량된"
+        },
+        {
+          "word": "intense",
+          "mean": "강렬한"
+        },
+        {
+          "word": "vibration",
+          "mean": "진동"
+        },
+        {
+          "word": "base of his skull",
+          "mean": "두개골 밑바닥, 뇌간/후두부"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "문두의 'While sleeping ~'은 주절의 주어와 의미상 주어가 일치하지 않는 전통적 분사구문의 형태를 띠나, 내러티브의 현장감을 부여하기 위해 독립적 맥락으로 사용되었습니다."
+        },
+        {
+          "tag": "핵심 신비주의 체험",
+          "desc": "두개골 밑바닥의 진동은 쿤달리니 혹은 네빌이 말하는 그리스도 탄생 직전의 실제 육체적 감각을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "As he wakes, he finds that he is not in the room where he fell asleep, but in his own skull (Golgotha).",
+      "ko": "그가 깨어날 때, 그는 자신이 잠들었던 방이 아니라 자신의 두개골(골고다) 안에 있다는 것을 발견한다.",
+      "vocab": [
+        {
+          "word": "finds that",
+          "mean": "~라는 것을 알게 되다"
+        },
+        {
+          "word": "skull",
+          "mean": "두개골"
+        },
+        {
+          "word": "Golgotha",
+          "mean": "골고다 (해골의 장소)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문",
+          "desc": "'not in A, but in B' 구문을 사용하여 의식의 초점이 외부 방에서 내부 두개골로 완전히 이동했음을 극적으로 보여줍니다."
+        },
+        {
+          "tag": "성경적 은유",
+          "desc": "괄호 속 '(Golgotha)'를 통해 외부의 역사적 장소로 알려진 십자가 처형지가 사실은 인간의 머릿속(두개골)이라는 네빌의 핵심 해석을 전달합니다."
+        }
+      ]
+    },
+    {
+      "en": "His skull is a completely sealed tomb.",
+      "ko": "그의 두개골은 완전히 밀봉된 무덤이다.",
+      "vocab": [
+        {
+          "word": "completely",
+          "mean": "완전히"
+        },
+        {
+          "word": "sealed",
+          "mean": "봉인된, 밀봉된"
+        },
+        {
+          "word": "tomb",
+          "mean": "무덤"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유적 서술",
+          "desc": "인간의 육체(두개골)가 영혼이 갇혀 있는 무덤이자 동시에 부활이 일어날 장소라는 이중적 의미를 담고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "He does not know how he got there, but his one consuming desire is to get out.",
+      "ko": "그는 어떻게 거기에 갔는지 알지 못하지만, 그의 유일하고 온통 사로잡힌 소원은 빠져나오는 것이다.",
+      "vocab": [
+        {
+          "word": "consuming desire",
+          "mean": "온통 마음을 사로잡는 갈망"
+        },
+        {
+          "word": "get out",
+          "mean": "빠져나오다, 탈출하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "간접의문문",
+          "desc": "'how he got there' 형태의 간접의문문이 목적어로 쓰여 영적 자아가 영문도 모른 채 육신에 갇힌 상태를 나타냅니다."
+        },
+        {
+          "tag": "등위접속사 but",
+          "desc": "상반된 두 절을 연결하여 무지(모름)와 강렬한 탈출 의지를 대조합니다."
+        }
+      ]
+    },
+    {
+      "en": "He pushes the base of his skull, and something rolls away leaving a small opening.",
+      "ko": "그가 두개골의 밑바닥을 밀자, 무언가가 굴러떨어져 작은 틈을 남긴다.",
+      "vocab": [
+        {
+          "word": "rolls away",
+          "mean": "굴러서 멀어지다"
+        },
+        {
+          "word": "opening",
+          "mean": "틈, 구멍, 열린 공간"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결과 분사구문",
+          "desc": "마지막의 'leaving a small opening'은 앞의 행위로 인해 초래된 부수적 결과를 나타내는 분사구문입니다."
+        },
+        {
+          "tag": "무덤의 문",
+          "desc": "성경 속 예수의 무덤을 막았던 돌이 굴러간 현상을 두개골 내부의 신체적 체험으로 비유합니다."
+        }
+      ]
+    },
+    {
+      "en": "He pushes his head through the opening and squeezes himself out inch by inch in the same manner that a child is born from his mother’s womb.",
+      "ko": "그는 그 틈으로 머리를 밀어 넣고, 아이가 어머니의 자궁에서 태어나는 것과 같은 방식으로 1인치씩 자신을 밖으로 짜내듯 빠져나온다.",
+      "vocab": [
+        {
+          "word": "squeezes",
+          "mean": "(좁은 틈을) 비집고 나가다, 짜내다"
+        },
+        {
+          "word": "inch by inch",
+          "mean": "1인치씩, 조금씩 차근차근"
+        },
+        {
+          "word": "womb",
+          "mean": "자궁"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 및 관계부사",
+          "desc": "'in the same manner that ~' 구문을 통해 두개골에서의 탈출 과정이 실제 어머니의 자궁에서 태어나는 출산 과정과 정확히 일치함을 비유합니다."
+        },
+        {
+          "tag": "동사 병렬",
+          "desc": "'pushes'와 'squeezes'가 주어 'He'에 연결되어 탈출의 긴박한 동작을 연속적으로 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "He looks at his body out of which he has just emerged.",
+      "ko": "그는 자신이 방금 빠져나온 자신의 육체를 바라본다.",
+      "vocab": [
+        {
+          "word": "emerged",
+          "mean": "빠져나오다, 나타나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사 + 관계대명사",
+          "desc": "'out of which'는 선행사 'his body'를 받는 전치사구 관계대명사로, 육체 '밖으로' 빠져나온 영적 자아의 분리 상태를 정확하게 포착합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is pale of face lying on its back and tossing its head from side to side like one in recovery from a great ordeal.",
+      "ko": "그것은 얼굴이 창백하고 등을 대고 누워 있으며, 큰 시련에서 회복되는 사람처럼 머리를 좌우로 흔들고 있다.",
+      "vocab": [
+        {
+          "word": "pale of face",
+          "mean": "얼굴이 창백한"
+        },
+        {
+          "word": "lying on its back",
+          "mean": "등을 대고 누워 있는"
+        },
+        {
+          "word": "tossing",
+          "mean": "흔들다, 뒤척이다"
+        },
+        {
+          "word": "ordeal",
+          "mean": "시련, 고난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 중첩",
+          "desc": "'lying on its back'과 'tossing its head ~'가 연속으로 육체(It)의 상태를 묘사하는 서술적 분사구문으로 기능합니다."
+        },
+        {
+          "tag": "직유 표현",
+          "desc": "'like one in recovery ~'를 통해 영적 탄생이라는 엄청난 고통(시련)을 치른 육신의 탈진 상태를 생생하게 비유합니다."
+        }
+      ]
+    },
+    {
+      "en": "“You will be sorrowful, but your sorrow will turn into joy.”",
+      "ko": "“너희는 근심하겠으나, 너희의 근심이 변하여 기쁨이 되리라.”",
+      "vocab": [
+        {
+          "word": "sorrowful",
+          "mean": "슬픈, 근심하는"
+        },
+        {
+          "word": "turn into",
+          "mean": "~로 변하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "미래 시제",
+          "desc": "조동사 'will'을 사용하여 영적 출산 과정의 고통(근심)이 반드시 궁극적 환희(기쁨)로 전환될 것임을 약속합니다."
+        }
+      ]
+    },
+    {
+      "en": "“When a woman is in travail she has sorrow, because her hour has come; but when she is delivered of the child, she no longer remembers the anguish, for joy that a child is born into the world.”",
+      "ko": "“여인이 해산할 때에는 그 때가 이르렀으므로 근심하나, 아이를 낳으면 세상에 사람이 난 기쁨으로 말미암아 그 고통을 다시 기억하지 아니하느니라.”",
+      "vocab": [
+        {
+          "word": "travail",
+          "mean": "산고, 해산의 고통"
+        },
+        {
+          "word": "delivered of",
+          "mean": "~를 출산하다"
+        },
+        {
+          "word": "anguish",
+          "mean": "극심한 고통, 번뇌"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절 대조",
+          "desc": "'When ~ she has sorrow'와 'when she is delivered ~ she no longer remembers'라는 두 개의 시간절이 출산 전의 고통과 출산 후의 망각을 극적으로 대비시킵니다."
+        },
+        {
+          "tag": "전치사 for",
+          "desc": "'for joy that ~'에서 'for'는 이유를 나타내며, 기쁨 때문에 고통을 잊는 신비적 도취 상태를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "For there the Babe is born in joy That was begotten in dire woe; Just as we Reap in joy the fruit Which we in bitter tears did sow.",
+      "ko": "거기서 심한 비탄 속에 잉태되었던 그 아기가 기쁨으로 태어나니; 우리가 쓴 눈물로 뿌렸던 그 열매를 우리가 기쁨으로 거두는 것과 같도다.",
+      "vocab": [
+        {
+          "word": "begotten",
+          "mean": "잉태된, 태어난"
+        },
+        {
+          "word": "dire woe",
+          "mean": "심한 비탄, 끔찍한 고통"
+        },
+        {
+          "word": "sow",
+          "mean": "씨를 뿌리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치와 시제",
+          "desc": "윌리엄 블레이크의 시적 허용이 적용된 문장으로, 'Just as ~' 구조를 통해 영적 탄생의 법칙(고통을 통한 기쁨의 수확)을 대조 및 비유하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "You must be born from above.",
+      "ko": "너희는 위로부터 태어나야 한다.",
+      "vocab": [
+        {
+          "word": "born from above",
+          "mean": "위로부터 태어나다 (중생, 영적 각성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 및 부사구",
+          "desc": "'from above'는 단순한 물리적 위가 아니라 영적인 차원(상상력의 근원)으로부터의 탄생을 의미하는 네빌 고다드의 핵심 개념입니다."
+        }
+      ]
+    },
+    {
+      "en": "The Jerusalem above is free, and she is our mother.",
+      "ko": "위에 있는 예루살렘은 자유로우며, 그녀는 우리의 어머니이다.",
+      "vocab": [
+        {
+          "word": "Jerusalem above",
+          "mean": "위의 예루살렘 (자유의 영적 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상징적 은유",
+          "desc": "성경 구절을 인용하여 인간의 의식 상층부가 곧 영적 탄생의 어머니(원천)임을 비유적으로 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The skull that was his tomb became the womb from which he is born anew.",
+      "ko": "그의 무덤이었던 두개골은 그가 새롭게 태어나는 자궁이 되었다.",
+      "vocab": [
+        {
+          "word": "skull",
+          "mean": "두개골 (골고다, 상상력이 거주하는 곳)"
+        },
+        {
+          "word": "tomb",
+          "mean": "무덤"
+        },
+        {
+          "word": "womb",
+          "mean": "자궁"
+        },
+        {
+          "word": "anew",
+          "mean": "새롭게"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "'that was his tomb'과 'from which he is born anew'가 각각 선행사(skull, womb)를 수식하며, 골고다(해골의 장소)가 곧 부활의 자궁이라는 네빌의 신비주의적 해석을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "The vibration within his skull which roused him from sleep, appears now to be coming from without, it sounds like a great wind.",
+      "ko": "그를 잠에서 깨웠던 두개골 안의 진동이 이제는 외부에서 오는 것처럼 보이며, 거대한 바람 소리처럼 들린다.",
+      "vocab": [
+        {
+          "word": "vibration",
+          "mean": "진동"
+        },
+        {
+          "word": "rouse",
+          "mean": "깨우다"
+        },
+        {
+          "word": "from without",
+          "mean": "외부로부터"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 동사의 호응",
+          "desc": "'The vibration ...'이 주어이며 중간에 끼어든 관계대명사절 'which roused him from sleep'이 주어를 수식하고, 본동사 'appears'가 이어지는 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "He turns his head in the direction where the wind appears to be.",
+      "ko": "그는 바람이 불어오는 듯한 방향으로 고개를 돌린다.",
+      "vocab": [
+        {
+          "word": "direction",
+          "mean": "방향"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계부사절",
+          "desc": "'where the wind appears to be'는 장소를 나타내는 관계부사절로 'direction'을 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "Looking back to where his body was, he is surprised to find that it is gone but in its place sit three men.",
+      "ko": "자신의 육신이 있던 곳을 돌아보았을 때, 그는 그것이 사라지고 그 자리에 세 사람이 앉아 있는 것을 보고 놀란다.",
+      "vocab": [
+        {
+          "word": "surprised",
+          "mean": "놀란"
+        },
+        {
+          "word": "in its place",
+          "mean": "그 자리에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "문장 맨 앞의 'Looking back'은 동시 동작이나 원인을 나타내는 분사구문이며, 'to find'는 감정의 원인을 나타내는 부사적 용법입니다."
+        }
+      ]
+    },
+    {
+      "en": "This experience that faces him will be the fulfillment of the promise made to Abraham.",
+      "ko": "그에게 다가오는 이 경험은 아브라함에게 한 약속의 성취가 될 것이다.",
+      "vocab": [
+        {
+          "word": "fulfillment",
+          "mean": "성취, 실현"
+        },
+        {
+          "word": "promise",
+          "mean": "약속"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수식 구조",
+          "desc": "'that faces him'이 주어 'This experience'를 수식하고, 과거분사구 'made to Abraham'이 'promise'를 뒤에서 수식하는 명확한 평서문 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "And the Lord appeared to him… He lifted up his eyes and looked, and behold, three men stood in front of him… They said to him, ‘Where is Sarah, your wife?’ And he said, ‘She is in the tent.’",
+      "ko": "그리고 주께서 그에게 나타나셨다… 그가 눈을 들어 바라보니, 보라, 세 사람이 그의 앞에 서 있었다… 그들이 그에게 말했다, '네 아내 사라가 어디 있느냐?' 그러자 그가 말했다, '그는 장막 안에 있습니다.'",
+      "vocab": [
+        {
+          "word": "behold",
+          "mean": "보라 (성경적 감탄사)"
+        },
+        {
+          "word": "tent",
+          "mean": "장막, 텐트"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용문",
+          "desc": "구약 성경 창세기의 본문을 그대로 인용하여, 영적 환상 속의 사건이 성경적 약속의 외적 극화임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "‘He said, ‘I will surely return to you according to the time of life; and Sarah your wife shall have a son’ … Abraham called the name of his son who was born to him… Isaac (“he laughs”).’",
+      "ko": "'그가 이르시되, '내가 반드시 생명의 기한에 네게로 돌아오리니, 네 아내 사라에게 아들이 있으리라' 하셨다… 아브라함이 자기에게 태어난 아들의 이름을 불렀으니… 이삭(‘그가 웃는다’)이라 하였더라.'",
+      "vocab": [
+        {
+          "word": "according to",
+          "mean": "~에 따라"
+        },
+        {
+          "word": "the time of life",
+          "mean": "생명의 기한, 정해진 때"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인용과 동격",
+          "desc": "직접화법 속에 조동사 'shall'을 사용하여 신적인 약속의 확정성을 강조하며, 괄호 안의 'he laughs'는 이름의 어원을 설명하는 동격 삽입구입니다."
+        }
+      ]
+    },
+    {
+      "en": "The three men suddenly appeared, they had not been seen approaching.",
+      "ko": "세 사람이 갑자기 나타났는데, 그들이 다가오는 것은 보이지 않았었다.",
+      "vocab": [
+        {
+          "word": "suddenly",
+          "mean": "갑자기"
+        },
+        {
+          "word": "approach",
+          "mean": "다가오다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "과거완료 수동태",
+          "desc": "'had not been seen approaching'은 과거의 특정 시점(나타난 때)보다 이전의 상태를 나타내는 과거완료 수동태로, 환상의 초현실적 성격을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Abraham does not at once realize the significance of this.",
+      "ko": "아브라함은 이것의 의미를 즉시 깨닫지 못한다.",
+      "vocab": [
+        {
+          "word": "at once",
+          "mean": "즉시"
+        },
+        {
+          "word": "significance",
+          "mean": "의미, 중요성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정문",
+          "desc": "부사 'not at once'를 통해 깨달음이 점진적으로 찾아오는 영적 과정을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "They are ordinary men who have chanced to come his way.",
+      "ko": "그들은 우연히 그의 길로 오게 된 평범한 사람들이다.",
+      "vocab": [
+        {
+          "word": "ordinary",
+          "mean": "평범한"
+        },
+        {
+          "word": "chance to",
+          "mean": "우연히 ~하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "'who have chanced to come his way'가 선행사 'ordinary men'을 수식하며, 현현(Epiphany)이 일상적인 모습으로 다가옴을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "They too are disturbed by the wind.",
+      "ko": "그들 역시 바람으로 인해 동요한다.",
+      "vocab": [
+        {
+          "word": "disturbed",
+          "mean": "동요하는, 방해받는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태",
+          "desc": "주어가 바람이라는 영적 에너지에 의해 영향을 받고 있음을 수동태로 표현했습니다."
+        }
+      ]
+    },
+    {
+      "en": "The youngest of the three is the most disturbed and goes over to investigate the source of the disturbance.",
+      "ko": "셋 중 가장 젊은이가 가장 크게 동요하며 그 동요의 근원을 조사하러 걸어간다.",
+      "vocab": [
+        {
+          "word": "investigate",
+          "mean": "조사하다, 살피다"
+        },
+        {
+          "word": "source",
+          "mean": "근원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "최상급과 병렬구조",
+          "desc": "'is the most disturbed'와 'goes over'가 주어(The youngest)를 공유하는 병렬 구조로 동적 긴장감을 더합니다."
+        }
+      ]
+    },
+    {
+      "en": "His attention is attracted by a babe wrapped in swaddling cloths lying on the floor.",
+      "ko": "바닥에 강보에 싸여 누워 있는 한 아기가 그의 주의를 사로잡는다.",
+      "vocab": [
+        {
+          "word": "swaddling cloths",
+          "mean": "강보, 포대기"
+        },
+        {
+          "word": "attracted",
+          "mean": "끌린, 매료된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구의 후치수식",
+          "desc": "'wrapped in swaddling cloths'와 'lying on the floor'가 연달아 'a babe'를 뒤에서 수식하며 그리스도의 탄생(성탄 도상)을 연상시키는 이미지를 완성합니다."
+        }
+      ]
+    },
+    {
+      "en": "He takes the babe in his arms and proclaiming it to be the resurrected man’s babe, lays it on the bed.",
+      "ko": "그는 아기를 품에 안고 그것이 부활한 사람의 아이라고 선언하며 침대 위에 눕힌다.",
+      "vocab": [
+        {
+          "word": "proclaim",
+          "mean": "선언하다"
+        },
+        {
+          "word": "resurrected",
+          "mean": "부활한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "'proclaiming it to be ~'는 주절의 동작과 동시에 일어나는 상황을 설명하는 분사구문이며 'A를 B라고 선언하다'라는 5형식적 의미단위를 내포합니다."
+        }
+      ]
+    },
+    {
+      "en": "The man then lifts the babe in his arms and says: “How is my sweetheart?”",
+      "ko": "그러자 그 사람이 아기를 품에 들어 올리며 말한다: “내 연인은 어떠한가?”",
+      "vocab": [
+        {
+          "word": "sweetheart",
+          "mean": "연인, 사랑하는 이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대화체",
+          "desc": "직접인용을 통해 환상의 절정에서 영적 자아와 탄생한 다윗(아기/연인) 사이의 친밀하고 신비로운 관계를 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The child smiles and the first act comes to an end.",
+      "ko": "아이 가 미소 짓고 첫 번째 막이 끝난다.",
+      "vocab": [
+        {
+          "word": "act",
+          "mean": "막 (연극의 구성 단위)"
+        },
+        {
+          "word": "come to an end",
+          "mean": "끝나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위절",
+          "desc": "등위접속사 'and'를 통해 두 개의 독립된 사건(아이의 미소, 첫 막의 종결)을 인과적/시간적으로 연결하여 환상의 한 단락을 마무리합니다."
+        }
+      ]
+    },
+    {
+      "en": "And in that region there were shepherds out in the field… And an angel of the Lord appeared to them… And the angel said to them, ‘Be not afraid; for behold, I bring you good news of a great joy which will come to all the people; for to you is born this day in the city of David a Savior, Who is Christ the Lord.",
+      "ko": "그리고 그 지역에 목자들이 들판에 나와 있었고… 주의 천사가 그들에게 나타났다… 그리고 천사가 그들에게 말했다, '두려워하지 말라; 보라, 내가 모든 백성에게 임할 큰 기쁨의 좋은 소식을 너희에게 가져왔노라; 오늘 다윗의 동네에서 너희를 위하여 구주가 나셨으니, 곧 그리스도 주님이시니라.",
+      "vocab": [
+        {
+          "word": "shepherd",
+          "mean": "목자"
+        },
+        {
+          "word": "swaddling cloths",
+          "mean": "강보, 포대기"
+        },
+        {
+          "word": "manger",
+          "mean": "구유"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치구문 (There were shepherds)",
+          "desc": "'There + be동사' 구문으로 주어인 shepherds가 뒤로 도치되어 존재를 나타냅니다."
+        },
+        {
+          "tag": "관계대명사절 (which will come)",
+          "desc": "great joy를 선행사로 받아 미래의 실현을 나타내는 관계대명사절입니다."
+        }
+      ]
+    },
+    {
+      "en": "And this will be a sign for you: you will find a babe wrapped in swaddling cloths and lying in a manger’.",
+      "ko": "그리고 이것이 너희에게 표적이 될 것이다: 너희는 강보에 싸여 구유에 누워 있는 아기를 찾을 것이다.'",
+      "vocab": [
+        {
+          "word": "sign",
+          "mean": "표적, 징조"
+        },
+        {
+          "word": "babe",
+          "mean": "아기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구의 수식 (wrapped and lying)",
+          "desc": "과거분사구와 현재분사구가 병렬로 연결되어 아기(babe)의 상태를 생생하게 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Luke 2:8-12).",
+      "ko": "(누가복음 2:8-12).",
+      "vocab": [
+        {
+          "word": "Luke",
+          "mean": "누가복음"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "출처 표기",
+          "desc": "인용된 성경 구절의 출처를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "God is born, for God is called Savior (Isa. 43:3, 45:15, Luke 1:47).",
+      "ko": "하나님이 태어나신다, 왜냐하면 하나님은 구세주라 불리기 때문이다 (사 43:3, 45:15, 눅 1:47).",
+      "vocab": [
+        {
+          "word": "savior",
+          "mean": "구세주, 구원자"
+        },
+        {
+          "word": "revelation",
+          "mean": "계시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위접속사 for의 용법",
+          "desc": "앞 문장에 대한 신비적 근거와 이유를 부연 설명하는 접속사로 사용되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "After the revelation, man searches the ancient scriptures for intimations and fore-shadowings of his supernatural experience, and finding them there, knows that: “All was foretold me: naught Could I foresee: But I learned how the wind would sound After these things should be.”",
+      "ko": "계시 후에, 인간은 자신의 초자연적 경험에 대한 암시와 예고를 찾기 위해 고대 경전을 뒤지며, 거기서 그것들을 발견하고 다음과 같이 알게 된다: '모든 것이 내게 예언되었네: 아무것도 나는 예견할 수 없었지만: 이 일들이 있은 후에 바람이 어떻게 소리 낼지 나는 배웠노라.'",
+      "vocab": [
+        {
+          "word": "intimation",
+          "mean": "암시"
+        },
+        {
+          "word": "fore-shadowing",
+          "mean": "전조, 예고"
+        },
+        {
+          "word": "supernatural",
+          "mean": "초자연적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 (finding them there)",
+          "desc": "경전에서 암시를 찾은 결과로 알게 되는 연속적인 인식 과정을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Edward Thomas The unpredictable nature of the wind’s course illustrates the spontaneity of the divine birth all the more easily since both in Greek and in Hebrew the word is used both for wind and spirit.",
+      "ko": "에드워드 토마스 바람의 경로가 지닌 예측 불가능한 본성은 신성한 탄생의 자발성을 더욱 쉽게 설명해 주는데, 이는 그리스어와 히브리어 모두에서 그 단어가 바람과 영(Spirit) 둘 다를 위해 사용되기 때문이다.",
+      "vocab": [
+        {
+          "word": "unpredictable",
+          "mean": "예측할 수 없는"
+        },
+        {
+          "word": "sp spontaneity",
+          "mean": "자발성, 자연스러움"
+        },
+        {
+          "word": "divine",
+          "mean": "신성한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상관접속사 (both A and B)",
+          "desc": "그리스어와 히브리어의 언어적 공통점을 강조하기 위해 사용된 상관접속사 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "The plan of the Lord is described in the ancient scripture, but it cannot really be known until after it has been experienced by the individual.",
+      "ko": "주의 계획은 고대 경전에 기록되어 있지만, 개개인에 의해 실제로 경험된 후에야 비로소 진정으로 알 수 있게 된다.",
+      "vocab": [
+        {
+          "word": "scripture",
+          "mean": "경전, 성경"
+        },
+        {
+          "word": "individual",
+          "mean": "개개인, 개인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태와 시제 (has been experienced)",
+          "desc": "개인의 주관적 체험이 선행되어야 함을 강조하기 위해 현재완료 수동태를 사용했습니다."
+        }
+      ]
+    },
+    {
+      "en": "God has spoken, and what He has foretold is written there for all to understand.",
+      "ko": "하나님께서 말씀하셨고, 그분이 예언하신 것은 모든 사람이 이해할 수 있도록 거기에 기록되어 있다.",
+      "vocab": [
+        {
+          "word": "foretell",
+          "mean": "예언하다"
+        },
+        {
+          "word": "prophecy",
+          "mean": "예언"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 what절",
+          "desc": "선행사를 포함한 관계대명사 what이 주어 역할을 하며 '것'으로 해석됩니다."
+        }
+      ]
+    },
+    {
+      "en": "But His prophecy appears in a quite different light in prospect from what it is seen to be in retrospect.",
+      "ko": "그러나 그분의 예언은 그것이 사후에(회고할 때) 어떻게 보이는지에 비해, 사전에(전망할 때)는 완전히 다른 빛으로 나타난다.",
+      "vocab": [
+        {
+          "word": "prospect",
+          "mean": "전망, 미래의 일"
+        },
+        {
+          "word": "retrospect",
+          "mean": "회고, 지나간 일을 돌이켜봄"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교 구문 (in prospect from what...)",
+          "desc": "경험 전과 경험 후의 인식 변화를 비교하는 전치사구 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "Everyone will know that Jesus Christ is the Father in the light of his own experience of the Christian Mystery.",
+      "ko": "모든 사람은 그리스도교적 신비에 대한 자신의 체험이라는 빛 안에서 예수 그리스도가 곧 아버지임을 알게 될 것이다.",
+      "vocab": [
+        {
+          "word": "mystery",
+          "mean": "신비, 영적 비밀"
+        },
+        {
+          "word": "Father",
+          "mean": "아버지 (근원적인 신성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구의 수식 (in the light of)",
+          "desc": "'~의 관점에서, ~에 비추어'라는 의미로 영적 깨달음의 기준을 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "“In these last days He has spoken to us by His Son.”",
+      "ko": "'이 마지막 날들에 그분이 그의 아들을 통하여 우리에게 말씀하셨느니라.'",
+      "vocab": [
+        {
+          "word": "son",
+          "mean": "아들 (내면의 신성한 자아)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수단의 전치사 (by His Son)",
+          "desc": "하나님의 말씀이 전달되는 통로이자 매개체로서 아들의 역할을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Five months after man is resurrected and born from above, a vibration similar to that which began the first act starts in his head.",
+      "ko": "사람이 부활하여 위로부터 태어난 지 다섯 달 뒤에, 첫 번째 행위를 시작했던 것과 유사한 진동이 그의 머릿속에서 시작된다.",
+      "vocab": [
+        {
+          "word": "resurrected",
+          "mean": "부활한"
+        },
+        {
+          "word": "born from above",
+          "mean": "위로부터 태어난, 거듭난"
+        },
+        {
+          "word": "vibration",
+          "mean": "진동"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 도치 및 수식",
+          "desc": "‘Five months after ~’라는 시간 부사구가 문두에 와서 전체적인 배경을 설정하며, ‘similar to that which ~’는 앞의 ‘a vibration’을 수식하는 지시대명사 구문이다."
+        }
+      ]
+    },
+    {
+      "en": "This time it is centered at the top of his head.",
+      "ko": "이번에는 그것이 그의 정수리에 집중된다.",
+      "vocab": [
+        {
+          "word": "centered",
+          "mean": "중심이 잡힌, 집중된"
+        },
+        {
+          "word": "top of his head",
+          "mean": "정수리, 머리 꼭대기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 표현",
+          "desc": "진동의 초점이 맞추어지는 지점을 나타내기 위해 ‘be centered at’ 수동태 구문을 사용하여 영적 체험의 발생 처소를 명확히 한다."
+        }
+      ]
+    },
+    {
+      "en": "It increases in intensity until it explodes.",
+      "ko": "그것은 폭발할 때까지 강도가 증가한다.",
+      "vocab": [
+        {
+          "word": "intensity",
+          "mean": "강도, 강렬함"
+        },
+        {
+          "word": "explodes",
+          "mean": "폭발하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절",
+          "desc": "‘until it explodes’를 통해 진동이 최고조에 달해 의식의 대폭발(영적 각성의 핵심 순간)로 이어지는 과정을 시제 일치(현재형)를 통해 생생하게 묘사한다."
+        }
+      ]
+    },
+    {
+      "en": "After the explosion he finds himself seated in a modestly furnished room.",
+      "ko": "폭발 후에 그는 자신이 단출하게 가구가 놓인 방에 앉아 있는 것을 발견한다.",
+      "vocab": [
+        {
+          "word": "modestly furnished",
+          "mean": "소박하게 가구가 갖추어진"
+        },
+        {
+          "word": "finds himself",
+          "mean": "~인 자신을 발견하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "5형식 지각/상태 기술",
+          "desc": "‘find + 목적어 + 분사(seated)’ 구문을 사용하여, 영적 폭발 직후 맞이하는 새로운 내면의 차원을 객관적이고 현실감 있게 지각하는 화자의 상태를 드러낸다."
+        }
+      ]
+    },
+    {
+      "en": "Leaning against the side of an open door, and looking out on a pastoral scene, is his son David of Biblical fame.",
+      "ko": "열린 문의 측면에 기대어 전원적인 풍경을 내다보고 있는 이는 성경에 명성 자자한 그의 아들 다윗이다.",
+      "vocab": [
+        {
+          "word": "pastoral scene",
+          "mean": "전원적인 풍경"
+        },
+        {
+          "word": "Biblical fame",
+          "mean": "성경적 명성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어-동사 도치",
+          "desc": "장소를 나타내는 분사구(Leaning ~ and looking ~)가 문두로 도치되면서 주어인 ‘his son David ~’와 동사 ‘is’의 위치가 바뀌어 시각적 현현의 극적 효과를 극대화한다."
+        }
+      ]
+    },
+    {
+      "en": "He is a youth in his early teens.",
+      "ko": "그는 열대 초반의 젊은이이다.",
+      "vocab": [
+        {
+          "word": "early teens",
+          "mean": "10대 초반"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상태 서술",
+          "desc": "다윗의 영원한 젊음과 순수함을 나타내기 위해 전치사 ‘in’을 활용한 나이 표현(in his early teens)을 사용했다."
+        }
+      ]
+    },
+    {
+      "en": "David addresses him as 'My Father.'",
+      "ko": "다윗은 그를 '나의 아버지'라고 부른다.",
+      "vocab": [
+        {
+          "word": "addresses",
+          "mean": "호칭을 부르다, 말을 건네다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "address A as B 구문",
+          "desc": "‘address A as B’ 구조를 통해 다윗과 부활한 자의 관계가 아버지와 아들임을 명백한 호칭으로 확정 짓는 결정적 순간을 보여준다."
+        }
+      ]
+    },
+    {
+      "en": "The resurrected man knows that he is David’s Father, and David knows that he is his Son.",
+      "ko": "부활한 사람은 자신이 다윗의 아버지임을 알고, 다윗은 그가 자신의 아들임을 안다.",
+      "vocab": [
+        {
+          "word": "resurrected man",
+          "mean": "부활한 사람"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상호 인식 구조",
+          "desc": "대등 접속사 ‘and’를 중심으로 양측의 주절(knows that ~)이 완벽한 대칭을 이루어, 영적 각성 상태에서의 절대적이고 흔들림 없는 정체성 자각을 표현한다."
+        }
+      ]
+    },
+    {
+      "en": "Two men look at David lustfully and the Father reminds them of his Son’s victory over the giant Philistine.",
+      "ko": "두 남자가 다윗을 음욕 어린 눈으로 바라보고, 아버지는 그들에게 거인 블레셋 사람에 대한 그의 아들의 승리를 상기시킨다.",
+      "vocab": [
+        {
+          "word": "lustfully",
+          "mean": "음욕을 품고, 탐욕스럽게"
+        },
+        {
+          "word": "reminds",
+          "mean": "상기시키다"
+        },
+        {
+          "word": "Philistine",
+          "mean": "블레셋 사람"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "remind A of B 구문",
+          "desc": "‘remind A of B’를 사용하여 세속적 시선(lustfully)으로부터 아들을 보호하고 신성한 다윗의 승리(거인 골리앗을 꺾은 역사)를 일깨우는 아버지의 권위를 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "And while he is sitting there and contemplating the unearthly beauty of his Son, the second act comes to its end.",
+      "ko": "그리고 그가 그곳에 앉아 아들의 초세속적인 아름다움을 깊이 묵상하는 동안, 두 번째 행위가 끝에 이른다.",
+      "vocab": [
+        {
+          "word": "contemplating",
+          "mean": "묵상하다, 응시하다"
+        },
+        {
+          "word": "unearthly beauty",
+          "mean": "초세속적 아름다움, 영적인 아름다움"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동시 동작 분사/절",
+          "desc": "‘while he is sitting ~ and contemplating ~’를 통해 내면의 깊은 관조와 신비 체험의 한 시퀀스가 마무리되는 국면을 시간적 배경으로 포착한다."
+        }
+      ]
+    },
+    {
+      "en": "God the Father gave Himself to man that man might become God the Father.",
+      "ko": "하나님 아버지는 인간이 하나님 아버지가 될 수 있도록 자신을 인간에게 주셨다.",
+      "vocab": [
+        {
+          "word": "gave Himself",
+          "mean": "자신을 내어주다"
+        },
+        {
+          "word": "might become",
+          "mean": "~가 될 수 있도록"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적을 나타내는 부사절",
+          "desc": "‘so that / that ~ might’ 조동사 구문을 사용하여 인간 구속과 신성화의 궁극적인 목적이 인간이 곧 하나님 아버지 자신이 되는 것임을 밝히는 네빌 가르침의 핵심 명제를 서술한다."
+        }
+      ]
+    },
+    {
+      "en": "'I will tell of the decree of the Lord: He said to me, Son, today I have begotten You'.",
+      "ko": "'내가 주의 칙령을 선포하리라: 주께서 내게 이르시되, 너는 내 아들이라, 오늘 내가 너를 낳았도다'.",
+      "vocab": [
+        {
+          "word": "decree",
+          "mean": "칙령, 법령"
+        },
+        {
+          "word": "begotten",
+          "mean": "낳은, 출생한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 인용 및 직설법",
+          "desc": "구약 시편의 영적 선언을 인용하여 아버지와 아들의 신성한 계약과 탄생의 비밀을 직접 화법으로 전달한다."
+        }
+      ]
+    },
+    {
+      "en": "(Ps. 2:7) 'You are My",
+      "ko": "(시편 2:7) '너는 나의",
+      "vocab": [
+        {
+          "word": "Ps.",
+          "mean": "시편(Psalms)의 약어"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 출처 표기 및 파편화 구문",
+          "desc": "앞선 문장의 인용구와 연결되는 성경 구절의 출처와 일부 단절된 텍스트 구조로, 신비로운 여운을 남긴다."
+        }
+      ]
+    },
+    {
+      "en": "The third act unfolds four months after the Father-Son relationship has been revealed.",
+      "ko": "세 번째 행위는 아버지와 아들의 관계가 계시된 지 네 달 뒤에 펼쳐진다.",
+      "vocab": [
+        {
+          "word": "unfolds",
+          "mean": "펼쳐지다, 전개되다"
+        },
+        {
+          "word": "revealed",
+          "mean": "계시된, 드러난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재완료 수동태",
+          "desc": "‘has been revealed’를 사용하여 아버지와 아들의 관계가 이미 객관적이고 영적으로 확정된 상태임을 나타낸 뒤 세 번째 단계로 전개됨을 설명한다."
+        }
+      ]
+    },
+    {
+      "en": "It is dramatic from beginning to end.",
+      "ko": "그것은 처음부터 끝까지 극적이다.",
+      "vocab": [
+        {
+          "word": "dramatic",
+          "mean": "극적인"
+        },
+        {
+          "word": "from beginning to end",
+          "mean": "처음부터 끝까지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상태 서술",
+          "desc": "‘from beginning to end’ 부사구가 문장의 서술을 강조하며 영적 비전의 강렬함을 부각한다."
+        }
+      ]
+    },
+    {
+      "en": "A bolt of lightning splits the body of the resurrected man from the top of his skull to the base of his spine.",
+      "ko": "번개 줄기가 부활한 사람의 몸을 그의 두개골 꼭대기부터 척추 기저부까지 쪼개버린다.",
+      "vocab": [
+        {
+          "word": "bolt of lightning",
+          "mean": "번개 줄기, 번갯불"
+        },
+        {
+          "word": "splits",
+          "mean": "쪼개다, 갈라놓다"
+        },
+        {
+          "word": "skull",
+          "mean": "두개골"
+        },
+        {
+          "word": "base of his spine",
+          "mean": "척추의 기저부, 꼬리뼈 부근"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구의 범위 설정",
+          "desc": "‘from A to B’ 구조를 활용하여 신성한 번개가 인간의 척추와 두개골을 관통하며 일어나는 해부학적/영적 대변혁의 정확한 동선을 묘사한다."
+        }
+      ]
+    },
+    {
+      "en": "Now the new and living way is opened for him through the curtain, that is, through his body.",
+      "ko": "이제 새롭고 살아 있는 길이 그 휘장을 통하여, 즉 그의 몸을 통하여 그를 위해 열린다.",
+      "vocab": [
+        {
+          "word": "living way",
+          "mean": "살아 있는 길"
+        },
+        {
+          "word": "curtain",
+          "mean": "휘장, 성소의 휘장"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 표현",
+          "desc": "‘that is’를 통한 동격 삽입을 통해 성경 속 성막의 '휘장(curtain)'이 곧 영적 각성을 겪는 '인간의 육체(his body)'임을 신비주의적 관점에서 해석한다."
+        }
+      ]
+    },
+    {
+      "en": "Revelation is always in personal terms, and the human agents of God’s revelation are never suppressed to the level of the impersonal.",
+      "ko": "계시는 항상 인격적 용어로 이루어지며, 하나님의 계시를 담는 인간 대리자들은 결코 비인격적인 차원으로 격하되지 않는다.",
+      "vocab": [
+        {
+          "word": "personal terms",
+          "mean": "인격적 차원, 개인적 용어"
+        },
+        {
+          "word": "human agents",
+          "mean": "인간 대리자"
+        },
+        {
+          "word": "suppressed",
+          "mean": "억누르다, 격하시키다"
+        },
+        {
+          "word": "impersonal",
+          "mean": "비인격적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "등위절과 부정어 강조",
+          "desc": "대등 접속사 ‘and’로 이어진 두 번째 절에서 ‘are never suppressed’라는 수동태 부정 표현을 사용하여 인간의 개성과 주체성이 신성한 계시 속에서 소멸되지 않고 온전히 보존됨을 역설한다."
+        }
+      ]
+    },
+    {
+      "en": "Consequently, when He came into the world, He said, 'Sacrifices and offerings Thou has not desired, but a body hast Thou prepared for Me; in burnt offerings and sin offerings Thou hast taken no pleasure'.",
+      "ko": "그러므로 그가 세상에 임하실 때에 이르시되, '주께서 제사와 예물을 원하지 아니하시고 오직 나를 위하여 한 몸을 예비하셨도다; 번제와 속죄제는 기뻐하지 아니하시나이다'.",
+      "vocab": [
+        {
+          "word": "Consequently",
+          "mean": "결과적으로, 그러므로"
+        },
+        {
+          "word": "Sacrifices and offerings",
+          "mean": "제사와 예물"
+        },
+        {
+          "word": "burnt offerings",
+          "mean": "번제"
+        },
+        {
+          "word": "sin offerings",
+          "mean": "속죄제"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문 및 고어체 동사",
+          "desc": "‘Thou hast not desired, but … hast Thou prepared’ 형태의 고어(archaic) 어조를 사용하여 의식의 외형적 제사보다 육체라는 신성한 도구의 준비를 우선시하는 성경적 진리를 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "Then I said 'Lo, I have come to do Thy will, O God, as it is written of Me in the roll of the book'.",
+      "ko": "그때에 내가 말하기를 '보소서, 두두루마리 책에 나를 대하여 기록된 것과 같이, 오 하나님이여, 내가 주의 뜻을 행하러 왔나이다' 하였느니라.",
+      "vocab": [
+        {
+          "word": "Lo",
+          "mean": "보라, 보소서"
+        },
+        {
+          "word": "Thy will",
+          "mean": "주의 뜻"
+        },
+        {
+          "word": "roll of the book",
+          "mean": "책 두두루마리"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결과 및 양태 부사절",
+          "desc": "‘as it is written of Me in the roll of the book’라는 양태 부사절을 통해, 인간이 겪는 모든 신비적 부활과 행위가 이미 영원한 우주적 각본(책의 두루마리)에 기록되어 있음을 확증한다."
+        }
+      ]
+    },
+    {
+      "en": "God’s will is done.",
+      "ko": "하나님의 뜻이 이루어집니다.",
+      "vocab": [
+        {
+          "word": "will",
+          "mean": "뜻, 의지"
+        },
+        {
+          "word": "be done",
+          "mean": "이루어지다, 행해지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태",
+          "desc": "God's will이 주어로 와서 하나님의 뜻이 인간의 개입이 아니라 신성한 질서 안에서 온전히 성취됨을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "God must save and God alone.",
+      "ko": "하나님께서 구원하셔야 하며 오직 하나님만이 하십니다.",
+      "vocab": [
+        {
+          "word": "save",
+          "mean": "구원하다"
+        },
+        {
+          "word": "alone",
+          "mean": "오직, 홀로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "생략 및 강조",
+          "desc": "and God alone은 'God alone must save'의 구조에서 반복을 피하고 구원 주체가 오직 하나님임을 강력하게 부각하는 도치 및 생략 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "At the base of his spine, he sees a pool of golden liquid light and knows that it is himself.",
+      "ko": "척추 기저부에서 그는 황금빛 액체 빛의 못을 보고 그것이 자기 자신임을 안다.",
+      "vocab": [
+        {
+          "word": "base of spine",
+          "mean": "척추의 기저부, 꼬리뼈 부근"
+        },
+        {
+          "word": "pool",
+          "mean": "고인 물, 못"
+        },
+        {
+          "word": "liquid light",
+          "mean": "액체 빛"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 부사구",
+          "desc": "문장 맨 앞의 'At the base of his spine'은 쿤달리니 각성이 일어나는 신체적 영적 중심지를 시각적으로 고정하는 전치사구입니다."
+        }
+      ]
+    },
+    {
+      "en": "He now has 'confidence to enter the sanctuary by the blood of Jesus, by the new and living way which He opened for us through the curtain, that is, through His flesh' (Heb. 10:19,20).",
+      "ko": "그는 이제 예수의 피로, 곧 그분이 휘장을 통해, 즉 자신의 육체를 통해 우리를 위해 열어놓으신 새롭고 산 길로 성소에 들어갈 '확신'을 가집니다.",
+      "vocab": [
+        {
+          "word": "confidence",
+          "mean": "확신, 대담함"
+        },
+        {
+          "word": "sanctuary",
+          "mean": "성소"
+        },
+        {
+          "word": "curtain",
+          "mean": "휘장"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 및 관계대명사절",
+          "desc": "that is는 앞의 'the new and living way'를 부연 설명하며, 'which He opened'는 그 길의 기원이 그리스도의 육체(영적 자아의 육화와 부활)에 있음을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "As he contemplates the pool of golden liquid light, the blood of God, the living water, he fuses with it, and knows that it is himself, his divine Creator and Redeemer.",
+      "ko": "그가 황금빛 액체 빛, 즉 하나님의 피이자 생수의 못을 응시할 때, 그는 그것과 하나로 융합되며 그것이 자기 자신, 즉 그의 신성한 창조자이자 구속자임을 알게 됩니다.",
+      "vocab": [
+        {
+          "word": "contemplate",
+          "mean": "응시하다, 깊이 생각하다"
+        },
+        {
+          "word": "fuse",
+          "mean": "융합하다, 합쳐지다"
+        },
+        {
+          "word": "Redeemer",
+          "mean": "구속자, 구원자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 구조의 연쇄",
+          "desc": "the blood of God와 the living water는 모두 a pool of golden liquid light와 동격 관계를 이루어, 성경적 상징이 곧 인간 내면의 영적 실재임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Now like a bolt of spiral lightning, he ascends his spine entering the heavenly sanctuary of his skull violently.",
+      "ko": "이제 나선형 번개의 섬광처럼 그는 척추를 타고 올라가 자신의 두개골이라는 하늘 성소로 맹렬하게 진입한다.",
+      "vocab": [
+        {
+          "word": "bolt of lightning",
+          "mean": "번갯불"
+        },
+        {
+          "word": "spiral",
+          "mean": "나선형의"
+        },
+        {
+          "word": "violently",
+          "mean": "맹렬하게, 거세게"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "entering the heavenly sanctuary는 주절의 동작과 동시에 일어나는 격렬한 영적 상승(각성)의 과정을 묘사하는 분사구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "His head reverberates like thunder.",
+      "ko": "그의 머리가 우레처럼 울려 퍼진다.",
+      "vocab": [
+        {
+          "word": "reverberate",
+          "mean": "울리다, 반향하다"
+        },
+        {
+          "word": "thunder",
+          "mean": "우레, 천둥"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "직유법",
+          "desc": "like thunder를 통해 두개골 안에서 일어나는 영적 폭발과 각성의 압도적인 에너지를 청각적 심상으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "'And as Moses lifted up the serpent in the wilderness, so must the Son of man be lifted up.'",
+      "ko": "'모세가 광야에서 뱀을 든 것같이 인자도 들려야 하리라.'",
+      "vocab": [
+        {
+          "word": "wilderness",
+          "mean": "광야"
+        },
+        {
+          "word": "lift up",
+          "mean": "들어 올리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 비유 구문",
+          "desc": "As A, so B 구문을 통해 모세의 뱀(척추의 에너지)과 인자의 들림(의식의 뇌로의 상승)이 정확히 대응하는 신비주의적 평행 이론을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "'From the days of John the Baptist until now the Kingdom of Heaven has been coming violently, and men of violence take it by force.'",
+      "ko": "'세례 요한의 때부터 지금까지 천국은 맹렬히 침노를 당하나니, 침노하는 자가 빼앗느니라.'",
+      "vocab": [
+        {
+          "word": "Kingdom of Heaven",
+          "mean": "천국"
+        },
+        {
+          "word": "violently",
+          "mean": "맹렬하게, 폭력적으로"
+        },
+        {
+          "word": "by force",
+          "mean": "힘으로, 강력하게"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재완료진행형",
+          "desc": "has been coming은 천국의 각성이 역사적 사건이 아니라 영적 깨달음을 향해 지속적으로 가해지는 거대한 의식의 압박임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "To such men the new age has come.",
+      "ko": "그러한 자들에게 새 시대가 도래했습니다.",
+      "vocab": [
+        {
+          "word": "such men",
+          "mean": "그러한 사람들 (폭력적으로 천국을 취하는 자들)"
+        },
+        {
+          "word": "new age",
+          "mean": "새 시대, 메시아적 시대"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "전치사구 도치",
+          "desc": "To such men이 문두로 나와 강조되며, 내면의 각성을 이루어낸 구도자에게 영적 차원의 변화가 완성되었음을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Two years and nine months later, fulfilling the three and a half years of the ministry of Jesus, the fourth and final act of the drama of salvation comes to its climax.",
+      "ko": "2년 9개월 후, 예수의 3년 반 사역을 성취하며 구원 드라마의 네 번째이자 마지막 막이 절정에 이릅니다.",
+      "vocab": [
+        {
+          "word": "ministry",
+          "mean": "사역, 공생애"
+        },
+        {
+          "word": "climax",
+          "mean": "절정, 최고조"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "fulfilling은 앞서 일어난 시간적 경과가 성경적 상징(3년 반)의 내적 성취임을 설명하는 분사구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "'And the Holy Spirit descended upon him in bodily form, as a dove, and a voice came from heaven, 'Thou art My beloved Son; with Thee I am well pleased'.'",
+      "ko": "'성령이 비둘기 같은 형체로 그 위에 강림하시며 하늘로부터 소리가 나기를 네는 내 사랑하는 아들이라 내가 너를 기뻐하노라 하셨다.'",
+      "vocab": [
+        {
+          "word": "bodily form",
+          "mean": "형체, 육체적 형태"
+        },
+        {
+          "word": "dove",
+          "mean": "비둘기"
+        },
+        {
+          "word": "well pleased",
+          "mean": "기뻐하다, 만족하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "직유 및 인용",
+          "desc": "as a dove를 통해 성령의 임재를 시각화하며, 인용구 내부의 Thou와 Thee는 신과 각성한 자(인간이자 하나님의 아들)의 합일을 직접 화법으로 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "The head of the resurrected one suddenly becomes translucent.",
+      "ko": "부활한 자의 머리가 갑자기 반투명하게 빛납니다.",
+      "vocab": [
+        {
+          "word": "resurrected one",
+          "mean": "부활한 자"
+        },
+        {
+          "word": "translucent",
+          "mean": "반투명한, 빛이 투과하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주어와 상태동사",
+          "desc": "The head of the resurrected one가 주어로 와서, 의식의 부활이 육체적 차원(특히 두뇌와 이마 부근)의 빛의 변형으로 나타남을 객관적 사실처럼 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "Hovering above him, as though floating, a dove with its eyes focused lovingly upon him, descends upon his outstretched hand, he draws her to his face, and the dove smothers him with love, kissing his face, his head and his neck.",
+      "ko": "그의 위를 마치 떠 있듯이 맴돌며 그를 사랑스런 눈으로 응시하는 비둘기가 그의 뻗은 손 위로 내려앉고, 그는 그 비둘기를 자신의 얼굴로 끌어당기며, 비둘기는 그의 얼굴과 머리, 목에 입을 맞추며 사랑으로 그를 감싸 안는다.",
+      "vocab": [
+        {
+          "word": "hover",
+          "mean": "맴돌다, 떠 있다"
+        },
+        {
+          "word": "outstretched",
+          "mean": "뻗은, 펼쳐진"
+        },
+        {
+          "word": "smother",
+          "mean": "뒤덮다, 듬뿍 안겨주다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 및 연속 동사",
+          "desc": "Hovering과 as though floating은 비둘기의 신비로운 등장을 묘사하며, descends, draws, smothers 등 현재시제 동사들이 연속되어 신과 인간 사이의 황홀하고 친밀한 사랑의 절정을 생생하게 전달합니다."
+        }
+      ]
+    },
+    {
+      "en": "A woman, daughter of the voice of God says to him: “He loves you” and the drama of salvation comes to its end in him.",
+      "ko": "하나님의 음성의 딸인 한 여인이 그에게 말합니다: “그가 너를 사랑한다” 그리고 구원의 드라마가 그 안에서 끝을 맺습니다.",
+      "vocab": [
+        {
+          "word": "daughter of the voice of God",
+          "mean": "하나님의 음성의 딸 (바트 콜, 하늘의 계시를 상징)"
+        },
+        {
+          "word": "drama of salvation",
+          "mean": "구원의 드라마 (인간 안에서 펼쳐지는 신성한 각성 과정)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 표현",
+          "desc": "'A woman'과 'daughter of the voice of God'가 동격으로 연결되어 영적 계시의 주체를 나타냅니다."
+        },
+        {
+          "tag": "완료의 의미",
+          "desc": "'comes to its end'는 시간이 흘러 끝나는 것이 아니라, 신성한 목적이 도달하여 성취됨을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "He is now a son of God, a son of the resurrection.",
+      "ko": "그는 이제 하나님의 아들이며, 부활의 아들입니다.",
+      "vocab": [
+        {
+          "word": "son of God",
+          "mean": "하나님의 아들 (의식의 최고 형태, 하나님 아버지와의 동일성 자각)"
+        },
+        {
+          "word": "son of the resurrection",
+          "mean": "부활의 아들 (죽음을 넘어선 영원한 생명의 자각)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상태의 전환",
+          "desc": "'now'를 사용하여 인간적 자아에서 신성한 자아로의 근본적인 존재론적 전환을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "He “cannot die any more, because He is a Son of God, being a Son of Resurrection” (Luke 20:36).",
+      "ko": "그는 “더 이상 죽을 수 없습니다. 왜냐하면 그는 하나님의 아들이며, 부활의 아들이기 때문입니다” (누가복음 20:36).",
+      "vocab": [
+        {
+          "word": "cannot die any more",
+          "mean": "더 이상 죽을 수 없다 (죽음이라는 환상으로부터의 해방)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "'being a Son of Resurrection'은 앞선 주절의 이유를 설명하는 분사구문으로, 존재의 본질이 곧 부활임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "“I and the Father are one.”",
+      "ko": "“ 나와 아버지는 하나이다.”",
+      "vocab": [
+        {
+          "word": "one",
+          "mean": "하나 (분리되지 않은 유일한 존재, 인간의 상상력과 하나님의 동일성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재론적 선언",
+          "desc": "주어 'I and the Father'에 복수 동사 'are'를 쓰면서도 'one'이라는 단수적 개념을 통해 본질적 일체감을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "(John 10:30) “I am the root and the offspring of David.”",
+      "ko": "(요한복음 10:30) “나는 다윗의 뿌리요 자손이라.”",
+      "vocab": [
+        {
+          "word": "root and offspring",
+          "mean": "뿌리와 자손 (원인과 결과가 동시에 자신 안에 있음을 의미)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상징적 대조",
+          "desc": "뿌리(근원)와 자손(결과)을 동시에 칭함으로써 인간 존재의 신성한 기원과 현현을 동시에 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "(Rev. 22:16) He is the Father of humanity and its offspring.",
+      "ko": "(요한계시록 22:16) 그는 인류의 아버지이자 그 자손입니다.",
+      "vocab": [
+        {
+          "word": "Father of humanity",
+          "mean": "인류의 아버지 (모든 만유를 품고 있는 근원적 상상력)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "역설적 구조",
+          "desc": "창조주이신 아버지와 피조물인 자손이 동일한 인물임을 나타내는 네빌 특유의 신비주의적 해석입니다."
+        }
+      ]
+    },
+    {
+      "en": "By becoming man, the limit of contraction and opacity, he breaks the shell, and expanding into translucence achieves his purpose.",
+      "ko": "인간이 됨으로써, 즉 수축과 불투명성의 한계가 됨으로써, 그는 껍질을 깨고 투명성으로 확장하여 자신의 목적을 성취합니다.",
+      "vocab": [
+        {
+          "word": "limit of contraction and opacity",
+          "mean": "수축과 불투명성의 한계 (물리적 육신과 제한된 인간 의식)"
+        },
+        {
+          "word": "translucence",
+          "mean": "반투명, 빛이 투과하는 상태 (신성한 의식으로의 각성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문의 연속",
+          "desc": "'By becoming~', 'expanding~' 등의 분사구문이 주절의 행동과 상태 변화를 생생하게 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "He has found “Him of Whom Moses in the law and the prophets wrote” (John 1:45).",
+      "ko": "그는 “모세가 율법에 기록하였고 여러 선지자가 기록한 그분”을 만났습니다 (요한복음 1:45).",
+      "vocab": [
+        {
+          "word": "Moses in the law and the prophets",
+          "mean": "모세의 율법과 선지서 (구약 성경 전체, 즉 인간 안에서 일어날 심리적 드라마의 예표)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "'Of Whom' 전치사+관계대명사 구조를 사용하여 성경이 가리키는 대상이 외부의 인물이 아니라 영적인 존재임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "The anonymous authors of the gospel of God are twice-born men, sons of God, sons of the Resurrection, who can die no more, having escaped from the body of sin and death.",
+      "ko": "하나님의 복음의 익명의 저자들은 거듭난 사람들이며, 하나님의 아들이요, 부활의 아들들이며, 죄와 죽음의 몸에서 벗어나 더 이상 죽을 수 없는 이들입니다.",
+      "vocab": [
+        {
+          "word": "twice-born men",
+          "mean": "거듭난 사람들 (위로부터 난 자, 영적으로 각성한 자)"
+        },
+        {
+          "word": "body of sin and death",
+          "mean": "죄와 죽음의 몸 (육체적 관념에 갇힌 제한된 인간 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "완료 분사구문",
+          "desc": "'having escaped'는 주절의 주어들이 과거에 이미 육신과 죽음의 결박에서 완전히 벗어났음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The gospel is the story of God’s plan of salvation.",
+      "ko": "복음은 하나님의 구원 계획에 대한 이야기입니다.",
+      "vocab": [
+        {
+          "word": "plan of salvation",
+          "mean": "구원 계획 (인간이 다시 하나님으로 깨어나는 신성한 각성 시나리오)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소유격 중첩",
+          "desc": "'God's plan of salvation'을 통해 복음의 기원이 오직 하나님(상상력)에게 있음을 명시합니다."
+        }
+      ]
+    },
+    {
+      "en": "It will be helpful to all readers of the Word of God, to end this confession of faith with a quote from William Blake: “It ought to be understood that the Persons, Moses and Abraham, are not here meant, but the States Signified by those Names, the Individuals being representatives or Visions of those States as they were reveal’d to Mortal Man in the Series of Divine Revelations as they are written in the Bible: these various States I have seen in my Imagination; when distant they appear as One Man, but as you approach they appear Multitudes of Nations.”",
+      "ko": "하나님의 말씀의 모든 독자들에게, 이 신앙 고백을 윌리엄 블레이크의 인용으로 끝맺는 것은 유익할 것입니다: “여기서 모세와 아브라함이라는 인물들을 의미하는 것이 아니라, 그 이름들이 의미하는 '상태들'을 의미한다는 점이 이해되어야 합니다. 그 개인들은 성경에 기록된 일련의 신성한 계시 속에서 필멸의 인간에게 계시된 대로 그 상태들의 대변자이거나 환영들입니다. 나는 내 상상속에서 이 다양한 상태들을 보았습니다. 멀리 있을 때는 그들이 한 사람으로 보이지만, 가까이 갈수록 그들은 수많은 민족들로 보입니다.”",
+      "vocab": [
+        {
+          "word": "States Signified by those Names",
+          "mean": "그 이름들이 상징하는 상태들 (인물이 아닌 의식의 심리적 상태)"
+        },
+        {
+          "word": "Imagination",
+          "mean": "상상력 (네빌 사상에서 유일하고 참된 실재인 하나님)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 구문",
+          "desc": "'It will be helpful ~ to end ~' 구조를 통해 문장의 주어가 길어지는 것을 방지하고 가독성을 높였습니다."
+        }
+      ]
+    },
+    {
+      "en": "There is no secular history in the Bible.",
+      "ko": "성경에는 세속적인 역사가 없습니다.",
+      "vocab": [
+        {
+          "word": "secular history",
+          "mean": "세속적 역사 (시간과 공간 속에서 일어난 단순한 과거의 사실 기록)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재 부정",
+          "desc": "'There is no ~' 구문을 사용하여 성경의 역사적 사실성에 대한 통념을 단호하게 부정합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Bible is the history of salvation and is wholly supernatural.",
+      "ko": "성경은 구원의 역사이며 온전히 초자연적입니다.",
+      "vocab": [
+        {
+          "word": "wholly supernatural",
+          "mean": "온전히 초자연적인 (물리적 법칙을 초월한 심리적·영적 실재)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "병렬 구조",
+          "desc": "'is the history'와 'is wholly supernatural'이 동사 'is'를 공유하며 성경의 본질을 두 가지 측면에서 정의합니다."
+        }
+      ]
+    }
+  ]
+}
