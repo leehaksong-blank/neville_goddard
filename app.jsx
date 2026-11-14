@@ -295,17 +295,18 @@ function App() {
 
   // ✅ 실제 존재하는 정식 Gemini 모델만 순차 호출 (gemini-3.8-flash 완전 제거!)
 // ⭕ 수정할 코드 (구형 2.0 완전 제거 + 최신 3.5 & 2.5 정식 모델만 배치)
+// 1. 무료 등급(Free Tier)에서 튕기지 않는 고속 모델 2개만 지정
   const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount) => {
     const models = [
-      "gemini-3.5-flash",      // 1순위: 최신 3.5 고속 모델
-      "gemini-3.5-pro",        // 2순위: 최신 3.5 최고급 Pro 모델
-      "gemini-3.5-flash-lite" // 3순위: 구글 권장 최신 3.5 경량 백업 모델
+      "gemini-3.5-flash-lite", // 1순위: 무료 할당량이 가장 많고 가장 빠름
+      "gemini-3.5-flash",      // 2순위: 3.5 표준 모델
+      "gemini-2.5-flash"       // 3순위: 2.5 표준 호환 모델
     ];
     let lastError = null;
 
     for (let m = 0; m < models.length; m++) {
       const modelName = models[m];
-      for (let attempt = 1; attempt <= 2; attempt++) {
+      for (let attempt = 1; attempt <= 3; attempt++) {
         setStatusMsg(
           `⏳ AI 분석 중 (${modelName}) [${chunkIndex + 1}/${totalChunks} 구간] ... (현재 ${currentCount}문장 완료)`
         );
@@ -327,24 +328,30 @@ function App() {
 
           const data = await res.json();
           if (data.error) {
-            lastError = new Error(data.error.message);
-            await sleep(2000);
+            const errMsg = data.error.message || "";
+            lastError = new Error(`[${modelName}] ${errMsg}`);
+
+            // 없는 모델명이면 즉시 다음 모델로 이동
+            if (res.status === 404 || errMsg.includes("not found") || errMsg.includes("no longer available")) {
+              break;
+            }
+            // 무료 등급 분당 제한(429)에 걸렸을 때는 10초 숨 고른 뒤 재시도!
+            setStatusMsg(`⏳ 무료 API 속도 제한 대기 중... 10초 후 [${chunkIndex + 1}/${totalChunks} 구간] 자동 재시도합니다.`);
+            await sleep(10000);
             continue;
           }
 
-          const outputText =
-            data?.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+          const outputText = data?.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
           const parsed = safeParseJSON(outputText);
           if (parsed) return parsed;
         } catch (err) {
           lastError = err;
-          await sleep(2000);
+          await sleep(3000);
         }
       }
     }
-    throw lastError || new Error("모든 AI 모델 호출에 실패했습니다.");
+    throw lastError || new Error("호출 실패");
   };
-
   // ✅ 핵심: 이미 457문장이 있으면 457번째 문장 이후의 원문부터 이어서 분석!
   const handleAnalyze = async (forceFromStart = false) => {
     if (!apiKey.trim()) {
