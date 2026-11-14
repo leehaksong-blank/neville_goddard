@@ -40,16 +40,17 @@ const BIBLE_BOOK_ORDER = {
   "zephaniah": 36, "haggai": 37, "zechariah": 38, "malachi": 39,
   "matthew": 40, "mark": 41, "luke": 42, "john": 43, "acts": 44,
   "romans": 45, "1 corinthians": 46, "2 corinthians": 47, "galatians": 48, "ephesians": 49,
-  "philippians": 50, "colossians": 51, "1 timothy": 54, "2 timothy": 55, "titus": 56,
-  "philemon": 57, "hebrews": 58, "james": 59, "1 peter": 60, "2 peter": 61,
-  "1 john": 62, "2 john": 63, "3 john": 64, "jude": 65, "revelation": 66
+  "philippians": 50, "colossians": 51, "1 thessalonians": 52, "2 thessalonians": 53,
+  "1 timothy": 54, "2 timothy": 55, "titus": 56, "philemon": 57, "hebrews": 58,
+  "james": 59, "1 peter": 60, "2 peter": 61, "1 john": 62, "2 john": 63,
+  "3 john": 64, "jude": 65, "revelation": 66
 };
 
-// 초기 샘플 데이터 (1번 강의 5번째 문장 성경 인용 예시 포함)
+// 초기 샘플 성경 인용 데이터
 const INITIAL_BIBLE_SAMPLE = [
   {
     id: "sample_1",
-    sourceTitle: "001. A Divine Event",
+    sourceTitle: "A Divine Event",
     sentenceNo: 5,
     bookNameEn: "1 Corinthians",
     bookNameKo: "고린도전서",
@@ -85,7 +86,7 @@ const INITIAL_LECTURE = [
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// 영문 장절(예: "1 Corinthians 12:3")을 파싱하여 성경책/장/절 분리
+// 영문 장절(예: "1 Corinthians 12:3") 파싱 도우미
 const parseBibleRef = (refStr) => {
   if (!refStr) return { bookEn: "John", chapter: 1, verse: 1, order: 99 };
   const cleaned = refStr.trim();
@@ -99,12 +100,12 @@ const parseBibleRef = (refStr) => {
   return { bookEn: bookEn, chapter: chapter, verse: verse, order: order };
 };
 
-// 안전한 JSON 복구 파서
+// 안전한 JSON 복구 파서 (정규표현식 미사용)
 const safeParseJSON = (rawStr) => {
   if (!rawStr) return [];
   let text = rawStr.trim();
   if (text.indexOf("```") !== -1) {
-    text = text.replace(/```json/gi, "").replace(/```/g, "").trim();
+    text = text.split("```json").join("").split("```JSON").join("").split("```").join("").trim();
   }
   try {
     const parsed = JSON.parse(text);
@@ -130,7 +131,7 @@ const safeParseJSON = (rawStr) => {
 };
 
 function App() {
-  // 메인 탭: 'study' (강독 스튜디오) | 'bible_menu' (네빌성경구문 독립 메뉴)
+  // 상단 메인 탭: 'study' (강독 스튜디오) | 'bible_menu' (네빌성경구문 독립 메뉴)
   const [activeMenu, setActiveMenu] = useState("study");
 
   const [openBooksMenu, setOpenBooksMenu] = useState(false);
@@ -151,15 +152,16 @@ function App() {
     isBook: false,
     num: 1,
     title: "A Divine Event",
-    url: "[https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/](https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/)"
+    url: "https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/"
   });
-  const [targetUrl, setTargetUrl] = useState("[https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/](https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/)");
+  const [targetUrl, setTargetUrl] = useState("https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/");
   const [rawText, setRawText] = useState("");
   const [fetching, setFetching] = useState(false);
   const [analyzing, setAnalyzing] = useState(false);
   const [scanningBible, setScanningBible] = useState(false);
   const [statusMsg, setStatusMsg] = useState("");
   const [quizMode, setQuizMode] = useState(false);
+  const [resumeChunkIdx, setResumeChunkIdx] = useState(0);
 
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
 
@@ -189,7 +191,7 @@ function App() {
   const [viewVerse, setViewVerse] = useState(3);
   const [liveVerseData, setLiveVerseData] = useState({ kjv: "", loading: false });
 
-  // 데이터 병합 도우미
+  // 데이터 병합 도우미 (문장 수나 bible 정보가 더 풍부한 쪽을 유지)
   const mergeDataToStore = (publicData, fallbackTitle) => {
     if (!publicData) return;
     setStore(prev => {
@@ -246,7 +248,7 @@ function App() {
     try { localStorage.setItem("neville_bible_json_store", JSON.stringify(bibleList)); } catch (e) {}
   }, [bibleList]);
 
-  // store 안의 문장들에 포함된 bible 배열도 자동으로 bibleList에 병합 및 성경 분류순 정렬
+  // store 안의 문장들에 포함된 bible 배열도 자동으로 bibleList에 합치고 성경 분류순 정렬
   const sortedBibleItems = useMemo(() => {
     const map = {};
     bibleList.forEach(item => {
@@ -294,7 +296,6 @@ function App() {
     return combined;
   }, [bibleList, store]);
 
-  // 선택된 성경 구문이 바뀔 때 하단 장/절 초기화
   const currentBibleItem = sortedBibleItems[selectedBibleIdx] || null;
 
   useEffect(() => {
@@ -313,7 +314,6 @@ function App() {
     const nextVerse = Math.max(1, viewVerse + delta);
     setViewVerse(nextVerse);
 
-    // 원래 인용된 절로 돌아온 경우 저장된 원문 즉시 표시
     if (nextVerse === parsed.verse && viewChapter === parsed.chapter) {
       setLiveVerseData({ kjv: currentBibleItem.kjv, loading: false });
       return;
@@ -322,11 +322,11 @@ function App() {
     setLiveVerseData({ kjv: "", loading: true });
     try {
       const queryRef = parsed.bookEn + " " + viewChapter + ":" + nextVerse;
-      const res = await fetch("[https://bible-api.com/](https://bible-api.com/)" + encodeURIComponent(queryRef) + "?translation=kjv");
+      const res = await fetch("https://bible-api.com/" + encodeURIComponent(queryRef) + "?translation=kjv");
       if (res.ok) {
         const data = await res.json();
         setLiveVerseData({
-          kjv: (data && data.text) ? data.text.trim() : "해당 절의 원문을 찾을 수 없습니다 (장의 끝이거나 존재하지 않는 절입니다).",
+          kjv: (data && data.text) ? data.text.trim() : "해당 절의 원문을 찾을 수 없습니다.",
           loading: false
         });
       } else {
@@ -353,7 +353,25 @@ function App() {
     window.speechSynthesis.speak(u);
   };
 
-  // JSON 다운로드 도우미
+  // PDF 인쇄/다운로드
+  const handleDownloadPdf = () => {
+    if (sentences.length === 0) {
+      alert("저장할 강독 노트가 없습니다.");
+      return;
+    }
+    if (quizMode) setQuizMode(false);
+    const originalTitle = document.title;
+    const prefix = selectedLec.isBook
+      ? "Book" + String(selectedLec.num).padStart(2, "0") + "_"
+      : selectedLec.num ? String(selectedLec.num).padStart(3, "0") + "_" : "";
+    document.title = prefix + selectedLec.title + "_강독노트";
+    setTimeout(() => {
+      window.print();
+      document.title = originalTitle;
+    }, 150);
+  };
+
+  // JSON 파일 다운로드 공통 함수
   const downloadJson = (dataObj, filename) => {
     const jsonString = JSON.stringify(dataObj, null, 2);
     const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
@@ -397,6 +415,27 @@ function App() {
     downloadJson(store, "neville_data.json");
   };
 
+  // 현재 권(vol1~6.json) 또는 책(book1~14.json) 개별 백업
+  const handleExportCurrentTargetJson = () => {
+    if (selectedLec.isBook) {
+      const bookData = { [selectedLec.title]: store[selectedLec.title] || [] };
+      downloadJson(bookData, "book" + selectedLec.num + ".json");
+    } else {
+      const targetVol = openVol || 1;
+      const list = volLectures[targetVol] || [];
+      const volData = {};
+      list.forEach(item => {
+        if (store[item.title] && store[item.title].length > 0) {
+          volData[item.title] = store[item.title];
+        }
+      });
+      if (store[selectedLec.title] && store[selectedLec.title].length > 0) {
+        volData[selectedLec.title] = store[selectedLec.title];
+      }
+      downloadJson(volData, "vol" + targetVol + ".json");
+    }
+  };
+
   // 강독 데이터 JSON 복원
   const handleImportAllJson = (e) => {
     const file = e.target.files && e.target.files[0];
@@ -415,7 +454,65 @@ function App() {
     e.target.value = "";
   };
 
-  // 권별 목록 불러오기
+  // ★ 핵심: 3중 프록시 자동 우회 웹 크롤러 (Jina Reader ➔ AllOrigins ➔ Codetabs)
+  const fetchWebTextWithFallback = async (targetPageUrl) => {
+    let cleanUrl = (targetPageUrl || "").trim();
+    if (cleanUrl.indexOf("http://") === 0) {
+      cleanUrl = "https://" + cleanUrl.slice(7);
+    }
+    if (!cleanUrl) throw new Error("유효한 URL이 없습니다.");
+
+    // 1순위: Jina Reader API
+    try {
+      const res1 = await fetch("https://r.jina.ai/" + cleanUrl);
+      if (res1.ok) {
+        const txt = await res1.text();
+        if (txt && txt.length > 100) return txt;
+      }
+    } catch (e) {}
+
+    // HTML을 마크다운 링크 + 본문 텍스트로 변환하는 보조 파서
+    const htmlToCleanText = (htmlStr) => {
+      const doc = new DOMParser().parseFromString(htmlStr, "text/html");
+      const removeSelectors = ["script", "style", "nav", "header", "footer", ".sidebar", "#genesis-sidebar-primary"];
+      removeSelectors.forEach(sel => {
+        doc.querySelectorAll(sel).forEach(el => el.remove());
+      });
+      doc.querySelectorAll("a").forEach(a => {
+        if (a.href && a.textContent) {
+          a.replaceWith(" [" + a.textContent.trim() + "](" + a.href + ") ");
+        }
+      });
+      const mainContent = doc.querySelector("main, article, .entry-content, #genesis-content") || doc.body;
+      return (mainContent ? mainContent.innerText || mainContent.textContent : "").trim();
+    };
+
+    // 2순위: AllOrigins 프록시 우회
+    try {
+      const res2 = await fetch("https://api.allorigins.win/get?url=" + encodeURIComponent(cleanUrl));
+      if (res2.ok) {
+        const json = await res2.json();
+        if (json && json.contents && json.contents.length > 100) {
+          return htmlToCleanText(json.contents);
+        }
+      }
+    } catch (e) {}
+
+    // 3순위: Codetabs 프록시 우회
+    try {
+      const res3 = await fetch("https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(cleanUrl));
+      if (res3.ok) {
+        const html = await res3.text();
+        if (html && html.length > 100) {
+          return htmlToCleanText(html);
+        }
+      }
+    } catch (e) {}
+
+    throw new Error("모든 우회 프록시 서버 접속이 지연되고 있습니다. 원문 주소를 새 창에서 열어 본문을 복사해 아래 입력창에 붙여넣어 주세요.");
+  };
+
+  // 권별 목록 불러오기 (3중 프록시 자동 우회 적용)
   const handleToggleVolume = async (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
@@ -427,8 +524,7 @@ function App() {
     if (!volLectures[volObj.vol] || volLectures[volObj.vol].length === 0) {
       setLoadingVol(true);
       try {
-        const res = await fetch("[https://r.jina.ai/](https://r.jina.ai/)" + volObj.indexUrl);
-        const text = await res.text();
+        const text = await fetchWebTextWithFallback(volObj.indexUrl);
         const lines = text.split("\n");
         const list = [];
         const seen = {};
@@ -436,14 +532,22 @@ function App() {
 
         for (let i = 0; i < lines.length; i++) {
           const line = lines[i];
-          const openBracket = line.indexOf("[");
-          const closeBracket = line.indexOf("](http");
-          if (openBracket !== -1 && closeBracket !== -1) {
+          let pos = 0;
+          while (pos < line.length) {
+            const openBracket = line.indexOf("[", pos);
+            const closeBracket = line.indexOf("](http", openBracket);
+            if (openBracket === -1 || closeBracket === -1) break;
+
             const title = line.slice(openBracket + 1, closeBracket).trim();
             const rest = line.slice(closeBracket + 2);
-            const endUrl = rest.search(/[\s)"]/);
-            const rawUrl = (endUrl !== -1 ? rest.slice(0, endUrl) : rest).trim();
-            const url = rawUrl.replace("http://", "https://");
+            let rawUrl = rest;
+            const spaceIdx = rawUrl.indexOf(" ");
+            if (spaceIdx !== -1) rawUrl = rawUrl.slice(0, spaceIdx);
+            const parenIdx = rawUrl.indexOf(")");
+            if (parenIdx !== -1) rawUrl = rawUrl.slice(0, parenIdx);
+            const quoteIdx = rawUrl.indexOf('"');
+            if (quoteIdx !== -1) rawUrl = rawUrl.slice(0, quoteIdx);
+            const url = rawUrl.trim().replace("http://", "https://");
 
             if (
               (url.indexOf("/neville-goddard-lectures/") !== -1 || url.indexOf("/neville-goddard-books/") !== -1) &&
@@ -457,6 +561,7 @@ function App() {
               seen[url] = true;
               list.push({ num: startNum++, title: title, url: url });
             }
+            pos = closeBracket + 6;
           }
         }
         setVolLectures(prev => Object.assign({}, prev, { [volObj.vol]: list }));
@@ -468,15 +573,14 @@ function App() {
     }
   };
 
-  // 본문 크롤링
+  // 본문 크롤링 (3중 프록시 자동 우회 적용)
   const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
     const finalUrl = urlToFetch || targetUrl;
     setFetching(true);
-    setStatusMsg("🌐 [" + (titleToSet || selectedLec.title) + "] 영어 원문을 실시간으로 읽어오는 중...");
+    setResumeChunkIdx(0);
+    setStatusMsg("🌐 [" + (titleToSet || selectedLec.title) + "] 영어 원문을 3중 우회 서버로 읽어오는 중...");
     try {
-      const response = await fetch("[https://r.jina.ai/](https://r.jina.ai/)" + finalUrl);
-      if (!response.ok) throw new Error("사이트 접속 실패");
-      const fullText = await response.text();
+      const fullText = await fetchWebTextWithFallback(finalUrl);
 
       let cleanBody = fullText;
       const startMarker = cleanBody.indexOf("Markdown Content:");
@@ -506,9 +610,10 @@ function App() {
     }
   };
 
-  // ★ 최신 Gemini 3.1 Pro Preview 1순위 + Flash 자동 우회 호출기 (gemini-2.5-pro 단종 오류 완벽 해결)
+  // ★ 최신 Gemini 3.1 Pro Preview 1순위 + Flash 자동 우회 호출기
   const callGeminiWithFallback = async (promptText, schemaObj, chunkInfo) => {
     const models = ["gemini-3.1-pro-preview", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
+    let lastErr = "";
 
     for (let attempt = 1; attempt <= 2; attempt++) {
       for (let m = 0; m < models.length; m++) {
@@ -516,7 +621,7 @@ function App() {
         try {
           setStatusMsg("⏳ AI 분석 중 (" + modelName + ") " + chunkInfo);
           const res = await fetch(
-            "[https://generativelanguage.googleapis.com/v1beta/models/](https://generativelanguage.googleapis.com/v1beta/models/)" + modelName + ":generateContent?key=" + apiKey.trim(),
+            "https://generativelanguage.googleapis.com/v1beta/models/" + modelName + ":generateContent?key=" + apiKey.trim(),
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -533,20 +638,20 @@ function App() {
 
           const data = await res.json();
           if (data.error) {
-            // 모델 미지원이나 과부하 시 즉시 다음 모델로 우회
-            await sleep(1000);
+            lastErr = data.error.message || "모델 응답 오류";
+            await sleep(900);
             continue;
           }
 
           const textOutput = (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts[0].text) || "[]";
           return safeParseJSON(textOutput);
         } catch (err) {
-          if (m === models.length - 1 && attempt === 2) throw err;
-          await sleep(1200);
+          lastErr = err.message;
+          await sleep(1000);
         }
       }
     }
-    throw new Error("AI 모델 응답 실패. API Key를 확인하거나 잠시 후 다시 시도해 주세요.");
+    throw new Error(lastErr || "AI 모델 응답 실패. API Key를 확인해 주세요.");
   };
 
   // 신규 강의/책 전체 강독 노트 + 성경 구문 동시 생성
@@ -568,7 +673,7 @@ function App() {
 
       for (let i = 0; i < paragraphs.length; i++) {
         const p = paragraphs[i];
-        if ((currentChunk + "\n\n" + p).length > 3200 && currentChunk.length > 0) {
+        if ((currentChunk + "\n\n" + p).length > 3000 && currentChunk.length > 0) {
           chunks.push(currentChunk.trim());
           currentChunk = p;
         } else {
@@ -620,10 +725,12 @@ function App() {
         }
       };
 
-      let allParsedSentences = [];
-      setStore(prev => Object.assign({}, prev, { [selectedLec.title]: [] }));
+      let allParsedSentences = resumeChunkIdx > 0 ? (store[selectedLec.title] || []) : [];
+      if (resumeChunkIdx === 0) {
+        setStore(prev => Object.assign({}, prev, { [selectedLec.title]: [] }));
+      }
 
-      for (let i = 0; i < chunks.length; i++) {
+      for (let i = resumeChunkIdx; i < chunks.length; i++) {
         const prompt = [
           "당신은 네빌 고다드(Neville Goddard) 전문 번역가이자 영어 구문·성경 주석가입니다.",
           "아래 본문 문장을 한 문장도 빠짐없이 순서대로 분리하여 JSON 배열로 반환하세요.",
@@ -641,20 +748,23 @@ function App() {
         );
 
         allParsedSentences = allParsedSentences.concat(parsed);
+        setResumeChunkIdx(i + 1);
         setStore(prev => Object.assign({}, prev, { [selectedLec.title]: allParsedSentences.slice() }));
 
-        if (i < chunks.length - 1) await sleep(1200);
+        if (i < chunks.length - 1) await sleep(1000);
       }
 
+      setResumeChunkIdx(0);
       setStatusMsg("🎉 총 " + allParsedSentences.length + "문장 강독 노트 및 성경 구문 추출 완료!");
     } catch (err) {
-      alert("AI 분석 오류: " + err.message);
+      alert("AI 분석 일시 정지: " + err.message);
+      setStatusMsg("⚠️ 완료된 구간까지 자동 저장되었습니다. 다시 버튼을 누르면 이어서 진행됩니다.");
     } finally {
       setAnalyzing(false);
     }
   };
 
-  // ★ 이미 번역된 노트가 있을 때(예: vol1, book1~14) 성경 인용 문장만 쏙 뽑아 bible.json에 추가하는 함수
+  // ★ 이미 번역된 현재 노트에서 성경 인용 문장만 추출하여 매핑하는 함수
   const handleExtractBibleFromCurrent = async () => {
     if (!apiKey.trim()) {
       alert("상단 노란색 칸에 Gemini API Key를 먼저 입력해 주세요!");
@@ -742,7 +852,7 @@ function App() {
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Studio</div>
         <h1 className="text-lg font-bold mb-3">네빌 고다드 강독 & 성경구문</h1>
 
-        {/* ★ 상단 핵심 메뉴 분리 버튼: [강의·저서 강독] vs [네빌성경구문] */}
+        {/* 상단 핵심 메뉴 분리 버튼: [강의·저서 강독] vs [네빌성경구문] */}
         <div className="grid grid-cols-2 gap-1.5 bg-slate-800 p-1.5 rounded-xl mb-4">
           <button
             onClick={() => setActiveMenu("study")}
@@ -782,12 +892,15 @@ function App() {
                           setSelectedLec({ isBook: true, num: b.bookNum, title: b.title, url: b.url });
                           setTargetUrl(b.url);
                           loadJsonFile("book" + b.bookNum + ".json", b.title);
+                          handleFetchLectureBody(b.url, b.title);
                         }}
                         className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold" : "text-slate-300 hover:bg-slate-800")}
                       >
                         <span className="truncate pr-2">Book {b.bookNum}. {b.title}</span>
-                        {savedCount > 0 && (
+                        {savedCount > 0 ? (
                           <span className="text-[10px] bg-emerald-500 text-slate-950 px-1.5 py-0.5 rounded font-bold shrink-0">{savedCount}문장</span>
+                        ) : (
+                          <span className="text-[10px] text-slate-500 shrink-0">읽기</span>
                         )}
                       </button>
                     );
@@ -812,7 +925,7 @@ function App() {
                   {isOpen && (
                     <div className="bg-slate-950 p-2 space-y-1 max-h-72 overflow-y-auto">
                       {loadingVol && subList.length === 0 ? (
-                        <div className="text-xs text-amber-400 p-3 text-center">⏳ 강의 목록 로딩 중...</div>
+                        <div className="text-xs text-amber-400 p-3 text-center">⏳ 3중 우회 서버로 목록 로딩 중...</div>
                       ) : (
                         subList.map((lec, i) => {
                           const isSelected = !selectedLec.isBook && selectedLec.title === lec.title;
@@ -887,7 +1000,7 @@ function App() {
               onChange={e => saveApiKey(e.target.value)}
               className="w-full px-3 py-1.5 rounded border border-amber-300 bg-white"
             />
-            <a href="[https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)" target="_blank" rel="noreferrer" className="shrink-0 px-3 py-1.5 bg-amber-600 text-white rounded font-bold">
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noreferrer" className="shrink-0 px-3 py-1.5 bg-amber-600 text-white rounded font-bold">
               발급 ↗
             </a>
           </div>
@@ -898,7 +1011,6 @@ function App() {
            ============================================================ */}
         {activeMenu === "bible_menu" && (
           <div className="space-y-6">
-            {/* 상단 헤더 및 bible.json 백업/불러오기 */}
             <div className="flex flex-wrap justify-between items-center gap-3 pb-4 border-b border-stone-300">
               <div>
                 <div className="text-xs font-bold text-amber-700 uppercase">Neville Goddard Scripture Archive</div>
@@ -920,7 +1032,7 @@ function App() {
               </div>
             </div>
 
-            {/* 상단: 성경 분류순 1, 2, 3... 문장 리스트 (클릭 시 선택) */}
+            {/* 상단: 성경 분류순 1, 2, 3... 문장 리스트 */}
             <div className="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden">
               <div className="bg-stone-100 px-4 py-2.5 border-b text-xs font-bold text-stone-700 flex justify-between items-center">
                 <span>📋 성경 분류순 인용 문장 목록 (문장을 클릭하면 아래에 성경 원문 장/절이 열립니다)</span>
@@ -1002,7 +1114,7 @@ function App() {
                   </p>
                 </div>
 
-                {/* ★ 성경 장/절 앞절·다음절 컨트롤 바 */}
+                {/* 성경 장/절 앞절·다음절 컨트롤 바 */}
                 <div className="flex flex-wrap items-center justify-between gap-2 bg-amber-200/70 px-4 py-3 rounded-xl border border-amber-300">
                   <button
                     onClick={() => handleMoveVerse(-1)}
@@ -1051,7 +1163,7 @@ function App() {
                         개역개정 한국어 성경 원문 (인용 본절)
                       </span>
                       <a
-                        href={"[https://www.biblegateway.com/passage/?search=](https://www.biblegateway.com/passage/?search=)" + encodeURIComponent(currentBibleItem.bookNameEn + " " + viewChapter) + "&version=KJV"}
+                        href={"https://www.biblegateway.com/passage/?search=" + encodeURIComponent(currentBibleItem.bookNameEn + " " + viewChapter) + "&version=KJV"}
                         target="_blank"
                         rel="noreferrer"
                         className="text-xs text-amber-800 font-bold underline"
@@ -1095,15 +1207,18 @@ function App() {
                   disabled={fetching}
                   className="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-bold hover:bg-slate-800 disabled:opacity-50"
                 >
-                  {fetching ? "⏳ 본문 읽는 중..." : "🌐 1. 사이트 실시간 읽어오기"}
+                  {fetching ? "⏳ 본문 읽는 중..." : "🌐 1. 사이트 실시간 읽어오기 (3중 우회)"}
                 </button>
               </div>
 
               <textarea
                 value={rawText}
-                onChange={e => setRawText(e.target.value)}
+                onChange={e => {
+                  setRawText(e.target.value);
+                  setResumeChunkIdx(0);
+                }}
                 rows={4}
-                placeholder="왼쪽에서 강의나 저서를 클릭하면 영어 원문이 채워집니다."
+                placeholder="왼쪽에서 강의나 저서를 클릭하면 영어 원문이 자동으로 채워집니다."
                 className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
               />
 
@@ -1124,7 +1239,11 @@ function App() {
                     disabled={analyzing}
                     className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-bold disabled:opacity-50"
                   >
-                    {analyzing ? "⏳ AI 분석 중..." : "⚡ 2. 강독 노트 + 성경구문 생성"}
+                    {analyzing
+                      ? "⏳ AI 분석 중..."
+                      : resumeChunkIdx > 0
+                      ? "⚡ 2. 이어서 생성 (" + (resumeChunkIdx + 1) + "구간~)"
+                      : "⚡ 2. 강독 노트 + 성경구문 생성"}
                   </button>
                 </div>
               </div>
@@ -1136,14 +1255,32 @@ function App() {
                 {selectedLec.title}
               </h2>
               <div className="no-print flex flex-wrap gap-2">
-                <button onClick={handleExportAllJson} className="px-3 py-2 rounded bg-amber-600 text-white text-xs font-bold">
-                  💾 전체 JSON 백업
+                <button
+                  onClick={handleExportCurrentTargetJson}
+                  className="px-3 py-2 rounded bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-sm"
+                >
+                  💾 {selectedLec.isBook ? "book" + selectedLec.num + ".json" : "vol" + (openVol || 1) + ".json"} 백업
                 </button>
-                <label className="px-3 py-2 rounded bg-emerald-700 text-white text-xs font-bold cursor-pointer">
+                <button
+                  onClick={handleExportAllJson}
+                  className="px-3 py-2 rounded bg-slate-700 hover:bg-slate-800 text-white text-xs font-bold shadow-sm"
+                >
+                  💾 전체 백업
+                </button>
+                <label className="px-3 py-2 rounded bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-bold cursor-pointer shadow-sm">
                   📂 JSON 복원
                   <input type="file" accept=".json" onChange={handleImportAllJson} className="hidden" />
                 </label>
-                <button onClick={() => setQuizMode(!quizMode)} className="px-3 py-2 rounded bg-slate-800 text-white text-xs font-bold">
+                <button
+                  onClick={handleDownloadPdf}
+                  className="px-3 py-2 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shadow-sm"
+                >
+                  📄 PDF
+                </button>
+                <button
+                  onClick={() => setQuizMode(!quizMode)}
+                  className="px-3 py-2 rounded bg-slate-800 text-white text-xs font-bold"
+                >
                   {quizMode ? "🙈 해석 보이기" : "🙈 해석 가리기"}
                 </button>
               </div>
@@ -1153,7 +1290,7 @@ function App() {
               {sentences.map((s, idx) => (
                 <div key={idx} className="print-card bg-white p-6 rounded-xl border shadow-sm">
                   <div className="flex justify-between items-center mb-2 border-b pb-2">
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <span style={{ fontFamily: "Georgia, serif", fontSize: "16pt", color: "#292929" }} className="font-bold">
                         Sentence {String(idx + 1).padStart(2, "0")}
                       </span>
@@ -1209,3 +1346,4 @@ function App() {
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+// === END OF FILE ===
