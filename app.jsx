@@ -743,7 +743,7 @@ function App() {
     try { localStorage.setItem("neville_bible_store", JSON.stringify(bibleList)); } catch (e) {}
   }, [bibleList]);
 
-  // ★ 각 기수(Era 1~8)의 강의를 오래된 연도순(오름차순)으로 정렬하고 기수별 번호(1, 2, 3...)를 매기는 함수
+  // ★ 각 기수(Era 1~8)의 강의를 오래된 순(오름차순)으로 정렬하고 기수별 번호(1, 2, 3...)를 매기는 함수
   const getSortedEraLectures = (eraNum) => {
     const rawList = allLectures.filter(l => getEraForLecture(l, lectureYears) === eraNum);
     const sorted = [...rawList].sort((a, b) => {
@@ -1580,6 +1580,7 @@ function App() {
                 <span className="text-xs font-bold text-slate-600">
                   🌐 선택된 {selectedLec.isBook ? "단행본 저서" : "강의"}의 실제 웹페이지 주소(URL):
                 </span>
+                {/* ▼ 필요 없는 수동 강의 연도 지정 드롭다운 주석 처리 시작
                 {!selectedLec.isBook && (
                   <div className="flex items-center gap-1.5 text-xs">
                     <span className="text-slate-500 font-semibold">📅 강의 연도 지정:</span>
@@ -1601,6 +1602,7 @@ function App() {
                     </select>
                   </div>
                 )}
+                ▲ 주석 처리 끝 */}
               </div>
 
               <div className="flex flex-wrap gap-2 mb-3">
