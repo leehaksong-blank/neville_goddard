@@ -912,7 +912,7 @@ function App() {
 
   // ★ high demand 과부하 멈춤 방지를 위해 무료 등급 친화 모델 순환 + 8초 자동 대기 재시도 적용
   const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount) => {
-    const models = ["gemini-2.5-flash", "gemini-3-flash-preview", "gemini-2.5-flash-lite"];
+    const models = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash"];
     let lastError = null;
 
     for (let m = 0; m < models.length; m++) {
