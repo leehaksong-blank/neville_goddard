@@ -668,8 +668,11 @@ function App() {
                         className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold" : "text-slate-300 hover:bg-slate-800")}
                       >
                         <div className="truncate pr-2">
-                          <div>{b.bookNum}. {b.title} ({b.year})</div>
-                          <div className="text-[10px] text-slate-400 truncate">{b.koTitle}</div>
+                          <span>{lec.num}. </span>
+                          <span className={"font-semibold mr-1 " + (knownY ? "text-amber-400" : "text-slate-500")}>
+                            [{knownY || "?"}]
+                          </span>
+                          <span>{lec.title}</span>
                         </div>
                         {savedCount > 0 ? (
                           <span className="text-[10px] bg-emerald-500 text-slate-950 px-1.5 py-0.5 rounded font-bold shrink-0">
