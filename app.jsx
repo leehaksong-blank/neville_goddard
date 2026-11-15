@@ -736,10 +736,11 @@ function App() {
                             className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold" : "text-slate-300 hover:bg-slate-800")}
                           >
                             <div className="truncate pr-2">
-                              <span>{lec.num}. {lec.title}</span>
-                              {knownY && (
-                                <span className="ml-1.5 text-[10px] text-amber-400 font-semibold">[{knownY}]</span>
-                              )}
+                              <span>{lec.num}. </span>
+                              <span className={"font-semibold mr-1 " + (knownY ? "text-amber-400" : "text-slate-500")}>
+                                [{knownY || "?"}]
+                              </span>
+                              <span>{lec.title}</span>
                             </div>
                             {savedCount > 0 ? (
                               <span className="text-[10px] bg-amber-500 text-slate-900 px-1.5 py-0.5 rounded font-bold shrink-0">
