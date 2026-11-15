@@ -581,8 +581,12 @@ function App() {
     }
   };
 
-  const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount) => {
-    const models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"];
+const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount) => {
+    const models = [
+      "gemini-3.5-pro",        // 1순위: 최신 3.5 최고급 Pro 모델
+      "gemini-3.5-flash",      // 2순위: 최신 3.5 표준 고속 모델
+      "gemini-3.5-flash-lite"  // 3순위: 구글 공식 권장 3.5 초고속 백업 모델
+    ];
     let lastError = null;
 
     for (let m = 0; m < models.length; m++) {
