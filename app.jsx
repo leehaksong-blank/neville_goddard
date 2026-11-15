@@ -42,24 +42,83 @@ const INDEX_URLS = [
 
 // 자주 찾는 주요 강의의 알려진 연도 기본값 (원문 클릭 시 본문 날짜로 한번 더 정밀 갱신됨)
 const KNOWN_YEARS = {
-  "A Divine Event": 1969,
-  "A Lesson in Scripture": 1967,
-  "A Movement of Mind": 1968,
-  "A Parabolic Revelation": 1968,
-  "A Prophecy": 1968,
-  "A Riddle": 1969,
-  "All Things Are Possible": 1967,
-  "All Things Exist": 1965,
-  "Changing the Feeling of I": 1953,
+  // 제1기 (1948~1953)
   "Consciousness Is the Only Reality": 1948,
   "No One to Change But Self": 1948,
   "Assumptions Harden Into Fact": 1948,
   "Thinking Fourth Dimensionally": 1948,
   "Remain Faithful to Your Idea": 1948,
+  "Changing The Feeling of I": 1953,
+  "Changing the Feeling of I": 1953,
+
+  // 제2기 (1954~1956)
   "The Pruning Shears of Revision": 1954,
+  "Awakened Imagination Barabbas or Jesus": 1954,
+  "Barabbas or Jesus": 1954,
   "Mental Diets": 1955,
+  "Seedtime and Harvest": 1956,
+
+  // 제3기 (1957~1959)
+  "Catch The Mood": 1959,
+  "Creation Faith": 1959,
+  "Awake o Sleeper 1": 1959,
+  "Awake o Sleeper 2": 1959,
+
+  // ⭐ 제4기 (1960~1962) — 비어 있던 1960~1962년 대표 강의 추가!
+  "A Movement of Mind": 1960,
+  "An Inner Conviction": 1960,
+  "At Your Command": 1960,
+  "Before Abraham was I AM": 1960,
+  "Building Your Temple": 1961,
+  "Christ in Man": 1961,
+  "Christ in You": 1961,
+  "Conception": 1961,
+  "Control Your Inner Conversations": 1961,
+  "Biblical Language": 1962,
+  "Brazen Impudence": 1962,
+  "Christ Bears Our Sins": 1962,
+  "Consigned To Disobedience": 1962,
+
+  // 제5기 (1963~1964)
   "The Pearl of Great Price": 1963,
-  "The Coin of Heaven": 1966
+  "Blake On Religion": 1963,
+  "By Water And By Blood": 1964,
+  "Christ is Your Life": 1964,
+  "Christ Unveiled": 1964,
+
+  // 제6기 (1965~1966)
+  "All Things Exist": 1965,
+  "The Coin of Heaven": 1966,
+  "Be Imitators of God": 1966,
+  "Believe It In": 1966,
+
+  // 제7기 (1967~1968)
+  "A Lesson in Scripture": 1967,
+  "All Things Are Possible": 1967,
+  "All Things are Possible 1": 1967,
+  "All Things are Possible 2": 1967,
+  "A Parabolic Revelation": 1968,
+  "A Prophecy": 1968,
+  "A State Called Moses": 1968,
+  "Arise": 1968,
+  "Bear Ye One Another's Burdens": 1968,
+  "Behold The Dreamer Cometh": 1968,
+
+  // 제8기 (1969~1972)
+  "A Divine Event": 1969,
+  "A Movement Within God": 1969,
+  "A Riddle": 1969,
+  "All Powerful Human Word": 1969,
+  "All That is Divine": 1971,
+  "All That You Behold": 1970,
+  "An Assured Understanding": 1969,
+  "Believe In Him": 1969,
+  "Christmas - Man's Birth As God": 1969,
+  "Come o Blessed": 1970,
+  "Divine Signs": 1970,
+  "Election And Change Of Consciousness": 1969,
+  "Enter The Dream": 1970,
+  "Esau And Jacob": 1970
 };
 
 const INITIAL_LECTURE = [
