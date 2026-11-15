@@ -22804,5 +22804,3267 @@
         }
       ]
     }
+  ],
+  "The Pruning Shears Of Revision": [
+    {
+      "en": "This morning’s subject is “The Pruning Shears of Revision”.",
+      "ko": "오늘 아침의 주제는 '개정의 전정가위'입니다.",
+      "vocab": [
+        {
+          "word": "subject",
+          "mean": "주제"
+        },
+        {
+          "word": "pruning shears",
+          "mean": "전정가위 (가지치기용 가위)"
+        },
+        {
+          "word": "revision",
+          "mean": "개정, 수정 (여기서는 과거 기억이나 하루의 일을 마음으로 다시 쓰는 네빌의 핵심 기법)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 보어",
+          "desc": "is를 중심으로 주어(This morning’s subject)와 보어(The Pruning Shears of Revision)가 대등하게 연결된 구조입니다."
+        }
+      ]
+    },
+    {
+      "en": "I firmly believe that if you will wisely and daily use the pruning shears of revision that you will find there is no objective beyond your ability to realize.",
+      "ko": "만약 여러분이 현명하게 매일 개정의 전정가위를 사용한다면, 여러분이 실현할 수 있는 능력 저 너머에 있는 목표란 존재하지 않는다는 것을 발견하게 되리라고 저는 굳게 믿습니다.",
+      "vocab": [
+        {
+          "word": "firmly",
+          "mean": "단호하게, 굳게"
+        },
+        {
+          "word": "wisely",
+          "mean": "현명하게"
+        },
+        {
+          "word": "daily",
+          "mean": "매일"
+        },
+        {
+          "word": "objective",
+          "mean": "목표, 객관적 대상"
+        },
+        {
+          "word": "realize",
+          "mean": "실현하다, 깨닫다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건절과 주절",
+          "desc": "if절 내부의 미래 시제(will)는 의지나 반복적 상태를 나타내며, that절 안의 there is 구문은 존재를 나타냅니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "과거를 수정하는 상상력의 기법이 인간의 모든 한계를 초월하여 원하는 바를 이루게 해준다는 핵심 메시지입니다."
+        }
+      ]
+    },
+    {
+      "en": "And I mean that seriously, no objective beyond your ability to realize.",
+      "ko": "그리고 저는 진심으로 그렇게 말하는 것입니다. 즉, 여러분의 실현 능력을 벗어나는 목표란 없다는 뜻입니다.",
+      "vocab": [
+        {
+          "word": "seriously",
+          "mean": "진심으로, 진지하게"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격/부가 설명",
+          "desc": "앞선 문장의 주장을 다시 한번 강조하기 위해 명사구 형태로 반복하여 진정성을 부여합니다."
+        }
+      ]
+    },
+    {
+      "en": "When I was a boy of seven, a lady said to me, “I have had a vision concerning you.",
+      "ko": "내가 일곱 살 소년이었을 때, 한 여인 내게 말했다. '나는 너에 관한 환상을 보았단다.",
+      "vocab": [
+        {
+          "word": "boy of seven",
+          "mean": "일곱 살 소년"
+        },
+        {
+          "word": "vision",
+          "mean": "환상, 영적인 계시"
+        },
+        {
+          "word": "concerning",
+          "mean": "~에 관하여"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절",
+          "desc": "When절로 과거의 특정 시점을 설정하며, 현재완료(have had)를 통해 과거의 경험이 현재까지 영향을 미침을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "I’ll make it now very, very clear to you–I do not know what it is you are going to do, but I’ve been shown you will do something that through the centuries after you are gone man will not undo it.",
+      "ko": "지금 너에게 아주 명백하게 말해줄게. 네가 무엇을 하게 될지 나는 모르지만, 네가 떠난 후 수 세기가 흘러도 인간이 되돌릴 수 없는 무언가를 네가 해낼 것이라는 것을 나는 보여짐 받았단다.",
+      "vocab": [
+        {
+          "word": "clear",
+          "mean": "명확한"
+        },
+        {
+          "word": "centuries",
+          "mean": "수 세기들"
+        },
+        {
+          "word": "undo",
+          "mean": "원래대로 돌리다, 무효로 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 표현",
+          "desc": "'I've been shown'은 영적 계시나 비전을 자신의 의지가 아니라 위로부터 보여짐을 당했다는 신비주의적 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "I can see it and through the centuries you will grow in stature long after you are gone.",
+      "ko": "나는 그것을 볼 수 있고, 네가 떠난 지 오랜 후에도 수 세기 동안 너의 위상은 더욱 커져갈 것이다.",
+      "vocab": [
+        {
+          "word": "stature",
+          "mean": "위상, 키, 지위"
+        },
+        {
+          "word": "long after",
+          "mean": "~한 지 오랜 후에도"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "미래 시제",
+          "desc": "will grow를 통해 사후에도 지속될 영적인 영향력과 가르침의 확대를 예언하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "And then three men will be mentioned in hundreds of years to come and you will be one of the three when something is discussed that was done for man.”",
+      "ko": "그리고 다가올 수백 년 동안 세 사람이 언급될 것인데, 인간을 위해 행해진 일이 논의될 때 네가 그 세 사람 중 하나가 될 것이다.'",
+      "vocab": [
+        {
+          "word": "mentioned",
+          "mean": "언급되는"
+        },
+        {
+          "word": "in hundreds of years to come",
+          "mean": "다가올 수백 년 동안"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "that was done for man이 something을 수식하여 인류를 위한 구원 또는 깨달음의 업적을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "I feel that this morning’s subject that this could be it, that if I never said another word, and you heard it and believed it, and really used it, this would be the planting that would spread from us here that tomorrow could not undo.",
+      "ko": "나는 오늘 아침의 주제인 이것이 바로 그(예언된) 것일 수 있다고 느낍니다. 즉, 만약 내가 다른 말을 전혀 하지 않고, 여러분이 그것을 듣고 믿으며 실제로 사용한다면, 이것은 내일이라도 결코 되돌릴 수 없는, 여기서부터 우리를 통해 퍼져나갈 심음(씨앗)이 될 것이라고 느낍니다.",
+      "vocab": [
+        {
+          "word": "planting",
+          "mean": "심기, 씨 뿌리기"
+        },
+        {
+          "word": "spread",
+          "mean": "퍼지다, 확산되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거",
+          "desc": "if절과 would be를 통해 현재의 실천이 가져올 영원하고 불가역적인 결과를 가정법으로 표현합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "말씀의 씨앗(planting)을 심는 행위는 현실을 창조하는 상상력의 파종을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "For it is magic, this pruning shears of revision.",
+      "ko": "왜냐하면 그것은 마법이기 때문입니다, 이 개정의 전정가위라는 것은.",
+      "vocab": [
+        {
+          "word": "magic",
+          "mean": "마법"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 및 동격",
+          "desc": "보어(magic)가 앞으로 도치되고, 대명사 it과 지칭하는 구절(this pruning shears of revision)이 동격을 이룹니다."
+        }
+      ]
+    },
+    {
+      "en": "It really is not only the achievement of objectives, but if you do it daily, it will awaken in you the spirit of Jesus, which is continual forgiveness of sin.",
+      "ko": "그것은 진정 목표의 성취뿐만 아니라, 만약 여러분이 그것을 매일 행한다면, 여러분 안에서 예수의 영을 깨우쳐 줄 것입니다. 그것은 바로 끊임없는 죄의 용서입니다.",
+      "vocab": [
+        {
+          "word": "achievement",
+          "mean": "성취, 달성"
+        },
+        {
+          "word": "awaken",
+          "mean": "일깨우다, 깨우다"
+        },
+        {
+          "word": "continual",
+          "mean": "끊임없는, 지속적인"
+        },
+        {
+          "word": "forgiveness",
+          "mean": "용서"
+        },
+        {
+          "word": "sin",
+          "mean": "죄"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상관접속사",
+          "desc": "not only A but (also) B 구문을 통해 단순한 물질적 목표 달성 이상의 영적 차원(예수의 영, 죄의 용서)으로 도약함을 강조합니다."
+        },
+        {
+          "tag": "성경 신비주의",
+          "desc": "네빌 고다드의 핵심 교리인 '죄의 용서(Forgiveness of Sin)'는 성경 속 예수가 가르친 핵심이며, 과거의 실수를 상상력으로 지우고 개정하는 것과 직결됩니다."
+        }
+      ]
+    },
+    {
+      "en": "In this teaching the sinner should always go free; you will never condemn him, for when the spirit is awake in you you will realize in him there is no condemnation, only forgiveness, and forgiveness is not as man of the world thinks when he omits the actual execution of his revenge.",
+      "ko": "이 가르침 안에서 죄인은 언제나 자유로워져야 합니다. 여러분은 결코 그를 정죄하지 않을 것입니다. 왜냐하면 여러분 안에서 영이 깨어날 때, 여러분은 그 안에 정죄가 없고 오직 용서만이 있음을 깨닫게 될 것이기 때문입니다. 그리고 용서는 세상의 사람이 자신의 복수의 실제적인 실행을 생략할 때 생각하는 그런 것이 아닙니다.",
+      "vocab": [
+        {
+          "word": "sinner",
+          "mean": "죄인"
+        },
+        {
+          "word": "condemn",
+          "mean": "정죄하다"
+        },
+        {
+          "word": "forgiveness",
+          "mean": "용서"
+        },
+        {
+          "word": "execution",
+          "mean": "실행, 집행"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "for절",
+          "desc": "이유를 나타내는 접속사로, 영의 깨어남이 어떻게 정죄를 소멸시키고 용서만을 보게 하는지 설명합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "참된 용서는 단순한 자비나 복수 유보가 아니라, 본질적으로 정죄가 없음을 깨닫는 의식의 상태입니다."
+        }
+      ]
+    },
+    {
+      "en": "What we mean by forgiveness the identification of the other that we would forgive with the ideal that other wants to embody in the world.",
+      "ko": "우리가 용서로 의미하는 바는, 우리가 용서하고자 하는 그 타인을 그 타인이 세상에서 구체화하고자 하는 이상과 동일시하는 것입니다.",
+      "vocab": [
+        {
+          "word": "identification",
+          "mean": "동일시"
+        },
+        {
+          "word": "ideal",
+          "mean": "이상"
+        },
+        {
+          "word": "embody",
+          "mean": "구체화하다, 구현하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "that we would forgive와 that other wants to embody가 각각 the other와 the ideal을 수식합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "네빌 고다드의 핵심 가르침인 '상상력을 통한 타인의 이상과의 동일시(Revision and Identification)'를 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "And so we do to him what we expect or would like the world to do to us.",
+      "ko": "그러므로 우리는 세상이 우리에게 해주기를 기대하거나 바라는 바를 그에게 행하는 것입니다.",
+      "vocab": [
+        {
+          "word": "expect",
+          "mean": "기대하다"
+        },
+        {
+          "word": "would like",
+          "mean": "~하고 싶다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 what",
+          "desc": "~하는 것(the thing which)을 의미하며 do의 목적어 역할을 합니다."
+        },
+        {
+          "tag": "성경적 배경",
+          "desc": "황금률(Golden Rule: 남에게 대접을 받고자 하는 대로 남을 대접하라)을 네빌의 관점으로 재해석한 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "So whatever I myself would like to embody that is the vision that I must hold of every man that I meet in my world; that no man is to be discarded, every man is to be redeemed, and my life is the process whereby that redemption is brought about.",
+      "ko": "그러므로 내 자신이 구체화하고 싶은 것이 무엇이든, 그것이 바로 내가 나의 세상에서 만나는 모든 사람에 대해 품어야 할 비전입니다. 즉, 어떤 사람도 버려져서는 안 되며, 모든 사람이 구속되어야 하고, 나의 삶은 그 구속이 이루어지는 과정이라는 것입니다.",
+      "vocab": [
+        {
+          "word": "discard",
+          "mean": "버리다, 폐기하다"
+        },
+        {
+          "word": "redeem",
+          "mean": "구속하다, 구원하다"
+        },
+        {
+          "word": "redemption",
+          "mean": "구속, 구원"
+        },
+        {
+          "word": "whereby",
+          "mean": "그것에 의해 ~하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문 및 동격",
+          "desc": "whatever절이 앞에 강조되고 that이 지시어로 가르키며, 뒤의 that절들이 비전의 내용을 구체적으로 설명합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "우리가 세상에서 경험하는 모든 타인은 내 안의 상태가 투영된 것이므로, 버려질 존재는 없고 오직 구속(상상의 완성)되어야 할 존재만 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "And I do it by simply identifying the other with the ideal I want to externalize in my world.",
+      "ko": "그리고 나는 단지 타인을 내가 나의 세상에서 외면화하고자 하는 이상과 동일시함으로써 그것을 행합니다.",
+      "vocab": [
+        {
+          "word": "simply",
+          "mean": "단순히, 오직"
+        },
+        {
+          "word": "externalize",
+          "mean": "외면화하다, 현실화하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "by ~ing 구문",
+          "desc": "~함으로써 수단을 나타내며, 네빌의 실천적 상상력 적용 방법을 요약합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "내부의 이상(imaginal state)을 외부 세계에 투영하고 실현하는 유일한 방법은 타인에게 그 이상을 부여하는 것입니다."
+        }
+      ]
+    },
+    {
+      "en": "Now we will go back to the 2nd of Genesis.",
+      "ko": "이제 우리는 창세기 2장으로 돌아갈 것입니다.",
+      "vocab": [
+        {
+          "word": "Genesis",
+          "mean": "창세기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시제 및 방향",
+          "meanings": "현재 시제를 사용하여 성경의 영적 의미를 지금 여기로 가져오는 네빌의 화법을 드러냄."
+        }
+      ]
+    },
+    {
+      "en": "It is said “And God placed man in the garden of Eden to dress it and to keep it.”",
+      "ko": "“여호와 하나님이 그 사람을 이끌어 에덴 동산에 두어 그를 경작하며 지키게 하셨고”라고 말합니다.",
+      "vocab": [
+        {
+          "word": "garden of Eden",
+          "mean": "에덴 동산"
+        },
+        {
+          "word": "dress",
+          "mean": "경작하다, 가꾸다"
+        },
+        {
+          "word": "keep",
+          "mean": "지키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인용구",
+          "meanings": "창세기 2장의 구절을 직접 인용하여 인간의 영적 본분을 환기함."
+        }
+      ]
+    },
+    {
+      "en": "Now when you read the story you think it happened thousands of years ago.",
+      "ko": "자, 여러분이 이 이야기를 읽을 때, 그것이 수천 년 전에 일어났다고 생각합니다.",
+      "vocab": [
+        {
+          "word": "thousands of years ago",
+          "mean": "수천 년 전에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 개념의 전환",
+          "meanings": "역사적 과거로 성경을 보는 일반적인 시각을 지적함."
+        }
+      ]
+    },
+    {
+      "en": "I have come to tell you it is now.",
+      "ko": "나는 그것이 바로 지금이라고 여러분에게 말하기 위해 왔습니다.",
+      "vocab": [
+        {
+          "word": "now",
+          "mean": "지금, 현재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌의 핵심 메시지",
+          "meanings": "성경의 모든 사건과 장소는 객관적 과거가 아니라 현재 인간의 의식 상태임을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "You are now in the garden of Eden and you think you are shut out or banished.",
+      "ko": "여러분은 지금 에덴 동산에 있으면서도 자신들이 쫓겨났거나 추방당했다고 생각합니다.",
+      "vocab": [
+        {
+          "word": "shut out",
+          "mean": "차단된, 배제된"
+        },
+        {
+          "word": "banished",
+          "mean": "추방된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상태의 역설",
+          "meanings": "실제로는 에덴(마음) 안에 있으면서도 무지 때문에 에덴 밖으로 쫓겨났다고 착각하는 인간의 상태를 묘사함."
+        }
+      ]
+    },
+    {
+      "en": "You are in it, and the garden is your mind, but you need–like every gardener–you need pruning shears.",
+      "ko": "여러분은 그 안에 있으며, 그 동산은 바로 여러분의 마음입니다. 하지만 여러분은—모든 정원사처럼—전정가리개가 필요합니다.",
+      "vocab": [
+        {
+          "word": "mind",
+          "mean": "마음, 의식"
+        },
+        {
+          "word": "pruning shears",
+          "mean": "전정가리개, 가지치기 가위"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유",
+          "meanings": "에덴 동산을 인간의 '마음'으로 정의하고, 마음을 다스리는 도구로 가지치기 가위(부정적인 생각을 잘라내는 의지/주목의 전환)를 비유함."
+        }
+      ]
+    },
+    {
+      "en": "For you have slept, as you are told in that second chapter; having slept, weeds have appeared in the garden and the weeds are revealing themselves by the conditions and the circumstances of life.",
+      "ko": "왜냐하면 여러분은 그 두 번째 장에서 들은 바와 같이 잠들어 있었기 때문입니다. 잠들어 있는 동안 동산에는 잡초가 나타났고, 그 잡초들은 삶의 조건과 환경을 통해 스스로를 드러내고 있습니다.",
+      "vocab": [
+        {
+          "word": "slept",
+          "mean": "잠들었다 (아담의 깊은 잠)"
+        },
+        {
+          "word": "weeds",
+          "mean": "잡초 (원치 않는 생각이나 신념)"
+        },
+        {
+          "word": "conditions and circumstances",
+          "mean": "조건과 환경"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "원인과 결과",
+          "meanings": "의식의 잠(무지)이 현실의 잡초(부정적 환경)를 낳는다는 네빌의 법칙을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "For your garden is always projecting itself on the screen of space, and you can see by looking carefully at your world what you allow to grow in the garden of God.",
+      "ko": "왜냐하면 여러분의 동산은 항상 공간이라는 스크린 위에 스스로를 투영하고 있으며, 여러분의 세계를 주의 깊게 살펴봄으로써 하나님의 동산에서 자라도록 허용하고 있는 것이 무엇인지 볼 수 있기 때문입니다.",
+      "vocab": [
+        {
+          "word": "projecting",
+          "mean": "투영하는, 영사하는"
+        },
+        {
+          "word": "screen of space",
+          "mean": "공간의 스크린 (현실 세계)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "환영(Projection)의 법칙",
+          "meanings": "내면의 마음(에덴)이 곧 외부 현실의 스크린에 투영된다는 신비주의적 우주관을 드러냄."
+        }
+      ]
+    },
+    {
+      "en": "But you have a mission, you have a purpose, it is not to amass a fortune–you can do it if you want to–it’s not to be famous, it is not to be some mighty power, but simply to tend the garden of God.",
+      "ko": "하지만 여러분에게는 사명이 있고 목적이 있습니다. 그것은 부를 축적하는 것이 아니며—원한다면 그렇게 할 수도 있지만—명예를 얻는 것도 아니고, 어떤 막강한 권력이 되는 것도 아니며, 오직 하나님의 동산을 가꾸는 것입니다.",
+      "vocab": [
+        {
+          "word": "mission",
+          "mean": "사명"
+        },
+        {
+          "word": "amass a fortune",
+          "mean": "재산을 모으다"
+        },
+        {
+          "word": "tend",
+          "mean": "돌보다, 가꾸다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문",
+          "meanings": "세속적인 성공(부, 명예, 권력)과 영적인 본분(마음의 정원을 가꾸는 것)을 대조하여 참된 목적을 일깨움."
+        }
+      ]
+    },
+    {
+      "en": "That’s your purpose.",
+      "ko": "그것이 여러분의 목적입니다.",
+      "vocab": [
+        {
+          "word": "purpose",
+          "mean": "목적"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조",
+          "meanings": "앞서 언급한 결론을 짧고 명확하게 확정함."
+        }
+      ]
+    },
+    {
+      "en": "You are placed in the garden to dress it and to keep it, that only the lovely things grow in the garden of God.",
+      "ko": "오직 사랑스러운 것들만이 하나님의 동산에서 자라나도록, 여러분은 그것을 경작하고 지키기 위해 동산에 놓인 것입니다.",
+      "vocab": [
+        {
+          "word": "lovely things",
+          "mean": "사랑스러운 것들, 아름다운 것들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적을 나타내는 명사절/부사절",
+          "meanings": "인간이 마음에 품고 통제해야 할 대상이 오직 아름답고 선한 상상력의 산물이어야 함을 강조하며 본문을 맺음."
+        }
+      ]
+    },
+    {
+      "en": "Now every man in the world is rooted in you who look out and see that world.",
+      "ko": "이제 세상의 모든 사람은 저 세상을 바라보고 보는 당신 안에 뿌리박고 있습니다.",
+      "vocab": [
+        {
+          "word": "rooted",
+          "mean": "뿌리박힌, 근원을 둔"
+        },
+        {
+          "word": "look out",
+          "mean": "내다보다, 바라보다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "mean": "'who look out and see that world'가 선행사 you를 수식하며, 관찰자와 대상이 하나임을 나타내는 네빌의 '인간은 곧 상상력'이라는 중심 사상을 반영합니다."
+        }
+      ]
+    },
+    {
+      "en": "Every man is rooted in me; he ends in me as I am rooted in and end in God.",
+      "ko": "모든 사람은 내 안에 뿌리박고 있습니다; 내가 하나님 안에 뿌리박고 그 안에서 끝맺는 것처럼, 그는 내 안에서 끝맺습니다.",
+      "vocab": [
+        {
+          "word": "ends in",
+          "mean": "결국 ~로 귀결되다, ~에서 끝나다"
+        },
+        {
+          "word": "God",
+          "mean": "하나님 (네빌 사상에서 인간의 궁극적 상상력 자체)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재론적 연결",
+          "mean": "개별 인간과 나, 그리고 하나님이 하나의 근원으로 연결되어 있음을 보여주는 삼위일체적 선언입니다."
+        }
+      ]
+    },
+    {
+      "en": "Because he is rooted in me he cannot bear other than the nature the root allows.",
+      "ko": "그는 내 안에 뿌리박고 있기 때문에, 그 뿌리가 허용하는 본성 외에는 다른 것을 맺을 수 없습니다.",
+      "vocab": [
+        {
+          "word": "bear",
+          "mean": "열매를 맺다, 낳다"
+        },
+        {
+          "word": "nature",
+          "mean": "본성, 성질"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결과와 원인",
+          "mean": "외적 현상은 내적 근원(뿌리)의 성질을 그대로 반영할 뿐이라는 원칙을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "So he is in me and any changes desired in the outer world can be brought about only if I change the source of the thing I see growing in my world.",
+      "ko": "그러므로 그는 내 안에 있으며, 바깥 세상에서 원하는 어떤 변화도 오직 내 세상에서 자라나는 것을 보는 그 대상의 근원을 내가 바꿀 때만 일어날 수 있습니다.",
+      "vocab": [
+        {
+          "word": "brought about",
+          "mean": "야기하다, 초래하다, 실현하다"
+        },
+        {
+          "word": "source",
+          "mean": "근원, 원천"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건절 (only if)",
+          "mean": "외적인 현실을 바꾸려면 반드시 내면의 근원(상상력)을 먼저 바꾸어야 한다는 네빌의 핵심 방법론을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "“You see yonder fields?",
+      "ko": "“저기 저 들판이 보이는가?",
+      "vocab": [
+        {
+          "word": "yonder",
+          "mean": "저기 저 (멀리 있는)"
+        },
+        {
+          "word": "fields",
+          "mean": "들판, 밭"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시적 인용구 도입",
+          "mean": "동양의 격언이나 시(오마 카이얌의 루바이야트)를 인용하여 씨앗과 열매의 법칙을 설명하는 도입부입니다."
+        }
+      ]
+    },
+    {
+      "en": "Don’t be surprised when you see sesamum:",
+      "ko": "참깨가 자라는 것을 보고 놀라지 말라:",
+      "vocab": [
+        {
+          "word": "surprised",
+          "mean": "놀란"
+        },
+        {
+          "word": "sesamum",
+          "mean": "참깨"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문",
+          "mean": "원인에 따른 당연한 결과가 나타남을 주지시키는 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "The sesamum was sesamum,",
+      "ko": "참깨는 참깨였고,",
+      "vocab": [
+        {
+          "word": "sesamum",
+          "mean": "참깨"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동일성의 법칙",
+          "mean": "뿌린 대로 거두는 상상력의 법칙을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "The corn was corn,",
+      "ko": "곡식은 곡식이었으며,",
+      "vocab": [
+        {
+          "word": "corn",
+          "mean": "곡식, 옥수수"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동일성의 법칙",
+          "mean": "씨앗의 본성이 그대로 현상으로 드러난다는 의미입니다."
+        }
+      ]
+    },
+    {
+      "en": "The silence and the darkness knew",
+      "ko": "침묵과 어둠이 알고 있었으니",
+      "vocab": [
+        {
+          "word": "silence",
+          "mean": "침묵"
+        },
+        {
+          "word": "darkness",
+          "mean": "어둠 (잠재의식의 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "잠재의식 비유",
+          "mean": "침묵과 어둠은 씨앗이 자라나는 잠재의식의 상태를 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "So is a man’s fate born”",
+      "ko": "인간의 운명도 이와 같이 태어나느니라”",
+      "vocab": [
+        {
+          "word": "fate",
+          "mean": "운명"
+        },
+        {
+          "word": "born",
+          "mean": "태어나는, 맺어지는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "mean": "So is a man's fate born 형태의 도치를 통해 인간의 운명 역시 내면의 씨앗(상상)으로부터 필연적으로 태어남을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "So don’t judge it, because you are the source of the thing that you are beholding.",
+      "ko": "그러므로 그것을 판단(정죄)하지 마십시오, 왜냐하면 당신은 지금 바라보고 있는 그 것의 근원(원인)이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "judge",
+          "mean": "판단하다, 비난하다"
+        },
+        {
+          "word": "beholding",
+          "mean": "바라보고 있는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인과관계 설명",
+          "mean": "외적 현실을 탓하지 말고 원인인 내면을 보라는 네빌의 핵심 가르침입니다."
+        }
+      ]
+    },
+    {
+      "en": "Now turn within and prune it by using these pruning shears of revision.",
+      "ko": "이제 안으로 돌이켜 개정(수정)이라는 이 전정가사리를 사용하여 그것을 가지치기하십시오.",
+      "vocab": [
+        {
+          "word": "turn within",
+          "mean": "내면으로 향하다, 안을 바라보다"
+        },
+        {
+          "word": "prune",
+          "mean": "가지치기하다, 다듬다"
+        },
+        {
+          "word": "pruning shears",
+          "mean": "전정가위"
+        },
+        {
+          "word": "revision",
+          "mean": "수정, 개정 (네빌의 핵심 테크닉)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유적 표현",
+          "mean": "과거의 기억이나 현재의 부정적 인식을 수정하는 'Revision(개정)' 기법을 정원 가꾸기에 비유하여 설명하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "Now this is how we do it.",
+      "ko": "자, 이것이 바로 우리가 그것을 하는 방식입니다.",
+      "vocab": [
+        {
+          "word": "how",
+          "mean": "방법, 어떻게"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 보어절",
+          "mean": "this가 주어, is가 동사, how we do it이 주격 보어 역할을 하는 명사절입니다."
+        }
+      ]
+    },
+    {
+      "en": "At the end of my day, I review the day; I don’t judge it, I simply review it.",
+      "ko": "하루의 끝에 나는 그날을 복기합니다. 나는 그것을 심판하지 않고, 오직 복기할 뿐입니다.",
+      "vocab": [
+        {
+          "word": "review",
+          "mean": "복기하다, 검토하다"
+        },
+        {
+          "word": "judge",
+          "mean": "심판하다, 판단하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대조 구문",
+          "mean": "판단(judge)과 단순한 복기(review)를 대조하여 네빌의 수정(Revision) 기법의 핵심 전제를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "I look over the entire day, all the episodes, all the events, all the conversations, all the meetings, and then as I see it clearly in my mind’s eye, I rewrite it.",
+      "ko": "나는 하루 전체, 모든 에피소드, 모든 사건, 모든 대화, 모든 만남을 살펴보고 나서, 그것을 내 마음의 눈으로 선명하게 볼 때 그것을 다시 씁니다.",
+      "vocab": [
+        {
+          "word": "look over",
+          "mean": "살펴보다, 검토하다"
+        },
+        {
+          "word": "mind's eye",
+          "mean": "마음의 눈, 상상력"
+        },
+        {
+          "word": "rewrite",
+          "mean": "다시 쓰다, 수정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사 및 시간 부사절",
+          "mean": "as절이 시간과 조건의 의미를 겸하며, 상상력을 통한 기억의 재구성을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "I rewrite it and make it conform to the ideal day I wish I had experienced.",
+      "ko": "나는 그것을 다시 써서 내가 경험했기를 바라는 이상적인 하루에 일치시킵니다.",
+      "vocab": [
+        {
+          "word": "conform to",
+          "mean": "~에 일치시키다, 순응하다"
+        },
+        {
+          "word": "ideal",
+          "mean": "이상적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 생략",
+          "mean": "the ideal day (which) I wish I had experienced 구조로 과거에 대한 상상적 수정입니다."
+        }
+      ]
+    },
+    {
+      "en": "I take scene after scene and rewrite it, revise it, and having revised my day, then in my imagination I relive that day, the revised day, and I do it over and over in my imagination until this seeming imagined state begins to take on to me the tones of reality.",
+      "ko": "나는 장면마다 가져와서 다시 쓰고 수정하며, 내 하루를 수정한 후에, 상상속에서 그 수정된 하루를 다시 살아봅니다. 그리고 이 가상의 상상된 상태가 내게 현실의 색조를 띠기 시작할 때까지 상상 속에서 그것을 반복하고 또 반복합니다.",
+      "vocab": [
+        {
+          "word": "scene after scene",
+          "mean": "장면마다, 차례차례"
+        },
+        {
+          "word": "revise",
+          "mean": "수정하다, 개정하다"
+        },
+        {
+          "word": "relive",
+          "mean": "다시 살다, 체험하다"
+        },
+        {
+          "word": "take on",
+          "mean": "띠다, 지니다"
+        },
+        {
+          "word": "tones of reality",
+          "mean": "현실의 느낌(색조)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문 및 until절",
+          "mean": "having revised는 완료 분사구문이며, until절은 네빌이 강조하는 '감각적 생생함(tone of reality)'에 이르는 과정을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "It seems that it’s real, that I actually did experience it and I have found from experience that these revised days, if really lived, will change my tomorrows.",
+      "ko": "그것이 진짜인 것처럼, 내가 실제로 그것을 경험했던 것처럼 느껴지며, 나는 이러한 수정된 하루들을 진정으로 살아내면 내일이 바뀐다는 것을 경험을 통해 발견했습니다.",
+      "vocab": [
+        {
+          "word": "actually",
+          "mean": "실제로"
+        },
+        {
+          "word": "tomorrows",
+          "mean": "미래들, 내일들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가주어-진주어 및 조건절 삽입",
+          "mean": "It seems that... 구조와 if really lived(조건 부사절의 축약)가 결합하여 상상의 확신이 미래를 바꾼다는 원리를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "When I meet people tomorrow that today disappointed me, they will not tomorrow, for in my inner being I have changed the very nature of that being, and having changed him, he bears witness tomorrow of the change that took place within me.",
+      "ko": "오늘 나를 실망케 한 사람들을 내일 만날 때, 그들은 내일 나를 실망시키지 않을 것입니다. 왜냐하면 내 안에서 그 존재의 본성 자체를 바꾸었기 때문이며, 그를 바꾸었기에 그는 내 안에서 일어난 변화를 내일에 증언할 것이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "disappointed",
+          "mean": "실망시키다"
+        },
+        {
+          "word": "very nature",
+          "mean": "본질, 본성"
+        },
+        {
+          "word": "bear witness",
+          "mean": "증언하다, 증거하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 표현 차용",
+          "mean": "'bears witness'는 성경적 증거(testify)의 개념을 끌어와 내면의 변화가 외적 현실로 투영됨을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is my duty to take this garden and really make it a garden by daily using the pruning shears of revision.",
+      "ko": "수정의 전정가사리를 매일 사용하여 이 정원을 진정한 정원으로 만드는 것이 나의 의무입니다.",
+      "vocab": [
+        {
+          "word": "duty",
+          "mean": "의무"
+        },
+        {
+          "word": "garden",
+          "mean": "정원 (의식의 정원)"
+        },
+        {
+          "word": "pruning shears",
+          "mean": "전정가위"
+        },
+        {
+          "word": "revision",
+          "mean": "수정, 개정"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "은유적 표현",
+          "mean": "의식의 정원(garden)과 수정의 전정가위(pruning shears)라는 영적 은유를 사용하여 의식 정화의 중요성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "I know from experience it will not only bring about these objectives, and bring about these changes, but the glorious thing is, it awakens in you, who use it, the spirit of Jesus, and you find yourself then not justifying but forgiving, and you will realize that freedom and forgiveness are indissolubly linked.",
+      "ko": "나는 그것이 이러한 목적들을 이뤄낼 뿐만 아니라 이러한 변화들을 가져올 것임을 경험으로 알고 있습니다. 그러나 더 영광스러운 점은, 그것을 사용하는 당신 안에 예수의 영을 일깨워 준다는 것입니다. 그리하여 당신은 자신을 정당화하는 것이 아니라 용서하고 있는 스스로를 발견하게 될 것이며, 자유와 용서는 뗄 수 없이 연결되어 있음을 깨닫게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "bring about",
+          "mean": "야기하다, 이뤄내다"
+        },
+        {
+          "word": "awaken",
+          "mean": "일깨우다, 깨우다"
+        },
+        {
+          "word": "indissolubly",
+          "mean": "분리할 수 없게, 뗄 수 없이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Not only A but (also) B",
+          "desc": "A뿐만 아니라 B도라는 구문으로, 상상력의 실현이 단순한 목적 달성을 넘어 영적인 각성까지 이끈다는 네빌의 핵심 사상을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "You cannot be free and not forgive, for the one that you would bind and judge and condemn anchors you by your own judgment of him–for he is in you.",
+      "ko": "당신은 용서하지 않으면서 자유로워질 수는 없습니다. 왜냐하면 당신이 묶고, 판단하고, 정죄하려는 그 대상이 바로 그에 대한 당신 자신의 판단에 의해 당신을 붙들어 매기 때문입니다. 그는 당신 안에 있기 때문입니다.",
+      "vocab": [
+        {
+          "word": "bind",
+          "mean": "묶다, 결박하다"
+        },
+        {
+          "word": "condemn",
+          "mean": "정죄하다, 비난하다"
+        },
+        {
+          "word": "anchor",
+          "mean": "단단히 붙들어 매다, 닻을 내리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neveill's Mirror Law",
+          "desc": "외부의 타인은 내면의 상태를 비추는 거울이며, 타인을 정죄하는 마음이 곧 자신을 얽매는 족쇄가 된다는 신비주의적 인간론을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "And so by identifying him with the ideal you want to really realize you free yourself.",
+      "ko": "그러므로 당신이 진정으로 실현하고자 하는 이상과 그를 일치시킴으로써 당신은 스스로를 자유롭게 합니다.",
+      "vocab": [
+        {
+          "word": "identify A with B",
+          "mean": "A와 B를 동일시하다"
+        },
+        {
+          "word": "ideal",
+          "mean": "이상, 소망하는 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Revision and Identification",
+          "desc": "타인을 비판하는 대신 그가 이상적인 상태에 있다고 상상함으로써, 주체인 자신 또한 자유로워진다는 네빌의 상상력 법칙을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "You are told “Forgive and you shall be forgiven.",
+      "ko": "너희는 이렇게 들었습니다: “용서하라, 그리하면 너희가 용서를 받을 것이다.”",
+      "vocab": [
+        {
+          "word": "forgive",
+          "mean": "용서하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Citation",
+          "desc": "누가복음 6장 37절의 말씀을 인용하여 용서의 법칙이 우주적 법칙임을 증명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Forgive not and then you shall not be forgiven”.",
+      "ko": "용서하지 말라, 그리하면 너희도 용서받지 못할 것이다.”",
+      "vocab": [
+        {
+          "word": "automatic",
+          "mean": "자동적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Cause and Effect",
+          "desc": "외면의 반응은 내면의 투사라는 것을 명백한 인과관계로 설명하는 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "It’s automatic; it can’t be otherwise for the whole springs from you who behold it.",
+      "ko": "그것은 자동적입니다. 전체가 그것을 바라보는 당신으로부터 비롯되기 때문에 다를 수가 없습니다.",
+      "vocab": [
+        {
+          "word": "spring from",
+          "mean": "∼에서 비롯되다, 유래하다"
+        },
+        {
+          "word": "behold",
+          "mean": "바라보다, 주시하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "The Observer as Creator",
+          "desc": "현상계의 모든 것은 관찰자인 인간의 의식(Human Imagination)으로부터 흘러나온다는 네빌 고다드의 핵심 형이상학입니다."
+        }
+      ]
+    },
+    {
+      "en": "And as you begin to practice it the very spirit arouses itself within you and you know that you are he that others spoke about and thought lived 2000 years ago.",
+      "ko": "그리고 당신이 그것을 실천하기 시작할 때, 바로 그 영이 당신 안에서 스스로 깨어나게 되며, 당신은 다른 사람들이 말하고 2000년 전에 살았다고 생각했던 그가 바로 당신 자신임을 알게 됩니다.",
+      "vocab": [
+        {
+          "word": "arouse",
+          "mean": "불러일으키다, 깨우다"
+        },
+        {
+          "word": "spoke about",
+          "mean": "언급하다, 이야기하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Christ Within",
+          "desc": "역사적 인물로서의 예수가 아니라, 모든 인간의 내면에 잠들어 있는 신성(Christ in you)의 각성을 선언하는 절정부입니다."
+        }
+      ]
+    },
+    {
+      "en": "So, when you realize it, you realize it through actual knowledge, you know it; no argument, you don’t tell others, you know that you are he.",
+      "ko": "그러므로 당신이 그것을 깨달을 때, 당신은 실제적인 지식을 통해 그것을 깨닫고, 그것을 알게 됩니다; 논쟁도 없고, 다른 이들에게 말할 필요도 없이, 당신이 바로 그분임을 알게 됩니다.",
+      "vocab": [
+        {
+          "word": "realize",
+          "mean": "깨닫다, 실현하다"
+        },
+        {
+          "word": "actual knowledge",
+          "mean": "실제적 지식, 체험적 앎"
+        },
+        {
+          "word": "argument",
+          "mean": "논쟁, 설전"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conditional/Temporal Clause",
+          "mean": "'when you realize it'은 조건 및 때를 나타내며, 네빌 고다드 사상에서 앎(knowing)은 타인의 설득이 아닌 내적 체험을 통해 온다는 것을 강조합니다."
+        },
+        {
+          "tag": "that you are he",
+          "mean": "'그가 바로 나다(I AM)'라는 성경적 깨달음과 존재론적 자각을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "And then you will read the words in the ninth of Hebrews, “He appeared to put away sin by the sacrifice of himself”.",
+      "ko": "그러고 나서 당신은 히브리서 9장의 말씀, 곧 “자기 자신을 제물로 드려 죄를 없이 하시려고 나타나셨느니라”라는 구절을 읽게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "Hebrews",
+          "mean": "히브리서"
+        },
+        {
+          "word": "put away",
+          "mean": "제거하다, 없애다"
+        },
+        {
+          "word": "sacrifice",
+          "mean": "희생, 제물"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion",
+          "mean": "히브리서 9장 26절의 인용으로, 네빌은 전통 기독교의 역사적 예수 교리를 인간 의식의 심리학적 드라마로 재해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "And you will know you are the one that put away sin by the sacrifice of self and by the sacrifice of self it’s not being a brave one who throws himself in the line of fire to protect a brother, it doesn’t mean one who gives his body to be burned, one who is nailed on a cross, but the self of man is the sum total of all that that man believes and consents to as true.",
+      "ko": "그리고 당신은 자아의 희생을 통해 죄를 없애는 이가 바로 자신임을 알게 될 것입니다. 그리고 자아의 희생이란 형제를 보호하기 위해 총알이 날아오는 곳에 자신을 던지는 용감한 사람이 되는 것도 아니고, 불에 타도록 몸을 내어주는 것, 십자가에 못 박히는 것을 의미하는 것이 아니라, 인간의 자아란 그 사람이 진실이라고 믿고 동의하는 모든 것의 총합입니다.",
+      "vocab": [
+        {
+          "word": "line of fire",
+          "mean": "격전지, 위험한 곳"
+        },
+        {
+          "word": "sum total",
+          "mean": "총합, 총계"
+        },
+        {
+          "word": "consent to",
+          "mean": "~에 동의하다, 승낙하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Psychological Reinterpretation",
+          "mean": "십자가의 희생과 자아의 죽음을 물리적 고통이 아니라, 기존의 제한된 신념과 개념을 내려놓는 심리학적 과정으로 정의합니다."
+        },
+        {
+          "tag": "the sum total",
+          "mean": "인간의 자아(Self)는 결국 그가 믿고 수용하는 신념들의 총체라는 네빌 사상의 핵심 정의입니다."
+        }
+      ]
+    },
+    {
+      "en": "So that’s the self that is sacrificed.",
+      "ko": "그러므로 그것이 바로 희생되는 자아입니다.",
+      "vocab": [
+        {
+          "word": "sacrificed",
+          "mean": "희생된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conclusion",
+          "mean": "이전 문장에서 정의한 '믿음과 동의의 총합으로서의 자아'가 바로 성경에서 말하는 희생의 제물임을 결론짓는 문장입니다."
+        }
+      ]
+    },
+    {
+      "en": "I heard of this lady and she would make some man a wonderful wife, and yet she is unwed.",
+      "ko": "나는 이 여인에 대해 들었는데, 그녀는 어떤 남자에게 훌륭한 아내가 될 만한 사람이지만 여전히 미혼입니다.",
+      "vocab": [
+        {
+          "word": "unwed",
+          "mean": "미혼의"
+        },
+        {
+          "word": "wonderful wife",
+          "mean": "훌륭한 아내"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Compound Sentence",
+          "desc": "and로 연결된 등위절 문장으로, 타인의 미혼 상태라는 객관적 사실을 접한 상태를 나타냄."
+        }
+      ]
+    },
+    {
+      "en": "She desires to be the companion of a great noble person, but she is unwed, I heard that.",
+      "ko": "그녀는 위대하고 고귀한 사람의 동반자가 되기를 갈망하지만 미혼이며, 나는 그 소리를 들었습니다.",
+      "vocab": [
+        {
+          "word": "companion",
+          "mean": "동반자, 반려자"
+        },
+        {
+          "word": "noble person",
+          "mean": "고귀한 사람"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Repetition & Emphasis",
+          "desc": "그녀의 소망과 현실의 괴리를 강조하기 위해 반복 구조를 사용함."
+        }
+      ]
+    },
+    {
+      "en": "That becomes a part of myself, that’s my knowledge; I must sacrifice that self, that that aspect of my being be as happy as I am and those in my world are.",
+      "ko": "그것이 내 자신의 일부가 되고, 그것이 나의 지식이 됩니다. 나는 그 자아를 희생해야 하며, 내 존재의 그 측면이 나 자신과 내 세상의 사람들만큼 행복해지도록 해야 합니다.",
+      "vocab": [
+        {
+          "word": "knowledge",
+          "mean": "지식, 알고 있음(여기서는 의식의 상태)"
+        },
+        {
+          "word": "sacrifice",
+          "mean": "희생하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Subjunctive / Purpose",
+          "desc": "that절 안에서 동사원형(be)을 사용하여 ~가 되기를 바라는 소망과 의도를 나타냄."
+        }
+      ]
+    },
+    {
+      "en": "For that’s the self I must sacrifice and put away sin, for sin to the mystic means missing the mark; it doesn’t mean the violation of certain codes, unless of course you have a mark and the violation fell short, but sin to the mystic is simply haying an aim in life and failing to realize it.",
+      "ko": "왜냐하면 그것이 내가 희생하고 죄를 없애야 하는 자아(self)이기 때문입니다. 신비주의자에게 죄란 과녁을 맞히지 못하는 것을 의미하기 때문입니다. 그것은 물론 당신에게 과녁이 있고 그 위반이 미치지 못한 경우가 아니라면 특정 규범의 위반을 의미하는 것이 아닙니다. 그러나 신비주의자에게 죄란 단순히 삶의 목표를 세우고 그것을 실현하지 못하는 것입니다.",
+      "vocab": [
+        {
+          "word": "put away",
+          "mean": "제거하다, 치우다, 버리다"
+        },
+        {
+          "word": "sin",
+          "mean": "죄 (과녁을 빗나간다는 원어적 의미)"
+        },
+        {
+          "word": "mystic",
+          "mean": "신비주의자"
+        },
+        {
+          "word": "missing the mark",
+          "mean": "과녁을 빗나감 (헬라어 '하마르티아'의 원뜻)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville Goddard's Re-definition of Sin",
+          "desc": "성경의 '죄(sin)'를 도덕적 계명 위반이 아니라 원하는 목표 성취의 실패(missing the mark)로 재정의하는 네빌의 핵심 사상."
+        }
+      ]
+    },
+    {
+      "en": "So when you miss the mark you have sinned; so he appeared to put away sin by the sacrifice of himself, and knowing that himself is only all that he consents to, all that he accepts, all that he believes to be true, then what am I believing concerning that one–he is unemployed and he can’t find a job?",
+      "ko": "그러므로 과녁을 빗나갈 때 당신은 죄를 지은 것입니다. 그러므로 그분은 자신을 희생하여 죄를 없애기 위해 나타나셨습니다. 그리고 '자기 자신'이란 오직 그가 동의하는 모든 것, 그가 받아들이는 모든 것, 그가 진실이라고 믿는 모든 것일 뿐임을 안다면, 그렇다면 나는 저 사람에 대해 무엇을 믿고 있습니까? 그는 실직 상태이고 일자리를 찾을 수 없다고 믿고 있나요?",
+      "vocab": [
+        {
+          "word": "consents to",
+          "mean": "동의하다, 허용하다"
+        },
+        {
+          "word": "unemployed",
+          "mean": "실직한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Self-Reflection",
+          "desc": "타인의 부정적인 상태를 믿는 것 자체가 곧 자신의 내면에서 과녁을 빗나간(죄를 지은) 상태임을 자각하는 대목."
+        }
+      ]
+    },
+    {
+      "en": "I’re believing it.",
+      "ko": "나는 그것을 믿고 있습니다.",
+      "vocab": [
+        {
+          "word": "believing",
+          "mean": "믿는 중이다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct Admission",
+          "desc": "자신이 타인의 한계를 믿음으로써 그 상태를 유지시키고 있음을 솔직히 시인하는 문장."
+        }
+      ]
+    },
+    {
+      "en": "Now put away that sin where he is missing his mark and then by the putting away of the sin I do it only by the sacrifice of myself and myself is that belief, so now I revise.",
+      "ko": "이제 그가 과녁을 빗나가는 그 죄를 없애십시오. 그런 다음 그 죄를 없앰으로써, 나는 오직 내 자신의 희생을 통해서만 그것을 행하며, 나 자신은 바로 그 믿음입니다. 그러므로 이제 나는 수정(revision)합니다.",
+      "vocab": [
+        {
+          "word": "revise",
+          "mean": "수정하다 (네빌 고다드의 상상력 기법인 Revision)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Revision Technique",
+          "desc": "잘못된 믿음(자아)을 죽이고(희생하고) 상상력을 통해 새로운 상태로 마음을 바꾸는 네빌의 핵심 실천법."
+        }
+      ]
+    },
+    {
+      "en": "I can’t say well, I will no longer believe he is unemployed: I believe he’s employed.",
+      "ko": "나는 '음, 더 이상 그가 실직자라고 믿지 않을 거야, 그가 고용되어 있다고 믿어'라고 말할 수 없습니다. (아니, 그렇게 해야 합니다 또는 그 반대의 결단)",
+      "vocab": [
+        {
+          "word": "employed",
+          "mean": "취업한, 일자리를 가진"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Shift in Belief",
+          "desc": "부정적인 믿음을 거두고 긍정적이고 완성된 상태의 믿음으로 즉각 전환하는 과정."
+        }
+      ]
+    },
+    {
+      "en": "I do it by the pruning shears of revision.",
+      "ko": "나는 수정이라는 전정가위로 그것을 해냅니다.",
+      "vocab": [
+        {
+          "word": "pruning shears",
+          "mean": "전정가위, 가지치기 가위"
+        },
+        {
+          "word": "revision",
+          "mean": "(네빌 고다드의 핵심 개념) 수정, 개정 (과거의 기억이나 상태를 상상으로 다시 쓰는 것)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "By + 동명사",
+          "mean": "~함으로써 (수단의 의미)"
+        },
+        {
+          "tag": "네빌 사상",
+          "mean": "네빌 고다드는 과거의 불리한 상태나 기억을 상상 속에서 수정(Revision)하는 것을 현실을 바꾸는 강력한 도구로 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "I bring him before my mind’s eye and I congratulate him on his good fortune because he is now gainfully employed.",
+      "ko": "나는 그를 내 마음의 눈앞으로 데려와 그의 행운을 축하해 줍니다. 왜냐하면 그는 이제 수입이 좋은 직장에 취직했기 때문입니다.",
+      "vocab": [
+        {
+          "word": "mind's eye",
+          "mean": "마음의 눈, 상상력"
+        },
+        {
+          "word": "congratulate",
+          "mean": "축하하다"
+        },
+        {
+          "word": "gainfully employed",
+          "mean": "수입이 있는 직업을 가진, 취업한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Bring A before B",
+          "mean": "A를 B 앞에 데려다 놓다 (상상 속에서 대상을 생생하게 시각화함)"
+        },
+        {
+          "tag": "Congratulate A on B",
+          "mean": "A에게 B를 축하하다"
+        }
+      ]
+    },
+    {
+      "en": "I allow him to accept my congratulations, because I do not see a man unemployed, I see him employed and he knows he is in my mind’s eye for in that state I have pruned him from the unemployed state and once more reshaped the branch that grows in the garden of God.",
+      "ko": "나는 그가 나의 축하를 받아들이도록 허용합니다. 왜냐하면 나는 실직한 사람을 보는 것이 아니라 고용된 사람을 보기 때문이며, 그는 자신이 내 마음의 눈 안에 있다는 것을 압니다. 왜냐하면 그 상태 속에서 나는 그를 실직한 상태로부터 잘라내어 하나님의 정원에서 자라는 가지를 다시 한번 새롭게 모양 잡았기 때문입니다.",
+      "vocab": [
+        {
+          "word": "unemployed",
+          "mean": "실직한, 직장이 없는"
+        },
+        {
+          "word": "pruned",
+          "mean": "가지치기 된, 잘려 나간"
+        },
+        {
+          "word": "reshaped",
+          "mean": "다시 모양을 잡은, 재조형된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Allow + 목적어 + to 부정사",
+          "mean": "목적어가 ~하는 것을 허락하다"
+        },
+        {
+          "tag": "성경적 은유",
+          "mean": "'하나님의 정원(the garden of God)'과 '가지(branch)'라는 표현을 통해 인간을 신성한 생명나무의 일부로 비유하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "Tomorrow people will see him as they could not have seen him before the pruning that took place within me and he will be gainfully employed.",
+      "ko": "내일 사람들은 내 안에서 일어난 가지치기 이전에는 그를 볼 수 없었던 방식으로 그를 보게 될 것이며, 그는 수입이 생기는 직업을 갖게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "took place",
+          "mean": "발생했다, 일어나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "as they could not have seen",
+          "mean": "과거의 가정적 상황을 나타내는 조동사 과거형(could have p.p.)을 사용해 내면의 변화가 가져올 현실의 극적 변화를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "That one is unwell, you prune that branch.",
+      "ko": "저 사람이 건강하지 못하다면, 당신은 그 가지를 치십시오.",
+      "vocab": [
+        {
+          "word": "unwell",
+          "mean": "몸이 아픈, 건강하지 않은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문",
+          "mean": "독자에게 직접 상상 속의 가지치기(Revision)를 실천할 것을 촉구하는 평서문 형태의 명령조입니다."
+        }
+      ]
+    },
+    {
+      "en": "You don’t accept one thing in the world as final unless it conforms to the ideal you want to realize in the world.",
+      "ko": "당신이 세상에서 실현하고자 하는 이상에 부합하지 않는다면, 세상의 그 어떤 것도 최종적인 것으로 받아들여서는 안 됩니다.",
+      "vocab": [
+        {
+          "word": "final",
+          "mean": "최종적인, 바꿀 수 없는"
+        },
+        {
+          "word": "conforms to",
+          "mean": "~에 일치하다, 부합하다"
+        },
+        {
+          "word": "realize",
+          "mean": "실현하다, 깨닫다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Unless",
+          "mean": "~가 아니라면 (= if ~ not)"
+        },
+        {
+          "tag": "네빌 사상",
+          "mean": "외적 세계의 현상은 감각의 환영일 뿐이며, 오직 내면의 이상만이 유일한 진실이자 기준임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "But you do it daily; if you do not prune it daily you will get out of the habit, then weeds will grow.",
+      "ko": "그러나 당신은 그것을 매일 해야 합니다. 만약 당신이 매일 가지치기를 하지 않으면 습관에서 멀어지게 되고, 그러면 잡초가 자라날 것입니다.",
+      "vocab": [
+        {
+          "word": "daily",
+          "mean": "매일의, 매일"
+        },
+        {
+          "word": "get out of the habit",
+          "mean": "습관에서 벗어나다, 습관을 잃다"
+        },
+        {
+          "word": "weeds",
+          "mean": "잡초"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건절 (If절)",
+          "mean": "현재시제(do not prune)를 사용하여 미래의 결과(will get out, will grow)를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Every man who really is a gardener who calls himself a gardener, a gardener in the garden of God, for every day is the opportunity to really prune the tree, this wonderful tree.",
+      "ko": "진정으로 정원사인 모든 사람, 스스로를 정원사라 부르는 사람, 하나님의 정원 안에 있는 정원사인 사람은, 매일이 이 나무, 이 놀라운 나무를 진정으로 가지치기할 기회이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "gardener",
+          "mean": "정원사"
+        },
+        {
+          "word": "opportunity",
+          "mean": "기회"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 및 수식 구조",
+          "mean": "who절이 거듭해서 gardener를 수식하며 인간이 창조의 정원사임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "And so everyone that you meet is a branch rooted in the vine that you are and you are that special tree in the garden of God, a tree bearing life, a tree bearing fruit for the food of the nations.",
+      "ko": "그러므로 당신이 만나는 모든 사람은 당신이라는 포도나무에 뿌리 내린 가지이며, 당신은 하나님의 정원 안에 있는 그 특별한 나무, 즉 생명을 낳는 나무이자 만민의 양식을 위해 열매를 맺는 나무입니다.",
+      "vocab": [
+        {
+          "word": "rooted",
+          "mean": "뿌리 내린"
+        },
+        {
+          "word": "vine",
+          "mean": "포도나무"
+        },
+        {
+          "word": "bearing",
+          "mean": "~을 맺는, 품은"
+        },
+        {
+          "word": "nations",
+          "mean": "만민, 열방, 국가들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 비유",
+          "mean": "요한복음 15장의 포도나무 비유(나는 포도나무요 너희는 가지라)를 네빌 고다드식으로 재해석하여, 개인이 곧 세상의 근원이자 포도나무임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "You are that one.",
+      "ko": "당신이 바로 그 사람입니다.",
+      "vocab": [
+        {
+          "word": "that one",
+          "mean": "그 사람, 바로 그 존재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조 구문",
+          "mean": "모든 존재의 근원이자 하나님의 정원인 생명나무가 바로 독자 자신(You)임을 단호하게 확언하며 강연을 마칩니다."
+        }
+      ]
+    },
+    {
+      "en": "If you take me seriously today, tonight do not let the sun descend upon any vexation of the day.",
+      "ko": "오늘 저의 말을 진지하게 받아들인다면, 오늘 밤 그 어떤 낮의 번뇌 위로도 해가 지게 하지 마십시오.",
+      "vocab": [
+        {
+          "word": "seriously",
+          "mean": "진지하게"
+        },
+        {
+          "word": "descend",
+          "mean": "내려가다, 지다"
+        },
+        {
+          "word": "vexation",
+          "mean": "번뇌, 짜증, 괴로움"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "조건절",
+          "mean": "If you take me seriously today"
+        },
+        {
+          "tag": "명령문",
+          "mean": "do not let the sun descend..."
+        },
+        {
+          "tag": "성경적 비유",
+          "mean": "해가 지도록 분을 품지 말라는 에베소서 4:26의 영적 의미를 당장의 상상력 수정에 적용합니다."
+        }
+      ]
+    },
+    {
+      "en": "Just look at it, don’t deny it, don’t duck it, look at it that you may prune it and then reshape it.",
+      "ko": "그저 그것을 직시하십시오, 부인하지 말고, 피하지 말고, 그것을 가지치기한 뒤 다시 모양을 빚어낼 수 있도록 똑바로 바라보십시오.",
+      "vocab": [
+        {
+          "word": "deny",
+          "mean": "부인하다"
+        },
+        {
+          "word": "duck",
+          "mean": "피하다, 숙이다"
+        },
+        {
+          "word": "prune",
+          "mean": "가지치기하다, 다듬다"
+        },
+        {
+          "word": "reshape",
+          "mean": "모상을 다시 만들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부정관념 다루기",
+          "mean": "네빌은 부정적인 현실을 무조건 억누르거나(deny) 도망치는(duck) 대신, 의식의 빛 안에서 직시하고 수정(prune, reshape)할 것을 요구합니다."
+        }
+      ]
+    },
+    {
+      "en": "Take the conversations with your friends today, were they pleasant, were they arguments, no matter what it is, were they negative?",
+      "ko": "오늘 친구들과 나누었던 대화들을 떠올려보십시오, 그것들이 유쾌했습니까, 언쟁이었습니까, 무엇이든 간에 그것들은 부정적이었습니까?",
+      "vocab": [
+        {
+          "word": "pleasant",
+          "mean": "유쾌한"
+        },
+        {
+          "word": "argument",
+          "mean": "언쟁, 논쟁"
+        },
+        {
+          "word": "negative",
+          "mean": "부정적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "자기 성찰",
+          "mean": "지나간 일상의 대화를 상기시켜 의식의 상태를 점검하게 합니다."
+        }
+      ]
+    },
+    {
+      "en": "Then rewrite the script and just imagine the conversation to have taken place that now you are rewriting for the first time.",
+      "ko": "그런 다음 대본을 다시 쓰고, 마치 지금 당신이 처음으로 다시 쓰고 있는 그 대화가 실제로 일어났던 것처럼 상상하십시오.",
+      "vocab": [
+        {
+          "word": "rewrite",
+          "mean": "다시 쓰다"
+        },
+        {
+          "word": "script",
+          "mean": "대본, 각본"
+        },
+        {
+          "word": "take place",
+          "mean": "일어나다, 발생하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "소원 성취 기법",
+          "mean": "내면의 대화(Inner Speech)와 각본 수정(Rewriting the script)을 통해 과거와 미래를 재창조하는 네빌의 핵심 방법론입니다."
+        }
+      ]
+    },
+    {
+      "en": "And it will take place, for everything in your world that you behold, though it appears without, it is within, in your imagination.",
+      "ko": "그리고 그것은 반드시 일어날 것입니다. 왜냐하면 당신이 바라보는 당신 세상의 모든 것은, 비록 밖으로 나타나 있는 것처럼 보이지만, 내면의 상상력 안에 있기 때문입니다.",
+      "vocab": [
+        {
+          "word": "behold",
+          "mean": "바라보다, 주시하다"
+        },
+        {
+          "word": "without",
+          "mean": "외부에, 밖에서"
+        },
+        {
+          "word": "within",
+          "mean": "내면에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "내면이 원인이다",
+          "mean": "외적 현실(without)은 오직 내적 상상력(within)의 그림자일 뿐이라는 네빌의 근본 법칙입니다."
+        }
+      ]
+    },
+    {
+      "en": "And this wonderful imagination of yours is Christ Jesus.",
+      "ko": "그리고 이 당신의 놀라운 상상력이 바로 그리스도 예수입니다.",
+      "vocab": [
+        {
+          "word": "imagination",
+          "mean": "상상력"
+        },
+        {
+          "word": "Christ Jesus",
+          "mean": "그리스도 예수"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 신비주의 핵심",
+          "mean": "네빌 고다드 사상의 정점으로, 성경 속 예수 그리스도는 역사적 인물이 아니라 인간 개개인의 내면의 상상력(Human Imagination)을 의인화한 것입니다."
+        }
+      ]
+    },
+    {
+      "en": "Imagination is the actual habitation of every created thing.",
+      "ko": "상상력은 창조된 모든 것의 진정한 거처입니다.",
+      "vocab": [
+        {
+          "word": "habitation",
+          "mean": "거처, 주거지"
+        },
+        {
+          "word": "created thing",
+          "mean": "피조물, 창조된 것"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재의 근원",
+          "mean": "모든 물리적 형태는 상상력이라는 근본적인 집(habitation)에서 먼저 형상을 갖추고 밖으로 현현합니다."
+        }
+      ]
+    },
+    {
+      "en": "No matter what you see in the world, it springs from your imagination.",
+      "ko": "당신이 세상에서 무엇을 보든 간에, 그것은 당신의 상상력으로부터 솟아납니다.",
+      "vocab": [
+        {
+          "word": "spring from",
+          "mean": "~에서 유래하다, 솟아나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인과관계의 전복",
+          "mean": "현실 세계의 사건이나 사물이 원인이 아니라, 상상력이 유일한 원인임을 확언합니다."
+        }
+      ]
+    },
+    {
+      "en": "So that’s where you go, that’s the workshop, the garden of God.",
+      "ko": "그러므로 그것이 바로 당신이 가야 할 곳이며, 그곳이 바로 작업실이자 하나님의 동산입니다.",
+      "vocab": [
+        {
+          "word": "workshop",
+          "mean": "작업장, 공작실"
+        },
+        {
+          "word": "garden of God",
+          "mean": "하나님의 동산 (에덴동산)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "에덴의 재해석",
+          "mean": "성경의 에덴동산(Garden of God)은 지리적 장소가 아니라 인간의 상상력 자체를 비유한 것임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "And now you have a mission, you have a purpose in life; it’s a noble purpose, because you have been selected to really become the chief gardener in the garden of God, and in the garden you must have pruning shears, and pruning shears is revision.",
+      "ko": "그리고 이제 여러분에게는 사명이 있고, 삶의 목적이 있습니다. 그것은 고귀한 목적입니다. 왜냐하면 여러분이 하나님의 동산에서 진정한 수석 정원사가 되도록 선택되었기 때문이며, 그 동산에서 여러분은 전정가사이자 곧 개정(리비전)인 전정가사(가지치기 가위)를 가져야 하기 때문입니다.",
+      "vocab": [
+        {
+          "word": "mission",
+          "mean": "사명"
+        },
+        {
+          "word": "noble",
+          "mean": "고귀한"
+        },
+        {
+          "word": "chief gardener",
+          "mean": "수석 정원사"
+        },
+        {
+          "word": "pruning shears",
+          "mean": "전정가사, 가지치기 가위"
+        },
+        {
+          "word": "revision",
+          "mean": "개정, 수정 (네빌의 과거 수정 기법)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "S+V 구조",
+          "desc": "and로 연결된 독립절들이 세미콜론과 접속사로 이어지며, 네빌 고다드의 의식 창조론의 핵심인 '마음의 정원 가꾸기' 비유를 도입합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "인간의 상상력은 하나님의 정원이며, 과거의 기억을 바로잡는 '수정(Revision)'이 바로 영적인 가지치기 가위임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "You simply revise, and as you revise the day you repeal the day, for the day is not slipping into the past, it does not recede as people think, it is always advancing into the future to confront you, either pruned or in some strange weed-like state.",
+      "ko": "여러분은 그저 수정할 뿐이며, 수정함에 따라 그날을 무효화합니다. 왜냐하면 그날은 과거로 미끄러져 들어가는 것이 아니며, 사람들이 생각하듯 뒷걸음질 치는 것이 아니라, 가지가 쳐졌거나 혹은 어떤 기괴한 잡초 같은 상태로 여러분과 마주하기 위해 언제나 미래를 향해 전진하고 있기 때문입니다.",
+      "vocab": [
+        {
+          "word": "revise",
+          "mean": "수정하다, 개정하다"
+        },
+        {
+          "word": "repeal",
+          "mean": "무효화하다, 철회하다"
+        },
+        {
+          "word": "recede",
+          "mean": "멀어지다, 물러나다"
+        },
+        {
+          "word": "confront",
+          "mean": "직면하다, 맞서다"
+        },
+        {
+          "word": "weed-like",
+          "mean": "잡초 같은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간에 대한 네빌의 관점",
+          "desc": "시간은 흘러 사라지는 것이 아니라 고정되어 있으며 미래에서 우리를 향해 다가오므로, 현재의 수정으로 미래를 바꿀 수 있음을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "So it’s entirely up to us–I hope that every man and woman here today will take me seriously and start this day pruning your garden. pruning your mind.",
+      "ko": "그러므로 그것은 전적으로 우리에게 달려 있습니다. 오늘 이 자리에 있는 모든 남녀가 제 말을 진지하게 받아들이고 오늘 당장 여러분의 정원, 즉 여러분의 마음을 가지치기 시작하기를 바랍니다.",
+      "vocab": [
+        {
+          "word": "entirely up to us",
+          "mean": "전적으로 우리에게 달렸다"
+        },
+        {
+          "word": "take seriously",
+          "mean": "진지하게 받아들이다"
+        },
+        {
+          "word": "pruning your mind",
+          "mean": "마음을 가지치기하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격 구조",
+          "desc": "pruning your garden 뒤에 점(.)을 찍고 다시 pruning your mind로 이어져 정원이 곧 인간의 마음(상상력)임을 명확히 합니다."
+        }
+      ]
+    },
+    {
+      "en": "I know before I leave this city in a matter of two weeks that you will be able to tell me of the new things that spring in your world or that spring from the pruned tree that is your own lovely imagination.",
+      "ko": "저는 2주라는 시간 안에 이 도시를 떠나기 전에, 여러분이 여러분의 세계에서 솟아나는 새로운 일들이나, 혹은 여러분의 그 사랑스러운 상상력인 가지치기 된 나무에서 솟아나는 새것들에 대해 저에게 말해줄 수 있게 되리라는 것을 압니다.",
+      "vocab": [
+        {
+          "word": "in a matter of",
+          "mean": "~라는 (짧은) 시간 안에"
+        },
+        {
+          "word": "spring",
+          "mean": "솟아나다, 튀어오르다"
+        },
+        {
+          "word": "lovely imagination",
+          "mean": "사랑스러운 상상력 (네빌이 인간의 신성함을 지칭할 때 쓰는 표현)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "that spring in your world와 that spring from the pruned tree가 선행사들을 수식하며 상상력의 결과로 나타날 현실의 변화를 예언합니다."
+        }
+      ]
+    },
+    {
+      "en": "You try it: then you will know what Blake meant when he said.",
+      "ko": "여러분은 그것을 시도해 보십시오. 그러면 윌리엄 블레이크가 그 말을 했을 때 무슨 뜻이었는지 알게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "try it",
+          "mean": "시도해 보다, 직접 적용해보다"
+        },
+        {
+          "word": "mean",
+          "mean": "의도하다, 의미하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "경험적 인식",
+          "desc": "네빌은 가르침을 믿기만 하는 것이 아니라 직접 실험(Try it)해보라고 권장합니다."
+        }
+      ]
+    },
+    {
+      "en": "“In heaven, the only art of living is forgetting and forgiving.”",
+      "ko": "“천국에서 삶의 유일한 기술은 잊고 용서하는 것이다.”",
+      "vocab": [
+        {
+          "word": "art of living",
+          "mean": "삶의 기술"
+        },
+        {
+          "word": "forgetting and forgiving",
+          "mean": "잊는 것과 용서하는 것"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인용구",
+          "desc": "시인 윌리엄 블레이크(William Blake)의 말을 인용하여, 천국(깨달은 의식 상태)에서의 삶의 비결이 과거의 망각과 수정(용서)에 있음을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "The only art of living is complete forgetfulness by putting something in its place, no vacuum, but putting something in its place.",
+      "ko": "삶의 유일한 기술은 어떤 것을 그 자리에 채워 넣음으로써 완전한 망각을 이루는 것입니다. 진공 상태가 아니라, 바로 그 자리에 무언가를 채워 넣음으로써 말입니다.",
+      "vocab": [
+        {
+          "word": "complete forgetfulness",
+          "mean": "완벽한 망각"
+        },
+        {
+          "word": "by putting something in its place",
+          "mean": "그 자리에 무언가를 놓음으로써"
+        },
+        {
+          "word": "vacuum",
+          "mean": "진공, 빈 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌의 치유 및 수정 원리",
+          "desc": "단순히 나쁜 기억을 지우는 것(공백)이 아니라, 바람이 이루어진 새로운 상태를 그 자리에 대체(Replacement)해야 함을 강조하는 반복 강조법입니다."
+        }
+      ]
+    },
+    {
+      "en": "So when you read these strange stories that you read in the daily press, you simply ignore them.",
+      "ko": "그러므로 일간지에서 읽게 되는 이 이상한 이야기들을 읽을 때, 여러분은 그것들을 그저 무시해야 합니다.",
+      "vocab": [
+        {
+          "word": "strange",
+          "mean": "이상한"
+        },
+        {
+          "word": "daily press",
+          "mean": "일간지, 언론"
+        },
+        {
+          "word": "simply",
+          "mean": "단순히, 그저"
+        },
+        {
+          "word": "ignore",
+          "mean": "무시하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부사절",
+          "desc": "'So when you...' 구문으로 조건이나 상황을 제시하며, 네빌 고다드는 외부 세계의 부정적인 뉴스(daily press)에 주의를 빼앗기지 말고 무시할 것을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "They mean nothing.",
+      "ko": "그것들은 아무런 의미가 없습니다.",
+      "vocab": [
+        {
+          "word": "mean",
+          "mean": "의미하다"
+        },
+        {
+          "word": "nothing",
+          "mean": "아무것도 아님"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "존재론적 선언",
+          "desc": "외부 현상은 내면의 상상력이 만들어낸 그림자에 불과하므로, 그 자체로는 실체나 의미가 없다는 네빌의 근본 가르침을 반영합니다."
+        }
+      ]
+    },
+    {
+      "en": "Men who are calling themselves leaders, shepherds of the flock, they excommunicate–not just one religion, all religions the leaders take it upon themselves to excommunicate, not knowing nothing is to be discarded, not a thing in the world can you discard for it is forever, but it can be pruned and made to conform to the ideal image.",
+      "ko": "스스로를 지도자라 부르는 자들, 양 떼의 목자라 부르는 자들은 파문합니다. 단지 하나의 종교뿐만 아니라, 지도자들은 스스로 나서서 모든 종교를 파문하고 있습니다. 그들은 어떤 것도 버려져서는 안 되며, 세상의 그 어떤 것도 버릴 수 없다는 사실을 알지 못합니다. 모든 것은 영원하기 때문입니다. 다만 가지치기를 통해 이상적인 이미지에 부합하도록 만들어질 수 있을 뿐입니다.",
+      "vocab": [
+        {
+          "word": "shepherd",
+          "mean": "목자"
+        },
+        {
+          "word": "flock",
+          "mean": "양 떼"
+        },
+        {
+          "word": "excommunicate",
+          "mean": "파문하다, 제명하다"
+        },
+        {
+          "word": "discard",
+          "mean": "버리다, 폐기하다"
+        },
+        {
+          "word": "prune",
+          "mean": "가지치기하다, 다듬다"
+        },
+        {
+          "word": "conform",
+          "mean": "순응하다, 일치시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비교 및 수정(Revision)의 원리",
+          "desc": "네빌 고다드는 외적인 단죄나 배척(excommunication)을 비판하며, 성경의 '가지치기(pruning)' 개념을 통해 현실을 파괴하는 것이 아니라 의식의 상태를 이상적인 이미지에 맞게 수정(revision)해야 함을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "The man who will not revise his day either does not know it or he has lost the vision of that life into the likeness of which it is the true labor of the spirit of Jesus that transformed this life.",
+      "ko": "자신의 하루를 수정하려 하지 않는 사람은 그 방법을 모르거나, 이 삶을 변화시키는 예수의 영의 진정한 수고가 지향하는 그 삶의 형상을 향한 비전을 잃어버린 것입니다.",
+      "vocab": [
+        {
+          "word": "revise",
+          "mean": "수정하다"
+        },
+        {
+          "word": "likeness",
+          "mean": "닮음, 형상"
+        },
+        {
+          "word": "labor",
+          "mean": "수고, 노동"
+        },
+        {
+          "word": "transform",
+          "mean": "변화시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "리비전(Revision)과 그리스도의 영",
+          "desc": "하루를 되돌아보고 상상력으로 수정하는 것(revise his day)이 곧 예수의 영이 이 삶을 변화시키는 실제적인 방식임을 강조하는 핵심 구문입니다."
+        }
+      ]
+    },
+    {
+      "en": "So you don’t discard them.",
+      "ko": "그러므로 여러분은 그것들을 버려서는 안 됩니다.",
+      "vocab": [
+        {
+          "word": "discard",
+          "mean": "버리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결론적 명령",
+          "desc": "앞서 언급한 외부의 문제들이나 과거의 사건들을 없애려 하거나 정죄하지 말고, 오직 상상력을 통해 새롭게 빚어내야(revise) 한다는 결론을 명확히 전달합니다."
+        }
+      ]
+    },
+    {
+      "en": "In the current issue of “Time” magazine there is that noble soul who is known to us as Spinoza, Baruch de Spinoza, who has given so much to the world of philosophy, so much everyone has been enriched because he walked the earth.",
+      "ko": "‘타임’ 잡지 최신호에는 우리에게 스피노자, 즉 바루흐 데 스피노자로 알려진 고귀한 영혼이 실려 있습니다. 그는 철학계에 너무나 많은 것을 주었고, 그가 이 땅을 걸었기 때문에 모든 사람이 엄청나게 풍요로워졌습니다.",
+      "vocab": [
+        {
+          "word": "current issue",
+          "mean": "최신호"
+        },
+        {
+          "word": "noble soul",
+          "mean": "고귀한 영혼"
+        },
+        {
+          "word": "ex-premier",
+          "mean": "전직 수상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 계속적 용법",
+          "desc": "who절이 스피노자의 철학적 공헌과 인류에 미친 영적 영향을 부가적으로 설명함."
+        }
+      ]
+    },
+    {
+      "en": "And here 300 years later, the ex-premier of Israel, Ben-Gurion, has asked the leading rabbis today to rescind that excommunication of 300 years ago, and they tell this noble soul today that they cannot rescind the works of their forefathers, that the curse remains forever, and you should read that silly, silly curse as it’s printed in the current issue of “Time” magazine.",
+      "ko": "그리고 300년이 지난 지금, 이스라엘의 전직 수상 벤구리온은 오늘날의 주요 랍비들에게 300년 전의 그 파문을 취소해 달라고 요청했습니다. 그러나 그들은 오늘날 이 고귀한 영혼에게 그들의 선조들의 행위를 취소할 수 없으며 저주가 영원히 남아 있다고 말합니다. 여러분은 ‘타임’ 잡지 최신호에 인쇄된 그 어리석고도 어리석은 저주를 직접 읽어보아야 합니다.",
+      "vocab": [
+        {
+          "word": "rescind",
+          "mean": "취소하다, 철회하다"
+        },
+        {
+          "word": "excommunication",
+          "mean": "파문, 제명"
+        },
+        {
+          "word": "forefathers",
+          "mean": "선조들, 조상들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "that절 병치",
+          "desc": "tell의 목적어로 쓰인 두 개의 that절(that they cannot..., that the curse...)이 병치되어 랍비들의 완고함을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "They call upon all the angels to curse him, as though angels would curse; they call upon everything to blast him, you could not walk within four cubits of the man’s shadow; no one should talk to him, no one should show him kindness, no one should write him and never read anything he ever has to say; and that’s 300 years ago.",
+      "ko": "그들은 마치 천사들이 저주라도 할 것처럼 모든 천사들에게 그를 저주하라고 요구하고, 모든 것을 동원해 그를 파멸시키라고 외칩니다. 그 사람의 그림자 4규빗 안으로 걸어갈 수도 없었고, 누구도 그에게 말을 걸어서도 안 되며, 누구도 그에게 친절을 베풀어서도 안 되고, 누구도 그에게 편지를 써서도 안 되며 그가 하는 말은 무엇이든 결코 읽지 말아야 한다고 했습니다. 그리고 그것은 300년 전의 일입니다.",
+      "vocab": [
+        {
+          "word": "call upon",
+          "mean": "요청하다, 호소하다"
+        },
+        {
+          "word": "blast",
+          "mean": "파괴하다, 저주하다"
+        },
+        {
+          "word": "cubits",
+          "mean": "규빗(고대의 길이 단위)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거",
+          "desc": "as though angels would curse는 천사들의 본성과 어긋나는 인간의 어리석은 종교적 저주의 모순을 비판하는 표현임."
+        }
+      ]
+    },
+    {
+      "en": "The rabbis who so cursed him have long been forgotten and if they do live, they live only by reason of their curse.",
+      "ko": "그를 그토록 저주했던 랍비들은 오래전에 잊혀졌으며, 설령 그들이 살아 있다 하더라도 그들은 오직 그들의 저주 때문에만 살아가고 있을 뿐입니다.",
+      "vocab": [
+        {
+          "word": "rabbi",
+          "mean": "랍비, 유대교 율법학자"
+        },
+        {
+          "word": "curse",
+          "mean": "저주하다, 저주"
+        },
+        {
+          "word": "by reason of",
+          "mean": "~의 이유로, ~ 때문에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "who so cursed him이 주어인 The rabbis를 수식합니다."
+        },
+        {
+          "tag": "조건절과 강조",
+          "desc": "if they do live에서 조동사 do를 사용하여 살아있음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "And no one knows really who they really are, but you can’t forget if you read in this world the works of Spinoza.",
+      "ko": "그리고 그들이 실제로 누구인지 아는 사람은 아무도 없지만, 여러분이 이 세상에서 스피노자의 저작들을 읽는다면 그를 결코 잊을 수 없을 것입니다.",
+      "vocab": [
+        {
+          "word": "really",
+          "mean": "실제로, 정말로"
+        },
+        {
+          "word": "works",
+          "mean": "저작, 작품"
+        },
+        {
+          "word": "Spinoza",
+          "mean": "스피노자 (네덜란드의 철학자)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "간접의문문",
+          "desc": "who they really are가 knows의 목적어 역할을 하는 간접의문문입니다."
+        },
+        {
+          "tag": "조건 부사절",
+          "desc": "if you read...가 주절의 가능성을 조건 짓습니다."
+        }
+      ]
+    },
+    {
+      "en": "Everyone in this audience possibly has used one of his phrases; did you know it was he who said “nature abhors a vacuum”?",
+      "ko": "이 청중 가운데 누구나 아마도 그의 어구 중 하나를 사용해 보았을 것입니다; 여러분은 “자연은 진공을 싫어한다”라고 말한 이가 바로 그였다는 사실을 아셨습니까?",
+      "vocab": [
+        {
+          "word": "audience",
+          "mean": "청중, 관객"
+        },
+        {
+          "word": "phrase",
+          "mean": "어구, 구절"
+        },
+        {
+          "word": "abhor",
+          "mean": "혐오하다, 싫어하다"
+        },
+        {
+          "word": "vacuum",
+          "mean": "진공"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조구문",
+          "desc": "it was he who... 형태의 분열문(cleft sentence)을 사용하여 주어인 he를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Now you use it; I use it, but what is the source of it–it was Spinoza.",
+      "ko": "이제 여러분도 그것을 쓰고, 나도 그것을 쓰지만, 그것의 근원은 무엇인가요–바로 스피노자였습니다.",
+      "vocab": [
+        {
+          "word": "source",
+          "mean": "근원, 출처"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "대시(-)의 용법",
+          "desc": "질문에 대한 즉각적인 답변을 대시를 통해 명확하게 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "For here was this giant of a mind that after 300 years little minds who think they’re leading the flock; they call themselves shepherds.",
+      "ko": "왜냐하면 300년이 지난 후에도 자신이 양 떼를 인도하고 있다고 생각하는 소협량한 마음들, 즉 스스로 목자라 칭하는 자들이 있는 이곳에 이러한 거대한 지성의 소유자가 있었기 때문입니다.",
+      "vocab": [
+        {
+          "word": "giant of a mind",
+          "mean": "거대한 지성, 위대한 정신"
+        },
+        {
+          "word": "little mind",
+          "mean": "편협한 마음, 소협량한 자들"
+        },
+        {
+          "word": "flock",
+          "mean": "(양 등의) 떼, 신도들"
+        },
+        {
+          "word": "shepherd",
+          "mean": "목자, 목동"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "desc": "For here was this giant... 구문에서 장소를 나타내는 부사구가 문두에 와서 주어와 동사가 도치되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "They should go back and read well the Book of Jeremiah, “You shepherds who spoil my vines and you who have come into my garden and you have taken my vines, now it bears no grape and it bears no leaf, and the garden of Jerusalem now has become a weed.”",
+      "ko": "그들은 돌아가서 예레미야서를 잘 읽어보아야 합니다. “너희 목자들이 내 포도나무를 망쳐놓았고, 너희가 내 정원에 들어와 내 포도나무를 가져갔으니, 이제 그것은 포도도 맺지 못하고 잎도 맺지 못하며, 예루살렘의 정원은 이제 잡초가 되어버렸노라.”",
+      "vocab": [
+        {
+          "word": "spoil",
+          "mean": "망치다, 훼손하다"
+        },
+        {
+          "word": "vine",
+          "mean": "포도나무"
+        },
+        {
+          "word": "bear",
+          "mean": "(열매·잎을) 맺다, 지니다"
+        },
+        {
+          "word": "weed",
+          "mean": "잡초"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용",
+          "desc": "구약성경 예레미야서의 심판과 영적 맹목성에 대한 구절을 인용하여 스스로 목자라 칭하는 종교 지도자들을 질책합니다."
+        }
+      ]
+    },
+    {
+      "en": "Read it in Jeremiah, how he cries out because shepherds, who call themselves shepherds, are blind leaders of the blind.",
+      "ko": "목자라고 자처하는 목자들이 결국 소경이 소경을 인도하는 자들이기 때문에 그가 어떻게 울부짖는지 예레미야서에서 읽어보십시오.",
+      "vocab": [
+        {
+          "word": "cry out",
+          "mean": "부르짖다, 외치다"
+        },
+        {
+          "word": "blind leader",
+          "mean": "소경된 인도자, 눈먼 지도자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "간접의문문/명사절",
+          "desc": "how he cries out...이 read의 목적어 역할을 합니다."
+        },
+        {
+          "tag": "은유적 표현",
+          "desc": "blind leaders of the blind는 영적으로 깨어있지 못한 종교 지도자들을 비판하는 성경적 은유입니다."
+        }
+      ]
+    },
+    {
+      "en": "You take me this morning at my word; you owe me nothing, it costs you not a thing to come here this morning, you come you give me your time and I give you my time, but you go out and try it and start this day pruning that wonderful imagination of yours.",
+      "ko": "여러분은 오늘 아침 내 말 액면 그대로를 받아들입니다; 여러분은 내게 아무것도 빚진 것이 없고, 오늘 아침 여기에 오는 데 아무런 대가도 들지 않으며, 여러분이 와서 내게 시간을 주고 나도 여러분에게 시간을 줍니다, 하지만 여러분은 나가서 그것을 시도하고 오늘 하루 여러분의 그 놀라운 상상력을 가지치기하는 것으로 시작하십시오.",
+      "vocab": [
+        {
+          "word": "take at one's word",
+          "mean": "~의 말을 그대로 믿다"
+        },
+        {
+          "word": "pruning",
+          "mean": "가지치기하다, 다듬다"
+        },
+        {
+          "word": "imagination",
+          "mean": "상상력 (네빌 사상에서 창조의 유일한 원리)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "SVO",
+          "mean": "등위절들이 세미콜론과 접속사로 연결되어 있으며, 'pruning'은 분사구문 혹은 동명사구로 상상력의 정화를 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "Do you know someone that is evil?",
+      "ko": "여러분은 악하다고 여겨지는 누군가를 알고 있습니까?",
+      "vocab": [
+        {
+          "word": "evil",
+          "mean": "악한, 사악한 (외적인 실체가 아니라 상상력의 오작동을 의미)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Interrogative",
+          "mean": "의문문으로 청중의 주의를 환기하며, 타인에 대한 고정관념을 지적합니다."
+        }
+      ]
+    },
+    {
+      "en": "Stop knowing it by bringing him before your mind’s eye and carry on with him the most wonderful conversation in the world, with a tender spirit, a loving spirit, and believe in the reality of this communion, because if you really do it, you are entering the kingdom of heaven, for you enter heaven by a loving, knowing communion with a friend.",
+      "ko": "마음의 눈앞에 그를 데려옴으로써 그를 그렇게 아는 것을 멈추고, 부드러운 영으로, 사랑의 영으로 세상에서 가장 멋진 대화를 그와 함께 나누며, 이 교감의 실상을 믿으십시오. 왜냐하면 만약 여러분이 진정으로 그것을 한다면, 여러분은 천국에 들어가고 있는 것이기 때문입니다. 여러분은 친구와의 사랑스럽고 의식적인 교감을 통해 천국에 들어가기 때문입니다.",
+      "vocab": [
+        {
+          "word": "mind's eye",
+          "mean": "마음의 눈, 상상력의 시야"
+        },
+        {
+          "word": "communion",
+          "mean": "교감, 영적 일치"
+        },
+        {
+          "word": "kingdom of heaven",
+          "mean": "천국 (네빌 사상에서 의식의 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Imperative",
+          "mean": "명령문(Stop ~, carry on ~, believe ~)을 통해 상상력을 통한 타인의 구원을 실천할 것을 강력하게 촉구합니다."
+        }
+      ]
+    },
+    {
+      "en": "So make him a friend, if he is a lovely one, no matter what he is, you can prune him and then as you prune him you are doing the work which you were sent to do for man–and you are that man–you are placed this day in the garden of Eden to dress it and to keep it.",
+      "ko": "그러므로 그를 친구로 만드십시오. 그가 사랑스러운 사람이든 아니든, 그가 어떤 사람이든 상관없이 여러분은 그를 다듬을 수 있으며, 그런 다음 그를 다듬으면서 여러분은 인간을 위해 하도록 보냄을 받은 일을 하고 있는 것입니다—그리고 여러분이 바로 그 사람입니다—여러분은 오늘 에덴동산에 놓여 그것을 경작하고 지키게 됩니다.",
+      "vocab": [
+        {
+          "word": "prune",
+          "mean": "가지치기하다 (원치 않는 관념을 잘라냄)"
+        },
+        {
+          "word": "Garden of Eden",
+          "mean": "에덴동산 (인간의 의식 상태)"
+        },
+        {
+          "word": "dress and keep",
+          "mean": "경작하고 지키다 (창세기 2:15 인용)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion & Parenthesis",
+          "mean": "삽화구(and you are that man)를 통해 성경의 아담이자 인간이 곧 자기 자신임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Don’t let it continue growing weeds in your world.",
+      "ko": "당신의 세계에서 그것이 계속해서 잡초를 자라게 내버려 두지 마십시오.",
+      "vocab": [
+        {
+          "word": "weeds",
+          "mean": "잡초 (부정적인 상상과 믿음의 결과물)"
+        },
+        {
+          "word": "world",
+          "mean": "세계 (개인의 의식이 투영된 외부 현실)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Imperative Negative",
+          "mean": "사역동사 let의 부정 명령문으로, 마음의 정원에서 잡초(부정적 생각)를 제거할 것을 당부하며 강연을 마무리합니다."
+        }
+      ]
+    },
+    {
+      "en": "You are absolutely responsible for every being you meet in this world; that’s your responsibility.",
+      "ko": "여러분은 이 세상에서 만나는 모든 존재에 대해 절대적으로 책임이 있습니다; 그것이 여러분의 책임입니다.",
+      "vocab": [
+        {
+          "word": "absolutely",
+          "mean": "절대적으로"
+        },
+        {
+          "word": "responsible",
+          "mean": "책임이 있는"
+        },
+        {
+          "word": "being",
+          "mean": "존재"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주제 해설",
+          "desc": "네빌 고다드의 핵심 가르침인 '외부 세계는 내면의 반영'임을 선언하며, 모든 외적 현실에 대한 주체적 책임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Just like the teacher we told you of who took this little child that was just about to be expelled; no, the child is not expelled because she heard what you are hearing this morning.",
+      "ko": "우리가 여러분에게 이야기했던 그 교사처럼 말입니다. 그녀는 하마터면 퇴학당할 뻔했던 이 어린아이를 맡았습니다; 아니요, 그 아이는 퇴학당하지 않았습니다. 왜냐하면 그녀가 오늘 아침 여러분이 듣고 있는 것을 들었기 때문입니다.",
+      "vocab": [
+        {
+          "word": "expelled",
+          "mean": "퇴학당한"
+        },
+        {
+          "word": "teacher",
+          "mean": "교사"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "who 이하가 the teacher를 수식하며, 네빌의 강의에 등장하는 실제 사례를 도입합니다."
+        }
+      ]
+    },
+    {
+      "en": "So she brought before her mind’s eye the child that the principal, the psychiatrist and all the faculty had agreed unanimously to expel her on her l6th birthday, for she was rude, she was crude, she was unethical; and she went home on a Sunday night and brought that child before her mind’s eye and communed with her and saw in her a tender child, a considerate child, a loving child.",
+      "ko": "그래서 그녀는 교장과 정신과 의사, 그리고 모든 교직원이 만장일치로 16번째 생일에 그 아이를 퇴학시키기로 합의했던 그 아이를 마음의 눈앞에 데려왔습니다. 아이가 무례하고, 저속하고, 비도덕적이었기 때문입니다. 그리고 그녀는 일요일 밤에 집에 가서 그 아이를 마음의 눈앞에 데려와 그녀와 교감하며 그 아이 안에서 다정하고, 배려심 깊고, 사랑스러운 아이를 보았습니다.",
+      "vocab": [
+        {
+          "word": "mind's eye",
+          "mean": "마음의 눈"
+        },
+        {
+          "word": "unanimously",
+          "mean": "만장일치로"
+        },
+        {
+          "word": "communed",
+          "mean": "교감했다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상상력의 활용",
+          "desc": "객관적 사실(퇴학 위기)을 거부하고 마음의 눈(상상력)을 통해 새로운 현실을 창조하는 수정(Revision)의 과정을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "The next day, Monday, in class she expressed all the kindness of that revision of the night before, and ten days later when it was seen and witnessed by all the faculty, and the psychiatrist, another meeting was called and they repealed their verdict of ten days before and the child is not expelled.",
+      "ko": "다음 날 월요일, 수업 중에서 그녀는 전날 밤의 그 수정(Revision)에서 온 모든 친절함을 표현했고, 10일 후 모든 교직원과 정신과 의사에 의해 그것이 목격되고 증명되었을 때, 또 다른 회의가 소집되어 그들은 10일 전의 평결을 취소했고 아이는 퇴학당하지 않았습니다.",
+      "vocab": [
+        {
+          "word": "revision",
+          "mean": "수정, 개정 (상상을 통한 과거의 재구성)"
+        },
+        {
+          "word": "repealed",
+          "mean": "철회하다, 취소하다"
+        },
+        {
+          "word": "verdict",
+          "mean": "평결, 판결"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인과관계",
+          "desc": "내면의 상상(Revision)의 변화가 외적 현실(교직원들의 태도 변화와 판결 취소)을 자연스럽게 유발함을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "She still sits in the George Washington High School in New York City, which is considered an excellent school; and so there she is. with no black marks against her because one teacher sat in the audience, as you are here, and she believed, what I hope everyone here will believe, and she redeemed a branch of her own tree.",
+      "ko": "그 아이는 여전히 뉴욕 시의 우수한 학교로 여겨지는 조지 워싱턴 고등학교에 앉아 있습니다. 그리고 그녀는 거기에 있습니다. 그녀에게 오점(기록)이 전혀 없는 상태로 말입니다. 왜냐하면 여러분이 지금 여기 앉아 있는 것처럼 한 교사가 청중석에 앉아 있었고, 그녀는 여기 있는 모든 이들이 믿기를 바라는 그것을 믿었으며, 자신의 나무 가지 하나를 구원(구속)했기 때문입니다.",
+      "vocab": [
+        {
+          "word": "black marks",
+          "mean": "오점, 나쁜 평판"
+        },
+        {
+          "word": "redeemed",
+          "mean": "구원했다, 되찾았다"
+        },
+        {
+          "word": "branch",
+          "mean": "가지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 비유",
+          "desc": "자신의 나무의 가지를 구원했다는 표현은 인간이 곧 하나의 거대한 존재(하나님)의 지체들이며 상상을 통해 서로를 구원함을 비유합니다."
+        }
+      ]
+    },
+    {
+      "en": "She didn’t realize the child was herself.",
+      "ko": "그녀는 그 아이가 바로 자기 자신이라는 것을 깨닫지 못했습니다.",
+      "vocab": [
+        {
+          "word": "realize",
+          "mean": "깨닫다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "일원론적 세계관",
+          "desc": "외부의 타인으로 보았던 존재가 결국 내면의 투사(자기 자신)임을 깨닫는 네빌의 핵심 사상을 압축합니다."
+        }
+      ]
+    },
+    {
+      "en": "She saw up to that very moment all the children that she taught in pure objectivity.",
+      "ko": "그녀는 바로 그 순간까지 자신이 가르치던 모든 아이들을 순수한 객관성 속에서 보았습니다.",
+      "vocab": [
+        {
+          "word": "objectivity",
+          "mean": "객관성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "잠든 인간의 시각",
+          "desc": "진리(상상이 현실을 만든다는 것)를 알기 전의 인간은 세상을 나와 무관한 객관적 실체로 본다는 설명입니다."
+        }
+      ]
+    },
+    {
+      "en": "Blind man sees the world objective to himself, something detached from himself.",
+      "ko": "눈먼 자(잠들어 있는 자)는 세상을 자신에게 객관적인 것으로, 자신과 분리된 무언가로 봅니다.",
+      "vocab": [
+        {
+          "word": "blind",
+          "mean": "눈먼, 영적으로 무지한"
+        },
+        {
+          "word": "detached",
+          "mean": "분리된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "영적 무지",
+          "desc": "영적으로 깨어있지 못한 상태를 세상과 자기가 분리되어 있다고 착각하는 '맹인'에 비유합니다."
+        }
+      ]
+    },
+    {
+      "en": "When man begins to awake he sees everything subjectively related; everything he meets is part of himself, and what he does not now understand, still he knows that it is related by affinity to some as yet unrealized force in his own being.",
+      "ko": "인간이 깨어나기 시작할 때, 그는 모든 것이 주관적으로 연관되어 있음을 봅니다. 그가 만나는 모든 것은 그의 일부이며, 비록 지금은 이해하지 못한다 하더라도, 그것이 자신의 존재 안에 아직 실현되지 않은 어떤 힘과 친밀성에 의해 연관되어 있음을 압니다.",
+      "vocab": [
+        {
+          "word": "subjectively",
+          "mean": "주관적으로"
+        },
+        {
+          "word": "affinity",
+          "mean": "친밀성, 유사성"
+        },
+        {
+          "word": "unrealized",
+          "mean": "아직 실현되지 않은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주관적 우주",
+          "desc": "깨어난 인간에게는 모든 객관적 현실이 주관적(내면의 상상) 상태의 반영으로 재조명됩니다."
+        }
+      ]
+    },
+    {
+      "en": "So he doesn’t discard it, he knows his life is the process by which he will redeem it and he redeems it by using the pruning shears of revision.",
+      "ko": "그러므로 그는 그것을 버리지 않고, 자신의 삶이 그것을 구속(구원)할 과정임을 알며, 수정(Revision)의 전정가위(가지치기 가위)를 사용하여 그것을 구속합니다.",
+      "vocab": [
+        {
+          "word": "discard",
+          "mean": "버리다"
+        },
+        {
+          "word": "pruning shears",
+          "mean": "전정가위, 가지치기 가위"
+        },
+        {
+          "word": "revision",
+          "mean": "상상 속의 과거 수정"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌의 핵심 테크닉",
+          "desc": "원치 않는 과거와 상황을 잘라내고 교정하는 도구로서의 '수정의 전정가위(pruning shears of revision)' 메타포를 완성합니다."
+        }
+      ]
+    },
+    {
+      "en": "So I feel that if after these fifty years of walking this earth that this is what that lady saw when I was but seven, I could really close the eye on three dimensions at any moment knowing you will not disprove it: you may never use them but you will never disprove this art of revision.",
+      "ko": "그러므로 나는 이 땅을 걸어온 지난 50년의 세월이 지난 후, 이것이 바로 내가 겨우 일곱 살이었을 때 그 부인이 보았던 것이라면, 여러분이 그것을 반박하지 못할 것임을 알기에 언제든지 3차원의 눈을 감을 수 있다고 느낍니다: 여러분이 그것을 결코 사용하지 않을 수도 있지만, 여러분은 수정의 이 기술을 결코 반박하지 못할 것입니다.",
+      "vocab": [
+        {
+          "word": "revision",
+          "mean": "수정 (네빌 고다드의 과거 기억과 상황을 상상력으로 바꾸는 기술)"
+        },
+        {
+          "word": "disprove",
+          "mean": "틀렸음을 입증하다, 반박하다"
+        },
+        {
+          "word": "three dimensions",
+          "mean": "3차원 (오감으로 지각하는 물리적 현실)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conditional Clause",
+          "desc": "if절 안에 시간의 경과와 과거의 기억을 연결하는 명사절(that절)이 중첩된 구조."
+        },
+        {
+          "tag": "Neville's Teaching",
+          "desc": "물리적 현실(3차원)을 초월하여 상상 속에서 과거를 수정(revision)하는 능력의 절대성을 강조."
+        }
+      ]
+    },
+    {
+      "en": "And any man who will try it will prove it to his own satisfaction that he can rise beyond the wildest dream of men, and rising he awakens the spirit of forgiveness.",
+      "ko": "그리고 그것을 시도하는 모든 사람은 인간의 가장 거친 꿈을 뛰어넘어 상승할 수 있다는 것을 스스로 만족할 만큼 증명해 낼 것이며, 상승하면서 용서의 영을 각성시키게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "satisfaction",
+          "mean": "만족"
+        },
+        {
+          "word": "wildest dream",
+          "mean": "상상할 수 있는 가장 대단한 꿈, 억측"
+        },
+        {
+          "word": "spirit of forgiveness",
+          "mean": "용서의 영 (네빌 고다드 사상에서 그리스도의 의식 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Relative Clause",
+          "desc": "who will try it이 any man을 수식하며, 주절의 미래 시제(will prove)를 통해 확신을 드러냄."
+        },
+        {
+          "tag": "Present Participle",
+          "desc": "rising이 동시 동작이나 원인을 나타내며 분사구문으로 쓰임."
+        }
+      ]
+    },
+    {
+      "en": "He will rise in the early stages in the successful venture; he will increase his income, he will do all these things, but he will realize after a little while that wasn’t the purpose.",
+      "ko": "그는 초기 단계에서는 성공적인 사업(시도)으로 상승할 것이고, 소득을 늘릴 것이며, 이 모든 일들을 해내겠지만, 잠시 후에 그것이 목적이 아니었음을 깨닫게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "venture",
+          "mean": "모험, 사업, 시도"
+        },
+        {
+          "word": "purpose",
+          "mean": "목적, 의도"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Parallel Structure",
+          "desc": "he will rise, he will increase, he will do 등의 조동사 구문이 반복되어 점진적 변화를 보여줌."
+        },
+        {
+          "tag": "Neville's Teaching",
+          "desc": "물리적 성공과 부의 증식은 종착점이 아니라 영적 각성을 위한 방편(장난감)에 불과함을 설명."
+        }
+      ]
+    },
+    {
+      "en": "They were only toys to tickle him, toys to amuse him until he awoke within himself the spirit of Jesus; then he sees an entirely different mission, not the amassing of wealth but the redeeming of society, the redeeming of every man in the world.",
+      "ko": "그것들은 그를 기쁘게 하고, 그가 자기 안에서 예수의 영을 깨우칠 때까지 그를 즐겁게 하는 장난감에 불과했습니다. 그때 그는 완전히 다른 사명을 보게 됩니다. 그것은 부의 축적이 아니라 사회의 구속, 세상 모든 사람의 구속입니다.",
+      "vocab": [
+        {
+          "word": "tickle",
+          "mean": "간지럽히다, 기쁘게 하다"
+        },
+        {
+          "word": "amuse",
+          "mean": "즐겁게 하다"
+        },
+        {
+          "word": "amassing",
+          "mean": "축적, 모으기"
+        },
+        {
+          "word": "redeeming",
+          "mean": "구속하는, 구원하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Apposition",
+          "desc": "toys to tickle him과 toys to amuse him이 보어 역할을 하며 앞의 명사들을 부연 설명."
+        },
+        {
+          "tag": "Correlative Contrast",
+          "desc": "not A but B 구문을 사용하여 물질적 부의 축적과 영적 구원(redeeming)을 선명하게 대조."
+        }
+      ]
+    },
+    {
+      "en": "He comes to do his Father’s will and we are told in the 6th chapter of John, “This is my Father’s will, that of all that he has given me I should lose nothing but I should raise it up again.”",
+      "ko": "그는 아버지의 뜻을 행하기 위해 오며, 우리는 요한복음 6장에서 “내 아버지의 뜻은 내게 주신 자 중에 내가 하나도 잃어버리지 아니하고 마지막 날에 다시 살리는 이것이니라”라는 말씀을 듣게 됩니다.",
+      "vocab": [
+        {
+          "word": "Father's will",
+          "mean": "아버지의 뜻"
+        },
+        {
+          "word": "raise up",
+          "mean": "일으키다, 부활시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct Bible Quotation",
+          "desc": "요한복음 6장 39절(또는 관련 구절)을 직접 인용하여 네빌의 주장을 성경적으로 뒷받침."
+        },
+        {
+          "tag": "Neville's Interpretation",
+          "desc": "성경 속 아버지와 아들의 관계를 인간 의식과 상상력의 본질로 해석함."
+        }
+      ]
+    },
+    {
+      "en": "Lose nothing–no, you don’t excommunicate, you don’t rub out, you simply raise it up again and as you raise it up you raise yourself up and the journey is forever.",
+      "ko": "아무것도 잃지 마십시오. 아니요, 당신은 파문하지 않고, 지워버리지 않으며, 오직 그것을 다시 들어 올릴 뿐이고, 그것을 들어 올릴 때 당신 자신을 들어 올리는 것이며 그 여정은 영원합니다.",
+      "vocab": [
+        {
+          "word": "excommunicate",
+          "mean": "파문하다, 제명하다"
+        },
+        {
+          "word": "rub out",
+          "mean": "지워버리다, 없애다"
+        },
+        {
+          "word": "raise up",
+          "mean": "들어 올리다, 부활시키다"
+        },
+        {
+          "word": "forever",
+          "mean": "영원히"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문 및 대등절",
+          "desc": "부정문(don't)과 긍정문(simply raise)의 대조를 통해 네빌의 용서와 포용의 방식을 설명합니다."
+        },
+        {
+          "tag": "as절",
+          "desc": "~할 때, ~함에 따라의 의미로 타인의 상승이 곧 자아의 상승임을 인과적으로 연결합니다."
+        }
+      ]
+    },
+    {
+      "en": "You are moving up an infinite vertical line in your own wonderful imagination, and you only move up by lifting others up.",
+      "ko": "당신은 당신 자신의 놀라운 상상력 안에서 무한한 수직선을 따라 위로 이동하고 있으며, 오직 다른 이들을 들어 올려줌으로써만 위로 이동할 수 있습니다.",
+      "vocab": [
+        {
+          "word": "infinite",
+          "mean": "무한한"
+        },
+        {
+          "word": "vertical line",
+          "mean": "수직선"
+        },
+        {
+          "word": "imagination",
+          "mean": "상상력 (네빌 사상의 핵심: 하나님 본체)"
+        },
+        {
+          "word": "lift up",
+          "mean": "들어 올리다, 구원하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "by -ing",
+          "desc": "~함으로써라는 수단을 나타내며, 타인과 자아가 하나라는 네빌의 '유일한 자아(One Body)' 개념을 반영합니다."
+        }
+      ]
+    },
+    {
+      "en": "Blind men think they can save themselves, and because they think they can save themselves and discard the rest.",
+      "ko": "눈먼 자들은 그들 스스로를 구원할 수 있다고 생각하며, 그들 스스로를 구원할 수 있다고 생각하기 때문에 나머지를 버립니다.",
+      "vocab": [
+        {
+          "word": "blind men",
+          "mean": "눈먼 자들 (영적으로 깨닫지 못한 사람들)"
+        },
+        {
+          "word": "save",
+          "mean": "구원하다"
+        },
+        {
+          "word": "discard",
+          "mean": "버리다, 제외하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주절과 부사절",
+          "desc": "영적 맹신 상태에 있는 자들의 분열된 의식 상태를 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "The blind man also said this hundreds of years ago.",
+      "ko": "눈먼 그 사람도 수백 년 전에 이렇게 말했습니다.",
+      "vocab": [
+        {
+          "word": "hundreds of years ago",
+          "mean": "수백 년 전에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "과거 시제",
+          "desc": "성경 속에 기록된 과거의 특정 발언이나 인물을 지칭합니다."
+        }
+      ]
+    },
+    {
+      "en": "He saved as he saved others; himself he cannot save.",
+      "ko": "그는 남들을 구원하면서 자신을 구원했다; 그는 자신을 구할 수 없다.",
+      "vocab": [
+        {
+          "word": "save",
+          "mean": "구원하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용 변형",
+          "desc": "마태복음 27장 42절의 '저가 남은 구원하였으되 자기는 구원할 수 없도다'라는 구절을 네빌 고다드의 관점에서 재해석 및 인용합니다."
+        }
+      ]
+    },
+    {
+      "en": "I say to you that it’s a false statement; it was put into the mouth of the Pharisee, put into the mouth of the Sanhedrin, the leaders who thought they were leaders, but I will tell you a man saves himself by, and only by the saving of his fellowman.",
+      "ko": "내가 여러분에게 말하건대 그것은 거짓된 진술입니다; 그것은 바리새인의 입에 담겼고, 산헤드린의 입에 담겼으며, 스스로 지도자라 생각했던 지도자들의 입에 담겼습니다. 그러나 내가 여러분에게 말하노니, 사람은 오직 동료 인간을 구원함으로써, 그리고 오직 그것을 통해서만 자신을 구원합니다.",
+      "vocab": [
+        {
+          "word": "false statement",
+          "mean": "거짓 진술, 틀린 말"
+        },
+        {
+          "word": "Pharisee",
+          "mean": "바리새인"
+        },
+        {
+          "word": "Sanhedrin",
+          "mean": "산헤드린 (유대 최고 의회)"
+        },
+        {
+          "word": "fellowman",
+          "mean": "동료 인간, 이웃"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조 구문 및 반복",
+          "desc": "by, and only by를 사용하여 타인 구원의 유일성을 강력하게 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "There is no other way of saving self other than by saving the real self and every man is rooted in you who observes men.",
+      "ko": "진정한 자아를 구원하는 것 외에는 자아를 구원하는 다른 길이 없으며, 인간들을 관찰하는 당신 안에 모든 인간이 뿌리내려 있습니다.",
+      "vocab": [
+        {
+          "word": "other than",
+          "mean": "~외에는"
+        },
+        {
+          "word": "real self",
+          "mean": "진정한 자아 (상상력/하나님)"
+        },
+        {
+          "word": "rooted",
+          "mean": "뿌리내린"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 who",
+          "desc": "관찰자로서의 '당신(you)'이 곧 모든 인간의 근원임을 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "And so don’t discard, raise them up, prune the tree, and become the real gardener in the garden of God.",
+      "ko": "그러므로 버리지 말고, 그들을 들어 올리고, 나무를 가지치기하며, 하나님의 동원에서 진정한 정원사가 되십시오.",
+      "vocab": [
+        {
+          "word": "discard",
+          "mean": "버리다"
+        },
+        {
+          "word": "prune",
+          "mean": "가지치기하다"
+        },
+        {
+          "word": "gardener",
+          "mean": "정원사"
+        },
+        {
+          "word": "garden of God",
+          "mean": "하나님의 동산 (인간의 의식 세계)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "연속 명령문",
+          "desc": "don't discard, raise, prune, become 등 명령형 동사들을 연속으로 배치하여 실천적 행동을 촉구합니다."
+        }
+      ]
+    },
+    {
+      "en": "Take anything; you have a child today: we took all the requests this morning, there were dozens and dozens of requests this morning.",
+      "ko": "무엇이든 품어보십시오. 당신에게 오늘 아이가 생긴 것입니다. 우리는 오늘 아침 모든 요청을 받았으며, 오늘 아침 수십 건의 요청들이 있었습니다.",
+      "vocab": [
+        {
+          "word": "request",
+          "mean": "요청, 소원"
+        },
+        {
+          "word": "dozens of",
+          "mean": "수십의, 수많은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상징적 해설",
+          "desc": "'child(아이)'는 상상 속에서 수태된 소원이나 아이디어를 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "Everyone must be answered, none must be discarded; don’t say one is impossible, there is nothing impossible to your imagination and your imagination is Christ Jesus.",
+      "ko": "모든 요청에 응답해야 하며, 어느 하나도 버려져서는 안 됩니다. 어느 것도 불가능하다고 말하지 마십시오. 당신의 상상에게는 불가능한 것이 없으며, 당신의 상상이 곧 그리스도 예수입니다.",
+      "vocab": [
+        {
+          "word": "discard",
+          "mean": "버리다, 폐기하다"
+        },
+        {
+          "word": "imagination",
+          "mean": "상상력"
+        },
+        {
+          "word": "Christ Jesus",
+          "mean": "그리스도 예수"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌 사상 핵심",
+          "desc": "네빌 고다드는 '그리스도 예수'를 역사적 인물이 아니라 모든 인간 내면에 존재하는 '상상력(Human Imagination)' 자체로 해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "With Him all things are possible.",
+      "ko": "그분(상상력/그리스도)과 함께라면 모든 것이 가능합니다.",
+      "vocab": [
+        {
+          "word": "possible",
+          "mean": "가능한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경적 구문",
+          "desc": "대명사 'Him'은 전 문장의 'Christ Jesus(상상력)'를 가리킵니다."
+        }
+      ]
+    },
+    {
+      "en": "Use him, stir him, wake him from his sleep; he has been sleeping through the centuries: because he has slept he has dreamed into being all these strange misshaped states.",
+      "ko": "그를 사용하고, 일깨우고, 잠에서 깨우십시오. 그는 수세기 동안 잠들어 있었습니다. 그가 잠들어 있었기 때문에 이 모든 이상하고 뒤틀린 상태들을 꿈꾸어 존재하게 만든 것입니다.",
+      "vocab": [
+        {
+          "word": "stir",
+          "mean": "일깨우다, 자극하다"
+        },
+        {
+          "word": "misshaped",
+          "mean": "기형의, 뒤틀린"
+        },
+        {
+          "word": "dream into being",
+          "mean": "꿈꾸어 존재하게 만들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상상력의 잠과 깨어남",
+          "desc": "인간 내면의 신(상상력)이 무의식 상태(잠)에 있을 때 현실의 부조리와 이상한 상태들이 연출된다는 사상입니다."
+        }
+      ]
+    },
+    {
+      "en": "For the world only bears witness of the use or misuse of imagination.",
+      "ko": "왜냐하면 세상은 오직 상상력의 사용 또는 오용만을 증언할 뿐이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "bear witness",
+          "mean": "증언하다, 증거하다"
+        },
+        {
+          "word": "misuse",
+          "mean": "오용, 남용"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현실의 본질",
+          "desc": "외부 세계는 독립된 원인이 아니라 인간이 상상력을 어떻게 사용(선용 또는 오용)했는지를 보여주는 결과이자 거울입니다."
+        }
+      ]
+    },
+    {
+      "en": "As we are told, he is the only thing in the world.",
+      "ko": "우리가 들은 바와 같이, 그분(상상력)이야말로 세상에 존재하는 유일한 실체입니다.",
+      "vocab": [
+        {
+          "word": "as we are told",
+          "mean": "우리가 들은 바대로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "유일실재론",
+          "desc": "우주에 존재하는 유일한 원인이자 실체는 오직 상상력(하나님)뿐이라는 신비주의적 선언입니다."
+        }
+      ]
+    },
+    {
+      "en": "What he is the only thing in the world? – Your imagination, for it is the habitation of every created thing and by it all things are made and without it is nothing made that is made.",
+      "ko": "무엇이 세상의 유일한 실재입니까? 바로 당신의 상상력입니다. 그것은 모든 피조물이 거하는 처소이며, 그것에 의해 모든 것이 지어졌고, 지어진 것 중에 그것 없이 된 것은 하나도 없기 때문입니다.",
+      "vocab": [
+        {
+          "word": "habitation",
+          "mean": "거처, 주거지"
+        },
+        {
+          "word": "created thing",
+          "mean": "피조물, 창조된 것"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용 및 재해석",
+          "desc": "요한복음 1장 3절의 말씀(만물이 그로 말미암아 지은 바 되었으니)을 인간의 상상력에 적용하여 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "So use it wisely, use it lovingly and any time you use your imagination lovingly on behalf of another you are at that moment literally mediating God to man.",
+      "ko": "그러므로 그것을 지혜롭게 사용하고, 사랑으로 사용하십시오. 타인을 위해 당신의 상상력을 사랑스럽게 사용할 때마다, 당신은 그 순간 말 그대로 하나님을 사람에게 중재하는 것입니다.",
+      "vocab": [
+        {
+          "word": "on behalf of",
+          "mean": "~을 대신하여, ~을 위하여"
+        },
+        {
+          "word": "mediate",
+          "mean": "중재하다, 매개하다"
+        },
+        {
+          "word": "literally",
+          "mean": "말 그대로, 문자 그대로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌의 황금률",
+          "desc": "타인의 행복을 위해 긍정적으로 상상하는 행위가 곧 인간이 신의 중보자로서 기능하는 거룩한 순간입니다."
+        }
+      ]
+    },
+    {
+      "en": "Imagination is the redemptive power of the world and you are actually mediating God to man by using it in a loving, wonderful way.",
+      "ko": "상상력은 세상의 구속(구원)하는 능력이며, 당신은 그것을 사랑스럽고 놀라운 방식으로 사용함으로써 실제로 하나님을 사람에게 중재하고 있는 것입니다.",
+      "vocab": [
+        {
+          "word": "redemptive",
+          "mean": "구속하는, 구원하는"
+        },
+        {
+          "word": "actually",
+          "mean": "실제로, 사실상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구속론적 해설",
+          "desc": "세상을 구원하는 힘은 외부의 기적이 아니라, 사랑 안에서 올바르게 쓰이는 상상력 자체입니다."
+        }
+      ]
+    },
+    {
+      "en": "Now let us go into the silence.",
+      "ko": "이제 침묵 속으로 들어갑시다.",
+      "vocab": [
+        {
+          "word": "silence",
+          "mean": "침묵, 명상 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강의 마무리 관례",
+          "desc": "네빌 고다드 강의의 마무리에 쓰이는 구절로, 소원 성취의 느낌을 느끼며 명상에 들어가는 시간을 의미합니다."
+        }
+      ]
+    }
   ]
 }
