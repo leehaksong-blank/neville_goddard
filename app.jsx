@@ -1,4 +1,4 @@
-const { useState, useEffect } = React;
+const { useState, useEffect, useMemo } = React;
 
 // 1. 네빌 고다드 14권 정규 저서 (book1.json ~ book14.json)
 const BOOKS = [
@@ -29,6 +29,24 @@ const ERAS = [
   { era: 7, title: "제7기 (1967 ~ 1968년)", sub: "후기 집중 강연 전성기", startYear: 1967, endYear: 1968 },
   { era: 8, title: "제8기 (1969 ~ 1972년)", sub: "말기 강연 & 최종 유산", startYear: 1969, endYear: 1972 }
 ];
+
+// 3. 성경 66권 정렬 순서 테이블 (창세기 1 ~ 요한계시록 66)
+const BIBLE_BOOK_ORDER = {
+  "genesis": 1, "창세기": 1, "exodus": 2, "출애굽기": 2, "leviticus": 3, "레위기": 3, "numbers": 4, "민수기": 4, "deuteronomy": 5, "신명기": 5,
+  "joshua": 6, "여호수아": 6, "judges": 7, "사사기": 7, "ruth": 8, "룻기": 8, "1 samuel": 9, "사무엘상": 9, "2 samuel": 10, "사무엘하": 10,
+  "1 kings": 11, "열왕기상": 11, "2 kings": 12, "열왕기하": 12, "1 chronicles": 13, "역대상": 13, "2 chronicles": 14, "역대하": 14,
+  "ezra": 15, "에스라": 15, "nehemiah": 16, "느헤미야": 16, "esther": 17, "에스더": 17, "job": 18, "욥기": 18, "psalms": 19, "psalm": 19, "시편": 19,
+  "proverbs": 20, "잠언": 20, "ecclesiastes": 21, "전도서": 21, "song of solomon": 22, "아가": 22, "isaiah": 23, "이사야": 23, "jeremiah": 24, "예레미야": 24,
+  "lamentations": 25, "예레미야애가": 25, "ezekiel": 26, "에스겔": 26, "daniel": 27, "다니엘": 27, "hosea": 28, "호세아": 28, "joel": 29, "요엘": 29,
+  "amos": 30, "아모스": 30, "obadiah": 31, "오바댜": 31, "jonah": 32, "요나": 32, "micah": 33, "미가": 33, "nahum": 34, "나훔": 34,
+  "habakkuk": 35, "하박국": 35, "zephaniah": 36, "스바냐": 36, "haggai": 37, "학개": 37, "zechariah": 38, "스가랴": 38, "malachi": 39, "말라기": 39,
+  "matthew": 40, "마태복음": 40, "mark": 41, "마가복음": 41, "luke": 42, "누가복음": 42, "john": 43, "요한복음": 43, "acts": 44, "사도행전": 44,
+  "romans": 45, "로마서": 45, "1 corinthians": 46, "고린도전서": 46, "2 corinthians": 47, "고린도후서": 47, "galatians": 48, "갈라디아서": 48,
+  "ephesians": 49, "에베소서": 49, "philippians": 50, "빌립보서": 50, "colossians": 51, "골로새서": 51, "1 thessalonians": 52, "데살로니가전서": 52,
+  "2 thessalonians": 53, "데살로니가후서": 53, "1 timothy": 54, "디모데전서": 54, "2 timothy": 55, "디모데후서": 55, "titus": 56, "디도서": 56,
+  "philemon": 57, "빌레몬서": 57, "hebrews": 58, "히브리서": 58, "james": 59, "야고보서": 59, "1 peter": 60, "베드로전서": 60, "2 peter": 61, "베드로후서": 61,
+  "1 john": 62, "요한일서": 62, "2 john": 63, "요한이서": 63, "3 john": 64, "요한삼서": 64, "jude": 65, "유다서": 65, "revelation": 66, "요한계시록": 66
+};
 
 const INDEX_URLS = [
   "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1",
@@ -105,7 +123,6 @@ const KNOWN_YEARS = {
 };
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
 const normalizeStr = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
 const extractLectureYear = (text, title) => {
@@ -119,6 +136,7 @@ const extractLectureYear = (text, title) => {
   return null;
 };
 
+// 연도 미상([?]) 강의는 1~8기에 고르게 순환 배분하여 특정 기수 쏠림 방지
 const getEraForLecture = (lec, yearMap) => {
   const y = (yearMap && yearMap[lec.title]) || KNOWN_YEARS[lec.title] || lec.year;
   if (y) {
@@ -126,6 +144,23 @@ const getEraForLecture = (lec, yearMap) => {
     if (found) return found.era;
   }
   return (((lec.num || 1) - 1) % 8) + 1;
+};
+
+// 성경 장·절 파싱 및 66권 정렬 가중치 계산
+const getBibleSortWeight = (item) => {
+  const refStr = (item.ref || item.bookNameEn || item.refKo || "").trim();
+  const match = refStr.match(/^([1-3]?\s*[A-Za-z가-힣\s]+?)\s*(\d+):(\d+)/);
+  let bookKey = (item.bookNameEn || item.bookNameKo || "").toLowerCase().trim();
+  let chap = Number(item.chapter) || 1;
+  let verse = Number(item.verse) || 1;
+
+  if (match) {
+    bookKey = match[1].toLowerCase().trim();
+    chap = parseInt(match[2], 10) || chap;
+    verse = parseInt(match[3], 10) || verse;
+  }
+  const bookOrder = BIBLE_BOOK_ORDER[bookKey] || 99;
+  return bookOrder * 1000000 + chap * 1000 + verse;
 };
 
 const safeParseJSON = (rawStr) => {
@@ -154,13 +189,14 @@ const safeParseJSON = (rawStr) => {
 };
 
 function App() {
-  // 상단 탭 전환: "lecture" (강독 노트) | "bible" (성경 구절 아카이브)
   const [activeTab, setActiveTab] = useState("lecture");
   const [openBooksMenu, setOpenBooksMenu] = useState(false);
   const [openEra, setOpenEra] = useState(null);
   const [loadingLectures, setLoadingLectures] = useState(false);
   const [loadedFiles, setLoadedFiles] = useState({});
   const [bibleSearch, setBibleSearch] = useState("");
+  // 성경 보기 방식: "grouped" (장절별 중복 통합 보기) | "all" (전체 펼쳐보기)
+  const [bibleGroupMode, setBibleGroupMode] = useState("grouped");
 
   const [allLectures, setAllLectures] = useState(() => {
     try {
@@ -204,7 +240,6 @@ function App() {
     }
   });
 
-  // ★ 성경 구절 전용 상태 (localStorage 및 bible.json 연동)
   const [bibleList, setBibleList] = useState(() => {
     try {
       const saved = localStorage.getItem("neville_bible_store");
@@ -310,7 +345,6 @@ function App() {
     }
   };
 
-  // ★ 초기 실행 시 bible.json, neville_data.json, era1~8.json, vol1~6.json, book1~14.json 모두 자동 로드!
   useEffect(() => {
     loadJsonFile("bible.json", null);
     loadJsonFile("neville_data.json", null);
@@ -335,6 +369,99 @@ function App() {
   useEffect(() => {
     try { localStorage.setItem("neville_bible_store", JSON.stringify(bibleList)); } catch (e) {}
   }, [bibleList]);
+
+  // ★ 핵심 기능: 성경 구절 중복 및 가짜 KJV 원문 자동 클리닝 함수
+  const handleCleanAndDeduplicateBible = () => {
+    const cleanedMap = new Map();
+
+    bibleList.forEach(item => {
+      const cleanSource = (item.sourceTitle || "").replace(/^\d+\.\s*/, "").trim();
+      const normEn = normalizeStr(item.en);
+      const normKjv = normalizeStr(item.kjv);
+
+      // KJV 원문이 네빌의 강의 문장과 100% 똑같으면 잘못 들어간 가짜 KJV로 판단하여 비움
+      const isFakeKjv = normKjv && normKjv === normEn;
+      const fixedItem = {
+        ...item,
+        sourceTitle: cleanSource,
+        kjv: isFakeKjv ? "" : (item.kjv || ""),
+        krv: isFakeKjv ? "" : (item.krv || "")
+      };
+
+      // 고유 키: 성경장절(ref) + 강의명 + 정규화된 영어문장 앞 40자
+      const dedupKey = `${(item.ref || "").trim()}_${cleanSource}_${normEn.slice(0, 40)}`;
+
+      if (!cleanedMap.has(dedupKey)) {
+        cleanedMap.set(dedupKey, fixedItem);
+      } else {
+        const existing = cleanedMap.get(dedupKey);
+        // 기존 항목에 진짜 KJV가 없고 새 항목에 진짜 KJV가 있으면 교체
+        if (!existing.kjv && fixedItem.kjv) {
+          cleanedMap.set(dedupKey, fixedItem);
+        }
+      }
+    });
+
+    const sorted = Array.from(cleanedMap.values()).sort((a, b) => getBibleSortWeight(a) - getBibleSortWeight(b));
+    const removedCount = bibleList.length - sorted.length;
+    setBibleList(sorted);
+    alert(`🧹 정리 완료! 중복 및 가짜 KJV 항목 ${removedCount}개를 정리하고 창세기~요한계시록 순서로 정렬했습니다. (현재 ${sorted.length}구절)`);
+  };
+
+  // 성경 66권 순서 정렬 및 장·절 그룹화 리스트 계산
+  const displayedBibleItems = useMemo(() => {
+    const q = bibleSearch.trim().toLowerCase();
+    const filtered = bibleList.filter(b => {
+      if (!q) return true;
+      return (
+        (b.ref || "").toLowerCase().includes(q) ||
+        (b.refKo || "").toLowerCase().includes(q) ||
+        (b.en || "").toLowerCase().includes(q) ||
+        (b.ko || "").toLowerCase().includes(q) ||
+        (b.sourceTitle || "").toLowerCase().includes(q)
+      );
+    });
+
+    const sorted = [...filtered].sort((a, b) => getBibleSortWeight(a) - getBibleSortWeight(b));
+
+    if (bibleGroupMode !== "grouped") {
+      return sorted.map(item => ({
+        ...item,
+        quotes: [item]
+      }));
+    }
+
+    // 성경 장·절(ref) 기준으로 하나로 묶기 (예: 창세기 1:2가 1번만 나오고 그 안에 인용문들이 묶임)
+    const groupMap = new Map();
+    sorted.forEach(item => {
+      const refKey = (item.ref || item.refKo || "Unknown").trim();
+      const normEn = normalizeStr(item.en);
+      const isFakeKjv = normalizeStr(item.kjv) === normEn;
+
+      if (!groupMap.has(refKey)) {
+        groupMap.set(refKey, {
+          ...item,
+          kjv: isFakeKjv ? "" : item.kjv,
+          krv: isFakeKjv ? "" : item.krv,
+          quotes: [item]
+        });
+      } else {
+        const group = groupMap.get(refKey);
+        // 진짜 KJV/KRV 원문이 있는 항목으로 대표 원문 업데이트
+        if (!group.kjv && item.kjv && !isFakeKjv) {
+          group.kjv = item.kjv;
+          group.krv = item.krv;
+        }
+        // 완전히 동일한 문장이 아니면 인용 목록에 추가
+        const alreadyInGroup = group.quotes.some(qItem => normalizeStr(qItem.en) === normEn);
+        if (!alreadyInGroup) {
+          group.quotes.push(item);
+        }
+      }
+    });
+
+    return Array.from(groupMap.values());
+  }, [bibleList, bibleSearch, bibleGroupMode]);
 
   const handleToggleBooksMenu = () => {
     const nextState = !openBooksMenu;
@@ -363,7 +490,6 @@ function App() {
     ? 1
     : openEra || getEraForLecture(selectedLec, lectureYears);
 
-  // 원문 가져오기 + 연도 자동 감지
   const handleFetchLectureBody = async (urlToFetch, titleToSet, isBookItem) => {
     const finalUrl = (urlToFetch || targetUrl).trim();
     const targetTitle = titleToSet || selectedLec.title;
@@ -428,7 +554,6 @@ function App() {
     }
   };
 
-  // Gemini 모델 순차 호출
   const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount) => {
     const models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"];
     let lastError = null;
@@ -474,7 +599,6 @@ function App() {
     throw lastError || new Error("모든 AI 모델 호출에 실패했습니다.");
   };
 
-  // ★ 강독 노트 + 성경 구문 동시 생성 (스마트 이어하기 탑재)
   const handleAnalyze = async (forceFromStart = false) => {
     if (!apiKey.trim()) {
       alert("상단 노란색 입력칸에 Gemini API Key를 먼저 입력해 주세요!");
@@ -556,8 +680,8 @@ function App() {
           "당신은 네빌 고다드(Neville Goddard) 전문 번역가이자 성경 신비주의 강독 전문가입니다.",
           "아래 영어 본문의 문장을 단 한 문장도 빠뜨리지 말고 순서대로 100% 분리하여 JSON으로 반환하세요.",
           "규칙:",
-          "1. sentences 배열: 각 문장마다 en(영어 원문), ko(자연스럽고 격조 있는 한국어 번역), vocab(핵심 어휘 배열 [{word, mean}]), grammar(구문 및 네빌 사상 해설 배열 [{tag, desc}])를 작성하세요.",
-          "2. bibleQuotes 배열: 해당 문장에 성경 구절 직·간접 인용이나 비유가 있다면 반드시 추출하여 [{sentenceOffset(현재 구간 내 0부터 시작하는 문장 번호), bookNameEn, bookNameKo, chapter(숫자), verse(숫자), ref(예: 'John 14:6'), refKo(예: '요한복음 14:6'), quoteInText, kjv, krv, nevilleContext}] 형태로 넣으세요.",
+          "1. sentences 배열: 각 문장마다 en(영어 원문), ko(한국어 번역), vocab(핵심 어휘 배열 [{word, mean}]), grammar(구문 및 네빌 사상 해설 배열 [{tag, desc}])를 작성하세요.",
+          "2. bibleQuotes 배열: 해당 문장에 성경 구절 직·간접 인용이 있다면 추출하여 [{sentenceOffset(0부터 시작), bookNameEn, bookNameKo, chapter(숫자), verse(숫자), ref(예: 'Genesis 1:2'), refKo(예: '창세기 1:2'), quoteInText, kjv(반드시 네빌 문장이 아닌 실제 KJV 성경 원문 전체), krv(실제 한국어 개역한글/개역개정 성경 원문 전체), nevilleContext}] 형태로 넣으세요.",
           '반드시 순수 JSON 객체만 출력하세요: {"sentences":[...], "bibleQuotes":[...]}',
           "본문:",
           chunks[i]
@@ -585,7 +709,7 @@ function App() {
             const targetSent = accumulated[sNo - 1] || filteredNew[0] || { en: "", ko: "" };
             const ref = q.ref || `${q.bookNameEn || "Bible"} ${q.chapter || 1}:${q.verse || 1}`;
             return {
-              id: `${sourceLabel}_${ref}_${(targetSent.en || "").slice(0, 22)}`,
+              id: `${sourceLabel}_${ref}_${normalizeStr(targetSent.en).slice(0, 25)}`,
               sourceTitle: sourceLabel,
               sentenceNo: sNo,
               bookNameEn: q.bookNameEn || "",
@@ -622,7 +746,6 @@ function App() {
     }
   };
 
-  // ★ 현재 저장된 노트에서 성경 인용 구절만 별도 스캔하여 성경 탭에 추가
   const handleExtractBibleFromCurrentNote = async () => {
     const currentSentences = store[selectedLec.title] || [];
     if (currentSentences.length === 0) {
@@ -651,8 +774,9 @@ function App() {
         }));
 
         const prompt = [
-          "아래 네빌 고다드 강독 문장 목록에서 성경 구절 직·간접 인용이나 성경적 비유가 포함된 문장을 모두 찾아 JSON 배열로 반환하세요.",
-          '형식: [{"sentenceNo":숫자,"bookNameEn":"영문책명","bookNameKo":"한글책명","chapter":장(숫자),"verse":절(숫자),"ref":"John 14:6","refKo":"요한복음 14:6","quoteInText":"인용구","kjv":"KJV 원문","krv":"개역한글 원문","nevilleContext":"네빌의 영적 해석"}]',
+          "아래 네빌 고다드 강독 문장 목록에서 성경 구절 직·간접 인용이나 비유가 포함된 문장을 모두 찾아 JSON 배열로 반환하세요.",
+          "주의: kjv와 krv에는 네빌의 강의 문장이 아니라 실제 성경(King James Version 및 개역한글/개역개정)의 해당 장·절 원문을 정확히 적으세요.",
+          '형식: [{"sentenceNo":숫자,"bookNameEn":"영문책명","bookNameKo":"한글책명","chapter":장(숫자),"verse":절(숫자),"ref":"Genesis 1:2","refKo":"창세기 1:2","quoteInText":"인용구","kjv":"실제 KJV 성경 원문","krv":"실제 한국어 성경 원문","nevilleContext":"네빌의 영적 해석"}]',
           "문장 목록:",
           JSON.stringify(slice)
         ].join("\n");
@@ -670,7 +794,7 @@ function App() {
             const orig = currentSentences[(q.sentenceNo || 1) - 1] || {};
             const ref = q.ref || `${q.bookNameEn} ${q.chapter}:${q.verse}`;
             return {
-              id: `${sourceLabel}_${ref}_${(orig.en || "").slice(0, 22)}`,
+              id: `${sourceLabel}_${ref}_${normalizeStr(orig.en).slice(0, 25)}`,
               sourceTitle: sourceLabel,
               sentenceNo: q.sentenceNo || 1,
               bookNameEn: q.bookNameEn || "",
@@ -754,7 +878,8 @@ function App() {
   };
 
   const handleExportBibleJson = () => {
-    const blob = new Blob([JSON.stringify(bibleList, null, 2)], { type: "application/json;charset=utf-8" });
+    const sorted = [...bibleList].sort((a, b) => getBibleSortWeight(a) - getBibleSortWeight(b));
+    const blob = new Blob([JSON.stringify(sorted, null, 2)], { type: "application/json;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -819,26 +944,13 @@ function App() {
     }, 150);
   };
 
-  const filteredBibleList = bibleList.filter(b => {
-    if (!bibleSearch.trim()) return true;
-    const q = bibleSearch.toLowerCase();
-    return (
-      (b.ref || "").toLowerCase().includes(q) ||
-      (b.refKo || "").toLowerCase().includes(q) ||
-      (b.en || "").toLowerCase().includes(q) ||
-      (b.ko || "").toLowerCase().includes(q) ||
-      (b.sourceTitle || "").toLowerCase().includes(q)
-    );
-  });
-
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
-      {/* 왼쪽 사이드바: 상단 탭 + 14권 저서 + 연도별 8기 아코디언 메뉴 */}
+      {/* 왼쪽 사이드바 */}
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Pro Studio</div>
         <h1 className="text-lg font-bold mb-2">네빌 고다드 저서·8기·성경</h1>
 
-        {/* ★ 복구된 상단 모드 전환 탭: [📚 강독 노트] / [✝️ 성경 구절] */}
         <div className="grid grid-cols-2 gap-1.5 bg-slate-950 p-1 rounded-lg mb-3 border border-slate-800">
           <button
             onClick={() => setActiveTab("lecture")}
@@ -850,12 +962,12 @@ function App() {
             onClick={() => setActiveTab("bible")}
             className={"py-2 rounded text-xs font-bold transition " + (activeTab === "bible" ? "bg-emerald-500 text-slate-950" : "text-slate-400 hover:text-white")}
           >
-            ✝️ 성경 구절 ({bibleList.length})
+            ✝️ 성경 구절 ({displayedBibleItems.length})
           </button>
         </div>
 
         <div className="flex-1 overflow-y-auto space-y-2 pr-1">
-          {/* 1. 네빌 고다드 14권 정규 저서 */}
+          {/* 1. 14권 정규 저서 */}
           <div className="mb-3">
             <div className="text-[11px] text-emerald-400 font-bold mb-1">📖 정규 출간 단행본 (book1~14.json)</div>
             <div className="rounded-lg overflow-hidden border border-emerald-700/60">
@@ -904,7 +1016,7 @@ function App() {
             </div>
           </div>
 
-          {/* 2. 294개 강의 연도별 8기 분류 (Era 1 ~ Era 8) */}
+          {/* 2. 294개 강의 연도별 8기 분류 */}
           <div className="text-[11px] text-amber-400 font-bold mb-1 pt-2 border-t border-slate-800 flex justify-between items-center">
             <span>📅 294개 강의 연도별 8기 분류 (era1~8.json)</span>
             {loadingLectures && <span className="text-[10px] text-amber-300 animate-pulse">동기화중...</span>}
@@ -979,7 +1091,6 @@ function App() {
 
       {/* 오른쪽 메인 영역 */}
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
-        {/* 상단 API Key 입력바 */}
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className="font-bold text-amber-900">🔑 Gemini API Key (자동 이어하기 & 성경구문 추출 호환):</span>
           <div className="flex gap-2 flex-1 max-w-md">
@@ -1002,16 +1113,30 @@ function App() {
         </div>
 
         {activeTab === "bible" ? (
-          /* ★ 복구된 [✝️ 성경 구절 아카이브] 화면 */
+          /* ★ 개선된 [✝️ 성경 구절 아카이브] 화면 (중복 통합 + 가짜 KJV 제거 + 성경 66권 정렬) */
           <div>
             <div className="flex flex-wrap justify-between items-center gap-3 mb-4 pb-3 border-b">
               <div>
-                <h2 className="text-2xl font-bold">✝️ 네빌 고다드 성경 인용 아카이브 ({bibleList.length}구절)</h2>
+                <h2 className="text-2xl font-bold">
+                  ✝️ 네빌 고다드 성경 인용 아카이브 ({displayedBibleItems.length}구절)
+                </h2>
                 <p className="text-xs text-slate-500 mt-1">
-                  깃허브의 bible.json 및 강독 노트에서 추출된 성경 구절과 원문(KJV/개역한글)·네빌 해설입니다.
+                  창세기(1권)~요한계시록(66권) 장·절 순서로 자동 정렬되며, 동일 성경 구절은 하나로 깔끔하게 묶어 표시합니다.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setBibleGroupMode(bibleGroupMode === "grouped" ? "all" : "grouped")}
+                  className="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold shadow"
+                >
+                  {bibleGroupMode === "grouped" ? "📑 장·절 통합보기 중 (클릭시 전체 펼침)" : "📜 전체 펼침 중 (클릭시 장·절 통합)"}
+                </button>
+                <button
+                  onClick={handleCleanAndDeduplicateBible}
+                  className="px-3 py-2 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow"
+                >
+                  🧹 중복·가짜원문 자동 정리
+                </button>
                 <button
                   onClick={handleExportBibleJson}
                   className="px-3.5 py-2 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shadow"
@@ -1030,43 +1155,74 @@ function App() {
                 type="text"
                 value={bibleSearch}
                 onChange={e => setBibleSearch(e.target.value)}
-                placeholder="성경 장절(예: 요한복음, John 14), 영어/한글 문장, 출처 강의명으로 검색..."
+                placeholder="성경 장절(예: 창세기 1:2, 요한복음, John 14), 영어/한글 문장, 출처 강의명으로 검색..."
                 className="w-full px-3.5 py-2 text-xs border rounded-lg bg-white shadow-sm"
               />
             </div>
 
-            <div className="space-y-4">
-              {filteredBibleList.map((b, idx) => (
-                <div key={b.id || idx} className="bg-white p-5 rounded-xl border shadow-sm space-y-2">
-                  <div className="flex flex-wrap justify-between items-center gap-2 border-b pb-2">
-                    <span className="text-sm font-bold text-emerald-800">
-                      #{idx + 1}. 📖 {b.refKo || b.ref} ({b.ref})
-                    </span>
+            <div className="space-y-5">
+              {displayedBibleItems.map((b, idx) => (
+                <div key={b.id || idx} className="bg-white p-5 rounded-xl border shadow-sm space-y-3">
+                  <div className="flex flex-wrap justify-between items-center gap-2 border-b pb-2.5">
                     <div className="flex items-center gap-2">
-                      <button
-                        onClick={() => speak(b.en)}
-                        className="px-2.5 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
-                      >
-                        🔊 인용문 발음
-                      </button>
-                      <span className="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded font-bold">
-                        출처: {b.sourceTitle} (문장 #{b.sentenceNo})
+                      <span className="text-sm font-bold text-emerald-800">
+                        #{idx + 1}. 📖 {b.refKo || b.ref} ({b.ref})
                       </span>
+                      {b.quotes && b.quotes.length > 1 && (
+                        <span className="text-[11px] bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded-full font-bold">
+                          인용 {b.quotes.length}회 통합
+                        </span>
+                      )}
                     </div>
+                    {b.kjv && (
+                      <button
+                        onClick={() => speak(b.kjv)}
+                        className="px-2.5 py-1 bg-emerald-100 text-emerald-900 rounded text-xs font-bold hover:bg-emerald-200"
+                      >
+                        🔊 KJV 성경원문 발음
+                      </button>
+                    )}
                   </div>
-                  <p style={{ fontFamily: "Georgia, serif", fontSize: "13.5pt" }} className="text-slate-900">{b.en}</p>
-                  <p className="text-sm text-slate-700 bg-stone-50 p-2.5 rounded border-l-4 border-stone-700">{b.ko}</p>
+
+                  {/* 실제 KJV / 한국어 성경 원문 (가짜 원문이 아닌 경우 상단에 중심 표시) */}
                   {b.kjv && (
-                    <div className="text-xs text-slate-700 bg-emerald-50/70 p-3 rounded border border-emerald-200 space-y-1">
-                      <div><b>[KJV 성경 원문]</b> {b.kjv}</div>
-                      {b.krv && <div><b>[한국어 성경 원문]</b> {b.krv}</div>}
+                    <div className="text-xs text-slate-800 bg-emerald-50/80 p-3.5 rounded-lg border border-emerald-200 space-y-1">
+                      <div style={{ fontFamily: "Georgia, serif", fontSize: "13pt" }} className="font-semibold text-emerald-950">
+                        <b>[KJV 성경 원문]</b> “{b.kjv}”
+                      </div>
+                      {b.krv && <div className="text-slate-700 pt-1"><b>[한국어 성경 원문]</b> “{b.krv}”</div>}
                     </div>
                   )}
-                  {b.nevilleContext && (
-                    <div className="text-xs text-amber-950 bg-amber-50 p-3 rounded border border-amber-200">
-                      <b>💡 네빌 고다드 영적 해설:</b> {b.nevilleContext}
-                    </div>
-                  )}
+
+                  {/* 네빌 고다드가 강의에서 이 구절을 인용한 문장들 */}
+                  <div className="space-y-3 pt-1">
+                    {(b.quotes || [b]).map((qItem, qIdx) => (
+                      <div key={qIdx} className="p-3.5 rounded-lg bg-stone-50/70 border border-stone-200 space-y-2">
+                        <div className="flex flex-wrap justify-between items-center gap-2">
+                          <span className="text-[11px] font-bold text-slate-600 bg-white px-2 py-0.5 rounded border">
+                            📌 출처: {qItem.sourceTitle} (문장 #{qItem.sentenceNo})
+                          </span>
+                          <button
+                            onClick={() => speak(qItem.en)}
+                            className="px-2.5 py-0.5 bg-amber-100 text-amber-900 rounded text-[11px] font-bold hover:bg-amber-200"
+                          >
+                            🔊 네빌 인용문 발음
+                          </button>
+                        </div>
+                        <p style={{ fontFamily: "Georgia, serif", fontSize: "13.5pt" }} className="text-slate-900">
+                          {qItem.en}
+                        </p>
+                        <p className="text-sm text-slate-700 border-l-4 border-stone-700 pl-3 py-0.5">
+                          {qItem.ko}
+                        </p>
+                        {qItem.nevilleContext && (
+                          <div className="text-xs text-amber-950 bg-amber-50/90 p-2.5 rounded border border-amber-200">
+                            <b>💡 네빌 고다드 영적 해설:</b> {qItem.nevilleContext}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
@@ -1132,7 +1288,6 @@ function App() {
 
               <div className="flex flex-wrap items-center justify-between gap-2 pt-1">
                 <div className="flex flex-wrap gap-2">
-                  {/* ★ 복구된 성경 구절 단독 스캔 버튼 */}
                   <button
                     onClick={handleExtractBibleFromCurrentNote}
                     disabled={analyzing || sentences.length === 0}
@@ -1169,7 +1324,6 @@ function App() {
               </div>
             </div>
 
-            {/* 제목 및 백업 버튼 바 */}
             <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
               <div>
                 {selectedLec.isBook ? (
@@ -1222,7 +1376,6 @@ function App() {
               </div>
             </div>
 
-            {/* 문장 카드 리스트 */}
             {sentences.length === 0 ? (
               <div className="bg-white border rounded-xl p-10 text-center text-slate-500">
                 <div className="text-base font-bold text-slate-700 mb-2">아직 생성된 강독 노트가 없습니다.</div>
