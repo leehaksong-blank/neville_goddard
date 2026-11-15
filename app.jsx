@@ -1,88 +1,33 @@
-const { useState, useEffect, useMemo } = React;
+const { useState, useEffect } = React;
 
 // 1. 네빌 고다드 14권 정규 저서 (출간 연도순: 1939 ~ 1970, book1.json ~ book14.json 매칭)
 const BOOKS = [
-  { bookNum: 1, year: 1939, title: "At Your Command", koTitle: "당신의 명령대로", url: "https://www.neville-goddard.com/neville-goddard-books/neville-goddard-at-your-command-audio-book-mp3-and-pdf" },
-  { bookNum: 2, year: 1941, title: "Your Faith Is Your Fortune", koTitle: "당신의 믿음이 당신의 행운이다", url: "" },
-  { bookNum: 3, year: 1942, title: "Freedom For All", koTitle: "모두를 위한 자유", url: "" },
-  { bookNum: 4, year: 1944, title: "Feeling Is The Secret", koTitle: "느낌이 비밀이다", url: "" },
-  { bookNum: 5, year: 1945, title: "Prayer, The Art Of Believing", koTitle: "기도, 믿음의 기술", url: "" },
-  { bookNum: 6, year: 1946, title: "The Search", koTitle: "탐구", url: "" },
-  { bookNum: 7, year: 1949, title: "Out Of This World", koTitle: "이 세상의 것이 아닌", url: "" },
-  { bookNum: 8, year: 1952, title: "The Power Of Awareness", koTitle: "자각의 힘", url: "" },
-  { bookNum: 9, year: 1954, title: "Awakened Imagination", koTitle: "깨어난 상상력", url: "" },
-  { bookNum: 10, year: 1956, title: "Seedtime And Harvest", koTitle: "씨 뿌릴 때와 거둘 때", url: "" },
-  { bookNum: 11, year: 1961, title: "The Law And The Promise", koTitle: "법칙과 약속", url: "" },
-  { bookNum: 12, year: 1965, title: "I Know My Father", koTitle: "나는 내 아버지를 안다", url: "" },
-  { bookNum: 13, year: 1966, title: "Resurrection", koTitle: "부활, 신앙 고백", url: "" },
-  { bookNum: 14, year: 1970, title: "He Breaks The Shell", koTitle: "그가 껍질을 깨뜨리다", url: "" }
+  { bookNum: 1, year: 1939, title: "At Your Command", koTitle: "당신의 명령대로", url: "https://thenevillegoddard.com/at-your-command/" },
+  { bookNum: 2, year: 1941, title: "Your Faith Is Your Fortune", koTitle: "당신의 믿음이 당신의 행운이다", url: "https://thenevillegoddard.com/your-faith-is-your-fortune/" },
+  { bookNum: 3, year: 1942, title: "Freedom For All", koTitle: "모두를 위한 자유", url: "https://thenevillegoddard.com/freedom-for-all/" },
+  { bookNum: 4, year: 1944, title: "Feeling Is The Secret", koTitle: "느낌이 비밀이다", url: "https://thenevillegoddard.com/feeling-is-the-secret/" },
+  { bookNum: 5, year: 1945, title: "Prayer, The Art Of Believing", koTitle: "기도, 믿음의 기술", url: "https://thenevillegoddard.com/prayer-the-art-of-believing/" },
+  { bookNum: 6, year: 1946, title: "The Search", koTitle: "탐구", url: "https://thenevillegoddard.com/the-search/" },
+  { bookNum: 7, year: 1949, title: "Out Of This World", koTitle: "이 세상의 것이 아닌", url: "https://thenevillegoddard.com/out-of-this-world/" },
+  { bookNum: 8, year: 1952, title: "The Power Of Awareness", koTitle: "자각의 힘", url: "https://thenevillegoddard.com/the-power-of-awareness/" },
+  { bookNum: 9, year: 1954, title: "Awakened Imagination", koTitle: "깨어난 상상력", url: "https://thenevillegoddard.com/awakened-imagination/" },
+  { bookNum: 10, year: 1956, title: "Seedtime And Harvest", koTitle: "씨 뿌릴 때와 거둘 때", url: "https://thenevillegoddard.com/seedtime-and-harvest/" },
+  { bookNum: 11, year: 1961, title: "The Law And The Promise", koTitle: "법칙과 약속", url: "https://thenevillegoddard.com/the-law-and-the-promise/" },
+  { bookNum: 12, year: 1965, title: "I Know My Father", koTitle: "나는 내 아버지를 안다", url: "https://thenevillegoddard.com/i-know-my-father/" },
+  { bookNum: 13, year: 1966, title: "Resurrection", koTitle: "부활, 신앙 고백", url: "https://thenevillegoddard.com/resurrection/" },
+  { bookNum: 14, year: 1970, title: "He Breaks The Shell", koTitle: "그가 껍질을 깨뜨리다", url: "https://thenevillegoddard.com/he-breaks-the-shell/" }
 ];
 
-// 2. 연도별 6기 분류 (기존 vol1.json ~ vol6.json 파일명과 1:1 매칭)
+// 2. 연도별 6기 분류 헤더 (lectures_menu.json의 1~6번 키 및 vol1.json~vol6.json과 1:1 매칭)
 const VOLUMES = [
-  { vol: 1, period: "1939~1953", title: "제1기 (1939 ~ 1953년) : 초기 법칙 정립기", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1" },
-  { vol: 2, period: "1954~1958", title: "제2기 (1954 ~ 1958년) : 깨어난 상상력 심화기", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2" },
-  { vol: 3, period: "1959~1963", title: "제3기 (1959 ~ 1963년) : 약속(The Promise) 전환기", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-3" },
-  { vol: 4, period: "1964~1966", title: "제4기 (1964 ~ 1966년) : 성경의 내적 드라마 해석기", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-4" },
-  { vol: 5, period: "1967~1968", title: "제5기 (1967 ~ 1968년) : 후기 원숙기 강연", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-5" },
-  { vol: 6, period: "1969~1972", title: "제6기 (1969 ~ 1972년) : 말년 최종 강연", indexUrl: "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-6" }
+  { vol: 1, period: "1939~1953", title: "제1기 (1939 ~ 1953년) : 초기 법칙 정립기" },
+  { vol: 2, period: "1954~1958", title: "제2기 (1954 ~ 1958년) : 깨어난 상상력 심화기" },
+  { vol: 3, period: "1959~1963", title: "제3기 (1959 ~ 1963년) : 약속(The Promise) 전환기" },
+  { vol: 4, period: "1964~1966", title: "제4기 (1964 ~ 1966년) : 성경의 내적 드라마 해석기" },
+  { vol: 5, period: "1967~1968", title: "제5기 (1967 ~ 1968년) : 후기 원숙기 강연" },
+  { vol: 6, period: "1969~1972", title: "제6기 (1969 ~ 1972년) : 말년 최종 강연" }
 ];
 
-// 3. 이미 분석 완료된 30개 강의를 포함한 강연 연도 사전 (제1기~제6기 자동 배치)
-const KNOWN_LECTURE_YEARS = {
-  "At Your Command": 1939,
-  "Changing The Feeling of I": 1953,
-  "Awakened Imagination Barabbas or Jesus": 1954,
-  "The Pruning Shears of Revision": 1954,
-  "Arise": 1955,
-  "Mental Diets": 1955,
-  "Seedtime and Harvest": 1956,
-  "Blake On Religion": 1958,
-  "Awake o Sleeper 2": 1963,
-  "All That is Divine": 1964,
-  "Believe It In": 1966,
-  "A Lesson in Scripture": 1967,
-  "A Movement Within God": 1967,
-  "A Parabolic Revelation": 1967,
-  "All Powerful Human Word": 1967,
-  "All Things are Possible 1": 1967,
-  "An Inner Conviction": 1967,
-  "Awake o Sleeper 1": 1967,
-  "A Movement of Mind": 1968,
-  "A Prophecy": 1968,
-  "A Riddle": 1968,
-  "A State Called Moses": 1968,
-  "All That You Behold": 1968,
-  "An Assured Understanding": 1968,
-  "Bear Ye One Another's Burdens": 1968,
-  "Believe In Him": 1968,
-  "Biblical Language": 1968,
-  "Brazen Impudence": 1968,
-  "Catch The Mood": 1968,
-  "Christ Bears Our Sins": 1968,
-  "Christ in Man": 1969,
-  "Christ in You": 1969,
-  "Christ is Your Life": 1968,
-  "Christ Unveiled": 1968,
-  "Christmas - Man's Birth As God": 1968,
-  "Come o Blessed": 1968,
-  "Conception": 1967,
-  "Consigned To Disobedience": 1967,
-  "Control Your Inner Conversations": 1954,
-  "Creation Faith": 1968,
-  "Divine Signs": 1968,
-  "Election And Change Of Consciousness": 1967,
-  "Enter The Dream": 1968,
-  "Esau And Jacob": 1967,
-  "A Divine Event": 1969,
-  "All Things are Possible 2": 1969,
-  "All Things Exist": 1969,
-  "Be Imitators of God": 1969,
-  "Before Abraham was I AM": 1969,
-  "Behold The Dreamer Cometh": 1969
-};
-
-// 연도에 따른 기수(1~6기) 판별 함수
 const getTargetVolByYear = (year, fallbackVol) => {
   if (!year) return fallbackVol || 1;
   if (year <= 1953) return 1;
@@ -91,66 +36,6 @@ const getTargetVolByYear = (year, fallbackVol) => {
   if (year <= 1966) return 4;
   if (year <= 1968) return 5;
   return 6;
-};
-
-// 본문 텍스트에서 강연 연도를 자동 추정하는 함수
-const detectYearFromText = (title, rawBody) => {
-  if (KNOWN_LECTURE_YEARS[title]) return KNOWN_LECTURE_YEARS[title];
-  if (!rawBody) return null;
-  const headerArea = rawBody.slice(0, 600);
-  const dateMatch = headerArea.match(/\b(19[3-7]\d)\b/);
-  if (dateMatch) return parseInt(dateMatch[1], 10);
-  if (rawBody.indexOf("1969") !== -1) return 1969;
-  if (rawBody.indexOf("1968") !== -1) return 1968;
-  if (rawBody.indexOf("1967") !== -1) return 1967;
-  if (rawBody.indexOf("birth from above") !== -1 || rawBody.indexOf("serpentine form") !== -1) return 1968;
-  return null;
-};
-
-// 초기 기본 메뉴 (크롤링 전에도 30개 완료 강의가 제자리에 즉시 표시되도록 구성)
-const INITIAL_VOL_MENUS = {
-  1: [
-    { num: 18, year: 1939, title: "At Your Command", url: "https://www.neville-goddard.com/neville-goddard-books/neville-goddard-at-your-command-audio-book-mp3-and-pdf" }
-  ],
-  2: [
-    { num: 21, year: 1954, title: "Awakened Imagination Barabbas or Jesus", url: "https://www.neville-goddard.com/neville-goddard-lectures/barabbas-or-jesus-neville-goddard-lecture/" },
-    { num: 17, year: 1955, title: "Arise", url: "https://www.neville-goddard.com/neville-goddard-lectures/arise-neville-goddard-lecture/" },
-    { num: 29, year: 1958, title: "Blake On Religion", url: "https://www.neville-goddard.com/neville-goddard-lectures/blake-on-religion-neville-goddard-lecture/" }
-  ],
-  3: [
-    { num: 20, year: 1963, title: "Awake o Sleeper 2", url: "https://www.neville-goddard.com/neville-goddard-lectures/awake-o-sleeper-2-neville-goddard-lecture/" }
-  ],
-  4: [
-    { num: 10, year: 1964, title: "All That is Divine", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-that-is-divine-neville-goddard-lecture/" },
-    { num: 27, year: 1966, title: "Believe It In", url: "https://www.neville-goddard.com/neville-goddard-lectures/believe-it-in-neville-goddard-lecture/" }
-  ],
-  5: [
-    { num: 2, year: 1967, title: "A Lesson in Scripture", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-lesson-in-scripture-neville-goddard-lecture/" },
-    { num: 4, year: 1967, title: "A Movement Within God", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-movement-within-god-neville-goddard-lecture/" },
-    { num: 5, year: 1967, title: "A Parabolic Revelation", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-parabolic-revelation-neville-goddard-lectures/" },
-    { num: 9, year: 1967, title: "All Powerful Human Word", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-powerfull-human-words-neville-goddard-lecture/" },
-    { num: 12, year: 1967, title: "All Things are Possible 1", url: "https://www.neville-goddard.com/neville-goddard-lectures/att-things-are-possible-1-neville-goddard-lecture/" },
-    { num: 16, year: 1967, title: "An Inner Conviction", url: "https://www.neville-goddard.com/neville-goddard-lectures/an-inner-conviction-neville-goddard-lecture/" },
-    { num: 19, year: 1967, title: "Awake o Sleeper 1", url: "https://www.neville-goddard.com/neville-goddard-lectures/awake-o-sleeper-1-neville-goddard-lecture/" },
-    { num: 3, year: 1968, title: "A Movement of Mind", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-movement-of-mind-neville-goddard-lecture/" },
-    { num: 6, year: 1968, title: "A Prophecy", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-prophecy-neville-goddard-lecture/" },
-    { num: 7, year: 1968, title: "A Riddle", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-riddle-neville-goddard-lecture/" },
-    { num: 8, year: 1968, title: "A State Called Moses", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-state-called-moses-neville-goddard-lecture/" },
-    { num: 11, year: 1968, title: "All That You Behold", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-that-you-behold-neville-goddard-lecture/" },
-    { num: 15, year: 1968, title: "An Assured Understanding", url: "https://www.neville-goddard.com/neville-goddard-lectures/an-assured-understanding-neville-goddard-lecture/" },
-    { num: 23, year: 1968, title: "Bear Ye One Another's Burdens", url: "https://www.neville-goddard.com/neville-goddard-lectures/bear-ye-one-anothers-burdens-neville-goddard-lecture/" },
-    { num: 26, year: 1968, title: "Believe In Him", url: "https://www.neville-goddard.com/neville-goddard-lectures/believe-in-him-neville-goddard-lecture/" },
-    { num: 28, year: 1968, title: "Biblical Language", url: "https://www.neville-goddard.com/neville-goddard-lectures/biblical-language-neville-goddard-lecture/" },
-    { num: 30, year: 1968, title: "Brazen Impudence", url: "https://www.neville-goddard.com/neville-goddard-lectures/brazen-impudence-neville-goddard-lecture/" }
-  ],
-  6: [
-    { num: 1, year: 1969, title: "A Divine Event", url: "https://www.neville-goddard.com/neville-goddard-lectures/a-divine-event-neville-goddard-lecture/" },
-    { num: 13, year: 1969, title: "All Things are Possible 2", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-things-are-possible-2-neville-goddard-lecture/" },
-    { num: 14, year: 1969, title: "All Things Exist", url: "https://www.neville-goddard.com/neville-goddard-lectures/all-things-exist-neville-goddard-lecture/" },
-    { num: 22, year: 1969, title: "Be Imitators of God", url: "https://www.neville-goddard.com/neville-goddard-lectures/be-imitators-of-god-neville-goddard-lecture/" },
-    { num: 24, year: 1969, title: "Before Abraham was I AM", url: "https://www.neville-goddard.com/neville-goddard-lectures/before-abraham-was-i-am-neville-goddard-lecture/" },
-    { num: 25, year: 1969, title: "Behold The Dreamer Cometh", url: "https://www.neville-goddard.com/neville-goddard-lectures/behold-the-dreamer-cometh-neville-goddard-lecture/" }
-  ]
 };
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -183,21 +68,13 @@ const safeParseJSON = (rawStr) => {
 
 function App() {
   const [openBooksMenu, setOpenBooksMenu] = useState(true);
-  const [openVol, setOpenVol] = useState(5); // 17개 강의가 밀집된 제5기를 기본 펼침
-  const [loadingVol, setLoadingVol] = useState(false);
-  const [syncingAll, setSyncingAll] = useState(false);
+  const [openVol, setOpenVol] = useState(5);
+  const [searchQuery, setSearchQuery] = useState("");
   const [loadedFiles, setLoadedFiles] = useState({});
   const [selectedTier, setSelectedTier] = useState("pro");
 
-  // 새 캐시 키(v2_chronological)를 사용하여 기존 알파벳순 메뉴 캐시와 충돌 방지
-  const [volLectures, setVolLectures] = useState(() => {
-    try {
-      const saved = localStorage.getItem("neville_vol_menus_v2_chrono");
-      return saved ? JSON.parse(saved) : INITIAL_VOL_MENUS;
-    } catch (e) {
-      return INITIAL_VOL_MENUS;
-    }
-  });
+  // 방법 B: lectures_menu.json (294개 전체 강의 목차) 데이터를 담아두는 상태
+  const [volLectures, setVolLectures] = useState({ 1: [], 2: [], 3: [], 4: [], 5: [], 6: [] });
 
   const [selectedLec, setSelectedLec] = useState({
     isBook: false,
@@ -258,16 +135,23 @@ function App() {
     } catch (e) {}
   };
 
-  // 최초 실행 시 vol1.json ~ vol6.json 및 book1~14.json을 모두 로드하여 어느 기수에 있든 즉시 표시
+  // 앱 최초 실행 시:
+  // 1) lectures_menu.json에서 294개 전체 강의 목차(제1기~제6기)를 0.01초 만에 즉시 로드!
+  // 2) vol1.json ~ vol6.json 및 book1~14.json 자동 로드
   useEffect(() => {
+    fetch("./lectures_menu.json?t=" + Date.now(), { cache: "no-store" })
+      .then(res => (res.ok ? res.json() : null))
+      .then(menuData => {
+        if (menuData && typeof menuData === "object") {
+          setVolLectures(menuData);
+        }
+      })
+      .catch(() => {});
+
     [1, 2, 3, 4, 5, 6].forEach(v => loadJsonFile("vol" + v + ".json", null));
     loadJsonFile("neville_data.json", null);
     BOOKS.forEach(b => loadJsonFile("book" + b.bookNum + ".json", b.title));
   }, []);
-
-  useEffect(() => {
-    try { localStorage.setItem("neville_vol_menus_v2_chrono", JSON.stringify(volLectures)); } catch (e) {}
-  }, [volLectures]);
 
   useEffect(() => {
     try { localStorage.setItem("neville_vol_accordion_store", JSON.stringify(store)); } catch (e) {}
@@ -278,27 +162,36 @@ function App() {
     localStorage.setItem("gemini_api_key", val);
   };
 
-  // 현재 선택된 강의가 속한 기수(1~6기) 번호 계산
   const currentVolNum = selectedLec.vol || getTargetVolByYear(selectedLec.year, openVol || 1);
 
-  // 특정 기수(vol1.json ~ vol6.json)의 강의 데이터만 추출하여 백업 다운로드
-  const handleExportVolJson = () => {
+  // 맞춤 백업: 책을 보고 있으면 book1~14.json, 강의를 보고 있으면 현재 기수의 vol1~6.json 다운로드
+  const handleExportCurrentTargetJson = () => {
+    if (selectedLec.isBook) {
+      const bookData = store[selectedLec.title] || [];
+      if (bookData.length === 0) {
+        alert("아직 이 책의 강독 노트가 없습니다.");
+        return;
+      }
+      const exportObj = { [selectedLec.title]: bookData };
+      const fileName = "book" + selectedLec.num + ".json";
+      const jsonString = JSON.stringify(exportObj, null, 2);
+      const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = fileName;
+      a.click();
+      URL.revokeObjectURL(url);
+      return;
+    }
+
     const targetVol = currentVolNum;
     const subList = volLectures[targetVol] || [];
     const exportObj = {};
 
-    // 1) 해당 기수 메뉴에 속한 강의 수집
     subList.forEach(lec => {
       if (store[lec.title] && store[lec.title].length > 0) {
         exportObj[lec.title] = store[lec.title];
-      }
-    });
-
-    // 2) KNOWN_LECTURE_YEARS 기준으로도 해당 기수에 속하는 강의 보충
-    Object.keys(store).forEach(title => {
-      const y = KNOWN_LECTURE_YEARS[title];
-      if (y && getTargetVolByYear(y, null) === targetVol && store[title] && store[title].length > 0) {
-        exportObj[title] = store[title];
       }
     });
 
@@ -313,7 +206,6 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
-  // 전체 통합 백업
   const handleExportAllJson = () => {
     const jsonString = JSON.stringify(store, null, 2);
     const blob = new Blob([jsonString], { type: "application/json;charset=utf-8" });
@@ -332,7 +224,7 @@ function App() {
     reader.onload = (event) => {
       try {
         const imported = JSON.parse(event.target.result);
-        mergePublicDataToStore(imported, null);
+        mergePublicDataToStore(imported, selectedLec.title);
         alert("✅ [" + file.name + "] 강독 노트가 성공적으로 복원·병합되었습니다!");
       } catch (err) {
         alert("올바른 JSON 파일이 아닙니다.");
@@ -342,105 +234,13 @@ function App() {
     e.target.value = "";
   };
 
-  // 단일 인덱스 페이지에서 강의 링크들을 추출하여 연도별 기수(1~6기)로 분배하는 함수
-  const fetchAndDistributeIndexPage = async (volObj) => {
-    const res = await fetch("https://r.jina.ai/" + volObj.indexUrl);
-    const text = await res.text();
-    const lines = text.split("\n");
-    const seen = {};
-    let startNum = (volObj.vol - 1) * 50 + 1;
-    const distributed = { 1: [], 2: [], 3: [], 4: [], 5: [], 6: [] };
-
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-      const openBracket = line.indexOf("[");
-      const closeBracket = line.indexOf("](http");
-      if (openBracket !== -1 && closeBracket !== -1) {
-        const title = line.slice(openBracket + 1, closeBracket).trim();
-        const rest = line.slice(closeBracket + 2);
-        let rawUrl = rest.split(" ")[0].split(")")[0].split('"')[0];
-        const url = rawUrl.trim().replace("http://", "https://");
-
-        if (
-          (url.indexOf("/neville-goddard-lectures/") !== -1 || url.indexOf("/neville-goddard-books/") !== -1) &&
-          url.indexOf("read-neville-goddard-lectures-on-line") === -1 &&
-          title !== "Neville Goddard Original" &&
-          title !== "Neville Goddard Lectures" &&
-          title !== "Neville Goddard Books + Audio" &&
-          title !== "Read Here" &&
-          !seen[url]
-        ) {
-          seen[url] = true;
-          const knownYear = KNOWN_LECTURE_YEARS[title] || null;
-          const targetVol = getTargetVolByYear(knownYear, volObj.vol);
-          distributed[targetVol].push({
-            num: startNum++,
-            year: knownYear,
-            vol: targetVol,
-            title: title,
-            url: url
-          });
-        }
-      }
-    }
-    return distributed;
-  };
-
-  const mergeDistributedMenus = (distributed) => {
-    setVolLectures(prev => {
-      const next = Object.assign({}, prev);
-      [1, 2, 3, 4, 5, 6].forEach(vKey => {
-        const existing = next[vKey] ? [...next[vKey]] : [];
-        (distributed[vKey] || []).forEach(item => {
-          const idx = existing.findIndex(e => e.title === item.title);
-          if (idx === -1) {
-            existing.push(item);
-          } else {
-            existing[idx] = Object.assign({}, existing[idx], item, {
-              year: item.year || existing[idx].year
-            });
-          }
-        });
-        existing.sort((a, b) => (a.year || 9999) - (b.year || 9999) || a.title.localeCompare(b.title));
-        next[vKey] = existing;
-      });
-      return next;
-    });
-  };
-
-  // 294개 전체 강의 목차 일괄 동기화
-  const handleSyncAll294Lectures = async () => {
-    setSyncingAll(true);
-    setStatusMsg("⏳ 1~6권 전체 294개 강의 목록을 읽어와 제1기~제6기로 분류하는 중...");
-    try {
-      for (let i = 0; i < VOLUMES.length; i++) {
-        const dist = await fetchAndDistributeIndexPage(VOLUMES[i]);
-        mergeDistributedMenus(dist);
-      }
-      setStatusMsg("✅ 294개 전체 강의 목차 동기화 및 연도별 분류 완료!");
-    } catch (e) {
-      alert("목차 동기화 중 오류: " + e.message);
-    } finally {
-      setSyncingAll(false);
-    }
-  };
-
-  const handleToggleVolume = async (volObj) => {
+  const handleToggleVolume = (volObj) => {
     if (openVol === volObj.vol) {
       setOpenVol(null);
       return;
     }
     setOpenVol(volObj.vol);
     loadJsonFile("vol" + volObj.vol + ".json", null);
-
-    setLoadingVol(true);
-    try {
-      const dist = await fetchAndDistributeIndexPage(volObj);
-      mergeDistributedMenus(dist);
-    } catch (e) {
-    } finally {
-      setLoadingVol(false);
-    }
   };
 
   const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
@@ -449,7 +249,7 @@ function App() {
     setFetching(true);
     setResumeChunkIdx(0);
     const currentTitle = titleToSet || selectedLec.title;
-    setStatusMsg("🌐 [" + currentTitle + "] 강의의 영어 본문 전체를 읽어오는 중...");
+    setStatusMsg("🌐 [" + currentTitle + "] 영어 원문을 실시간으로 읽어오는 중...");
     try {
       const response = await fetch("https://r.jina.ai/" + finalUrl);
       if (!response.ok) throw new Error("사이트 접속 실패");
@@ -459,7 +259,7 @@ function App() {
       const startMarker = cleanBody.indexOf("Markdown Content:");
       if (startMarker !== -1) cleanBody = cleanBody.slice(startMarker + 17);
 
-      const endMarkers = ["### Neville Goddard Lectures 1-50:", "#### About[Neville Goddard]", "## Primary Sidebar", "### **Appreciation Snippets**"];
+      const endMarkers = ["### Neville Goddard Lectures 1-50:", "#### About[Neville Goddard]", "## Primary Sidebar", "### **Appreciation Snippets**", "Copyright © The Neville Goddard"];
       for (let m = 0; m < endMarkers.length; m++) {
         const idx = cleanBody.indexOf(endMarkers[m]);
         if (idx !== -1) cleanBody = cleanBody.slice(0, idx);
@@ -468,21 +268,12 @@ function App() {
       const lines = cleanBody.split("\n").filter(line => {
         const t = line.trim();
         if (!t) return false;
-        if (t.indexOf("*   [") === 0 || t.indexOf("[Got it!]") === 0 || t.indexOf("This website uses cookies") === 0 || t.indexOf("[Cookie Consent") === 0) return false;
+        if (t.indexOf("*   [") === 0 || t.indexOf("[Got it!]") === 0 || t.indexOf("This website uses cookies") === 0 || t.indexOf("[Cookie Consent") === 0 || t.indexOf("[Skip to content]") === 0) return false;
         return true;
       });
       cleanBody = lines.join("\n\n").trim();
       setRawText(cleanBody);
-
-      // 본문에서 강연 연도를 자동 추출하여 제1기~제6기 소속 자동 업데이트
-      const detectedYear = detectYearFromText(currentTitle, cleanBody);
-      if (detectedYear) {
-        const targetVol = getTargetVolByYear(detectedYear, selectedLec.vol || 1);
-        setSelectedLec(prev => Object.assign({}, prev, { year: detectedYear, vol: targetVol }));
-        setStatusMsg("✅ 원문 추출 완료! (강연 연도: " + detectedYear + "년 ➔ 제" + targetVol + "기 자동 배정)");
-      } else {
-        setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. 강독 노트 생성]을 눌러주세요.");
-      }
+      setStatusMsg("✅ 원문 추출 완료! 오른쪽의 [⚡ 2. 강독 노트 생성]을 눌러주세요.");
     } catch (err) {
       alert("실시간 읽어오기 오류: " + err.message);
       setStatusMsg("");
@@ -656,15 +447,16 @@ function App() {
       <aside className="no-print w-full md:w-80 bg-slate-900 text-white p-4 md:h-screen md:sticky md:top-0 flex flex-col">
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Chronological Pro Studio</div>
         <h1 className="text-lg font-bold mb-1">네빌 고다드 연대기 스튜디오</h1>
-        <div className="text-xs text-slate-400 mb-3">1939년 초기 법칙부터 1972년 말년 약속까지 연도별(1기~6기)로 관리합니다.</div>
+        <div className="text-xs text-slate-400 mb-2">14권 저서 + 294개 강의 전체가 연도순(lectures_menu.json)으로 즉시 열립니다.</div>
 
-        <button
-          onClick={handleSyncAll294Lectures}
-          disabled={syncingAll}
-          className="w-full mb-3 py-2 px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition shadow-sm disabled:opacity-50"
-        >
-          {syncingAll ? "⏳ 294개 전체 강의 동기화 중..." : "🔄 294개 전체 강의 목차 불러오기"}
-        </button>
+        {/* 294개 강의 빠른 검색창 */}
+        <input
+          type="text"
+          placeholder="🔍 294개 강의 제목 또는 연도(예: 1968) 검색..."
+          value={searchQuery}
+          onChange={e => setSearchQuery(e.target.value)}
+          className="w-full mb-3 px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs text-white focus:outline-none focus:border-amber-400"
+        />
 
         <div className="flex-1 overflow-y-auto space-y-2 pr-1">
           {/* 1. 14권 정규 저서 (출간 연도순) */}
@@ -690,10 +482,11 @@ function App() {
                         onClick={() => {
                           const targetV = getTargetVolByYear(b.year, 1);
                           setSelectedLec({ isBook: true, num: b.bookNum, year: b.year, vol: targetV, title: b.title, koTitle: b.koTitle, url: b.url });
-                          if (b.url) setTargetUrl(b.url);
+                          setTargetUrl(b.url);
                           loadJsonFile("book" + b.bookNum + ".json", b.title);
+                          handleFetchLectureBody(b.url, b.title);
                         }}
-                        className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold" : savedCount > 0 ? "text-slate-200 hover:bg-slate-800" : "text-slate-500 hover:bg-slate-900")}
+                        className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold" : savedCount > 0 ? "text-slate-200 hover:bg-slate-800" : "text-slate-400 hover:bg-slate-900")}
                       >
                         <div className="truncate pr-2">
                           <div><span className="text-emerald-400 font-bold">[{b.year}]</span> {b.title}</div>
@@ -702,7 +495,7 @@ function App() {
                         {savedCount > 0 ? (
                           <span className="text-[10px] bg-emerald-500 text-slate-950 px-1.5 py-0.5 rounded font-bold shrink-0">{savedCount}문장</span>
                         ) : (
-                          <span className="text-[10px] text-slate-600 shrink-0">준비중</span>
+                          <span className="text-[10px] text-slate-500 shrink-0">book{b.bookNum}</span>
                         )}
                       </button>
                     );
@@ -712,14 +505,21 @@ function App() {
             </div>
           </div>
 
-          {/* 2. 연도별 6기 강의록 (vol1.json ~ vol6.json) */}
+          {/* 2. 연도별 6기 강의록 (lectures_menu.json 기반 294개 즉시 표시) */}
           <div className="text-[11px] text-amber-400 font-bold mb-1 pt-2 border-t border-slate-800">
-            📅 연도별 강의록 (제1기 ~ 제6기)
+            📅 연도별 294개 강의록 (제1기 ~ 제6기)
           </div>
           {VOLUMES.map(v => {
-            const isOpen = openVol === v.vol;
-            const subList = volLectures[v.vol] || [];
-            const completedInVol = subList.filter(l => (store[l.title] || []).length > 0).length;
+            const rawSubList = volLectures[v.vol] || [];
+            const filteredSubList = searchQuery.trim()
+              ? rawSubList.filter(l =>
+                  l.title.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1 ||
+                  String(l.year).indexOf(searchQuery.trim()) !== -1
+                )
+              : rawSubList;
+
+            const isOpen = searchQuery.trim() ? filteredSubList.length > 0 : openVol === v.vol;
+            const completedInVol = rawSubList.filter(l => (store[l.title] || []).length > 0).length;
 
             return (
               <div key={v.vol} className="rounded-lg overflow-hidden border border-slate-800">
@@ -729,44 +529,39 @@ function App() {
                 >
                   <span className="truncate pr-1">📅 {v.title}</span>
                   <span className="shrink-0 text-[10px] px-1.5 py-0.5 rounded bg-black/20">
-                    {completedInVol > 0 ? completedInVol + "개 완료" : (isOpen ? "▲" : "▼")}
+                    {completedInVol}/{rawSubList.length}개
                   </span>
                 </button>
 
                 {isOpen && (
                   <div className="bg-slate-950 p-2 space-y-1 max-h-80 overflow-y-auto border-t border-slate-800">
-                    {loadingVol && subList.length === 0 ? (
-                      <div className="text-xs text-amber-400 p-3 text-center">⏳ 강의 목록 가져오는 중...</div>
-                    ) : (
-                      subList.map((lec, i) => {
-                        const isSelected = !selectedLec.isBook && selectedLec.title === lec.title;
-                        const savedCount = (store[lec.title] || []).length;
-                        const lecYear = lec.year || KNOWN_LECTURE_YEARS[lec.title];
-                        return (
-                          <button
-                            key={i}
-                            onClick={() => {
-                              setSelectedLec({ isBook: false, num: lec.num, year: lecYear, vol: v.vol, title: lec.title, url: lec.url });
-                              setTargetUrl(lec.url || "");
-                              loadJsonFile("vol" + v.vol + ".json", null);
-                              if (lec.url) handleFetchLectureBody(lec.url, lec.title);
-                            }}
-                            className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold" : savedCount > 0 ? "text-slate-200 hover:bg-slate-800" : "text-slate-400 hover:bg-slate-900")}
-                          >
-                            <span className="truncate pr-2">
-                              {lecYear ? <b className="text-amber-400">[{lecYear}] </b> : ""}{lec.title}
+                    {filteredSubList.map((lec, i) => {
+                      const isSelected = !selectedLec.isBook && selectedLec.title === lec.title;
+                      const savedCount = (store[lec.title] || []).length;
+                      return (
+                        <button
+                          key={i}
+                          onClick={() => {
+                            setSelectedLec({ isBook: false, num: lec.num, year: lec.year, vol: v.vol, title: lec.title, url: lec.url });
+                            setTargetUrl(lec.url || "");
+                            loadJsonFile("vol" + v.vol + ".json", null);
+                            if (lec.url) handleFetchLectureBody(lec.url, lec.title);
+                          }}
+                          className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold" : savedCount > 0 ? "text-slate-200 hover:bg-slate-800" : "text-slate-400 hover:bg-slate-900")}
+                        >
+                          <span className="truncate pr-2">
+                            {lec.year ? <b className="text-amber-400">[{lec.year}] </b> : ""}{lec.title}
+                          </span>
+                          {savedCount > 0 ? (
+                            <span className="text-[10px] bg-amber-500 text-slate-900 px-1.5 py-0.5 rounded font-bold shrink-0">
+                              {savedCount}문장
                             </span>
-                            {savedCount > 0 ? (
-                              <span className="text-[10px] bg-amber-500 text-slate-900 px-1.5 py-0.5 rounded font-bold shrink-0">
-                                {savedCount}문장
-                              </span>
-                            ) : (
-                              <span className="text-[10px] text-slate-500 shrink-0">읽기</span>
-                            )}
-                          </button>
-                        );
-                      })
-                    )}
+                          ) : (
+                            <span className="text-[10px] text-slate-500 shrink-0">읽기</span>
+                          )}
+                        </button>
+                      );
+                    })}
                   </div>
                 )}
               </div>
@@ -809,7 +604,7 @@ function App() {
 
         <div className="no-print bg-white border rounded-xl p-4 mb-6 shadow-sm">
           <div className="text-xs font-bold text-slate-600 mb-2">
-            🌐 선택된 강의의 실제 웹페이지 주소(URL):
+            🌐 선택된 {selectedLec.isBook ? "단행본 저서" : "강의"}의 실제 웹페이지 주소(URL):
           </div>
           <div className="flex flex-wrap gap-2 mb-3">
             <input
@@ -834,7 +629,7 @@ function App() {
               setResumeChunkIdx(0);
             }}
             rows={4}
-            placeholder="왼쪽에서 제1기~제6기 강의를 클릭하면 영어 원문이 자동으로 채워지며, 강연 연도도 자동 인식합니다!"
+            placeholder="왼쪽에서 제1기~제6기 강의를 클릭하면 영어 원문이 자동으로 채워집니다!"
             className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
           />
 
@@ -865,7 +660,9 @@ function App() {
         <div className="flex flex-wrap justify-between items-center gap-3 mb-6 pb-3 border-b">
           <div>
             <div className="text-xs font-bold text-amber-700 mb-1">
-              {"📅 제" + currentVolNum + "기 (" + VOLUMES[currentVolNum - 1].period + "년)" + (selectedLec.year ? " · 강연/출간 연도: " + selectedLec.year + "년" : "")}
+              {selectedLec.isBook
+                ? "📖 정규 단행본 #" + String(selectedLec.num).padStart(2, "0") + " · 출간 연도: " + selectedLec.year + "년"
+                : "📅 제" + currentVolNum + "기 (" + VOLUMES[currentVolNum - 1].period + "년)" + (selectedLec.year ? " · 강연 연도: " + selectedLec.year + "년" : "")}
             </div>
             <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
               {selectedLec.year ? "[" + selectedLec.year + "] " : ""}{selectedLec.title}
@@ -874,11 +671,12 @@ function App() {
 
           <div className="no-print flex flex-wrap gap-2">
             <button
-              onClick={handleExportVolJson}
-              className="px-3 py-2 rounded bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold shadow-sm"
-              title="현재 기수(제1기~제6기)의 강의만 vol1.json ~ vol6.json 이름으로 저장합니다"
+              onClick={handleExportCurrentTargetJson}
+              className={"px-3 py-2 rounded text-white text-xs font-bold shadow-sm " + (selectedLec.isBook ? "bg-emerald-600 hover:bg-emerald-700" : "bg-amber-600 hover:bg-amber-700")}
             >
-              {"💾 제" + currentVolNum + "기(vol" + currentVolNum + ".json) 백업"}
+              {selectedLec.isBook
+                ? "💾 이 책(book" + selectedLec.num + ".json) 백업"
+                : "💾 제" + currentVolNum + "기(vol" + currentVolNum + ".json) 백업"}
             </button>
             <button
               onClick={handleExportAllJson}
