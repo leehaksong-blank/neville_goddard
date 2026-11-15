@@ -311,6 +311,29 @@ const parseBibleRefDetails = (item) => {
   return { bookOrder, chapter: chap, verses };
 };
 
+// ★ 성경 장·절 고유 키 생성 (예: 창세기 1:26 -> "1_1_26", 출애굽기 3:14 -> "2_3_14")
+const getVerseUniqueKey = (item) => {
+  const { bookOrder, chapter, verses } = parseBibleRefDetails(item);
+  return `${bookOrder}_${chapter}_${verses[0] || 1}`;
+};
+
+// ★ 기존 bibleList에 이미 있는 장·절은 자동으로 Pass하고, 새로운 장·절만 추가하는 함수
+const appendOnlyNewBibleVerses = (prevList, newItems) => {
+  const existingVerseKeys = new Set(prevList.map(item => getVerseUniqueKey(item)));
+  const added = [];
+
+  newItems.forEach(item => {
+    const vKey = getVerseUniqueKey(item);
+    // 이미 존재하는 장·절이면 Pass! (없는 장·절만 추가)
+    if (!existingVerseKeys.has(vKey)) {
+      existingVerseKeys.add(vKey); // 같은 강의 내 중복 인용도 첫 번째만 등록하고 뒤는 Pass
+      added.push(item);
+    }
+  });
+
+  return added.length > 0 ? prevList.concat(added) : prevList;
+};
+
 const getBibleSortWeight = (item) => {
   const { bookOrder, chapter, verses } = parseBibleRefDetails(item);
   return bookOrder * 1000000 + chapter * 1000 + (verses[0] || 1);
@@ -653,12 +676,7 @@ function App() {
       if (res.ok) {
         const data = await res.json();
         if (fileName === "bible.json" && Array.isArray(data)) {
-          setBibleList(prev => {
-            const map = new Map();
-            data.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
-            prev.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
-            return Array.from(map.values());
-          });
+          setBibleList(prev => appendOnlyNewBibleVerses(data, prev));
         } else {
           mergePublicDataToStore(data, fallbackTitle);
         }
@@ -1066,12 +1084,7 @@ function App() {
             };
           });
 
-          setBibleList(prev => {
-            const map = new Map();
-            prev.forEach(item => map.set(item.id, item));
-            formattedQuotes.forEach(item => map.set(item.id, item));
-            return Array.from(map.values());
-          });
+          setBibleList(prev => appendOnlyNewBibleVerses(prev, formattedQuotes));
         }
 
         // 무료 API 분당 요청 제한(Rate Limit)을 피하기 위해 구간 사이 4초 호흡
@@ -1151,12 +1164,7 @@ function App() {
             };
           });
 
-          setBibleList(prev => {
-            const map = new Map();
-            prev.forEach(item => map.set(item.id, item));
-            formatted.forEach(item => map.set(item.id, item));
-            return Array.from(map.values());
-          });
+          setBibleList(prev => appendOnlyNewBibleVerses(prev, formatted));
         }
         await sleep(3500);
       }
@@ -1236,12 +1244,7 @@ function App() {
         const imported = JSON.parse(event.target.result);
         if (Array.isArray(imported)) {
           if (imported[0]?.ref !== undefined || imported[0]?.krv !== undefined || file.name.indexOf("bible") !== -1) {
-            setBibleList(prev => {
-              const map = new Map();
-              prev.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
-              imported.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
-              return Array.from(map.values());
-            });
+            setBibleList(prev => appendOnlyNewBibleVerses(prev, imported));
             alert(`✅ [${file.name}] 성경 구절 ${imported.length}개가 성공적으로 병합되었습니다!`);
           } else {
             mergePublicDataToStore(imported, selectedLec.title);
