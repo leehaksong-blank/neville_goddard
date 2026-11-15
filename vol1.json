@@ -143369,5 +143369,2911 @@
         }
       ]
     }
+  ],
+  "Building Your Temple": [
+    {
+      "en": "William Blake, in his poem “The Four Zoas: a Dream of Nine Nights,” tells of God’s fall into division and his resurrection to unity – his fall into generation, decay, and death and his resurrection into the unity of the one Father.",
+      "ko": "윌리엄 블레이크는 그의 시 “네 개의 조아: 아홉 밤의 꿈”에서 하나님이 분열로 떨어졌다가 통일성으로 부활하는 이야기, 즉 세대 형성과 쇠퇴, 죽음으로 떨어졌다가 오직 한 분이신 아버지의 통일 안으로 부활하는 이야기를 전해 줍니다.",
+      "vocab": [
+        {
+          "word": "division",
+          "mean": "분열, 분리"
+        },
+        {
+          "word": "resurrection",
+          "mean": "부활"
+        },
+        {
+          "word": "generation",
+          "mean": "생성, 번식, 세대"
+        },
+        {
+          "word": "decay",
+          "mean": "쇠퇴, 부패"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 구조",
+          "desc": "tells of (~에 대해 말하다) 구문이며, 대시(–) 이하의 구문은 전반부의 'fall'과 'resurrection'의 구체적 의미를 재정의하여 부연 설명하는 동격적 병렬 구조입니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "신(하나님/상상력)이 스스로 분열되어 개별 인간의 한계와 유한함(죽음) 속으로 떨어졌다가, 자신이 근본적으로 한 분이신 신이라는 깨달음으로 돌아오는 다원적 일체론(Monism) 과정을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "Associating his poem with the 6th chapter of Ephesians, the 12th verse, he states: “We wrestle not with flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in heavenly places.”",
+      "ko": "블레이크는 자신의 시를 에베소서 6장 12절 말씀과 연관 지으며 다음과 같이 선언합니다. “우리의 씨름은 혈과 육을 상대하는 것이 아니요 통치자들과 권세들과 이 어둠의 세상 주관자들과 하늘에 있는 악의 영들을 상대함이라.”",
+      "vocab": [
+        {
+          "word": "wrestle",
+          "mean": "씨름하다, 싸우다"
+        },
+        {
+          "word": "principalities",
+          "mean": "통치자들, 지배권"
+        },
+        {
+          "word": "rulers of darkness",
+          "mean": "어둠의 주관자들"
+        },
+        {
+          "word": "spiritual wickedness",
+          "mean": "영적 악함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "Associating A with B: ~를 ...와 연관시키면서(부대상황)."
+        },
+        {
+          "tag": "성경 인용",
+          "desc": "에베소서 6장 12절(KJV)의 유명한 영적 전쟁 구절을 블레이크 시의 핵심 테마와 연결하여 직접 인용하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "So we see that the fall into division and the resurrection into unity is mental.",
+      "ko": "따라서 우리는 분열로의 하강과 통일로의 부활이 다름 아닌 마음(의식)의 차원에서 일어나는 일임을 깨닫게 됩니다.",
+      "vocab": [
+        {
+          "word": "mental",
+          "mean": "마음의, 의식의, 정신적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명사절 접속사",
+          "desc": "that절 이하가 동사 see의 목적어로 쓰여 전체 인과관계의 결론을 이끌어냅니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "모든 물리적 현실과 성경의 서사는 외부 세계가 아닌 오직 인간 내면의 '의식(Mental/Imagination)' 내부에서 일어나는 상태 변화임을 명확히 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "From beginning to end, the Bible speaks of a certain temple that is being constructed.",
+      "ko": "처음부터 끝까지 성경은 건축되고 있는 어떤 성전에 관해 이야기하고 있습니다.",
+      "vocab": [
+        {
+          "word": "temple",
+          "mean": "성전, 신전"
+        },
+        {
+          "word": "construct",
+          "mean": "건축하다, 건설하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재진행 수동태",
+          "desc": "is being constructed: 지어지고 있는 중이다. 지금도 연속해서 진행되고 있는 영적 대건축을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "And every day we are building our temple for the dwelling place of God the Father.",
+      "ko": "그리고 매일 우리는 하나님 아버지가 거하실 거처로서 우리 자신의 성전을 세워 나가고 있습니다.",
+      "vocab": [
+        {
+          "word": "dwelling place",
+          "mean": "거처, 거주지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "목적의 전치사 구문",
+          "desc": "for the dwelling place of ~ : ~의 거처를 위하여."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "우리가 매일 품는 생각, 의식, 관념이 곧 신(Father)이 거할 영적 성전을 짓는 재료이자 과정이라는 상징적 해석입니다."
+        }
+      ]
+    },
+    {
+      "en": "In the 2nd chapter of the Book of Ephesians, we are told: “The whole structure is joined together and grows into a holy temple in the Lord; in whom you also are built into it as a living structure of God in the Spirit.”",
+      "ko": "에베소서 2장에는 우리에게 다음과 같은 말씀이 전해집니다. “그의 안에서 건물마다 서로 연결하여 주 안에서 거룩한 성전이 되어 가고 너희도 성령 안에서 하나님이 거하실 처소가 되기 위하여 그리스도 예수 안에서 함께 지어져 가느니라.”",
+      "vocab": [
+        {
+          "word": "joined together",
+          "mean": "서로 연결된, 결합된"
+        },
+        {
+          "word": "living structure",
+          "mean": "살아있는 구조물"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태 구문",
+          "desc": "we are told: 우리는 들었다 / 기록되어 있다."
+        },
+        {
+          "tag": "전치사+관계대명사",
+          "desc": "in whom: 주(Lord) 안에서."
+        }
+      ]
+    },
+    {
+      "en": "In other words, as you bring your building and I bring mine, we are fitted together as living stones in the building of God.",
+      "ko": "다시 말해, 당신이 당신의 건물을 가져오고 내가 나의 건물을 가져옴에 따라, 우리는 하나님의 건물 안에서 살아있는 돌들로서 서로 완벽히 맞물려 짜여 가는 것입니다.",
+      "vocab": [
+        {
+          "word": "fitted together",
+          "mean": "서로 맞물려 짜이다, 조립되다"
+        },
+        {
+          "word": "living stones",
+          "mean": "살아있는 돌들(산 돌)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "양태/시간 접속사 as",
+          "desc": "~함에 따라, ~하듯이."
+        },
+        {
+          "tag": "네빌 사상 및 비유",
+          "desc": "베드로전서 2장 5절의 '산 돌(living stones)' 비유와 연관하여, 분리된 것 같은 개개인의 의식이 완성된 하나의 신성(One Divine Being)을 구성하는 신령한 돌이 됨을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Let me explain this with a story told me just this past week.",
+      "ko": "바로 지난주에 들은 한 이야기로 이것을 설명해 드리겠습니다.",
+      "vocab": [
+        {
+          "word": "explain",
+          "mean": "설명하다"
+        },
+        {
+          "word": "past week",
+          "mean": "지난주"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Let me + 동사원형",
+          "desc": "~하게 해 주세요 (청중의 주의를 환기하는 네빌의 전형적인 강연 도입부 표현)."
+        }
+      ]
+    },
+    {
+      "en": "This is an experience of a lady who is very much a lady and only recently had a little baby.",
+      "ko": "이것은 진정한 의미의 품위 있는 레이디이자 최근에 갓난아기를 둔 한 여인의 경험입니다.",
+      "vocab": [
+        {
+          "word": "experience",
+          "mean": "경험"
+        },
+        {
+          "word": "recently",
+          "mean": "최근에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주격 관계대명사절",
+          "desc": "who 이 이끄는 절이 a lady를 수식하여 그녀의 성품과 상황을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "She said: “In my dream I am three people.",
+      "ko": "그녀는 이렇게 말했습니다. “내 꿈속에서 나는 세 사람이었습니다.",
+      "vocab": [
+        {
+          "word": "dream",
+          "mean": "꿈"
+        },
+        {
+          "word": "three people",
+          "mean": "세 사람"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재시제 사용",
+          "desc": "꿈속의 경험을 생생하게 전달하기 위해 현재시제를 사용하여 현장감을 부여합니다."
+        }
+      ]
+    },
+    {
+      "en": "I am myself, yet I am a man.",
+      "ko": "나는 나 자신이면서도, 동시에 한 남잡니다.",
+      "vocab": [
+        {
+          "word": "myself",
+          "mean": "나 자신"
+        },
+        {
+          "word": "yet",
+          "mean": "그럼에도 불구하고, 그런데도"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "자아의 분열과 통합",
+          "desc": "네빌의 사상에서 관찰자(I), 상태(State), 그리고 그것을 경험하는 주체의 다면성을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "As myself, I long for a little green dog.",
+      "ko": "나 자신으로서, 나는 작은 초록색 개를 갈망합니다.",
+      "vocab": [
+        {
+          "word": "long for",
+          "mean": "~을 간절히 바라다"
+        },
+        {
+          "word": "green dog",
+          "mean": "초록색 개 (상상 속의 피조물)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As + 명사",
+          "desc": "'~로서'라는 자격 전치사를 통해 꿈속에서 취하는 여러 관점 중 첫 번째 자아를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Becoming another, I see my dog standing among others.",
+      "ko": "다른 존재가 되어, 나는 내 개가 다른 개들 사이에 서 있는 것을 봅니다.",
+      "vocab": [
+        {
+          "word": "Becoming",
+          "mean": "~가 되면서"
+        },
+        {
+          "word": "standing",
+          "mean": "서 있는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "지각동사(see) + 목적어 + 현재분사(standing) 구조를 통해 대상이 상상 속에서 실체화되어 있음을 시각화합니다."
+        }
+      ]
+    },
+    {
+      "en": "He shines like the sun and because I have ordered him I know all I have to do is wait for his arrival.",
+      "ko": "그 개는 태양처럼 빛나고, 내가 그를 이미 주문(창조)했기에 내가 해야 할 일은 오직 그의 도착을 기다리는 것뿐임을 나는 압니다.",
+      "vocab": [
+        {
+          "word": "shines",
+          "mean": "빛난다"
+        },
+        {
+          "word": "ordered",
+          "mean": "주문했다, 명했다"
+        },
+        {
+          "word": "arrival",
+          "mean": "도착"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 생략",
+          "desc": "all (that) I have to do 구조로, 상상이 완료된 상태에서의 '확신과 기다림(Sababb)'의 원리를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Now, in my dream I am always the sender.",
+      "ko": "“자, 내 꿈속에서 나는 언제나 보내는 자(발신자)입니다.",
+      "vocab": [
+        {
+          "word": "sender",
+          "mean": "보내는 사람, 발신자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "근원적 자아",
+          "desc": "인간의 상상력(The Human Imagination)이 모든 소식과 창조의 근원임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "When something is to be told, I tell it to another (which is myself), then I become the other in order to retell the story to the third.",
+      "ko": "무언가를 전해야 할 때, 나는 그것을 또 다른 나(즉 내 자신)에게 말하고, 그러고 나서 나는 세 번째 사람에게 그 이야기를 다시 전하기 위해 그 다른 존재가 됩니다.",
+      "vocab": [
+        {
+          "word": "retell",
+          "mean": "다시 말하다, 전하다"
+        },
+        {
+          "word": "another",
+          "mean": "또 다른 이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사의 계속적 용법",
+          "desc": "(which is myself)를 통해 타인으로 보이는 존재가 결국 근원적인 자기 자신임을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Becoming the third, I then tell the second to tell the first.",
+      "ko": "세 번째 사람이 되어, 나는 두 번째 사람에게 첫 번째 사람에게 말하라고 지시합니다.",
+      "vocab": [
+        {
+          "word": "second",
+          "mean": "두 번째 사람"
+        },
+        {
+          "word": "first",
+          "mean": "첫 번째 사람"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "내적 대화의 연쇄",
+          "desc": "의식의 삼위일체적 구조(발신, 중재, 수신)를 통해 소망 성취의 메시지가 무의식에 각인되는 과정을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "I know it doesn’t make sense on this level, but as the third person speaking, I hear the message as the second, and say to myself – the first: ‘The dog is yours now.’",
+      "ko": "이 차원(현실의 이성적 수준)에서는 말이 되지 않는다는 것을 알지만, 말하는 세 번째 사람으로서 나는 두 번째 사람으로서 그 메시지를 듣고, 첫 번째 주인인 나 자신에게 말합니다. ‘그 개는 이제 네 거야.’라고요.",
+      "vocab": [
+        {
+          "word": "make sense",
+          "mean": "이해가 되다, 말이 되다"
+        },
+        {
+          "word": "level",
+          "mean": "차원, 수준"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "이성(Rational Mind)의 초월",
+          "desc": "네빌은 상상의 세계가 물질적 이성의 논리를 초월하여 작동함을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "And as the first I am so happy to hear the news.",
+      "ko": "그리고 첫 번째 사람으로서 나는 그 소식을 듣고 너무나 기뻐합니다.",
+      "vocab": [
+        {
+          "word": "news",
+          "mean": "소식"
+        },
+        {
+          "word": "happy",
+          "mean": "기쁜"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "주관적 감정의 실재화",
+          "desc": "소망이 성취되었을 때 느끼는 감정(Feeling) 자체가 창조의 완성임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "“Again as the third person, I tell the second to say to the first: ‘Your building is finished.",
+      "ko": "“다시 세 번째 사람으로서, 나는 두 번째 사람에게 첫 번째 사람에게 전하라고 말합니다. ‘당신의 건물이 완공되었습니다.",
+      "vocab": [
+        {
+          "word": "building",
+          "mean": "건물"
+        },
+        {
+          "word": "finished",
+          "mean": "완료된, 끝난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "완료형의 사용",
+          "desc": "'is finished'는 네빌의 핵심 가르침인 '이미 다 이루어졌다(It is finished)'는 성경적 진리를 반영합니다."
+        }
+      ]
+    },
+    {
+      "en": "All you have to do is turn around to take it.’",
+      "ko": "당신이 해야 할 일은 뒤돌아서 그것을 차지하는 것뿐입니다.’라고요.",
+      "vocab": [
+        {
+          "word": "turn around",
+          "mean": "돌아서다"
+        },
+        {
+          "word": "take",
+          "mean": "취하다, 차지하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metanoia (회개/관점의 전환)",
+          "desc": "'turn around'는 방향 전환, 즉 이미 존재하는 현실을 향해 의식을 돌리는 것을 뜻하는 신비주의적 메타포입니다."
+        }
+      ]
+    },
+    {
+      "en": "Now as the first person, my little dog disappears and I am looking at my many new buildings being constructed.",
+      "ko": "이제 첫 번째 사람이 되어, 나의 작은 개는 사라지고 나는 새로 지어지고 있는 수많은 내 건물들을 바라봅니다.",
+      "vocab": [
+        {
+          "word": "disappears",
+          "mean": "사라지다"
+        },
+        {
+          "word": "constructed",
+          "mean": "건설되는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상상의 확장",
+          "desc": "하나의 소망이 성취되면 상상의 시야가 더 넓은 창조의 영역으로 확장됨을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "Then I remember that my building is finished and all I have to do is turn around and claim it – when my little baby cries and awakens me.”",
+      "ko": "그러고 나서 내 건물이 이미 완공되었으며 내가 해야 할 일은 그저 돌아서서 그것을 소유권 주장(취득)하는 것뿐임을 기억해 냅니다—그 순간 나의 갓난아기가 울며 나를 깨웁니다.”",
+      "vocab": [
+        {
+          "word": "remember",
+          "mean": "기억하다"
+        },
+        {
+          "word": "claim",
+          "mean": "요청하다, 소유를 주장하다"
+        },
+        {
+          "word": "awaken",
+          "mean": "깨우다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "각성과 현실",
+          "desc": "꿈에서의 깨어남은 물리적인 현실로의 복귀이자, 동시에 더 깊은 영적 진실에서의 깨어남(Awakening)을 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "On the surface her vision appears to be nothing, but it has tremendous significance.",
+      "ko": "표면적으로 그녀의 환시는 아무것도 아닌 것처럼 보이지만, 그것은 엄청난 의미를 지니고 있습니다.",
+      "vocab": [
+        {
+          "word": "surface",
+          "mean": "표면"
+        },
+        {
+          "word": "vision",
+          "mean": "환시, 비전"
+        },
+        {
+          "word": "tremendous",
+          "mean": "엄청난"
+        },
+        {
+          "word": "significance",
+          "mean": "의미, 중요성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Adverbial Phrase",
+          "mean": "'On the surface'는 문장 전체를 수식하는 전명구입니다."
+        },
+        {
+          "tag": "Conjunction",
+          "mean": "등위접속사 'but'을 통해 두 개의 절을 대조적으로 연결합니다."
+        }
+      ]
+    },
+    {
+      "en": "Her green dog shining like the sun is Caleb in scripture.",
+      "ko": "태양처럼 빛나는 그녀의 초록색 개는 성경 속의 갈렙입니다.",
+      "vocab": [
+        {
+          "word": "shining",
+          "mean": "빛나는"
+        },
+        {
+          "word": "scripture",
+          "mean": "성경"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Present Participle",
+          "mean": "현재분사구 'shining like the sun'이 명사 'Her green dog'을 후치수식합니다."
+        },
+        {
+          "tag": "Symbolism",
+          "mean": "네빌 고다드의 사상에서 동물과 색채는 내면의 상태나 영적 실체를 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "Caleb is he who goes with Joshua into the Promised Land.",
+      "ko": "갈렙은 여호수아와 함께 약속의 땅으로 들어가는 자입니다.",
+      "vocab": [
+        {
+          "word": "Promised Land",
+          "mean": "약속의 땅"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Relative Clause",
+          "mean": "'he who ~' 구조는 '～하는 사람'이라는 의미로 선행사와 주격 관계대명사가 결합한 형태입니다."
+        }
+      ]
+    },
+    {
+      "en": "In the story, Caleb – having faith in the God who promised Israel land – was sent by Moses along with other spies into Canaan.",
+      "ko": "이야기 속에서, 이스라엘에게 땅을 약속하신 하나님을 신뢰하는 갈렙은 다른 정탐꾼들과 함께 모세에 의해 가나안으로 보내졌습니다.",
+      "vocab": [
+        {
+          "word": "faith",
+          "mean": "믿음, 신앙"
+        },
+        {
+          "word": "spy",
+          "mean": "정탐꾼"
+        },
+        {
+          "word": "Canaan",
+          "mean": "가나안"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Parenthetical Clause",
+          "mean": "대시(-) 사이에 삽입된 분사구문 'having faith ~'는 갈렙의 내면 상태와 성경적 의미를 보충 설명합니다."
+        },
+        {
+          "tag": "Passive Voice",
+          "mean": "수동태 'was sent'가 사용되어 주어가 인도되는 과정을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Upon returning, Caleb said: “Attack immediately” but the men who had gone with him were afraid; so only the two, Caleb and Joshua (the Hebraic form of the word “Jesus”), entered.",
+      "ko": "돌아온 후에 갈렙은 말했습니다. “즉시 공격합시다.” 그러나 그와 함께 갔던 사람들은 두려워했습니다. 그리하여 오직 두 사람, 곧 갈렙과 여호수아(‘예수’라는 단어의 히브리어 형태)만이 들어갔습니다.",
+      "vocab": [
+        {
+          "word": "returning",
+          "mean": "돌아옴"
+        },
+        {
+          "word": "immediately",
+          "mean": "즉시"
+        },
+        {
+          "word": "Hebraic",
+          "mean": "히브리어의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Prepositional Gerund",
+          "mean": "'Upon returning'은 '~하자마자'라는 의미의 전치사구입니다."
+        },
+        {
+          "tag": "Parenthesis",
+          "mean": "괄호 안의 내용은 여호수아와 예수의 어원적 동일성을 설명하는 네빌의 핵심 통찰입니다."
+        }
+      ]
+    },
+    {
+      "en": "In her dream she is waiting for a little green dog.",
+      "ko": "꿈속에서 그녀는 작은 초록색 개를 기다리고 있습니다.",
+      "vocab": [
+        {
+          "word": "waiting for",
+          "mean": "~을 기다리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Present Continuous",
+          "mean": "현재진행형을 사용하여 꿈속의 생생한 심리적 상태를 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "The word “green” in this dream means “pressing with sap; luscious; health.”",
+      "ko": "이 꿈에서 “초록색”이라는 단어는 “수액이 넘쳐나는, 감미로운, 건강”을 의미합니다.",
+      "vocab": [
+        {
+          "word": "sap",
+          "mean": "수액, 생기"
+        },
+        {
+          "word": "luscious",
+          "mean": "감미로운, 맛있는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Subject-Verb",
+          "mean": "'The word'가 주어이며 동사 'means'와 연결됩니다."
+        }
+      ]
+    },
+    {
+      "en": "Bursting with all that is mine, I will take you to lie down in green pastures.",
+      "ko": "내게 속한 모든 것으로 가득 차 넘치며, 내가 너를 푸른 초장에 눕히게 하리라.",
+      "vocab": [
+        {
+          "word": "bursting with",
+          "mean": "~로 터질 것 같은, 가득 찬"
+        },
+        {
+          "word": "pastures",
+          "mean": "목초지, 초장"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Participle Clause",
+          "mean": "분사구문 'Bursting with ~'가 주절의 주어 'I'의 상태를 수식합니다."
+        },
+        {
+          "tag": "Biblical Echo",
+          "mean": "시편 23편의 '푸른 초장(green pastures)' 이미지를 직접적으로 인용하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "Full of faith in the God who promised land to Israel, Caleb is highly recommended, as only two can enter.",
+      "ko": "이스라엘에게 땅을 약속하신 하나님에 대한 믿음으로 충만한 갈렙은, 오직 두 사람만이 들어갈 수 있기에 강력히 추천됩니다.",
+      "vocab": [
+        {
+          "word": "recommended",
+          "mean": "추천되는, 칭찬받는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Adjective Phrase",
+          "mean": "'Full of faith ~'는 주어 'Caleb'의 상태를 설명하는 형용사구입니다."
+        },
+        {
+          "tag": "Causal Clause",
+          "mean": "접속사 'as'가 이유를 나타내는 부사절을 이끕니다."
+        }
+      ]
+    },
+    {
+      "en": "Others had the dog and others will find him, for she is not the only one who enters the promised land.",
+      "ko": "다른 이들도 그 개를 가졌었고 다른 이들도 그를 찾을 것입니다. 그녀만이 약속의 땅으로 들어가는 유일한 사람이 아니기 때문입니다.",
+      "vocab": [
+        {
+          "word": "others",
+          "mean": "다른 이들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conjunction 'for'",
+          "mean": "'~이기 때문에'라는 원인을 나타내는 등위접속사로 쓰였습니다."
+        }
+      ]
+    },
+    {
+      "en": "Now, who was waiting for his companion?",
+      "ko": "자, 누가 그의 동반자를 기다리고 있었습니까?",
+      "vocab": [
+        {
+          "word": "companion",
+          "mean": "동반자, 동료"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Interrogative Sentence",
+          "mean": "독자의 자각을 유도하는 수사학적 의문문입니다."
+        }
+      ]
+    },
+    {
+      "en": "God!",
+      "ko": "하나님이십니다!",
+      "vocab": [
+        {
+          "word": "God",
+          "mean": "하나님, 인간의 상상력"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "One-word Sentence",
+          "mean": "앞선 질문에 대한 단답형태로 핵심 실체(인간 안의 상상력인 하나님)를 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "As the third, the second is told and tells the first that the dog is now hers.",
+      "ko": "세 번째 자로서, 두 번째 자는 듣고 첫 번째 자에게 그 개가 이제 그녀의 것이 되었다고 말합니다.",
+      "vocab": [
+        {
+          "word": "third",
+          "mean": "세 번째"
+        },
+        {
+          "word": "second",
+          "mean": "두 번째"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Indirect Object",
+          "mean": "'tells the first that ~' 구문에서 'the first'가 간접목적어, 'that절'이 직접목적어입니다."
+        },
+        {
+          "tag": "Divine Drama",
+          "mean": "네빌이 말하는 의식의 차원들(보내는 자, 아는 자, 경험하는 자) 간의 상호작용을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Then the experience is repeated, as she once more becomes the sender (the teller), but she is never the receiver, for God only acts and is in existing beings or men.",
+      "ko": "그러고 나서 그 경험은 반복됩니다. 그녀가 다시 한번 보내는 자(말하는 자)가 되기 때문입니다. 그러나 그녀는 결코 받는 자가 되지 않습니다. 하나님은 오직 행동하시며, 존재하는 존재들 곧 인간들 안에 계시기 때문입니다.",
+      "vocab": [
+        {
+          "word": "repeated",
+          "mean": "반복되는"
+        },
+        {
+          "word": "sender",
+          "mean": "보내는 자"
+        },
+        {
+          "word": "teller",
+          "mean": "말하는 자"
+        },
+        {
+          "word": "receiver",
+          "mean": "받는 자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Passive & Active",
+          "mean": "'is repeated', 'becomes' 등을 통해 영적 상태의 역동성을 표현합니다."
+        },
+        {
+          "tag": "Neville's Doctrine",
+          "mean": "'God only acts and is in existing beings or men'은 네빌 고다드 사상의 핵심으로, 하나님은 인간의 상상력 그 자체임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Now, as the first person she realizes that the little dog has disappeared.",
+      "ko": "이제 첫 번째 인물로서 그녀는 작은 개가 사라졌다는 사실을 깨닫습니다.",
+      "vocab": [
+        {
+          "word": "realize",
+          "mean": "깨닫다, 실현하다"
+        },
+        {
+          "word": "disappear",
+          "mean": "사라지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "부사구",
+          "meanings": "문두의 'Now, as the first person'은 그녀가 의식의 전환 과정에서 취한 새로운 관점과 역할을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Why?",
+      "ko": "왜 그럴까요?",
+      "vocab": [
+        {
+          "word": "Why",
+          "mean": "왜"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수사적 질문",
+          "meanings": "독자의 주의를 집중시키고 네빌 고다드 특유의 상징적 해석을 이끌어내는 장치입니다."
+        }
+      ]
+    },
+    {
+      "en": "Because she has already entered the promised land.",
+      "ko": "그녀가 이미 약속의 땅에 들어갔기 때문입니다.",
+      "vocab": [
+        {
+          "word": "promised land",
+          "mean": "약속의 땅, 소망이 성취된 상태"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재완료",
+          "meanings": "상상 속에서 이미 목적지에 도달한 완료된 의식의 상태를 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "Seeing the fabulous construction going on, she is reminded that her building is finished and all she had to do is turn around and see it.",
+      "ko": "진행 중인 놀라운 공사를 보면서, 그녀는 자신의 건축이 이미 완료되었으며 자신이 해야 할 일은 그저 돌이켜 그것을 바라보는 것뿐임을 상기하게 됩니다.",
+      "vocab": [
+        {
+          "word": "fabulous",
+          "mean": "환상적인, 놀라운"
+        },
+        {
+          "word": "construction",
+          "mean": "건축, 건설"
+        },
+        {
+          "word": "remind",
+          "mean": "상기시키다"
+        },
+        {
+          "word": "turn around",
+          "mean": "돌이키다, 방향을 바꾸다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "meanings": "'Seeing the fabulous construction'은 외적인 현실의 깨달음이 내적 상상력의 완성을 보게 만드는 과정을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "There are two passages in scripture, one in the 12th chapter of Acts and the other in the 15th chapter of Luke, where the Greek word “heautou” is translated “he came to himself.”",
+      "ko": "성경에는 두 개의 구절이 있는데, 하나는 사도행전 12장에 있고 다른 하나는 누가복음 15장에 있으며, 거기서 헬라어 단어 '헤아우투(heautou)'는 '스스로 돌이켰다(그가 제정신이 들었다)'로 번역됩니다.",
+      "vocab": [
+        {
+          "word": "scripture",
+          "mean": "성경"
+        },
+        {
+          "word": "passage",
+          "mean": "구절"
+        },
+        {
+          "word": "heautou",
+          "mean": "스스로에게로, 제정신으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계부사절",
+          "meanings": "'where the Greek word...'는 해당 성경 구절들의 공통적인 원어적 의미를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "In the Book of Luke these words were spoken of the prodigal son.",
+      "ko": "누가복음에서 이 말은 탕자(돌아온 아들)에 대해 언급된 것입니다.",
+      "vocab": [
+        {
+          "word": "prodigal son",
+          "mean": "탕자, 방탕한 아들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태",
+          "meanings": "'were spoken of'를 통해 성경 인물이 인간 의식의 파편이자 귀환의 모형임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "And in the Book of Acts, Peter was imprisoned and shackled in chains.",
+      "ko": "그리고 사도행전에서 베드로는 감원에 갇혀 쇠사슬에 결박당해 있었습니다.",
+      "vocab": [
+        {
+          "word": "imprison",
+          "mean": "감옥에 가두다"
+        },
+        {
+          "word": "shackle",
+          "mean": "족쇄를 채우다"
+        },
+        {
+          "word": "chain",
+          "mean": "사슬"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "상징적 해석",
+          "meanings": "베드로의 감금은 인간이 감각의 한계와 육신의 감옥에 갇혀 있는 상태를 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "His garments were sold and he was alone in the cell, when the angel of the Lord entered, touched him, and as he rose, it is said: “he came to himself.”",
+      "ko": "그의 의복은 벗겨졌고 그는 감옥 독방에 혼자 있었는데, 그때 주의 천사가 들어와 그의 몸을 만졌고, 그가 일어설 때 성경은 '그가 스스로 돌이켰다'고 말합니다.",
+      "vocab": [
+        {
+          "word": "garment",
+          "mean": "의복, 옷"
+        },
+        {
+          "word": "cell",
+          "mean": "(감옥의) 독방"
+        },
+        {
+          "word": "angel",
+          "mean": "천사"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간 부사절",
+          "meanings": "'when the angel...'은 내면의 신성한 깨어남(각성)이 일어나는 순간을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "Now, this word “heautou” could have been translated, “he turned around; it is fulfilled; it is finished; to be married.”",
+      "ko": "자, 이 단어 '헤아우투'는 '그가 돌이켰다; 그것이 성취되었다; 다 이루어졌다; 결혼하게 되었다'라고 번역될 수도 있었습니다.",
+      "vocab": [
+        {
+          "word": "fulfill",
+          "mean": "성취하다, 이루다"
+        },
+        {
+          "word": "finish",
+          "mean": "끝내다, 완성하다"
+        },
+        {
+          "word": "marry",
+          "mean": "결혼하다, 결합하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "가정법 과거완료",
+          "meanings": "'could have been translated'를 통해 네빌은 언어의 표면적 의미를 넘어선 영적/신비주의적 번역의 깊이를 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "And she heard the words: “All you need to do is turn around.”",
+      "ko": "그리고 그녀는 이러한 음성을 들었습니다. '당신이 해야 할 일은 오직 돌이키는 것뿐입니다.'",
+      "vocab": [
+        {
+          "word": "hear",
+          "mean": "듣다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "보어 구문",
+          "meanings": "주격 보어로 쓰인 'turn around'는 상상력에 의한 의식의 방향 전환을 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "Turn around and you will behold the finished structure.",
+      "ko": "돌이키십시오, 그러면 완성된 구조물을 보게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "behold",
+          "mean": " 바라보다, 목격하다"
+        },
+        {
+          "word": "structure",
+          "mean": "구조물, 건축물"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "명령문 + and",
+          "meanings": "'~하라, 그러면 …할 것이다' 구문으로, 의식의 전환(원인)과 현실화(결과)의 법칙을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "As a living stone you have now contributed to the overall structure, which is the temple of the Living God.",
+      "ko": "살아 있는 돌로서 당신은 이제 살아 계신 하나님의 성전인 전체 구조물에 기여했습니다.",
+      "vocab": [
+        {
+          "word": "living stone",
+          "mean": "살아 있는 돌 (영적 자아)"
+        },
+        {
+          "word": "contribute",
+          "mean": "기여하다"
+        },
+        {
+          "word": "overall",
+          "mean": "전반적인, 전체의"
+        },
+        {
+          "word": "temple",
+          "mean": "성전"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사 계속적 용법",
+          "meanings": "', which is the temple...'은 우리가 속한 전체적 실재가 곧 신성한 성전임을 부연합니다."
+        }
+      ]
+    },
+    {
+      "en": "I know from my own experience, everyone contributes to that one Living Stone called the kingdom of heaven!",
+      "ko": "나는 나의 경험을 통해 알고 있습니다. 모든 이들이 천국이라 불리는 그 단 하나의 살아 있는 돌에 기여하고 있음을 말입니다!",
+      "vocab": [
+        {
+          "word": "experience",
+          "mean": "경험"
+        },
+        {
+          "word": "kingdom of heaven",
+          "mean": "천국"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "강조",
+          "meanings": "자신의 체험적 확신을 바탕으로 진리를 선포하는 네빌 고다드 특유의 어조입니다."
+        }
+      ]
+    },
+    {
+      "en": "You will be turned around by a force that is greater than anything known to man, but it will not happen until the end.",
+      "ko": "당신은 인간이 아는 어떤 것보다 더 위대한 힘에 의해 돌이켜지게 될 것이지만, 그것은 끝에 이르기까지는 일어나지 않을 것입니다.",
+      "vocab": [
+        {
+          "word": "force",
+          "mean": "힘, 에너지"
+        },
+        {
+          "word": "greater",
+          "mean": "더 위대한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태와 시간절",
+          "meanings": "'will be turned around'는 인간의 자아를 넘어선 신성한 은총이나 법칙의 개입을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "You cannot physically turn around, nor can you force the mind to do it.",
+      "ko": "당신은 육체적으로 돌이킬 수 없으며, 마음을 강제로 그렇게 하도록 억지로 만들 수도 없습니다.",
+      "vocab": [
+        {
+          "word": "physically",
+          "mean": "육체적으로, 물리적으로"
+        },
+        {
+          "word": "force",
+          "mean": "강요하다, 억지로 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "도치 구문",
+          "meanings": "'nor can you'는 부정어구 도치로, 인간의 의지나 육체적 노력만으로는 의식의 전환을 억지로 이룰 수 없음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Now, Blake tells us: “God fell into division” and this lady divided herself into three.",
+      "ko": "자, 블레이크는 우리에게 말합니다. “하나님은 분열 속으로 떨어지셨다” 그리고 이 여인은 자신을 셋으로 나누었습니다.",
+      "vocab": [
+        {
+          "word": "division",
+          "mean": "분열"
+        },
+        {
+          "word": "divide",
+          "mean": "나누다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "인용문",
+          "mean": "윌리엄 블레이크의 시적 사상을 인용하여 인간의 의식 분열과 창조 과정을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "Now heading for the end of the journey, when the force that is holding you to this world is relieved, you will turn around to see the structure your Father built and you will know that you are He.",
+      "ko": "이제 여정의 끝을 향해 나아가며, 당신을 이 세상에 붙들어 매고 있는 힘이 해제될 때, 당신은 돌아서서 당신의 아버지께서 지으신 구조물을 보게 될 것이며, 당신이 바로 그분임을 알게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "relieved",
+          "mean": "해제되는, 완화되는"
+        },
+        {
+          "word": "structure",
+          "mean": "구조물, 전당"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사",
+          "mean": "that is holding you to this world가 force를 수식함."
+        }
+      ]
+    },
+    {
+      "en": "Your temple is not built by another.",
+      "ko": "당신의 성전은 다른 이에 의해 지어지지 않았습니다.",
+      "vocab": [
+        {
+          "word": "temple",
+          "mean": "성전"
+        },
+        {
+          "word": "another",
+          "mean": "다른 이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태",
+          "mean": "is not built로 성전이 내면의 신성한 자아로부터 비롯됨을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "“He who began a good work in you will bring it to completion at the day of Jesus Christ.”",
+      "ko": "“너희 안에서 선한 일을 시작하신 이가 그리스도 예수의 날까지 그것을 이루실 줄을 우리가 확신하노라.”",
+      "vocab": [
+        {
+          "word": "completion",
+          "mean": "완성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용",
+          "mean": "빌립보서 1장 6절의 인용으로, 인간 안에서 일하시는 하나님의 역사를 의미함."
+        }
+      ]
+    },
+    {
+      "en": "Who is he?",
+      "ko": "그는 누구입니까?",
+      "vocab": [
+        {
+          "word": "Who",
+          "mean": "누구"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수사 의문문",
+          "mean": "청중에게 질문을 던져 그 '시작한 이'가 외부의 존재가 아님을 깨닫게 함."
+        }
+      ]
+    },
+    {
+      "en": "I am he who began the good work in you.",
+      "ko": "너희 안에서 선한 일을 시작한 이는 바로 나(I AM)이니라.",
+      "vocab": [
+        {
+          "word": "began",
+          "mean": "시작했다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌의 핵심 사상",
+          "mean": "성경의 'I AM(존재의 의식)'이 바로 인간 안에서 역사하는 하나님임을 선언함."
+        }
+      ]
+    },
+    {
+      "en": "“I have tried you in the furnaces of affliction.",
+      "ko": "“내가 고난의 풀무불에서 너를 연단하였다.",
+      "vocab": [
+        {
+          "word": "tried",
+          "mean": "연단하다, 시험하다"
+        },
+        {
+          "word": "furnaces of affliction",
+          "mean": "고난의 용광로(풀무불)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용",
+          "mean": "이사야 48장 10절의 패러디 및 인용."
+        }
+      ]
+    },
+    {
+      "en": "For my own sake I do it, for my own sake, for how should my name be profaned?",
+      "ko": "나를 위하여, 오직 나를 위하여 내가 이를 행할 것이라 어찌 내 이름을 욕되게 하리요?",
+      "vocab": [
+        {
+          "word": "profaned",
+          "mean": "더럽히다, 욕되게 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수사 의문문",
+          "mean": "하나님 자신의 영광과 본성을 드러내기 위한 창조와 각성의 과정임을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "My glory I will not give to another.”",
+      "ko": "내 영광을 다른 자에게 주지 아니하리라.”",
+      "vocab": [
+        {
+          "word": "glory",
+          "mean": "영광"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용",
+          "mean": "이사야 48장 11절 구절의 인용."
+        }
+      ]
+    },
+    {
+      "en": "Your journey is at its end, my dear.",
+      "ko": "당신의 여정은 이제 끝에 이르렀습니다, 나의 사랑하는 이여.",
+      "vocab": [
+        {
+          "word": "journey",
+          "mean": "여정"
+        },
+        {
+          "word": "dear",
+          "mean": "사랑하는 이"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "호격",
+          "mean": "청중을 친밀하게 부르며 깨달음의 완성을 축하함."
+        }
+      ]
+    },
+    {
+      "en": "You saw the perfect vision.",
+      "ko": "당신은 완전한 환상을 보았습니다.",
+      "vocab": [
+        {
+          "word": "perfect",
+          "mean": "완전한"
+        },
+        {
+          "word": "vision",
+          "mean": "환상, 계시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "과거 시제",
+          "mean": "영적 각성의 환상을 목격했음을 확언함."
+        }
+      ]
+    },
+    {
+      "en": "Your building is finished and all you have to do is turn around.",
+      "ko": "당신의 건축은 끝났으며, 당신이 해야 할 일은 오직 돌아서는 것뿐입니다.",
+      "vocab": [
+        {
+          "word": "finished",
+          "mean": "끝난, 완성된"
+        },
+        {
+          "word": "turn around",
+          "mean": "돌아서다, 관점을 바꾸다(메타노이아)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문",
+          "mean": "all (that) you have to do is [to] turn around 구조."
+        }
+      ]
+    },
+    {
+      "en": "This will come at the end, for if you should turn around you will vanish, for, like Paul, you have fought the good fight.",
+      "ko": "이 일은 마지막에 올 것입니다. 왜냐하면 당신이 돌아서면 사라질 것이기 때문이며, 바울처럼 당신도 선한 싸움을 싸웠기 때문입니다.",
+      "vocab": [
+        {
+          "word": "vanish",
+          "mean": "사라지다"
+        },
+        {
+          "word": "fought the good fight",
+          "mean": "선한 싸움을 싸우다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "복합 문장",
+          "mean": "for 접속사가 반복되며 영적 완성의 필연성과 바울의 고백을 연결함."
+        }
+      ]
+    },
+    {
+      "en": "Let no one tell you Paul was exaggerating; it is a fight, for we are contending not with flesh and blood.",
+      "ko": "바울이 과장했다고 그 누구도 당신에게 말하게 하지 마십시오; 그것은 진정한 싸움입니다. 왜냐하면 우리는 혈과 육을 상대하여 싸우는 것이 아니기 때문입니다.",
+      "vocab": [
+        {
+          "word": "exaggerating",
+          "mean": "과장하는"
+        },
+        {
+          "word": "contending",
+          "mean": "싸우는, 경쟁하는"
+        },
+        {
+          "word": "flesh and blood",
+          "mean": "혈과 육, 육신"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용 및 암시",
+          "mean": "에베소서 6장 12절 '우리의 씨름은 혈과 육을 상대하는 것이 아니요'를 인용함."
+        }
+      ]
+    },
+    {
+      "en": "At the present moment someone is treading the wine press of hate, and – unrestrained – the thought is sent on its wings of feeling.",
+      "ko": "지금 이 순간에도 누군가는 증오의 포도즙 틀을 밟고 있으며, 억제되지 않은 그 생각은 감정의 날개를 타고 전해집니다.",
+      "vocab": [
+        {
+          "word": "tread the wine press",
+          "mean": "포도즙 틀을 밟다 (성경적 은유)"
+        },
+        {
+          "word": "unrestrained",
+          "mean": "억제되지 않은, 통제되지 않는"
+        },
+        {
+          "word": "wings of feeling",
+          "mean": "감정의 날개 (느낌이 상상의 실현을 돕는 매개체)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Mysticism",
+          "desc": "인간의 생각과 감정은 실재하는 힘이며, 눈에 보이지 않게 세상에 방출되어 파장을 일으킨다는 네빌의 상상력 법칙을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Perhaps sitting in a dungeon this night, someone is treading the wine press of war, and some little boy out in the field catches the idea and wanting to be a hero dreams of becoming a great general, commanding the destruction of the world.",
+      "ko": "어쩌면 오늘 밤 어느 감옥에 앉아 누군가는 전쟁의 포도즙 틀을 밟고 있을 것이고, 들판의 어느 어린 소년은 그 생각을 포착하여 영웅이 되고 싶어 한 나머지 위대한 장군이 되어 세계의 파괴를 지휘하는 꿈을 꿉니다.",
+      "vocab": [
+        {
+          "word": "dungeon",
+          "mean": "지하 감옥"
+        },
+        {
+          "word": "catch the idea",
+          "mean": "사상을 포착하다 (의식의 텔레파시적 전달)"
+        },
+        {
+          "word": "commanding",
+          "mean": "지휘하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Participial Phrase",
+          "desc": "현재분사구문들이 연속하여 소년의 심리적 상태와 꿈꾸는 행위를 생생하게 묘사하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "He is dreaming and you can’t stop his dream.",
+      "ko": "그는 꿈을 꾸고 있으며 당신은 그의 꿈을 막을 수 없습니다.",
+      "vocab": [
+        {
+          "word": "dream",
+          "mean": "꿈꾸다, 상상하다 (네빌 사상에서 상상은 곧 현실 창조의 꿈임)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Coordinating Clause",
+          "desc": "등위접속사 'and'로 연결된 두 개의 절을 통해 인간 상상의 절대성과 불가침성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "So you are not warring against flesh and blood, but against principalities, against powers and spiritual wickedness in heavenly places, and heaven is within.",
+      "ko": "그러므로 여러분은 혈과 육을 상대하여 싸우는 것이 아니라, 통치자들과 권세들과 하늘에 있는 영적 악행들을 상대하여 싸우는 것이며, 하늘은 바로 내면에 있습니다.",
+      "vocab": [
+        {
+          "word": "flesh and blood",
+          "mean": "혈과 육 (외적 인간, 물리적 실체)"
+        },
+        {
+          "word": "principalities",
+          "mean": "통치자들, 정사"
+        },
+        {
+          "word": "spiritual wickedness",
+          "mean": "영적 악행, 영적 사악함"
+        },
+        {
+          "word": "heaven is within",
+          "mean": "하늘은 내 안에 있다 (의식의 내면성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion",
+          "desc": "에베소서 6장 12절과 누가복음 17장 21절의 성경 구절을 인용·변형하여, 모든 영적 전쟁과 천국이 외부에 있는 것이 아니라 인간의 의식(상상) 내부에 존재함을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "In the inside of your mind these abominable, loathsome beings are carved.",
+      "ko": "여러분의 마음 안에는 이 가증스럽고 혐오스러운 존재들이 조각되어 있습니다.",
+      "vocab": [
+        {
+          "word": "abominable",
+          "mean": "가증스러운, 혐오스러운"
+        },
+        {
+          "word": "loathsome",
+          "mean": "역겨운, 몹시 싫은"
+        },
+        {
+          "word": "carved",
+          "mean": "새겨진, 조각된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Passive Voice",
+          "desc": "수동태를 사용하여 인간의 내면에 무의식적으로 각인된 부정적 관념과 상태를 시각적으로 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "They are unseen forces impinging upon you morning, noon, and night.",
+      "ko": "그것들은 아침에도, 정오에도, 밤에도 여러분을 내리누르는 보이지 않는 힘입니다.",
+      "vocab": [
+        {
+          "word": "unseen forces",
+          "mean": "보이지 않는 힘 (눈에 보이지 않는 의식의 상태)"
+        },
+        {
+          "word": "impinge upon",
+          "mean": "~에 영향을 미치다, 부딪히다, 압박하다"
+        },
+        {
+          "word": "morning, noon, and night",
+          "mean": "아침, 낮, 밤 (끊임없이, 상시적으로)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Participial Modifier",
+          "desc": "현재분사구 'impinging upon you'가 앞의 'unseen forces'를 후위 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "But oh, what a thrill to get a letter of this nature!",
+      "ko": "그러나 아, 이러한 성격의 편지를 받는다는 것이 얼마나 짜릿한 일인가요!",
+      "vocab": [
+        {
+          "word": "thrill",
+          "mean": "전율, 황홀감, 짜릿함"
+        },
+        {
+          "word": "of this nature",
+          "mean": "이러한 성격의, 이러한 종류의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Exclamatory Sentence",
+          "desc": "감탄문을 사용하여 상상력의 법칙을 성공적으로 적용한 이로부터 온 소식에 대한 기쁨과 감탄을 표현합니다."
+        }
+      ]
+    },
+    {
+      "en": "Her building is finished.",
+      "ko": "그녀의 건축(상상의 소망 성취)이 끝났습니다.",
+      "vocab": [
+        {
+          "word": "building",
+          "mean": "건축, 세움 (여기서는 소망의 내면적 완성 혹은 상태의 확립을 의미)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Terminology",
+          "desc": "네빌 고다드 사상에서 '건축(building)'은 마음속에서 소망하는 상태를 완전히 구축하고 완료하는 것을 뜻합니다."
+        }
+      ]
+    },
+    {
+      "en": "She now knows that she only sends!",
+      "ko": "그녀는 이제 자신이 오직 송신하는 자(원인 제공자)일 뿐임을 압니다!",
+      "vocab": [
+        {
+          "word": "send",
+          "mean": "보내다, 발송하다 (의식의 씨앗을 우주/상상계에 내보내는 것)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Emphasis",
+          "desc": "느낌표와 결합하여, 현실은 외부에서 오는 것이 아니라 내면의 의식이 먼저 발신(send)하는 것임을 깨달은 환희를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "She gave the order, saw herself as another, receiving, but when the message must be retold she once more became the teller.",
+      "ko": "그녀는 명령을 내렸고, 다른 사람이 되어 받는 자신의 모습을 보았으나, 그 메시지가 다시 전해져야 할 때가 되었을 때는 그녀가 다시 이야기하는 자가 되었습니다.",
+      "vocab": [
+        {
+          "word": "give the order",
+          "mean": "명령을 내리다 (상상을 통해 원하는 바를 확정함)"
+        },
+        {
+          "word": "another",
+          "mean": "다른 사람 (소망이 성취된 상태의 새로운 자아)"
+        },
+        {
+          "word": "teller",
+          "mean": "말하는 사람, 전하는 사람"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Parallel Structure",
+          "desc": "내면의 주문(상상)과 외적 현실 사이의 역할 전환 과정을 대조적으로 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "And when it is to be experienced, she will be the one who experiences it.",
+      "ko": "그리고 그것이 경험되어야 할 때가 되면, 그녀는 그것을 직접 경험하는 자가 될 것입니다.",
+      "vocab": [
+        {
+          "word": "experience",
+          "mean": "경험하다, 실현된 현실을 맛보다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Future Conditional",
+          "desc": "상상된 법칙이 자연스러운 때에 물리적 현실로 구체화되는 인과관계를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "So God only acts and is in existing beings or men, for God is playing all the parts.",
+      "ko": "그러므로 오직 하나님만이 행동하시며 존재하는 존재들 혹은 인간들 안에 거하십니다. 하나님께서 모든 배역을 연기하고 계시기 때문입니다.",
+      "vocab": [
+        {
+          "word": "act",
+          "mean": "행동하다, 역사하다"
+        },
+        {
+          "word": "existing beings",
+          "mean": "존재하는 피조물들"
+        },
+        {
+          "word": "playing all the parts",
+          "mean": "모든 배역을 연기하다 (인간의 의식은 곧 유일한 실재인 하나님의 다양한 현현이라는 네빌의 핵심 사상)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Core Mystical Tenet",
+          "desc": "네빌 고다드의 '하나님=인간의 상상력(Human Imagination)'이라는 범신론적·신비주의적 결론을 요약하는 문장입니다."
+        }
+      ]
+    },
+    {
+      "en": "In the end everyone brings his living temple to the house of God.",
+      "ko": "결국 모든 사람은 자신의 살아있는 성전을 하나님의 집으로 가지고 들어갑니다.",
+      "vocab": [
+        {
+          "word": "living temple",
+          "mean": "살아있는 성전"
+        },
+        {
+          "word": "house of God",
+          "mean": "하나님의 집"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "'In the end'는 '결국/마침내'를 뜻하는 부사구로 전개되며, 각 개인이 완성한 영적 성전을 하나님께 바치는 종말론적 신비체험을 묘사합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "네빌 고다드에게 '살아있는 성전'은 물질적 건물이 아니라, 그리스도 의식이 완성된 인간 내면의 영적 존재 상태를 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "Ephesians tells us how the structure is joined together and how the holy temple grows in the Spirit.",
+      "ko": "에베소서는 이 구조물이 어떻게 서로 연결되어 들어맞고, 또 어떻게 거룩한 성전이 성령 안에서 자라나가는지를 우리에게 알려 줍니다.",
+      "vocab": [
+        {
+          "word": "structure",
+          "mean": "구조물, 건물"
+        },
+        {
+          "word": "joined together",
+          "mean": "서로 연결된, 결합된"
+        },
+        {
+          "word": "holy temple",
+          "mean": "거룩한 성전"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "'tells us how... and how...' 형태의 간접의문문 병렬 구조로, 성전이 영적으로 결합되어 성장하는 원리를 설명합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "에베소서 2장 21절을 인용하여, 영적 성전은 물질적 건축이 아니라 개별 의식들이 하나의 거대한 신성(Godhead)으로 통합되는 과정임을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "It’s a spiritual temple, not one in this world.",
+      "ko": "그것은 이 세상에 있는 성전이 아니라, 영적인 성전입니다.",
+      "vocab": [
+        {
+          "word": "spiritual",
+          "mean": "영적인, 정신적인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "'A, not B' 구문을 통해 성전의 본질이 3차원 물질세계의 건축물이 아니라 내면의 영적 실체임을 명확히 대조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Scripture calls the church “the body of Christ”, but the word translated “church” is “communion of the assemblage of the redeemed.”",
+      "ko": "성경은 교회를 '그리스도의 몸'이라 부르지만, '교회'로 번역된 원래의 단어는 '구속받은 자들의 모임의 교제'를 뜻합니다.",
+      "vocab": [
+        {
+          "word": "assemblage",
+          "mean": "모임, 집합체"
+        },
+        {
+          "word": "redeemed",
+          "mean": "구원받은 자들, 구속받은 자들"
+        },
+        {
+          "word": "communion",
+          "mean": "교제, 일치, 친교"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "'the word [which is] translated church'에서 과거분사절이 앞의 'word'를 수식하며 헬라어 '에클레시아(ekklesia)'의 본래적 의미를 해설합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "교회는 특정 종교 제도나 건물이 아니라, 깨어남(Redemption)을 경험한 영혼들의 신비적 통합체임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "It’s the assemblage of those whose building is finished.",
+      "ko": "그것은 성전 완성을 이뤄낸 이들의 집합체입니다.",
+      "vocab": [
+        {
+          "word": "building",
+          "mean": "건축, 성전"
+        },
+        {
+          "word": "finished",
+          "mean": "완성된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "소유격 관계대명사 'whose'가 이끄는 형용사절이 'those'를 수식하여 내면의 성전을 완성한 상태의 인격체들을 가리킵니다."
+        }
+      ]
+    },
+    {
+      "en": "Playing the part of the receiver, we are the one being who is the builder.",
+      "ko": "수용자의 역할을 수행하고 있는 우리는, 곧 그 성전을 짓는 건축자이자 단 하나의 존재입니다.",
+      "vocab": [
+        {
+          "word": "receiver",
+          "mean": "수용자, 받으시는 이"
+        },
+        {
+          "word": "builder",
+          "mean": "건축자, 창조자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "분사구문 'Playing the part of...'로 시작하여, 주절의 주어 'we'가 단순한 피조물(receiver)이 아니라 동시에 창조주/건축자(builder)라는 신비적 일치성을 나타냅니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "우리는 표면적으로는 신의 은혜를 받는 자(receiver)로 보이지만, 본질적으로는 내면의 의식으로서 스스로를 창조하는 유일한 자(the builder)이자 '상상력' 그 자체입니다."
+        }
+      ]
+    },
+    {
+      "en": "Finding Caleb, you (as Joshua, who is Jesus) are led into the Promised Land, as scripture is fulfilled.",
+      "ko": " 갈렙을 발견할 때, 당신은(예수이기도 한 여호수아로서) 성경이 성취됨에 따라 약속의 땅으로 인도됩니다.",
+      "vocab": [
+        {
+          "word": "Joshua",
+          "mean": "여호수아 (히브리어로 예수와 동일한 이름 'Jeshua')"
+        },
+        {
+          "word": "Promised Land",
+          "mean": "약속의 땅"
+        },
+        {
+          "word": "fulfill",
+          "mean": "성취하다, 이룰 성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "'as Joshua, who is Jesus'에서 동격 및 관계대명사 삽입절을 활용해 여호수아와 예수가 동일한 영적 인물임을 설명합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "여호수아(Joshua)와 예수(Jesus)는 동일한 히브리어 이름(Yehoshua)으로, 약속의 땅(상상의 성취 상태/신성)에 진입하는 주체인 인간의 진정한 자아(상상력)를 상징합니다."
+        }
+      ]
+    },
+    {
+      "en": "Having shone like the sun in order to lead you in, Caleb disappears leaving Jesus only.",
+      "ko": "당신을 약속의 땅으로 인도하기 위해 태양처럼 빛을 발한 뒤, 갈렙은 사라지고 오직 예수만 남게 됩니다.",
+      "vocab": [
+        {
+          "word": "shone",
+          "mean": "빛났다 (shine의 과거/과거분사)"
+        },
+        {
+          "word": "disappear",
+          "mean": "사라지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "완료분사구문 'Having shone...'은 주절의 시제보다 앞선 행동을 나타내며, 현재분사구문 'leaving Jesus only'는 결과/부대상황을 표현합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "갈렙(믿음과 탐지자의 상징)은 인도자로서 임무를 마치면 사라지고, 마침내 내면의 오직 유일한 실체인 '예수(상상력)'만이 영원한 주체로 남게 됩니다."
+        }
+      ]
+    },
+    {
+      "en": "And who is Jesus?",
+      "ko": "그렇다면 예수는 누구입니까?",
+      "vocab": [
+        {
+          "word": "Jesus",
+          "mean": "예수"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "독자의 주의를 집중시키고 핵심 메시지를 던지는 수사학적 의문문입니다."
+        }
+      ]
+    },
+    {
+      "en": "Your own wonderful human imagination!",
+      "ko": "바로 당신 자신의 놀라운 인간 상상력입니다!",
+      "vocab": [
+        {
+          "word": "human imagination",
+          "mean": "인간의 상상력"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구문 해석",
+          "desc": "앞선 질문에 대한 명료하고 강력한 감탄문 형태의 답으로, 네빌 핵심 교리를 단언합니다."
+        },
+        {
+          "tag": "네빌 사상",
+          "desc": "네빌 고다드 형상화 철학의 정점: 예수는 외부의 역사적 인물이 아니라 인간 내면에 존재하는 하나님 본체이자 '경이로운 인간 상상력(Human Imagination)' 그 자체입니다."
+        }
+      ]
+    },
+    {
+      "en": "Now let me share another story.",
+      "ko": "이제 다른 이야기를 하나 나누어 드리겠습니다.",
+      "vocab": [
+        {
+          "word": "share",
+          "mean": "나누다, 이야기하다"
+        },
+        {
+          "word": "another",
+          "mean": "또 다른"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Let + 목적어 + 동사원형",
+          "desc": "청중에게 새로운 사례나 비전을 제시할 때 쓰는 네빌 고다드의 전형적인 도입 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "Three years ago, in a dream, this lady saw a man who embodied everything she could ever desire.",
+      "ko": "3년 전, 이 숙자는 꿈속에서 그녀가 바랄 수 있는 모든 것을 체현한 한 남자를 보았습니다.",
+      "vocab": [
+        {
+          "word": "embody",
+          "mean": "체현하다, 구현하다"
+        },
+        {
+          "word": "desire",
+          "mean": "갈망하다, 소망"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "관계대명사절",
+          "desc": "a man을 선행사로 하는 who절이 남자의 속성을 설명하며, 네빌 사상에서 외부의 대상은 내면의 상태를 비추는 거울임을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "They fell in love and an engagement was announced.",
+      "ko": "두 사람은 사랑에 빠졌고 약혼이 발표되었습니다.",
+      "vocab": [
+        {
+          "word": "fall in love",
+          "mean": "사랑에 빠지다"
+        },
+        {
+          "word": "engagement",
+          "mean": "약혼"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "수동태",
+          "desc": "was announced를 통해 약혼이라는 내면의 확증이 객관적 사실처럼 다가왔음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "Then, thinking she was awake, she put on her nightgown and retired in the hope that he would join her.",
+      "ko": "그러고 나서 그녀는 자신이 깨어있다고 생각하며 잠옷을 입고 그가 자신에게 합류하기를 바라는 마음으로 잠자리에 들었습니다.",
+      "vocab": [
+        {
+          "word": "nightgown",
+          "mean": "잠옷"
+        },
+        {
+          "word": "retire",
+          "mean": "잠자리에 들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "분사구문",
+          "desc": "thinking she was awake는 의식의 상태, 즉 꿈과 현실의 경계가 모호한 영적 각성의 상태를 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "But as he entered the room the man shook his head and said: “Not yet, but I will return.”",
+      "ko": "그러나 그 남자가 방으로 들어서며 고개를 저리대며 말했습니다. “아직은 아니지만, 내가 다시 돌아오겠노라.”",
+      "vocab": [
+        {
+          "word": "shake one's head",
+          "mean": "고개를 젓다"
+        },
+        {
+          "word": "not yet",
+          "mean": "아직은 아님"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "시간의 접속사 as",
+          "desc": "남자가 등장하는 시점의 영적 드라마를 생생하게 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "This month the same man returned and implied by his look that he had come to complete the promise of marriage.",
+      "ko": "이번 달에 그 동일한 남자가 돌아왔고, 그의 눈빛으로 결혼의 약속을 완성하기 위해 왔음을 암시했습니다.",
+      "vocab": [
+        {
+          "word": "imply",
+          "mean": "암시하다"
+        },
+        {
+          "word": "complete",
+          "mean": "완성하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "that절 목적어",
+          "desc": "그의 존재와 눈빛이 내면의 약속 성취(약속의 완성)를 의미함을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "I can tell her that, although it hasn’t been accomplished, she had the perfect revelation of that which is coming to her.",
+      "ko": "비록 그것이 완전히 성취되지는 않았을지라도, 그녀에게 다가오고 있는 것에 대한 완전한 계시를 얻었다고 나는 그녀에게 말해줄 수 있습니다.",
+      "vocab": [
+        {
+          "word": "accomplish",
+          "mean": "성취하다"
+        },
+        {
+          "word": "revelation",
+          "mean": "계시"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "양보절 although",
+          "desc": "현상계에서의 성취보다 내면의 계시(영적 체험)가 본질임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "She now has the assurance that: “I will come again and receive you into myself, that where I am there, you shall be also.”",
+      "ko": "그녀는 이제 다음과 같은 확신을 가지고 있습니다. “내가 다시 와서 너희를 내게로 영접하여 나 있는 곳에 너희도 있게 하리라.”",
+      "vocab": [
+        {
+          "word": "assurance",
+          "mean": "확신"
+        },
+        {
+          "word": "receive",
+          "mean": "영접하다, 받아들이다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "성경 인용구",
+          "desc": "요한복음의 말씀을 인용하여, 인간 의식(그리스도)이 인간 영혼과 하나로 결합하는 신비적 연합을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "This is all beautiful symbolism.",
+      "ko": "이것은 모두 아름다운 상징주의입니다.",
+      "vocab": [
+        {
+          "word": "symbolism",
+          "mean": "상징주의"
+        },
+        {
+          "word": "beautiful",
+          "mean": "아름다운"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "지시대명사 this",
+          "desc": "앞서 언급한 꿈의 모든 과정이 문자적 사건이 아니라 영적 진리를 담은 상징임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "This lady is not about to be married in this world of ours to a flesh and blood man of such magnitude.",
+      "ko": "이 숙자는 우리의 이 세상에서 그러한 위대한 규모의 혈과 육을 가진 남자와 결혼하려는 것이 아닙니다.",
+      "vocab": [
+        {
+          "word": "flesh and blood",
+          "mean": "혈과 육, 인간의 육신"
+        },
+        {
+          "word": "magnitude",
+          "mean": "규모, 위대함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "be not about to",
+          "desc": "~하려는 참이 아니다, 즉 외적인 세속적 결혼을 의미하는 것이 아님을 명확히 합니다."
+        }
+      ]
+    },
+    {
+      "en": "No, he is the symbol of the being spoken of in Isaiah: “Your maker is your husband, the Lord of Hosts is his name.”",
+      "ko": "아니요, 그는 이사야서에서 말하는 존재의 상징입니다. “너를 지으신 이가 네 남편이시라 그의 이름은 만군의 여호와시니라.”",
+      "vocab": [
+        {
+          "word": "maker",
+          "mean": "조물주, 지으신 이"
+        },
+        {
+          "word": "Lord of Hosts",
+          "mean": "만군의 여호와"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "구약 성경 인용",
+          "desc": "인간의 궁극적 남편이자 창조주는 외적인 타인이 아니라 인간의 내면적 존재(하나님/자아)임을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "The promise is being kept in her.",
+      "ko": "그 약속이 그녀 안에서 지켜지고 있습니다.",
+      "vocab": [
+        {
+          "word": "promise",
+          "mean": "약속"
+        },
+        {
+          "word": "keep",
+          "mean": "지키다, 성취하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "현재진행 수동태",
+          "desc": "약속(The Promise)이 그녀의 의식 속에서 지금 이 순간에도 실현되고 있음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "and one day she will turn around within herself and become that living temple of the Risen Lord.",
+      "ko": "그리고 언젠가 그녀는 그녀 내면에서 돌이켜 부활하신 주의 살아있는 성전이 될 것입니다.",
+      "vocab": [
+        {
+          "word": "turn around",
+          "mean": "돌아서다, 회개하다(Metanoia)"
+        },
+        {
+          "word": "Risen Lord",
+          "mean": "부활하신 주"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "내면의 전환 (Metanoia)",
+          "desc": "외면을 향하던 시선을 내면(자아)으로 돌리는 것(turn around)이 곧 네빌이 말하는 구원과 성전의 완성임을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "I have seen the temple, and when I leave the garment relative to this age I will enter an entirely different age.",
+      "ko": "나는 성전을 보았으니, 이 시대에 속한 옷(육체)을 벗어던질 때 전적으로 다른 시대 속으로 들어갈 것입니다.",
+      "vocab": [
+        {
+          "word": "temple",
+          "mean": "성전, 영적 실체"
+        },
+        {
+          "word": "garment",
+          "mean": "의복, (네빌 고다드 사상에서는) 인간의 육체"
+        },
+        {
+          "word": "relative to",
+          "mean": "~에 관련된, ~에 속한"
+        },
+        {
+          "word": "entirely",
+          "mean": "전적으로, 완전히"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville Mysticism",
+          "desc": "'garment(옷)'는 네빌 고다드 형이상학에서 영혼이 3차원 물질세계의 경험을 위해 입고 있는 인간의 신체/육상을 비유합니다."
+        },
+        {
+          "tag": "Time Clause",
+          "desc": "'when I leave...'는 시간 부사절로, 육체의 죽음을 단순히 소멸이 아닌 다른 차원(age)으로의 이동으로 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "And like Paul it is my desire to depart and be with Christ, but it is more important at the moment to remain and encourage you, even though you are fighting against principalities, powers of darkness, and all the horrors of the world.",
+      "ko": "바울처럼 떠나서 그리스도와 함께 있고 싶은 것이 나의 열망이나, 여러분이 정사와 어둠의 권세들과 세상의 모든 공포에 맞서 싸우고 있다 할지라도, 지금 이 순간에는 남아 여러분을 격려하는 것이 더 중요합니다.",
+      "vocab": [
+        {
+          "word": "depart",
+          "mean": "떠나다, (육신을 떠나) 육체적 죽음을 맞다"
+        },
+        {
+          "word": "principalities",
+          "mean": "정사(政肆), 영적 통치자들"
+        },
+        {
+          "word": "powers of darkness",
+          "mean": "어둠의 권세들"
+        },
+        {
+          "word": "horrors",
+          "mean": "공포, 참상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "It-to dummy subject",
+          "desc": "'it is my desire to depart...'와 'it is more important ... to remain'에서 'it'은 가주어, 'to 이하'가 진주어 구문입니다."
+        },
+        {
+          "tag": "Biblical Allusion",
+          "desc": "빌립보서 1장 23-24절 및 에베소서 6장 12절의 사도 바울의 고백을 인용하여, 영적 세계로 복귀하는 것보다 성도들을 일깨우는 미션의 중요성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "But I have seen the building being constructed for you, not by another, but by your deeper self, who is God the Father.",
+      "ko": "하지만 나는 여러분을 위해 지어지고 있는 건물을 보았으니, 이는 다른 이에 의해서가 아니라 바로 하나님 아버지이신 여러분의 더 깊은 자아에 의해 건설되고 있습니다.",
+      "vocab": [
+        {
+          "word": "construct",
+          "mean": "건설하다, 지어 올리다"
+        },
+        {
+          "word": "deeper self",
+          "mean": "더 깊은 자아, 참자아(상상력/아이엠)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Not A, but B",
+          "desc": "'not by another, but by your deeper self' 구문으로, 외적 타인이 아닌 내면의 참자아가 영적 성전(건물)의 창조주임을 강조합니다."
+        },
+        {
+          "tag": "Apposition / Relative Clause",
+          "desc": "'your deeper self, who is God the Father'는 참자아와 하나님 아버지를 동격 처리하며 네빌의 핵심 사상(인간 내면의 상상력이 곧 하나님)을 드러냅니다."
+        }
+      ]
+    },
+    {
+      "en": "In 1952, while living in New York City, I had a thirst that only an experience of God could quench.",
+      "ko": "1952년 뉴욕 시에 살 때, 나는 오직 하나님을 경험해야만 해소될 수 있는 갈증을 느꼈습니다.",
+      "vocab": [
+        {
+          "word": "thirst",
+          "mean": "갈증, 영적 열망"
+        },
+        {
+          "word": "quench",
+          "mean": "(갈증을) 해소하다, 끄다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Participle Construction",
+          "desc": "'while living in...'은 접축사 'while'이 생략되지 않은 분사구문으로 '뉴욕에 살던 동안'을 나타냅니다."
+        },
+        {
+          "tag": "Relative Clause",
+          "desc": "'that only an experience of God could quench'는 목적격 관계대명사 절로 앞의 'a thirst'를 수식합니다."
+        }
+      ]
+    },
+    {
+      "en": "“As the hart panteth after the waterways, so panteth my soul after thee, Oh God.”",
+      "ko": "“사슴이 시냇물을 찾기에 갈급함 같이 내 영혼이 주를 찾기에 갈급하니이다, 오 하나님이시여.”",
+      "vocab": [
+        {
+          "word": "hart",
+          "mean": "수사슴 (고어)"
+        },
+        {
+          "word": "panteth",
+          "mean": "갈급하다, 헐떡이다 (pant의 3인칭 단수 고어)"
+        },
+        {
+          "word": "waterways",
+          "mean": "시냇물, 물줄기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "As ... so ... Correlative",
+          "desc": "'As S V, so V S' 구문으로 '~함과 같이 ...하다'라는 대칭적 시적 비유 표현입니다. KJV 성경 특유의 문체입니다."
+        }
+      ]
+    },
+    {
+      "en": "Then one night out of the blue I found myself fulfilling the 42nd Psalm: “These things I remember, as I pour out my soul. How I went with the throng and led them in procession to the house of God.”",
+      "ko": "그러던 어느 날 밤, 느닷없이 나는 내 자신이 시편 42편을 성취하고 있음을 깨달았습니다. “내가 내 영혼을 쏟아내며 이러한 일들을 기억하나니, 내가 무리와 함께 행진하여 그들을 하나님의 집으로 인도하였도다.”",
+      "vocab": [
+        {
+          "word": "out of the blue",
+          "mean": "느닷없이, 갑자기"
+        },
+        {
+          "word": "fulfill",
+          "mean": "성취하다, 실현하다"
+        },
+        {
+          "word": "pour out",
+          "mean": "쏟아붓다, 토로하다"
+        },
+        {
+          "word": "throng",
+          "mean": "무리, 군중"
+        },
+        {
+          "word": "procession",
+          "mean": "행진, 순례의 무리"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Find + Object + Present Participle",
+          "desc": "'found myself fulfilling...'은 5형식 구문으로 '자기 자신이 성취하고 있는 상태임을 알아차리다'라는 영적 체험의 자각을 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "That night I found myself leading an enormous procession toward the house of God.",
+      "ko": "그날 밤 나는 거대한 행렬을 이끌고 하나님의 집을 향해 나아가고 있는 자신을 발견했다.",
+      "vocab": [
+        {
+          "word": "enormous",
+          "mean": "거대한"
+        },
+        {
+          "word": "procession",
+          "mean": "행렬"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "find oneself +ing",
+          "desc": "~하고 있는 자신을 발견하다 (무의식적 환상의 세계로 진입함을 나타냄)"
+        }
+      ]
+    },
+    {
+      "en": "It was still in the distance, but as I led them a voice rang out: “And God walks with them.”",
+      "ko": "그 집은 여전히 저 멀리 있었지만, 내가 그들을 인도할 때 한 목소리가 울려 퍼졌다. “그리고 하나님이 그들과 함께 걸으신다.”",
+      "vocab": [
+        {
+          "word": "in the distance",
+          "mean": "저 멀리에"
+        },
+        {
+          "word": "rang out",
+          "mean": "울려 퍼지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct Quotation",
+          "desc": "영적 비전 속에서 들려오는 계시의 음성"
+        }
+      ]
+    },
+    {
+      "en": "A woman at my side questioned the voice, saying: “If God walks with us, where is he?”",
+      "ko": "내 곁에 있던 한 여인이 그 음성에 의문을 품으며 말했다. “만약 하나님이 우리와 함께 걸으신다면, 그분이 어디에 계십니까?”",
+      "vocab": [
+        {
+          "word": "at my side",
+          "mean": "내 곁에"
+        },
+        {
+          "word": "question",
+          "mean": "의문을 품다, 질문하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Present Participle",
+          "desc": "saying은 동시 동작을 나타내는 분사구문"
+        }
+      ]
+    },
+    {
+      "en": "And the voice replied: “At your side.”",
+      "ko": "그러자 음성이 대답했다. “너의 곁에.”",
+      "vocab": [
+        {
+          "word": "replied",
+          "mean": "대답했다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Ellipsis",
+          "desc": "주어와 동사가 생략된 간결한 응답으로 현존(I AM)의 즉각성을 강조"
+        }
+      ]
+    },
+    {
+      "en": "Looking at me and seeing a man of flesh and blood, she said: “You mean Neville is God?” and the voice replied: “Yes, in the act of waking.”",
+      "ko": "나를 바라보고 살과 피를 가진 한 남자를 보며 그녀가 말했다. “네빌이 하나님이라는 말씀인가요?” 그러자 음성이 대답했다. “그렇다, 깨어나는 과정 속에서.”",
+      "vocab": [
+        {
+          "word": "flesh and blood",
+          "mean": "살과 피, 인간적인 육신"
+        },
+        {
+          "word": "in the act of",
+          "mean": "~하는 도중에, ~하는 행위 안에서"
+        },
+        {
+          "word": "waking",
+          "mean": "깨어남, 각성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville Goddard's Core Teaching",
+          "desc": "인간 네빌은 하나님이 잠에서 깨어나고 있는 상태임을 드러냄"
+        }
+      ]
+    },
+    {
+      "en": "Then the voice spoke only to me, saying: “I laid myself down within you to sleep and as I slept I dreamed a dream.",
+      "ko": "그러더니 음성은 오직 나에게만 말을 건네며 말했다. “나는 잠들기 위해 네 안에 나 자신을 뉘었으며, 내가 잠든 동안 꿈을 꾸었다.",
+      "vocab": [
+        {
+          "word": "lay down to sleep",
+          "mean": "잠자리에 눕다"
+        },
+        {
+          "word": "dream a dream",
+          "mean": "꿈을 꾸다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Creation Metaphor",
+          "desc": "하나님이 인간의 형태(지성) 안으로 내려와 잠들었다는 네빌 고다드의 핵심 신비주의 우주론"
+        }
+      ]
+    },
+    {
+      "en": "I dreamed…” and suddenly I knew that he was dreaming he was me.",
+      "ko": "나는 꿈을 꾸었노라…” 그리고 순간 나는 그분이 바로 나라고 꿈꾸고 계신다는 것을 알게 되었다.",
+      "vocab": [
+        {
+          "word": "suddenly",
+          "mean": "갑자기, 문득"
+        },
+        {
+          "word": "knew",
+          "mean": "깨달았다, 알았다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Epiphany",
+          "desc": "인간의 자아(I AM)가 곧 창조주 하나님 자신임을 깨닫는 각성의 순간"
+        }
+      ]
+    },
+    {
+      "en": "At that moment memory returned, and I became six vortices, which I felt enter my hands, my feet, my head, and my side.",
+      "ko": "그 순간 기억이 되살아났고, 나는 여섯 개의 소용돌이가 되었으며, 그것이 나의 손과 발, 머리와 옆구리로 들어오는 것을 느꼈다.",
+      "vocab": [
+        {
+          "word": "memory returned",
+          "mean": "기억이 돌아왔다 (기원과 정체성의 회복)"
+        },
+        {
+          "word": "vortices",
+          "mean": "소용돌이들 (vortex의 복수형)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mystical Experience",
+          "desc": "십자가 처형의 상처(손, 발, 옆구리, 머리)에 대응하는 영적 에너지의 유입"
+        }
+      ]
+    },
+    {
+      "en": "That was when I knew the ecstasy of the crucifixion.",
+      "ko": "그때가 바로 내가 십자가 처형의 환희를 알게 된 순간이었다.",
+      "vocab": [
+        {
+          "word": "ecstasy",
+          "mean": "환희, 황홀경"
+        },
+        {
+          "word": "crucifixion",
+          "mean": "십자가 처형"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Paradoxical Term",
+          "desc": "고통의 상징인 십자가를 '환희(ecstasy)'로 표현하여 깨달음의 성스러움을 강조"
+        }
+      ]
+    },
+    {
+      "en": "Paul, in his letter to the Romans, divided the tenses, saying: “If we have been united with him in a death like his, we shall certainly be united with him in a resurrection like his.”",
+      "ko": "바울은 로마서에 보내는 편지에서 시제를 나누어 이렇게 말했다. “만일 우리가 그의 죽으심과 같은 모양으로 연합한 자가 되었으면 또한 그의 부활과 같은 모양으로 연합한 자도 되리라.”",
+      "vocab": [
+        {
+          "word": "tenses",
+          "mean": "시제들"
+        },
+        {
+          "word": "united",
+          "mean": "연합된, 일치된"
+        },
+        {
+          "word": "resurrection",
+          "mean": "부활"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Quotation",
+          "desc": "사도바울의 서신(로마서 6장 5절)을 인용하여 십자가 처형(과거)과 부활(미래/현재)의 관계를 설명"
+        }
+      ]
+    },
+    {
+      "en": "The crucifixion is past.",
+      "ko": "십자가 처형은 이미 지나갔다.",
+      "vocab": [
+        {
+          "word": "past",
+          "mean": "지나간, 과거의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Interpretation",
+          "desc": "역사적 사건이 아니라 인간 안에서 이미 완수된 영적 드라마임을 선언"
+        }
+      ]
+    },
+    {
+      "en": "“He chose us in him before the foundation of the world.”",
+      "ko": "“창세 전에 그리스도 안에서 우리를 택하사.”",
+      "vocab": [
+        {
+          "word": "foundation",
+          "mean": "기초, 창립"
+        },
+        {
+          "word": "before the foundation of the world",
+          "mean": "창세 전에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Quotation",
+          "desc": "에베소서 1장 4절 인용, 육체적 탄생 이전의 신성한 기원 강조"
+        }
+      ]
+    },
+    {
+      "en": "If this is true, then the universal Christ gave us himself, for did he not say: “No man takes my life, I lay it down myself.",
+      "ko": "만약 이것이 사실이라면, 보편적 그리스도께서 우리에게 자신을 주신 것이다. 그분이 이렇게 말씀하시지 않았는가? “아무도 내게서 목숨을 빼앗는 자가 없다, 내가 스스로 그것을 버린다.",
+      "vocab": [
+        {
+          "word": "universal Christ",
+          "mean": "보편적 그리스도 (내면의 신성)"
+        },
+        {
+          "word": "lay down",
+          "mean": "내려놓다, 버리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Rhetorical Question",
+          "desc": "성경 말씀을 인용하여 그리스도의 자발적인 자기 희생(인간화)을 증명"
+        }
+      ]
+    },
+    {
+      "en": "I have the power to lay it down and the power to lift it up again.”",
+      "ko": "나에게는 그것을 버릴 권세도 있고 다시 얻을 권세도 있다.”",
+      "vocab": [
+        {
+          "word": "power",
+          "mean": "권세, 능력"
+        },
+        {
+          "word": "lift up",
+          "mean": "들어 올리다, 되찾다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Quotation",
+          "desc": "요한복음 10장 18절의 변형 인용으로, 인간 안의 I AM이 곧 죽음과 부활의 전능자임을 확증"
+        }
+      ]
+    },
+    {
+      "en": "And we are laid down with him, because he chose us in him before the foundation of the world.",
+      "ko": "그리고 우리는 그와 함께 뉘어져 있습니다. 왜냐하면 그가 세상의 기초가 놓이기 전에 그 안에서 우리를 택하셨기 때문입니다.",
+      "vocab": [
+        {
+          "word": "foundation of the world",
+          "mean": "세상의 기초, 창세"
+        },
+        {
+          "word": "chosen",
+          "mean": "선택된, 택함 받은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Subordinate Clause",
+          "desc": "because절을 통해 인간의 구원과 존재의 근거가 창세 전의 신적 선택에 있음을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "So, if you are united with him in a death like his, you will certainly be united with him in a resurrection like his.",
+      "ko": "그러므로 만약 여러분이 그의 죽음과 같은 죽음으로 그와 연합하였다면, 여러분은 분명히 그의 부활과 같은 부활로 그와 연합하게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "united",
+          "mean": "연합된, 하나가 된"
+        },
+        {
+          "word": "resurrection",
+          "mean": "부활"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conditional Sentence",
+          "desc": "그리스도의 죽음과 부활은 역사적 사건이 아니라 인간의 의식 안에서 체험되는 심리적·영적 실재임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "I know this is true, for he was resurrected in me, confirming the story of scripture.",
+      "ko": "나는 이것이 진실임을 아노라. 왜냐하면 그분이 내 안에서 부활하시어 성경의 이야기를 확증해 주셨기 때문입니다.",
+      "vocab": [
+        {
+          "word": "resurrected",
+          "mean": "부활한"
+        },
+        {
+          "word": "confirm",
+          "mean": "확증하다, 증명하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Personal Testimony",
+          "desc": "네빌 고다드의 핵심 가르침으로, 성경은 외부 역사책이 아니라 인간 의식 안에서 성취되는 심리적 드라마라는 점을 자신의 체험으로 증언합니다."
+        }
+      ]
+    },
+    {
+      "en": "This is how the structure is enhanced and grows in God.",
+      "ko": "이것이 바로 그 건축물이 하나님 안에서 드높아지고 자라나는 방식입니다.",
+      "vocab": [
+        {
+          "word": "structure",
+          "mean": "건축물, 구조물 (성전인 인간의 의식)"
+        },
+        {
+          "word": "enhanced",
+          "mean": "높아진, 강화된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphor",
+          "desc": "인간 consciousness(의식)의 성장을 영적 성전의 건축으로 비유하고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "And when the final curtain comes down and the temple is perfect, you will be God the Father and I will be God the Father, yet none of us will lose our identity!",
+      "ko": "그리고 마침내 마지막 막이 내려지고 성전이 완성되었을 때, 당신도 부활하신 하나님 아버지가 될 것이요 나도 하나님 아버지가 될 것입니다. 그러나 우리 중 누구도 자신의 정체성을 잃지 않을 것입니다!",
+      "vocab": [
+        {
+          "word": "final curtain",
+          "mean": "마지막 막, 연극의 종료"
+        },
+        {
+          "word": "identity",
+          "mean": "정체성, 개성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mystical Realization",
+          "desc": "궁극적인 영적 깨달음은 인간이 신(하나님 아버지)과 하나가 되면서도 각자의 개별적 자아(identity)를 유지하는 상태임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "Now I ask you to continue to test your creative power by practicing revision.",
+      "ko": "이제 나는 여러분에게 개정(Revision)을 실천함으로써 여러분의 창조적 힘을 계속해서 시험해 볼 것을 당부합니다.",
+      "vocab": [
+        {
+          "word": "creative power",
+          "mean": "창조적 힘 (상상력)"
+        },
+        {
+          "word": "revision",
+          "mean": "개정, 수정 (네빌의 핵심 상상 기법)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Imperative / Request",
+          "desc": "과거의 기억이나 불쾌한 상황을 상상력으로 재구성하는 '개정 법(The Law of Revision)'의 실천을 촉구합니다."
+        }
+      ]
+    },
+    {
+      "en": "If you hear something that is unlovely, don’t accept it, but instantly revise it.",
+      "ko": "만약 당신이 사랑스럽지 못한 소리를 듣거든, 그것을 받아들이지 말고 즉시 그것을 개정하십시오.",
+      "vocab": [
+        {
+          "word": "unlovely",
+          "mean": "사랑스럽지 않은, 불쾌한"
+        },
+        {
+          "word": "instantly",
+          "mean": "즉시, 즉각적으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conditional & Imperative",
+          "desc": "부정적인 감각적 증거에 굴복하지 않고 즉각적으로 내면의 상상을 통해 상황을 교정하는 멘탈 기법을 지시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Hear the words that ought to have been spoken and persuade yourself, to the best of your ability, that it is so.",
+      "ko": "마땅히 들었어야 할 말을 듣고, 당신의 능력을 다해 그것이 사실이라고 스스로를 설득하십시오.",
+      "vocab": [
+        {
+          "word": "ought to have been spoken",
+          "mean": "말해졌어야 했던"
+        },
+        {
+          "word": "persuade",
+          "mean": "설득하다, 확신시키다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Subjunctive / Moral Obligation",
+          "desc": "이상적인 대화나 상황을 내면에서 청각화하고, 그것을 진실로 확신하는 상상 작업의 구체적 방법을 제시합니다."
+        }
+      ]
+    },
+    {
+      "en": "What would it matter if you owned the world tonight and departed tomorrow to find yourself working as a fry cook, serving up flap cakes?",
+      "ko": "오늘 밤 이 세상 전부를 소유했다가 내일 떠나서 튀김 요리사로 일하며 팬케이크를 구워내고 있는 자신을 발견하게 된들 그것이 무슨 대수겠습니까?",
+      "vocab": [
+        {
+          "word": "fry cook",
+          "mean": "튀김 요리사"
+        },
+        {
+          "word": "flap cakes",
+          "mean": "팬케이크"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Rhetorical Question",
+          "desc": "물질적 부나 세상의 지위는 일시적인 환영에 불과하며, 의식의 상태가 본질임을 역설합니다."
+        }
+      ]
+    },
+    {
+      "en": "Live your life fully while here, but remember you can’t take your money with you.",
+      "ko": "이 땅에 있는 동안 당신의 삶을 충만하게 누리십시오. 그러나 돈은 가지고 갈 수 없음을 기억하십시오.",
+      "vocab": [
+        {
+          "word": "fully",
+          "mean": "충만하게, 온전히"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Admonition",
+          "desc": "세속적 삶을 부정하지 않고 온전히 경험하되, 물질에 매이지 않는 영적 초연함을 가르칩니다."
+        }
+      ]
+    },
+    {
+      "en": "So, enjoy the things of this world and apply this wonderful law for yourself and others, for imagining truly does create reality.",
+      "ko": "그러므로 이 세상의 것들을 누리고, 이 놀라운 법칙을 자신과 남들을 위해 적용하십시오. 상상하는 것은 진정으로 현실을 창조하기 때문입니다.",
+      "vocab": [
+        {
+          "word": "wonderful law",
+          "mean": "놀라운 법칙 (상상의 법칙)"
+        },
+        {
+          "word": "imagining",
+          "mean": "상상하기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Causal Clause",
+          "desc": "상상력이 곧 창조의 유일한 원동력이라는 네빌 사상의 대원칙(Imagining creates reality)을 재확인합니다."
+        }
+      ]
+    },
+    {
+      "en": "And remember: you are not wrestling against flesh and blood, but against principalities and powers and darkness of the rulers of this world and spiritual evil in heavenly places.",
+      "ko": "그리고 기억하십시오. 여러분이 싸우는 대상은 혈과 육이 아니라, 통치자들과 권세들과 이 어둠의 세상 주관자들과 하늘들에 있는 영적 악의 세력들입니다.",
+      "vocab": [
+        {
+          "word": "flesh and blood",
+          "mean": "혈과 육, 인간 육체"
+        },
+        {
+          "word": "principalities and powers",
+          "mean": "정사와 권세 (성경 용어)"
+        },
+        {
+          "word": "heavenly places",
+          "mean": "하늘들에 있는 곳, 영적 영역"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion",
+          "desc": "에베소서의 구절을 인용하여, 외적인 인간과의 투쟁이 아니라 내면의 관념(상념) 및 심리적 상태와의 싸움임을 폭로합니다."
+        }
+      ]
+    },
+    {
+      "en": "And one day, you who have fallen into division will resurrect into unity!",
+      "ko": "그리고 언젠가, 분열 속으로 떨어졌던 여러분은 통일(하나됨) 안으로 부활하게 될 것입니다!",
+      "vocab": [
+        {
+          "word": "division",
+          "mean": "분열 (엘로힘의 파편화)"
+        },
+        {
+          "word": "resurrect into unity",
+          "mean": "하나됨 안으로 부활하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Esoteric Eschatology",
+          "desc": "인간의 영적 여정은 궁극적으로 분열된 다중적 자아에서 벗어나 근원인 신적 하나(Unity, Elohim)로 돌아가는 것임을 선포하며 글을 맺습니다."
+        }
+      ]
+    },
+    {
+      "en": "Now let us go into the silence.",
+      "ko": "이제 우리 함께 침묵 속으로 들어갑시다.",
+      "vocab": [
+        {
+          "word": "silence",
+          "mean": "침묵, 고요 (네빌 사상에서 에고의 활동을 멈추고 의식의 심층으로 들어가는 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Let's 구문",
+          "desc": "청유형으로 청중을 명상과 내면의 상태로 이끄는 네빌 고다드의 전형적인 강의 도입부 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "Neville Goddard the author and teacher of the metaphysical messages and secrets from the Bible which help students to lead a meaningful, wholesome and rewarding Life by using their wonderful IMAGINATION.",
+      "ko": "네빌 고다드는 학생들이 자신의 놀라운 상상력을 사용하여 의미 있고 건전하며 보람 있는 삶을 영위하도록 돕는, 성경 속 형이상학적 메시지와 비밀들의 저자이자 교사였습니다.",
+      "vocab": [
+        {
+          "word": "metaphysical",
+          "mean": "형이상학적의, 물질 세계를 초월한 의식의 영역"
+        },
+        {
+          "word": "wholesome",
+          "mean": "건전한, 유익한"
+        },
+        {
+          "word": "imagination",
+          "mean": "상상력 (네빌 사상의 핵심으로, 인간 안에 내재된 신성한 창조력)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "동격",
+          "desc": "'Neville Goddard'와 'the author and teacher'가 동격으로 연결되어 그의 정체성을 설명합니다."
+        },
+        {
+          "tag": "관계대명사절",
+          "desc": "which절이 'metaphysical messages and secrets'를 수식하여 성경 비밀의 목적을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Neville was the author of 11 books and left a legacy of audio lectures for us all to learn from.",
+      "ko": "네빌은 11권의 책을 저술했으며, 우리 모두가 배우고 익힐 수 있도록 음성 강의라는 유산을 남겼습니다.",
+      "vocab": [
+        {
+          "word": "legacy",
+          "mean": "유산, 남겨진 것"
+        },
+        {
+          "word": "audio lectures",
+          "mean": "음성 강의 (그의 생생한 가르침이 담긴 녹음 파일들)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "병렬 구조",
+          "desc": "주어 Neville에 대해 동사 'was'와 'left'가 등위접속사 and로 연결되어 있습니다."
+        }
+      ]
+    }
   ]
 }
