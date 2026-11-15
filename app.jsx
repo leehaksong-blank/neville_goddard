@@ -20,7 +20,7 @@ const BOOKS = [
 
 // 2. 연도별 8기 분류 마스터 (era1.json ~ era8.json)
 const ERAS = [
-  { era: 1, title: "제1기 (1939 ~ 1953년)", sub: "초기 강연 & 법칙의 기초", startYear: 1939, endYear: 1953 },
+  { era: 1, title: "제1기 (1948 ~ 1953년)", sub: "초기 강연 & 법칙의 기초", startYear: 1939, endYear: 1953 },
   { era: 2, title: "제2기 (1954 ~ 1956년)", sub: "상상력과 수정 기법 확립", startYear: 1954, endYear: 1956 },
   { era: 3, title: "제3기 (1957 ~ 1959년)", sub: "법칙의 정점과 약속의 개시", startYear: 1957, endYear: 1959 },
   { era: 4, title: "제4기 (1960 ~ 1962년)", sub: "법칙과 약속의 공존", startYear: 1960, endYear: 1962 },
@@ -169,13 +169,102 @@ const BIBLE_BOOK_ORDER = {
   "revelation": 66, "revelations": 66, "요한계시록": 66, "계": 66
 };
 
+const INDEX_URLS = [
+  "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1",
+  "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2",
+  "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-3",
+  "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-4",
+  "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-5",
+  "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-6"
+];
+
+const KNOWN_YEARS = {
+  "Consciousness Is the Only Reality": 1948,
+  "No One to Change But Self": 1948,
+  "Assumptions Harden Into Fact": 1948,
+  "Thinking Fourth Dimensionally": 1948,
+  "Remain Faithful to Your Idea": 1948,
+  "At Your Command": 1948,
+  "Arise": 1951,
+  "Changing The Feeling of I": 1953,
+  "Changing the Feeling of I": 1953,
+  "Fundamentals": 1953,
+  "The Pruning Shears of Revision": 1954,
+  "Awakened Imagination Barabbas or Jesus": 1954,
+  "Barabbas or Jesus": 1954,
+  "Mental Diets": 1955,
+  "Seedtime and Harvest": 1956,
+  "Catch The Mood": 1959,
+  "Creation Faith": 1959,
+  "Awake o Sleeper 1": 1959,
+  "Awake o Sleeper 2": 1959,
+  "A Movement of Mind": 1960,
+  "An Inner Conviction": 1960,
+  "Before Abraham was I AM": 1960,
+  "Building Your Temple": 1961,
+  "Christ in Man": 1961,
+  "Christ in You": 1961,
+  "Conception": 1961,
+  "Control Your Inner Conversations": 1961,
+  "Biblical Language": 1962,
+  "Brazen Impudence": 1962,
+  "Christ Bears Our Sins": 1962,
+  "Consigned To Disobedience": 1962,
+  "The Pearl of Great Price": 1963,
+  "Blake On Religion": 1963,
+  "By Water And By Blood": 1964,
+  "Christ is Your Life": 1964,
+  "Christ Unveiled": 1964,
+  "All Things Exist": 1965,
+  "The Coin of Heaven": 1966,
+  "Be Imitators of God": 1966,
+  "Believe It In": 1966,
+  "A Lesson in Scripture": 1967,
+  "All Things Are Possible": 1967,
+  "All Things are Possible 1": 1967,
+  "All Things are Possible 2": 1967,
+  "A Parabolic Revelation": 1968,
+  "A Prophecy": 1968,
+  "A State Called Moses": 1968,
+  "Bear Ye One Another's Burdens": 1968,
+  "Behold The Dreamer Cometh": 1968,
+  "A Divine Event": 1969,
+  "A Movement Within God": 1969,
+  "A Riddle": 1969,
+  "All Powerful Human Word": 1969,
+  "All That is Divine": 1971,
+  "All That You Behold": 1970,
+  "An Assured Understanding": 1969,
+  "Believe In Him": 1969,
+  "Christmas - Man's Birth As God": 1969,
+  "Come o Blessed": 1970,
+  "Divine Signs": 1970,
+  "Election And Change Of Consciousness": 1969,
+  "Enter The Dream": 1970,
+  "Esau And Jacob": 1970
+};
+
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const normalizeStr = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
-const getEraByYear = (y) => {
-  if (!y) return 8;
-  const found = ERAS.find(e => y >= e.startYear && y <= e.endYear);
-  return found ? found.era : 8;
+const extractLectureYear = (text, title) => {
+  const sample = (title || "") + " " + (text || "").slice(0, 800);
+  const fourDigit = sample.match(/\b(19[3-6]\d|197[0-2])\b/);
+  if (fourDigit) return parseInt(fourDigit[1], 10);
+
+  const twoDigit = sample.match(/\b\d{1,2}[-/]\d{1,2}[-/]([4-6]\d|7[0-2])\b/);
+  if (twoDigit) return 1900 + parseInt(twoDigit[1], 10);
+
+  return null;
+};
+
+const getEraForLecture = (lec, yearMap) => {
+  const y = (yearMap && yearMap[lec.title]) || KNOWN_YEARS[lec.title] || lec.year;
+  if (y) {
+    const found = ERAS.find(e => y >= e.startYear && y <= e.endYear);
+    if (found) return found.era;
+  }
+  return (((lec.num || 1) - 1) % 8) + 1;
 };
 
 // 성경 구절의 책 번호(1~66), 장(chapter), 절 배열(verses: 예 [9, 10]) 정밀 파싱
@@ -227,28 +316,6 @@ const getBibleSortWeight = (item) => {
   return bookOrder * 1000000 + chapter * 1000 + (verses[0] || 1);
 };
 
-// ★ 성경 장·절 고유 키 생성 (예: 창세기 1:26 -> "1_1_26", 출애굽기 3:14 -> "2_3_14")
-const getVerseUniqueKey = (item) => {
-  const { bookOrder, chapter, verses } = parseBibleRefDetails(item);
-  return `${bookOrder}_${chapter}_${verses[0] || 1}`;
-};
-
-// ★ 기존 bibleList에 이미 있는 장·절은 자동으로 Pass하고, 새로운 장·절만 추가하는 함수
-const appendOnlyNewBibleVerses = (prevList, newItems) => {
-  const existingVerseKeys = new Set(prevList.map(item => getVerseUniqueKey(item)));
-  const added = [];
-
-  newItems.forEach(item => {
-    const vKey = getVerseUniqueKey(item);
-    if (!existingVerseKeys.has(vKey)) {
-      existingVerseKeys.add(vKey);
-      added.push(item);
-    }
-  });
-
-  return added.length > 0 ? prevList.concat(added) : prevList;
-};
-
 const safeParseJSON = (rawStr) => {
   if (!rawStr) return null;
   let text = rawStr.replace(/```json/gi, "").replace(/```/g, "").trim();
@@ -274,10 +341,10 @@ const safeParseJSON = (rawStr) => {
   }
 };
 
-// 무료 공개 한국어 성경 API 메모리 캐시
+// 무료 공개 한국어 성경 API 메모리 캐시 (한 번 불러온 장은 0초 만에 즉시 표시)
 const koreanChapterCache = {};
 
-// ★ 개별 성경 구절 카드 컴포넌트: 한국어 성경 한 절 전체 표시 + 앞뒤 절 이동 + 장 전체 보기
+// ★ 개별 성경 구절 카드 컴포넌트: 한국어 성경 한 절(또는 여러 절) 전체 표시 + 앞뒤 절 이동 + 장 전체 보기
 function BibleQuoteCard({ item, idx, speak }) {
   const parsed = useMemo(() => parseBibleRefDetails(item), [item]);
   const bookMeta = BIBLE_BOOKS_META.find(b => b.order === parsed.bookOrder);
@@ -292,6 +359,7 @@ function BibleQuoteCard({ item, idx, speak }) {
     setCurrentVerses(parsed.verses);
   }, [item]);
 
+  // 카드가 화면에 나타나면 해당 장의 한국어 성경 전체 절을 자동으로 가져옴 (방법 A)
   useEffect(() => {
     if (!parsed.bookOrder || parsed.bookOrder > 66) return;
     const cacheKey = `${parsed.bookOrder}_${parsed.chapter}`;
@@ -334,11 +402,15 @@ function BibleQuoteCard({ item, idx, speak }) {
   const lastV = currentVerses[currentVerses.length - 1] || firstV;
 
   const handlePrevVerse = () => {
-    if (firstV > 1) setCurrentVerses([firstV - 1]);
+    if (firstV > 1) {
+      setCurrentVerses([firstV - 1]);
+    }
   };
 
   const handleNextVerse = () => {
-    if (lastV < maxVerseInChapter) setCurrentVerses([lastV + 1]);
+    if (lastV < maxVerseInChapter) {
+      setCurrentVerses([lastV + 1]);
+    }
   };
 
   const handleResetOriginalVerse = () => {
@@ -372,6 +444,7 @@ function BibleQuoteCard({ item, idx, speak }) {
         </div>
       </div>
 
+      {/* 네빌 고다드 강의 내 영어/한글 문장 */}
       <p style={{ fontFamily: "Georgia, serif", fontSize: "13.5pt" }} className="text-slate-900">
         {item.en}
       </p>
@@ -379,7 +452,7 @@ function BibleQuoteCard({ item, idx, speak }) {
         {item.ko}
       </p>
 
-      {/* 한국어 성경 원문 전체 표시 + 앞뒤 절 이동 + 장 전체 보기 (KJV 원문 제거됨) */}
+      {/* ★ 한국어 성경 원문 전체 표시 + 앞뒤 절 이동 + 장 전체 보기 (KJV 원문 제거됨) */}
       <div className="text-xs text-slate-800 bg-emerald-50/80 p-3.5 rounded-lg border border-emerald-200 space-y-2.5">
         <div className="flex flex-wrap justify-between items-center gap-2 border-b border-emerald-200/70 pb-2">
           <div className="font-bold text-emerald-950 text-xs flex items-center gap-1.5">
@@ -397,6 +470,7 @@ function BibleQuoteCard({ item, idx, speak }) {
             )}
           </div>
 
+          {/* 절 앞뒤 넘기기 & 장 전체 보기 버튼 */}
           <div className="flex flex-wrap items-center gap-1.5">
             <button
               onClick={handlePrevVerse}
@@ -421,6 +495,7 @@ function BibleQuoteCard({ item, idx, speak }) {
           </div>
         </div>
 
+        {/* 해당 절(예: 사무엘상 3:9 또는 3:9,10)의 한국어 성경 전체 원문 표시 */}
         <div className="space-y-1.5 leading-relaxed text-[13px] text-slate-900">
           {loadingChapter ? (
             <div className="text-emerald-800 py-1">⏳ 한국어 성경 원문 전체를 불러오는 중...</div>
@@ -438,6 +513,7 @@ function BibleQuoteCard({ item, idx, speak }) {
           )}
         </div>
 
+        {/* [📖 장 전체 보기] 펼침창 (인용된 절 노란색 형광펜 하이라이트) */}
         {showFullChapter && chapterVerses && (
           <div className="mt-2 pt-2.5 border-t border-emerald-300/80 bg-white p-3 rounded-lg max-h-80 overflow-y-auto space-y-1.5">
             <div className="text-xs font-bold text-emerald-900 mb-2 sticky top-0 bg-white pb-1 border-b">
@@ -485,36 +561,66 @@ function App() {
   const [openBooksMenu, setOpenBooksMenu] = useState(false);
   const [openEra, setOpenEra] = useState(1);
 
+  // 성경 탭 전용 사이드바 상태 (BIBLE_BOOK_ORDER 1~66권 메뉴)
   const [openBibleBookOrder, setOpenBibleBookOrder] = useState(null);
   const [selectedBibleBookOrder, setSelectedBibleBookOrder] = useState("all");
   const [selectedBibleItemId, setSelectedBibleItemId] = useState(null);
 
+  const [loadingLectures, setLoadingLectures] = useState(false);
   const [loadedFiles, setLoadedFiles] = useState({});
   const [bibleSearch, setBibleSearch] = useState("");
 
-  // ★ 브라우저 스토리지를 쓰지 않고 깃허브의 lecture_list.json, bible.json, era1~8.json, book1~14.json만 직접 로드
-  const [allLectures, setAllLectures] = useState([]);
-  const [store, setStore] = useState({});
-  const [bibleList, setBibleList] = useState([]);
+  const [allLectures, setAllLectures] = useState(() => {
+    try {
+      const saved = localStorage.getItem("neville_all_lectures_294");
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
 
-  // ★ 유일하게 브라우저 스토리지(localStorage)에 저장되는 항목: Gemini API Key
-  const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
+  const [lectureYears, setLectureYears] = useState(() => {
+    try {
+      const saved = localStorage.getItem("neville_lecture_years");
+      return saved ? Object.assign({}, KNOWN_YEARS, JSON.parse(saved)) : KNOWN_YEARS;
+    } catch (e) {
+      return KNOWN_YEARS;
+    }
+  });
 
   const [selectedLec, setSelectedLec] = useState({
     isBook: false,
-    num: 79,
-    era: 1,
+    num: 1,
     eraOrderNum: 1,
-    year: 1942,
-    title: "Freedom For All",
-    url: "https://www.neville-goddard.com/neville-goddard-lectures/freedom-for-all-neville-goddard-lecture/"
+    title: "At Your Command",
+    url: "https://www.neville-goddard.com/neville-goddard-lectures/at-your-command-neville-goddard-lecture/"
   });
-  const [targetUrl, setTargetUrl] = useState("https://www.neville-goddard.com/neville-goddard-lectures/freedom-for-all-neville-goddard-lecture/");
+  const [targetUrl, setTargetUrl] = useState("https://www.neville-goddard.com/neville-goddard-lectures/at-your-command-neville-goddard-lecture/");
   const [rawText, setRawText] = useState("");
   const [fetching, setFetching] = useState(false);
   const [analyzing, setAnalyzing] = useState(false);
   const [statusMsg, setStatusMsg] = useState("");
   const [quizMode, setQuizMode] = useState(false);
+
+  const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_api_key") || "");
+
+  const [store, setStore] = useState(() => {
+    try {
+      const saved = localStorage.getItem("neville_vol_accordion_store");
+      return saved ? JSON.parse(saved) : {};
+    } catch (e) {
+      return {};
+    }
+  });
+
+  const [bibleList, setBibleList] = useState(() => {
+    try {
+      const saved = localStorage.getItem("neville_bible_store");
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
 
   const mergePublicDataToStore = (publicData, fallbackTitle) => {
     if (!publicData) return;
@@ -527,7 +633,10 @@ function App() {
       }
       if (typeof publicData === "object") {
         Object.keys(publicData).forEach(key => {
-          if (key === "_lectureYears") return;
+          if (key === "_lectureYears" && typeof publicData[key] === "object") {
+            setLectureYears(prevY => Object.assign({}, prevY, publicData[key]));
+            return;
+          }
           const pubArr = Array.isArray(publicData[key]) ? publicData[key] : [];
           const locArr = Array.isArray(prev[key]) ? prev[key] : [];
           merged[key] = pubArr.length >= locArr.length ? pubArr : locArr;
@@ -543,11 +652,13 @@ function App() {
       const res = await fetch("./" + fileName + "?t=" + Date.now(), { cache: "no-store" });
       if (res.ok) {
         const data = await res.json();
-        if (fileName === "lecture_list.json" && Array.isArray(data)) {
-          setAllLectures(data);
-        } else if (fileName === "bible.json" && Array.isArray(data)) {
-          // ★ 기존 장·절 자동 Pass 적용
-          setBibleList(prev => appendOnlyNewBibleVerses(data, prev));
+        if (fileName === "bible.json" && Array.isArray(data)) {
+          setBibleList(prev => {
+            const map = new Map();
+            data.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
+            prev.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
+            return Array.from(map.values());
+          });
         } else {
           mergePublicDataToStore(data, fallbackTitle);
         }
@@ -556,31 +667,98 @@ function App() {
     } catch (e) {}
   };
 
+  const fetchAll294Lectures = async () => {
+    if (allLectures.length >= 250) return;
+    setLoadingLectures(true);
+    try {
+      const combined = [];
+      const seen = {};
+      for (let v = 0; v < INDEX_URLS.length; v++) {
+        const res = await fetch("https://r.jina.ai/" + INDEX_URLS[v]);
+        const text = await res.text();
+        const lines = text.split("\n");
+        let startNum = v * 50 + 1;
+
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          const openBracket = line.indexOf("[");
+          const closeBracket = line.indexOf("](http");
+          if (openBracket !== -1 && closeBracket !== -1) {
+            const title = line.slice(openBracket + 1, closeBracket).trim();
+            const rest = line.slice(closeBracket + 2);
+            let rawUrl = rest;
+            const spaceIdx = rawUrl.indexOf(" ");
+            if (spaceIdx !== -1) rawUrl = rawUrl.slice(0, spaceIdx);
+            const parenIdx = rawUrl.indexOf(")");
+            if (parenIdx !== -1) rawUrl = rawUrl.slice(0, parenIdx);
+            const quoteIdx = rawUrl.indexOf('"');
+            if (quoteIdx !== -1) rawUrl = rawUrl.slice(0, quoteIdx);
+            const url = rawUrl.trim().replace("http://", "https://");
+
+            if (
+              (url.indexOf("/neville-goddard-lectures/") !== -1 || url.indexOf("/neville-goddard-books/") !== -1) &&
+              url.indexOf("read-neville-goddard-lectures-on-line") === -1 &&
+              title !== "Neville Goddard Original" &&
+              title !== "Neville Goddard Lectures" &&
+              title !== "Neville Goddard Books + Audio" &&
+              title !== "Read Here" &&
+              !seen[url]
+            ) {
+              seen[url] = true;
+              const autoY = extractLectureYear("", title) || KNOWN_YEARS[title] || null;
+              combined.push({ num: startNum++, title: title, url: url, year: autoY });
+            }
+          }
+        }
+      }
+      if (combined.length > 0) setAllLectures(combined);
+    } catch (e) {
+    } finally {
+      setLoadingLectures(false);
+    }
+  };
+
   useEffect(() => {
-    // 외부 사이트 크롤링 없이 깃허브 내부 JSON 파일들만 로드
-    loadJsonFile("lecture_list.json", null);
     loadJsonFile("bible.json", null);
     loadJsonFile("neville_data.json", null);
     for (let i = 1; i <= 8; i++) loadJsonFile("era" + i + ".json", null);
     for (let v = 1; v <= 6; v++) loadJsonFile("vol" + v + ".json", null);
     BOOKS.forEach(b => loadJsonFile("book" + b.bookNum + ".json", b.title));
+    fetchAll294Lectures();
   }, []);
 
-  // ★ 각 기수(Era 1~8)의 강의를 오래된 연도순(오름차순)으로 정렬하고 기수별 번호(1, 2, 3...) 부여
+  useEffect(() => {
+    try { localStorage.setItem("neville_all_lectures_294", JSON.stringify(allLectures)); } catch (e) {}
+  }, [allLectures]);
+
+  useEffect(() => {
+    try { localStorage.setItem("neville_lecture_years", JSON.stringify(lectureYears)); } catch (e) {}
+  }, [lectureYears]);
+
+  useEffect(() => {
+    try { localStorage.setItem("neville_vol_accordion_store", JSON.stringify(store)); } catch (e) {}
+  }, [store]);
+
+  useEffect(() => {
+    try { localStorage.setItem("neville_bible_store", JSON.stringify(bibleList)); } catch (e) {}
+  }, [bibleList]);
+
+  // ★ 각 기수(Era 1~8)의 강의를 오래된 연도순(오름차순)으로 정렬하고 기수별 번호(1, 2, 3...)를 매기는 함수
   const getSortedEraLectures = (eraNum) => {
-    const rawList = allLectures.filter(l => (l.era || getEraByYear(l.year)) === eraNum);
+    const rawList = allLectures.filter(l => getEraForLecture(l, lectureYears) === eraNum);
     const sorted = [...rawList].sort((a, b) => {
-      const yA = a.year || 9999;
-      const yB = b.year || 9999;
-      if (yA !== yB) return yA - yB;
+      const yA = lectureYears[a.title] || KNOWN_YEARS[a.title] || a.year || 9999;
+      const yB = lectureYears[b.title] || KNOWN_YEARS[b.title] || b.year || 9999;
+      if (yA !== yB) return yA - yB; // 오래된 연도가 먼저 오도록 오름차순 정렬
       return (a.title || "").localeCompare(b.title || "");
     });
     return sorted.map((lec, idx) => ({
       ...lec,
-      eraOrderNum: idx + 1
+      eraOrderNum: idx + 1 // 각 기수 안에서 1번부터 다시 번호 부여!
     }));
   };
 
+  // BIBLE_BOOK_ORDER 기준 전체 정렬 및 성경책별 분류
   const sortedAllBible = useMemo(() => {
     return [...bibleList].sort((a, b) => getBibleSortWeight(a) - getBibleSortWeight(b));
   }, [bibleList]);
@@ -630,6 +808,7 @@ function App() {
     }
     setOpenEra(eraObj.era);
     loadJsonFile("era" + eraObj.era + ".json", null);
+    if (allLectures.length === 0) fetchAll294Lectures();
   };
 
   const saveApiKey = (val) => {
@@ -639,16 +818,17 @@ function App() {
 
   const currentEraNum = selectedLec.isBook
     ? 1
-    : selectedLec.era || openEra || getEraByYear(selectedLec.year);
+    : openEra || getEraForLecture(selectedLec, lectureYears);
 
+  // 현재 선택된 강의의 해당 기수 내 순번(1번~N번) 계산
   const currentLectureDisplayNum = useMemo(() => {
     if (selectedLec.isBook) return selectedLec.num;
     const list = getSortedEraLectures(currentEraNum);
     const found = list.find(x => x.title === selectedLec.title);
     return found ? found.eraOrderNum : (selectedLec.eraOrderNum || 1);
-  }, [selectedLec, currentEraNum, allLectures]);
+  }, [selectedLec, currentEraNum, allLectures, lectureYears]);
 
-  const handleFetchLectureBody = async (urlToFetch, titleToSet) => {
+  const handleFetchLectureBody = async (urlToFetch, titleToSet, isBookItem) => {
     const finalUrl = (urlToFetch || targetUrl).trim();
     const targetTitle = titleToSet || selectedLec.title;
     if (!finalUrl) return;
@@ -690,8 +870,21 @@ function App() {
       });
       cleanBody = lines.join("\n\n");
 
+      if (!isBookItem) {
+        const detectedYear = extractLectureYear(cleanBody, targetTitle);
+        if (detectedYear) {
+          setLectureYears(prev => Object.assign({}, prev, { [targetTitle]: detectedYear }));
+          const matchedEra = getEraForLecture({ title: targetTitle, year: detectedYear }, { [targetTitle]: detectedYear });
+          setOpenEra(matchedEra);
+          setStatusMsg("✅ 원문 추출 완료! (본문에서 [" + detectedYear + "] 감지 ➔ 제" + matchedEra + "기로 자동 분류됨)");
+        } else {
+          setStatusMsg("✅ 원문 추출 완료! 이제 [⚡ 2. 강독 노트 + 성경구문 생성]을 눌러주세요.");
+        }
+      } else {
+        setStatusMsg("✅ 단행본 원문 추출 완료! [⚡ 2. 강독 노트 + 성경구문 생성]을 눌러주세요.");
+      }
+
       setRawText(cleanBody.trim());
-      setStatusMsg("✅ 원문 추출 완료! 이제 [⚡ 2. 강독 노트 + 성경구문 생성]을 눌러주세요.");
     } catch (err) {
       setStatusMsg("❌ 원문 가져오기 실패: " + err.message);
     } finally {
@@ -699,9 +892,9 @@ function App() {
     }
   };
 
-  // ★ 구글 권장 3.5 모델 우선 배치 + high demand 발생 시 자동 대기 후 재시도
+  // ★ high demand 과부하 멈춤 방지를 위해 무료 등급 친화 모델 순환 + 8초 자동 대기 재시도 적용
   const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount) => {
-    const models = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash"];
+      const models = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash"];
     let lastError = null;
 
     for (let m = 0; m < models.length; m++) {
@@ -873,10 +1066,15 @@ function App() {
             };
           });
 
-          // ★ 이미 있는 성경 장·절은 자동으로 Pass!
-          setBibleList(prev => appendOnlyNewBibleVerses(prev, formattedQuotes));
+          setBibleList(prev => {
+            const map = new Map();
+            prev.forEach(item => map.set(item.id, item));
+            formattedQuotes.forEach(item => map.set(item.id, item));
+            return Array.from(map.values());
+          });
         }
 
+        // 무료 API 분당 요청 제한(Rate Limit)을 피하기 위해 구간 사이 4초 호흡
         if (i < chunks.length - 1) await sleep(4000);
       }
 
@@ -953,12 +1151,16 @@ function App() {
             };
           });
 
-          // ★ 이미 있는 성경 장·절은 자동으로 Pass!
-          setBibleList(prev => appendOnlyNewBibleVerses(prev, formatted));
+          setBibleList(prev => {
+            const map = new Map();
+            prev.forEach(item => map.set(item.id, item));
+            formatted.forEach(item => map.set(item.id, item));
+            return Array.from(map.values());
+          });
         }
         await sleep(3500);
       }
-      setStatusMsg(`🎉 성경 인용 스캔 완료! (기존에 없던 새로운 장·절만 [✝️ 성경 구절] 탭에 추가되었습니다)`);
+      setStatusMsg(`🎉 현재 노트에서 총 ${totalFound}개의 성경 인용 구절을 추출하여 [✝️ 성경 구절] 탭에 추가했습니다!`);
     } catch (err) {
       setStatusMsg("⚠️ 성경 구절 추출 중 오류: " + err.message);
     } finally {
@@ -985,8 +1187,8 @@ function App() {
       return;
     }
 
-    const eraLectures = getSortedEraLectures(currentEraNum);
-    let exportObj = {};
+    const eraLectures = allLectures.filter(l => getEraForLecture(l, lectureYears) === currentEraNum);
+    let exportObj = { _lectureYears: lectureYears };
     eraLectures.forEach(lec => {
       if (store[lec.title] && store[lec.title].length > 0) {
         exportObj[lec.title] = store[lec.title];
@@ -1004,7 +1206,8 @@ function App() {
   };
 
   const handleExportAllJson = () => {
-    const blob = new Blob([JSON.stringify(store, null, 2)], { type: "application/json;charset=utf-8" });
+    const exportObj = Object.assign({ _lectureYears: lectureYears }, store);
+    const blob = new Blob([JSON.stringify(exportObj, null, 2)], { type: "application/json;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -1032,19 +1235,21 @@ function App() {
       try {
         const imported = JSON.parse(event.target.result);
         if (Array.isArray(imported)) {
-          if (file.name.indexOf("lecture_list") !== -1) {
-            setAllLectures(imported);
-            alert(`✅ [${file.name}] 294개 강의 목록이 로드되었습니다!`);
-          } else if (imported[0]?.ref !== undefined || imported[0]?.krv !== undefined || file.name.indexOf("bible") !== -1) {
-            setBibleList(prev => appendOnlyNewBibleVerses(prev, imported));
-            alert(`✅ [${file.name}] 성경 구절이 병합되었습니다! (기존 장·절 자동 Pass)`);
+          if (imported[0]?.ref !== undefined || imported[0]?.krv !== undefined || file.name.indexOf("bible") !== -1) {
+            setBibleList(prev => {
+              const map = new Map();
+              prev.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
+              imported.forEach(item => map.set(item.id || `${item.sourceTitle}_${item.sentenceNo}_${item.ref}`, item));
+              return Array.from(map.values());
+            });
+            alert(`✅ [${file.name}] 성경 구절 ${imported.length}개가 성공적으로 병합되었습니다!`);
           } else {
             mergePublicDataToStore(imported, selectedLec.title);
             alert(`✅ [${file.name}] 강독 노트가 성공적으로 복원되었습니다!`);
           }
         } else if (typeof imported === "object") {
           mergePublicDataToStore(imported, selectedLec.title);
-          alert(`✅ [${file.name}] 번역 노트가 성공적으로 병합되었습니다!`);
+          alert(`✅ [${file.name}] 번역 노트 및 연도 분류가 성공적으로 병합되었습니다!`);
         }
       } catch (err) {
         alert("올바른 JSON 파일이 아닙니다.");
@@ -1090,7 +1295,7 @@ function App() {
             onClick={() => setActiveTab("lecture")}
             className={"py-2 rounded text-xs font-bold transition " + (activeTab === "lecture" ? "bg-amber-500 text-slate-950" : "text-slate-400 hover:text-white")}
           >
-            📚 강독 노트 ({Object.keys(store).length})
+            📚 강독 노트 ({Object.keys(store).filter(k => k !== "_lectureYears").length})
           </button>
           <button
             onClick={() => setActiveTab("bible")}
@@ -1100,8 +1305,9 @@ function App() {
           </button>
         </div>
 
+        {/* 탭에 따라 왼쪽 사이드바 메뉴 자동 전환 */}
         {activeTab === "bible" ? (
-          /* [✝️ 성경 구절] 탭: 성경 66권 순서 메뉴 */
+          /* [✝️ 성경 구절] 탭 선택 시: BIBLE_BOOK_ORDER (1. 창세기 ~ 66. 요한계시록) 순서 메뉴 */
           <div className="flex-1 overflow-y-auto space-y-1.5 pr-1">
             <button
               onClick={() => {
@@ -1167,8 +1373,9 @@ function App() {
             })}
           </div>
         ) : (
-          /* [📚 강독 노트] 탭: 14권 저서 + lecture_list.json 기반 연도별 8기 메뉴 */
+          /* [📚 강독 노트] 탭 선택 시: 14권 저서 + 연도별 8기 메뉴 (각 기수 내 오래된 연도순 정렬 + 1번부터 재부여) */
           <div className="flex-1 overflow-y-auto space-y-2 pr-1">
+            {/* 1. 14권 정규 저서 */}
             <div className="mb-3">
               <div className="text-[11px] text-emerald-400 font-bold mb-1">📖 정규 출간 단행본 (book1~14.json)</div>
               <div className="rounded-lg overflow-hidden border border-emerald-700/60">
@@ -1189,11 +1396,11 @@ function App() {
                         <button
                           key={b.bookNum}
                           onClick={() => {
-                            const bookItem = { isBook: true, num: b.bookNum, year: b.year, title: b.title, koTitle: b.koTitle, url: b.url };
+                            const bookItem = { isBook: true, num: b.bookNum, title: b.title, koTitle: b.koTitle, url: b.url };
                             setSelectedLec(bookItem);
                             setTargetUrl(b.url);
                             loadJsonFile("book" + b.bookNum + ".json", b.title);
-                            handleFetchLectureBody(b.url, b.title);
+                            handleFetchLectureBody(b.url, b.title, true);
                           }}
                           className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold" : "text-slate-300 hover:bg-slate-800")}
                         >
@@ -1216,8 +1423,10 @@ function App() {
               </div>
             </div>
 
+            {/* 2. 294개 강의 연도별 8기 분류 */}
             <div className="text-[11px] text-amber-400 font-bold mb-1 pt-2 border-t border-slate-800 flex justify-between items-center">
-              <span>📅 294개 강의 연도별 8기 (lecture_list.json)</span>
+              <span>📅 294개 강의 연도별 8기 분류 (era1~8.json)</span>
+              {loadingLectures && <span className="text-[10px] text-amber-300 animate-pulse">동기화중...</span>}
             </div>
 
             {ERAS.map(eObj => {
@@ -1241,14 +1450,15 @@ function App() {
 
                   {isOpen && (
                     <div className="bg-slate-950 p-2 space-y-1 max-h-80 overflow-y-auto border-t border-slate-800">
-                      {subList.length === 0 ? (
+                      {loadingLectures && subList.length === 0 ? (
                         <div className="text-xs text-amber-400 p-3 text-center">
-                          깃허브에 lecture_list.json 파일을 업로드해 주세요.
+                          ⏳ 294개 전체 강의를 연도별로 배분하는 중...
                         </div>
                       ) : (
                         subList.map((lec) => {
                           const isSelected = !selectedLec.isBook && selectedLec.title === lec.title;
                           const savedCount = (store[lec.title] || []).length;
+                          const knownY = lectureYears[lec.title] || KNOWN_YEARS[lec.title] || lec.year;
                           return (
                             <button
                               key={lec.title}
@@ -1256,21 +1466,19 @@ function App() {
                                 setSelectedLec({
                                   isBook: false,
                                   num: lec.num,
-                                  era: lec.era,
                                   eraOrderNum: lec.eraOrderNum,
-                                  year: lec.year,
                                   title: lec.title,
                                   url: lec.url
                                 });
                                 setTargetUrl(lec.url);
-                                handleFetchLectureBody(lec.url, lec.title);
+                                handleFetchLectureBody(lec.url, lec.title, false);
                               }}
                               className={"w-full text-left px-2.5 py-2 rounded text-xs transition flex justify-between items-center " + (isSelected ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold" : "text-slate-300 hover:bg-slate-800")}
                             >
                               <div className="truncate pr-2">
                                 <span>{lec.eraOrderNum}. </span>
-                                <span className="font-semibold mr-1 text-amber-400">
-                                  [{lec.year || "?"}]
+                                <span className={"font-semibold mr-1 " + (knownY ? "text-amber-400" : "text-slate-500")}>
+                                  [{knownY || "?"}]
                                 </span>
                                 <span>{lec.title}</span>
                               </div>
@@ -1297,7 +1505,7 @@ function App() {
       {/* 오른쪽 메인 영역 */}
       <main className="print-container flex-1 p-6 max-w-4xl mx-auto w-full">
         <div className="no-print bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 flex flex-wrap items-center justify-between gap-2 text-xs">
-          <span className="font-bold text-amber-900">🔑 Gemini API Key (브라우저에는 이 API Key만 저장됩니다):</span>
+          <span className="font-bold text-amber-900">🔑 Gemini API Key (자동 이어하기 & 과부하 자동 대기 호환):</span>
           <div className="flex gap-2 flex-1 max-w-md">
             <input
               type="password"
@@ -1318,6 +1526,7 @@ function App() {
         </div>
 
         {activeTab === "bible" ? (
+          /* [✝️ 성경 구절 아카이브] 화면 */
           <div>
             <div className="flex flex-wrap justify-between items-center gap-3 mb-4 pb-3 border-b">
               <div>
@@ -1325,7 +1534,7 @@ function App() {
                   ✝️ 네빌 고다드 성경 인용 아카이브 ({displayedBibleItems.length}구절)
                 </h2>
                 <p className="text-xs text-slate-500 mt-1">
-                  한국어 성경 해당 절 전체 원문을 표시하며, 이미 존재하는 장·절은 추가 시 자동으로 Pass 됩니다.
+                  한국어 성경 해당 절 전체 원문을 표시하며, [◀ 이전 절 / 다음 절 ▶] 및 [📖 장 전체 보기]를 지원합니다.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -1347,7 +1556,7 @@ function App() {
                 type="text"
                 value={bibleSearch}
                 onChange={e => setBibleSearch(e.target.value)}
-                placeholder="성경 장절(예: 사무엘상 3:9, 창세기 1:26, 요한복음), 영어/한글 문장, 출처 강의명으로 검색..."
+                placeholder="성경 장절(예: 사무엘상 3:9, 창세기 1:2, 요한복음), 영어/한글 문장, 출처 강의명으로 검색..."
                 className="w-full px-3.5 py-2 text-xs border rounded-lg bg-white shadow-sm"
               />
             </div>
@@ -1364,20 +1573,34 @@ function App() {
             </div>
           </div>
         ) : (
+          /* [📚 강독 노트 스튜디오] 화면 */
           <div>
             <div className="no-print bg-white border rounded-xl p-4 mb-6 shadow-sm">
               <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
                 <span className="text-xs font-bold text-slate-600">
                   🌐 선택된 {selectedLec.isBook ? "단행본 저서" : "강의"}의 실제 웹페이지 주소(URL):
                 </span>
-
-                {/* ▼ 필요 없는 수동 강의 연도 지정 드롭다운 주석 처리 완료
                 {!selectedLec.isBook && (
                   <div className="flex items-center gap-1.5 text-xs">
                     <span className="text-slate-500 font-semibold">📅 강의 연도 지정:</span>
+                    <select
+                      value={lectureYears[selectedLec.title] || KNOWN_YEARS[selectedLec.title] || ""}
+                      onChange={e => {
+                        const y = parseInt(e.target.value, 10);
+                        if (y) {
+                          setLectureYears(prev => Object.assign({}, prev, { [selectedLec.title]: y }));
+                          setOpenEra(getEraForLecture({ title: selectedLec.title, year: y }, { [selectedLec.title]: y }));
+                        }
+                      }}
+                      className="px-2 py-1 border rounded bg-stone-50 font-bold text-amber-900"
+                    >
+                      <option value="">[?] 연도 미상</option>
+                      {Array.from({ length: 25 }, (_, idx) => 1948 + idx).map(yr => (
+                        <option key={yr} value={yr}>[{yr}]년</option>
+                      ))}
+                    </select>
                   </div>
                 )}
-                ▲ 주석 처리 끝 */}
               </div>
 
               <div className="flex flex-wrap gap-2 mb-3">
@@ -1388,7 +1611,7 @@ function App() {
                   className="flex-1 px-3 py-2 border rounded-lg text-sm"
                 />
                 <button
-                  onClick={() => handleFetchLectureBody(targetUrl, selectedLec.title)}
+                  onClick={() => handleFetchLectureBody(targetUrl, selectedLec.title, selectedLec.isBook)}
                   disabled={fetching || analyzing}
                   className="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-bold hover:bg-slate-800 disabled:opacity-50"
                 >
@@ -1400,7 +1623,7 @@ function App() {
                 value={rawText}
                 onChange={e => setRawText(e.target.value)}
                 rows={4}
-                placeholder="왼쪽에서 [14권 저서] 또는 [연도별 8기 강의] 중 원하는 항목을 클릭하면 영어 원문이 추출됩니다!"
+                placeholder="왼쪽에서 [14권 저서] 또는 [연도별 8기 강의] 중 원하는 항목을 클릭하면 영어 원문과 강연 연도가 자동으로 추출됩니다!"
                 className="w-full p-3 border rounded-lg text-xs font-mono bg-stone-50 mb-2"
               />
 
@@ -1415,7 +1638,7 @@ function App() {
                     disabled={analyzing || sentences.length === 0}
                     className="px-4 py-2.5 rounded-lg bg-amber-700 hover:bg-amber-800 disabled:opacity-50 text-white text-xs font-bold shadow"
                   >
-                    🔍 현재 노트에서 성경 인용만 추출 (기존 장·절 Pass)
+                    🔍 현재 노트에서 성경 인용만 추출
                   </button>
 
                   <button
@@ -1454,13 +1677,13 @@ function App() {
                   </div>
                 ) : (
                   <div className="text-xs font-bold text-amber-700 mb-1">
-                    📅 제{currentEraNum}기 강연 (기수 내 #{currentLectureDisplayNum}번) [{selectedLec.year || "?"}]
+                    📅 제{currentEraNum}기 강연 (기수 내 #{currentLectureDisplayNum}번) [{lectureYears[selectedLec.title] || KNOWN_YEARS[selectedLec.title] || "?"}]
                   </div>
                 )}
                 <h2 style={{ fontFamily: "Georgia, serif", fontSize: "24pt", color: "#292929" }} className="font-bold">
                   {selectedLec.isBook
                     ? "Book " + selectedLec.num + ". " + selectedLec.title
-                    : currentLectureDisplayNum + ". [" + (selectedLec.year || "?") + "] " + selectedLec.title}
+                    : currentLectureDisplayNum + ". [" + (lectureYears[selectedLec.title] || KNOWN_YEARS[selectedLec.title] || "?") + "] " + selectedLec.title}
                 </h2>
               </div>
 
