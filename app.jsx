@@ -916,8 +916,8 @@ function App() {
   const schemaObj = null; // 이미 promptText에 JSON 형식이 명시되어 있다면 null 유지  // 1. 가장 가볍고 빠른 lite 모델을 1순위로 고정
     const models = [
       "gemini-3.5-flash-lite", // 1순위: 가장 가볍고 빠르며 무료 할당량이 넉넉한 주력 모델
-      "gemini-3.5-flash",      // 2순위: 1순위 혼잡 시 백업용 표준 모델
-      "gemini-2.5-flash"       // 3순위: 예비 호환 모델
+      "gemini-3.5-flash",      // 2순위: 1순위 혼잡 시 백업용 표준 모델[cite: 1, 2]
+      "gemini-3.5-pro"         // 3순위: 예비 정밀 분석 백업 모델[cite: 1]
     ];
 
     let lastErr = "";
