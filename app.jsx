@@ -910,56 +910,91 @@ function App() {
     }
   };
 
-  // ★ high demand 과부하 멈춤 방지를 위해 무료 등급 친화 모델 순환 + 8초 자동 대기 재시도 적용
-  const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount) => {
-      const models = [
-        "gemini-3.5-flash-lite",  // Fallback 1: Official high-throughput replacement for gemini-2.5-flash
-        "gemini-3.8-flash",       // Primary: Current flagship Flash model (replaces 2.5-flash / 2.5-pro)
-        "gemini-4-hydrogen",      // Fallback 2: General-purpose Gemini 4 model
-        "gemini-3.1-pro-preview"  // Fallback 3: Deep reasoning preview model
-      ];
-    let lastError = null;
+ // ★ 경량 고속 모델(gemini-3.5-flash-lite) 1순위 고정 + 30초 타임아웃(멍때림 방지) 적용 버전
+  const callGeminiWithFallback = async (promptText, schemaObj, chunkInfo) => {
+    // 1. 가장 가볍고 빠른 lite 모델을 1순위로 고정
+    const models = [
+      "gemini-3.5-flash-lite", // 1순위: 가장 가볍고 빠르며 무료 할당량이 넉넉한 주력 모델
+      "gemini-3.5-flash",      // 2순위: 1순위 혼잡 시 백업용 표준 모델
+      "gemini-2.5-flash"       // 3순위: 예비 호환 모델
+    ];
+
+    let lastErr = "";
+
+    const requestModelWithTimeout = async (modelName, timeoutMs = 30000) => {
+      setStatusMsg(`⚡ 고속 분석 중 (${modelName}) ${chunkInfo}`);
+
+      // 30초 이상 응답이 없으면 무한 멍때림을 막기 위해 강제 중단
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+      try {
+        const res = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey.trim()}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            signal: controller.signal,
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: promptText }] }],
+              generationConfig: {
+                responseMimeType: "application/json",
+                ...(schemaObj ? { responseSchema: schemaObj } : {}),
+                temperature: 0.15
+              }
+            })
+          }
+        );
+        return await res.json();
+      } finally {
+        clearTimeout(timeoutId);
+      }
+    };
 
     for (let m = 0; m < models.length; m++) {
-      const modelName = models[m];
-      for (let attempt = 1; attempt <= 3; attempt++) {
-        setStatusMsg(
-          `⏳ AI 분석 중 (${modelName}, 시도 ${attempt}/3) [${chunkIndex + 1}/${totalChunks} 구간] ... (현재 ${currentCount}문장 완료)`
-        );
-        try {
-          const res = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey.trim()}`,
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                contents: [{ parts: [{ text: promptText }] }],
-                generationConfig: {
-                  responseMimeType: "application/json",
-                  temperature: 0.2
-                }
-              })
-            }
-          );
+      const currentModel = models[m];
 
-          const data = await res.json();
+      for (let attempt = 1; attempt <= 2; attempt++) {
+        try {
+          const data = await requestModelWithTimeout(currentModel, 30000);
+
           if (data.error) {
-            lastError = new Error(data.error.message);
-            setStatusMsg(`⏸️ 서버 혼잡 대기 중... 8초 후 자동 재시도합니다 (${modelName})`);
+            const errMsg = data.error.message || "모델 응답 오류";
+            lastErr = `[${currentModel}] ${errMsg}`;
+
+            // 단종되었거나 지원하지 않는 모델이면 재시도 없이 즉시 다음 모델로 넘어감
+            if (
+              errMsg.includes("no longer available") ||
+              errMsg.includes("not found") ||
+              errMsg.includes("not supported")
+            ) {
+              break;
+            }
+
+            // 무료 API 속도 제한(429) 또는 일시 과부하(high demand)일 경우 8초 대기 후 재시도
+            setStatusMsg(`⏳ 서버 대기열 통과 중... 8초 후 재시도 (${currentModel}) ${chunkInfo}`);
             await sleep(8000);
             continue;
           }
 
-          const outputText = data?.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
-          const parsed = safeParseJSON(outputText);
-          if (parsed) return parsed;
+          const textOutput =
+            data?.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+          return safeParseJSON(textOutput);
+
         } catch (err) {
-          lastError = err;
-          await sleep(6000);
+          // 30초 타임아웃(AbortError) 발생 시 안내 후 재시도 또는 다음 모델 전환
+          if (err.name === "AbortError") {
+            lastErr = `[${currentModel}] 응답 시간 초과(30초 경과)`;
+            setStatusMsg(`⚠️ 응답 지연(30초 초과)으로 재시도 중... ${chunkInfo}`);
+          } else {
+            lastErr = err.message;
+          }
+          await sleep(2000);
         }
       }
     }
-    throw lastError || new Error("모든 AI 모델 호출에 실패했습니다.");
+
+    throw new Error(lastErr || "AI 모델 호출에 실패했습니다. 잠시 후 다시 시도해 주세요.");
   };
 
   const handleAnalyze = async (forceFromStart = false) => {
