@@ -911,8 +911,9 @@ function App() {
   };
 
  // ★ 경량 고속 모델(gemini-3.5-flash-lite) 1순위 고정 + 30초 타임아웃(멍때림 방지) 적용 버전
-  const callGeminiWithFallback = async (promptText, schemaObj, chunkInfo) => {
-    // 1. 가장 가볍고 빠른 lite 모델을 1순위로 고정
+  const callGeminiWithFallback = async (promptText, chunkIdx, totalChunks) => {
+  const chunkInfo = `[${chunkIdx + 1}/${totalChunks} 구간]`;
+  const schemaObj = null; // 이미 promptText에 JSON 형식이 명시되어 있다면 null 유지  // 1. 가장 가볍고 빠른 lite 모델을 1순위로 고정
     const models = [
       "gemini-3.5-flash-lite", // 1순위: 가장 가볍고 빠르며 무료 할당량이 넉넉한 주력 모델
       "gemini-3.5-flash",      // 2순위: 1순위 혼잡 시 백업용 표준 모델
