@@ -40399,5 +40399,3487 @@
         }
       ]
     }
+  ],
+  "The Value Of Dreams": [
+    {
+      "en": "Here we use the words “God” or “Christ” or “imagination” interchangeably.",
+      "ko": "여기서 우리는 '신'이나 '그리스도' 또는 '상상력'이라는 단어를 상호 교환적으로 사용합니다.",
+      "vocab": [
+        {
+          "word": "interchangeably",
+          "mean": "상호 교환적으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Core Concept",
+          "desc": "네빌 고다드는 신, 그리스도, 인간의 상상력을 동일한 실체로 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "They mean the same thing.",
+      "ko": "그것들은 같은 것을 의미합니다.",
+      "vocab": [
+        {
+          "word": "mean",
+          "mean": "의미하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Identity",
+          "desc": "외부의 신이 아닌 내면의 상상력이 곧 신임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "If I use the word “God” because I am moved to use it, or the word “Christ,” it is the same thing.",
+      "ko": "내가 그것을 사용하도록 이끌려 '신'이라는 단어를 사용하든, '그리스도'라는 단어를 사용하든, 그것은 같은 것입니다.",
+      "vocab": [
+        {
+          "word": "moved",
+          "mean": "감동된, 이끌린"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Synonym",
+          "desc": "언어적 표현은 다르지만 지칭하는 근원적 실체는 하나임을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "It is the fundamental power that created and sustains the universe, and which, also sustains our environment.",
+      "ko": "그것은 우주를 창조하고 유지하며, 또한 우리의 환경을 유지하는 근본적인 힘입니다.",
+      "vocab": [
+        {
+          "word": "fundamental",
+          "mean": "근본적인"
+        },
+        {
+          "word": "sustains",
+          "mean": "유지하다, 지탱하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Creative Power",
+          "desc": "상상력은 우주와 개인의 환경을 창조하고 유지하는 유일한 힘입니다."
+        }
+      ]
+    },
+    {
+      "en": "We are told there is a secret to the whole creation —In the beginning was the Word and the Word was with God and the Word was God, and by Him were all things made, and without Him was not anything made that was made.”",
+      "ko": "우리는 전체 창조에 비밀이 있다고 들었습니다. '태초에 말씀이 계시니라 이 말씀이 하나님과 함께 계셨으니 이 말씀은 곧 하나님이시니라 만물이 그로 말미암아 지은 바 되었으니 지은 것이 하나도 그가 없이는 된 것이 없느니라.'",
+      "vocab": [
+        {
+          "word": "secret",
+          "mean": "비밀"
+        },
+        {
+          "word": "creation",
+          "mean": "창조"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "요한복음 1장 1-3절을 인용하여 '말씀(Word)'이 곧 창조의 근원임을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "We could use the word “imagination,” but the secret here is “Word.”",
+      "ko": "우리는 '상상력'이라는 단어를 사용할 수도 있지만, 여기서의 비밀은 '말씀'입니다.",
+      "vocab": [
+        {
+          "word": "secret",
+          "mean": "비밀"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Interpretation",
+          "desc": "성경의 '말씀'을 네빌은 인간의 '상상력'으로 해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "What is the Word?",
+      "ko": "말씀이란 무엇인가?",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Rhetorical Question",
+          "desc": "독자로 하여금 말씀의 본질을 깊이 생각하게 합니다."
+        }
+      ]
+    },
+    {
+      "en": "Something was made that was made.",
+      "ko": "지어진 것은 지어진 것입니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Tautology",
+          "desc": "창조된 모든 현상은 근원적인 말씀(상상력)의 결과물임을 강조하는 표현입니다."
+        }
+      ]
+    },
+    {
+      "en": "You have been taught to believe many things about the Word.",
+      "ko": "당신은 '말씀(Word)'에 관해 많은 것을 믿도록 가르침을 받아왔습니다.",
+      "vocab": [
+        {
+          "word": "Word",
+          "mean": "말씀(로고스)"
+        },
+        {
+          "word": "taught",
+          "mean": "가르침을 받은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Passive Voice",
+          "desc": "수동태를 사용하여 기존의 관습적 교육을 강조함"
+        },
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "성경의 '말씀'을 외부의 교리가 아닌 인간 내면의 창조적 힘으로 재정의하기 위한 서두"
+        }
+      ]
+    },
+    {
+      "en": "Read the Bible and you will find what it means, for no one familiar with the Scripture could fail to see that the Word is the dream of man.",
+      "ko": "성경을 읽어보십시오. 그러면 그 의미를 알게 될 것입니다. 성경에 익숙한 사람이라면 누구나 '말씀'이 곧 '인간의 꿈'이라는 사실을 보지 못할 리 없기 때문입니다.",
+      "vocab": [
+        {
+          "word": "Scripture",
+          "mean": "성경"
+        },
+        {
+          "word": "dream of man",
+          "mean": "인간의 꿈"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Core Thesis",
+          "desc": "네빌 고다드의 핵심 사상: 성경의 말씀은 외부 역사가 아니라 인간의 상상력(꿈)의 투영임"
+        }
+      ]
+    },
+    {
+      "en": "You have been taught it is some being, born in a miraculous way, without the offices of a man.",
+      "ko": "당신은 그것이 인간의 도움 없이 기적적인 방식으로 태어난 어떤 존재라고 배워왔습니다.",
+      "vocab": [
+        {
+          "word": "being",
+          "mean": "존재"
+        },
+        {
+          "word": "offices of a man",
+          "mean": "인간의 역할/개입"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Contrast",
+          "desc": "전통적인 기독교의 동정녀 탄생 교리와 네빌의 심리적 해석을 대조함"
+        }
+      ]
+    },
+    {
+      "en": "Well, it is, in a way.",
+      "ko": "글쎄요, 어떤 면에서는 그것이 맞기도 합니다.",
+      "vocab": [
+        {
+          "word": "in a way",
+          "mean": "어떤 면에서는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Nuance",
+          "desc": "전통적 교리를 완전히 부정하는 것이 아니라, 그 상징적 의미를 인정하는 태도"
+        }
+      ]
+    },
+    {
+      "en": "I have a dream and it comes out of nowhere; it depends on no outside help.",
+      "ko": "나에게 꿈이 생기면 그것은 아무것도 없는 곳에서 나옵니다. 외부의 도움에 의존하지 않지요.",
+      "vocab": [
+        {
+          "word": "out of nowhere",
+          "mean": "무(無)로부터"
+        },
+        {
+          "word": "depends on",
+          "mean": "~에 의존하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Self-Creation",
+          "desc": "상상력은 외부 조건 없이 스스로 창조되는 것임을 강조"
+        }
+      ]
+    },
+    {
+      "en": "—If there be a prophet among you, I, the Lord, will make myself known to him in a dream.”",
+      "ko": "—너희 중에 선지자가 있으면 나 여호와가 환상으로 나를 그에게 알리기도 하고 꿈으로 그와 말하기도 하거니와.",
+      "vocab": [
+        {
+          "word": "prophet",
+          "mean": "선지자"
+        },
+        {
+          "word": "Lord",
+          "mean": "여호와(주)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Citation",
+          "desc": "민수기 12장 6절 인용"
+        }
+      ]
+    },
+    {
+      "en": "So the voice of God is the dream of man.",
+      "ko": "그러므로 하나님의 음성은 곧 인간의 꿈입니다.",
+      "vocab": [
+        {
+          "word": "voice of God",
+          "mean": "하나님의 음성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Equation",
+          "desc": "하나님의 음성 = 인간의 상상력(꿈)이라는 등식 성립"
+        }
+      ]
+    },
+    {
+      "en": "“Blessed is she, for she believed that this spoken to her would be fulfilled.”",
+      "ko": "“주께서 하신 말씀이 반드시 이루어지리라고 믿은 그 여자에게 복이 있도다.”",
+      "vocab": [
+        {
+          "word": "Blessed",
+          "mean": "복이 있는"
+        },
+        {
+          "word": "fulfilled",
+          "mean": "성취된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Citation",
+          "desc": "누가복음 1장 45절 인용"
+        }
+      ]
+    },
+    {
+      "en": "It was told to her in a dream.",
+      "ko": "그것은 그녀에게 꿈을 통해 전달되었습니다.",
+      "vocab": [
+        {
+          "word": "told",
+          "mean": "전달된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Interpretation",
+          "desc": "성경의 계시를 꿈(상상)의 영역으로 해석"
+        }
+      ]
+    },
+    {
+      "en": "From the beginning to the end of the Bible God is always speaking through a dream.",
+      "ko": "성경의 처음부터 끝까지 하나님은 항상 꿈을 통해 말씀하십니다.",
+      "vocab": [
+        {
+          "word": "beginning to the end",
+          "mean": "처음부터 끝까지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Generalization",
+          "desc": "성경 전체를 꿈의 기록으로 보는 네빌의 관점"
+        }
+      ]
+    },
+    {
+      "en": "In Job he speaks of two types.",
+      "ko": "욥기에서 그는 두 가지 유형에 대해 말합니다.",
+      "vocab": [
+        {
+          "word": "Job",
+          "mean": "욥기"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Reference",
+          "desc": "욥기 33장 15절을 암시"
+        }
+      ]
+    },
+    {
+      "en": "The first is a dream and then a vision of the night.",
+      "ko": "첫 번째는 꿈이고, 그다음은 밤의 환상입니다.",
+      "vocab": [
+        {
+          "word": "vision of the night",
+          "mean": "밤의 환상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Classification",
+          "desc": "성경적 계시의 두 가지 형태를 언급"
+        }
+      ]
+    },
+    {
+      "en": "“And there He will open the ears of men and frighten them with warnings.”",
+      "ko": "“그가 사람들의 귀를 여시고 경고함으로써 그들을 두렵게 하시나니.”",
+      "vocab": [
+        {
+          "word": "frighten",
+          "mean": "두렵게 하다"
+        },
+        {
+          "word": "warnings",
+          "mean": "경고"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Citation",
+          "desc": "욥기 33장 16절 인용"
+        }
+      ]
+    },
+    {
+      "en": "I do not have to fall asleep here to dream.",
+      "ko": "꿈을 꾸기 위해 반드시 잠들 필요는 없습니다.",
+      "vocab": [
+        {
+          "word": "fall asleep",
+          "mean": "잠들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Technique",
+          "desc": "낮 동안의 상상(Daydreaming)도 성경적 의미의 꿈과 동일함을 강조"
+        }
+      ]
+    },
+    {
+      "en": "The nightmare is the rearrangement of the day dreams.",
+      "ko": "악몽은 낮 동안의 꿈들이 재배열된 것입니다.",
+      "vocab": [
+        {
+          "word": "nightmare",
+          "mean": "악몽"
+        },
+        {
+          "word": "rearrangement",
+          "mean": "재배열"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Psychological Insight",
+          "desc": "부정적인 현실(악몽)은 자신의 잘못된 상상(낮의 꿈)의 결과물임을 설명"
+        }
+      ]
+    },
+    {
+      "en": "They are rearranged dramatically and presented to me, and if my purpose is faulty it terrifies me with a warning.",
+      "ko": "그것들은 극적으로 재배열되어 나에게 나타나며, 만약 나의 목적이 잘못되었다면 그것은 경고를 통해 나를 두렵게 합니다.",
+      "vocab": [
+        {
+          "word": "dramatically",
+          "mean": "극적으로"
+        },
+        {
+          "word": "faulty",
+          "mean": "잘못된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Cause and Effect",
+          "desc": "상상의 목적이 순수하지 않을 때 나타나는 부정적 피드백에 대한 경고"
+        }
+      ]
+    },
+    {
+      "en": "There is one given in Genesis by Israel.",
+      "ko": "창세기에 이스라엘에 의해 주어진 한 가지 예가 있습니다.",
+      "vocab": [
+        {
+          "word": "Genesis",
+          "mean": "창세기"
+        },
+        {
+          "word": "Israel",
+          "mean": "이스라엘"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Subject-Verb Inversion",
+          "desc": "존재를 나타내는 'There is' 구문으로 시작하여 성경적 사례를 도입함."
+        }
+      ]
+    },
+    {
+      "en": "He was first called Jacob and then he wrested for himself the new name of Israel -or Is-real.",
+      "ko": "그는 처음에는 야곱이라 불렸으나, 그 후 스스로 이스라엘, 즉 '실재하는 것(Is-real)'이라는 새 이름을 쟁취했습니다.",
+      "vocab": [
+        {
+          "word": "wrested",
+          "mean": "쟁취하다, 비틀어 얻다"
+        },
+        {
+          "word": "Is-real",
+          "mean": "실재하는 것(네빌의 언어 유희)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Etymology",
+          "desc": "네빌은 이스라엘을 'Is-real(실재하는 것)'로 해석하여 의식의 상태가 현실이 됨을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "From then on his dreams were objective facts, so the dreams were real.",
+      "ko": "그때부터 그의 꿈은 객관적인 사실이 되었고, 따라서 그 꿈들은 실재였습니다.",
+      "vocab": [
+        {
+          "word": "objective facts",
+          "mean": "객관적 사실"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Manifestation",
+          "desc": "상상(꿈)이 물리적 현실로 투영되는 과정을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "He made a bargain with his uncle Laban that all the spotted and striped animals in the flocks were to be his, and Laban agreed, thinking Jacob would be little more than a slave while he worked to win the first daughter and then the second.",
+      "ko": "그는 삼촌 라반과 양 떼 중 얼룩지고 점박이인 모든 동물은 자신의 것이 되기로 계약을 맺었고, 라반은 야곱이 첫째 딸과 둘째 딸을 얻기 위해 일하는 동안 노예나 다름없을 것이라 생각하며 동의했습니다.",
+      "vocab": [
+        {
+          "word": "bargain",
+          "mean": "계약, 거래"
+        },
+        {
+          "word": "spotted and striped",
+          "mean": "얼룩지고 점박이인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Narrative",
+          "desc": "창세기 30장의 야곱과 라반의 계약 이야기를 인용함."
+        }
+      ]
+    },
+    {
+      "en": "And then the Lord appeared in a dream and told Jacob that all those goats and rams which leaped upon the flocks when they came to drink were spotted or striped.",
+      "ko": "그때 주께서 꿈에 나타나 야곱에게 물을 마시러 온 양 떼 위로 뛰어오르는 모든 염소와 숫양들이 얼룩지거나 점박이라고 말씀하셨습니다.",
+      "vocab": [
+        {
+          "word": "Lord",
+          "mean": "주(하나님)"
+        },
+        {
+          "word": "goats and rams",
+          "mean": "염소와 숫양"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Divine Guidance",
+          "desc": "내면의 신(Lord)이 상상력을 통해 야곱에게 지혜를 주는 장면."
+        }
+      ]
+    },
+    {
+      "en": "And as the flocks bred where they came to drink, then the offspring became as in the dream, spotted or striped, and Jacob became richer and richer and his father-in-law got nothing from his hard bargain.",
+      "ko": "양 떼가 물을 마시러 온 곳에서 새끼를 낳자, 그 새끼들은 꿈에서 본 대로 얼룩지거나 점박이가 되었고, 야곱은 점점 더 부유해졌으며 그의 장인은 그 가혹한 계약에서 아무것도 얻지 못했습니다.",
+      "vocab": [
+        {
+          "word": "bred",
+          "mean": "번식하다"
+        },
+        {
+          "word": "offspring",
+          "mean": "새끼, 자손"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Law of Assumption",
+          "desc": "상상 속의 이미지가 물리적 번식(현실화)으로 이어짐을 보여줌."
+        }
+      ]
+    },
+    {
+      "en": "What he saw in the day dream he saw in chronological order in the night dream.",
+      "ko": "그가 낮의 꿈에서 본 것을 그는 밤의 꿈에서 시간 순서대로 보았습니다.",
+      "vocab": [
+        {
+          "word": "chronological order",
+          "mean": "시간 순서"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Daydream vs Nightdream",
+          "desc": "낮의 상상(의식적 의도)이 밤의 꿈(잠재의식의 투영)을 통해 현실로 정렬됨을 의미함."
+        }
+      ]
+    },
+    {
+      "en": "We see a thousand things during the day, and often violent things, to be rearranged and dramatized in the dream of the night, so it may terrify us with warning, for we are told, “My word will not return unto me void but must accomplish that where unto it is sent.”",
+      "ko": "우리는 낮 동안 수천 가지의 것들을 보며, 종종 폭력적인 것들도 보는데, 이것들은 밤의 꿈에서 재구성되고 극화되어 우리에게 경고를 주며 두렵게 할 수 있습니다. 왜냐하면 '내 말은 내게 헛되이 돌아오지 아니하고 내가 보낸 곳에서 반드시 성취하리라'는 말씀을 들었기 때문입니다.",
+      "vocab": [
+        {
+          "word": "rearranged",
+          "mean": "재구성된"
+        },
+        {
+          "word": "dramatized",
+          "mean": "극화된"
+        },
+        {
+          "word": "void",
+          "mean": "헛된, 빈"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Citation",
+          "desc": "이사야 55장 11절을 인용하여 상상(말)의 필연적 성취를 강조함."
+        }
+      ]
+    },
+    {
+      "en": "And the Word of God is man‘s dream.",
+      "ko": "그리고 하나님의 말씀은 인간의 꿈입니다.",
+      "vocab": [
+        {
+          "word": "Word of God",
+          "mean": "하나님의 말씀"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Core Doctrine",
+          "desc": "하나님의 말씀(Logos)이 곧 인간의 상상력(꿈)과 동일함을 선언함."
+        }
+      ]
+    },
+    {
+      "en": "Could you dream today?",
+      "ko": "오늘 꿈을 꿀 수 있습니까?",
+      "vocab": [
+        {
+          "word": "dream",
+          "mean": "꿈꾸다, 상상하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Question",
+          "desc": "네빌은 상상을 '꿈'으로 정의하며, 현재의 의식 상태를 선택하는 행위를 묻고 있습니다."
+        }
+      ]
+    },
+    {
+      "en": "That is the Word of God.",
+      "ko": "그것이 바로 하나님의 말씀입니다.",
+      "vocab": [
+        {
+          "word": "Word of God",
+          "mean": "하나님의 말씀(로고스)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Definition",
+          "desc": "네빌은 성경의 '말씀'을 외부의 소리가 아닌 인간의 상상력(꿈)으로 해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "Throughout the whole Scripture we are told of the Word of God, and we think someone is actually going to speak to us.",
+      "ko": "성경 전체를 통해 우리는 하나님의 말씀에 대해 듣지만, 우리는 누군가가 실제로 우리에게 말을 걸어올 것이라고 생각합니다.",
+      "vocab": [
+        {
+          "word": "Scripture",
+          "mean": "성경"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Misconception",
+          "desc": "인간이 신의 음성을 외부의 물리적 소리로 오해하는 일반적인 종교적 관점을 지적합니다."
+        }
+      ]
+    },
+    {
+      "en": "It could come that way when man fully awakens, but it usually comes in a dream.",
+      "ko": "사람이 완전히 깨어났을 때는 그런 방식으로 올 수도 있지만, 보통은 꿈을 통해 옵니다.",
+      "vocab": [
+        {
+          "word": "awakens",
+          "mean": "깨어나다(영적 각성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Method",
+          "desc": "영적 각성 상태와 꿈(상상)의 관계를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Solomon was promised great riches and long life, and then he awoke and —it was a dream.",
+      "ko": "솔로몬은 큰 부와 장수를 약속받았고, 그 후 그는 깨어났는데 그것은 꿈이었습니다.",
+      "vocab": [
+        {
+          "word": "Solomon",
+          "mean": "솔로몬"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "열왕기상 3장의 솔로몬의 꿈을 인용하여 성경적 사건의 본질이 상상임을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "God always appears speaking to man in a dream, so the voice of God is the dream of man.",
+      "ko": "하나님은 항상 꿈속에서 사람에게 말씀하시는 모습으로 나타나시기에, 하나님의 음성은 곧 인간의 꿈입니다.",
+      "vocab": [
+        {
+          "word": "voice of God",
+          "mean": "하나님의 음성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Theological Reinterpretation",
+          "desc": "신의 계시를 인간의 상상력과 동일시하는 네빌의 핵심 사상입니다."
+        }
+      ]
+    },
+    {
+      "en": "It need not be a night dream.",
+      "ko": "그것이 꼭 밤의 꿈일 필요는 없습니다.",
+      "vocab": [
+        {
+          "word": "night dream",
+          "mean": "밤의 꿈(수면 중의 꿈)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Clarification",
+          "desc": "꿈은 수면 상태뿐만 아니라 깨어 있는 상태의 상상(Day dream)도 포함함을 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "Live so in your day dream that the night dream follows in a chronological order, just as Jacob saw it regarding the striped and spotted cattle.",
+      "ko": "낮의 꿈(상상) 속에서 살아가십시오. 그러면 야곱이 얼룩지고 점 있는 가축들에 관해 보았던 것처럼, 밤의 꿈이 시간적 순서에 따라 뒤따를 것입니다.",
+      "vocab": [
+        {
+          "word": "day dream",
+          "mean": "낮의 꿈(의식적인 상상)"
+        },
+        {
+          "word": "chronological",
+          "mean": "시간 순서의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Technique",
+          "desc": "낮의 상상이 밤의 꿈을 통해 현실화되는 과정을 야곱의 사례를 들어 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Though all the flock is brown I will see them spotted in my mind’s eye.",
+      "ko": "비록 모든 양 떼가 갈색일지라도 나는 마음의 눈으로 그것들이 얼룩져 있는 것을 볼 것입니다.",
+      "vocab": [
+        {
+          "word": "mind's eye",
+          "mean": "마음의 눈(상상력)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Visualization",
+          "desc": "현실의 조건과 상관없이 상상 속에서 원하는 결과를 확정하는 시각화 기법입니다."
+        }
+      ]
+    },
+    {
+      "en": "And that which was brought forth was brought forth in the image held.",
+      "ko": "그리고 나타난 것은 품었던 이미지 그대로 나타났습니다.",
+      "vocab": [
+        {
+          "word": "brought forth",
+          "mean": "나타나다, 산출되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Law of Assumption",
+          "desc": "상상한 이미지가 현실로 투영되는 법칙을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "He saw what he wanted to see in the day dream and then in the night dream it came forth in chronological order.",
+      "ko": "그는 낮의 꿈에서 보고 싶은 것을 보았고, 그 후 밤의 꿈에서 그것이 시간적 순서에 따라 나타났습니다.",
+      "vocab": [
+        {
+          "word": "came forth",
+          "mean": "나타났다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Summary",
+          "desc": "상상의 현실화 과정을 요약합니다."
+        }
+      ]
+    },
+    {
+      "en": "But man is terrified by his dream, but they are shown him only to get him to think more constructively during that day.",
+      "ko": "하지만 사람은 자신의 꿈을 두려워합니다. 그러나 그것들이 그에게 보여지는 이유는 단지 그가 낮 동안 더 건설적으로 생각하게 하려는 것뿐입니다.",
+      "vocab": [
+        {
+          "word": "constructively",
+          "mean": "건설적으로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Purpose of Dreams",
+          "desc": "꿈은 두려움의 대상이 아니라, 낮 동안의 상상을 교정하기 위한 지표임을 밝힙니다."
+        }
+      ]
+    },
+    {
+      "en": "For God is man’s Imagination.",
+      "ko": "왜냐하면 하나님은 곧 인간의 상상력이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "Imagination",
+          "mean": "상상력"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Core Doctrine",
+          "desc": "네빌 고다드 사상의 핵심인 '하나님 = 인간의 상상력'을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "I could pick out a dozen people in this audience tonight who have written me about controlling their day dreams.",
+      "ko": "오늘 밤 이 청중들 중에서 자신의 백일몽을 통제하는 것에 관해 내게 편지를 쓴 사람 열두 명을 골라낼 수 있습니다.",
+      "vocab": [
+        {
+          "word": "pick out",
+          "mean": "골라내다"
+        },
+        {
+          "word": "audience",
+          "mean": "청중"
+        },
+        {
+          "word": "day dreams",
+          "mean": "백일몽, 상상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "상상은 단순한 공상이 아니라 현실을 창조하는 도구임을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "Here is a man whose property was going to pot, his tenants were behind in their payments, the stepfather was drinking and the children were shabby and neglected.",
+      "ko": "여기 재산이 엉망이 되어가고, 세입자들은 임대료를 밀리고, 의붓아버지는 술을 마시고, 아이들은 초라하고 방치된 한 남자가 있습니다.",
+      "vocab": [
+        {
+          "word": "going to pot",
+          "mean": "엉망이 되다, 망가지다"
+        },
+        {
+          "word": "tenants",
+          "mean": "세입자"
+        },
+        {
+          "word": "shabby",
+          "mean": "초라한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Context",
+          "desc": "상상력을 적용하기 전의 절망적인 현실 상황을 묘사함."
+        }
+      ]
+    },
+    {
+      "en": "Instead of taking legal action the owner took an imaginary ride past his property and saw it in the well-kept state in which he desired to see it.",
+      "ko": "법적 조치를 취하는 대신, 그 소유주는 자신의 재산을 지나가는 상상의 드라이브를 했고, 자신이 보고 싶어 하는 잘 관리된 상태의 재산을 보았습니다.",
+      "vocab": [
+        {
+          "word": "legal action",
+          "mean": "법적 조치"
+        },
+        {
+          "word": "imaginary ride",
+          "mean": "상상 속의 드라이브"
+        },
+        {
+          "word": "well-kept",
+          "mean": "잘 관리된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Technique",
+          "desc": "외부 현실을 바꾸려 애쓰지 않고 내면의 상상을 통해 현실을 재구성하는 '상상적 행위'를 보여줌."
+        }
+      ]
+    },
+    {
+      "en": "Things began to happen.",
+      "ko": "일들이 일어나기 시작했습니다.",
+      "vocab": [
+        {
+          "word": "happen",
+          "mean": "일어나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Causality",
+          "desc": "내면의 상상이 외부 현실의 변화를 유도하는 인과관계를 나타냄."
+        }
+      ]
+    },
+    {
+      "en": "The woman broke her leg and went to the hospital; at once the stepfather disappeared.",
+      "ko": "그 여자는 다리가 부러져 병원에 갔고, 즉시 의붓아버지는 사라졌습니다.",
+      "vocab": [
+        {
+          "word": "at once",
+          "mean": "즉시"
+        },
+        {
+          "word": "disappeared",
+          "mean": "사라졌다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Manifestation",
+          "desc": "상상한 결과가 현실에서 구체적인 사건으로 나타나는 과정."
+        }
+      ]
+    },
+    {
+      "en": "When the woman recovered she went away for a time with the children and returned with a new husband.",
+      "ko": "그 여자가 회복되었을 때, 그녀는 아이들과 함께 잠시 떠났다가 새로운 남편과 함께 돌아왔습니다.",
+      "vocab": [
+        {
+          "word": "recovered",
+          "mean": "회복된"
+        },
+        {
+          "word": "returned",
+          "mean": "돌아왔다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Outcome",
+          "desc": "상상한 '잘 관리된 상태'를 위한 환경적 변화가 완성됨."
+        }
+      ]
+    },
+    {
+      "en": "The place is now in better condition than it has ever been, the children are well-cared for and the family is happy and contented.",
+      "ko": "그곳은 이제 그 어느 때보다 더 좋은 상태가 되었고, 아이들은 잘 보살핌을 받고 있으며, 가족은 행복하고 만족스러워합니다.",
+      "vocab": [
+        {
+          "word": "condition",
+          "mean": "상태"
+        },
+        {
+          "word": "well-cared for",
+          "mean": "잘 보살핌을 받는"
+        },
+        {
+          "word": "contented",
+          "mean": "만족하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Result",
+          "desc": "상상이 현실로 완전히 구현된 상태."
+        }
+      ]
+    },
+    {
+      "en": "So, “blessed is she that believed that this spoken to her would be fulfilled.”",
+      "ko": "그러므로, “주께서 하신 말씀이 반드시 이루어지리라고 믿은 그 여자에게 복이 있도다.”",
+      "vocab": [
+        {
+          "word": "blessed",
+          "mean": "복이 있는"
+        },
+        {
+          "word": "fulfilled",
+          "mean": "성취된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "성경 구절을 인용하여 믿음의 중요성을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "For everyone is Mary; the owner of the property was Mary.",
+      "ko": "왜냐하면 모든 사람이 마리아이기 때문입니다. 그 재산의 소유주도 마리아였습니다.",
+      "vocab": [
+        {
+          "word": "Mary",
+          "mean": "마리아(상상하는 자, 수태하는 자)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Allegory",
+          "desc": "성경의 인물 마리아를 상상력을 통해 신성을 잉태하는 모든 인간의 상징으로 해석함."
+        }
+      ]
+    },
+    {
+      "en": "You have a dream of what you want to be and you see it clearly in its fullness.",
+      "ko": "당신은 자신이 무엇이 되고 싶은지에 대한 꿈을 가지고 있고, 그것을 충만함 속에서 명확하게 봅니다.",
+      "vocab": [
+        {
+          "word": "dream",
+          "mean": "꿈, 상상"
+        },
+        {
+          "word": "fullness",
+          "mean": "충만함"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Instruction",
+          "desc": "상상의 구체성과 생생함이 현실화의 핵심임을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "Now blessed are they who could believe this spoken by God, for God‘s voice is man‘s dream.",
+      "ko": "이제 신에 의해 말씀하신 이것을 믿을 수 있는 자들에게 복이 있나니, 신의 목소리는 인간의 꿈이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "God's voice",
+          "mean": "신의 목소리"
+        },
+        {
+          "word": "man's dream",
+          "mean": "인간의 꿈"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mystical Interpretation",
+          "desc": "신의 계시가 외부가 아닌 인간 내면의 꿈(상상)을 통해 전달됨을 역설함."
+        }
+      ]
+    },
+    {
+      "en": "So, can I believe that I am now what I want to be and be faithful to the voice of God?",
+      "ko": "그러니, 내가 지금 되고 싶은 모습이 되었다고 믿고 신의 목소리에 충실할 수 있을까요?",
+      "vocab": [
+        {
+          "word": "faithful",
+          "mean": "충실한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Self-Inquiry",
+          "desc": "상상한 상태를 유지하는 것이 신에 대한 믿음임을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "Then my Word shall not return to me void.",
+      "ko": "그렇다면 나의 말은 헛되이 내게 돌아오지 않을 것입니다.",
+      "vocab": [
+        {
+          "word": "Word",
+          "mean": "말, 말씀"
+        },
+        {
+          "word": "void",
+          "mean": "헛된, 빈"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "이사야 55:11을 인용하여 상상의 힘이 반드시 현실화됨을 보증함."
+        }
+      ]
+    },
+    {
+      "en": "If I can believe, it will come to pass.",
+      "ko": "내가 믿을 수 있다면, 그것은 일어날 것입니다.",
+      "vocab": [
+        {
+          "word": "come to pass",
+          "mean": "일어나다, 실현되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Law of Belief",
+          "desc": "믿음(상상)이 현실 창조의 유일한 조건임을 명시함."
+        }
+      ]
+    },
+    {
+      "en": "It has nothing to do with your background, for God speaks to man and He does not care who you are, for it is through the medium of one‘s own dream that He speaks to you.",
+      "ko": "그것은 당신의 배경과는 아무런 상관이 없습니다. 신은 인간에게 말씀하시며 당신이 누구인지는 신경 쓰지 않으시기 때문입니다. 신은 바로 당신 자신의 꿈이라는 매개체를 통해 당신에게 말씀하시기 때문입니다.",
+      "vocab": [
+        {
+          "word": "background",
+          "mean": "배경"
+        },
+        {
+          "word": "medium",
+          "mean": "매개체"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Universal Truth",
+          "desc": "상상력은 누구에게나 평등하게 주어진 신의 도구임을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "—Have nothing to do with this man for I have been troubled in a dream concerning Him.“",
+      "ko": "“이 옳은 사람에게 아무 상관도 하지 마옵소서 오늘 꿈에 내가 그 사람을 인하여 애를 많이 태웠나이다.”",
+      "vocab": [
+        {
+          "word": "troubled",
+          "mean": "괴로워하는, 고민하는"
+        },
+        {
+          "word": "concerning",
+          "mean": "~에 관하여"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "마태복음 27장 19절의 빌라도 아내의 말을 인용함."
+        }
+      ]
+    },
+    {
+      "en": "So spoke Pilate‘s wife.",
+      "ko": "빌라도의 아내가 이렇게 말했습니다.",
+      "vocab": [
+        {
+          "word": "Pilate",
+          "mean": "본디오 빌라도"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Context",
+          "desc": "성경적 인물을 상징적 인물로 해석하기 위한 도입부."
+        }
+      ]
+    },
+    {
+      "en": "Pilate receives this note from his wife when the one who was the embodiment of Truth stood before him.",
+      "ko": "진리의 화신이 빌라도 앞에 섰을 때, 빌라도는 아내로부터 이 쪽지를 받았습니다.",
+      "vocab": [
+        {
+          "word": "embodiment",
+          "mean": "화신, 구현"
+        },
+        {
+          "word": "Truth",
+          "mean": "진리(예수 그리스도를 상징)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Symbolism",
+          "desc": "빌라도는 '이성(Reason)'을, 예수는 '진리(Truth)'를 상징함."
+        }
+      ]
+    },
+    {
+      "en": "Pilate is the embodiment of Reason and Truth does not reply to Reason’s voice.",
+      "ko": "빌라도는 이성의 화신이며, 진리는 이성의 목소리에 대답하지 않습니다.",
+      "vocab": [
+        {
+          "word": "Reason",
+          "mean": "이성"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "진리는 논리적 이성을 초월한 존재임을 강조."
+        }
+      ]
+    },
+    {
+      "en": "But Reason could not believe that God speaks to man through a dream, so he did nothing.",
+      "ko": "그러나 이성은 하나님께서 꿈을 통해 인간에게 말씀하신다는 것을 믿을 수 없었기에, 아무것도 하지 않았습니다.",
+      "vocab": [
+        {
+          "word": "believe",
+          "mean": "믿다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "인간의 이성이 영적 계시를 거부하는 한계를 설명."
+        }
+      ]
+    },
+    {
+      "en": "God can speak through the night dream but it usually frightens and because he does not understand it.",
+      "ko": "하나님은 밤의 꿈을 통해 말씀하실 수 있지만, 인간은 그것을 이해하지 못하기 때문에 대개 두려워합니다.",
+      "vocab": [
+        {
+          "word": "frightens",
+          "mean": "겁먹게 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "꿈의 상징성을 이해하지 못하는 인간의 무지를 지적."
+        }
+      ]
+    },
+    {
+      "en": "—He speaks to man in a dream, in a vision of the night.“",
+      "ko": "“그가 꿈으로, 밤의 이상으로 사람에게 말씀하시나이다.”",
+      "vocab": [
+        {
+          "word": "vision",
+          "mean": "이상, 환상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "욥기 33장 15절 인용."
+        }
+      ]
+    },
+    {
+      "en": "He does it that we may change our purpose and change our deeds, for if night after night my daily thoughts are rearranged in my night dreams so that they terrify me, then what am I doing that it should be so?",
+      "ko": "그분은 우리가 목적과 행동을 바꾸도록 그렇게 하십니다. 만약 밤마다 나의 일상적인 생각들이 밤의 꿈속에서 재배열되어 나를 공포에 떨게 한다면, 도대체 내가 무엇을 잘못하고 있는 것일까요?",
+      "vocab": [
+        {
+          "word": "rearranged",
+          "mean": "재배열된"
+        },
+        {
+          "word": "terrify",
+          "mean": "공포에 떨게 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "꿈은 자신의 내면 상태를 반영하는 거울임을 강조."
+        }
+      ]
+    },
+    {
+      "en": "For night after night He dramatizes my day, but not in chronological order.",
+      "ko": "왜냐하면 그분은 밤마다 나의 하루를 극화하시는데, 시간 순서대로는 아닙니다.",
+      "vocab": [
+        {
+          "word": "dramatizes",
+          "mean": "극화하다, 연출하다"
+        },
+        {
+          "word": "chronological",
+          "mean": "연대순의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "꿈의 비선형적 성격에 대한 설명."
+        }
+      ]
+    },
+    {
+      "en": "He takes the whole day and dramatizes it, and if it is not pleasant it will terrify me to get me to turn from my deeds and my thinking and rearrange the furnishing of my mind and come to the point where I can wrestle with this being (my inner self) as Jacob did and get a new name, so that my day dream can then be projected at night just as I dreamed it during the day.",
+      "ko": "그분은 하루 전체를 가져와 극화하시며, 만약 그것이 유쾌하지 않다면 나로 하여금 나의 행동과 생각에서 돌이키게 하고, 내 마음의 가구를 재배치하게 하며, 야곱이 그랬던 것처럼 이 존재(나의 내면)와 씨름하여 새로운 이름을 얻을 수 있는 지점에 도달하게 함으로써 나를 두렵게 하십니다. 그리하여 나의 낮의 꿈이 내가 낮에 꿈꿨던 그대로 밤에 투영될 수 있게 하려는 것입니다.",
+      "vocab": [
+        {
+          "word": "furnishing",
+          "mean": "가구, 비품(마음의 상태)"
+        },
+        {
+          "word": "wrestle",
+          "mean": "씨름하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "내면의 변화를 통해 외부 현실을 창조하는 과정."
+        }
+      ]
+    },
+    {
+      "en": "Jacob wanted the mottled and striped ones, and it comes just as he saw it.",
+      "ko": "야곱은 얼룩지고 점 있는 것들을 원했고, 그것은 그가 본 그대로 이루어졌습니다.",
+      "vocab": [
+        {
+          "word": "mottled",
+          "mean": "얼룩덜룩한"
+        },
+        {
+          "word": "striped",
+          "mean": "줄무늬가 있는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "창세기 30장 37-43절의 야곱의 상상력과 현실화 원리."
+        }
+      ]
+    },
+    {
+      "en": "The entire Bible from beginning to end is the vision of God speaking to man, and he speaks to man through the medium of dreams.",
+      "ko": "처음부터 끝까지 성경 전체는 하나님께서 인간에게 말씀하시는 환상이며, 그분은 꿈이라는 매개체를 통해 인간에게 말씀하십니다.",
+      "vocab": [
+        {
+          "word": "medium",
+          "mean": "매개체"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "성경을 외부 역사가 아닌 인간 내면의 심리적 드라마로 해석."
+        }
+      ]
+    },
+    {
+      "en": "Visions are different from dreams and they come by Grace and only to bear witness to the progress that you make, to mark the mile-posts on the way.",
+      "ko": "환상은 꿈과 다르며, 그것은 은혜로 오고 오직 당신이 이루는 진보를 증거하고 길 위의 이정표를 표시하기 위해 옵니다.",
+      "vocab": [
+        {
+          "word": "Grace",
+          "mean": "은혜"
+        },
+        {
+          "word": "mile-posts",
+          "mean": "이정표"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "꿈과 환상의 차이점 정의."
+        }
+      ]
+    },
+    {
+      "en": "Sometimes you do hear a direct voice, but that is rare, but God is always speaking to man through his day dreams.",
+      "ko": "때때로 직접적인 음성을 듣기도 하지만 그것은 드문 일이며, 하나님은 항상 낮의 꿈(공상)을 통해 인간에게 말씀하고 계십니다.",
+      "vocab": [
+        {
+          "word": "direct voice",
+          "mean": "직접적인 음성"
+        },
+        {
+          "word": "day dreams",
+          "mean": "낮의 꿈, 공상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "상상력(Day dreams)이 곧 하나님의 음성임을 강조."
+        }
+      ]
+    },
+    {
+      "en": "The voice of God is heard by man in dreams.",
+      "ko": "하나님의 음성은 꿈속에서 인간에게 들립니다.",
+      "vocab": [
+        {
+          "word": "heard",
+          "mean": "들리는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conclusion",
+          "desc": "전체 내용을 요약하며 꿈의 중요성을 재강조."
+        }
+      ]
+    },
+    {
+      "en": "In the beginning he placed man (Adam) into a profound sleep and there is no record he has ever awakened, so he is still asleep.",
+      "ko": "태초에 그는 인간(아담)을 깊은 잠에 빠뜨렸고 그가 깨어났다는 기록은 없기에, 그는 여전히 잠들어 있습니다.",
+      "vocab": [
+        {
+          "word": "profound sleep",
+          "mean": "깊은 잠(영적 무지 상태)"
+        },
+        {
+          "word": "awakened",
+          "mean": "깨어난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "인간의 타락은 신적 의식에서 분리되어 물질적 꿈속으로 들어간 상태를 의미함."
+        }
+      ]
+    },
+    {
+      "en": "Then —God spoke to them in the cool of the evening.“",
+      "ko": "그때 '하나님께서 저녁 서늘할 때에 그들에게 말씀하셨습니다.'",
+      "vocab": [
+        {
+          "word": "cool of the evening",
+          "mean": "저녁 서늘할 때"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "창세기 3장 8절의 인용으로, 신이 인간과 소통하는 상태를 묘사함."
+        }
+      ]
+    },
+    {
+      "en": "It is all imagery.",
+      "ko": "이 모든 것은 형상(이미지)입니다.",
+      "vocab": [
+        {
+          "word": "imagery",
+          "mean": "형상, 심상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphysics",
+          "desc": "외부 세계는 내면의 상상력이 투영된 형상일 뿐이라는 네빌의 핵심 사상."
+        }
+      ]
+    },
+    {
+      "en": "It is man in a profound sleep and God is speaking through the medium of dreams.",
+      "ko": "그것은 깊은 잠에 빠진 인간이며, 하나님은 꿈이라는 매개체를 통해 말씀하고 계십니다.",
+      "vocab": [
+        {
+          "word": "medium",
+          "mean": "매개체"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "인생의 모든 사건은 신이 인간에게 보내는 꿈의 메시지임."
+        }
+      ]
+    },
+    {
+      "en": "Numbers 12: —If there be a prophet among you, I, the Lord, will make myself known unto him in a vision, and will speak unto him in a dream.“",
+      "ko": "민수기 12장: '너희 중에 선지자가 있으면 나 여호와가 환상으로 나를 그에게 알리기도 하고 꿈으로 그와 말하기도 하거니와.'",
+      "vocab": [
+        {
+          "word": "prophet",
+          "mean": "선지자"
+        },
+        {
+          "word": "vision",
+          "mean": "환상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Reference",
+          "desc": "민수기 12장 6절의 인용."
+        }
+      ]
+    },
+    {
+      "en": "You do not have to fall asleep to dream.",
+      "ko": "꿈을 꾸기 위해 반드시 잠들 필요는 없습니다.",
+      "vocab": [
+        {
+          "word": "fall asleep",
+          "mean": "잠들다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "깨어 있는 상태에서의 상상(Daydreaming)이 곧 창조적 꿈임을 강조."
+        }
+      ]
+    },
+    {
+      "en": "Everything in the world is talking to me and I am talking to myself and my own wonderful Imagination is God speaking to me.",
+      "ko": "세상의 모든 것은 나에게 말을 걸고 있고 나는 나 자신에게 말하고 있으며, 나의 경이로운 상상력은 나에게 말씀하시는 하나님입니다.",
+      "vocab": [
+        {
+          "word": "wonderful Imagination",
+          "mean": "경이로운 상상력(네빌이 정의한 신의 이름)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "인간의 상상력과 신의 동일시."
+        }
+      ]
+    },
+    {
+      "en": "In the beginning was the dream and the dream was with my Imagination and the dream was my Imagination, and by it were all things made that are made.",
+      "ko": "태초에 꿈이 있었고 그 꿈은 나의 상상력과 함께 있었으며 그 꿈은 곧 나의 상상력이었고, 지어진 모든 것은 그것으로 말미암아 지어졌습니다.",
+      "vocab": [
+        {
+          "word": "In the beginning",
+          "mean": "태초에"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Parody",
+          "desc": "요한복음 1장 1-3절을 상상력의 관점에서 재해석함."
+        }
+      ]
+    },
+    {
+      "en": "So I begin in a dream, but I can change my dream, and changing my dream I change the activity of my Imagination and change the phenomena of my life.",
+      "ko": "그러므로 나는 꿈속에서 시작하지만, 나는 나의 꿈을 바꿀 수 있고, 꿈을 바꿈으로써 나는 나의 상상력의 활동을 바꾸고 내 삶의 현상들을 바꿉니다.",
+      "vocab": [
+        {
+          "word": "phenomena",
+          "mean": "현상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "상상력의 활동(Activity)이 현실의 현상을 결정한다는 법칙."
+        }
+      ]
+    },
+    {
+      "en": "If I do not change it, it remains the same.",
+      "ko": "만약 내가 그것을 바꾸지 않는다면, 그것은 그대로 남아있을 것입니다.",
+      "vocab": [
+        {
+          "word": "remains the same",
+          "mean": "그대로 남아있다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "인간의 책임과 상상력의 주도권 강조."
+        }
+      ]
+    },
+    {
+      "en": "If you know someone who would like this or that, you do not raise a finger physically, but dream it for them.",
+      "ko": "만약 당신이 이것이나 저것을 원하는 누군가를 안다면, 당신은 물리적으로 손가락 하나 까딱하지 말고, 그들을 위해 그것을 꿈꾸십시오.",
+      "vocab": [
+        {
+          "word": "raise a finger",
+          "mean": "손가락 하나 까딱하다(노력하다)"
+        },
+        {
+          "word": "dream",
+          "mean": "상상하다, 꿈꾸다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Law",
+          "desc": "물리적 행동이 아닌 상상력(Imagination)을 통한 창조의 원리를 강조함."
+        }
+      ]
+    },
+    {
+      "en": "What would it be like if it were true?",
+      "ko": "그것이 사실이라면 어떤 느낌일까요?",
+      "vocab": [
+        {
+          "word": "What would it be like",
+          "mean": "~라면 어떤 느낌일까"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Living in the End",
+          "desc": "이미 이루어진 상태의 느낌(Feeling)을 가정하는 네빌의 핵심 기법."
+        }
+      ]
+    },
+    {
+      "en": "Represent them to yourself as if their dream were true, and then you do nothing to make it come to pass, for a true dream has its own way of fulfilling itself.",
+      "ko": "그들의 꿈이 사실인 것처럼 당신 자신에게 그들을 묘사하십시오. 그리고 그것이 실현되도록 하기 위해 아무것도 하지 마십시오. 진실한 꿈은 스스로 성취되는 자신만의 방식을 가지고 있기 때문입니다.",
+      "vocab": [
+        {
+          "word": "Represent",
+          "mean": "묘사하다, 상상 속에 그리다"
+        },
+        {
+          "word": "come to pass",
+          "mean": "일어나다, 실현되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Passive Creation",
+          "desc": "상상 후에는 인위적인 노력을 멈추고 상상력의 자연스러운 전개를 신뢰하라는 가르침."
+        }
+      ]
+    },
+    {
+      "en": "That is your Word and it cannot return unto you void.",
+      "ko": "그것이 당신의 말씀이며, 그것은 헛되이 당신에게 돌아올 수 없습니다.",
+      "vocab": [
+        {
+          "word": "Word",
+          "mean": "말씀(상상력의 투사)"
+        },
+        {
+          "word": "void",
+          "mean": "헛된, 빈"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion",
+          "desc": "이사야 55:11의 인용으로, 상상력(말씀)은 반드시 결과를 맺는다는 확신."
+        }
+      ]
+    },
+    {
+      "en": "But I am free to change the Word of God and change the sentence and make it spell something different.",
+      "ko": "하지만 나는 하나님의 말씀을 바꾸고 문장을 바꾸어 그것이 다른 것을 의미하게 만들 자유가 있습니다.",
+      "vocab": [
+        {
+          "word": "spell",
+          "mean": "철자를 쓰다, 의미하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Free Will",
+          "desc": "인간은 상상력을 통해 자신의 운명(말씀)을 재구성할 자유가 있음을 의미함."
+        }
+      ]
+    },
+    {
+      "en": "You can take any 12 words and express devotion or, by their rearrangement, express something frightful.",
+      "ko": "당신은 아무 12단어나 가져와서 헌신을 표현할 수도 있고, 그것들을 재배열함으로써 무서운 것을 표현할 수도 있습니다.",
+      "vocab": [
+        {
+          "word": "devotion",
+          "mean": "헌신"
+        },
+        {
+          "word": "rearrangement",
+          "mean": "재배열"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Creative Power",
+          "desc": "상상력의 조합에 따라 현실의 결과가 달라짐을 비유함."
+        }
+      ]
+    },
+    {
+      "en": "The Word of God is the dream of man.",
+      "ko": "하나님의 말씀은 인간의 꿈입니다.",
+      "vocab": [
+        {
+          "word": "Word of God",
+          "mean": "하나님의 말씀"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Identity",
+          "desc": "인간의 상상력이 곧 하나님의 창조적 힘과 동일함을 선언함."
+        }
+      ]
+    },
+    {
+      "en": "So what are we dreaming?",
+      "ko": "그렇다면 우리는 무엇을 꿈꾸고 있습니까?",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Self-Reflection",
+          "desc": "자신의 상상력을 의식적으로 통제하라는 질문."
+        }
+      ]
+    },
+    {
+      "en": "If you would only believe it and become the one of whom it was said, “Blessed is she who believed that this spoken to her would be fulfilled.”",
+      "ko": "만약 당신이 그것을 믿고, “주께서 하신 말씀이 반드시 이루어지리라고 믿은 그 여자에게 복이 있도다”라고 말해진 바로 그 사람이 된다면 말입니다.",
+      "vocab": [
+        {
+          "word": "Blessed",
+          "mean": "복이 있는"
+        },
+        {
+          "word": "fulfilled",
+          "mean": "성취된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion",
+          "desc": "누가복음 1:45 인용. 믿음이 현실을 창조하는 핵심임을 강조."
+        }
+      ]
+    },
+    {
+      "en": "For you are this being spoken of.",
+      "ko": "왜냐하면 당신이 바로 그 언급된 존재이기 때문입니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Identification",
+          "desc": "성경 속 인물은 외부의 역사가 아니라 바로 당신의 내면 상태임을 강조."
+        }
+      ]
+    },
+    {
+      "en": "Think of the most ideal state you would like to realize.",
+      "ko": "당신이 실현하고 싶은 가장 이상적인 상태를 생각하십시오.",
+      "vocab": [
+        {
+          "word": "ideal state",
+          "mean": "이상적인 상태"
+        },
+        {
+          "word": "realize",
+          "mean": "실현하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Instruction",
+          "desc": "상상력의 구체적인 적용 단계."
+        }
+      ]
+    },
+    {
+      "en": "And do not modify it.",
+      "ko": "그리고 그것을 수정하지 마십시오.",
+      "vocab": [
+        {
+          "word": "modify",
+          "mean": "수정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Persistence",
+          "desc": "의심으로 인해 상상을 타협하거나 바꾸지 말라는 조언."
+        }
+      ]
+    },
+    {
+      "en": "Think of the ideal state for you.",
+      "ko": "당신을 위한 이상적인 상태를 생각하십시오.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Individualism",
+          "desc": "타인의 기준이 아닌 자신의 진정한 욕망에 집중하라는 의미."
+        }
+      ]
+    },
+    {
+      "en": "No two want the same thing.",
+      "ko": "똑같은 것을 원하는 사람은 아무도 없습니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Uniqueness",
+          "desc": "각 개인의 욕망은 고유하며 그 자체로 신성함."
+        }
+      ]
+    },
+    {
+      "en": "Few would want to do what I am doing and very likely I would not care to do what you are doing.",
+      "ko": "내가 하는 일을 하고 싶어 하는 사람은 거의 없을 것이고, 나 역시 당신이 하는 일을 하고 싶어 하지 않을 가능성이 큽니다.",
+      "vocab": [
+        {
+          "word": "care to do",
+          "mean": "~하고 싶어 하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Subjectivity",
+          "desc": "각자의 길은 각자의 상상력에 의해 결정됨."
+        }
+      ]
+    },
+    {
+      "en": "But dream nobly.",
+      "ko": "하지만 고귀하게 꿈꾸십시오.",
+      "vocab": [
+        {
+          "word": "nobly",
+          "mean": "고귀하게"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Ethics",
+          "desc": "상상력의 힘을 사용할 때의 태도에 대한 조언."
+        }
+      ]
+    },
+    {
+      "en": "You have the Word.",
+      "ko": "당신에게는 말씀이 있습니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Empowerment",
+          "desc": "인간 내면에 신성한 창조의 힘이 있음을 재확인."
+        }
+      ]
+    },
+    {
+      "en": "Its use may cause a seeming convulsion as this man’s did.",
+      "ko": "그것을 사용하는 것은 이 사람이 그랬던 것처럼 외견상의 격변을 일으킬지도 모릅니다.",
+      "vocab": [
+        {
+          "word": "seeming",
+          "mean": "외견상의"
+        },
+        {
+          "word": "convulsion",
+          "mean": "격변, 경련"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Process",
+          "desc": "상상이 현실화될 때 기존의 질서가 흔들리는 현상을 설명."
+        }
+      ]
+    },
+    {
+      "en": "He did nothing but take his imaginary ride past his property and see things as he wanted them to be.",
+      "ko": "그는 자신의 재산 너머로 상상 속의 드라이브를 하고, 자신이 원하는 대로 상황을 보는 것 외에는 아무것도 하지 않았습니다.",
+      "vocab": [
+        {
+          "word": "imaginary ride",
+          "mean": "상상 속의 드라이브"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Technique",
+          "desc": "네빌의 '상상 속의 장면(Imaginal Act)' 기법 예시."
+        }
+      ]
+    },
+    {
+      "en": "But then what might be called a convulsion Þ the accident to the woman.",
+      "ko": "하지만 그때 격변이라 불릴 만한 일이 일어났습니다. 그 여인에게 일어난 사고 말입니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Consequence",
+          "desc": "상상의 결과가 때로는 예기치 못한 사건으로 나타날 수 있음을 언급."
+        }
+      ]
+    },
+    {
+      "en": "He has asked did he cause the accident.",
+      "ko": "그는 자신이 그 사고를 일으켰는지 물었습니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Responsibility",
+          "desc": "모든 현실은 자신의 상상력의 결과라는 책임론."
+        }
+      ]
+    },
+    {
+      "en": "Certainly!",
+      "ko": "물론입니다!",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Assertion",
+          "desc": "상상력의 힘에 대한 단호한 긍정."
+        }
+      ]
+    },
+    {
+      "en": "His Word caused it.",
+      "ko": "그의 말씀(상상)이 그것을 일으켰습니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Causality",
+          "desc": "외부 사건의 원인은 내면의 상상력에 있음."
+        }
+      ]
+    },
+    {
+      "en": "It took that to free the woman from the monster who was living off her.",
+      "ko": "그 여인을 그녀에게 빌붙어 살던 괴물로부터 해방시키기 위해 그것이 필요했습니다.",
+      "vocab": [
+        {
+          "word": "living off",
+          "mean": "~에게 빌붙어 살다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Purpose",
+          "desc": "때로는 고통스러운 사건이 더 큰 자유를 위한 수단이 될 수 있음."
+        }
+      ]
+    },
+    {
+      "en": "Was it not a little price to pay to get free and to enjoy what followed?",
+      "ko": "자유를 얻고 그 뒤에 오는 것을 누리기 위해 치른 작은 대가가 아니었을까요?",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Perspective",
+          "desc": "결과론적 관점에서 고통을 재해석함."
+        }
+      ]
+    },
+    {
+      "en": "But be careful what word you are speaking, for the Word of God is the dream of man.",
+      "ko": "하지만 당신이 어떤 말씀을 하고 있는지 주의하십시오. 하나님의 말씀은 인간의 꿈이기 때문입니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Warning",
+          "desc": "상상력의 힘이 강력하므로 신중하게 사용하라는 경고."
+        }
+      ]
+    },
+    {
+      "en": "And since man‘s dream is caused by his own imagining, then who is God?",
+      "ko": "그리고 인간의 꿈이 그 자신의 상상력에 의해 야기되는 것이라면, 그렇다면 하나님은 누구입니까?",
+      "vocab": [
+        {
+          "word": "imagining",
+          "mean": "상상(력)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Conclusion",
+          "desc": "하나님은 인간의 상상력 그 자체라는 네빌의 핵심 결론."
+        }
+      ]
+    },
+    {
+      "en": "In this past week I have had one heavenly experience after another with my father, for I have thought so much about him, he is part of the drama of the night and I can take any of these parts and find their meaning for my instruction.",
+      "ko": "지난주에 나는 아버지와 함께 연이은 천상의 경험을 했습니다. 왜냐하면 내가 그분에 대해 매우 많이 생각했기 때문입니다. 그분은 밤의 드라마의 일부이며, 나는 이 부분들 중 무엇이든 취하여 나의 가르침을 위한 의미를 찾을 수 있습니다.",
+      "vocab": [
+        {
+          "word": "heavenly experience",
+          "mean": "천상의 경험"
+        },
+        {
+          "word": "drama of the night",
+          "mean": "밤의 드라마(꿈)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "네빌은 꿈을 단순한 무의식의 배설이 아니라, 상징으로 가득 찬 '밤의 드라마'이자 내면의 가르침을 주는 계시로 봅니다."
+        }
+      ]
+    },
+    {
+      "en": "Here, the other night I was with my father.",
+      "ko": "여기, 지난밤에 나는 아버지와 함께 있었습니다.",
+      "vocab": [
+        {
+          "word": "the other night",
+          "mean": "지난밤"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Context",
+          "desc": "꿈속에서의 재회를 서술하는 도입부입니다."
+        }
+      ]
+    },
+    {
+      "en": "I knew he was gone and he knew it, but he knew the boys could not see it.",
+      "ko": "나는 그분이 돌아가셨다는 것을 알았고 그분도 그것을 아셨지만, 그분은 아들들이 그것을 볼 수 없다는 것을 알고 계셨습니다.",
+      "vocab": [
+        {
+          "word": "gone",
+          "mean": "돌아가신, 떠난"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphysical",
+          "desc": "육체적 죽음 이후에도 의식은 존재하며, 서로의 상태를 인지하고 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "en": "But my brother Collin went out in the rain and got some flying fish.",
+      "ko": "그런데 내 형제 콜린이 빗속으로 나가 날치를 몇 마리 잡아왔습니다.",
+      "vocab": [
+        {
+          "word": "flying fish",
+          "mean": "날치"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Symbolism",
+          "desc": "날치는 흔하고 낮은 가치를 상징하는 소재로 사용됩니다."
+        }
+      ]
+    },
+    {
+      "en": "Now he employs two to three thousand people, anyone of whom could have done this for him, but he went out Þ in the dream Þ and got these flying fish himself and brought them in.",
+      "ko": "이제 그는 2~3천 명의 사람들을 고용하고 있는데, 그들 중 누구라도 그를 위해 이 일을 할 수 있었지만, 그는 (꿈속에서) 직접 나가서 이 날치들을 잡고 가져왔습니다.",
+      "vocab": [
+        {
+          "word": "employs",
+          "mean": "고용하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "지위가 높은 사람이 낮은 일을 직접 수행하는 행위를 통해 '거짓된 자존심'이 없음을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Now in the Islands there is nothing cheaper than flying fish.",
+      "ko": "이제 섬에서는 날치보다 싼 것이 없습니다.",
+      "vocab": [
+        {
+          "word": "cheaper",
+          "mean": "더 싼"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Symbolism",
+          "desc": "가장 흔하고 낮은 가치를 상징하는 대상을 설정합니다."
+        }
+      ]
+    },
+    {
+      "en": "If you want dolphin you ask for dolphin, etc., but if you just ask for —fish“ you always get flying fish.",
+      "ko": "돌고래를 원하면 돌고래를 달라고 하는 식이지만, 그냥 '생선'을 달라고 하면 항상 날치를 받게 됩니다.",
+      "vocab": [
+        {
+          "word": "dolphin",
+          "mean": "돌고래(식용)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphor",
+          "desc": "구체적인 요구가 없으면 가장 낮은 수준의 결과가 주어짐을 비유합니다."
+        }
+      ]
+    },
+    {
+      "en": "And in the dream my father said to me, “It is wonderful.",
+      "ko": "그리고 꿈속에서 아버지는 나에게 말씀하셨습니다. \"정말 훌륭하구나.",
+      "vocab": [
+        {
+          "word": "wonderful",
+          "mean": "훌륭한, 놀라운"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "네빌은 'It is wonderful'을 상상력을 자극하는 긍정의 주문으로 자주 사용합니다."
+        }
+      ]
+    },
+    {
+      "en": "He has no false pride and he can use his own hands to do what some think only servants should do.”",
+      "ko": "그는 거짓된 자존심이 없고, 어떤 이들은 하인들만이 해야 한다고 생각하는 일을 자신의 손으로 직접 할 수 있구나.\"",
+      "vocab": [
+        {
+          "word": "false pride",
+          "mean": "거짓된 자존심"
+        },
+        {
+          "word": "servants",
+          "mean": "하인"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Moral Lesson",
+          "desc": "진정한 위대함은 지위와 상관없이 겸손하게 행동하는 데 있음을 가르칩니다."
+        }
+      ]
+    },
+    {
+      "en": "My brother was one of the eight sons who bore my father to the grave.",
+      "ko": "내 형제는 아버지를 무덤까지 운구했던 여덟 아들 중 한 명이었습니다.",
+      "vocab": [
+        {
+          "word": "bore",
+          "mean": "운구하다(bear의 과거형)"
+        },
+        {
+          "word": "grave",
+          "mean": "무덤"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Context",
+          "desc": "과거의 장례식 기억을 언급하며 꿈의 현실성을 대조합니다."
+        }
+      ]
+    },
+    {
+      "en": "My dream was not frightening to me for I knew my father was where Collin could not see him, but he was looking on and was proud that his son showed himself to be without false pride and could do what any employee would have been glad to do.",
+      "ko": "나의 꿈은 나에게 두렵지 않았습니다. 왜냐하면 나는 아버지가 콜린은 볼 수 없는 곳에 계시다는 것을 알았지만, 그분은 지켜보고 계셨고 그의 아들이 거짓된 자존심 없이 행동하며 어떤 직원이라도 기꺼이 했을 일을 할 수 있다는 것에 자랑스러워하셨기 때문입니다.",
+      "vocab": [
+        {
+          "word": "frightening",
+          "mean": "두려운"
+        },
+        {
+          "word": "looking on",
+          "mean": "지켜보다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Concept",
+          "desc": "죽음은 단지 차원의 이동일 뿐이며, 의식은 여전히 존재하며 지켜보고 있다는 네빌의 사후관을 보여줍니다."
+        }
+      ]
+    },
+    {
+      "en": "By taking today and living so fully in Imagination as the man I want to be, then I am obeying the Word of God.",
+      "ko": "오늘을 취하여 내가 되고자 하는 사람으로서 상상 속에서 온전히 살아감으로써, 나는 하나님의 말씀을 따르고 있는 것입니다.",
+      "vocab": [
+        {
+          "word": "Imagination",
+          "mean": "상상력(네빌 고다드 철학의 핵심인 신성한 창조력)"
+        },
+        {
+          "word": "obeying",
+          "mean": "따르는, 순종하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Core",
+          "desc": "상상은 단순히 공상이 아니라 현실을 창조하는 신의 활동임을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "I can take the same word and distort it, for I am He, for the Word of God being the dream of man, and that, springing out of Imagining, that is God.",
+      "ko": "나는 같은 말씀을 취하여 왜곡할 수도 있는데, 왜냐하면 내가 곧 그분이기 때문이며, 하나님의 말씀은 인간의 꿈이고, 그것은 상상으로부터 솟아나오는 것이며, 그것이 곧 하나님이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "distort",
+          "mean": "왜곡하다"
+        },
+        {
+          "word": "springing out of",
+          "mean": "~로부터 솟아나오는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mysticism",
+          "desc": "인간의 상상력과 신의 동일성을 선언하는 네빌의 핵심 교리."
+        }
+      ]
+    },
+    {
+      "en": "So God, Christ or Imagination are interchangeable, and the whole thing is speaking of your own wonderful human Imagination.",
+      "ko": "그러므로 하나님, 그리스도, 혹은 상상력은 서로 교환 가능하며, 이 모든 것은 당신 자신의 경이로운 인간적 상상력을 말하고 있는 것입니다.",
+      "vocab": [
+        {
+          "word": "interchangeable",
+          "mean": "교환 가능한, 동일한 의미의"
+        },
+        {
+          "word": "wonderful human Imagination",
+          "mean": "경이로운 인간적 상상력(네빌의 상징적 표현)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Definition",
+          "desc": "성경적 용어들을 심리적 상태로 재정의함."
+        }
+      ]
+    },
+    {
+      "en": "But if, during the day, I modify the Word because of the evidence of my senses, then the Word I have sent out I have voided, but if I have remained faithful to my image then it must accomplish that whereunto it is sent.",
+      "ko": "그러나 낮 동안 감각의 증거 때문에 내가 그 말씀을 수정한다면, 내가 내보낸 말씀을 무효화하는 것이지만, 만약 내가 나의 이미지에 충실하게 머문다면 그것은 보내진 곳에서 반드시 성취되어야 합니다.",
+      "vocab": [
+        {
+          "word": "evidence of my senses",
+          "mean": "오감의 증거(현실의 물리적 상황)"
+        },
+        {
+          "word": "voided",
+          "mean": "무효화된"
+        },
+        {
+          "word": "faithful",
+          "mean": "충실한, 신념을 지키는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion",
+          "desc": "이사야 55장 11절의 원리를 심리적 상상력에 적용함."
+        }
+      ]
+    },
+    {
+      "en": "Everyone can hear God for everyone is God.",
+      "ko": "모든 사람은 하나님을 들을 수 있습니다. 왜냐하면 모든 사람이 곧 하나님이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "hear God",
+          "mean": "신의 음성을 듣다(내면의 직관)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Non-duality",
+          "desc": "개별 자아와 신의 분리 불가능성을 강조."
+        }
+      ]
+    },
+    {
+      "en": "You are not some little thing divorced from God.",
+      "ko": "당신은 하나님으로부터 분리된 하찮은 존재가 아닙니다.",
+      "vocab": [
+        {
+          "word": "divorced",
+          "mean": "분리된, 단절된"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Identity",
+          "desc": "인간의 신성한 기원을 일깨움."
+        }
+      ]
+    },
+    {
+      "en": "People go to church and kneel and try to get the ear of God and they hope that God will forgive them for something they are condemning themselves for.",
+      "ko": "사람들은 교회에 가서 무릎을 꿇고 하나님의 귀를 얻으려(응답을 받으려) 노력하며, 스스로 정죄하고 있는 무언가에 대해 하나님이 자신들을 용서해주기를 바랍니다.",
+      "vocab": [
+        {
+          "word": "get the ear of God",
+          "mean": "신의 관심을 끌다, 응답을 얻어내다"
+        },
+        {
+          "word": "condemning",
+          "mean": "정죄하는, 비난하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Critique",
+          "desc": "외부의 신에게 구원을 구하는 전통적 종교관을 비판함."
+        }
+      ]
+    },
+    {
+      "en": "This too, is a Word of God, but what confusion!",
+      "ko": "이것 또한 하나님의 말씀이지만, 얼마나 큰 혼란입니까!",
+      "vocab": [
+        {
+          "word": "confusion",
+          "mean": "혼란"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Irony",
+          "desc": "오해된 신앙이 낳은 혼란을 지적함."
+        }
+      ]
+    },
+    {
+      "en": "There is no one to intercede for you for we are all One.",
+      "ko": "당신을 위해 중재할 사람은 아무도 없습니다. 왜냐하면 우리는 모두 하나이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "intercede",
+          "mean": "중재하다, 탄원하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Unity",
+          "desc": "중재자가 필요 없는 일원론적 세계관."
+        }
+      ]
+    },
+    {
+      "en": "So stand on your own two feet and speak the Word for everyone and for yourself.",
+      "ko": "그러니 스스로의 두 발로 서서 모든 이와 당신 자신을 위해 말씀을 선포하십시오.",
+      "vocab": [
+        {
+          "word": "stand on your own two feet",
+          "mean": "자립하다, 주체적으로 서다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Empowerment",
+          "desc": "자신의 상상력이 곧 창조의 권능임을 자각하라는 권고."
+        }
+      ]
+    },
+    {
+      "en": "Then it has to fulfill itself, for Imagination creates Reality, and there is nothing to stop it.",
+      "ko": "그러면 그것은 스스로 성취될 수밖에 없습니다. 왜냐하면 상상력이 현실을 창조하며, 그것을 막을 수 있는 것은 아무것도 없기 때문입니다.",
+      "vocab": [
+        {
+          "word": "fulfill",
+          "mean": "성취하다, 실현하다"
+        },
+        {
+          "word": "Imagination creates Reality",
+          "mean": "상상력이 현실을 창조한다(네빌의 핵심 명제)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Law of Assumption",
+          "desc": "상상의 필연적 현실화 법칙을 재확인함."
+        }
+      ]
+    },
+    {
+      "en": "My father stood on a beach in Barbados 30 years ago and saw it as a perfect place for a hotel.",
+      "ko": "나의 아버지는 30년 전 바베이도스의 해변에 서서 그곳을 호텔을 짓기에 완벽한 장소로 보았다.",
+      "vocab": [
+        {
+          "word": "Barbados",
+          "mean": "바베이도스(네빌 고다드의 고향)"
+        },
+        {
+          "word": "perfect place",
+          "mean": "완벽한 장소"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Imagination",
+          "desc": "네빌은 상상을 통해 미래의 사건을 현재의 사실로 보는 것을 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "He never faltered in that dream.",
+      "ko": "그는 그 꿈에 있어 결코 흔들리지 않았다.",
+      "vocab": [
+        {
+          "word": "falter",
+          "mean": "흔들리다, 주저하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Persistence",
+          "desc": "상상한 상태를 유지하는 끈기(Persistence)의 중요성을 나타낸다."
+        }
+      ]
+    },
+    {
+      "en": "The years went by and the owners finally died and when it came up for sale the one person who could have paid for it twice what my father could, had gone to Brazil, and his cabled offer arrived 24 hours too late.",
+      "ko": "세월이 흘러 주인들이 마침내 세상을 떠났고, 그 땅이 매물로 나왔을 때 아버지보다 두 배의 값을 치를 수 있었던 유일한 사람이 브라질로 떠나 있었으며, 그의 전보 제안은 24시간 늦게 도착했다.",
+      "vocab": [
+        {
+          "word": "cabled offer",
+          "mean": "전보로 보낸 제안"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Law of Assumption",
+          "desc": "상상이 현실화되기 위해 외부 환경이 자연스럽게 조정되는 과정을 설명한다."
+        }
+      ]
+    },
+    {
+      "en": "My father’s dream came true, though he made it 30 years before.",
+      "ko": "아버지는 30년 전에 이미 그것을 이루었음에도 불구하고, 그의 꿈은 현실이 되었다.",
+      "vocab": [
+        {
+          "word": "came true",
+          "mean": "실현되다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Time",
+          "desc": "상상 속의 시간과 물리적 시간의 차이를 보여준다."
+        }
+      ]
+    },
+    {
+      "en": "He was Jacob and he wrestled with an idea until it became real.",
+      "ko": "그는 야곱이었고, 그 생각이 현실이 될 때까지 씨름했다.",
+      "vocab": [
+        {
+          "word": "wrestled",
+          "mean": "씨름하다, 분투하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allegory",
+          "desc": "야곱의 씨름을 상상 속의 관념을 현실로 굳히는 내면의 투쟁으로 해석한다."
+        }
+      ]
+    },
+    {
+      "en": "He first made it real in his mind‘s eye, and when the time came the one person who could have outbid him was called away.",
+      "ko": "그는 먼저 마음의 눈으로 그것을 현실로 만들었고, 때가 되었을 때 그보다 더 높은 가격을 부를 수 있었던 유일한 사람은 다른 곳으로 불려 갔다.",
+      "vocab": [
+        {
+          "word": "mind's eye",
+          "mean": "마음의 눈, 상상력"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mental Act",
+          "desc": "모든 현실은 마음의 눈으로 먼저 창조된다는 네빌의 핵심 원리이다."
+        }
+      ]
+    },
+    {
+      "en": "My father did not devise that, but when the man in Brazil remembered the sale and sent his bid it arrived 24 hours too late.",
+      "ko": "아버지는 그것을 계획하지 않았지만, 브라질에 있던 그 남자가 매각 사실을 기억하고 입찰서를 보냈을 때 그것은 24시간 늦게 도착했다.",
+      "vocab": [
+        {
+          "word": "devise",
+          "mean": "고안하다, 계획하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Effortless",
+          "desc": "상상이 현실화될 때 인위적인 노력이 아닌 자연스러운 전개(Naturalness)를 강조한다."
+        }
+      ]
+    },
+    {
+      "en": "Everyone here – you are God.",
+      "ko": "여기 있는 모든 이들, 당신은 곧 하나님입니다.",
+      "vocab": [
+        {
+          "word": "God",
+          "mean": "신, 하나님(네빌 사상에서는 인간의 상상력 그 자체)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Identity",
+          "desc": "네빌 고다드의 핵심 사상인 '인간의 본질은 신성(Divinity) 그 자체'임을 선언함."
+        }
+      ]
+    },
+    {
+      "en": "You are not some little thing beating your head out.",
+      "ko": "당신은 머리를 쥐어뜯으며 고통받는 하찮은 존재가 아닙니다.",
+      "vocab": [
+        {
+          "word": "beating your head out",
+          "mean": "머리를 쥐어뜯다, 극심한 고통이나 고민에 빠지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphor",
+          "desc": "인간이 겪는 세속적 고통과 무력감을 부정하며, 인간의 참된 자아를 강조함."
+        }
+      ]
+    },
+    {
+      "en": "God became you that you may awaken and know that you are He.",
+      "ko": "하나님은 당신이 깨어나 당신이 곧 그분임을 알게 하려고 당신이 되셨습니다.",
+      "vocab": [
+        {
+          "word": "awaken",
+          "mean": "깨어나다, 각성하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Incarnation",
+          "desc": "신이 인간이 된 목적은 인간이 다시 신성을 회복하여 자각하기 위함이라는 네빌의 핵심 교리."
+        }
+      ]
+    },
+    {
+      "en": "Nothing you have ever done caused the so-called “Fall.”",
+      "ko": "당신이 과거에 무엇을 했든 그것이 이른바 '타락'을 야기한 것은 아닙니다.",
+      "vocab": [
+        {
+          "word": "Fall",
+          "mean": "타락(성경적 원죄 개념)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Theology",
+          "desc": "전통적인 기독교의 원죄론을 부정하고, 타락을 신의 의도적인 하강으로 재해석함."
+        }
+      ]
+    },
+    {
+      "en": "There is no “original sin.”",
+      "ko": "'원죄'란 없습니다.",
+      "vocab": [
+        {
+          "word": "original sin",
+          "mean": "원죄"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Doctrine",
+          "desc": "인간의 본질적 죄성을 부정하며, 인간은 신의 투영임을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "It was God actually, willingly and lovingly becoming his own creation who is called man, that he might awaken it to become Himself.",
+      "ko": "실제로 하나님께서 기꺼이 그리고 사랑으로 자신의 피조물인 인간이 되신 것은, 그 피조물을 깨워 다시 하나님 자신이 되게 하려 함이었습니다.",
+      "vocab": [
+        {
+          "word": "creation",
+          "mean": "피조물, 창조물"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Purpose",
+          "desc": "창조의 목적은 신이 인간이라는 형상을 통해 경험하고 다시 신으로 각성하는 과정임을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "It was purposeful and deliberately done to awaken his creation, and when it awakens it ceased to be created for it is God, so “He who comes after me is preferred before me.”",
+      "ko": "그것은 자신의 피조물을 깨우기 위해 목적을 가지고 의도적으로 행해진 일이며, 피조물이 깨어나는 순간 그것은 더 이상 피조물이 아닌 하나님이 되기에, '내 뒤에 오는 이가 나보다 앞선다'는 말이 성립합니다.",
+      "vocab": [
+        {
+          "word": "preferred",
+          "mean": "앞선, 우선하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Paradox",
+          "desc": "시간적 순서와 영적 우선순위의 역설을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "Why?",
+      "ko": "왜일까요?",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Rhetorical",
+          "desc": "청중의 주의를 환기하는 수사적 질문."
+        }
+      ]
+    },
+    {
+      "en": "Because it came first.",
+      "ko": "그것이 먼저 존재했기 때문입니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Metaphysics",
+          "desc": "영적 실재는 시간적 현상보다 앞선다는 형이상학적 원리."
+        }
+      ]
+    },
+    {
+      "en": "This which was first an image and was lit by God and is God, then has no beginning.",
+      "ko": "처음에는 형상이었으나 하나님에 의해 빛을 받았고 곧 하나님인 이것은, 시작이 없습니다.",
+      "vocab": [
+        {
+          "word": "image",
+          "mean": "형상, 이미지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Eternity",
+          "desc": "신의 본질은 시간의 시작 이전부터 존재함을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "That is the secret.",
+      "ko": "그것이 바로 비밀입니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Mysticism",
+          "desc": "성경의 비밀(Mystery)을 신의 내재성으로 해석함."
+        }
+      ]
+    },
+    {
+      "en": "Something that had a beginning is lit by something that is beginning-less and becomes it, so then it is also beginning-less.",
+      "ko": "시작이 있었던 무언가가 시작이 없는 것에 의해 빛을 받아 그것이 되면, 그 또한 시작이 없는 것이 됩니다.",
+      "vocab": [
+        {
+          "word": "beginning-less",
+          "mean": "시작이 없는, 영원한"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Transformation",
+          "desc": "인간이 신의 빛을 받아 신적 본질로 변모하는 과정을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "The form is lit and becomes a center of Imagining.",
+      "ko": "그 형상은 빛을 받아 상상력의 중심이 됩니다.",
+      "vocab": [
+        {
+          "word": "Imagining",
+          "mean": "상상(네빌 고다드 사상의 핵심)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Core Concept",
+          "desc": "인간의 상상력이 곧 신의 창조적 힘임을 명시함."
+        }
+      ]
+    },
+    {
+      "en": "Then you will understand the words, “Return unto me the glory that was mine before the world was.”",
+      "ko": "그때 당신은 '세상이 있기 전에 내게 있었던 영광을 내게 돌려주소서'라는 말씀을 이해하게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "glory",
+          "mean": "영광"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Scripture",
+          "desc": "요한복음 17:5의 인용을 통해 인간의 근원적 신성을 회복하는 과정을 설명함."
+        }
+      ]
+    },
+    {
+      "en": "So man in the true sense cannot begin after he is lit by God.",
+      "ko": "그러므로 진정한 의미에서 인간은 하나님에 의해 빛을 받은 이후에는 시작될 수 없습니다.",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Conclusion",
+          "desc": "인간의 참된 자아는 시간적 시작을 초월한 영원한 존재임을 결론지음."
+        }
+      ]
+    },
+    {
+      "en": "So take your most wonderful dream and no matter what the day seems to bring, a dream is God‘s Word and it cannot fail.",
+      "ko": "그러니 당신의 가장 멋진 꿈을 취하십시오. 그리고 그날이 무엇을 가져오는 것처럼 보이든 상관없이, 꿈은 하나님의 말씀이며 결코 실패할 수 없습니다.",
+      "vocab": [
+        {
+          "word": "wonderful",
+          "mean": "놀라운, 멋진"
+        },
+        {
+          "word": "God's Word",
+          "mean": "하나님의 말씀"
+        },
+        {
+          "word": "fail",
+          "mean": "실패하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Philosophy",
+          "desc": "네빌은 꿈(상상)을 하나님의 창조적 말씀으로 정의하며, 상상은 반드시 현실화된다는 확신을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Can you believe you are the woman you want to be?",
+      "ko": "당신이 되고 싶은 그 여성이 이미 되었다고 믿을 수 있습니까?",
+      "vocab": [
+        {
+          "word": "believe",
+          "mean": "믿다"
+        },
+        {
+          "word": "want to be",
+          "mean": "~가 되고 싶어 하는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Assumption",
+          "desc": "이미 원하는 상태가 되었다고 믿는 '가정의 법칙'을 묻는 질문입니다."
+        }
+      ]
+    },
+    {
+      "en": "Stick to that and control it and do not let it become a jumble in the course of the day, for if you do then God will take the “jumble of the day” and rearrange it in the dream of the night and it might terrify you, but it will only be to instruct you.",
+      "ko": "그것을 고수하고 통제하십시오. 그리고 하루를 보내는 동안 그것이 뒤죽박죽이 되게 내버려 두지 마십시오. 만약 그렇게 한다면 하나님은 그 '하루의 뒤죽박죽'을 가져다가 밤의 꿈속에서 재구성하실 것이고, 그것이 당신을 두렵게 할 수도 있겠지만, 그것은 오직 당신을 가르치기 위함일 뿐입니다.",
+      "vocab": [
+        {
+          "word": "stick to",
+          "mean": "고수하다"
+        },
+        {
+          "word": "jumble",
+          "mean": "뒤죽박죽, 혼란"
+        },
+        {
+          "word": "instruct",
+          "mean": "가르치다, 지시하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mental Discipline",
+          "desc": "낮 동안의 의식 상태가 무의식(꿈)에 투영되어 현실을 형성한다는 네빌의 심리적 메커니즘을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "These dreams are created by you in the course of the day, but if you would now only set the pattern of life you want and remain faithful to it, it cannot return to you void but must accomplish its purpose.",
+      "ko": "이러한 꿈들은 당신이 낮 동안 만들어낸 것이지만, 만약 당신이 지금 원하는 삶의 패턴을 설정하고 그것에 충실하기만 한다면, 그것은 결코 헛되이 돌아오지 않고 반드시 그 목적을 성취할 것입니다.",
+      "vocab": [
+        {
+          "word": "pattern of life",
+          "mean": "삶의 양식/패턴"
+        },
+        {
+          "word": "faithful",
+          "mean": "충실한"
+        },
+        {
+          "word": "void",
+          "mean": "헛된, 빈"
+        },
+        {
+          "word": "accomplish",
+          "mean": "성취하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical Allusion",
+          "desc": "이사야 55장 11절의 말씀을 인용하여 상상의 확신이 반드시 현실로 나타남을 보증합니다."
+        }
+      ]
+    },
+    {
+      "en": "So you will find all through the 66 books of the Bible that He is always appearing to man in a dream.",
+      "ko": "그러므로 당신은 성경 66권 전체를 통해 그분(하나님)이 항상 꿈속에서 인간에게 나타나신다는 것을 발견하게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "66 books of the Bible",
+          "mean": "성경 66권"
+        },
+        {
+          "word": "appearing",
+          "mean": "나타나는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Perspective",
+          "desc": "네빌은 성경의 모든 사건을 외부 역사가 아닌 인간의 내면에서 일어나는 심리적 현상으로 해석합니다."
+        }
+      ]
+    },
+    {
+      "en": "Never mind the “holy men” or “holy places.”",
+      "ko": "‘성스러운 사람들’이나 ‘성스러운 장소’는 신경 쓰지 마십시오.",
+      "vocab": [
+        {
+          "word": "Never mind",
+          "mean": "신경 쓰지 마라"
+        },
+        {
+          "word": "holy places",
+          "mean": "성지"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mysticism",
+          "desc": "외적인 종교적 권위나 장소에 대한 숭배를 부정하고 내면의 신성을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Wherever you stand, that is holy ground.",
+      "ko": "당신이 서 있는 곳 어디든, 그곳이 바로 거룩한 땅입니다.",
+      "vocab": [
+        {
+          "word": "holy ground",
+          "mean": "거룩한 땅"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Exodus 3:5",
+          "desc": "모세에게 하신 말씀을 모든 인간에게 적용되는 보편적 진리로 확장합니다."
+        }
+      ]
+    },
+    {
+      "en": "“Take off your shoes, Moses”… for where man stands there is God, for God is man.",
+      "ko": "“모세야, 네 신을 벗으라”… 왜냐하면 인간이 서 있는 곳에 하나님이 계시기 때문이며, 하나님은 곧 인간이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "Take off your shoes",
+          "mean": "신을 벗으라(자아의 한계를 내려놓음)"
+        },
+        {
+          "word": "God is man",
+          "mean": "하나님은 인간이다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Anthropomorphism",
+          "desc": "하나님을 인간과 분리된 존재가 아닌, 인간의 본질 그 자체로 정의합니다."
+        }
+      ]
+    },
+    {
+      "en": "Do not look for someone to come in robes, etc.",
+      "ko": "예복을 입고 나타나는 누군가를 찾지 마십시오.",
+      "vocab": [
+        {
+          "word": "robes",
+          "mean": "예복, 성직자의 옷"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Symbolism",
+          "desc": "종교적 외형에 현혹되지 말라는 경고입니다."
+        }
+      ]
+    },
+    {
+      "en": "The real man is the natural man and acts in a natural way, but buried in him is the Second Man, the Lord from Heaven, and that is God.",
+      "ko": "진정한 인간은 자연적인 인간이며 자연스럽게 행동하지만, 그 안에 묻혀 있는 존재가 바로 '두 번째 사람', 즉 하늘에서 오신 주님이시며 그분이 곧 하나님입니다.",
+      "vocab": [
+        {
+          "word": "natural man",
+          "mean": "자연적인 인간(육체적 자아)"
+        },
+        {
+          "word": "Second Man",
+          "mean": "두 번째 사람(내면의 신성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "1 Corinthians 15:47",
+          "desc": "첫 사람 아담과 마지막 아담(그리스도)의 이중 구조를 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Let the natural man beget himself on his divided image.",
+      "ko": "자연적인 인간이 자신의 분열된 형상 속에서 스스로를 낳게 하십시오.",
+      "vocab": [
+        {
+          "word": "beget",
+          "mean": "낳다, 생기게 하다"
+        },
+        {
+          "word": "divided image",
+          "mean": "분열된 형상"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphysics",
+          "desc": "인간의 창조적 상상력이 스스로를 신성으로 거듭나게 하는 과정을 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "But that man died Þ (the natural man).",
+      "ko": "그러나 그 인간(자연적인 인간)은 죽었습니다.",
+      "vocab": [
+        {
+          "word": "died",
+          "mean": "죽다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Death of Ego",
+          "desc": "육체적 자아의 소멸을 통한 영적 각성을 암시합니다."
+        }
+      ]
+    },
+    {
+      "en": "Yet you are told “You are gods.”",
+      "ko": "그럼에도 당신은 “너희는 신들이다”라는 말을 듣습니다.",
+      "vocab": [
+        {
+          "word": "gods",
+          "mean": "신들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Psalm 82:6",
+          "desc": "인간의 근원적 신성을 선언하는 구절입니다."
+        }
+      ]
+    },
+    {
+      "en": "We are told they condemned Jesus, not for what he had done but because he blasphemed.",
+      "ko": "우리는 그들이 예수를 정죄한 이유가 그가 행한 일 때문이 아니라 그가 신성모독을 했기 때문이라고 배웠습니다.",
+      "vocab": [
+        {
+          "word": "condemned",
+          "mean": "정죄하다"
+        },
+        {
+          "word": "blasphemed",
+          "mean": "신성모독하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "John 10:33",
+          "desc": "예수가 신의 아들이라 주장한 것이 당시 종교 지도자들에게는 신성모독으로 간주되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "He said he was the Son of God.",
+      "ko": "그는 자신이 하나님의 아들이라고 말했습니다.",
+      "vocab": [
+        {
+          "word": "Son of God",
+          "mean": "하나님의 아들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Identity",
+          "desc": "예수의 정체성은 곧 모든 인간의 잠재적 정체성입니다."
+        }
+      ]
+    },
+    {
+      "en": "But he told them, “I say the Law tells you this.”",
+      "ko": "그러나 그는 그들에게 말했습니다. “나는 율법이 너희에게 이것을 말한다고 한다.”",
+      "vocab": [
+        {
+          "word": "the Law",
+          "mean": "율법(성경)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "John 10:34",
+          "desc": "예수는 자신의 주장이 성경(율법)에 근거함을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "Psalm 82: “I say you are gods, sons of the most High. But you shall die like men and fall as any other prince.”",
+      "ko": "시편 82편: “내가 말하기를 너희는 신들이며 다 지존자의 아들들이라 하였으나, 그러나 너희는 사람처럼 죽으며 다른 방백들처럼 엎드러지리로다.”",
+      "vocab": [
+        {
+          "word": "most High",
+          "mean": "지존자"
+        },
+        {
+          "word": "prince",
+          "mean": "방백, 통치자"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Psalm 82:6-7",
+          "desc": "인간의 신적 본질과 육체적 죽음의 운명을 동시에 언급합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Scripture cannot be broken.",
+      "ko": "성경은 폐할 수 없습니다.",
+      "vocab": [
+        {
+          "word": "Scripture",
+          "mean": "성경"
+        },
+        {
+          "word": "broken",
+          "mean": "깨지다, 폐하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "John 10:35",
+          "desc": "성경의 진리는 절대적이며 변하지 않는 법칙임을 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "So I blaspheme when I say I am the Son of God?",
+      "ko": "그렇다면 내가 하나님의 아들이라고 말할 때 나는 신성모독을 하는 것입니까?",
+      "vocab": [
+        {
+          "word": "blaspheme",
+          "mean": "신성모독하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Rhetorical Question",
+          "desc": "청중에게 스스로의 신성을 자각하도록 유도하는 질문입니다."
+        }
+      ]
+    },
+    {
+      "en": "I tell you I am consecrated and sent by my Father, and you call me a blasphemer?",
+      "ko": "나는 내가 아버지께 거룩하게 구별되어 보내심을 받았다고 말하는데, 당신들은 나를 신성모독자라고 부릅니까?",
+      "vocab": [
+        {
+          "word": "consecrated",
+          "mean": "거룩하게 구별된"
+        },
+        {
+          "word": "sent by my Father",
+          "mean": "아버지께 보냄을 받은"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "John 10:36",
+          "desc": "예수의 사명과 신적 기원을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "You are actually the Son of God, the Son of the most High.",
+      "ko": "당신은 실제로 하나님의 아들이며, 지존자의 아들입니다.",
+      "vocab": [
+        {
+          "word": "actually",
+          "mean": "실제로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Direct Affirmation",
+          "desc": "청중 개개인이 바로 그 신적 존재임을 선언합니다."
+        }
+      ]
+    },
+    {
+      "en": "The Second Man must awaken in the natural man.",
+      "ko": "두 번째 사람은 자연적인 인간 안에서 깨어나야 합니다.",
+      "vocab": [
+        {
+          "word": "awaken",
+          "mean": "깨어나다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Awakening",
+          "desc": "영적 각성은 외부가 아닌 내면의 육체적 자아 안에서 일어나는 사건입니다."
+        }
+      ]
+    },
+    {
+      "en": "So you will die like any other natural man, but nevertheless the real you is the Son of the most High.",
+      "ko": "그러므로 당신은 다른 자연적인 인간들처럼 죽겠지만, 그럼에도 불구하고 진정한 당신은 지존자의 아들입니다.",
+      "vocab": [
+        {
+          "word": "nevertheless",
+          "mean": "그럼에도 불구하고"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Dual Nature",
+          "desc": "육체는 죽지만 영적 실체는 영원함을 강조합니다."
+        }
+      ]
+    },
+    {
+      "en": "When He said He was going to die and yet that He was the Son of God, they did not know He spoke of the Second Man.",
+      "ko": "그분이 죽을 것이라고 말씀하시면서도 동시에 자신이 하나님의 아들이라고 하셨을 때, 그들은 그분이 '두 번째 사람'에 대해 말씀하시는 것임을 알지 못했습니다.",
+      "vocab": [
+        {
+          "word": "spoke of",
+          "mean": "~에 대해 말하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Misunderstanding",
+          "desc": "성경의 비유를 문자 그대로만 해석하는 자들의 한계를 지적합니다."
+        }
+      ]
+    },
+    {
+      "en": "The first garment into which I am woven must be discarded as I awaken from within it to discover who I am.",
+      "ko": "내가 짜여진 첫 번째 의복(육체)은 내가 그 안에서 깨어나 내가 누구인지 발견할 때 버려져야 합니다.",
+      "vocab": [
+        {
+          "word": "garment",
+          "mean": "의복(육체)"
+        },
+        {
+          "word": "discarded",
+          "mean": "버려지다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphor",
+          "desc": "육체는 영혼이 입고 있는 옷일 뿐이며, 각성 시 벗어버려야 할 대상입니다."
+        }
+      ]
+    },
+    {
+      "en": "First I must put on visibility and become mortal.",
+      "ko": "먼저 나는 가시성을 입고 필멸의 존재가 되어야 합니다.",
+      "vocab": [
+        {
+          "word": "visibility",
+          "mean": "가시성(눈에 보이는 상태)"
+        },
+        {
+          "word": "mortal",
+          "mean": "필멸의"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Incarnation",
+          "desc": "신이 인간의 경험을 하기 위해 육체라는 제한된 상태로 내려오는 과정을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "Blake writes:",
+      "ko": "블레이크는 이렇게 썼습니다:",
+      "vocab": [
+        {
+          "word": "Blake",
+          "mean": "윌리엄 블레이크(시인)"
+        },
+        {
+          "word": "writes",
+          "mean": "쓰다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Introductory",
+          "desc": "인용문을 도입하는 서술문입니다."
+        }
+      ]
+    },
+    {
+      "en": "Whate’er is Born of Mortal Birth Must be consumed with the Earth To rise from Generation free; Then what have I to do with thee?",
+      "ko": "필멸의 탄생으로 태어난 모든 것은 대지와 함께 소멸되어야 하리니, 세대의 굴레에서 벗어나 부활하기 위함이라. 그러니 내가 너와 무슨 상관이 있겠느냐?",
+      "vocab": [
+        {
+          "word": "Mortal Birth",
+          "mean": "필멸의 탄생(육체적 출생)"
+        },
+        {
+          "word": "consumed",
+          "mean": "소멸된, 불타 없어진"
+        },
+        {
+          "word": "Generation",
+          "mean": "세대(네빌 사상에서 육체적 삶의 순환)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Poetic",
+          "desc": "블레이크의 시 'Tirzah'의 일부로, 육체적 자아의 죽음과 영적 각성을 노래합니다."
+        }
+      ]
+    },
+    {
+      "en": "Thou, Mother of my Mortal part, With cruelty didst mould my Heart, And with false self-deceiving tears Didst bind my Nostrils, Eyes and Ears;",
+      "ko": "나의 필멸의 부분을 낳은 어머니여, 당신은 잔인함으로 내 심장을 빚었고, 거짓되고 스스로를 속이는 눈물로 나의 콧구멍과 눈과 귀를 묶었도다.",
+      "vocab": [
+        {
+          "word": "Mortal part",
+          "mean": "필멸의 부분(육체)"
+        },
+        {
+          "word": "mould",
+          "mean": "빚다, 형성하다"
+        },
+        {
+          "word": "bind",
+          "mean": "묶다, 가두다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphor",
+          "desc": "어머니(자연/물질계)가 인간을 육체라는 감옥에 가두는 과정을 묘사합니다."
+        }
+      ]
+    },
+    {
+      "en": "Didst close my Tongue in senseless clay, And me to Mortal Life betray, The Death of Jesus set me free; Then what have I to do with thee?",
+      "ko": "감각 없는 진흙 속에 내 혀를 가두고, 나를 필멸의 삶으로 배신했으나, 예수의 죽음이 나를 자유케 했으니, 이제 내가 너와 무슨 상관이 있겠느냐?",
+      "vocab": [
+        {
+          "word": "senseless clay",
+          "mean": "감각 없는 진흙(육체)"
+        },
+        {
+          "word": "betray",
+          "mean": "배신하다, 빠뜨리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Theological",
+          "desc": "예수의 죽음은 육체적 자아의 종말과 영적 자유를 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "(To Tirzah)",
+      "ko": "(티르자에게)",
+      "vocab": [
+        {
+          "word": "Tirzah",
+          "mean": "티르자(블레이크의 시 속 인물, 물질적 자연을 상징)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Reference",
+          "desc": "해당 시의 제목입니다."
+        }
+      ]
+    },
+    {
+      "en": "This garment (the body) is to be used as I awaken.",
+      "ko": "이 의복(육체)은 내가 깨어날 때 사용될 도구입니다.",
+      "vocab": [
+        {
+          "word": "garment",
+          "mean": "의복(육체를 비유)"
+        },
+        {
+          "word": "awaken",
+          "mean": "깨어나다(영적 각성)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville Concept",
+          "desc": "육체는 영혼이 입고 있는 옷일 뿐이라는 네빌의 핵심 사상입니다."
+        }
+      ]
+    },
+    {
+      "en": "But as I become more and more awake I can prove by a dream that I am He.",
+      "ko": "그러나 내가 점점 더 깨어날수록, 나는 꿈을 통해 내가 바로 그분(하나님)임을 증명할 수 있습니다.",
+      "vocab": [
+        {
+          "word": "prove",
+          "mean": "증명하다"
+        },
+        {
+          "word": "He",
+          "mean": "그분(하나님/근원적 자아)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Mysticism",
+          "desc": "인간의 상상력이 곧 하나님의 창조력임을 깨닫는 과정입니다."
+        }
+      ]
+    },
+    {
+      "en": "The story is, “Go and bring me Jacob.“",
+      "ko": "그 이야기는 이렇습니다. \"가서 야곱을 내게로 데려오라.\"",
+      "vocab": [
+        {
+          "word": "Jacob",
+          "mean": "야곱(성경 인물, 여기서는 특정 마음의 상태를 상징)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical",
+          "desc": "이사야 49:5의 인용입니다."
+        }
+      ]
+    },
+    {
+      "en": "“He who formed me from the womb to bring Jacob again unto Him.”",
+      "ko": "\"그가 나를 태에서부터 지으사 야곱을 그에게로 돌아오게 하셨도다.\"",
+      "vocab": [
+        {
+          "word": "womb",
+          "mean": "태(모태)"
+        },
+        {
+          "word": "unto",
+          "mean": "~에게로"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Biblical",
+          "desc": "이사야 49:5의 직접 인용입니다."
+        }
+      ]
+    },
+    {
+      "en": "Bring me that state of mind that can pre-determine.",
+      "ko": "미리 결정할 수 있는 그 마음의 상태를 내게 가져오십시오.",
+      "vocab": [
+        {
+          "word": "state of mind",
+          "mean": "마음의 상태"
+        },
+        {
+          "word": "pre-determine",
+          "mean": "미리 결정하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville Concept",
+          "desc": "상상력을 통해 미래를 미리 결정하는 것이 창조의 핵심입니다."
+        }
+      ]
+    },
+    {
+      "en": "He wants a Son like Himself.",
+      "ko": "그분은 자신과 같은 아들을 원하십니다.",
+      "vocab": [
+        {
+          "word": "Son",
+          "mean": "아들(하나님의 형상)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Theological",
+          "desc": "인간은 하나님의 아들로서 창조의 능력을 물려받은 존재임을 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "But who can bring Jacob?",
+      "ko": "그러나 누가 야곱을 데려올 수 있겠습니까?",
+      "vocab": [],
+      "grammar": [
+        {
+          "tag": "Rhetorical",
+          "desc": "질문을 통해 독자의 내면적 성찰을 유도합니다."
+        }
+      ]
+    },
+    {
+      "en": "And how can I find him when he is so small?",
+      "ko": "그리고 그가 그렇게 작을 때 내가 어떻게 그를 찾을 수 있겠습니까?",
+      "vocab": [
+        {
+          "word": "small",
+          "mean": "작은(미약한 시작)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Metaphor",
+          "desc": "창조의 씨앗이 처음에는 미약함을 의미합니다."
+        }
+      ]
+    },
+    {
+      "en": "Yes, he is small but who will bring him?",
+      "ko": "그렇습니다, 그는 작지만 누가 그를 데려오겠습니까?",
+      "vocab": [],
+      "grammar": []
+    },
+    {
+      "en": "For He formed you in the womb (Mother Nature) to bring Jacob.",
+      "ko": "왜냐하면 그분은 당신이 야곱을 데려오도록 모태(어머니 자연)에서 당신을 지으셨기 때문입니다.",
+      "vocab": [
+        {
+          "word": "Mother Nature",
+          "mean": "어머니 자연(물질적 환경)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville Concept",
+          "desc": "인간은 물질계라는 모태를 통해 영적 창조자로 거듭나도록 설계되었습니다."
+        }
+      ]
+    },
+    {
+      "en": "He wants to awaken in every being one who can create as He creates, for He creates by the Word, and God‘s Word is man‘s dream.",
+      "ko": "그분은 모든 존재 안에서 그분처럼 창조할 수 있는 자를 깨우길 원하십니다. 왜냐하면 그분은 말씀으로 창조하시며, 하나님의 말씀은 곧 인간의 꿈이기 때문입니다.",
+      "vocab": [
+        {
+          "word": "awaken",
+          "mean": "깨우다"
+        },
+        {
+          "word": "Word",
+          "mean": "말씀(상상력)"
+        },
+        {
+          "word": "dream",
+          "mean": "꿈(상상)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Core Doctrine",
+          "desc": "하나님의 말씀은 인간의 상상력(꿈)과 동일하며, 그것이 곧 창조의 도구라는 네빌의 핵심 가르침입니다."
+        }
+      ]
+    },
+    {
+      "en": "_**Now let us go into the silence.**_",
+      "ko": "_**이제 침묵 속으로 들어갑시다.**_",
+      "vocab": [
+        {
+          "word": "silence",
+          "mean": "침묵(명상 상태)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Instruction",
+          "desc": "네빌 고다드가 명상(상상)을 시작하기 전 사용하는 전형적인 문구입니다."
+        }
+      ]
+    }
   ]
 }

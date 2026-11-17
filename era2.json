@@ -13547,139 +13547,91 @@
   "Seedtime And Harvest": [
     {
       "en": "As you have been told, this morning’s subject is Seedtime and Harvest.",
-      "ko": "들으신 바와 같이, 오늘 아침의 주제는 파종과 수확입니다.",
+      "ko": "여러분께 말씀드린 바와 같이, 오늘 아침의 주제는 '파종과 수확'입니다.",
       "vocab": [
         {
-          "word": "seedtime",
-          "mean": "파종기, 씨 뿌릴 때"
+          "word": "Seedtime",
+          "mean": "파종기"
         },
         {
-          "word": "harvest",
-          "mean": "수확, 거두어들임"
-        },
-        {
-          "word": "subject",
-          "mean": "주제"
+          "word": "Harvest",
+          "mean": "수확"
         }
       ],
       "grammar": [
         {
-          "tag": "As you have been told",
-          "desc": "양태의 접속사 as가 이끄는 종속절로, 청중이 이미 알고 있거나 들은 바를 나타냅니다."
-        },
-        {
-          "tag": "Seedtime and Harvest",
-          "desc": "창세기 8장 22절의 성경적 개념을 차용한 것으로, 네빌 사상에서는 의식의 씨앗(생각)과 그 현현(결과)의 법칙을 상징합니다."
+          "tag": "Passive Voice",
+          "desc": "As you have been told는 청중과의 교감을 강조하는 네빌의 전형적인 도입부입니다."
         }
       ]
     },
     {
       "en": "Although it bears the same title as my latest book, it is not to be found in that book, for that book is an attempt to interpret some of the more difficult passages of the Bible.",
-      "ko": "비록 그것이 제 최신 도서와 같은 제목을 담고 있지만, 그 책에서는 찾아볼 수 없습니다. 왜냐하면 그 책은 성경의 더 어려운 구절들 중 일부를 해석하려는 시도이기 때문입니다.",
+      "ko": "비록 이것이 제 최신 저서와 같은 제목을 달고 있지만, 그 책 안에서는 찾아볼 수 없습니다. 왜냐하면 그 책은 성경의 더 난해한 구절들을 해석하려는 시도이기 때문입니다.",
       "vocab": [
         {
           "word": "bear",
-          "mean": "품다, 지니다, 가지다"
-        },
-        {
-          "word": "latest",
-          "mean": "최신의"
-        },
-        {
-          "word": "attempt",
-          "mean": "시도"
+          "mean": "지니다"
         },
         {
           "word": "interpret",
           "mean": "해석하다"
-        },
-        {
-          "word": "passage",
-          "mean": "구절"
         }
       ],
       "grammar": [
         {
-          "tag": "Although절",
-          "desc": "양보를 나타내는 접속사구로 두 책의 제목은 같으나 내용이나 목적은 다름을 대조합니다."
-        },
-        {
-          "tag": "is not to be found",
-          "desc": "be동사 + 투부정사(수동태)로 가능 및 운명을 나타내며 '발견될 수 없다'는 의미를 갖습니다."
+          "tag": "Conjunction",
+          "desc": "for를 사용하여 앞 문장에 대한 이유를 설명하는 네빌 특유의 논리적 전개입니다."
         }
       ]
     },
     {
       "en": "I have given you in the nine chapters a mystical view, and also a certain approach how you yourself may approach the interpretation of the Bible, for, as you know, it is not a book of history.",
-      "ko": "저는 9개의 장을 통해 여러분에게 신비적인 관점과 함께, 여러분 자신이 어떻게 성경 해석에 다가갈 수 있는지에 대한 특정한 접근법을 제공했습니다. 왜냐하면 아시다시피 성경은 역사책이 아니기 때문입니다.",
+      "ko": "저는 아홉 개의 장을 통해 여러분께 신비주의적 관점을 제시했고, 또한 여러분 스스로가 어떻게 성경 해석에 접근할 수 있는지에 대한 특정한 방법을 알려드렸습니다. 왜냐하면 여러분도 아시다시피, 성경은 역사책이 아니기 때문입니다.",
       "vocab": [
         {
           "word": "mystical",
-          "mean": "신비적인, 신비주의의"
+          "mean": "신비주의적인"
         },
         {
           "word": "approach",
-          "mean": "접근법, 다가가다"
-        },
-        {
-          "word": "interpretation",
-          "mean": "해석"
+          "mean": "접근법"
         }
       ],
       "grammar": [
         {
-          "tag": "mystical view",
-          "desc": "네빌 고다드의 핵심 방법론으로, 성경을 외부의 역사적 사건이 아닌 인간 내면의 의식의 드라마로 해석하는 시각입니다."
-        },
-        {
-          "tag": "it is not a book of history",
-          "desc": "네빌 신비주의의 근간이 되는 전제로, 성경은 문자적 역사 기록이 아니라 심리학적·영적 상태의 투영임을 강조합니다."
+          "tag": "Neville's Core Doctrine",
+          "desc": "성경을 역사적 사실이 아닌 인간 의식의 상태를 투영한 심리적 드라마로 보는 네빌의 핵심 관점입니다."
         }
       ]
     },
     {
       "en": "And so, when I became aware of deeper meanings in the passages than those normally assigned to them, I began to see them or to apprehend them mystically, and so I have given you a mystical interpretation of many of the darker passages.",
-      "ko": "그러므로 제가 그 구절들에서 통상적으로 부여된 것보다 더 깊은 의미들을 알아차렸을 때, 저는 그것들을 보기 시작했고 혹은 신비적으로 이해하기 시작했으며, 그리하여 난해한 구절들 중 다수에 대한 신비적 해석을 여러분에게 드렸던 것입니다.",
+      "ko": "그래서 제가 구절들 속에서 일반적으로 부여된 의미보다 더 깊은 의미를 깨닫게 되었을 때, 저는 그것들을 신비적으로 보거나 이해하기 시작했고, 그렇게 저는 여러분께 많은 난해한 구절들에 대한 신비주의적 해석을 제공하게 되었습니다.",
       "vocab": [
-        {
-          "word": "aware of",
-          "mean": "~을 알아차리는, 의식하는"
-        },
-        {
-          "word": "assign",
-          "mean": "부여하다, 할당하다"
-        },
         {
           "word": "apprehend",
           "mean": "이해하다, 파악하다"
         },
         {
-          "word": "darker",
-          "mean": "더 난해한, 이해하기 힘든"
+          "word": "darker passages",
+          "mean": "난해한 구절들"
         }
       ],
       "grammar": [
         {
-          "tag": "when절",
-          "desc": "시간의 부사절로, 문자적 해석을 넘어선 영적 깨달음의 순간을 묘사합니다."
-        },
-        {
-          "tag": "darker passages",
-          "desc": "문자적으로 이해하기 어려운 성경 구절을 의미하며, 네빌은 이를 의식의 비밀을 품은 상징으로 해석합니다."
+          "tag": "Epiphany",
+          "desc": "문자적 해석에서 영적/심리적 해석으로 전환되는 네빌의 인식 변화 과정을 설명합니다."
         }
       ]
     },
     {
       "en": "For instance, when Solomon made himself a chariot of the wood of Lebanon, he made himself – no one made it for him.",
-      "ko": "예를 들어, 솔로몬이 레바논 나무로 스스로 수레를 만들었을 때, 그는 스스로 그것을 만들었습니다. 그를 위해 그것을 만들어 준 사람은 아무도 없었습니다.",
+      "ko": "예를 들어, 솔로몬이 레바논 나무로 자신의 병거를 만들었을 때, 그는 스스로 그것을 만들었습니다. 아무도 그를 위해 만들어주지 않았습니다.",
       "vocab": [
         {
-          "word": "Solomon",
-          "mean": "솔로몬 (구약의 왕)"
-        },
-        {
           "word": "chariot",
-          "mean": "수레, 전차"
+          "mean": "병거"
         },
         {
           "word": "wood of Lebanon",
@@ -13688,89 +13640,69 @@
       ],
       "grammar": [
         {
-          "tag": "Solomon made himself a chariot",
-          "desc": "아가서 3장 9절의 구절 인용 전조 문장으로, 구원이나 영적 성취는 외부가 아닌 내면의 자아(Imagination)에 의해 이루어진다는 네빌의 사상을 투영합니다."
-        },
-        {
-          "tag": "he made himself – no one made it for him",
-          "desc": "대시(-)를 통한 강한 강조로, 인간의 의식이 유일한 창조적 원동력임을 역설합니다."
+          "tag": "Self-Creation",
+          "desc": "성경의 인물은 외부 존재가 아니라 우리 내면의 상태를 상징하며, 모든 창조는 스스로의 의식으로 이루어진다는 점을 강조합니다."
         }
       ]
     },
     {
       "en": "That’s what you must do – that’s what I must do – that’s what everyone must do – and in that chapter, I showed you the wood is not wood as you know wood.",
-      "ko": "그것이 여러분이 해야 하는 일이며, 그것이 제가 해야 하는 일이고, 그것이 모든 사람이 해야 하는 일입니다. 그리고 그 장에서, 저는 여러분에게 그 나무가 여러분이 아는 그런 나무가 아님을 보여주었습니다.",
+      "ko": "그것이 여러분이 해야 할 일이고, 제가 해야 할 일이며, 모든 사람이 해야 할 일입니다. 그리고 그 장에서 저는 여러분께 그 나무가 여러분이 아는 그런 나무가 아님을 보여드렸습니다.",
       "vocab": [
         {
-          "word": "everyone",
-          "mean": "모든 사람"
-        },
-        {
-          "word": "show",
-          "mean": "보여주다, 가르쳐주다"
+          "word": "must do",
+          "mean": "~해야 한다"
         }
       ],
       "grammar": [
         {
-          "tag": "what you must do",
-          "desc": "선행사를 포함한 관계대명사 what절로, 상상력을 통한 자기 구속 및 창조의 보편적 의무를 나타냅니다."
-        },
-        {
-          "tag": "the wood is not wood as you know wood",
-          "desc": "성경의 문자적(물리적) 의미와 신비적(영적) 의미를 구분하는 네빌의 해석 방식을 보여줍니다."
+          "tag": "Symbolism",
+          "desc": "물질적 사물(나무)을 심리적 상태(불멸의 마음)로 치환하는 네빌의 상징주의적 해석법입니다."
         }
       ]
     },
     {
       "en": "It means the wood of Lebanon is the incorruptible mind.",
-      "ko": "그것은 레바논의 나무가 썩지 않는 마음을 의미한다는 뜻입니다.",
+      "ko": "그것은 레바논의 나무가 곧 '불멸의 마음'을 의미한다는 뜻입니다.",
       "vocab": [
         {
           "word": "incorruptible",
-          "mean": "썩지 않는, 부패하지 않는, 영원한"
-        },
-        {
-          "word": "mind",
-          "mean": "마음, 정신, 의식"
+          "mean": "썩지 않는, 불멸의"
         }
       ],
       "grammar": [
         {
-          "tag": "incorruptible mind",
-          "desc": "성경의 물질적 재료(레바논 백향목 등)를 인간의 신성하고 불멸하는 의식(Human Imagination)으로 치환하여 해석하는 네빌 신비주의의 핵심입니다."
+          "tag": "Metaphor",
+          "desc": "성경의 물리적 재료를 인간의 의식 상태로 정의하는 네빌의 해석입니다."
         }
       ]
     },
     {
       "en": "But you make it for yourself, and we showed you the sides, what they were made of and what the meanings really are.",
-      "ko": "그러나 여러분은 그것을 스스로 만들며, 우리는 또한 그 수레의 측면들이 무엇으로 만들어졌는지, 그리고 그 의미가 진정으로 무엇인지 여러분에게 보여주었습니다.",
+      "ko": "하지만 여러분은 스스로 그것을 만들어야 합니다. 그리고 우리는 그 병거의 측면들이 무엇으로 만들어졌는지, 그리고 그 의미가 실제로 무엇인지 여러분께 보여드렸습니다.",
       "vocab": [
         {
-          "word": "side",
+          "word": "sides",
           "mean": "측면, 옆면"
-        },
-        {
-          "word": "really",
-          "mean": "진정으로, 실제로"
         }
       ],
       "grammar": [
         {
-          "tag": "what they were made of and what the meanings really are",
-          "desc": "간접의문문 병렬 구조로, 성경 속 사물의 구성 요소들이 지닌 영적 심리학적 의미를 해명하는 대목입니다."
+          "tag": "Instruction",
+          "desc": "독자에게 스스로의 의식을 구축할 책임이 있음을 상기시키는 권고입니다."
         }
       ]
     },
     {
       "en": "Then we took that very strange passage, the instruction to the Disciples to take off their shoes or provide no shoes when they travel, and we showed you the word “shoe” is not just the thing I wear on my foot; it is the symbol of the spirit of ‘let me do it for you’.",
-      "ko": "그러고 나서 우리는 제자들에게 여행할 때 신발을 벗거나 신발을 준비하지 말라는 매우 기묘한 구절을 다루었고, '신발'이라는 단어가 단순히 내 발에 신는 것이 아니라 '내가 대신 해줄게'라는 영혼의 상징임을 여러분에게 보여주었습니다.",
+      "ko": "그런 다음 우리는 제자들에게 신발을 벗거나 여행할 때 신발을 가져가지 말라고 지시한 그 매우 이상한 구절을 다루었고, '신발'이라는 단어가 단순히 발에 신는 물건이 아니라 '내가 너를 대신해 해주겠다'는 정신의 상징임을 보여주었습니다.",
       "vocab": [
         {
           "word": "passage",
-          "mean": "(책·성경 등의) 구절"
+          "mean": "구절"
         },
         {
-          "word": "disciples",
+          "word": "Disciples",
           "mean": "제자들"
         },
         {
@@ -13780,56 +13712,48 @@
       ],
       "grammar": [
         {
-          "tag": "네빌 사상 해설",
-          "desc": "성경의 외형적 문자에 갇히지 않고, 신발을 타인이 대신 해주는 대행(dependency)의 상징으로 해석하는 네빌 고다드의 신비주의적 주해 방식입니다."
+          "tag": "Neville's Interpretation",
+          "desc": "네빌은 성경의 신발을 의존적인 태도나 타인이 대신해 주는 행위의 상징으로 해석합니다."
         }
       ]
     },
     {
       "en": "For the shoe takes upon itself not only the dirt and the muck that would normally fall upon the wearer’s foot, but it protects the wearer from any contact with the outer world, and so anyone who offers to do for us what we should do, and could do far better ourselves, is offering himself as our shoe, and if I would awaken spiritually I must do it for myself.",
-      "ko": "왜냐하면 신발은 착용자의 발에 떨어질 먼지와 진흙을 스스로 떠맡을 뿐만 아니라 착용자가 외부 세계와 접촉하지 않도록 보호해주기 때문입니다. 따라서 우리가 마땅히 해야 하고 우리 스스로 훨씬 더 잘할 수 있는 일을 대신해주겠다고 제안하는 사람은 누구든 자신을 우리의 신발로 제공하는 것이며, 만약 내가 영적으로 깨어날 veux(원한다면) 나는 그것을 스스로 해야 합니다.",
+      "ko": "왜냐하면 신발은 착용자의 발에 묻을 흙과 오물을 대신 뒤집어쓸 뿐만 아니라 착용자를 외부 세계와의 접촉으로부터 보호하기 때문입니다. 따라서 우리가 해야 하고 스스로 훨씬 더 잘할 수 있는 일을 대신 해주겠다고 제안하는 사람은 누구든 스스로 우리의 신발이 되겠다고 자처하는 것이며, 제가 영적으로 깨어나려면 스스로 그 일을 해야만 합니다.",
       "vocab": [
         {
           "word": "muck",
-          "mean": "진흙, 오물"
+          "mean": "오물"
         },
         {
-          "word": "wearer",
-          "mean": "착용자"
-        },
-        {
-          "word": "awaken spiritually",
-          "mean": "영적으로 깨어나다"
+          "word": "awaken",
+          "mean": "깨어나다"
         }
       ],
       "grammar": [
         {
-          "tag": "구문 해설",
-          "desc": "not only A but B 구문을 사용하여 신발의 이중적 기능(오물 방어와 외부 세계 차단)을 설명하고, 타인에게 영적 성장을 의존하려는 태도를 경계합니다."
+          "tag": "Spiritual Autonomy",
+          "desc": "영적 성장은 타인에게 의존하는 것이 아니라 자신의 상상력을 스스로 통제할 때 이루어진다는 네빌의 핵심 사상입니다."
         }
       ]
     },
     {
       "en": "I must take my own mind and control it – take my wonderful imagination and actually control it and set it to noble purposes and not have some intermediary come between myself and God.",
-      "ko": "나는 내 자신의 마음을 붙잡아 통제해야 합니다. 나의 놀라운 상상력을 실제로 통제하고 그것을 고귀한 목적에 맞게 설정해야 하며, 나와 하나님 사이에 어떤 중개자도 끼어들게 해서는 안 됩니다.",
+      "ko": "저는 제 마음을 취하여 통제해야 합니다. 즉, 저의 경이로운 상상력을 취하여 실제로 통제하고 고귀한 목적을 위해 설정해야 하며, 저와 하나님 사이에 어떤 중재자가 끼어들게 해서는 안 됩니다.",
       "vocab": [
         {
           "word": "imagination",
           "mean": "상상력"
         },
         {
-          "word": "noble purposes",
-          "mean": "고귀한 목적"
-        },
-        {
           "word": "intermediary",
-          "mean": "중개자, 매개자"
+          "mean": "중재자"
         }
       ],
       "grammar": [
         {
-          "tag": "네빌 사상 해설",
-          "desc": "인간의 상상력이 곧 하나님(창조력)이므로, 사제나 중개자를 거치지 않고 직접 자신의 상상력을 통제하여 현실을 창조해야 한다는 핵심 교리를 담고 있습니다."
+          "tag": "Direct Connection",
+          "desc": "신과 인간 사이에는 어떠한 종교적 중재자도 필요 없으며, 오직 자신의 상상력이 곧 신임을 강조합니다."
         }
       ]
     },
@@ -13839,79 +13763,71 @@
       "vocab": [
         {
           "word": "internal",
-          "mean": "내면의, 내부의"
+          "mean": "내면의"
         }
       ],
       "grammar": [
         {
-          "tag": "네빌 사상 해설",
-          "desc": "외적인 신을 믿는 전통 종교관을 거부하고, 인간 내면의 인간의 상상력 자체가 유일한 참된 하나님임을 선언합니다."
+          "tag": "Immanence",
+          "desc": "신은 외부의 존재가 아니라 인간의 내면에 거하는 실체라는 네빌의 신비주의적 관점입니다."
         }
       ]
     },
     {
       "en": "He is that inevitable force that expresses in outward facts the latent tendencies of the soul, and so, if I would discover that God I cannot have you do my work for me.",
-      "ko": "그분은 영혼의 잠재적 성향들을 외적인 사실들로 표현해내는 피할 수 없는 힘이십니다. 그러므로 만약 내가 그 하나님을 발견하고자 한다면, 다른 사람이 내 일을 대신하게 할 수 없습니다.",
+      "ko": "그분은 영혼의 잠재된 경향을 외부의 사실로 표현하는 필연적인 힘이시기에, 제가 그 하나님을 발견하고자 한다면 당신이 저를 대신해 제 일을 하게 할 수는 없습니다.",
       "vocab": [
         {
-          "word": "inevitable force",
-          "mean": "피할 수 없는 힘"
+          "word": "inevitable",
+          "mean": "필연적인"
         },
         {
-          "word": "latent tendencies",
-          "mean": "잠재적 성향"
-        },
-        {
-          "word": "outward facts",
-          "mean": "외적인 사실(현실)"
+          "word": "latent",
+          "mean": "잠재된"
         }
       ],
       "grammar": [
         {
-          "tag": "구문 해설",
-          "desc": "관계대명사 that절이 the inevitable force를 수식하며, 내면의 의식(영혼의 성향)이 외부 현실로 투영되는 법칙을 설명합니다."
+          "tag": "Law of Assumption",
+          "desc": "내면의 상태(상상)가 외부의 현실로 투영된다는 네빌의 법칙을 설명합니다."
         }
       ]
     },
     {
       "en": "I cannot have you eat my spiritual food and expect to grow spiritually.",
-      "ko": "당신이 내 영적 양식을 먹게 하고 내가 영적으로 성장하기를 기대할 수는 없습니다.",
+      "ko": "당신이 제 영적인 음식을 먹게 하고 제가 영적으로 성장하기를 기대할 수는 없습니다.",
       "vocab": [
         {
           "word": "spiritual food",
-          "mean": "영적 양식"
+          "mean": "영적인 양식"
         }
       ],
       "grammar": [
         {
-          "tag": "네빌 사상 해설",
-          "desc": "깨달음과 상상력의 사용은 대행이 불가능하며, 각 개인이 직접 자신의 의식을 변화시켜야만 성장이 일어난다는 점을 비유적으로 표현했습니다."
+          "tag": "Self-Reliance",
+          "desc": "영적 성장은 타인의 경험을 빌려오는 것이 아니라 자신의 내면적 체험을 통해야만 가능하다는 의미입니다."
         }
       ]
     },
     {
       "en": "So that is really the attempt of the nine chapters in the book “Seedtime and Harvest”.",
-      "ko": "따라서 그것이 바로 저서 『뿌리는 시간과 거두는 시간(Seedtime and Harvest)』에 있는 9개 장의 진정한 시도입니다.",
+      "ko": "그러므로 그것이 바로 '파종과 수확(Seedtime and Harvest)'이라는 책의 아홉 장이 시도하는 바입니다.",
       "vocab": [
         {
           "word": "attempt",
-          "mean": "시도, 노력"
-        },
-        {
-          "word": "chapters",
-          "mean": "장(章)"
+          "mean": "시도"
         }
       ],
       "grammar": [
         {
-          "tag": "구문 해설",
-          "desc": "지시형용사 that을 통해 앞서 설명한 내면의 통제와 자기 주도적 영성이 자신의 저서인 'Seedtime and Harvest'의 핵심 주제임을 밝히고 있습니다."
+          "tag": "Reference",
+          "desc": "네빌 고다드의 저서 'Seedtime and Harvest'를 언급하며 자신의 가르침을 요약하고 있습니다."
         }
       ]
     },
     {
       "en": "But this morning’s subject – I want to approach it differently.",
-      "ko": "하지만 오늘 아침의 주제는 – 그것에 다르게 접근하고 싶습니다.",
+      "ko": "하지만 오늘 아침의 주제는 다르게 접근하고 싶습니다.",
       "vocab": [
         {
           "word": "subject",
@@ -13920,174 +13836,118 @@
         {
           "word": "approach",
           "mean": "접근하다"
-        },
-        {
-          "word": "differently",
-          "mean": "다르게"
         }
       ],
       "grammar": [
         {
           "tag": "Dash usage",
-          "desc": "대시(-)를 사용하여 주제를 환기하고 말의 흐름을 자연스럽게 연결함."
+          "desc": "네빌 고다드는 대시를 사용하여 강조하거나 생각을 덧붙이는 구어체적 리듬을 자주 사용합니다."
         }
       ]
     },
     {
       "en": "This statement is taken from the Book of Genesis, the 8th chapter of Genesis – it is a promise made to man that “while the earth remaineth, seedtime and harvest, hot and cold, summer and winter, day and night shall not cease.”",
-      "ko": "이 진술은 창세기, 창세기 8장에서 가져온 것입니다 – 그것은 인간에게 주어진 약속입니다, \"땅이 있을 동안에는 심음과 거둠과 추위와 더위와 여름과 겨울과 낮과 밤이 쉬지 아니하리라.\"",
+      "ko": "이 진술은 창세기 8장에서 가져온 것으로, 인간에게 주어진 약속입니다. \"땅이 있을 동안에는 심음과 거둠과 추위와 더위와 여름과 겨울과 낮과 밤이 쉬지 아니하리라.\"",
       "vocab": [
-        {
-          "word": "statement",
-          "mean": "진술, 구절"
-        },
         {
           "word": "Genesis",
           "mean": "창세기"
         },
         {
-          "word": "promise",
-          "mean": "약속"
-        },
-        {
-          "word": "seedtime and harvest",
-          "mean": "파종과 수확"
+          "word": "remaineth",
+          "mean": "존속하다, 남아있다"
         },
         {
           "word": "cease",
-          "mean": "멈추다"
+          "mean": "그치다, 멈추다"
         }
       ],
       "grammar": [
         {
-          "tag": "Biblical quotation",
-          "desc": "창세기 8장 22절의 구절을 인용하여 네빌 사상의 핵심인 '법칙과 약속'을 뒷받침함."
+          "tag": "Biblical Citation",
+          "desc": "창세기 8장 22절을 인용하여 우주의 불변하는 법칙을 설명합니다."
         }
       ]
     },
     {
       "en": "We are told that man was placed in a garden – the garden was completed – every tree was bearing fruit – everything in the world was finished – and he was placed in the garden to dress it and to keep it.",
-      "ko": "우리는 인간이 한 동산에 배치되었다는 말을 듣습니다 – 그 동산은 완성되어 있었고 – 모든 나무가 열매를 맺고 있었으며 – 세상의 모든 것이 끝마쳐졌고 – 그는 그것을 경작하고 지키기 위해 그 동산에 놓였습니다.",
+      "ko": "우리는 인간이 정원에 놓였다고 들었습니다. 정원은 완성되었고, 모든 나무는 열매를 맺고 있었으며, 세상의 모든 것은 끝마쳐졌습니다. 그리고 인간은 그것을 가꾸고 지키기 위해 그 정원에 놓였습니다.",
       "vocab": [
         {
-          "word": "be placed",
-          "mean": "배치되다, 놓이다"
-        },
-        {
-          "word": "completed",
-          "mean": "완성된"
-        },
-        {
-          "word": "bear fruit",
-          "mean": "열매를 맺다"
-        },
-        {
-          "word": "finished",
-          "mean": "완료된, 끝난"
-        },
-        {
           "word": "dress",
-          "mean": "경작하다, 손질하다"
+          "mean": "가꾸다, 경작하다"
         },
         {
           "word": "keep",
-          "mean": "지키다"
+          "mean": "지키다, 보존하다"
         }
       ],
       "grammar": [
         {
           "tag": "Creation is finished",
-          "desc": "창조가 이미 완료(finished)되었다는 네빌 고다드의 근본 교리를 에덴동산의 비유를 통해 설명함."
+          "desc": "네빌 사상의 핵심인 '창조는 이미 완료되었다'는 개념을 에덴동산의 비유를 통해 설명합니다."
         }
       ]
     },
     {
       "en": "He doesn’t plant it, he doesn’t do a thing but dress it and keep it.",
-      "ko": "그는 그것을 심지도 않고, 그것을 경작하고 지키는 것 외에는 아무것도 하지 않습니다.",
+      "ko": "그는 그것을 심지 않으며, 가꾸고 지키는 것 외에는 아무것도 하지 않습니다.",
       "vocab": [
         {
           "word": "plant",
           "mean": "심다"
-        },
-        {
-          "word": "do a thing",
-          "mean": "어떤 것도 하다"
-        },
-        {
-          "word": "but",
-          "mean": "~외에는"
         }
       ],
       "grammar": [
         {
-          "tag": "Emphatic negation",
-          "desc": "인간이 새로운 현실을 억지로 '만들거나 심을' 필요가 없고, 이미 완성된 상태를 '유지하고 점유(dress and keep)'하는 것이 전부임을 강조."
+          "tag": "Emphasis",
+          "desc": "인간의 역할은 창조가 아니라 이미 존재하는 상태를 선택하고 유지하는 것임을 강조합니다."
         }
       ]
     },
     {
       "en": "He is not called upon to make trees or to grow new trees – everything is finished!",
-      "ko": "그는 나무를 만들거나 새로운 나무를 기르도록 요구받지 않습니다 – 모든 것이 끝났습니다!",
+      "ko": "그는 나무를 만들거나 새로운 나무를 자라게 하라는 요구를 받지 않습니다. 모든 것은 이미 완성되었습니다!",
       "vocab": [
         {
-          "word": "be called upon",
+          "word": "called upon",
           "mean": "요구받다"
-        },
-        {
-          "word": "grow",
-          "mean": "기르다, 자라게 하다"
         }
       ],
       "grammar": [
         {
           "tag": "Exclamation",
-          "desc": "느낌표를 사용하여 'Creation is finished(창조는 이미 완성되었다)'라는 네빌 사상의 대원칙을 강력하게 선언함."
+          "desc": "창조의 완결성을 강조하기 위해 느낌표를 사용하여 단언합니다."
         }
       ]
     },
     {
       "en": "As we are told in John – “I have sent you to reap that whereon you bestowed no labor”- for Creation is finished.",
-      "ko": "요한복음에서 우리에게 말하듯 – \"내가 너희로 수고하지 아니한 것을 거두어들이게 하였노니\" – 왜냐하면 창조는 끝났기 때문입니다.",
+      "ko": "요한복음에서 말하듯, \"나는 너희가 수고하지 아니한 것을 거두러 너희를 보내었노니\" - 왜냐하면 창조는 이미 끝났기 때문입니다.",
       "vocab": [
         {
           "word": "reap",
-          "mean": "거두다, 수확하다"
+          "mean": "거두다"
         },
         {
           "word": "bestow",
-          "mean": "쏟다, 부여하다"
-        },
-        {
-          "word": "labor",
-          "mean": "노동, 수고"
+          "mean": "부여하다, (수고를) 들이다"
         }
       ],
       "grammar": [
         {
-          "tag": "Biblical quotation",
-          "desc": "요한복음 4장 38절을 인용하여 인간의 물리적 노력 없이 상상력을 통한 수확만이 남았음을 증명함."
+          "tag": "Biblical Citation",
+          "desc": "요한복음 4장 38절을 인용하여 인간의 수고가 창조를 위한 것이 아님을 증명합니다."
         }
       ]
     },
     {
       "en": "Every conceivable human drama, every little plot, every little plan in the drama of life is already worked out, as mere possibilities while we are not in them, but they are overpoweringly real when we are in them.",
-      "ko": "상상할 수 있는 모든 인간의 드라마, 모든 작은 줄거리, 인생 드라마 속 모든 작은 계획은 우리가 그 안에 있지 않을 때는 단순한 가능성으로서 이미 짜여 있지만, 우리가 그 안에 들어갈 때는 압도적으로 실재가 됩니다.",
+      "ko": "상상할 수 있는 모든 인간의 드라마, 모든 작은 줄거리, 인생이라는 드라마 속의 모든 작은 계획은 이미 짜여 있습니다. 우리가 그 안에 있지 않을 때는 단순한 가능성에 불과하지만, 우리가 그 안에 들어가면 압도적으로 현실이 됩니다.",
       "vocab": [
         {
           "word": "conceivable",
           "mean": "상상할 수 있는"
-        },
-        {
-          "word": "plot",
-          "mean": "줄거리, 음모"
-        },
-        {
-          "word": "work out",
-          "mean": "해결되다, 짜여지다"
-        },
-        {
-          "word": "possibility",
-          "mean": "가능성"
         },
         {
           "word": "overpoweringly",
@@ -14096,122 +13956,114 @@
       ],
       "grammar": [
         {
-          "tag": "State and Consciousness",
-          "desc": "모든 상태(States)는 이미 존재하며, 인간이 의식을 그 상태 안으로 들여놓을 때(Assume the state) 그것이 현실(Real)이 된다는 개념."
+          "tag": "State of Consciousness",
+          "desc": "인간이 특정 상태에 들어가는 것이 곧 그 상태를 현실화하는 것임을 설명합니다."
         }
       ]
     },
     {
       "en": "So man can get in touch with that particular state of his choice, for my imagination can put me in touch inwardly with the state desired so I and in it.",
-      "ko": "그러므로 인간은 자신이 선택한 그 특정한 상태와 접촉할 수 있습니다, 왜냐하면 나의 상상력이 내 안에서 내가 바라는 상태와 나를 접촉하게 하여 내가 그 안에 있게 할 수 있기 때문입니다.",
+      "ko": "그러므로 인간은 자신이 선택한 특정한 상태와 접촉할 수 있습니다. 왜냐하면 나의 상상력은 내가 원하는 상태와 내면적으로 접촉하게 하여 내가 그 안에 있게 만들기 때문입니다.",
       "vocab": [
         {
           "word": "get in touch with",
           "mean": "~와 접촉하다"
         },
         {
-          "word": "particular",
-          "mean": "특정한"
-        },
-        {
-          "word": "imagination",
-          "mean": "상상력"
-        },
-        {
           "word": "inwardly",
-          "mean": "내적으로"
-        },
-        {
-          "word": "desired",
-          "mean": "바라는, 원하는"
+          "mean": "내면적으로"
         }
       ],
       "grammar": [
         {
-          "tag": "Typo handling in text",
-          "desc": "'so I and in it'은 원문의 'so I am in it(그래서 나는 그 안에 있다)'의 오탈자로 간주하고 맥락상 '상상력을 통해 그 상태 안에 있게 된다'로 번역함."
+          "tag": "Imagination",
+          "desc": "상상력이 곧 현실을 창조하는 도구임을 명시합니다."
         }
       ]
     },
     {
       "en": "If I am in it I will realize it in my world.",
-      "ko": "만약 내가 그 안에 있다면 나는 그것을 나의 세계에서 실현할 것입니다.",
+      "ko": "만약 내가 그 안에 있다면, 나는 그것을 나의 세계에서 실현할 것입니다.",
       "vocab": [
         {
           "word": "realize",
           "mean": "실현하다, 깨닫다"
-        },
-        {
-          "word": "world",
-          "mean": "세계"
         }
       ],
       "grammar": [
         {
-          "tag": "Condition and Manifestation",
-          "desc": "주관적 상태(상상 속의 거주)가 객관적 현실(세상의 실현)로 나타나는 인과관계를 조건문으로 표현함."
+          "tag": "Conditional",
+          "desc": "상태에 머무는 것(Being in the state)이 현실화의 필수 조건임을 강조합니다."
         }
       ]
     },
     {
       "en": "The states in which we find ourselves are the seed time.",
-      "ko": "우리가 자신을 발견하는 그 상태들이 바로 파종기입니다.",
+      "ko": "우리가 스스로를 발견하는 그 상태들이 바로 심는 시기입니다.",
       "vocab": [
         {
-          "word": "state",
-          "mean": "상태"
-        },
-        {
           "word": "seed time",
-          "mean": "파종기, 씨 뿌리는 때"
+          "mean": "파종기, 심는 시기"
         }
       ],
       "grammar": [
         {
           "tag": "Metaphor",
-          "desc": "의식의 상태(State)를 씨앗(Seed)을 심는 파종기에 비유함."
+          "desc": "인간의 의식 상태를 파종기에 비유합니다."
         }
       ]
     },
     {
       "en": "The harvest is simply the encountering of events and circumstances of life.",
-      "ko": "수확은 단순히 삶의 사건들과 환경들과 조우하는 것입니다.",
+      "ko": "수확은 단순히 삶의 사건과 환경을 마주하는 것입니다.",
       "vocab": [
         {
           "word": "harvest",
           "mean": "수확"
         },
         {
-          "word": "simply",
-          "mean": "단지, 단순히"
-        },
-        {
           "word": "encountering",
           "mean": "마주침, 조우"
-        },
-        {
-          "word": "circumstance",
-          "mean": "환경, 상황"
         }
       ],
       "grammar": [
         {
-          "tag": "Law of Reaping",
-          "desc": "우리가 상상 속에서 심은 상태의 결과로 외부의 사건과 환경을 자연스럽게 만나게 되는 것(수확)을 설명함."
+          "tag": "Law of Assumption",
+          "desc": "외부의 사건은 내부 상태의 결과물(수확)임을 설명합니다."
         }
       ]
     },
     {
       "en": "But man’s memory is so short he forgets the seedtime, but all ends run true to origins, so if the origin, say is misfortune the end will be misfortune.",
-      "ko": "그러나 인간의 기억은 너무나 짧아서 뿌리는 때를 잊어버리지만, 모든 끝은 그 기원으로 정확히 돌아갑니다. 그러므로 만약 기원이 불행이라면 그 끝도 불행이 될 것입니다.",
+      "ko": "하지만 인간의 기억력은 너무나 짧아서 파종의 시기를 잊어버리지만, 모든 결과는 그 기원에 충실하게 흐르기에, 만약 기원이 불행이라면 그 결과 또한 불행일 것입니다.",
       "vocab": [
         {
           "word": "seedtime",
-          "mean": "씨 뿌리는 때"
+          "mean": "파종기, 씨를 뿌리는 때"
+        },
+        {
+          "word": "run true to",
+          "mean": "~에 충실하다, ~와 일치하다"
         },
         {
           "word": "origin",
-          "mean": "기원, 원인"
+          "mean": "기원, 근원"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Law of Cause and Effect",
+          "desc": "네빌 고다드의 핵심 사상인 '원인과 결과의 법칙'을 설명하며, 현재의 경험은 과거의 상상(씨앗)에서 비롯됨을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "But when you reap misfortune, you wonder “Why should it happen to me?",
+      "ko": "하지만 당신이 불행을 거둘 때, 당신은 '왜 이런 일이 나에게 일어나는 거지?'라고 의아해합니다.",
+      "vocab": [
+        {
+          "word": "reap",
+          "mean": "거두다, 수확하다"
         },
         {
           "word": "misfortune",
@@ -14220,64 +14072,40 @@
       ],
       "grammar": [
         {
-          "tag": "소유격",
-          "desc": "man's memory는 인간의 마음의 작용과 망각 상태를 나타냅니다."
-        },
-        {
-          "tag": "인과관계",
-          "desc": "씨앗(기원)과 열매(끝)의 법칙은 네빌 사상의 핵심인 상상력과 원인의 법칙을 대변합니다."
-        }
-      ]
-    },
-    {
-      "en": "But when you reap misfortune, you wonder “Why should it happen to me?",
-      "ko": "그러나 불행을 거두어들이게 될 때, 여러분은 \"왜 이런 일이 나에게 일어나는 거지?\" 하고 의아해합니다.",
-      "vocab": [
-        {
-          "word": "reap",
-          "mean": "거두다"
-        },
-        {
-          "word": "wonder",
-          "mean": "이상하게 여기다, 궁금해하다"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "인용문",
-          "desc": "인간이 자신의 상상 속 원인을 망각한 채 외부 결과에 대해 품는 의문을 직접 인용으로 표현했습니다."
+          "tag": "Self-Reflection",
+          "desc": "인간이 자신의 내면 상태가 외부 현실을 결정한다는 사실을 망각했을 때 겪는 혼란을 묘사함."
         }
       ]
     },
     {
       "en": "When have I set a thing like this in motion?",
-      "ko": "내가 언제 이런 것을 움직이게(시작되게) 했던가?",
+      "ko": "내가 언제 이런 일을 시작하게 만들었단 말인가?",
       "vocab": [
         {
           "word": "set in motion",
-          "mean": "시작하게 하다, 가동하다"
+          "mean": "시작하게 하다, 작동시키다"
         }
       ],
       "grammar": [
         {
-          "tag": "현재완료",
-          "desc": "과거에 무의식적으로 심었던 씨앗이 현재의 결과를 가져왔음을 자각하지 못하는 상태를 보여줍니다."
+          "tag": "Ignorance of Law",
+          "desc": "자신이 상상력을 통해 현실을 창조하고 있다는 사실을 깨닫지 못하는 인간의 무지를 나타냄."
         }
       ]
     },
     {
       "en": "Haven’t I given to the poor?",
-      "ko": "내가 가난한 이들에게 베풀지 않았던가?",
+      "ko": "내가 가난한 자들에게 베풀지 않았던가?",
       "vocab": [
         {
-          "word": "give to the poor",
-          "mean": "가난한 이들에게 베풀다"
+          "word": "given to the poor",
+          "mean": "가난한 자에게 자선을 베풀다"
         }
       ],
       "grammar": [
         {
-          "tag": "부정 의문문",
-          "desc": "외부의 도덕적 행위나 선행이 운명을 결정한다는 종교적 통념에 대한 의문을 나타냅니다."
+          "tag": "External Ritual",
+          "desc": "외적인 선행이나 종교적 의무가 운명을 결정한다고 믿는 인간의 착각을 보여줌."
         }
       ]
     },
@@ -14286,96 +14114,88 @@
       "ko": "내가 예배에 참석하지 않았던가?",
       "vocab": [
         {
-          "word": "attend service",
+          "word": "attended service",
           "mean": "예배에 참석하다"
         }
       ],
       "grammar": [
         {
-          "tag": "종교적 의식",
-          "desc": "외적인 종교적 의무 수행이 구원을 보장한다는 믿음을 반문합니다."
+          "tag": "Religious Formalism",
+          "desc": "형식적인 종교 활동이 구원을 가져다줄 것이라는 오해를 지적함."
         }
       ]
     },
     {
       "en": "Haven’t I prayed daily, and why should these things happen?”",
-      "ko": "매일 기도하지 않았던가, 그런데 왜 이런 일들이 일어나야 하는가?\" 하고 말입니다.",
+      "ko": "내가 매일 기도하지 않았던가, 그런데 왜 이런 일들이 일어나는 거지?",
       "vocab": [
         {
-          "word": "daily",
-          "mean": "매일의"
+          "word": "prayed daily",
+          "mean": "매일 기도하다"
         }
       ],
       "grammar": [
         {
-          "tag": "합성 의문문",
-          "desc": "인간이 생각하는 선행과 기도가 실제 상상력의 법칙을 대신할 수 없음을 강조합니다."
+          "tag": "Misunderstood Prayer",
+          "desc": "네빌 고다드에게 기도는 '이미 이루어진 상태를 느끼는 것'이나, 여기서는 형식적인 기도의 무용함을 비판함."
         }
       ]
     },
     {
       "en": "But you see my God never forgets because He always gives the end in harmony with the origin, and you and I are selectors: we don’t make; we are not creators; – creation is finished, the whole vast world of creation, as told us in Ecclesiastes “I am the beginning and the end.",
-      "ko": "하지만 보십시오, 나의 하나님은 결코 잊지 않으십니다. 왜냐하면 그분은 언제나 기원과 조화를 이루는 끝을 주시기 때문입니다. 그리고 여러분과 저는 선택자들입니다. 우리는 만드는 것이 아니며, 창조자들이 아닙니다. 창조는 이미 완성되었습니다. 전도서에서 우리에게 말해주듯이, \"나는 시작과 끝이니라\"라고 하신 것처럼 말입니다.",
+      "ko": "하지만 보십시오, 나의 하나님은 결코 잊지 않으십니다. 왜냐하면 그분은 항상 기원과 조화를 이루는 결과를 주시기 때문입니다. 그리고 당신과 나는 선택자들입니다. 우리는 만드는 것이 아니며, 창조자가 아닙니다. 창조는 이미 끝났습니다. 전도서에서 우리에게 말하듯, 광대한 창조의 세계 전체가 '나는 시작이자 끝이다'라고 합니다.",
       "vocab": [
         {
-          "word": "in harmony with",
-          "mean": "~와 조화를 이루어"
+          "word": "selectors",
+          "mean": "선택자들"
         },
         {
-          "word": "selector",
-          "mean": "선택자"
-        },
-        {
-          "word": "finished",
-          "mean": "완성된"
+          "word": "creation is finished",
+          "mean": "창조는 이미 완성되었다"
         }
       ],
       "grammar": [
         {
-          "tag": "네빌의 핵심 교리",
-          "desc": "창조가 이미 완료되었다는 'Creation is finished' 개념과 인간은 창조자가 아니라 선택자라는 정의를 설명합니다."
+          "tag": "Finished Creation",
+          "desc": "네빌 고다드의 핵심 교리인 '이미 완성된 창조(Creation is finished)'를 설명함."
         }
       ]
     },
     {
       "en": "There is nothing to come that has not been and is.”",
-      "ko": "이미 있지 않았거나 지금 있지 않은 것은 앞으로 올 것이 아무것도 없다.\"",
+      "ko": "이미 존재하지 않았거나 현재 존재하지 않는 것은 앞으로 올 수 없습니다.",
       "vocab": [
         {
-          "word": "to come",
-          "mean": "다가올"
+          "word": "nothing to come",
+          "mean": "앞으로 올 것"
         }
       ],
       "grammar": [
         {
-          "tag": "성경 인용 결합",
-          "desc": "전도서(Ecclesiastes)의 사상을 인용하여 모든 것이 이미 존재한다는 시간의 비실재성을 강조합니다."
+          "tag": "Eternal Now",
+          "desc": "시간은 환상이며, 모든 가능성은 이미 영원한 현재 속에 존재한다는 사상."
         }
       ]
     },
     {
       "en": "So look upon creation as finished – and you and I are only selectors of that which is.",
-      "ko": "그러므로 창조를 완성된 것으로 바라보십시오. 그리고 여러분과 저는 단지 존재하는 것들의 선택자일 뿐입니다.",
+      "ko": "그러니 창조를 이미 완성된 것으로 바라보십시오. 당신과 나는 오직 존재하는 것들 중 선택하는 자들일 뿐입니다.",
       "vocab": [
         {
-          "word": "look upon A as B",
-          "mean": "A를 B로 여기다"
-        },
-        {
-          "word": "only",
-          "mean": "오직 ~뿐인"
+          "word": "look upon",
+          "mean": "~로 여기다, 바라보다"
         }
       ],
       "grammar": [
         {
-          "tag": "명령문",
-          "desc": "완료된 창조를 믿음으로 받아들이라는 실천적 지침입니다."
+          "tag": "Selector Concept",
+          "desc": "인간의 역할은 새로운 것을 만드는 것이 아니라, 이미 존재하는 무한한 가능성 중 하나를 선택하여 경험하는 것임을 강조."
         }
       ]
     },
     {
       "en": "By selectors I mean that you and I have the privilege (we may not exercise it) but it is our privilege to select that aspect of reality to which we will respond, and in responding to it, we bring it into existence for ourselves.",
-      "ko": "선택자들이란, 여러분과 저에게 특권이 있음을 의미합니다(우리가 그것을 행사하지 않을 수도 있지만). 우리가 반응할 현실의 그 측면을 선택하는 것이 우리의 특권이며, 거기에 반응함으로써 우리는 그것을 우리 자신을 위해 존재하게 가져오는 것입니다.",
+      "ko": "선택자라는 말은 당신과 나에게 특권이 있다는 뜻입니다(우리가 그것을 행사하지 않을 수도 있지만). 우리가 반응할 현실의 측면을 선택하는 것이 우리의 특권이며, 그것에 반응함으로써 우리는 그것을 우리 자신을 위해 존재하게 만드는 것입니다.",
       "vocab": [
         {
           "word": "privilege",
@@ -14383,47 +14203,43 @@
         },
         {
           "word": "exercise",
-          "mean": "행사하다"
+          "mean": "행사하다, 발휘하다"
         },
         {
           "word": "bring into existence",
-          "mean": "존재하게 하다, 실현하다"
+          "mean": "존재하게 하다"
         }
       ],
       "grammar": [
         {
-          "tag": "관계대명사 계속적/제한적 용법",
-          "desc": "to which we will respond는 우리가 주의를 기울이고 감정을 부여하는 대상(상태)을 가리킵니다."
+          "tag": "Power of Attention",
+          "desc": "우리의 주의(Attention)를 어디에 두느냐가 곧 현실을 선택하는 행위임을 설명함."
         }
       ]
     },
     {
       "en": "Not knowing that we are so privileged, we simply go through the world reflecting the circumstances of life, not realizing we have the power to create or to out-picture the circumstance of life.",
-      "ko": "우리가 그러한 특권을 가지고 있음을 알지 못하기 때문에, 우리는 삶의 상황을 단순히 반영하면서 세상을 살아갑니다. 삶의 상황을 창조하거나 외부로 투영할 힘이 우리에게 있다는 것을 깨닫지 못한 채 말입니다.",
+      "ko": "우리가 그러한 특권을 가졌다는 사실을 알지 못한 채, 우리는 그저 삶의 상황들을 반영하며 세상을 살아갈 뿐, 우리가 삶의 상황을 창조하거나 외부로 투사할 힘을 가졌다는 사실을 깨닫지 못합니다.",
       "vocab": [
         {
-          "word": "privileged",
-          "mean": "특권을 가진"
-        },
-        {
-          "word": "reflect",
-          "mean": "반영하다"
+          "word": "reflecting",
+          "mean": "반영하는"
         },
         {
           "word": "out-picture",
-          "mean": "외부로 그려내다, 투영하다"
+          "mean": "외부로 투사하다, 형상화하다"
         }
       ],
       "grammar": [
         {
-          "tag": "분사구문",
-          "desc": "Not knowing과 not realizing이 연속으로 쓰여 무지 속에 살아가는 인간의 상태를 묘사합니다."
+          "tag": "Awakening",
+          "desc": "인간이 자신의 신성한 창조 능력을 깨닫고 잠에서 깨어나야 함을 역설함."
         }
       ]
     },
     {
       "en": "So now let us now analyze what I personally mean by seedtime.",
-      "ko": "그러므로 이제 우리는 '파종기(seedtime)'에 대해 내가 개인적으로 무엇을 의미하는지 분석해 봅시다.",
+      "ko": "자, 이제 제가 개인적으로 '파종기(seedtime)'라는 말로 무엇을 의미하는지 분석해 봅시다.",
       "vocab": [
         {
           "word": "analyze",
@@ -14436,46 +14252,34 @@
       ],
       "grammar": [
         {
-          "tag": "let us",
-          "mean": "청유형 (~하자)"
-        },
-        {
-          "word": "what clause",
-          "mean": "명사절 (~하는 것)"
+          "tag": "Let us",
+          "desc": "청유형 문장으로, 독자에게 네빌의 관점을 함께 탐구할 것을 제안함."
         }
       ]
     },
     {
       "en": "If everything is finished and completed, then why the promise there shall be seedtime and harvest as long as the earth remains ?",
-      "ko": "만약 모든 것이 이미 끝났고 완성된 것이라면, 어째서 '땅이 있는 동안에는 파종기와 추수가 있으리라'는 약속이 있는 것일까요?",
+      "ko": "만약 모든 것이 이미 끝났고 완성되었다면, 왜 땅이 있는 동안에는 파종기와 수확기가 있을 것이라는 약속이 존재하는 것일까요?",
       "vocab": [
         {
           "word": "finished and completed",
-          "mean": "완성되고 끝마쳐진 (네빌의 창조 완성 개념)"
+          "mean": "완성된, 끝난"
         },
         {
           "word": "harvest",
-          "mean": "추수, 수확"
-        },
-        {
-          "word": "remain",
-          "mean": "남아 있다, 지속되다"
+          "mean": "수확"
         }
       ],
       "grammar": [
         {
-          "tag": "Conditional Clause",
-          "mean": "If절 (완성된 창조 사상을 전제로 함)"
-        },
-        {
-          "tag": "Ellipsis",
-          "mean": "why [is there] the promise... 생략 구문"
+          "tag": "창세기 8:22 인용",
+          "desc": "이미 완성된 창조(Finished Creation)라는 네빌의 핵심 교리와 성경의 약속 사이의 역설을 제기함."
         }
       ]
     },
     {
       "en": "Now seedtime, to those who are here this morning, as we should really know, we are not taking it literally, our seedtime is that moment in time when you and I react to anything in this world.",
-      "ko": "자, 오늘 아침 이 자리에 계신 여러분에게 파종기란, 우리가 진정으로 알아야 하듯이, 문자 그대로 받아들여서는 안 되며, 우리의 파종기란 여러분과 내가 이 세상의 어떤 것에든 반응하는 그 시간 속의 바로 그 순간입니다.",
+      "ko": "자, 오늘 아침 이 자리에 계신 분들에게 말씀드리자면, 우리가 정말 알아야 하듯이, 우리는 파종기를 문자 그대로 받아들이지 않습니다. 우리의 파종기란 여러분과 제가 이 세상의 어떤 것에 반응하는 바로 그 순간입니다.",
       "vocab": [
         {
           "word": "literally",
@@ -14488,25 +14292,17 @@
       ],
       "grammar": [
         {
-          "tag": "Relative Clause",
-          "mean": "those who (~하는 사람들)"
-        },
-        {
-          "tag": "When Clause",
-          "mean": "moment in time when... (반응의 순간을 정의하는 관계부사절)"
+          "tag": "심리적 해석",
+          "desc": "성경의 물리적 사건을 인간의 의식적 반응이라는 심리적 사건으로 치환함."
         }
       ]
     },
     {
       "en": "It may be to an object, it may be to an individual, it may be to a bit of news that we have overheard, but the moment of reaction, that emotional response, is our attitude.",
-      "ko": "그것은 어떤 물건일 수도 있고, 어떤 개인일 수도 있으며, 우리가 우연히 들은 한 조각의 뉴스일 수도 있지만, 그 반응의 순간, 즉 그 감정적 반응이 바로 우리의 태도입니다.",
+      "ko": "그것은 사물일 수도 있고, 개인일 수도 있으며, 우연히 들은 뉴스 한 조각일 수도 있습니다. 하지만 그 반응의 순간, 즉 그 감정적 응답이 바로 우리의 태도입니다.",
       "vocab": [
         {
-          "word": "individual",
-          "mean": "개인"
-        },
-        {
-          "word": "overhear",
+          "word": "overheard",
           "mean": "우연히 듣다"
         },
         {
@@ -14515,24 +14311,20 @@
         },
         {
           "word": "attitude",
-          "mean": "태도 (네빌 사상에서 상상과 느낌의 상태)"
+          "mean": "태도"
         }
       ],
       "grammar": [
         {
-          "tag": "Parallel Structure",
-          "mean": "It may be to ~, it may be to ~, it may be to ~"
+          "tag": "Attitude",
+          "desc": "네빌에게 태도는 곧 의식의 상태이며, 이것이 현실을 창조하는 씨앗이 됨."
         }
       ]
     },
     {
       "en": "Our attitudes are the seedtimes of life, and although we may not remember the seedtime or the moment of response, nature never forgets, and when it suddenly appears in our world, that suddenness is only the emergence of a hidden continuity.",
-      "ko": "우리의 태도는 삶의 파종기이며, 비록 우리가 그 파종기나 반응의 순간을 기억하지 못할지라도 자연은 결코 잊지 않고, 그것이 우리 세상에 갑자기 나타날 때 그 갑작스러움은 단지 숨겨진 연속성이 드러나는 것뿐입니다.",
+      "ko": "우리의 태도가 삶의 파종기이며, 비록 우리가 그 파종기나 반응의 순간을 기억하지 못할지라도 자연은 결코 잊지 않습니다. 그것이 우리 세상에 갑자기 나타날 때, 그 갑작스러움은 단지 숨겨진 연속성이 드러나는 것일 뿐입니다.",
       "vocab": [
-        {
-          "word": "nature",
-          "mean": "자연, 법칙 (의식의 법칙)"
-        },
         {
           "word": "emergence",
           "mean": "출현, 드러남"
@@ -14544,38 +14336,30 @@
       ],
       "grammar": [
         {
-          "tag": "Concessive Clause",
-          "mean": "although절 (~할지라도)"
-        },
-        {
-          "tag": "Coordinate Clause",
-          "mean": "and 등위접속사로 이어진 복합 문장"
+          "tag": "Hidden continuity",
+          "desc": "현실의 사건은 갑작스러운 우연이 아니라, 과거의 의식적 반응이 잠복기를 거쳐 나타난 결과임을 강조함."
         }
       ]
     },
     {
       "en": "It was continuous from the moment of reaction until it appeared in the world.",
-      "ko": "그것은 반응하는 순간부터 그것이 세상에 나타날 때까지 계속 이어져 있었습니다.",
+      "ko": "그것은 반응의 순간부터 세상에 나타날 때까지 계속해서 이어져 온 것입니다.",
       "vocab": [
         {
           "word": "continuous",
-          "mean": "연속적인, 끊이지 않는"
-        },
-        {
-          "word": "appear",
-          "mean": "나타나다, 현상화되다"
+          "mean": "연속적인"
         }
       ],
       "grammar": [
         {
-          "tag": "Prepositional Phrase",
-          "mean": "from ~ until ~ (시작과 현상화의 완벽한 인과 연속성 설명)"
+          "tag": "인과관계",
+          "desc": "의식의 상태와 물리적 현실 사이의 끊어지지 않는 연결성을 설명함."
         }
       ]
     },
     {
       "en": "Its appearance in the world is harvest so you and I may harvest anything we desire but we must first have a seedtime.",
-      "ko": "그것이 세상에 나타나는 것은 수확이므로, 당신과 나는 우리가 바라는 어떤 것이든 수확할 수 있지만, 우리는 먼저 파종기를 가져야만 합니다.",
+      "ko": "그것이 세상에 나타나는 것은 수확이므로, 당신과 나는 우리가 바라는 무엇이든 수확할 수 있지만, 먼저 파종기가 있어야 합니다.",
       "vocab": [
         {
           "word": "appearance",
@@ -14583,31 +14367,27 @@
         },
         {
           "word": "harvest",
-          "mean": "수확, 거두어들이다"
+          "mean": "수확"
         },
         {
           "word": "seedtime",
-          "mean": "파종기, 씨 뿌리는 때"
+          "mean": "파종기, 씨 뿌리는 시기"
         }
       ],
       "grammar": [
         {
-          "tag": "접속사 so",
-          "desc": "~하도록, 그러므로의 의미로 결과를 나타냄"
-        },
-        {
-          "tag": "네빌 사상",
-          "desc": "씨앗(상상/의도)을 심어야만 수확(현실화)을 거둘 수 있다는 인과율 법칙"
+          "tag": "Law of Sowing and Reaping",
+          "desc": "네빌 고다드의 핵심 사상으로, 상상(씨앗)이 현실(수확)로 나타나기 위해서는 반드시 내면의 심상화 과정이 선행되어야 함을 의미함"
         }
       ]
     },
     {
       "en": "It must be preceded by a moment of response or an attitude.",
-      "ko": "그것은 반응의 순간이나 태도에 의해 선행되어야 합니다.",
+      "ko": "그것은 반응의 순간이나 태도가 선행되어야 합니다.",
       "vocab": [
         {
-          "word": "precede",
-          "mean": "~에 선행하다"
+          "word": "preceded",
+          "mean": "선행되는"
         },
         {
           "word": "response",
@@ -14615,70 +14395,58 @@
         },
         {
           "word": "attitude",
-          "mean": "태도, 마음가짐"
+          "mean": "태도"
         }
       ],
       "grammar": [
         {
-          "tag": "수동태",
-          "desc": "must be preceded로 주어가 선행되어야 함을 강조"
-        },
-        {
-          "tag": "네빌 사상",
-          "desc": "외부의 변화 이전에 내부의 의식적 태도 변화가 먼저 있어야 함을 의미"
+          "tag": "Mental State",
+          "desc": "외부 사건 이전에 내면의 태도(상태)를 먼저 설정하는 것이 창조의 핵심임을 강조"
         }
       ]
     },
     {
       "en": "How often you say, “I approached it in the wrong attitude” or “He is in the wrong attitude” or “You must change your attitude if you would get on in this life”.",
-      "ko": "당신은 얼마나 자주 “나는 잘못된 태도로 그것에 접근했어”, 혹은 “그는 잘못된 태도를 취하고 있어”, 혹은 “이 삶에서 성공하고 싶다면 태도를 바꿔야 해”라고 말합니까?",
+      "ko": "당신은 얼마나 자주 '나는 잘못된 태도로 그것에 접근했어'라거나 '그는 잘못된 태도를 가지고 있어' 혹은 '이 삶에서 성공하려면 태도를 바꿔야 해'라고 말합니까.",
       "vocab": [
         {
-          "word": "approach",
-          "mean": "접근하다"
+          "word": "approached",
+          "mean": "접근했다"
         },
         {
           "word": "get on",
-          "mean": "출세하다, 성공하다, 살아가다"
+          "mean": "성공하다, 잘 해나가다"
         }
       ],
       "grammar": [
         {
-          "tag": "감탄문",
-          "desc": "How often으로 빈도가 매우 높음을 강조"
-        },
-        {
-          "tag": "조건절",
-          "desc": "if you would get on ~를 통해 가정의 의미 전달"
+          "tag": "Colloquialism",
+          "desc": "일상적인 언어 습관을 통해 태도가 현실을 결정짓는다는 사실을 대중적으로 환기함"
         }
       ]
     },
     {
       "en": "I have said it – you have said it – maybe we have said it to each other – but we know the importance of right attitude.",
-      "ko": "나도 그것을 말했고, 당신도 그것을 말했으며, 아마 우리 서로에게 그것을 말했을 것입니다 – 그러나 우리는 올바른 태도의 중요성을 알고 있습니다.",
+      "ko": "나도 그렇게 말했고, 당신도 그렇게 말했으며, 아마 우리 서로에게 그렇게 말했을 것입니다. 하지만 우리는 올바른 태도의 중요성을 알고 있습니다.",
       "vocab": [
         {
           "word": "importance",
           "mean": "중요성"
-        },
-        {
-          "word": "right attitude",
-          "mean": "올바른 태도"
         }
       ],
       "grammar": [
         {
-          "tag": "현재완료",
-          "desc": "have said를 통해 경험과 보편성을 강조"
+          "tag": "Emphasis",
+          "desc": "경험적 사실을 공유함으로써 독자의 공감을 이끌어내고 논리를 강화함"
         }
       ]
     },
     {
       "en": "We know this much: that I can change my attitude if circumstances change – that’s automatic.",
-      "ko": "우리는 이것만큼은 알고 있습니다: 상황이 변하면 내 태도를 바꿀 수 있다는 것 – 그것은 자동적이라는 것입니다.",
+      "ko": "우리는 이것만큼은 압니다. 상황이 변하면 내 태도를 바꿀 수 있다는 것, 그것은 자동적이라는 사실입니다.",
       "vocab": [
         {
-          "word": "circumstance",
+          "word": "circumstances",
           "mean": "상황, 환경"
         },
         {
@@ -14688,18 +14456,14 @@
       ],
       "grammar": [
         {
-          "tag": "동격의 접속사 that",
-          "desc": "this much의 구체적 내용을 설명하는 that절"
-        },
-        {
-          "tag": "네빌 사상",
-          "desc": "외부 환경에 따라 반응하는 일반적인 인간의 자동적 상태를 지적"
+          "tag": "Reactive Consciousness",
+          "desc": "대부분의 사람들이 외부 환경에 반응하여 내면을 바꾸는 '반사적 의식' 상태에 머물러 있음을 지적"
         }
       ]
     },
     {
       "en": "We know that if something happens suddenly in my world of which up to that moment I was not aware, I, becoming aware of a change of circumstance would automatically produce in myself a change of attitude.",
-      "ko": "우리는 만약 그 순간까지 내가 전혀 알지 못했던 무언가가 나의 세상에서 갑자기 일어난다면, 내가 상황의 변화를 알게 됨으로써 내 안에서 자동으로 태도의 변화를 만들어내게 된다는 것을 알고 있습니다.",
+      "ko": "우리는 만약 내 세상에서 갑자기 어떤 일이 일어나서 그 순간까지 내가 알지 못했던 것을 알게 된다면, 상황의 변화를 인지하게 된 내가 자동적으로 내 안에서 태도의 변화를 만들어낼 것임을 압니다.",
       "vocab": [
         {
           "word": "suddenly",
@@ -14707,43 +14471,35 @@
         },
         {
           "word": "aware",
-          "mean": "알고 있는, 인식하는"
+          "mean": "알고 있는, 인지하는"
         }
       ],
       "grammar": [
         {
-          "tag": "분사구문",
-          "desc": "becoming aware of ~가 주절의 주어 I를 수식하며 조건/원인의 의미를 내포"
-        },
-        {
-          "tag": "가정법/조건절",
-          "desc": "if절 내부의 복잡한 수식 구조를 통해 외부 자극에 대한 기계적 반응을 설명"
+          "tag": "Cause and Effect",
+          "desc": "외부 사건이 내면의 태도를 강제로 변화시키는 인과관계를 설명함"
         }
       ]
     },
     {
       "en": "We all do that, morning, noon and night, but that’s not important, that is a reflect of life.",
-      "ko": "우리 모두는 아침이든 낮이든 밤이든 그렇게 합니다, 하지만 그것은 중요하지 않습니다, 그것은 삶의 반사(반영)일 뿐이기 때문입니다.",
+      "ko": "우리 모두는 아침, 점심, 밤마다 그렇게 하지만, 그것은 중요하지 않습니다. 그것은 삶의 반영일 뿐입니다.",
       "vocab": [
         {
           "word": "reflect",
-          "mean": "반사하다, 반영하다 (본문 내 reflect는 reflection의 의미로 사용됨)"
+          "mean": "반영, 반사"
         }
       ],
       "grammar": [
         {
-          "tag": "대명사 that",
-          "desc": "외부 상황에 따라 태도가 저절로 바뀌는 기존의 습관적 반응을 지칭"
-        },
-        {
-          "tag": "네빌 사상",
-          "desc": "외부 상황에 단순히 반응하며 사는 삶은 주체적 창조가 아닌 거울의 반사에 불과함을 비판"
+          "tag": "Reflection vs Creation",
+          "desc": "외부에 반응하는 것은 단순히 삶을 비추는 것(반영)일 뿐, 진정한 창조(의도적 태도 설정)가 아님을 구분함"
         }
       ]
     },
     {
       "en": "Ninety-nine percent of the world reflect life.",
-      "ko": "세상의 99퍼센트는 삶을 반사(반영)할 뿐입니다.",
+      "ko": "세상의 99퍼센트는 삶을 반영합니다.",
       "vocab": [
         {
           "word": "ninety-nine percent",
@@ -14752,14 +14508,14 @@
       ],
       "grammar": [
         {
-          "tag": "수량 표현",
-          "desc": "대다수의 사람들이 주체적 상상력을 쓰지 못하고 외부 환경의 그림자(반사물)에 반응하며 살아간다는 네빌의 핵심 통찰"
+          "tag": "Metaphysical Insight",
+          "desc": "대다수의 사람들이 자신의 상상력으로 삶을 창조하지 못하고 외부 환경의 노예로 살아가고 있음을 비판함"
         }
       ]
     },
     {
       "en": "Now, can I consciously, can I voluntarily, can I deliberately produce in myself a change of attitude, one of my own discretion, one that I myself single out, and not one that is determined by or in any way is dependent on a stimulus of a change in the object itself.",
-      "ko": "자, 나는 의식적으로, 자발적으로, 고의적으로 내 안에서 태도의 변화를 만들어낼 수 있을까요? 그것도 내 자신의 선택에 따른 것, 내가 직접 골라낸 것이며, 대상 자체의 변화라는 자극에 의해 결정되거나 어떤 식으로든 의존하지 않는 그런 변화 말입니다.",
+      "ko": "자, 내가 의식적으로, 자발적으로, 의도적으로 내 안에서 태도의 변화를 만들어낼 수 있을까? 내 재량에 따른 변화, 내가 스스로 선택한 변화, 그리고 대상 자체의 변화라는 자극에 의해 결정되거나 그에 의존하지 않는 그런 변화 말이다.",
       "vocab": [
         {
           "word": "consciously",
@@ -14771,15 +14527,11 @@
         },
         {
           "word": "deliberately",
-          "mean": "고의로, 신중하게"
+          "mean": "의도적으로"
         },
         {
           "word": "discretion",
-          "mean": "자유 재량, 선택권"
-        },
-        {
-          "word": "single out",
-          "mean": "골라내다, 선별하다"
+          "mean": "재량, 판단"
         },
         {
           "word": "stimulus",
@@ -14788,62 +14540,50 @@
       ],
       "grammar": [
         {
-          "tag": "Repetition/Anaphora",
-          "desc": "'can I'의 반복을 통해 화자의 의문과 탐구 의지를 강조함."
-        },
-        {
-          "tag": "Neville Goddard Philosophy",
-          "desc": "외적 조건(객체의 변화)에 반응하는 삶에서 벗어나, 내면의 상상력과 태도를 스스로 선택하고 주도하려는 네빌 사상의 핵심(상상의 주권)을 다룸."
+          "tag": "Self-Creation",
+          "desc": "네빌 고다드의 핵심 사상인 '상상력의 주도권'을 강조하며, 외부 환경에 반응하는 것이 아니라 내면의 상태를 스스로 결정할 수 있는지 묻는 수사적 질문이다."
         }
       ]
     },
     {
       "en": "Must you change before I will change my attitude towards you?",
-      "ko": "내가 당신을 향한 태도를 바꾸기 전에 당신이 먼저 변해야만 합니까?",
+      "ko": "내가 당신에 대한 태도를 바꾸기 전에 당신이 먼저 바뀌어야만 하는가?",
       "vocab": [
         {
           "word": "attitude",
           "mean": "태도"
-        },
-        {
-          "word": "towards",
-          "mean": "~를 향하여"
         }
       ],
       "grammar": [
         {
-          "tag": "Rhetorical Question",
-          "desc": "상대방의 변화에 종속되는 기존의 수동적 인간관계를 비판적으로 조명하는 수사학적 의문문."
+          "tag": "Cause and Effect",
+          "desc": "외부의 변화가 내면의 변화를 유발해야 한다는 일반적인 인과관계를 부정하는 네빌의 관점을 보여준다."
         }
       ]
     },
     {
       "en": "We know that if you do change I will change my attitude towards you, but must I go through life simply reflecting these changes in the objects, and can I not deliberately determine the change prior to the change in the object?",
-      "ko": "당신이 변하면 나도 당신을 향한 태도를 바꿀 것이라는 점을 우리는 잘 압니다. 하지만 나는 평생토록 대상들의 변화를 단순히 반사(반응)하며 살아가야만 하는 것입니까? 대상의 변화가 일어나기 전에 내가 먼저 그 변화를 고의적으로 결정할 수는 없는 것입니까?",
+      "ko": "당신이 변하면 나도 당신에 대한 태도를 바꿀 것임을 우리는 안다. 하지만 나는 평생 단순히 대상들의 변화를 반영하며 살아야만 하는가? 그리고 대상의 변화가 일어나기 전에 내가 의도적으로 그 변화를 결정할 수는 없는가?",
       "vocab": [
         {
-          "word": "reflect",
-          "mean": "반사하다, 반영하다"
+          "word": "reflecting",
+          "mean": "반영하는"
         },
         {
           "word": "prior to",
-          "mean": "~보다 먼저, 선행하여"
-        },
-        {
-          "word": "determine",
-          "mean": "결정하다"
+          "mean": "~이전에"
         }
       ],
       "grammar": [
         {
-          "tag": "Contrast",
-          "desc": "외적 자극에 대한 '반사(reflecting)'와 내면의 '선행적 결정(determine the change prior to)'을 대조하여 능동적 의식 창조의 필요성을 역설함."
+          "tag": "Law of Assumption",
+          "desc": "외부 세계는 내면의 반영(Reflection)이라는 네빌의 법칙을 설명하며, 의식적인 가정을 통해 미래를 선취할 수 있음을 시사한다."
         }
       ]
     },
     {
       "en": "For if I can, I am moving towards complete control of my fate and becoming the master of my fate if I can assume an active, positive attitude and not depend upon changes in the object for changes in myself.",
-      "ko": "왜냐하면 만약 내가 그렇게 할 수 있다면, 내가 내 자신의 변화를 위해 대상의 변화에 의존하지 않고 능동적이고 긍정적인 태도를 취할 수 있다면, 나는 내 운명을 완전히 통제하는 것을 향해 나아가고 있으며 내 운명의 주인이 되어가고 있는 것이기 때문입니다.",
+      "ko": "만약 내가 그렇게 할 수 있다면, 나는 내 운명을 완전히 통제하는 방향으로 나아가고 있는 것이며, 외부 대상의 변화에 의존하지 않고 능동적이고 긍정적인 태도를 취함으로써 내 운명의 주인이 되어가는 것이다.",
       "vocab": [
         {
           "word": "fate",
@@ -14851,115 +14591,91 @@
         },
         {
           "word": "master",
-          "mean": "주인, 지배자"
+          "mean": "주인"
         },
         {
           "word": "assume",
-          "mean": "(태도 등을) 취하다, 가정하다"
-        },
-        {
-          "word": "depend upon",
-          "mean": "~에 의존하다"
+          "mean": "취하다, 가정하다"
         }
       ],
       "grammar": [
         {
-          "tag": "Conditional Clause",
-          "desc": "If절을 통해 내면의 태도 통제가 곧 운명의 주인이 되는 길임을 논리적으로 전개함."
-        },
-        {
-          "tag": "Neville Goddard Philosophy",
-          "desc": "외부 세계는 거울(반사체)이며 내면이 유일한 원인이라는 네빌의 핵심 법칙('The Law and the Promise')을 설명함."
+          "tag": "Mastery",
+          "desc": "운명의 주인(Master of fate)이 된다는 것은 외부 환경에 휘둘리지 않는 의식의 주권을 의미한다."
         }
       ]
     },
     {
       "en": "If I can do it, I really am, if not a complete master, I am becoming more in control of the circumstances of life, but ninety-nine percent of the world waits for things to happen on the outside and then they reflect; that’s no accomplishment at all.",
-      "ko": "만약 내가 그것을 해낼 수 있다면, 비록 완벽한 주인이 아닐지라도, 나는 삶의 환경을 훨씬 더 잘 통제하게 되는 것입니다. 그러나 세상의 99퍼센트는 바깥에서 일이 일어나기를 기다렸다가 그에 반응할 뿐이며, 그것은 전혀 성취가 아닙니다.",
+      "ko": "내가 그것을 할 수 있다면, 비록 완전한 주인은 아닐지라도, 나는 삶의 상황들을 더 많이 통제하게 되는 것이다. 하지만 세상의 99퍼센트는 외부에서 일이 일어나기를 기다렸다가 반응할 뿐이며, 그것은 아무런 성취도 아니다.",
       "vocab": [
         {
           "word": "circumstances",
-          "mean": "환경, 상황"
+          "mean": "상황, 환경"
         },
         {
           "word": "accomplishment",
-          "mean": "성취, 업적"
+          "mean": "성취"
         }
       ],
       "grammar": [
         {
-          "tag": "Parenthetical insertion",
-          "desc": "'if not a complete master'를 삽입하여 점진적인 의식의 성장을 표현함."
-        },
-        {
-          "tag": "Contrast",
-          "desc": "스스로 창조하는 1%의 자각 있는 자와 외부 환경에 반응하는 99%의 대중을 대조함."
+          "tag": "Awakening",
+          "desc": "대다수의 사람들이 잠들어 있는 상태(외부 반응형)임을 지적하며, 의식적인 선택의 중요성을 강조한다."
         }
       ]
     },
     {
       "en": "If we would awaken and become real selectors of the beauty of this garden that God gave us so that we can single out that particular aspect to which we will respond, then we will do it by deliberately changing our attitude towards life itself.",
-      "ko": "만약 우리가 깨어나 하나님께서 우리에게 주신 이 동산의 아름다움을 진정으로 선택하는 자들이 되어, 우리가 반응할 그 특정한 면모를 골라낼 수 있게 된다면, 우리는 삶 그 자체를 향한 우리의 태도를 고의적으로 바꿈으로써 그것을 해낼 수 있을 것입니다.",
+      "ko": "만약 우리가 깨어나서 신이 우리에게 주신 이 정원의 아름다움을 진정으로 선택하는 자들이 된다면, 그래서 우리가 반응할 특정 측면을 스스로 골라낼 수 있게 된다면, 우리는 삶 그 자체에 대한 태도를 의도적으로 바꿈으로써 그것을 해낼 것이다.",
       "vocab": [
         {
           "word": "awaken",
-          "mean": "깨어나다, 각성하다"
+          "mean": "깨어나다"
         },
         {
-          "word": "selector",
+          "word": "selectors",
           "mean": "선택자"
         },
         {
-          "word": "aspect",
-          "mean": "면모, 측면"
+          "word": "single out",
+          "mean": "골라내다"
         }
       ],
       "grammar": [
         {
-          "tag": "Biblical Metaphor",
-          "desc": "'God gave us'와 'garden'은 에덴동산의 비유를 차용한 것으로, 세상이라는 정원에서 마음의 씨앗(태도)을 선택하는 인간의 창조적 권능을 상징함."
-        },
-        {
-          "tag": "Neville Goddard Philosophy",
-          "desc": "성경의 에덴(Eden)을 인간의 의식과 상상력의 정원으로 재해석하는 네빌 고다드의 전형적인 신비주의적 독법을 보여줌."
+          "tag": "Garden of Eden",
+          "desc": "성경의 에덴동산을 인간의 의식 상태로 해석하며, 그 안에서 무엇을 선택하고 반응할지는 인간의 자유의지임을 강조한다."
         }
       ]
     },
     {
       "en": "There is a little fable given us to show us how it is done.",
-      "ko": "그것이 어떻게 행해지는지 우리에게 보여주기 위해 우리에게 주어진 작은 우화가 하나 있습니다.",
+      "ko": "어떻게 그것이 이루어지는지 보여주기 위해 우리에게 주어진 작은 우화가 하나 있습니다.",
       "vocab": [
         {
           "word": "fable",
           "mean": "우화"
         },
         {
-          "word": "show",
-          "mean": "보여주다"
-        },
-        {
           "word": "done",
-          "mean": "행해지는, 이루어지는"
+          "mean": "이루어진, 행해진"
         }
       ],
       "grammar": [
         {
-          "tag": "To부정사",
-          "desc": "부정사의 부사적 용법(목적)으로 쓰여 우화의 존재 이유를 설명합니다."
+          "tag": "Passive Voice",
+          "desc": "수동태를 사용하여 지혜가 외부로부터 주어짐을 암시"
         }
       ]
     },
     {
       "en": "If you will study the fable carefully, you will see the importance of imagination.",
-      "ko": "여러분이 그 우화를 주의 깊게 연구한다면, 여러분은 상상력의 중요성을 알게 될 것입니다.",
+      "ko": "만약 당신이 그 우화를 주의 깊게 연구한다면, 당신은 상상력의 중요성을 알게 될 것입니다.",
       "vocab": [
         {
-          "word": "carefully",
-          "mean": "주의 깊게"
-        },
-        {
-          "word": "importance",
-          "mean": "중요성"
+          "word": "study",
+          "mean": "연구하다, 깊이 살피다"
         },
         {
           "word": "imagination",
@@ -14968,14 +14684,14 @@
       ],
       "grammar": [
         {
-          "tag": "조건문",
-          "desc": "if절을 사용하여 상상력의 중요성을 깨닫기 위한 전제 조건을 제시합니다."
+          "tag": "Neville's Core",
+          "desc": "네빌 고다드 사상의 핵심인 '상상력'을 강조"
         }
       ]
     },
     {
       "en": "The fable is the fable of the fox and the grapes.",
-      "ko": "그 우화는 여우와 포도송이 우화입니다.",
+      "ko": "그 우화는 바로 여우와 포도에 관한 우화입니다.",
       "vocab": [
         {
           "word": "fox",
@@ -14983,19 +14699,19 @@
         },
         {
           "word": "grapes",
-          "mean": "포도송이"
+          "mean": "포도"
         }
       ],
       "grammar": [
         {
-          "tag": "명사구",
-          "desc": "이솝우화의 '여우와 신 포도' 이야기를 인용하여 네빌의 원리를 설명하기 위한 도입부입니다."
+          "tag": "Reference",
+          "desc": "이솝 우화를 인용하여 심리적 투사 기제를 설명"
         }
       ]
     },
     {
       "en": "You all know it.",
-      "ko": "여러분 모두 그것을 잘 알고 있습니다.",
+      "ko": "여러분 모두 그것을 알고 계실 겁니다.",
       "vocab": [
         {
           "word": "know",
@@ -15004,78 +14720,66 @@
       ],
       "grammar": [
         {
-          "tag": "기본 문장",
-          "desc": "청중과의 공감대를 형성하는 간결한 문장입니다."
+          "tag": "Engagement",
+          "desc": "청중과의 공감대 형성"
         }
       ]
     },
     {
       "en": "When he failed to obtain the grapes then he persuaded himself that the grapes were sour, and by imagining the grapes to be sour he evoked in himself a change of attitude.",
-      "ko": "그가 포도를 얻는 데 실패했을 때, 그는 포도가 시다고 스스로를 설득했고, 포도가 시다고 상상함으로써 스스로 안에서 태도의 변화를 이끌어냈습니다.",
+      "ko": "여우가 포도를 얻는 데 실패했을 때, 그는 포도가 시다고 스스로를 설득했고, 포도가 시다고 상상함으로써 자신의 태도 변화를 이끌어냈습니다.",
       "vocab": [
         {
-          "word": "fail to",
+          "word": "failed to",
           "mean": "~하는 데 실패하다"
         },
         {
-          "word": "obtain",
-          "mean": "얻다"
-        },
-        {
-          "word": "persuade",
-          "mean": "설득하다"
+          "word": "persuaded",
+          "mean": "설득했다"
         },
         {
           "word": "sour",
-          "mean": "신, 시큼한"
+          "mean": "신"
         },
         {
-          "word": "evoke",
-          "mean": "환기하다, 이끌어내다"
-        },
-        {
-          "word": "attitude",
-          "mean": "태도"
+          "word": "evoked",
+          "mean": "불러일으키다"
         }
       ],
       "grammar": [
         {
-          "tag": "전치사구",
-          "desc": "by -ing 구문을 통해 상상력이 어떻게 태도의 변화를 일으키는지 방법론을 제시합니다."
+          "tag": "Psychological Mechanism",
+          "desc": "상상이 감정과 태도를 어떻게 변화시키는지 보여주는 예시"
         }
       ]
     },
     {
       "en": "He no longer felt about the grapes as he formerly felt.",
-      "ko": "그는 더 이상 예전에 느꼈던 것처럼 포도에 대해 느끼지 않았습니다.",
+      "ko": "그는 더 이상 이전처럼 포도에 대해 느끼지 않았습니다.",
       "vocab": [
         {
           "word": "no longer",
-          "mean": "더 이상 ~ 않는"
+          "mean": "더 이상 ~않다"
         },
         {
           "word": "formerly",
-          "mean": "예전에, 이전에"
+          "mean": "이전에"
         }
       ],
       "grammar": [
         {
-          "tag": "시제",
-          "desc": "과거 완료형의 의미를 포함하여 상상력에 의한 감정적 상태의 변화를 강조합니다."
+          "tag": "State of Consciousness",
+          "desc": "상상을 통한 의식 상태의 전환"
         }
       ]
     },
     {
       "en": "Now that’s a little fable on a negative tone or a tragic tone.",
-      "ko": "자, 그것은 부정적인 어조나 비극적인 어조로 된 작은 우화입니다.",
+      "ko": "자, 이것은 부정적이거나 비극적인 어조의 작은 우화입니다.",
       "vocab": [
         {
           "word": "negative",
           "mean": "부정적인"
-        },
-        {
-          "word": "tone",
-          "mean": "어조, 분위기"
         },
         {
           "word": "tragic",
@@ -15084,19 +14788,15 @@
       ],
       "grammar": [
         {
-          "tag": "비교",
-          "desc": "이솝우화의 원형이 가진 부정적 측면을 지적하며 긍정적 전환을 예고합니다."
+          "tag": "Contrast",
+          "desc": "부정적 상상과 긍정적 상상을 대조하기 위한 서론"
         }
       ]
     },
     {
       "en": "You and I take the same story but now we put it on a positive tone.",
-      "ko": "여러분과 저는 똑같은 이야기를 가져와서 이제 그것을 긍정적인 어조에 놓습니다.",
+      "ko": "당신과 나는 같은 이야기를 가져와서 이제 그것을 긍정적인 어조로 바꿉니다.",
       "vocab": [
-        {
-          "word": "take",
-          "mean": "취하다, 가져오다"
-        },
         {
           "word": "positive",
           "mean": "긍정적인"
@@ -15104,18 +14804,18 @@
       ],
       "grammar": [
         {
-          "tag": "대조",
-          "desc": "부정적 상상(신 포도)을 긍정적 상상(소망의 성취)으로 변환하는 네빌의 핵심 기법입니다."
+          "tag": "Application",
+          "desc": "원리를 삶에 적용하는 방법 제시"
         }
       ]
     },
     {
       "en": "We contemplate our ambitious dream, our noble concept of life.",
-      "ko": "우리는 우리의 야심 찬 꿈, 즉 고귀한 삶의 개념을 숙고합니다.",
+      "ko": "우리는 우리의 야심 찬 꿈과 고귀한 삶의 개념을 깊이 생각합니다.",
       "vocab": [
         {
           "word": "contemplate",
-          "mean": "숙고하다, 깊이 생각하다"
+          "mean": "깊이 생각하다, 응시하다"
         },
         {
           "word": "ambitious",
@@ -15124,86 +14824,62 @@
         {
           "word": "noble",
           "mean": "고귀한"
-        },
-        {
-          "word": "concept",
-          "mean": "개념"
         }
       ],
       "grammar": [
         {
-          "tag": "동격",
-          "desc": "ambitious dream과 noble concept of life가 동격으로 쓰여 우리가 품어야 할 소망을 정의합니다."
+          "tag": "Meditation",
+          "desc": "원하는 상태에 머무르는 명상적 행위"
         }
       ]
     },
     {
       "en": "It may seem we haven’t the talents to realize it – instead of saying what the fox did, that the thing is beyond us and therefore it is sour anyway, we can take the same technique and wonder what it would be like had we realized it.",
-      "ko": "우리가 그것을 실현할 재능이 없는 것처럼 보일 수도 있습니다. 여우가 했던 것처럼, 그 일이 우리 능력 밖이며 따라서 어차피 쓸모없다고(시다고) 말하는 대신, 우리는 똑같은 기술을 사용하여 그것을 실현했다면 어떤 모습일지 궁금해할 수 있습니다.",
+      "ko": "우리가 그것을 실현할 재능이 없는 것처럼 보일지라도, 여우가 했던 것처럼 그것이 우리 능력 밖이라서 어차피 신 포도라고 말하는 대신, 우리는 같은 기법을 사용하여 우리가 그것을 실현했다면 어떤 느낌일지 궁금해할 수 있습니다.",
       "vocab": [
         {
           "word": "realize",
           "mean": "실현하다"
         },
         {
-          "word": "beyond",
-          "mean": "~를 벗어난, 능력 밖의"
+          "word": "beyond us",
+          "mean": "우리 능력 밖의"
         },
         {
           "word": "technique",
-          "mean": "기술, 기법"
-        },
-        {
-          "word": "wonder",
-          "mean": "궁금해하다"
+          "mean": "기법"
         }
       ],
       "grammar": [
         {
-          "tag": "가정법 과거완료",
-          "desc": "had we realized it 구조를 통해 과거에 실현했을 경우를 가정하는 신비주의적 상상 기법을 설명합니다."
+          "tag": "Neville's Technique",
+          "desc": "상상력을 통한 현실 창조의 구체적 방법론"
         }
       ]
     },
     {
-      "en": "What would the feeling be like were we – (and we name it) – if I can contemplate what the feeling would be like were I the man that I want to be, were you the person that you want to be, and rejoice in that state as though it were true, I am producing in 마치 that emotional response necessary for seedtime.",
-      "ko": "만약 내가 되고자 하는 사람이 된다면, 여러분이 되고자 하는 사람이 된다면, 그 느낌이 어떠할지 내가 숙고할 수 있고, 그것이 진실인 것처럼 그 상태 안에서 기뻐할 수 있다면, 그 느낌은 어떠할 것입니까? (그리고 우리는 그것의 이름을 붙입니다). 나는 파종기에 필요한 그 감정적 반응을 내 안에서 만들어내고 있는 것입니다.",
+      "en": "What would the feeling be like were we – (and we name it) – if I can contemplate what the feeling would be like were I the man that I want to be, were you the person that you want to be, and rejoice in that state as though it were true, I am producing in myself that emotional response necessary for seedtime.",
+      "ko": "우리가 (우리가 원하는 것을 명명하며) 그것이 되었다면 어떤 느낌일까요? 만약 내가 되고 싶은 사람이 되었을 때의 느낌을 깊이 생각하고, 당신이 되고 싶은 사람이 되었을 때의 느낌을 깊이 생각하며, 그것이 사실인 것처럼 그 상태 안에서 기뻐할 수 있다면, 나는 파종기를 위해 필요한 감정적 반응을 내 안에서 만들어내고 있는 것입니다.",
       "vocab": [
         {
           "word": "rejoice",
           "mean": "기뻐하다"
         },
         {
-          "word": "state",
-          "mean": "상태"
-        },
-        {
-          "word": "as though",
-          "mean": "마치 ~인 것처럼"
-        },
-        {
-          "word": "emotional",
-          "mean": "감정적인"
-        },
-        {
-          "word": "response",
-          "mean": "반응"
-        },
-        {
           "word": "seedtime",
-          "mean": "파종기, 씨 뿌리는 때"
+          "mean": "파종기, 씨 뿌리는 시기"
         }
       ],
       "grammar": [
         {
-          "tag": "가정법 도치",
-          "desc": "were I ~, were you ~ 구문을 통해 주어와 동사가 도치되어 소망 성취의 상태를 가정하고, 이를 통해 파종기(소망의 씨앗을 심는 순간)의 감정적 반응을 유도합니다."
+          "tag": "Law of Seedtime and Harvest",
+          "desc": "성경적 원리인 '심고 거두는 법칙'을 심리적 상태로 해석"
         }
       ]
     },
     {
       "en": "I may not see an immediate harvest, maybe the thing that I am now giving expression to in the form of seedtime is an oak, it is not a little mushroom that would grow overnight.",
-      "ko": "나는 즉각적인 수확을 보지 못할 수도 있습니다. 어쩌면 내가 지금 파종(씨뿌리기)의 형태로 표현하고 있는 것은 하룻밤 사이에 자라나는 작은 버섯이 아니라 참나무일지도 모릅니다.",
+      "ko": "나는 즉각적인 수확을 보지 못할 수도 있습니다. 어쩌면 내가 지금 파종의 형태로 표현하고 있는 것은 참나무일지도 모르며, 하룻밤 사이에 자라는 작은 버섯이 아닐 수도 있습니다.",
       "vocab": [
         {
           "word": "immediate",
@@ -15215,23 +14891,23 @@
         },
         {
           "word": "seedtime",
-          "mean": "파종기, 씨 뿌리는 때"
+          "mean": "파종기"
         },
         {
-          "word": "overnight",
-          "mean": "하룻밤 사이에"
+          "word": "oak",
+          "mean": "참나무"
         }
       ],
       "grammar": [
         {
-          "tag": "Neville's Mysticism",
-          "desc": "참나무와 버섯의 비유는 의식의 씨앗이 현실화되는 데 걸리는 자연스러운 시간적 지연(Incubation period)을 설명합니다."
+          "tag": "Metaphor",
+          "desc": "네빌은 의식의 상태를 씨앗으로, 현실의 발현을 수확으로 비유합니다."
         }
       ]
     },
     {
       "en": "Maybe my dream would take a little longer interval of time between the actual planting and the reaping, but if I know that all these things are consistent, – “See yonder fields! The sesamum was sesamum, the corn was corn. The Silence and the Darkness knew! So is a man’s fate born” – so, if that moment of response is the actual planting of the seed, and if it was corn, it must be corn when it appears in harvest time, then I can select the nature of the things I want to encounter in my world.",
-      "ko": "어쩌면 나의 꿈은 실제 심는 것과 거두는 것 사이에 조금 더 긴 시간적 간격이 필요할 수도 있습니다. 하지만 이 모든 것이 일관성이 있다는 것을 안다면 말입니다. – “저 들판을 보라! 참깨는 참깨였고, 곡식은 곡식이었다. 침묵과 어둠은 알고 있었다! 그리하여 인간의 운명이 태어나는도다” – 그러므로 그 반응의 순간이 씨앗을 실제로 심는 것이고, 그것이 곡식이었다면 수확할 때 나타날 때도 반드시 곡식이어야 한다는 것을 안다면, 나는 내 세계에서 마주치고 싶은 것들의 본질을 선택할 수 있습니다.",
+      "ko": "어쩌면 내 꿈은 실제 파종과 수확 사이에 조금 더 긴 시간적 간격이 필요할지도 모릅니다. 하지만 이 모든 것이 일관되다는 것을 안다면—'저 들판을 보라! 참깨는 참깨였고, 옥수수는 옥수수였다. 침묵과 어둠이 알고 있었다! 인간의 운명도 그렇게 태어난다'—그렇다면 그 반응의 순간이 실제 씨앗을 심는 것이고, 그것이 옥수수였다면 수확의 때에 나타날 때도 반드시 옥수수여야 하므로, 나는 내 세상에서 마주하고 싶은 것들의 본질을 선택할 수 있습니다.",
       "vocab": [
         {
           "word": "interval",
@@ -15239,11 +14915,11 @@
         },
         {
           "word": "reaping",
-          "mean": "거두어들임, 수확"
+          "mean": "수확"
         },
         {
           "word": "consistent",
-          "mean": "일관된, 변함없는"
+          "mean": "일관된"
         },
         {
           "word": "sesamum",
@@ -15253,93 +14929,81 @@
       "grammar": [
         {
           "tag": "Law of Identity",
-          "desc": "씨앗의 종류(상상한 내용)가 곧 결과의 종류(현실화된 상태)를 결정한다는 네빌의 확고한 법칙을 보여줍니다."
+          "desc": "심은 대로 거둔다는 법칙을 강조하며, 의식의 상태가 곧 현실의 결과임을 설명합니다."
         }
       ]
     },
     {
       "en": "I can take not just Neville as a man, I can take the request first of my circle, my intimate circle, as a family man – my wife’s desires for her child, for her husband, for herself – the child’s desire for itself – and move beyond my little circle as a family man into the circle of friendships, move beyond that into my acquaintances, move beyond that into total strangers, impersonal states, but if I know the law holds good, no matter when I operate it, if I do it unconsciously or consciously, you get results regardless, and the results are in harmony with the planting, with the actual seedtime.",
-      "ko": "나는 한 인간으로서의 네빌뿐만 아니라, 가장 먼저 내 울타리, 즉 친밀한 울타리 안에서 한 가장으로서 요청을 받아들일 수 있습니다. 아내가 자녀를 위해, 남편을 위해, 자신을 위해 품는 소망들, 아이가 자신을 위해 품는 소망들을 말입니다. 그리고 가장으로서의 작은 울타리를 넘어 우정의 울타리로 나아가고, 그를 넘어 지인들에게로 나아가고, 그를 넘어 완전한 타인들과 무인격적 상태로까지 나아갈 수 있습니다. 그러나 내가 그 법칙이 언제 작동시키든 상관없이 유효하다는 것을 안다면, 그것을 무의식적으로 하든 의식적으로 하든 상관없이 결과는 얻게 되며, 그 결과는 파종, 즉 실제 씨 뿌리는 때와 조화를 이룹니다.",
+      "ko": "나는 단순히 인간 네빌로서뿐만 아니라, 가장 먼저 내 주변의 친밀한 서클인 가족으로서의 요청을 받아들일 수 있습니다. 아내가 아이와 남편, 그리고 자신을 위해 바라는 소망, 아이가 스스로를 위해 바라는 소망을 말입니다. 그리고 가족이라는 작은 서클을 넘어 친구 관계의 서클로, 더 나아가 지인들, 그리고 완전히 낯선 타인들과 비인격적인 상태로까지 확장할 수 있습니다. 하지만 이 법칙이 유효하다는 것을 안다면, 내가 언제 그것을 작동시키든, 무의식적으로 하든 의식적으로 하든 상관없이 결과는 반드시 나타나며, 그 결과는 파종, 즉 실제 씨앗을 심은 것과 조화를 이룹니다.",
       "vocab": [
         {
           "word": "intimate",
           "mean": "친밀한"
         },
         {
-          "word": "acquaintance",
-          "mean": "지인, 아는 사람"
+          "word": "acquaintances",
+          "mean": "지인"
         },
         {
           "word": "impersonal",
-          "mean": "인격이 없는, 객관적인"
+          "mean": "비인격적인"
         },
         {
-          "word": "in harmony with",
-          "mean": "~와 조화를 이루는"
+          "word": "harmony",
+          "mean": "조화"
         }
       ],
       "grammar": [
         {
-          "tag": "Application of Law",
-          "desc": "상상의 법칙은 자신뿐만 아니라 타인(가족, 친구, 낯선 사람)을 위해서도 동일하게 적용되며, 의식의 상태가 곧 현실을 창조함을 강조합니다."
+          "tag": "Application",
+          "desc": "상상력을 개인적 욕망에서 타인과 인류 전체로 확장하는 네빌의 상상력 운용법입니다."
         }
       ]
     },
     {
       "en": "Now what is now our seedtime today.",
-      "ko": "자, 오늘날 우리의 씨 뿌리는 때는 바로 지금입니다.",
+      "ko": "자, 오늘 우리의 파종기는 무엇일까요.",
       "vocab": [
         {
           "word": "seedtime",
-          "mean": "씨 뿌리는 때"
-        },
-        {
-          "word": "contemplate",
-          "mean": "심사숙고하다, 상상하다"
+          "mean": "파종기, 씨를 뿌리는 때"
         }
       ],
       "grammar": [
         {
-          "tag": "Time and State",
-          "desc": "네빌 고다드의 '현재의 시점(Now)'이 곧 창조의 순간임을 강조하는 도입부입니다."
+          "tag": "Neville's Concept",
+          "desc": "네빌은 상상력을 씨앗을 심는 행위로 보며, 현재의 의식 상태가 미래의 수확을 결정한다고 가르칩니다."
         }
       ]
     },
     {
       "en": "There are maybe two thousand odd here, we have two thousand odd different requests, multiplied by a large number because we have requests for others but you can take, today, as you sit here and you can actually contemplate what it would be like – suppose it were true.",
-      "ko": "여기에 아마 이천여 명이 모여 있고, 우리는 이천여 가지의 서로 다른 소원들을 가지고 있으며, 타인을 위한 소원들까지 더하면 그 수는 훨씬 배가되지만, 여러분은 오늘 이 자리에 앉아 그것이 어떨지 실제로 상상해 볼 수 있습니다. 즉, 그것이 사실이라고 가정해 보는 것입니다.",
+      "ko": "여기에 대략 2천 명 남짓한 사람들이 있고, 우리는 2천 가지가 넘는 각기 다른 소망을 가지고 있습니다. 다른 이들을 위한 소망까지 더하면 그 수는 훨씬 늘어나겠지만, 오늘 여러분은 여기 앉아서 실제로 그것이 어떤 느낌일지, 즉 그것이 사실이라고 가정하고 깊이 생각해 볼 수 있습니다.",
       "vocab": [
         {
-          "word": "odd",
-          "mean": "어외의, 대략"
+          "word": "two thousand odd",
+          "mean": "2천 명 남짓"
         },
         {
-          "word": "multiplied",
-          "mean": "곱해진, 배가된"
-        },
-        {
-          "word": "suppose",
-          "mean": "가정하다"
+          "word": "contemplate",
+          "mean": "깊이 생각하다, 숙고하다"
         }
       ],
       "grammar": [
         {
-          "tag": "Conditional Imagination",
-          "desc": "'Suppose it were true'는 네빌 사상의 핵심인 가정법 상상(Assuming the state)을 나타냅니다."
+          "tag": "Assumption",
+          "desc": "네빌의 핵심 기법인 '가정(Suppose it were true)'을 통해 상상 속에서 이미 소망이 이루어진 상태를 느끼는 법을 설명합니다."
         }
       ]
     },
     {
       "en": "Suppose I could turn now to a friend and rejoice with him because of his good fortune and actually carry on a mental conversation with him from the premise that he or she has already realized the dream.",
-      "ko": "내가 지금 친구에게 돌아가 그의 행운을 기뻐하며 함께 기뻐하고, 그나 그녀가 이미 꿈을 실현했다는 전제하에 실제로 그와 정신적 대화를 나눌 수 있다고 가정해 보십시오.",
+      "ko": "제가 지금 친구에게 몸을 돌려 그의 행운을 함께 기뻐하고, 그 친구가 이미 꿈을 이루었다는 전제하에 그와 정신적인 대화를 나눈다고 가정해 봅시다.",
       "vocab": [
         {
           "word": "rejoice",
           "mean": "기뻐하다"
-        },
-        {
-          "word": "good fortune",
-          "mean": "행운, 좋은 일"
         },
         {
           "word": "premise",
@@ -15349,61 +15013,53 @@
       "grammar": [
         {
           "tag": "Mental Conversation",
-          "desc": "상상 속에서 타인의 성공을 축하하고 대화를 나누는 구체적인 상상 기법을 설명합니다."
+          "desc": "상상 속의 대화는 잠재의식에 소망을 각인시키는 강력한 도구입니다."
         }
       ]
     },
     {
       "en": "Now as I do it in my imagination I am setting up within myself a certain changed attitude in regard to that individual.",
-      "ko": "이제 내가 상상 속에서 그것을 행할 때, 나는 내 안에서 그 개인에 대한 특정한 변화된 태도를 형성하고 있는 것입니다.",
+      "ko": "제가 상상 속에서 이 일을 행할 때, 저는 그 개인에 대해 제 내면에서 특정한 변화된 태도를 형성하고 있는 것입니다.",
       "vocab": [
         {
-          "word": "imagination",
-          "mean": "상상력"
+          "word": "setting up",
+          "mean": "형성하다, 구축하다"
         },
         {
           "word": "attitude",
-          "mean": "태도, 자세"
-        },
-        {
-          "word": "in regard to",
-          "mean": "~에 관하여"
+          "mean": "태도, 마음가짐"
         }
       ],
       "grammar": [
         {
-          "tag": "State of Consciousness",
-          "desc": "상상을 통한 내면의 태도 변화가 현실 창조의 기반이 됨을 설명합니다."
+          "tag": "Inner Change",
+          "desc": "외부의 변화는 반드시 내면의 태도 변화를 선행해야 한다는 네빌의 법칙을 강조합니다."
         }
       ]
     },
     {
       "en": "I am producing within myself a certain positive, deliberate, emotional response, and that very moment that I do it, is seedtime.",
-      "ko": "나는 내 안에 긍정적이고 의도적인 감정적 반응을 만들어내고 있으며, 바로 내가 그것을 행하는 그 순간이 씨 뿌리는 때입니다.",
+      "ko": "저는 제 내면에서 특정한 긍정적이고 의도적인 감정적 반응을 만들어내고 있으며, 제가 그것을 행하는 바로 그 순간이 바로 파종기입니다.",
       "vocab": [
         {
           "word": "deliberate",
-          "mean": "고의적인, 의도적인"
+          "mean": "의도적인"
         },
         {
           "word": "emotional response",
           "mean": "감정적 반응"
-        },
-        {
-          "word": "seedtime",
-          "mean": "씨 뿌리는 때"
         }
       ],
       "grammar": [
         {
           "tag": "Feeling is the Secret",
-          "desc": "'감정이 비밀이다'라는 네빌의 원칙에 따라 감정적 반응이 곧 씨앗을 심는 행위임을 강조합니다."
+          "desc": "감정은 상상을 현실로 만드는 '비밀'이며, 의도적인 감정적 반응이 씨앗을 심는 행위임을 명시합니다."
         }
       ]
     },
     {
       "en": "I will encounter that individual tomorrow or next week or next month and he will bear witness of that thing I plant now.",
-      "ko": "나는 내일이든 다음 주든 다음 달이든 그 사람을 만나게 될 것이고, 그는 내가 지금 심은 그 것에 대해 증언할 것입니다.",
+      "ko": "저는 내일이나 다음 주, 혹은 다음 달에 그 사람을 마주하게 될 것이고, 그는 제가 지금 심은 것에 대해 증언할 것입니다.",
       "vocab": [
         {
           "word": "encounter",
@@ -15412,218 +15068,161 @@
         {
           "word": "bear witness",
           "mean": "증언하다, 증거가 되다"
-        },
-        {
-          "word": "plant",
-          "mean": "심다"
         }
       ],
       "grammar": [
         {
-          "tag": "Law of Reaping",
-          "desc": "성경적 비유인 '심은 대로 거둔다(Galatians 6:7)'의 법칙을 네빌의 상상력 관점에서 적용하고 있습니다."
+          "tag": "Law of Harvest",
+          "desc": "심은 대로 거둔다는 법칙에 따라, 내면의 상상이 외부 현실로 투영되어 나타남을 설명합니다."
         }
       ]
     },
     {
       "en": "He may be totally unaware that I planted it in this garden.",
-      "ko": "그는 내가 이 정원에 그것을 심었다는 사실을 전혀 모를 수도 있습니다.",
+      "ko": "그는 내가 이 정원에 그것을 심었다는 사실을 전혀 모를지도 모릅니다.",
       "vocab": [
         {
-          "word": "totally unaware",
-          "mean": "전혀 알지 못하는"
+          "word": "unaware",
+          "mean": "알지 못하는"
         },
         {
-          "word": "plant",
-          "mean": "심다"
-        },
-        {
-          "word": "garden",
-          "mean": "정원 (의식의 정원/마음)"
+          "word": "planted",
+          "mean": "심었다"
         }
       ],
       "grammar": [
         {
-          "tag": "조동사 may",
-          "desc": "~일지도 모른다(추측)"
-        },
-        {
-          "tag": "that절",
-          "desc": "unaware의 내용을 보충하는 명사절"
+          "tag": "Metaphor",
+          "desc": "정원(garden)은 네빌 고다드의 사상에서 인간의 의식 혹은 상상력을 의미합니다."
         }
       ]
     },
     {
       "en": "I am not seeking his praise, I am not seeking credit – I am seeking results.",
-      "ko": "나는 그의 칭찬을 구하는 것이 아니며, 공로를 바라는 것도 아닙니다 — 나는 오직 결과를 구할 뿐입니다.",
+      "ko": "나는 그의 칭찬을 구하는 것도, 공로를 인정받으려는 것도 아닙니다. 나는 오직 결과를 구합니다.",
       "vocab": [
         {
-          "word": "seek",
-          "mean": "구하다, 찾다"
-        },
-        {
-          "word": "praise",
-          "mean": "칭찬"
+          "word": "seeking",
+          "mean": "구하는"
         },
         {
           "word": "credit",
           "mean": "공로, 인정"
-        },
-        {
-          "word": "results",
-          "mean": "결과 (상상의 실현)"
         }
       ],
       "grammar": [
         {
-          "tag": "현재진행형",
-          "desc": "be + -ing 형태를 사용하여 현재의 의도와 태도를 강조함"
+          "tag": "Philosophy",
+          "desc": "상상력의 법칙을 사용할 때 외부의 인정보다 내면의 확신과 결과에 집중해야 함을 강조합니다."
         }
       ]
     },
     {
       "en": "If I see the man become the embodiment of the success I know that he desires and I desire for him, that’s praise enough, that’s payment enough.",
-      "ko": "만약 내가 그 사람이 그가 갈망하고 나 또한 그를 위해 갈망하는 그 성공의 화신이 된 것을 본다면, 그것으로 충분한 칭찬이며 충분한 대가입니다.",
+      "ko": "만약 내가 그 사람이 그가 바라고 나 또한 그를 위해 바라는 성공의 화신이 되는 것을 본다면, 그것으로 충분한 칭찬이자 충분한 대가입니다.",
       "vocab": [
         {
           "word": "embodiment",
           "mean": "화신, 구체화"
         },
         {
-          "word": "desire",
-          "mean": "갈망하다, 바라다"
-        },
-        {
-          "word": "payment",
-          "mean": "대가, 보상"
+          "word": "desires",
+          "mean": "바라다"
         }
       ],
       "grammar": [
         {
-          "tag": "지각동사 see",
-          "desc": "목적어(the man) + 동사원형(become)"
-        },
-        {
-          "tag": "관계대명사 생략",
-          "desc": "success 뒤에 목적격 관계대명사가 생략됨"
+          "tag": "Concept",
+          "desc": "타인의 성공을 상상하는 것이 곧 자신의 상상력을 완성하는 것임을 의미합니다."
         }
       ]
     },
     {
       "en": "What more payment would anyone desire other than the results, for everything is a gift.",
-      "ko": "결과 외에 그 누가 다른 어떤 대가를 바라겠습니까, 왜냐하면 모든 것은 선물이기 때문입니다.",
+      "ko": "결과 외에 무엇을 더 바라겠습니까? 모든 것은 선물이기 때문입니다.",
       "vocab": [
         {
-          "word": "other than",
-          "mean": "~외에"
+          "word": "payment",
+          "mean": "대가, 보상"
         },
         {
           "word": "gift",
-          "mean": "선물 (은혜, 상상의 능력)"
+          "mean": "선물"
         }
       ],
       "grammar": [
         {
-          "tag": "수사학적 의문문",
-          "desc": "강한 부정을 나타내는 반어적 표현"
-        },
-        {
-          "tag": "접속사 for",
-          "desc": "이유를 나타내는 등위접속사 (~왜냐하면)"
+          "tag": "Theology",
+          "desc": "모든 창조적 능력은 신으로부터 주어진 은혜(선물)라는 관점입니다."
         }
       ]
     },
     {
       "en": "Why should I be given more!",
-      "ko": "내가 왜 더 받아야 한단 말인가!",
-      "vocab": [
-        {
-          "word": "be given",
-          "mean": "주어지다, 받다"
-        }
-      ],
+      "ko": "내가 무엇을 더 받아야 하겠습니까!",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "수동태",
-          "desc": "조동사 should와 결합하여 의무 또는 당연함을 반문함"
+          "tag": "Rhetorical",
+          "desc": "이미 모든 것을 가진 상태(상상력)에 대한 만족을 표현합니다."
         }
       ]
     },
     {
       "en": "My Father gave me the garden – the whole thing is in complete and full bloom and gave me choice – the greatest gift of all, complete freedom of choice of the nature of the fruit I will reap in my world; but I cannot just barge into the garden and start picking fruit – there must be a seedtime, but I must always bear in mind I will reap that whereon I bestowed no labor.",
-      "ko": "나의 아버지는 내게 정원을 주셨습니다 — 온통 완전히 만개해 있는 그 전체를 주셨으며, 또한 선택을 주셨습니다 — 그 모든 것 중 가장 위대한 선물인, 내 세계에서 거둘 열과의 본질에 대한 완전한 선택의 자유를 주셨습니다; 그러나 나는 그저 정원에 들이닥쳐 열매를 따기 시작할 수는 없습니다 — 파종기가 있어야 합니다. 하지만 나는 내가 아무런 노동을 기울이지 않은 곳에서 거두어들이게 될 것임을 항상 명심해야 합니다.",
+      "ko": "나의 아버지는 나에게 정원을 주셨습니다. 정원 전체가 완전히 만개해 있으며, 나에게 선택권이라는 가장 위대한 선물을 주셨습니다. 그것은 내 세상에서 거둘 열매의 본질을 선택할 완전한 자유입니다. 하지만 나는 정원에 함부로 들어가 열매를 따기 시작할 수는 없습니다. 파종기가 있어야 하기 때문입니다. 그러나 나는 내가 수고하지 않은 것을 거두게 될 것임을 항상 명심해야 합니다.",
       "vocab": [
         {
-          "word": "in full bloom",
-          "mean": "만개한, 활짝 핀"
+          "word": "bloom",
+          "mean": "꽃이 피다"
         },
         {
           "word": "barge into",
-          "mean": "함부로 들이닥치다"
+          "mean": "난입하다"
         },
         {
           "word": "seedtime",
-          "mean": "파종기, 씨 뿌리는 때"
+          "mean": "파종기"
         },
         {
-          "word": "bear in mind",
-          "mean": "명심하다"
-        },
-        {
-          "word": "reap",
-          "mean": "거두다"
-        },
-        {
-          "word": "bestow",
-          "mean": "부어주다, 기울이다"
+          "word": "bestowed",
+          "mean": "부여하다, 쏟다"
         }
       ],
       "grammar": [
         {
-          "tag": "동격 대시(-)",
-          "desc": "선물과 선택의 내용을 부연 설명함"
-        },
-        {
-          "tag": "성경 인용구 포함",
-          "desc": "요한복음 4장 38절의 개념(수고하지 않은 것을 거둠)을 변형 인용"
+          "tag": "Bible Reference",
+          "desc": "요한복음 4장 38절의 '너희는 수고하지 아니한 것을 거두러 보내었노니'를 인용합니다."
         }
       ]
     },
     {
       "en": "I don’t labor to make it so, I simply plant it, for in that moment of response is contained all the plans, all the energy necessary to unfold that plan into a perfect wonderful objective fact which I will then harvest by becoming aware of it as an external reality, but I don’t labor to make it so; I simply must know it is so.",
-      "ko": "나는 그것을 이루기 위해 애써 노동하지 않으며, 단지 씨를 심을 뿐입니다. 왜냐하면 그 응답의 순간 안에는, 그 계획을 완벽하고 놀라운 객관적 사실로 펼쳐내는 데 필요한 모든 계획과 에너지가 담겨 있기 때문이며, 나는 그것을 외적인 현실로서 의식함으로써 수확하게 될 것입니다. 그러나 나는 그것을 실현하기 위해 애써 애를 쓰지 않습니다. 나는 단지 그것이 그러하다는 것을 알기만 하면 됩니다.",
+      "ko": "나는 그것을 이루기 위해 애쓰지 않습니다. 그저 심을 뿐입니다. 왜냐하면 그 반응의 순간에 그 계획을 완벽하고 경이로운 객관적 사실로 펼쳐내는 데 필요한 모든 계획과 에너지가 담겨 있기 때문입니다. 나는 그것을 외부의 현실로 인식함으로써 수확하게 될 것입니다. 나는 그것을 이루기 위해 애쓰지 않습니다. 그저 그것이 사실임을 알기만 하면 됩니다.",
       "vocab": [
         {
           "word": "labor",
-          "mean": "애쓰다, 노동하다"
+          "mean": "수고하다, 애쓰다"
+        },
+        {
+          "word": "unfold",
+          "mean": "펼쳐지다"
         },
         {
           "word": "objective fact",
           "mean": "객관적 사실"
-        },
-        {
-          "word": "harvest",
-          "mean": "수확하다"
-        },
-        {
-          "word": "aware",
-          "mean": "의식하는"
         }
       ],
       "grammar": [
         {
-          "tag": "도치 구문",
-          "desc": "전치사구(in that moment of response)가 문두로 오면서 is contained all the plans... 동사-주어 도치가 일어남"
-        },
-        {
-          "tag": "관계대명사 which",
-          "desc": "objective fact를 수식함"
+          "tag": "Core Teaching",
+          "desc": "네빌 고다드의 핵심인 '이미 이루어졌음을 아는 것(Knowing)'과 '애쓰지 않는 창조'를 설명합니다."
         }
       ]
     },
     {
       "en": "So that is our privilege, that is our choice.",
-      "ko": "그러므로 그것이 우리의 특권이며, 그것이 우리의 선택입니다.",
+      "ko": "그것이 우리의 특권이며, 그것이 우리의 선택입니다.",
       "vocab": [
         {
           "word": "privilege",
@@ -15636,26 +15235,22 @@
       ],
       "grammar": [
         {
-          "tag": "지시대명사",
-          "desc": "that은 앞서 언급된 상상과 의식의 힘을 가리킴."
+          "tag": "네빌 사상",
+          "desc": "인간의 상상력은 신의 창조적 힘이며, 무엇을 상상할지 선택하는 것은 인간의 고유한 특권입니다."
         }
       ]
     },
     {
       "en": "If you believe it, aren’t you amazed at the kind of things that you planted, at the kind of seedtime that in our ignorance, in our sleep, we allowed to actually scatter in our world?",
-      "ko": "만약 당신이 그것을 믿는다면, 우리가 무지 속에서, 잠든 상태 속에서, 실제로 우리 세상에 흩뿌려지도록 허용했던 그 파종의 형태에 대해, 당신이 심었던 것들의 종류에 대해 놀라지 않습니까?",
+      "ko": "만약 당신이 그것을 믿는다면, 우리가 무지 속에서, 잠든 상태에서 우리 세상에 실제로 뿌리도록 허용했던 그 씨앗의 종류와 우리가 심었던 것들의 종류에 놀라지 않습니까?",
       "vocab": [
-        {
-          "word": "amazed",
-          "mean": "놀란"
-        },
-        {
-          "word": "seedtime",
-          "mean": "파종기, 씨 뿌리는 시간"
-        },
         {
           "word": "ignorance",
           "mean": "무지"
+        },
+        {
+          "word": "seedtime",
+          "mean": "파종기"
         },
         {
           "word": "scatter",
@@ -15664,106 +15259,94 @@
       ],
       "grammar": [
         {
-          "tag": "관계대명사절",
-          "desc": "that you planted와 that we allowed...가 각각 선행사들을 수식함."
+          "tag": "네빌 사상",
+          "desc": "상상력의 법칙을 모르는 상태를 '잠(sleep)'으로 표현하며, 무의식적인 상상이 현실의 씨앗이 됨을 경고합니다."
         }
       ]
     },
     {
       "en": "You see some will say, “But why does God allow it?”",
-      "ko": "어떤 이들은 이렇게 말할 것입니다, \"하지만 왜 하나님은 그것을 허락하시나요?\"",
+      "ko": "어떤 이들은 이렇게 말할 것입니다. \"하지만 왜 신은 그것을 허용하시는가?\"",
       "vocab": [
         {
           "word": "allow",
-          "mean": "허락하다"
+          "mean": "허용하다"
         }
       ],
       "grammar": [
         {
-          "tag": "직접화법",
-          "desc": "인간의 지성에서 나오는 의문을 직접 인용문으로 표현함."
+          "tag": "수사적 질문",
+          "desc": "신의 전능함과 악의 존재 사이의 모순에 대한 일반적인 의문을 제기합니다."
         }
       ]
     },
     {
       "en": "You cannot conceive of an infinite God that is not infinite in every respect.",
-      "ko": "당신은 모든 면에서 무한하지 않은 무한한 하나님을 상상할 수 없습니다.",
+      "ko": "당신은 모든 면에서 무한하지 않은 무한한 신을 상상할 수 없습니다.",
       "vocab": [
         {
-          "word": "conceive of",
-          "mean": "상상하다, 마음에 품다"
+          "word": "conceive",
+          "mean": "상상하다, 마음속에 그리다"
         },
         {
           "word": "infinite",
           "mean": "무한한"
-        },
-        {
-          "word": "respect",
-          "mean": "측면, 점"
         }
       ],
       "grammar": [
         {
-          "tag": "이중 부정",
-          "desc": "무한함의 절대성을 강조하기 위한 표현."
+          "tag": "논리적 추론",
+          "desc": "신의 무한성은 모든 가능성(선과 악을 포함한 모든 상태)을 포함해야 함을 역설합니다."
         }
       ]
     },
     {
       "en": "If I was incapable, actually incapable of assuming, say, an unlovely state, I could not be my Father’s son because my Father is infinite, and if He were actually incapable of assuming any state then He would not be God.",
-      "ko": "만약 내가, 말하자면, 사랑스럽지 않은 상태를 가정하는 것이 불가능하다면, 실제로 불가능하다면, 내 아버지가 무한하시므로 나는 내 아버지의 아들이 될 수 없을 것입니다. 그리고 만약 그분께서 실제로 어떤 상태든 가정하는 것이 불가능하시다면 그분은 하나님이 아닐 것입니다.",
+      "ko": "만약 내가, 가령 사랑스럽지 않은 상태를 가정할 능력이 없다면, 나는 내 아버지의 아들이 될 수 없을 것입니다. 왜냐하면 내 아버지는 무한하시며, 만약 그분이 어떤 상태든 가정할 능력이 없으시다면 그분은 신이 아닐 것이기 때문입니다.",
       "vocab": [
         {
           "word": "incapable",
-          "mean": "~할 수 없는"
+          "mean": "능력이 없는"
         },
         {
-          "word": "assume",
-          "mean": "(상태를) 가정하다, 취하다"
+          "word": "assuming",
+          "mean": "가정하는, 취하는"
         },
         {
-          "word": "unlovely",
-          "mean": "사랑스럽지 않은"
-        },
-        {
-          "word": "state",
-          "mean": "상태(의식의 상태)"
+          "word": "unlovely state",
+          "mean": "사랑스럽지 않은 상태"
         }
       ],
       "grammar": [
         {
-          "tag": "가정법 과거",
-          "desc": "현재 사실의 반대나 신성한 본질의 논리적 확장을 가정함."
+          "tag": "네빌 사상",
+          "desc": "인간은 신의 아들이기에 신과 같은 창조적 능력을 지니며, 모든 상태를 경험할 수 있어야 합니다."
         }
       ]
     },
     {
       "en": "Everything is within me – but everything.",
-      "ko": "모든 것이 내 안에 있습니다 – 그야말로 모든 것이요.",
+      "ko": "모든 것이 내 안에 있습니다. 정말 모든 것이 말입니다.",
       "vocab": [
         {
           "word": "within",
           "mean": "~안에"
-        },
-        {
-          "word": "but",
-          "mean": "여기서는 강조의 의미 ('예외 없이 모두')"
         }
       ],
       "grammar": [
         {
-          "tag": "대시 강조",
-          "desc": "네빌 고다드의 핵심 개념인 '인간 내면의 전체성(God in man)'을 강조."
+          "tag": "성경적 근거",
+          "desc": "하나님 나라가 우리 안에 있다는 가르침을 강조합니다."
         }
       ]
     },
     {
       "en": "You cannot conceive of something that I don’t contain – the most horrible thing in the world were it not so I could not be infinite, and, therefore, not the son of my infinite Father.",
-      "ko": "내가 품고 있지 않은 그 어떤 것도 당신은 상상할 수 없습니다. 세상에서 가장 끔찍한 일조차도 만약 그렇지 않다면 나는 무한할 수 없을 것이며, 따라서 나의 무한하신 아버지의 아들이 될 수 없을 것입니다.",
+      "ko": "당신은 내가 포함하지 않은 어떤 것도 상상할 수 없습니다. 세상에서 가장 끔찍한 것조차도 말입니다. 그렇지 않다면 나는 무한할 수 없을 것이고, 따라서 무한하신 내 아버지의 아들도 아닐 것입니다.",
       "vocab": [
         {
           "word": "contain",
-          "mean": "포함하다, 담다"
+          "mean": "포함하다"
         },
         {
           "word": "horrible",
@@ -15772,19 +15355,15 @@
       ],
       "grammar": [
         {
-          "tag": "가정법 도치",
-          "desc": "were it not so는 if it were not so의 도치 형태로 조건절을 이룸."
+          "tag": "네빌 사상",
+          "desc": "인간의 상상력은 우주 전체를 담고 있으며, 모든 경험의 가능성을 내포합니다."
         }
       ]
     },
     {
       "en": "So God is infinite and gave us everything, but He gave us freedom of choice that we may become selective, discriminative and bring out everything that is beautiful out of that garden.",
-      "ko": "그러므로 하나님은 무한하시며 우리에게 모든 것을 주셨지만, 우리가 선택적이고 분별력 있게 되며 그 정원에서 아름다운 모든 것을 이끌어낼 수 있도록 선택의 자유를 주셨습니다.",
+      "ko": "그러므로 신은 무한하며 우리에게 모든 것을 주셨지만, 우리가 선택적이고 분별력 있게 되어 그 정원에서 아름다운 모든 것을 이끌어낼 수 있도록 선택의 자유를 주셨습니다.",
       "vocab": [
-        {
-          "word": "freedom of choice",
-          "mean": "선택의 자유"
-        },
         {
           "word": "selective",
           "mean": "선택적인"
@@ -15792,234 +15371,178 @@
         {
           "word": "discriminative",
           "mean": "분별력 있는"
-        },
-        {
-          "word": "garden",
-          "mean": "정원(에덴, 인간의 의식)"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "목적을 나타내는 부사절",
-          "desc": "that we may become...은 하나님이 선택의 자유를 주신 목적을 나타냄."
-        }
-      ]
-    },
-    {
-      "en": "If I took the piano, the eighty-eight notes of the piano, if I could extract from that piano keyboard every discord, I would not have a piano keyboard.",
-      "ko": "만약 내가 피아노를, 그 피아노의 88개 건반을 가지고, 만약 그 피아노 건반에서 모든 불협화음을 추출해내(제거해) 버릴 수 있다면, 나는 피아노 건반을 갖지 못하게 될 것입니다.",
-      "vocab": [
-        {
-          "word": "extract",
-          "mean": "추출하다, 뽑아내다"
-        },
-        {
-          "word": "discord",
-          "mean": "불협화음, 부조화"
-        },
-        {
-          "word": "keyboard",
-          "mean": "건반"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "가정법 과거",
-          "desc": "불협화음(부정적 상태) 제거가 불가능하고 불필요함을 비유적으로 설명."
-        }
-      ]
-    },
-    {
-      "en": "If I could strike a discord and because it frightens me or it disturbs me, the thing grates upon my nerves; if I could now extract the notes that produce the discord and then keep on extracting the notes that produce the discord, I would remove the eighty-eight notes – there would be no notes left on which I could play tomorrow’s harmony.",
-      "ko": "만약 내가 불협화음을 쳤을 때 그것이 나를 겁주거나 방해하기 때문에, 그 소리가 내 신경을 거슬린다는 이유로; 만약 내가 그 불협화음을 만들어내는 음들을 지금 추출해내고, 이어서 계속해서 불협화음을 만들어내는 음들을 추출해낸다면, 나는 88개의 건반을 모두 없애버리게 될 것입니다 – 그리하여 내일의 화합을 연주할 수 있는 건반은 하나도 남지 않게 될 것입니다.",
-      "vocab": [
-        {
-          "word": "frighten",
-          "mean": "겁주다"
-        },
-        {
-          "word": "disturb",
-          "mean": "방해하다, 불안하게 하다"
-        },
-        {
-          "word": "grate upon",
-          "mean": "신경을 거슬리다"
-        },
-        {
-          "word": "remove",
-          "mean": "제거하다"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "긴 가정법 구문",
-          "desc": "반복되는 조건절을 통해 부정적인 것을 없애려는 시도가 결국 전체 가능성을 파괴함을 논증함."
-        }
-      ]
-    },
-    {
-      "en": "But let me leave the notes and learn the art of playing the piano so I can from the same eighty-eight notes bring out all the harmonies of the world.",
-      "ko": "대신 그 음들을 그대로 두고 피아노 연주 기술을 배워서, 동일한 88개의 건반으로부터 세상의 모든 화음을 이끌어낼 수 있게 하소서.",
-      "vocab": [
-        {
-          "word": "leave",
-          "mean": "그대로 두다, 남겨두다"
-        },
-        {
-          "word": "art",
-          "mean": "기술, 예술"
-        },
-        {
-          "word": "harmony",
-          "mean": "화음, 조화"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "명령문 및 목적",
-          "desc": "let me...를 통해 상태를 없애는 대신 의식의 통제력과 기술(상상력의 활용)을 배워야 한다는 네빌의 결론을 제시함."
-        }
-      ]
-    },
-    {
-      "en": "The same thing is true of man.",
-      "ko": "인간에게도 똑같은 진실이 적용됩니다.",
-      "vocab": [
-        {
-          "word": "true",
-          "mean": "진실인"
-        },
-        {
-          "word": "man",
-          "mean": "인간"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "주어+동사",
-          "desc": "The same thing이 주어, is가 동사로 진실을 나타냄."
-        }
-      ]
-    },
-    {
-      "en": "Instead of looking at someone and accepting as final the evidence of the senses; there is someone who brought out into his own world, say disease: he is trying to analyze it from the outside – when did I contract the bug, when did I come in close contact with someone who had the bug and they are taking me into the laboratory with my blood and try to find it there.",
-      "ko": "누군가를 바라보며 감각의 증거를 최종적인 것으로 받아들이는 대신에, 자신의 세계로 어떤 것, 가령 질병을 끌어낸 누군가가 있습니다. 그는 그것을 외부에서 분석하려 애씁니다. 내가 언제 그 병균에 감염되었지, 언제 그 병균을 가진 사람과 밀접 접촉했지라며, 그들은 내 피를 가지고 연구소로 데려가 그곳에서 그것을 찾으려 합니다.",
-      "vocab": [
-        {
-          "word": "instead of",
-          "mean": "~ 대신에"
-        },
-        {
-          "word": "evidence of the senses",
-          "mean": "감각의 증거"
-        },
-        {
-          "word": "bring out",
-          "mean": "끌어내다,현시하다"
-        },
-        {
-          "word": "contract",
-          "mean": "병에 걸리다"
-        },
-        {
-          "word": "bug",
-          "mean": "병균, 바이러스"
         }
       ],
       "grammar": [
         {
           "tag": "네빌 사상",
-          "desc": "감각에 의존하여 외적인 원인을 찾는 물질주의적 접근을 비판하며 모든 것의 원인은 내면에 있음을 강조."
+          "desc": "자유 의지는 단순히 선택하는 것이 아니라, 상상력을 통해 아름다운 현실을 선별해내는 능력입니다."
+        }
+      ]
+    },
+    {
+      "en": "If I took the piano, the eighty-eight notes of the piano, if I could extract from that piano keyboard every discord, I would not have a piano keyboard.",
+      "ko": "만약 내가 피아노, 즉 피아노의 88개 건반을 가지고, 그 피아노 건반에서 모든 불협화음을 추출해낼 수 있다면, 나는 피아노 건반을 갖지 못하게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "extract",
+          "mean": "추출하다"
+        },
+        {
+          "word": "discord",
+          "mean": "불협화음"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "비유",
+          "desc": "불협화음(부정적 경험)을 제거하면 전체적인 조화(삶의 완성)도 불가능해진다는 논리입니다."
+        }
+      ]
+    },
+    {
+      "en": "If I could strike a discord and because it frightens me or it disturbs me, the thing grates upon my nerves; if I could now extract the notes that produce the discord and then keep on extracting the notes that produce the discord, I would remove the eighty-eight notes – there would be no notes left on which I could play tomorrow’s harmony.",
+      "ko": "만약 내가 불협화음을 쳤는데 그것이 나를 두렵게 하거나 방해하여 내 신경을 거슬리게 한다고 해서, 이제 그 불협화음을 만들어내는 음들을 추출하고 계속해서 불협화음을 만드는 음들을 추출해버린다면, 나는 88개의 건반을 모두 제거하게 될 것입니다. 그러면 내일의 조화를 연주할 수 있는 건반은 하나도 남지 않게 될 것입니다.",
+      "vocab": [
+        {
+          "word": "grates upon",
+          "mean": "신경을 긁다, 거슬리다"
+        },
+        {
+          "word": "harmony",
+          "mean": "조화"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "네빌 사상",
+          "desc": "부정적인 경험조차도 삶이라는 거대한 조화를 이루기 위한 필수적인 요소임을 설명합니다."
+        }
+      ]
+    },
+    {
+      "en": "But let me leave the notes and learn the art of playing the piano so I can from the same eighty-eight notes bring out all the harmonies of the world.",
+      "ko": "하지만 그 음들을 그대로 두고 피아노 연주하는 기술을 배우게 하소서. 그리하여 같은 88개의 건반에서 세상의 모든 조화를 이끌어낼 수 있도록 말입니다.",
+      "vocab": [
+        {
+          "word": "art",
+          "mean": "기술, 예술"
+        },
+        {
+          "word": "harmonies",
+          "mean": "조화들"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "결론",
+          "desc": "상황을 바꾸려 하기보다, 상상력을 다루는 기술(Art of Believing)을 익혀 현실을 조화롭게 창조하라는 권고입니다."
+        }
+      ]
+    },
+    {
+      "en": "The same thing is true of man.",
+      "ko": "인간에게도 똑같은 원리가 적용됩니다.",
+      "vocab": [
+        {
+          "word": "true of",
+          "mean": "~에게 적용되는"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Principle",
+          "desc": "인간의 내면 상태가 외부 현실을 결정한다는 법칙을 서술함"
+        }
+      ]
+    },
+    {
+      "en": "Instead of looking at someone and accepting as final the evidence of the senses; there is someone who brought out into his own world, say disease: he is trying to analyze it from the outside – when did I contract the bug, when did I come in close contact with someone who had the bug and they are taking me into the laboratory with my blood and try to find it there.",
+      "ko": "누군가를 바라보며 감각의 증거를 최종적인 것으로 받아들이는 대신, 자신의 세계로 질병과 같은 것을 불러들인 사람이 있다고 칩시다. 그는 그것을 외부에서 분석하려고 애씁니다. '내가 언제 그 병균에 감염되었지?', '언제 그 병균을 가진 사람과 밀접하게 접촉했지?'라며 그들은 내 혈액을 가지고 실험실로 가져가 그곳에서 원인을 찾으려 합니다.",
+      "vocab": [
+        {
+          "word": "evidence of the senses",
+          "mean": "감각적 증거"
+        },
+        {
+          "word": "contract",
+          "mean": "병에 걸리다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's Perspective",
+          "desc": "외부 현상(질병)을 물리적 원인으로 돌리는 인간의 오류를 지적함"
         }
       ]
     },
     {
       "en": "You will never find it there, in spite of all the wisdom of man.",
-      "ko": "인간의 모든 지혜에도 불구하고, 여러분은 결코 그곳에서 그것을 찾지 못할 것입니다.",
+      "ko": "인간의 모든 지혜에도 불구하고, 당신은 결코 그곳에서 원인을 찾을 수 없을 것입니다.",
       "vocab": [
         {
           "word": "in spite of",
           "mean": "~에도 불구하고"
-        },
-        {
-          "word": "wisdom",
-          "mean": "지혜"
         }
       ],
       "grammar": [
         {
-          "tag": "조동사",
-          "desc": "will never를 통해 외적 탐구의 무용론을 강조."
+          "tag": "Metaphysical Insight",
+          "desc": "원인은 외부가 아닌 의식 내부에 있음을 강조"
         }
       ]
     },
     {
       "en": "You will find it only in the consciousness of the individual, who, at a moment now long forgotten, planted the thing he is now harvesting – and you are not going to find it in any external analysis at all because things seen were never made of things that do appear.",
-      "ko": "여러분은 오직 그 개인의 의식 안에서만 그것을 찾을 수 있을 것인데, 그는 지금은 오래 전에 잊혀진 어느 순간에 자신이 지금 거두어들이고 있는 것을 심었던 것입니다. 그리고 여러분은 어떠한 외부적 분석에서도 결코 그것을 찾지 못할 것입니다. 왜냐하면 보이는 것들은 나타나는 것들로 만들어진 것이 결코 아니기 때문입니다.",
+      "ko": "당신은 오직 그 개인의 의식 안에서만 그것을 찾을 수 있을 것입니다. 그는 지금은 까맣게 잊어버린 어느 순간에 자신이 지금 수확하고 있는 것을 심었기 때문입니다. 그리고 당신은 외부적인 분석으로는 결코 그것을 찾을 수 없을 것입니다. 왜냐하면 보이는 것들은 나타나 있는 것들로 만들어진 것이 아니기 때문입니다.",
       "vocab": [
         {
           "word": "consciousness",
           "mean": "의식"
         },
         {
-          "word": "plant",
-          "mean": "심다"
-        },
-        {
-          "word": "harvest",
-          "mean": "수확하다, 거두다"
-        },
-        {
-          "word": "external analysis",
-          "mean": "외부적 분석"
+          "word": "harvesting",
+          "mean": "수확하는"
         }
       ],
       "grammar": [
         {
-          "tag": "성경 인용 구문",
-          "desc": "히브리서 11장 3절의 말씀을 인용하여 현상의 비물질적(의식적) 기원을 설명함."
+          "tag": "Law of Assumption",
+          "desc": "현재의 현실은 과거 의식의 투영(심은 대로 거둠)임을 설명"
         }
       ]
     },
     {
       "en": "You are warned time and time again in all the books of the Bible, but especially in that 11th chapter of the Book of Hebrews, that “things seen were not made of things that do appear” but no man believes it.",
-      "ko": "여러분은 성경의 모든 책에서, 그러나 특히 히브리서 제11장에서 거듭거듭 경고를 받습니다. \"보이는 것은 나타난 것으로 말미암아 된 것이 아니다\"라고요. 하지만 아무도 그것을 믿지 않습니다.",
+      "ko": "당신은 성경의 모든 책에서, 특히 히브리서 11장에서 거듭 경고받고 있습니다. '보이는 것은 나타나 있는 것들로 만들어진 것이 아니다'라고 말입니다. 하지만 아무도 그것을 믿지 않습니다.",
       "vocab": [
         {
+          "word": "warned",
+          "mean": "경고받다"
+        },
+        {
           "word": "time and time again",
-          "mean": "반복해서, 거듭"
-        },
-        {
-          "word": "Hebrews",
-          "mean": "히브리서"
-        },
-        {
-          "word": "appear",
-          "mean": "나타나다, 드러나다"
+          "mean": "거듭해서"
         }
       ],
       "grammar": [
         {
-          "tag": "성경 인용",
-          "desc": "히브리서 11:3을 직접 인용하며 인간의 불신앙을 지적함."
+          "tag": "Biblical Reference",
+          "desc": "히브리서 11장 3절을 인용하여 현상계의 비실재성을 강조"
         }
       ]
     },
     {
       "en": "He insists on finding it in things seen, so he extracts my blood, he extracts a little piece of my skin, and he starts to make an analysis of that, and he will tell me yes, he has found it.",
-      "ko": "그는 그것을 보이는 것들 안에서 찾으려고 고집합니다. 그래서 그는 내 피를 뽑고, 내 피부의 작은 조각을 떼어내어 그것을 분석하기 시작하며, 네, 그것을 찾았다고 나에게 말할 것입니다.",
+      "ko": "그는 그것을 보이는 것들 속에서 찾으려 고집하기에, 내 피를 뽑고, 내 피부 조각을 조금 떼어내어 그것을 분석하기 시작하며, 내게 그것을 찾았다고 말할 것입니다.",
       "vocab": [
         {
-          "word": "insist on",
-          "mean": "~을 고집하다"
+          "word": "insists",
+          "mean": "고집하다"
         },
         {
-          "word": "things seen",
-          "mean": "보이는 것들 (감각에 의해 지각되는 외적 세계)"
-        },
-        {
-          "word": "extract",
-          "mean": "추출하다, 뽑아내다"
+          "word": "extracts",
+          "mean": "추출하다"
         },
         {
           "word": "analysis",
@@ -16028,98 +15551,94 @@
       ],
       "grammar": [
         {
-          "tag": "Neville's Mysticism",
-          "desc": "네빌 고다드는 3차원 감각 세계(things seen)에서 원인을 찾는 물질주의적 과학이나 의학의 한계를 지적하며, 참된 원인은 언제나 보이지 않는 의식(Imagination)에 있음을 강조합니다."
+          "tag": "네빌 사상",
+          "desc": "외부 현상(things seen)에만 집착하는 물질주의적 관점을 비판함."
         }
       ]
     },
     {
       "en": "It’s in my blood.",
-      "ko": "그것은 내 피속에 있습니다.",
+      "ko": "그것은 내 피 속에 있습니다.",
       "vocab": [
         {
           "word": "blood",
-          "mean": "피, 혈액"
+          "mean": "피"
         }
       ],
       "grammar": [
         {
-          "tag": "Literal Translation",
-          "desc": "물질적 원인을 찾는 학자나 의사의 입장을 대변하는 짧은 단문입니다."
+          "tag": "구문",
+          "desc": "물질적 증거를 찾는 과학적/의학적 접근을 상징."
         }
       ]
     },
     {
       "en": "I am not denying he has found it in my blood, but why is it in my blood ?",
-      "ko": "그가 내 피 속에서 그것을 찾아냈다는 사실을 나는 부인하지 않습니다. 그러나 왜 그것이 내 피 속에 있는 것입니까?",
+      "ko": "그가 내 피 속에서 그것을 찾아냈다는 사실을 부정하는 것은 아니지만, 왜 그것이 내 피 속에 있는 것일까요?",
       "vocab": [
         {
-          "word": "deny",
-          "mean": "부인하다"
+          "word": "denying",
+          "mean": "부정하는"
         }
       ],
       "grammar": [
         {
-          "tag": "Rhetorical Question",
-          "desc": "현상학적 결과(피 속의 상태)는 인정하되, 그 궁극적 원인(why)이 물질 자체가 아니라 의식의 작용에 있음을 파고드는 질문입니다."
+          "tag": "네빌 사상",
+          "desc": "현상(결과) 자체는 인정하되, 그 원인(상상)을 추적해야 함을 강조."
         }
       ]
     },
     {
       "en": "It is in my blood or in my body, or in my world because at some point in time, I, exercising the right as a free child of God, singled out some unlovely state relative to another.",
-      "ko": "그것이 내 피 속에, 내 몸속에, 혹은 내 세계 속에 있는 이유는, 과거 어느 시점에 내가 자유로운 하나님의 자녀로서의 권리를 행사하여, 다른 것과 관련하여 어떤 사랑스럽지 않은 상태를 마음속으로 콕 집어 선택했기 때문입니다.",
+      "ko": "그것이 내 피나 몸, 혹은 내 세상에 존재하는 이유는, 내가 어느 시점에 하나님의 자유로운 자녀로서의 권리를 행사하여 타인과 관련된 어떤 불쾌한 상태를 선택했기 때문입니다.",
       "vocab": [
         {
-          "word": "free child of God",
-          "mean": "자유로운 하나님의 자녀"
+          "word": "exercising",
+          "mean": "행사하는"
         },
         {
-          "word": "single out",
-          "mean": "골라내다, 지목하다"
+          "word": "singled out",
+          "mean": "선택하다/골라내다"
         },
         {
           "word": "unlovely state",
-          "mean": "사랑스럽지 않은 상태 (부정적 상태)"
+          "mean": "불쾌한 상태"
         }
       ],
       "grammar": [
         {
-          "tag": "Neville's Doctrine",
-          "desc": "인간은 자유 의지를 가진 창조자로서, 의식 속에서 어떤 상태(state)를 선택함으로써 현실의 조건들을 만들어냅니다."
+          "tag": "네빌 사상",
+          "desc": "모든 외부 현상은 인간의 상상력이 선택한 내면의 상태가 투영된 결과임."
         }
       ]
     },
     {
       "en": "It need not be to myself; it could be to another, wherein I rejoiced in the hurt of another; where my emotional response to the news I heard was “good” so, I set it in motion, but when it happened in my world, I did not think it was so good but it was my harvest – and all these things are the harvest of things you and I have planted; for all things run true to form.",
-      "ko": "그것은 나 자신을 향한 것일 필요는 없습니다. 그것은 다른 사람을 향한 것일 수도 있는데, 예를 들어 타인의 상처를 기뻐하거나, 내가 들은 소식에 대한 나의 감정적 반응이 '잘됐어'일 때, 나는 그것을 가동시킨 것입니다. 하지만 그것이 나의 세계에서 일어났을 때, 나는 그것이 그리 좋다고 생각하지 않았지만 그것은 나의 수확이었습니다. 그리고 이 모든 것들은 여러분과 내가 심은 것들의 수확입니다. 왜냐하면 모든 것은 그 형상 그대로 정확히 자라나기 때문입니다.",
+      "ko": "그것은 나 자신에게 일어난 일일 필요는 없습니다. 타인에게 일어난 일일 수도 있는데, 내가 타인의 고통을 기뻐했거나, 들은 소식에 대한 내 감정적 반응이 '좋다'였을 때 나는 그것을 작동시켰습니다. 하지만 그것이 내 세상에서 일어났을 때 나는 그것이 좋다고 생각하지 않았지만, 그것은 나의 수확이었습니다. 이 모든 것은 당신과 내가 심은 것들의 수확입니다. 모든 것은 그 형태대로 흘러가기 때문입니다.",
       "vocab": [
         {
-          "word": "rejoice in",
-          "mean": "~을 기뻐하다"
-        },
-        {
-          "word": "set in motion",
-          "mean": "가동시키다, 시작하게 하다"
+          "word": "rejoiced",
+          "mean": "기뻐했다"
         },
         {
           "word": "harvest",
-          "mean": "수확, 거두어들임"
+          "mean": "수확"
         },
         {
           "word": "run true to form",
-          "mean": "본디의 형태대로 어김없이 진행되다, 그대로 실현되다"
+          "mean": "형태대로 흘러가다"
         }
       ],
       "grammar": [
         {
-          "tag": "Biblical Principle",
-          "desc": "갈라디아서 6장 7절의 '사람이 무엇으로 심든지 그대로 거두리라(Whatsoever a man soweth, that shall he also reap)'는 씨뿌림과 거둠의 법칙(Law of Sowing and Reaping)을 설명합니다."
+          "tag": "성경 인용",
+          "desc": "갈라디아서 6:7 '사람이 무엇으로 심든지 그대로 거두리라'의 원리."
         }
       ]
     },
     {
       "en": "Don’t be surprised at the suddenness in our world – someone is ill – it is only sudden because we have forgotten, and man’s memory is very, very short.",
-      "ko": "우리 세계에서 일어나는 일들의 갑작스러움에 놀라지 마십시오. 누군가가 아프다면, 그것이 갑작스러워 보이는 이유는 오직 우리가 잊어버렸기 때문이며, 인간의 기억력은 매우, 매우 짧기 때문입니다.",
+      "ko": "우리 세상에서 일어나는 갑작스러운 일들에 놀라지 마십시오. 누군가 아프다면, 그것은 우리가 잊었기 때문에 갑작스럽게 느껴질 뿐이며, 인간의 기억력은 매우 짧기 때문입니다.",
       "vocab": [
         {
           "word": "suddenness",
@@ -16127,29 +15646,33 @@
         },
         {
           "word": "ill",
-          "mean": "아픈, 병든"
+          "mean": "아픈"
         }
       ],
       "grammar": [
         {
-          "tag": "Psychological Time",
-          "desc": "씨를 뿌린 시점과 그것이 3차원 세계에 나타나는 수확(현상)의 시점 사이에는 시간차가 존재하므로, 인간은 망각으로 인해 그 원인을 잊고 갑작스럽다고 여긴다는 설명입니다."
+          "tag": "네빌 사상",
+          "desc": "현상의 원인을 망각한 인간의 무지를 지적함."
         }
       ]
     },
     {
       "en": "You know that lovely little poem of George Meredith:",
-      "ko": "여러분은 조지 메러디스의 그 사랑스러운 작은 시를 알고 있습니다:",
+      "ko": "조지 메러디스의 그 아름다운 짧은 시를 아실 겁니다.",
       "vocab": [
         {
           "word": "lovely",
-          "mean": "사랑스러운, 아름다운"
+          "mean": "아름다운"
+        },
+        {
+          "word": "poem",
+          "mean": "시"
         }
       ],
       "grammar": [
         {
-          "tag": "Poetic Citation",
-          "desc": "시인 조지 메러디스(George Meredith)의 시를 인용하여 영적 법칙의 엄정함을 강조합니다."
+          "tag": "인용",
+          "desc": "조지 메러디스의 시를 인용하여 인과응보의 법칙을 설명함."
         }
       ]
     },
@@ -16158,68 +15681,64 @@
       "ko": "푸른 대지는 망각하지만,",
       "vocab": [
         {
-          "word": "forgetful",
-          "mean": "잘 잊어버리는, 망각하는"
-        },
-        {
-          "word": "green earth",
-          "mean": "푸른 대지 (자연, 인간계)"
+          "word": "Forgetful",
+          "mean": "망각하는"
         }
       ],
       "grammar": [
         {
-          "tag": "Poetic Form",
-          "desc": "인간이나 현상계는 자신이 뿌린 원인(씨앗)을 쉽게 잊어버린다는 대조적 의미를 담고 있습니다."
+          "tag": "시적 표현",
+          "desc": "인간의 짧은 기억력을 대지에 비유."
         }
       ]
     },
     {
       "en": "The Gods alone Remember everlastingly; they strike Remorselessly, and ever like for like.",
-      "ko": "신들만이 영원토록 기억하시네. 그들은 무자비하게 내리치며, 언제나 심은 대로 거두게 하시네.",
+      "ko": "신들만이 영원히 기억하시니, 그들은 가차 없이 치시며, 언제나 같은 것을 같은 것으로 갚으신다.",
       "vocab": [
         {
           "word": "everlastingly",
-          "mean": "영원히, 영원토록"
+          "mean": "영원히"
         },
         {
-          "word": "remorselessly",
-          "mean": "자비 없이, 가차없이"
+          "word": "Remorselessly",
+          "mean": "가차 없이"
         },
         {
           "word": "like for like",
-          "mean": "눈에는 눈, 이에는 이, 원인과 결과의 일치"
+          "mean": "같은 것을 같은 것으로"
         }
       ],
       "grammar": [
         {
-          "tag": "Spiritual Law",
-          "desc": "여기서 '신들(The Gods)'은 인격적인 신이 아니라, 인간의 의식을 움직이는 변하지 않는 법칙(Law)과 상상의 근원을 은유합니다. 'like for like'는 정확한 인과의 법칙을 뜻합니다."
+          "tag": "네빌 사상",
+          "desc": "상상력의 법칙은 감정이 없으며, 심은 대로 거두게 하는 엄격한 법칙임을 강조."
         }
       ]
     },
     {
       "en": "By their, great memories The Gods are known.",
-      "ko": "그 위대한 기억으로 인해, 신들은 알려지느니라.",
+      "ko": "그 위대한 기억력으로 신들은 알려진다.",
       "vocab": [
         {
-          "word": "great memory",
-          "mean": "위대한 기억 (뿌려진 모든 것을 하나도 빠짐없이 거두게 하는 영원한 기록)"
+          "word": "memories",
+          "mean": "기억력"
         }
       ],
       "grammar": [
         {
-          "tag": "Conclusion of Poem",
-          "desc": "인간은 망각해도 의식의 차원(법칙)은 모든 것을 기억하고 그대로 실현한다는 시적 결론입니다."
+          "tag": "결론",
+          "desc": "우리의 상상(신성)은 모든 것을 기록하고 결과로 나타낸다는 의미."
         }
       ]
     },
     {
       "en": "If man could only remember these moments of seedtime, he would never be surprised when the harvest appears in his world.",
-      "ko": "만약 인간이 이러한 파종의 순간들을 기억할 수만 있다면, 그는 자신의 세계에 수확이 나타났을 때 결코 놀라지 않을 것입니다.",
+      "ko": "만약 인간이 이러한 파종의 순간들을 기억할 수만 있다면, 그는 자신의 세상에 수확이 나타날 때 결코 놀라지 않을 것입니다.",
       "vocab": [
         {
           "word": "seedtime",
-          "mean": "파종기, 씨 뿌리는 시기"
+          "mean": "파종기, 씨 뿌리는 때"
         },
         {
           "word": "harvest",
@@ -16228,40 +15747,28 @@
       ],
       "grammar": [
         {
-          "tag": "Second Conditional",
-          "desc": "가정법 과거 구문(If + 과거형, 조동사 과거형 + 동사원형)으로 현재 사실의 반대나 실현 가능성이 희박한 상상을 나타냅니다."
-        },
-        {
-          "tag": "Neville's Mysticism",
-          "desc": "파종(씨 뿌림)은 상상의 행위이며, 수확은 그 상상이 3차원 세계에 현상화되는 것을 의미합니다."
+          "tag": "가정법 과거",
+          "desc": "현재 사실에 대한 반대나 실현 가능성이 낮은 가정을 나타내며, 네빌은 인간이 자신의 상상력을 의식적으로 통제하지 못함을 지적합니다."
         }
       ]
     },
     {
       "en": "But because he has no memory as to that moment in time when he dropped that seed, which is simply his emotional response to something he contemplated, something he overheard, something he observed, at that moment the thing was done; he didn’t have to labor to bring it to harvest – he simply encountered it as something already full grown, so he reaps now that on which he bestowed no labor, outside of choice.",
-      "ko": "그러나 그 씨앗을 떨어뜨렸던 시간 속 그 순간에 대한 기억이 그에게 없기 때문에—그 씨앗이란 단순히 그가 숙고했던 것, 엿들았던 것, 관찰했던 것에 대한 그의 감정적 반응일 뿐입니다—바로 그 순간에 그 일은 이루어졌습니다. 그는 그것을 수확하기 위해 애쓸 필요가 없었습니다. 그는 그것을 이미 완전히 자란 것으로 마주쳤을 뿐이며, 따라서 그는 선택 외에는 아무런 노력을 기울이지 않은 그것을 지금 거두어들이는 것입니다.",
+      "ko": "그러나 그가 씨앗을 떨어뜨렸던 그 시간의 순간에 대한 기억이 없기 때문에—그 씨앗이란 단순히 그가 숙고했거나, 우연히 들었거나, 관찰했던 어떤 것에 대한 그의 감정적 반응일 뿐입니다—그 순간에 일은 이미 이루어졌습니다. 그는 그것을 수확하기 위해 애쓸 필요가 없었습니다. 그는 그것을 이미 다 자란 것으로 마주했을 뿐이며, 따라서 그는 선택 외에는 아무런 노동도 들이지 않은 것을 지금 거두고 있는 것입니다.",
       "vocab": [
         {
-          "word": "drop the seed",
-          "mean": "씨앗을 떨어뜨리다(상상/의식에 인상을 새기다)"
+          "word": "contemplated",
+          "mean": "숙고한, 깊이 생각한"
         },
         {
-          "word": "contemplate",
-          "mean": "숙고하다, 깊이 생각하다"
-        },
-        {
-          "word": "bestow",
+          "word": "bestowed",
           "mean": "부여하다, 쏟다"
         }
       ],
       "grammar": [
         {
-          "tag": "Apposition / Relative Clause",
-          "desc": "관계대명사와 동격어구를 통해 '씨앗'이 무엇인지(감정적 반응)를 상세히 설명하고 있습니다."
-        },
-        {
-          "tag": "Neville's Mysticism",
-          "desc": "창조는 이미 완료되었습니다(The thing was done). 인간은 단지 의식의 선택을 통해 그것을 경험할 뿐입니다."
+          "tag": "상상력의 법칙",
+          "desc": "감정적 반응이 곧 씨앗을 심는 행위이며, 결과는 이미 상상 속에서 완료되었다는 네빌의 핵심 사상을 담고 있습니다."
         }
       ]
     },
@@ -16271,7 +15778,7 @@
       "vocab": [
         {
           "word": "attitude",
-          "mean": "태도, 자세"
+          "mean": "태도"
         },
         {
           "word": "reaction",
@@ -16280,14 +15787,14 @@
       ],
       "grammar": [
         {
-          "tag": "Prepositional Phrase",
-          "desc": "by 전치사구를 병치하여 원인과 수단을 강조하고 있습니다."
+          "tag": "선택의 주체",
+          "desc": "외부 환경이 아닌 내면의 반응이 현실을 결정한다는 원리입니다."
         }
       ]
     },
     {
       "en": "Now, am I responsible for others in my world?",
-      "ko": "자, 나는 내 세계의 다른 사람들에 대해 책임이 있는가?",
+      "ko": "자, 그렇다면 나는 내 세상에 있는 타인들에 대해 책임이 있는가?",
       "vocab": [
         {
           "word": "responsible",
@@ -16296,238 +15803,187 @@
       ],
       "grammar": [
         {
-          "tag": "Interrogative",
-          "desc": "독자에게 던지는 수사학적 질문으로, 다음 주장의 핵심 주제를 도입합니다."
+          "tag": "수사 의문문",
+          "desc": "독자의 주의를 환기하며 상호 연결성에 대한 논의를 시작합니다."
         }
       ]
     },
     {
       "en": "I certainly am!",
-      "ko": "나는 분명히 그렇다!",
-      "vocab": [
-        {
-          "word": "certainly",
-          "mean": "분명히, 틀림없이"
-        }
-      ],
+      "ko": "물론 그렇습니다!",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Ellipsis",
-          "desc": "‘I am responsible for others in my world’의 반복을 피하기 위한 대동사 표현입니다."
+          "tag": "단언",
+          "desc": "개인의 상상력이 타인에게 미치는 영향력을 강조합니다."
         }
       ]
     },
     {
       "en": "When I take my little mind, my little imagination and think because it’s mine – my Father gave it to me, that I can simply misuse it, it isn’t going to hurt another.",
-      "ko": "나의 작은 마음과 나의 작은 상상을 가지고, 그것이 내 것이며—내 아버지께서 내게 주셨으므로—내가 그것을 단순히 오용해도 다른 사람을 해치지 않을 것이라고 생각할 때 말입니다.",
+      "ko": "내가 나의 작은 마음과 작은 상상력을 가지고, 그것이 내 것이기에—내 아버지께서 내게 주신 것이기에—내가 그것을 함부로 사용해도 타인에게 해를 끼치지 않을 것이라고 생각할 때 말입니다.",
       "vocab": [
         {
-          "word": "imagination",
-          "mean": "상상력 (네빌 사상에서 인간 안에 내재된 신성 자체)"
-        },
-        {
           "word": "misuse",
-          "mean": "오용하다, 남용하다"
+          "mean": "오용하다, 함부로 사용하다"
         }
       ],
       "grammar": [
         {
-          "tag": "Nested Clause",
-          "desc": "because절 안에 that절이 포함된 복잡한 구조로 인간의 이기적이고 분리된 사고방식을 나타냅니다."
+          "tag": "신성한 상상력",
+          "desc": "상상력은 신으로부터 부여받은 것이며, 이를 오용하는 것은 곧 타인에게 영향을 미치는 행위임을 경고합니다."
         }
       ]
     },
     {
       "en": "I tell you you do have to use more control for the simple reason I am rooted in you and you are rooted in everyone and all of us are rooted in God.",
-      "ko": "내가 너희에게 말하노니, 내가 너희 안에 뿌리내리고 있고 너희가 모든 이 안에 뿌리내리고 있으며 우리 모두가 하나님 안에 뿌리내리고 있다는 단순한 이유 때문에, 너희는 더 많은 통제력을 사용해야만 합니다.",
+      "ko": "나는 당신에게 말합니다. 당신은 더 많은 통제력을 발휘해야 합니다. 그 이유는 간단합니다. 나는 당신 안에 뿌리 내리고 있고, 당신은 모든 이들 안에 뿌리 내리고 있으며, 우리 모두는 하나님 안에 뿌리 내리고 있기 때문입니다.",
       "vocab": [
         {
-          "word": "be rooted in",
-          "mean": "~에 뿌리내리다, 기원하다"
-        },
-        {
-          "word": "control",
-          "mean": "통제, 자제력"
+          "word": "rooted",
+          "mean": "뿌리 내린"
         }
       ],
       "grammar": [
         {
-          "tag": "Emphatic do",
-          "desc": "조동사 do를 사용하여 당위성과 필요성을 강하게 강조합니다."
-        },
-        {
-          "tag": "Neville's Mysticism",
-          "desc": "모든 인간이 하나의 신성한 뿌리(하나님) 안에서 연결되어 있다는 만물일체(Oneness)의 신비주의적 진리를 선포합니다."
+          "tag": "일원론",
+          "desc": "모든 존재가 하나님이라는 하나의 근원에 연결되어 있다는 네빌의 신비주의적 세계관입니다."
         }
       ]
     },
     {
       "en": "There is no separate individual detached being in my Father’s Kingdom.",
-      "ko": "내 아버지의 나라에는 분리되고 독립된 개존재란 존재하지 않습니다.",
+      "ko": "내 아버지의 왕국에는 분리되어 따로 떨어진 개별적 존재란 없습니다.",
       "vocab": [
         {
-          "word": "separate",
-          "mean": "분리된"
-        },
-        {
           "word": "detached",
-          "mean": "떨어진, 독립된"
-        },
-        {
-          "word": "Kingdom",
-          "mean": "나라, 왕국"
+          "mean": "분리된, 떨어진"
         }
       ],
       "grammar": [
         {
-          "tag": "Existential There",
-          "desc": "There is 구문을 통해 분리된 존재의 부존재를 단호하게 선언합니다."
+          "tag": "성경적 배경",
+          "desc": "요한복음 17장 21절의 '그들이 다 하나가 되어'라는 개념을 반영합니다."
         }
       ]
     },
     {
       "en": "We are one.",
       "ko": "우리는 하나입니다.",
-      "vocab": [
-        {
-          "word": "one",
-          "mean": "하나, 단일한 존재"
-        }
-      ],
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Declarative Sentence",
-          "desc": "짧고 강력한 평서문으로 네빌 고다드 사상의 핵심인 영적 연합(Unity)을 요약합니다."
+          "tag": "일체성",
+          "desc": "모든 인간이 신 안에서 하나라는 네빌 사상의 핵심 결론입니다."
         }
       ]
     },
     {
       "en": "I am completely responsible for the use or misuse of my imagination.",
-      "ko": "나는 내 상상력의 사용이나 오용에 대해 전적으로 책임이 있습니다.",
-      "vocab": [
-        {
-          "word": "completely",
-          "mean": "완전히, 전적으로"
-        },
-        {
-          "word": "responsible",
-          "mean": "책임이 있는"
-        }
-      ],
+      "ko": "나는 나의 상상력을 사용하거나 오용하는 것에 대해 전적으로 책임이 있습니다.",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Conclusion",
-          "desc": "글 전체의 결론부로, 상상력 사용에 대한 절대적인 개인적 책임을 강조합니다."
+          "tag": "개인의 책임",
+          "desc": "상상력의 주체로서 자신의 내면 상태를 관리해야 할 의무를 강조합니다."
         }
       ]
     },
     {
       "en": "Do you recall seeing on TV, a dramatized version of the sinking of the Titanic?",
-      "ko": "당신은 TV에서 타이타닉호 침몰을 각색한 버전을 본 것을 기억하십니까?",
+      "ko": "TV에서 타이타닉호 침몰을 극화한 버전을 본 것을 기억하십니까?",
       "vocab": [
         {
           "word": "recall",
-          "mean": "기억하다"
+          "mean": "기억해내다"
         },
         {
           "word": "dramatized",
-          "mean": "각색된"
-        },
-        {
-          "word": "sinking",
-          "mean": "침몰"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "Gerund",
-          "desc": "seeing은 recall의 목적어로 쓰인 동명사입니다."
-        }
-      ]
-    },
-    {
-      "en": "Do you recall it?",
-      "ko": "기억하시나요?",
-      "vocab": [
-        {
-          "word": "recall",
-          "mean": "기억하다"
+          "mean": "극화된"
         }
       ],
       "grammar": [
         {
           "tag": "Interrogative",
-          "desc": "청중의 주의를 환기하는 의문문입니다."
+          "desc": "청자의 주의를 환기하여 상상력을 자극하는 네빌의 전형적인 도입부"
+        }
+      ]
+    },
+    {
+      "en": "Do you recall it?",
+      "ko": "기억하십니까?",
+      "vocab": [
+        {
+          "word": "recall",
+          "mean": "기억하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Emphasis",
+          "desc": "청자의 기억을 통해 상상력의 실재성을 강조"
         }
       ]
     },
     {
       "en": "Have you read the book. “A Night to Remember”?",
-      "ko": "‘기억할 만한 밤(A Night to Remember)’이라는 책을 읽어보셨나요?",
+      "ko": "‘기억해야 할 밤(A Night to Remember)’이라는 책을 읽어보셨습니까?",
       "vocab": [
         {
-          "word": "read",
-          "mean": "읽다"
+          "word": "A Night to Remember",
+          "mean": "기억해야 할 밤(타이타닉 관련 저서)"
         }
       ],
       "grammar": [
         {
-          "tag": "Present Perfect",
-          "desc": "과거의 경험이 현재까지 이어지는 현재완료 의문문입니다."
+          "tag": "Reference",
+          "desc": "실제 사건을 통해 상상력의 법칙을 증명하기 위한 자료 제시"
         }
       ]
     },
     {
       "en": "Well the book itself is by Walter Lord: but 14 years before the actual harvest or that frightful event of the sinking of the Titanic a man in England wrote a book.",
-      "ko": "글쎄요, 그 책 자체는 월터 로드(Walter Lord)가 썼지만, 실제 수확 혹은 타이타닉호 침몰이라는 그 끔찍한 사건이 일어나기 14년 전에 영국의 한 남자가 책을 썼습니다.",
+      "ko": "글쎄요, 그 책 자체는 월터 로드가 썼지만, 타이타닉호 침몰이라는 실제 수확 혹은 그 끔찍한 사건이 일어나기 14년 전, 영국의 한 남자가 책을 썼습니다.",
       "vocab": [
         {
-          "word": "itself",
-          "mean": "그 자체로"
+          "word": "harvest",
+          "mean": "수확(네빌은 이를 '상상력의 결과물'로 해석)"
         },
         {
           "word": "frightful",
           "mean": "끔찍한"
-        },
-        {
-          "word": "harvest",
-          "mean": "수확(결실)"
         }
       ],
       "grammar": [
         {
-          "tag": "Prepositional Phrase",
-          "desc": "before the actual harvest...로 시간적 선행을 나타냅니다."
+          "tag": "Neville's Law",
+          "desc": "상상(씨앗)과 현실(수확) 사이의 시간적 간극을 설명"
         }
       ]
     },
     {
       "en": "He conceived this fabulous Atlantic liner and there he built her just like the Titanic, (only the Titanic was not built for 14 years) but he, in his imagination, conceived the liner of 800-ft.",
-      "ko": "그는 이 엄청난 대서양 여객선을 구상했고, 거기서 타이타닉호와 똑같이 그 배를 만들었습니다(단, 타이타닉호는 14년 동안 지어지지 않았지만요). 하지만 그는 자신의 상상 속에서 800피트짜리 여객선을 구상했던 것입니다.",
+      "ko": "그는 이 멋진 대서양 정기선을 구상했고, 타이타닉호와 똑같이 만들었습니다(단지 타이타닉호는 14년 동안 건조되지 않았을 뿐입니다). 하지만 그는 자신의 상상 속에서 800피트 길이의 정기선을 구상했습니다.",
       "vocab": [
         {
-          "word": "conceive",
-          "mean": "구상하다, 상상하다"
+          "word": "conceived",
+          "mean": "구상하다/잉태하다"
         },
         {
           "word": "fabulous",
-          "mean": "엄청난, 멋진"
-        },
-        {
-          "word": "liner",
-          "mean": "정기 여객선"
+          "mean": "멋진/전설적인"
         }
       ],
       "grammar": [
         {
-          "tag": "Parenthetical",
-          "desc": "괄호 안의 내용은 시간적 차이를 부연 설명합니다."
+          "tag": "Imagination",
+          "desc": "상상력이 물리적 현실보다 앞선다는 네빌의 핵심 사상"
         }
       ]
     },
     {
       "en": "She was triple screw, she carried 3000 passengers, she carried few lifeboats because she was unsinkable; she could make 24 knots; and then one night he filled her to the brim with rich and complacent people, and on a cold winter night he sunk her on an iceberg in the Atlantic.",
-      "ko": "그 배는 3축 스크루였고, 3천 명의 승객을 태웠으며, 가라앉지 않는 배였기 때문에 구명정을 거의 싣지 않았습니다. 시속 24노트를 낼 수 있었죠. 그러고 나서 어느 날 밤 그는 부유하고 안주하는 사람들로 그 배를 넘쳐나도록 채웠고, 어느 추운 겨울밤 대서양의 빙산에 부딪혀 그 배를 침몰시켰습니다.",
+      "ko": "그 배는 3개의 스크루를 가졌고, 3000명의 승객을 태웠으며, 침몰할 수 없었기에 구명보트는 거의 없었습니다. 시속 24노트로 달릴 수 있었죠. 그러던 어느 날 밤, 그는 배를 부유하고 안일한 사람들로 가득 채웠고, 추운 겨울밤 대서양의 빙산에 배를 침몰시켰습니다.",
       "vocab": [
         {
           "word": "triple screw",
@@ -16535,79 +15991,67 @@
         },
         {
           "word": "complacent",
-          "mean": "안주하는, 자기만족하는"
-        },
-        {
-          "word": "to the brim",
-          "mean": "가득히, 넘칠 정도로"
+          "mean": "안일한/자기만족적인"
         }
       ],
       "grammar": [
         {
-          "tag": "Compound Sentence",
-          "desc": "세미콜론과 접속사 and를 통해 여러 사건과 특징을 나열합니다."
+          "tag": "Creation",
+          "desc": "상상 속에서 모든 세부 사항을 창조하는 과정"
         }
       ]
     },
     {
       "en": "14 years later the White Star Line builds a ship.",
-      "ko": "14년 후 화이트 스타 라인(White Star Line)이 배를 건조합니다.",
+      "ko": "14년 후, 화이트 스타 라인(White Star Line)이 배를 건조합니다.",
       "vocab": [
         {
-          "word": "build",
-          "mean": "건조하다, 짓다"
+          "word": "White Star Line",
+          "mean": "화이트 스타 라인(타이타닉호 선사)"
         }
       ],
       "grammar": [
         {
-          "tag": "Historic Present",
-          "desc": "현장감과 생생함을 전달하기 위해 현재시제를 사용했습니다."
+          "tag": "Manifestation",
+          "desc": "상상이 물리적 현실로 구체화되는 과정"
         }
       ]
     },
     {
       "en": "She is 800 ft., she is a triple screw, she can make 24 knots, she can carry 3000 passengers, she has not enough lifeboats for passengers but she, too, is labeled unsinkable.",
-      "ko": "그 배는 800피트이고, 3축 스크루이며, 24노트를 낼 수 있고, 3천 명의 승객을 태울 수 있으며, 승객을 위한 구명정이 충분하지 않지만 그 역시 '불침선(가라앉지 않는 배)'이라는 낙인이 찍혀 있습니다.",
+      "ko": "그 배는 800피트이고, 3축 추진기이며, 24노트로 달릴 수 있고, 3000명의 승객을 태울 수 있으며, 승객을 위한 구명보트는 충분하지 않지만, 그 배 역시 침몰할 수 없다고 불렸습니다.",
       "vocab": [
         {
           "word": "labeled",
-          "mean": "명명된, ~라는 낙인이 찍힌"
-        },
-        {
-          "word": "unsinkable",
-          "mean": "가라앉지 않는"
+          "mean": "불리다/낙인찍히다"
         }
       ],
       "grammar": [
         {
-          "tag": "Asyndeton",
-          "desc": "접속사 없이 콤마로 문장들을 연결하여 평행 이론을 강조합니다."
+          "tag": "Correspondence",
+          "desc": "상상 속의 설계가 현실의 설계와 일치하는 현상"
         }
       ]
     },
     {
       "en": "She is filled to capacity with the rich, if not complacent, but the rich, because her passenger list was worth in that day, when the dollar was one hundred cents, two hundred and fifty million dollars was the worth of the passenger list.",
-      "ko": "그 배는 부자들로 만선을 이룹니다. 안주한다고까지는 할 수 없을지라도 부자들 말입니다. 왜냐하면 달러가 100센트였던 그 시절, 승객 명단의 가치만 해도 2억 5천만 달러에 달했기 때문입니다.",
+      "ko": "그 배는 부유한 사람들로 가득 찼습니다. 안일하지는 않았을지라도 부유한 사람들이었죠. 왜냐하면 그 당시 달러가 100센트였을 때, 승객 명단의 가치는 2억 5천만 달러였기 때문입니다.",
       "vocab": [
         {
-          "word": "to capacity",
-          "mean": "만석으로, 최대한으로"
-        },
-        {
-          "word": "worth",
-          "mean": "가치가 있는"
+          "word": "filled to capacity",
+          "mean": "정원까지 가득 찬"
         }
       ],
       "grammar": [
         {
-          "tag": "Parenthetical Interruption",
-          "desc": "if not complacent나 when the dollar... 같은 삽화적 표현이 복잡하게 얽혀 있습니다."
+          "tag": "Detail",
+          "desc": "상상력이 현실을 구성하는 구체적인 요소들"
         }
       ]
     },
     {
       "en": "Today it would be a billion dollars.",
-      "ko": "오늘날로 치면 그것은 10억 달러에 달할 것입니다.",
+      "ko": "오늘날이라면 10억 달러가 되었을 것입니다.",
       "vocab": [
         {
           "word": "billion",
@@ -16616,19 +16060,15 @@
       ],
       "grammar": [
         {
-          "tag": "Subjunctive",
-          "desc": "가상적인 현재의 가치를 나타내는 가정법 과거 조동사 would가 사용되었습니다."
+          "tag": "Context",
+          "desc": "시간의 흐름에 따른 가치 변화 언급"
         }
       ]
     },
     {
       "en": "All the wealth of Europe and the wealth of this country was sailing on that maiden voyage out of Southampton.",
-      "ko": "사우스햄튼을 떠나는 그 첫 항해에는 유럽의 모든 부와 이 나라의 부가 항해하고 있었습니다.",
+      "ko": "유럽의 모든 부와 이 나라의 부가 사우샘프턴에서 출발하는 그 처녀 항해에 함께하고 있었습니다.",
       "vocab": [
-        {
-          "word": "wealth",
-          "mean": "부, 재산"
-        },
         {
           "word": "maiden voyage",
           "mean": "처녀 항해"
@@ -16636,86 +16076,70 @@
       ],
       "grammar": [
         {
-          "tag": "Metaphor",
-          "desc": "부(wealth)가 마치 배에 타고 있는 인물들인 것처럼 의인화 및 상징화되었습니다."
+          "tag": "Symbolism",
+          "desc": "상상력이 현실의 모든 자원을 끌어당기는 모습"
         }
       ]
     },
     {
       "en": "Five nights at sea in this wonderful glorious ship and she went down on a cold April night on an iceberg.",
-      "ko": "이 경이롭고 영광스러운 배에서 바다 위로 5일 밤을 보낸 후, 그녀는 추운 4월의 밤에 빙산에 부딪혀 가라앉았습니다.",
+      "ko": "이 멋지고 영광스러운 배에서 바다 위 5일 밤을 보낸 후, 차가운 4월의 밤 빙산에 부딪혀 침몰했습니다.",
       "vocab": [
         {
           "word": "glorious",
-          "mean": "영광스러운, 멋진"
-        },
-        {
-          "word": "went down",
-          "mean": "가라앉았다, 침몰했다"
+          "mean": "영광스러운/멋진"
         }
       ],
       "grammar": [
         {
           "tag": "Conclusion",
-          "desc": "상상(의식)이 먼저 현실로 창조된다는 네빌 고다드의 핵심 사상을 실증하는 결말부입니다."
+          "desc": "상상(원인)이 현실(결과)로 완성되는 종결점"
         }
       ]
     },
     {
       "en": "Now that man wrote a book either to get something off his chest because he disliked the rich and the complacent, or he thought it might sell or he thought this is the means of bringing him a dollar as a writer.",
-      "ko": "이제 어떤 사람이 부유하고 안주하는 사람들을 싫어해서 가슴속의 앙금을 털어내기 위해서든, 그것이 잘 팔릴 것이라 생각해서든, 아니면 작가로서 돈을 벌어다 줄 수단이라 생각해서든 책을 썼습니다.",
+      "ko": "이제 그 사람은 부유하고 안일한 자들을 싫어해서 마음속의 응어리를 풀어내려고 책을 썼거나, 아니면 그것이 잘 팔릴 것이라고 생각했거나, 작가로서 돈을 벌 수 있는 수단이라고 생각해서 책을 썼습니다.",
       "vocab": [
         {
-          "word": "get something off one's chest",
-          "mean": "가슴속에 맺힌 것을 털어놓다"
+          "word": "get something off his chest",
+          "mean": "마음속의 응어리를 털어내다"
         },
         {
           "word": "complacent",
-          "mean": "안주하는, 자기만족하는"
-        },
-        {
-          "word": "means",
-          "mean": "수단"
+          "mean": "안일한, 자기만족에 빠진"
         }
       ],
       "grammar": [
         {
-          "tag": "Either A or B",
-          "desc": "저자의 동기가 무엇이었든 간에 외적 행동(책 집필)을 유발한 원인이 되었음을 설명합니다."
+          "tag": "Structure",
+          "desc": "네빌은 인간의 창조적 행위 뒤에 숨겨진 동기를 분석하며, 모든 현상은 인간의 상상력에서 비롯됨을 강조하기 위한 서론으로 사용합니다."
         }
       ]
     },
     {
       "en": "But, whatever was the motive behind his book which, by the way, he called “Futility” to show the utter futility of accumulated wealth, but the identical ship was built 14 years later and carried the same kind of a passenger list and went down in the same manner as the fictional ship.",
-      "ko": "그러나 그 책의 동기가 무엇이었든 간에, 그 책은 덧없이 쌓인 부의 완전한 무의미함을 보여주기 위해 마침 '헛됨(Futility)'이라 불렸는데, 정확히 그와 동일한 배가 14년 후에 건조되어 똑같은 부류의 승객 명단을 싣고 소설 속 배와 똑같은 방식으로 침몰했습니다.",
+      "ko": "하지만 그 책의 동기가 무엇이었든 간에, 참고로 그는 축적된 부의 완전한 헛됨을 보여주기 위해 그 책을 '헛됨(Futility)'이라고 불렀는데, 14년 후 똑같은 배가 건조되어 같은 종류의 승객 명단을 싣고 소설 속 배와 똑같은 방식으로 침몰했습니다.",
       "vocab": [
         {
-          "word": "motive",
-          "mean": "동기"
-        },
-        {
-          "word": "utter",
-          "mean": "완전한, 철저한"
-        },
-        {
           "word": "futility",
-          "mean": "무익, 헛됨"
+          "mean": "헛됨, 무익함"
         },
         {
           "word": "identical",
-          "mean": "동일한"
+          "mean": "똑같은"
         }
       ],
       "grammar": [
         {
-          "tag": "Neville's Law of Assumption",
-          "desc": "인간의 상상(여기서는 소설가의 허구적 창작)이 시공간을 초월해 물리적 현실로 반드시 구현된다는 네빌 고다드의 핵심 사상을 보여줍니다."
+          "tag": "Neville's Philosophy",
+          "desc": "상상력은 시간과 공간을 초월하여 현실을 창조한다는 네빌의 핵심 사상을 타이타닉호 사건(모건 로버트슨의 소설)을 통해 증명합니다."
         }
       ]
     },
     {
       "en": "Is there any fiction?",
-      "ko": "허구라는 게 과연 존재합니까?",
+      "ko": "허구라는 것이 존재할까요?",
       "vocab": [
         {
           "word": "fiction",
@@ -16725,193 +16149,117 @@
       "grammar": [
         {
           "tag": "Rhetorical Question",
-          "desc": "독자에게 던지는 수사 의문문으로, 상상계와 현실계의 구분이 허구임을 암시합니다."
+          "desc": "모든 현실은 상상력의 산물임을 강조하기 위한 반어적 질문입니다."
         }
       ]
     },
     {
       "en": "There is no fiction!",
-      "ko": "허구란 존재하지 않습니다!",
-      "vocab": [
-        {
-          "word": "fiction",
-          "mean": "허구"
-        }
-      ],
+      "ko": "허구는 없습니다!",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Absolute Affirmation",
-          "desc": "상상 속에서 일어난 모든 것은 이미 실재하는 현실이라는 네빌의 온톨로지(존재론)를 확언합니다."
+          "tag": "Assertion",
+          "desc": "상상력만이 유일한 실재이며, 우리가 보는 현실은 모두 상상력의 투영임을 단언합니다."
         }
       ]
     },
     {
       "en": "Tomorrow’s world is today’s fiction.",
       "ko": "내일의 세계는 오늘의 허구입니다.",
-      "vocab": [
-        {
-          "word": "tomorrow's world",
-          "mean": "내일의 세계"
-        },
-        {
-          "word": "today's fiction",
-          "mean": "오늘의 허구(상상)"
-        }
-      ],
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Time transcendence",
-          "desc": "시간은 선형적인 것이 아니라 상상의 투사에 불과함을 나타냅니다."
+          "tag": "Time Concept",
+          "desc": "네빌은 시간을 선형적으로 보지 않고, 상상력이 현실화되는 과정으로 이해합니다."
         }
       ]
     },
     {
       "en": "Today’s world was yesteryear’s fiction – the dreams of men of yesteryear.",
-      "ko": "오늘의 세계는 작년의 허구, 즉 지나간 시대 사람들의 꿈이었습니다.",
-      "vocab": [
-        {
-          "word": "yesteryear",
-          "mean": "지나간 해, 옛날"
-        },
-        {
-          "word": "dreams",
-          "mean": "꿈, 상상"
-        }
-      ],
+      "ko": "오늘의 세계는 과거의 허구, 즉 과거 사람들의 꿈이었습니다.",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Apposition",
-          "desc": "‘yesteryear’s fiction’과 ‘the dreams of men of yesteryear’가 동격으로 연결되어 인간의 상상이 곧 현실의 설계도임을 강조합니다."
+          "tag": "Manifestation",
+          "desc": "현재의 모든 물질적 현실은 과거 누군가의 상상(꿈)이 구체화된 결과물임을 설명합니다."
         }
       ]
     },
     {
       "en": "Wouldn’t it be wonderful if I could talk with someone across space and just use a wire?",
-      "ko": "공간을 가로질러 누군가와 대화할 수 있고 단지 전선 하나만 사용할 수 있다면 얼마나 멋질까요?",
-      "vocab": [
-        {
-          "word": "across space",
-          "mean": "공간을 가로질러"
-        },
-        {
-          "word": "wire",
-          "mean": "전선, 유선"
-        }
-      ],
+      "ko": "공간을 넘어 누군가와 전선 하나만으로 대화할 수 있다면 얼마나 멋질까요?",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Subjunctive Conditional",
-          "desc": "가정법 과거를 통해 당시에는 불가능했던 발명의 상상 단계를 묘사합니다."
+          "tag": "Imagination",
+          "desc": "전화기의 발명을 예로 들어, 인간의 상상이 어떻게 기술적 현실로 구현되는지 보여줍니다."
         }
       ]
     },
     {
       "en": "And I couldn’t see that one: it would be a mile away beyond the range of my voice – then maybe five miles and maybe a thousand miles – fantastic dreams – then they came true.",
-      "ko": "그리고 나는 그 사람을 볼 수 없을 것입니다. 내 목소리의 도달 범위를 넘어 1마일 떨어져 있을 수도 있고, 어쩌면 5마일, 어쩌면 1천 마일 떨어져 있을 수도 있겠죠. 환상적인 꿈이었지만, 그것들은 현실이 되었습니다.",
-      "vocab": [
-        {
-          "word": "range",
-          "mean": "범위"
-        },
-        {
-          "word": "fantastic dreams",
-          "mean": "환상적인 꿈"
-        },
-        {
-          "word": "come true",
-          "mean": "실현되다"
-        }
-      ],
+      "ko": "나는 그 사람을 볼 수 없었고, 내 목소리가 닿지 않는 1마일 밖, 아니 5마일, 어쩌면 1,000마일 밖이었을 것입니다. 환상적인 꿈이었지만, 그것들은 현실이 되었습니다.",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Asyndeton",
-          "desc": "접속사를 생략하고 나열하여 상상이 확장되는 속도감과 현실화 과정을 극적으로 전달합니다."
+          "tag": "Process",
+          "desc": "상상이 현실로 나타나는 과정에서의 점진적 확장을 묘사합니다."
         }
       ]
     },
     {
       "en": "When they came true, suppose I could do it without the means of a wire.",
-      "ko": "그것들이 현실이 되었을 때, 이번에는 전선이라는 수단 없이도 내가 그것을 할 수 있다고 가정해 봅시다.",
-      "vocab": [
-        {
-          "word": "suppose",
-          "mean": "~라고 가정해 보자"
-        },
-        {
-          "word": "means",
-          "mean": "수단"
-        }
-      ],
+      "ko": "그것들이 현실이 되었을 때, 이번에는 전선이라는 수단 없이도 그렇게 할 수 있다고 가정해 봅시다.",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Hypothetical progression",
-          "desc": "유선 통신의 실현을 넘어 무선 통신(라디오, 휴대전화 등)으로 진화하는 상상의 단계를 보여줍니다."
+          "tag": "Hypothetical",
+          "desc": "무선 통신(휴대폰)의 등장을 상상력의 진화로 연결합니다."
         }
       ]
     },
     {
       "en": "And it came true; suppose now I could do it not just in an audio sense but in a video sense.",
-      "ko": "그리고 그것도 현실이 되었습니다. 이제 내가 그것을 단지 오디오적 감각뿐만 아니라 비디오적 감각으로도 할 수 있다고 가정해 봅시다.",
-      "vocab": [
-        {
-          "word": "audio sense",
-          "mean": "소리의 감각 (청각)"
-        },
-        {
-          "word": "video sense",
-          "mean": "영상의 감각 (시각)"
-        }
-      ],
+      "ko": "그리고 그것은 현실이 되었습니다. 이제는 단순히 소리뿐만 아니라 영상으로도 할 수 있다고 가정해 봅시다.",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Correlative Conjunction",
-          "desc": "not just A but B 구문을 사용하여 기술과 상상의 경계가 확장되는 모습을 강조합니다."
+          "tag": "Evolution",
+          "desc": "상상력의 한계가 없음을 기술의 발전을 통해 역설합니다."
         }
       ]
     },
     {
       "en": "Suppose I could be seen?",
-      "ko": "내 모습이 보일 수 있게 된다면 어떨까요?",
-      "vocab": [
-        {
-          "word": "seen",
-          "mean": "보이다"
-        }
-      ],
+      "ko": "내가 보일 수 있다고 가정해 봅시다?",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "Passive Infinitive in Subjunctive",
-          "desc": "시각적 매체(텔레비전 등)의 발명을 상상의 관점에서 소급하여 설명합니다."
+          "tag": "Visualization",
+          "desc": "상상 속의 이미지가 시각적으로 구현되는 상태를 의미합니다."
         }
       ]
     },
     {
       "en": "And that came true, but when they were conceived, they were all fictional, all unreal.",
-      "ko": "그리고 그것도 현실이 되었습니다. 하지만 그것들이 처음 잉태되었을 때는 모두 허구였고, 모두 비현실적이었습니다.",
+      "ko": "그리고 그것도 현실이 되었습니다. 하지만 그것들이 처음 구상되었을 때는 모두 허구였고, 모두 비현실적이었습니다.",
       "vocab": [
         {
-          "word": "conceive",
-          "mean": "마음속으로 품다, 잉태하다"
-        },
-        {
-          "word": "fictional",
-          "mean": "허구의"
-        },
-        {
-          "word": "unreal",
-          "mean": "비현실적인"
+          "word": "conceived",
+          "mean": "구상된, 잉태된"
         }
       ],
       "grammar": [
         {
-          "tag": "Neville's Conception Principle",
-          "desc": "모든 현실은 주관적 의식 안에서의 잉태(conception)로부터 시작된다는 신비주의적 창조 원리를 집약합니다."
+          "tag": "Conclusion",
+          "desc": "모든 현실은 처음에 '비현실적인 상상'에서 시작된다는 네빌의 핵심 교리를 요약합니다."
         }
       ]
     },
     {
       "en": "There is nothing unreal, because God is infinite, and God has finished creation.",
-      "ko": "비현실적인 것은 아무것도 없습니다. 왜냐하면 하나님은 무한하시고, 하나님은 창조를 이미 끝마치셨기 때문입니다.",
+      "ko": "비현실적인 것은 아무것도 없습니다. 왜냐하면 신은 무한하며, 신은 창조를 이미 끝마쳤기 때문입니다.",
       "vocab": [
         {
           "word": "unreal",
@@ -16922,332 +16270,260 @@
           "mean": "무한한"
         },
         {
-          "word": "finished",
-          "mean": "완료된, 끝낸"
-        },
-        {
-          "word": "creation",
-          "mean": "창조"
+          "word": "finished creation",
+          "mean": "완성된 창조"
         }
       ],
       "grammar": [
         {
-          "tag": "Because절",
-          "desc": "이유를 나타내는 부사절로 네빌의 '완료된 창조(Finished Creation)' 교리를 뒷받침합니다."
-        },
-        {
-          "tag": "현재완료형",
-          "desc": "has finished는 창조가 과거에 시작되어 지금 막 끝난 것이 아니라, 이미 영원히 완성되어 있음을 나타냅니다."
+          "tag": "Neville's Core",
+          "desc": "네빌 고다드의 핵심 사상인 '이미 완성된 창조(It is finished)'를 설명함."
         }
       ]
     },
     {
       "en": "You cannot conceive of something that your Father has not only done and conceived of it, it is worked out in detail, in all its ramifications.",
-      "ko": "당신이 상상할 수 있는 그 어떤 것도, 당신의 아버지께서 이미 행하셨고 상상하셨을 뿐만 아니라 그 모든 세부 사항과 모든 파급 효과까지 세밀하게 짜여 있지 않은 것은 없습니다.",
+      "ko": "당신의 아버지께서 이미 행하고 구상하셨을 뿐만 아니라, 그 모든 세부 사항과 파생된 결과까지 완벽하게 이루어 놓지 않은 것은 당신이 상상할 수조차 없습니다.",
       "vocab": [
         {
-          "word": "conceive of",
-          "mean": "상상하다, 마음에 품다"
+          "word": "conceive",
+          "mean": "상상하다, 구상하다"
         },
         {
           "word": "ramifications",
-          "mean": "파급 효과, 세부 갈래"
-        },
-        {
-          "word": "work out",
-          "mean": "상세히 계획되다, 풀려나가다"
+          "mean": "파생된 결과, 영향"
         }
       ],
       "grammar": [
         {
-          "tag": "관계대명사절",
-          "desc": "that절이 something을 수식하며, 하나님(Father)의 마음 안에서 이미 모든 것이 완벽하게 기획되었음을 강조합니다."
+          "tag": "Ontology",
+          "desc": "인간의 상상은 신의 창조적 활동의 반영임을 강조함."
         }
       ]
     },
     {
       "en": "You and I are only becoming aware of increasing portions of that which already is.",
-      "ko": "당신과 나는 단지 이미 존재하는 것의 더 많은 부분들을 점차 인식해 나갈 뿐입니다.",
+      "ko": "당신과 나는 이미 존재하는 것의 더 많은 부분을 알아차려 가고 있을 뿐입니다.",
       "vocab": [
         {
-          "word": "become aware of",
-          "mean": "인식하게 되다, 알게 되다"
+          "word": "becoming aware of",
+          "mean": "~을 알아차리게 되다"
         },
         {
-          "word": "portions",
-          "mean": "부분, 몫"
-        },
-        {
-          "word": "already is",
-          "mean": "이미 존재함"
+          "word": "increasing portions",
+          "mean": "점점 더 많은 부분"
         }
       ],
       "grammar": [
         {
-          "tag": "진행형 (are becoming)",
-          "desc": "창조를 새로 만들어내는 것이 아니라, 이미 존재하는 실재(That Which Is)를 우리의 의식으로 깨달아가는 과정을 나타냅니다."
+          "tag": "Epistemology",
+          "desc": "창조는 새로운 것을 만드는 것이 아니라 이미 존재하는 것을 발견하는 과정임을 설명함."
         }
       ]
     },
     {
       "en": "We are not making a thing – we are discovering God’s wonderful world.",
-      "ko": "우리는 무언가를 만들어내고 있는 것이 아니라, 하나님의 경이로운 세계를 발견하고 있는 것입니다.",
+      "ko": "우리는 무언가를 만들고 있는 것이 아니라, 신의 경이로운 세계를 발견하고 있는 것입니다.",
       "vocab": [
         {
-          "word": "making",
-          "mean": "만들다, 제조하다"
-        },
-        {
           "word": "discovering",
-          "mean": "발견하다"
-        },
-        {
-          "word": "wonderful world",
-          "mean": "경이로운 세계"
+          "mean": "발견하는"
         }
       ],
       "grammar": [
         {
-          "tag": "대조 구조",
-          "desc": "대시(-)를 통해 '만드는 것(making)'과 '발견하는 것(discovering)'을 대조하여 네빌 고다드 사상의 핵심인 '완료된 창조'를 재확인합니다."
+          "tag": "Metaphysics",
+          "desc": "창조의 주체는 신이며 인간은 그 창조물을 인식하는 관찰자임을 명시함."
         }
       ]
     },
     {
       "en": "But now in this church – at least here it should be done, for this is a church of the mind: this is Science of Mind, where there is a science to planting and you do it in a certain scientific manner.",
-      "ko": "그러나 이제 이 교회 안에서는, 적어도 이곳에서는 그렇게 행해져야 합니다. 왜냐하면 이곳은 마음에 관한 교회이기 때문입니다. 이곳은 '마음의 과학'이며, 씨를 심는 데는 과학적 법칙이 존재하고 여러분은 그것을 특정한 과학적 방식으로 행하기 때문입니다.",
+      "ko": "하지만 이제 이 교회에서는, 적어도 이곳에서는 그렇게 되어야 합니다. 왜냐하면 이곳은 마음의 교회이기 때문입니다. 이것은 마음의 과학이며, 씨를 뿌리는 데에도 과학이 존재하고 당신은 그것을 특정한 과학적 방식으로 수행합니다.",
       "vocab": [
-        {
-          "word": "church of the mind",
-          "mean": "마음의 교회 (인간의 의식을 성전으로 보는 관점)"
-        },
         {
           "word": "Science of Mind",
           "mean": "마음의 과학"
         },
         {
           "word": "planting",
-          "mean": "심기 (씨앗/상상의 파종)"
-        },
-        {
-          "word": "scientific manner",
-          "mean": "과학적 방식"
+          "mean": "씨 뿌리기(상상하기)"
         }
       ],
       "grammar": [
         {
-          "tag": "관계부사 where",
-          "desc": "Science of Mind를 선행사로 받아 그 안에서 법칙이 적용되는 방식을 설명합니다."
+          "tag": "Methodology",
+          "desc": "상상을 통한 창조를 '과학적 방식'으로 체계화할 수 있음을 강조함."
         }
       ]
     },
     {
       "en": "You just don’t walk the street and reflect; read the papers and reflect – you go out a more positive person than people who gather in similar areas, for the simple reason they go just to hear a service and to be told how bad the world is.",
-      "ko": "당신은 그저 거리를 걸으며 생각에 잠기거나 신문을 읽고 상념에 젖어 있어서는 안 됩니다. 당신은 유사한 장소에 모이는 사람들보다 훨씬 더 긍정적인 사람으로 나아가야 합니다. 그 이유는 단순합니다. 그들은 단지 예배를 듣고 세상이 얼마나 나쁜지 주입받기 위해 그곳에 가기 때문입니다.",
+      "ko": "당신은 그저 거리를 걸으며 생각에 잠기거나, 신문을 읽으며 생각에 잠기는 것이 아닙니다. 당신은 비슷한 곳에 모이는 사람들보다 더 긍정적인 사람이 되어 나갑니다. 그 이유는 간단합니다. 그들은 그저 예배를 듣고 세상이 얼마나 나쁜지에 대한 이야기만 듣기 위해 모이기 때문입니다.",
       "vocab": [
         {
           "word": "reflect",
-          "mean": "숙고하다, 묵상하다, 반영하다"
+          "mean": "숙고하다, 생각에 잠기다"
         },
         {
-          "word": "positive person",
-          "mean": "긍정적인 사람"
-        },
-        {
-          "word": "gather",
-          "mean": "모이다"
-        },
-        {
-          "word": "service",
-          "mean": "예배"
+          "word": "positive",
+          "mean": "긍정적인"
         }
       ],
       "grammar": [
         {
-          "tag": "명령조의 강조",
-          "desc": "부정문과 대조법을 사용하여 세상의 부정적인 정보에 휩쓸리지 않고, 의식을 능동적으로 통제하는 태도를 강조합니다."
+          "tag": "Practical Application",
+          "desc": "수동적인 태도와 능동적인 상상력의 차이를 대조함."
         }
       ]
     },
     {
       "en": "You’re not coming here to be told how bad the world is, for if you believe it is bad, there is something you must do about it because you have planted the world.",
-      "ko": "여러분은 이 세상이 얼마나 나쁜지 듣기 위해 여기에 오는 것이 아닙니다. 왜냐하면 여러분이 그것이 나쁘다고 믿는다면, 여러분이 그 세상을 심었기 때문에 그것에 대해 여러분이 해야 할 무언가가 있기 때문입니다.",
+      "ko": "당신은 세상이 얼마나 나쁜지 듣기 위해 이곳에 온 것이 아닙니다. 왜냐하면 당신이 세상이 나쁘다고 믿는다면, 당신이 그 세상을 심었기 때문에 당신이 그것에 대해 해야 할 일이 있기 때문입니다.",
       "vocab": [
         {
-          "word": "plant",
-          "mean": "심다, 파종하다 (네빌 사상에서 의식의 씨앗을 뿌림을 의미)"
-        },
-        {
-          "word": "seedtime",
-          "mean": "파종기, 씨 뿌리는 때"
+          "word": "planted",
+          "mean": "심었다(창조했다)"
         }
       ],
       "grammar": [
         {
-          "tag": "for절",
-          "desc": "이유를 나타내는 접속사 for로 앞서 말한 주장의 근거를 설명함."
-        },
-        {
-          "tag": "네빌 사상",
-          "desc": "외적인 세상은 객관적 실체가 아니라 내면의 상상력(의식)으로 심은 것의 결과물이라는 전제."
+          "tag": "Neville's Law",
+          "desc": "세상은 외부의 실체가 아니라 내면의 상상력이 투영된 결과물임을 강조함."
         }
       ]
     },
     {
       "en": "You have your seedtime.",
-      "ko": "여러분에게는 씨 뿌리는 때가 있습니다.",
+      "ko": "당신에게는 당신만의 파종기가 있습니다.",
       "vocab": [
         {
           "word": "seedtime",
-          "mean": "씨 뿌리는 시기"
+          "mean": "파종기(상상력을 통해 씨앗을 심는 시기)"
         }
       ],
       "grammar": [
         {
-          "tag": "성경적 은유",
-          "desc": "창세기 8장 22절의 '심을 때와 거둘 때(seedtime and harvest)' 개념을 원인과 결과의 법칙에 적용."
+          "tag": "Biblical Metaphor",
+          "desc": "창세기 8:22의 '심음과 거둠'의 법칙을 상상력의 원리로 해석함."
         }
       ]
     },
     {
       "en": "So here people gather to be told how to operate this wonderful gift that the Father gave them.",
-      "ko": "그러므로 사람들은 아버지께서 그들에게 주신 이 놀라운 선물을 어떻게 운용해야 하는지 듣기 위해 여기에 모입니다.",
+      "ko": "그래서 사람들은 아버지께서 그들에게 주신 이 놀라운 선물을 어떻게 운용하는지 배우기 위해 이곳에 모입니다.",
       "vocab": [
         {
           "word": "operate",
-          "mean": "작동시키다, 운용하다"
+          "mean": "운용하다, 작동시키다"
         },
         {
-          "word": "the Father",
-          "mean": "아버지 (인간 내면의 신성, 즉 인간의 상상력 자체를 비유)"
+          "word": "gift",
+          "mean": "선물(상상력)"
         }
       ],
       "grammar": [
         {
-          "tag": "관계대명사절",
-          "desc": "that the Father gave them이 선행사 this wonderful gift를 수식함."
+          "tag": "The Father",
+          "desc": "네빌 고다드 사상에서 '아버지'는 인간 내면의 신성한 상상력을 의미함."
         }
       ]
     },
     {
       "en": "There is this wonderful mind and imagination.",
-      "ko": "거기에는 이 놀라운 마음과 상상력이 있습니다.",
+      "ko": "이곳에는 놀라운 마음과 상상력이 있습니다.",
       "vocab": [
         {
           "word": "imagination",
-          "mean": "상상력 (네빌 고다드 사상에서 인간 내면의 하나님 본체)"
+          "mean": "상상력(인간 내면의 신성)"
         }
       ],
       "grammar": [
         {
-          "tag": "There is 구문",
-          "desc": "존재를 나타내며, 인간에게 내재된 창조적 힘인 상상력을 강조함."
+          "tag": "Core Concept",
+          "desc": "인간의 상상력이 곧 신의 창조적 능력임을 정의함."
         }
       ]
     },
     {
       "en": "So you are told to go out and be choosey in your selection; single out that aspect of reality to which you want to respond, success, health, dignity, nobility, something wonderful that you contribute to the good of the world.",
-      "ko": "그러므로 여러분은 나가서 선택에 까다로워지라는 말을 듣습니다. 즉, 성공, 건강, 존엄성, 고결함 등 세상의 선함에 이바지할 수 있는 멋진 무언가처럼, 여러분이 반응하고 싶어 하는 현실의 그 측면을 골라내라는 것입니다.",
+      "ko": "그러므로 당신은 밖으로 나가 선택에 신중을 기하라는 말을 듣습니다. 당신이 반응하고 싶은 현실의 측면, 즉 성공, 건강, 존엄성, 고귀함, 그리고 당신이 세상의 선함에 기여할 수 있는 놀라운 무언가를 골라내십시오.",
       "vocab": [
         {
           "word": "choosey",
-          "mean": "까다롭게 고르는, 엄선하는"
+          "mean": "까다로운, 신중한"
         },
         {
           "word": "single out",
           "mean": "골라내다, 선별하다"
-        },
-        {
-          "word": "dignity",
-          "mean": "존엄, 위엄"
-        },
-        {
-          "word": "nobility",
-          "mean": "고결함, 고귀함"
         }
       ],
       "grammar": [
         {
-          "tag": "수동태",
-          "desc": "you are told to(~하라는 가르침을 받다) 형태로 가르침을 수용하는 자세 표현."
-        },
-        {
-          "tag": "동격/나열",
-          "desc": "success, health, dignity, nobility 등이 aspect of reality를 구체적으로 설명함."
+          "tag": "Mental Diet",
+          "desc": "무엇을 상상할지 의식적으로 선택하는 '정신적 식단'의 중요성."
         }
       ]
     },
     {
       "en": "As you walk by you are contributing to society, you contribute to the community in which you live, not necessarily by giving dollars but you contribute by your wonderful seedtime.",
-      "ko": "여러분이 길을 걸어갈 때 사회에 기여하고 있으며, 거주하는 지역사회에 기여하고 있는 것입니다. 반드시 돈을 주는 것을 통해서가 아니라, 여러분의 놀라운 파종기(씨 뿌림)를 통해 기여하는 것입니다.",
+      "ko": "당신이 걸어 다니면서 당신은 사회에 기여하고 있으며, 당신이 사는 공동체에 기여하고 있습니다. 반드시 돈을 줌으로써가 아니라, 당신의 놀라운 파종기를 통해 기여하는 것입니다.",
       "vocab": [
         {
-          "word": "community",
-          "mean": "지역사회, 공동체"
-        },
-        {
-          "word": "not necessarily",
-          "mean": "반드시 ~인 것은 아닌"
+          "word": "contribute",
+          "mean": "기여하다"
         }
       ],
       "grammar": [
         {
-          "tag": "대조 구조",
-          "desc": "not necessarily by giving dollars but by your wonderful seedtime를 통해 외적 물질적 기부가 아닌 내면의 의식적 기여를 강조함."
+          "tag": "Metaphysical Contribution",
+          "desc": "물질적 행위보다 내면의 상상적 행위가 더 근본적인 사회적 기여임을 역설함."
         }
       ]
     },
     {
       "en": "If, in your community, you see the need of maybe a church, you see the need of some wonderful school, you don’t wait until people get together, you actually, in your mind’s eye, contemplate the joy that is yours because of the wonderful school here for the children, a wonderful church here to lift man spiritually, and you wonder what it would be like were it true; – you feel the thrill of witnessing it within.",
-      "ko": "만약 여러분의 지역사회에서 어쩌면 교회나 멋진 학교의 필요성을 보게 된다면, 여러분은 사람들이 모일 때까지 기다리지 않고, 실제로 마음의 눈으로 아이들을 위한 이 멋진 학교와 인간을 영적으로 고양할 이 멋진 교회 때문에 여러분의 것이 될 기쁨을 묵상합니다. 그리고 그것이 사실이라면 어떨지 상상해보며 – 내면에서 그것을 목격하는 전율을 느낍니다.",
+      "ko": "만약 당신의 공동체에 교회나 훌륭한 학교가 필요하다고 느껴진다면, 사람들이 모일 때까지 기다리지 마십시오. 당신은 실제로 마음의 눈으로 아이들을 위한 훌륭한 학교와 사람들을 영적으로 고양할 멋진 교회가 이곳에 있어 당신이 누리는 기쁨을 숙고하십시오. 그리고 그것이 사실이라면 어떤 느낌일지 궁금해하십시오. 내면에서 그것을 목격하는 전율을 느끼십시오.",
       "vocab": [
         {
-          "word": "mind’s eye",
-          "mean": "마음의 눈, 상상력의 시각"
+          "word": "mind's eye",
+          "mean": "마음의 눈(상상력)"
         },
         {
           "word": "contemplate",
-          "mean": "묵상하다, 깊이 생각하다"
-        },
-        {
-          "word": "thrill",
-          "mean": "전율, 황홀감"
+          "mean": "숙고하다, 깊이 생각하다"
         }
       ],
       "grammar": [
         {
-          "tag": "가정법 과거",
-          "desc": "what it would be like were it true(if it were true의 도치)를 사용하여 현재 사실의 반대나 상상 속의 가정을 생생하게 표현."
-        },
-        {
-          "tag": "네빌의 핵심 기법",
-          "desc": "소망이 이미 성취되었을 때의 느낌(feeling)과 전율을 내면에서 먼저 경험하는 것이 곧 창조의 완성임을 드러냄."
+          "tag": "Living in the End",
+          "desc": "이미 이루어진 상태를 상상 속에서 느끼고 그 감정을 현실화하는 기법."
         }
       ]
     },
     {
       "en": "That is seedtime.",
-      "ko": " 그것이 바로 씨 뿌리는 때입니다.",
+      "ko": "그것이 바로 파종기입니다.",
       "vocab": [
         {
           "word": "seedtime",
-          "mean": "씨 뿌리는 시기 (상상 작용을 통한 원인 제공)"
+          "mean": "파종기"
         }
       ],
       "grammar": [
         {
-          "tag": "지시어",
-          "desc": "앞서 언급한 내면의 상상과 느낌의 과정을 'seedtime'으로 명명하며 정의함."
+          "tag": "Conclusion",
+          "desc": "앞서 설명한 상상적 행위가 곧 씨앗을 심는 행위임을 재확인함."
         }
       ]
     },
     {
       "en": "Then in a way that you do not know and you need not labor to produce, you will encounter that school and that church and these lovely things in your community.",
-      "ko": "그러면 여러분이 알지 못하고 그것을 만들어내려고 애쓸 필요도 없는 방식으로, 여러분은 지역사회에서 그 학교와 그 교회, 그리고 이 사랑스러운 것들을 마주하게 될 것입니다.",
+      "ko": "그러면 당신이 알지 못하는 방식으로, 그리고 그것을 만들어내기 위해 애쓸 필요 없이, 당신은 당신의 공동체에서 그 학교와 그 교회, 그리고 이 사랑스러운 것들을 마주하게 될 것입니다.",
       "vocab": [
         {
           "word": "labor",
-          "mean": "애쓰다, 고생하다, 노동하다"
+          "mean": "애쓰다, 노동하다"
         },
         {
           "word": "encounter",
@@ -17256,130 +16532,134 @@
       ],
       "grammar": [
         {
-          "tag": "자연스러운 현현",
-          "desc": "인위적으로 노력(labor)할 필요 없이 상상(seedtime)의 결과가 자연스럽게 현실화되는 법칙(The Law and the Promise)을 설명."
+          "tag": "Effortless Manifestation",
+          "desc": "상상력이 현실화될 때는 인위적인 노력이 아닌 자연스러운 전개 과정을 거침."
         }
       ]
     },
     {
       "en": "So you plant the seed and let others, who think that they are bringing it into being, let them think so.",
-      "ko": "그러므로 당신은 씨앗을 심고, 그것을 존재하게 만든다고 생각하는 다른 이들은 그냥 그렇게 생각하도록 내버려 두십시오.",
+      "ko": "그러니 당신은 씨앗을 심고, 그것을 현실로 가져오고 있다고 생각하는 다른 이들이 그렇게 생각하도록 내버려 두십시오.",
       "vocab": [
         {
-          "word": "plant the seed",
-          "mean": "씨앗을 심다 (상상력을 통한 씨앗 심기)"
+          "word": "plant",
+          "mean": "심다"
         },
         {
-          "word": "bring into being",
-          "mean": "존재하게 하다, 창조하다"
+          "word": "seed",
+          "mean": "씨앗(상상력의 씨앗)"
+        },
+        {
+          "word": "bringing it into being",
+          "mean": "현실화하다"
         }
       ],
       "grammar": [
         {
-          "tag": "Imperative & Subordination",
-          "mean": "상상력의 법칙을 따르는 자로서 타인의 오해나 행동에 개입하지 않고 자신의 내적 작업에 집중하라는 네빌 고다드의 태도를 보여줍니다."
+          "tag": "Neville's Law",
+          "desc": "상상한 것은 이미 존재하며, 외부의 사건은 그저 상상이 현실화되는 과정일 뿐임을 강조함."
         }
       ]
     },
     {
       "en": "You go about this world planting the good – that is why you are here.",
-      "ko": "당신은 선한 것을 심으며 이 세상을 다닙니다 – 그것이 바로 당신이 이곳에 존재하는 이유입니다.",
+      "ko": "당신은 이 세상을 다니며 선한 것을 심으십시오. 그것이 바로 당신이 여기 존재하는 이유입니다.",
       "vocab": [
         {
           "word": "go about",
-          "mean": "돌아다니다, 행동하다"
+          "mean": "돌아다니다"
         },
         {
           "word": "planting the good",
-          "mean": "선한 것(이상적인 현실)을 심다"
+          "mean": "선한 것을 심다"
         }
       ],
       "grammar": [
         {
-          "tag": "Dash for Explanation",
-          "mean": "대시(-)를 통해 인간 존재의 목적이 외적 활동이 아니라 상상력을 통한 창조(선한 것 심기)에 있음을 강조합니다."
+          "tag": "Purpose",
+          "desc": "인간의 존재 목적을 상상력을 통해 선한 현실을 창조하는 창조주로서의 역할로 정의함."
         }
       ]
     },
     {
       "en": "We are gathered here on Sunday mornings to discover more and more about this wonderful gift that God gave us, that we may single out all the lovely things in the world and bring them to birth in our world;",
-      "ko": "우리는 하나님이 우리에게 주신 이 놀라운 선물에 대해 점점 더 많이 발견하기 위해 일요일 아침마다 여기에 모여 있으며, 이를 통해 세상의 모든 사랑스러운 것들을 골라내어 우리 세상에 태어나게 할 수 있습니다;",
+      "ko": "우리는 신이 우리에게 주신 이 놀라운 선물에 대해 점점 더 많이 발견하기 위해 일요일 아침마다 이곳에 모입니다. 우리가 세상의 모든 사랑스러운 것들을 골라내어 우리들의 세상에 태어나게 할 수 있도록 말입니다.",
       "vocab": [
         {
           "word": "wonderful gift",
-          "mean": "놀라운 선물 (인간의 상상력)"
+          "mean": "놀라운 선물(상상력)"
         },
         {
           "word": "single out",
-          "mean": "골라내다, 선별하다"
+          "mean": "골라내다"
         },
         {
           "word": "bring to birth",
-          "mean": "탄생시키다, 현시하다"
+          "mean": "탄생시키다(현실화하다)"
         }
       ],
       "grammar": [
         {
-          "tag": "Purpose Clause",
-          "mean": "that절을 통해 상상력이라는 신성한 선물을 사용하는 목적이 세상의 아름다운 상태를 현실화하는 것임을 설명합니다."
+          "tag": "Divine Gift",
+          "desc": "네빌은 인간의 상상력을 신이 부여한 유일한 창조적 도구로 간주함."
         }
       ]
     },
     {
       "en": "This morning you take not only yourself – start with self – then turn to a friend in your mind’s eye, and congratulate him on his good fortune – congratulate him on his expansion in his world, and actually feel the thrill of such contact – at that moment of response that was a changed attitude in regard to that friend- at that moment you planted.",
-      "ko": "오늘 아침 당신은 자신뿐만 아니라 – 자신부터 시작하십시오 – 마음의 눈으로 친구를 향해 돌아서서 그의 행운을 축하해 주고, 그의 세상에서의 확장을 축하해 주며, 그러한 접촉의 전율을 실제로 느끼십시오 – 그 친구에 대한 태도가 변화된 그 응답의 순간에 – 바로 그 순간에 당신은 씨앗을 심은 것입니다.",
+      "ko": "오늘 아침 당신은 자신뿐만 아니라(자신부터 시작하십시오) 마음의 눈으로 친구를 향해 돌아서서, 그의 행운을 축하해 주십시오. 그의 세상이 확장된 것을 축하해 주고, 그러한 접촉의 전율을 실제로 느껴보십시오. 그 반응의 순간, 즉 그 친구에 대한 태도가 바뀐 바로 그 순간에 당신은 씨앗을 심은 것입니다.",
       "vocab": [
         {
           "word": "mind's eye",
-          "mean": "마음의 눈 (상상력)"
+          "mean": "마음의 눈(상상)"
         },
         {
           "word": "congratulate",
-          "mean": "축하하다 (상상 속에서 타인의 성공을 기뻐하는 행위)"
+          "mean": "축하하다"
         },
         {
-          "word": "thrill of such contact",
-          "mean": "그러한 접촉의 전율 (상상의 생생함과 감정의 동의)"
+          "word": "thrill",
+          "mean": "전율"
         }
       ],
       "grammar": [
         {
-          "tag": "Parenthetical Embellishment",
-          "mean": "대시와 반복되는 명령문을 통해 내적 상상 작업(Revision 및 Assumption)의 구체적 방법과 태도의 전환을 강조합니다."
+          "tag": "Technique",
+          "desc": "상상 속에서 타인의 성공을 축하하는 행위가 곧 현실을 창조하는 '심기'의 과정임을 설명함."
         }
       ]
     },
     {
       "en": "Now, in a way you do not know and you need not know, that seed is going to go through its normal natural hidden passage and appear as a reality in your world.",
-      "ko": "이제, 당신이 알지도 못하고 알 필요도 없는 방식으로, 그 씨앗은 정상적이고 자연스러운 숨겨진 통로를 거쳐 당신의 세상에 현실로 나타날 것입니다.",
+      "ko": "이제 당신이 알지 못하고 알 필요도 없는 방식으로, 그 씨앗은 정상적이고 자연스러운 숨겨진 통로를 거쳐 당신의 세상에 현실로 나타날 것입니다.",
       "vocab": [
         {
           "word": "hidden passage",
-          "mean": "숨겨진 통로 (의식이 현실화되는 과정)"
+          "mean": "숨겨진 통로"
         },
         {
-          "word": "appear as a reality",
-          "mean": "현실로 나타나다 (외적 현시)"
+          "word": "reality",
+          "mean": "현실"
         }
       ],
       "grammar": [
         {
-          "tag": "Adverbial Clause",
-          "mean": "결과가 나타나는 방식에 집착하지 말고 씨앗(상상)을 믿고 내버려 두라는 네빌의 핵심 가르침을 전달합니다."
+          "tag": "Detachment",
+          "desc": "현실화의 과정(How)에 집착하지 말고 결과에만 집중하라는 네빌의 핵심 가르침."
         }
       ]
     },
     {
       "en": "Then you will know the power latent within you and you will stop reflecting life and you become one what I call a true creator in the sense that-I mean creator – that you are creating by selecting wise, wise, lovely things in this world and giving them expression in this world of ours.",
-      "ko": "그러면 당신은 내면에 잠재된 힘을 알게 될 것이고, 삶을 반영하는 것을 멈추고 내가 창조자라고 부르는 존재가 될 것입니다 – 즉, 이 세상에서 현명하고 현명하며 사랑스러운 것들을 선택하고 그것들을 우리 세상에 표현(구체화)함으로써 창조하는 자가 되는 것입니다.",
+      "ko": "그때 당신은 당신 안에 잠재된 힘을 알게 될 것이고, 삶을 그저 반영하기만 하는 것을 멈추고, 내가 말하는 진정한 창조자가 될 것입니다. 즉, 이 세상에서 지혜롭고 사랑스러운 것들을 선택하여 우리들의 세상에 표현함으로써 창조하는 창조자가 되는 것입니다.",
       "vocab": [
         {
-          "word": "latent power",
-          "mean": "잠재된 힘 (인간 안의 하나님, 상상력)"
+          "word": "latent",
+          "mean": "잠재된"
         },
         {
           "word": "reflecting life",
-          "mean": "삶을 반영하다 (외적 상황에 반응하는 삶)"
+          "mean": "삶을 반영하다(수동적 삶)"
         },
         {
           "word": "true creator",
@@ -17388,26 +16668,18 @@
       ],
       "grammar": [
         {
-          "tag": "Self-Correction & Apposition",
-          "mean": "말을 고쳐 짚는 표현을 통해 '창조자'라는 단어의 의미를 '선택을 통한 현실화'로 명확히 정의합니다."
+          "tag": "Transformation",
+          "desc": "수동적인 삶의 관찰자에서 능동적인 현실의 창조자로 변화하는 과정을 묘사함."
         }
       ]
     },
     {
       "en": "So that’s what I mean by seedtime and harvest; the importance of the right attitude: and you can do it, you need not wait for circumstances to change, you need not wait for the stimulus of a change in the object to produce in yourself the change of attitude.",
-      "ko": "그러므로 그것이 내가 파종과 추수, 그리고 올바른 태도의 중요성으로 의미하는 바이며, 여러분은 그것을 할 수 있고, 상황이 변하기를 기다릴 필요가 없으며, 여러분 안에서 태도의 변화를 만들어내기 위해 대상의 변화라는 자극을 기다릴 필요가 없습니다.",
+      "ko": "그것이 바로 제가 말하는 파종기와 수확기, 즉 올바른 태도의 중요성입니다. 여러분은 그것을 할 수 있으며, 상황이 변하기를 기다릴 필요가 없고, 태도의 변화를 스스로 만들어내기 위해 외부 대상의 변화라는 자극을 기다릴 필요도 없습니다.",
       "vocab": [
         {
           "word": "seedtime and harvest",
-          "mean": "파종과 추수 (원인과 결과의 법칙)"
-        },
-        {
-          "word": "attitude",
-          "mean": "태도 (네빌 사상에서 상상의 상태)"
-        },
-        {
-          "word": "circumstances",
-          "mean": "상황, 환경"
+          "mean": "파종기와 수확기(성경적 원리)"
         },
         {
           "word": "stimulus",
@@ -17416,23 +16688,15 @@
       ],
       "grammar": [
         {
-          "tag": "so that's what I mean",
-          "desc": "선행사를 포함한 관계대명사 what을 사용하여 화자의 핵심 주장을 강조함"
-        },
-        {
-          "tag": "you need not wait",
-          "desc": "조동사 need를 본동사처럼 사용하여 '~할 필요가 없다'라는 불필요를 나타냄"
+          "tag": "Neville's Law",
+          "desc": "외부 환경이 변하기를 기다리지 말고, 내면의 태도를 먼저 바꾸는 것이 창조의 핵심임을 강조함."
         }
       ]
     },
     {
       "en": "In your office, does the boss act in a rude way towards you?",
-      "ko": "당신의 사무실에서, 상사가 당신에게 무례하게 행동하나요?",
+      "ko": "당신의 사무실에서, 상사가 당신에게 무례하게 행동합니까?",
       "vocab": [
-        {
-          "word": "office",
-          "mean": "사무실, 직장"
-        },
         {
           "word": "rude",
           "mean": "무례한"
@@ -17440,60 +16704,44 @@
       ],
       "grammar": [
         {
-          "tag": "do/does V",
-          "desc": "현재시제의 일반동사 의문문 형태"
+          "tag": "Scenario",
+          "desc": "일상적인 갈등 상황을 예시로 들어 상상력을 적용할 구체적인 환경을 설정함."
         }
       ]
     },
     {
       "en": "Well then what would it be like if he now saw in me the lady, the helpful person that I really am, or want to be.",
-      "ko": "그렇다면 그가 지금 나를 숙녀로, 내가 진정으로 존재하거나 되고자 하는 도움이 되는 사람으로 바라본다면 그것은 어떤 모습일까요?",
+      "ko": "그렇다면 그가 지금 나에게서 내가 진정으로 그렇거나 혹은 되고 싶어 하는 그 숙녀, 그 도움이 되는 사람을 본다면 어떤 기분일지 상상해 보십시오.",
       "vocab": [
         {
           "word": "what would it be like",
-          "mean": "~라면 어떤 것일까? (상상의 상태를 가정하는 표현)"
-        },
-        {
-          "word": "helpful",
-          "mean": "도움이 되는"
+          "mean": "~라면 어떤 기분일까"
         }
       ],
       "grammar": [
         {
-          "tag": " 가정법 과거",
-          "desc": "현재 사실의 반대나 상상의 상황을 가정하는 if절과 주절(what would it be like)"
+          "tag": "Living in the End",
+          "desc": "이미 원하는 모습이 된 상태를 가정하고 그 느낌을 느끼는 네빌의 핵심 기법."
         }
       ]
     },
     {
       "en": "Suppose he saw in me someone he could praise for my work and raise me in the salary world, give me an increase in salary because of my added effort; suppose he could see that in me, well, contemplate the boss seeing that in you as though he saw it and rewarded you with an increase.",
-      "ko": "만약 그가 나를 내 일에 대해 칭찬하고 급여 세계에서 나를 올려줄 수 있는 사람, 나의 더해진 노력으로 인해 급여를 올려줄 수 있는 사람으로 본다고 가정해보세요; 그가 내 안에서 그것을 볼 수 있다고 가정해 보세요, 자, 상사가 그것을 본 것처럼, 그리고 당신에게 급여 인상으로 보상한 것처럼 당신 안에서 그것을 보고 있는 상사를 묵상(상상)하십시오.",
+      "ko": "그가 나에게서 나의 업무를 칭찬하고 급여를 올려줄 만한 사람을 본다고 가정해 보십시오. 나의 더해진 노력 때문에 급여를 인상해 준다고 가정해 보십시오. 그가 당신에게서 그것을 본다고 가정하고, 상사가 그것을 보고 당신에게 급여 인상으로 보상한 것처럼 그 모습을 묵상하십시오.",
       "vocab": [
         {
           "word": "suppose",
-          "mean": "~라고 가정해 보다"
-        },
-        {
-          "word": "praise",
-          "mean": "칭찬하다"
-        },
-        {
-          "word": "increase in salary",
-          "mean": "급여 인상"
+          "mean": "가정해 보라"
         },
         {
           "word": "contemplate",
-          "mean": "묵상하다, 깊이 상상하다"
-        },
-        {
-          "word": "as though",
-          "mean": "마치 ~인 것처럼"
+          "mean": "묵상하다, 깊이 생각하다"
         }
       ],
       "grammar": [
         {
-          "tag": "as though + 과거동사",
-          "desc": "가정법 과거 구문으로, 현재 사실과 다르거나 상상하는 바를 마치 현실인 것처럼 느끼게 함"
+          "tag": "Imaginal Act",
+          "desc": "상상 속에서 이미 보상을 받은 상태를 확정 짓고 그 느낌을 유지하는 묵상의 중요성."
         }
       ]
     },
@@ -17502,72 +16750,44 @@
       "ko": "그 순간이 바로 심는 순간입니다.",
       "vocab": [
         {
-          "word": "moment",
-          "mean": "순간"
-        },
-        {
           "word": "planting",
           "mean": "심기, 파종"
         }
       ],
       "grammar": [
         {
-          "tag": "네빌 사상 해설",
-          "desc": "상상 속에서 소망을 씨앗으로 심는 확신의 순간을 의미합니다."
+          "tag": "Neville's Law",
+          "desc": "상상력을 통해 의식의 씨앗을 심는 행위를 강조함."
         }
       ]
     },
     {
       "en": "It may not come tonight, it may not even come this week in the paycheck, but it will come.",
-      "ko": "오늘 밤에 오지 않을 수도 있고, 이번 주 급여 봉투에 담겨 오지 않을 수도 있지만, 반드시 올 것입니다.",
+      "ko": "오늘 밤에 나타나지 않을 수도 있고, 이번 주 급여 명세서에 나타나지 않을 수도 있지만, 그것은 반드시 올 것입니다.",
       "vocab": [
         {
           "word": "paycheck",
-          "mean": "급여, 급료"
-        },
-        {
-          "word": "persist",
-          "mean": "지속하다"
+          "mean": "급여, 봉급"
         }
       ],
       "grammar": [
         {
-          "tag": "시공간 초월",
-          "desc": "물리적인 시간의 지연에 구애받지 않고 씨앗(상상)은 반드시 현실화된다는 믿음을 강조합니다."
+          "tag": "Persistence",
+          "desc": "결과가 즉각적이지 않더라도 상상력의 법칙은 반드시 실현된다는 확신."
         }
       ]
     },
     {
-      "en": "You simply keep on planting the lovely things;",
-      "ko": "당신은 단순히 사랑스러운 것들을 계속해서 심어나가기만 하면 됩니다.",
-      "vocab": [
-        {
-          "word": "keep on",
-          "mean": "계속하다"
-        },
-        {
-          "word": "lovely",
-          "mean": "사랑스러운"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "멘탈 다이어트",
-          "desc": "부정적 현실에 흔들리지 않고 바람직한 상태를 지속적으로 상상하는 태도입니다."
-        }
-      ]
-    },
-    {
-      "en": "but if every day when you leave the office you say, “What a skinflint”, and you go home and you discuss him with your mother or your husband or someone else, and they sympathize because they really believe you, for they are playing the same reflective, negative approach to life;",
-      "ko": "하지만 만약 매일 사무실을 나설 때 \"정말 구두쇠 같군\"이라고 말하고, 집에 가서 어머니나 남편 혹은 다른 사람과 그 사람에 대해 의논하며, 그들이 당신을 진심으로 믿기에 공감해 준다면—왜냐하면 그들 역시 삶에 대해 똑같이 반사적이고 부정적인 태도를 취하고 있기 때문입니다—",
+      "en": "You simply keep on planting the lovely things; but if every day when you leave the office you say, “What a skinflint”, and you go home and you discuss him with your mother or your husband or someone else, and they sympathize because they really believe you, for they are playing the same reflective, negative approach to life; but if as you ride home or walk home, you walk in the attitude that he had done it – he had increased your income, he had praised your work, and day after day, in spite of other things to the contrary, you persist in it, do you know he will do it?",
+      "ko": "당신은 그저 사랑스러운 것들을 계속 심기만 하면 됩니다. 하지만 매일 사무실을 떠날 때 '정말 구두쇠 같으니'라고 말하고, 집에 가서 어머니나 남편 혹은 다른 누군가와 그 사람에 대해 논의하며, 그들이 당신을 진심으로 믿고 동조한다면(그들 또한 삶에 대해 똑같이 부정적이고 반사적인 태도를 취하고 있기 때문입니다), 그러나 만약 당신이 집으로 가면서 그가 이미 그것을 해냈다는 태도로 걷는다면—그가 당신의 수입을 올려주었고, 당신의 일을 칭찬했다는 태도로—그리고 반대되는 상황에도 불구하고 날마다 그것을 고수한다면, 그가 그렇게 할 것임을 아십니까?",
       "vocab": [
         {
           "word": "skinflint",
-          "mean": "구두쇠, 인색한 사람"
+          "mean": "구두쇠"
         },
         {
           "word": "sympathize",
-          "mean": "동정하다, 공감하다"
+          "mean": "동조하다, 공감하다"
         },
         {
           "word": "reflective",
@@ -17576,38 +16796,18 @@
       ],
       "grammar": [
         {
-          "tag": "외부 반영",
-          "desc": "타인과의 부정적인 수다는 내면의 부정적 상태를 재확인하고 강화하는 행위임을 지적합니다."
-        }
-      ]
-    },
-    {
-      "en": "but if as you ride home or walk home, you walk in the attitude that he had done it – he had increased your income, he had praised your work, and day after day, in spite of other things to the contrary, you persist in it, do you know he will do it?",
-      "ko": "그러나 차를 타고 집으로 가거나 걸어갈 때, 그가 이미 일을 해냈다는 태도—당신의 수입을 늘려주었고, 당신의 일을 칭찬했다는 태도—로 걷고, 반대되는 다른 일들이 있음에도 불구하고 날마다 그것을 고수한다면, 그가 실제로 그렇게 할 것이라는 것을 아십니까?",
-      "vocab": [
-        {
-          "word": "attitude",
-          "mean": "태도"
-        },
-        {
-          "word": "to the contrary",
-          "mean": "그것과 반대되는"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "가상 현실의 가정",
-          "desc": "이미 소원을 이룬 상태의 감각(Feeling)을 유지하며 귀가하는 구체적인 상상 실천법입니다."
+          "tag": "Revision",
+          "desc": "타인에 대한 부정적인 평가를 멈추고 이미 이루어진 상태를 상상하는 것이 변화의 핵심임."
         }
       ]
     },
     {
       "en": "You will produce in him the change of heart because you first produced it in yourself, and he will see in you qualities that he cannot now see, and then your whole vast world begins to blossom – you do it in every sense of the word.",
-      "ko": "당신이 먼저 당신 자신 안에서 그것을 만들어냈기 때문에 당신은 그 사람 안에서 마음의 변화를 이끌어낼 것이고, 그는 현재 볼 수 없는 자질들을 당신 안에서 보게 될 것이며, 그 후 당신의 광대하고 거대한 세상이 꽃피기 시작할 것입니다—당신은 말 그대로 그것을 해내는 것입니다.",
+      "ko": "당신이 먼저 당신 안에서 그것을 만들어냈기 때문에 그에게서 마음의 변화를 이끌어낼 것이며, 그는 지금은 볼 수 없는 당신의 자질을 보게 될 것입니다. 그러면 당신의 거대한 세계 전체가 꽃피기 시작할 것입니다. 당신은 말 그대로 모든 면에서 그것을 해내는 것입니다.",
       "vocab": [
         {
           "word": "change of heart",
-          "mean": "마음의 변화, 태도 변화"
+          "mean": "마음의 변화"
         },
         {
           "word": "blossom",
@@ -17616,39 +16816,31 @@
       ],
       "grammar": [
         {
-          "tag": "내면이 먼저다",
-          "desc": "타인은 내 자아의 거울이므로, 내 안의 인식을 바꾸면 타인의 태도와 외부 세계 전체가 바뀐다는 네빌의 핵심 법칙입니다."
+          "tag": "As Within, So Without",
+          "desc": "외부 세계는 내면의 상태를 반영하는 거울임을 설명함."
         }
       ]
     },
     {
       "en": "You know someone who is lonely – one who really should be happily married in this world.",
-      "ko": "당신은 외로운 누군가를 알고 있습니다—이 세상에서 진정으로 행복하게 결혼해야 마땅한 사람 말입니다.",
+      "ko": "당신은 외로운 누군가를 알고 있습니다. 이 세상에서 정말로 행복하게 결혼해야 할 사람 말입니다.",
       "vocab": [
         {
           "word": "lonely",
           "mean": "외로운"
-        },
-        {
-          "word": "happily married",
-          "mean": "행복하게 결혼한"
         }
       ],
       "grammar": [
         {
-          "tag": "타인을 위한 상상(Intercession)",
-          "desc": "타인의 행복을 대신 상상해 주는 대리 중보 기도의 원리를 설명합니다."
+          "tag": "Imaginal Act",
+          "desc": "타인을 위한 상상(중보 기도)의 중요성을 강조함."
         }
       ]
     },
     {
       "en": "What would it be like if you were told, not by the individual necessarily, but by a third party of the good news concerning John, concerning Mary or someone else.",
-      "ko": "반드시 그 당사자가 아니라, 제3자로부터 존이나 메리 혹은 다른 누군가에 관한 기쁜 소식을 듣게 된다면 그것은 어떤 느낌일까요?",
+      "ko": "만약 당신이 그 당사자가 아니라 제3자로부터 존이나 메리, 혹은 다른 누군가에 관한 좋은 소식을 듣는다면 기분이 어떨까요?",
       "vocab": [
-        {
-          "word": "necessarily",
-          "mean": "필연적으로, 반드시"
-        },
         {
           "word": "third party",
           "mean": "제3자"
@@ -17656,66 +16848,61 @@
       ],
       "grammar": [
         {
-          "tag": "소식 듣기 기법",
-          "desc": "제3자로부터 축하 인사를 받거나 좋은 소식을 전해 듣는 상황을 상상하는 네빌의 대표적 기법입니다."
+          "tag": "Feeling is the Secret",
+          "desc": "소식을 들었을 때의 감정을 느끼는 것이 실현의 열쇠임."
         }
       ]
     },
     {
       "en": "Someone desirous of a lovely home and a gracious home.",
-      "ko": "사랑스럽고 우아한 집을 갈망하는 누군가를 위해서 말입니다.",
+      "ko": "사랑스럽고 우아한 가정을 간절히 바라는 누군가 말입니다.",
       "vocab": [
         {
           "word": "desirous",
-          "mean": "바라는, 갈망하는"
+          "mean": "간절히 바라는"
         },
         {
           "word": "gracious",
-          "mean": "우아한, 안락한"
+          "mean": "우아한, 품위 있는"
         }
       ],
       "grammar": [
         {
-          "tag": "소원의 대상",
-          "desc": "물리적 환경의 결핍을 채우기 위한 상상의 적용 범위를 넓혀줍니다."
+          "tag": "Desire",
+          "desc": "모든 소망은 이미 실현될 준비가 된 씨앗임을 암시함."
         }
       ]
     },
     {
       "en": "What would it be like ?",
-      "ko": "과연 어떨까요?",
-      "vocab": [
-        {
-          "word": "what would it be like",
-          "mean": "~한다면 어떤 기분일까"
-        }
-      ],
+      "ko": "기분이 어떨까요?",
+      "vocab": [],
       "grammar": [
         {
-          "tag": "가상 감각",
-          "desc": "상상 속에서 그 상태를 현실로 느낄 때의 감정을 촉구하는 수 rhetorical 의문문입니다."
+          "tag": "Living in the End",
+          "desc": "소망이 이루어진 상태의 감정을 현재로 가져오는 네빌의 핵심 기법."
         }
       ]
     },
     {
       "en": "Don’t be envious.",
-      "ko": "질투하지 마십시오.",
+      "ko": "질투하지 마세요.",
       "vocab": [
         {
           "word": "envious",
-          "mean": "질투하는, 부러워하는"
+          "mean": "질투하는"
         }
       ],
       "grammar": [
         {
-          "tag": "부정적 감정 경계",
-          "desc": "타인의 성공이나 행복을 시기하는 것은 결핍을 확증하는 것이므로 금해야 합니다."
+          "tag": "Golden Rule",
+          "desc": "타인의 성공을 시기하는 것은 자신의 잠재의식에 부정적인 씨앗을 심는 것과 같음."
         }
       ]
     },
     {
       "en": "Try to rejoice.",
-      "ko": "기뻐하도록 노력하십시오.",
+      "ko": "기뻐하도록 노력하세요.",
       "vocab": [
         {
           "word": "rejoice",
@@ -17724,38 +16911,34 @@
       ],
       "grammar": [
         {
-          "tag": "공감의 기쁨",
-          "desc": "타인의 행복을 진심으로 축하하고 기뻐하는 것이 곧 나의 축복을 심는 행위입니다."
+          "tag": "State of Mind",
+          "desc": "기쁨은 창조를 가속화하는 긍정적인 감정 상태임."
         }
       ]
     },
     {
       "en": "Feel the joy that is theirs, and that moment is seedtime for them.",
-      "ko": "그들의 것인 그 기쁨을 느끼십시오. 그러면 그 순간이 그들에게는 파종기(씨 뿌리는 시간)가 됩니다.",
+      "ko": "그들의 기쁨을 느끼세요. 바로 그 순간이 그들에게는 파종기입니다.",
       "vocab": [
         {
           "word": "seedtime",
-          "mean": "파종기, 씨 뿌릴 때"
-        },
-        {
-          "word": "harvest",
-          "mean": "수확하다"
+          "mean": "파종기, 씨 뿌리는 때"
         }
       ],
       "grammar": [
         {
-          "tag": "대리 축복",
-          "desc": "타인의 기쁨을 나의 감정으로느낄 때, 그것이 그들에게 씨앗이 되어 심어진다는 신비적 원리입니다."
+          "tag": "Empathy",
+          "desc": "타인의 행복을 진심으로 축하하는 것이 곧 그들을 위한 창조적 행위임."
         }
       ]
     },
     {
       "en": "They will harvest it – and that is our opportunity to go through the world planting and planting wisely.",
-      "ko": "그들은 그것을 수확하게 될 것입니다—그리고 그것이 바로 우리가 이 세상을 돌아다니며 지혜롭게 심고 또 심을 수 있는 우리의 기회입니다.",
+      "ko": "그들은 그것을 수확할 것입니다. 그리고 그것이 바로 우리가 세상을 살아가며 지혜롭게 씨앗을 심고 또 심을 기회입니다.",
       "vocab": [
         {
-          "word": "opportunity",
-          "mean": "기회"
+          "word": "harvest",
+          "mean": "수확하다"
         },
         {
           "word": "wisely",
@@ -17764,195 +16947,143 @@
       ],
       "grammar": [
         {
-          "tag": "인류를 위한 사명",
-          "desc": "상상의 힘을 깨달은 자는 타인에게 사랑과 성공의 씨앗을 심어주는 축복의 통로가 되어야 함을 강조하며 강연을 마칩니다."
+          "tag": "Law of Sowing and Reaping",
+          "desc": "성경적 원리(갈라디아서 6:7)를 네빌의 상상력 법칙으로 해석함."
         }
       ]
     },
     {
       "en": "Unfortunately, too many of us in church movements – I don’t think you will find it in this church – but too many of us in church movements have a very serious attitude towards life.",
-      "ko": "불행하게도, 교회 운동에 참여하는 우리들 중 너무 많은 사람들이—이 교회에서는 그런 것을 찾아볼 수 없겠지만요—삶에 대해 너무나 심각한 태도를 가지고 있습니다.",
-      "vocab": [
-        [
-          {
-            "word": "unfortunately",
-            "mean": "불행하게도"
-          },
-          {
-            "word": "church movements",
-            "mean": "교회 운동, 종교적 움직임"
-          },
-          {
-            "word": "serious attitude",
-            "mean": "심각한 태도"
-          }
-        ]
-      ],
-      "grammar": [
-        [
-          {
-            "tag": "Insertion",
-            "desc": "대화체에서 청중과의 교감을 위해 삽입절(I don’t think...)이 사용됨."
-          },
-          {
-            "tag": "Neville's Teaching",
-            "desc": "네빌 고다드는 삶을 너무 심각하게 대하는 태도가 상상력을 통한 창조를 가로막는 장애물이라고 본다."
-          }
-        ]
-      ]
-    },
-    {
-      "en": "And, of course, the basic attitude is the attitude towards life, not necessarily the individual attitude towards an object or towards an individual, but the attitude itself that the individual adopts through life, towards life, and they have a very serious one.",
-      "ko": "그리고 물론, 기본적인 태도는 삶을 향한 태도입니다. 반드시 어떤 대상이나 개인을 향한 개별적인 태도라기보다는, 개인이 삶을 관통하며 삶을 향해 취하는 태도 그 자체를 말하며, 그들은 이것을 매우 심각하게 유지합니다.",
-      "vocab": [
-        [
-          {
-            "word": "basic attitude",
-            "mean": "기본적인 태도"
-          },
-          {
-            "word": "adopt",
-            "mean": "취하다, 채택하다"
-          }
-        ]
-      ],
-      "grammar": [
-        [
-          {
-            "tag": "Correlative Structure",
-            "desc": "not necessarily A, but B 구조를 사용하여 개별 대상이 아닌 삶 전체를 향한 근본적 태도의 중요성을 강조함."
-          }
-        ]
-      ]
-    },
-    {
-      "en": "Well, Orage very wisely and very humorously said the serious attitude is this, – they really believe that God has an enormous struggle against helpless odds, and he said that produces in the individual the emotion of “helping poor Father”.",
-      "ko": "글쎄요, 오라지(Orage)는 아주 지혜롭고 유머러스하게도 그 심각한 태도란 바로 이런 것이라고 말했습니다. 그들은 하나님이 속수무책인 역경 속에서 엄청난 투쟁을 벌이고 있다고 진심으로 믿는다는 것이며, 그는 그것이 개인에게 '가엾은 아버지를 돕는다'는 감정을 불러일으킨다고 말했습니다.",
-      "vocab": [
-        [
-          {
-            "word": "enormous struggle",
-            "mean": "엄청난 투쟁"
-          },
-          {
-            "word": "helpless odds",
-            "mean": "속수무책인 역경, 불리한 조건"
-          },
-          {
-            "word": "poor Father",
-            "mean": "가엾은 아버지 (인간이 구제해야 할 무력한 신을 비유)"
-          }
-        ]
-      ],
-      "grammar": [
-        [
-          {
-            "tag": "Attribution",
-            "desc": "사상가 알프레드 오라지(A.R. Orage)의 통찰을 인용하여 전통적 종교관의 허점을 폭로함."
-          },
-          {
-            "tag": "Neville's Teaching",
-            "desc": "네빌은 인간이 하나님(내면의 상상력)을 외부에 두고 무력한 존재로 여기는 오류를 비판한다."
-          }
-        ]
-      ]
-    },
-    {
-      "en": "They go to help poor Father who has created the world and gave it to his children.",
-      "ko": "그들은 세상을 창조하고 그것을 자녀들에게 주신 가엾은 아버지를 도우러 나섭니다.",
-      "vocab": [
-        [
-          {
-            "word": "create",
-            "mean": "창조하다"
-          },
-          {
-            "word": "children",
-            "mean": "자녀들"
-          }
-        ]
-      ],
-      "grammar": [
-        [
-          {
-            "tag": "Relative Clause",
-            "desc": "주격 관계대명사 who가 'poor Father'를 수식하며 전통 기독교의 왜곡된 신관을 풍자함."
-          }
-        ]
-      ]
-    },
-    {
-      "en": "Now he brought up another interesting point of the scientific attitude towards life.",
-      "ko": "이제 그는 삶에 대한 과학적 태도의 또 다른 흥미로운 점을 꺼내었습니다.",
+      "ko": "불행하게도, 교회 운동에 참여하는 우리들 중 너무 많은 사람들이 - 이 교회에서는 그런 모습을 찾을 수 없을 것이라 생각합니다만 - 교회 운동에 참여하는 너무 많은 사람들이 삶에 대해 매우 심각한 태도를 가지고 있습니다.",
       "vocab": [
         {
-          "word": "bring up",
-          "mean": "꺼내다,언급하다"
+          "word": "church movements",
+          "mean": "교회 운동(종교적 단체 활동)"
         },
         {
-          "word": "scientific attitude",
-          "mean": "과학적 태도"
+          "word": "serious attitude",
+          "mean": "심각한 태도"
         }
       ],
       "grammar": [
         {
-          "tag": "전치사구",
-          "mean": "towards life는 앞의 the scientific attitude를 수식함."
+          "tag": "Parenthetical clause",
+          "desc": "네빌은 청중을 안심시키며 자신의 가르침이 기존의 무거운 종교적 관습과 다름을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "And, of course, the basic attitude is the attitude towards life, not necessarily the individual attitude towards an object or towards an individual, but the attitude itself that the individual adopts through life, towards life, and they have a very serious one.",
+      "ko": "그리고 물론, 기본적인 태도는 삶에 대한 태도이지, 반드시 어떤 대상이나 개인에 대한 개별적인 태도가 아니며, 개인이 삶을 살아가면서 삶을 향해 취하는 그 태도 자체인데, 그들은 그것을 매우 심각하게 가지고 있습니다.",
+      "vocab": [
+        {
+          "word": "basic attitude",
+          "mean": "기본적인 태도"
+        },
+        {
+          "word": "adopts",
+          "mean": "취하다, 채택하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Emphasis",
+          "desc": "삶을 대하는 근본적인 태도가 곧 그 사람의 존재 상태(State of Consciousness)임을 강조함."
+        }
+      ]
+    },
+    {
+      "en": "Well, Orage very wisely and very humorously said the serious attitude is this, – they really believe that God has an enormous struggle against helpless odds, and he said that produces in the individual the emotion of “helping poor Father”.",
+      "ko": "글쎄요, 오라지(Orage)는 매우 지혜롭고 유머러스하게 그 심각한 태도란 바로 이것이라고 말했습니다. 그들은 신이 가망 없는 역경 속에서 거대한 투쟁을 벌이고 있다고 진심으로 믿으며, 그는 그것이 개인에게 '가엾은 아버지를 돕는다'는 감정을 만들어낸다고 말했습니다.",
+      "vocab": [
+        {
+          "word": "Orage",
+          "mean": "A.R. 오라지(철학자)"
+        },
+        {
+          "word": "helpless odds",
+          "mean": "가망 없는 역경/불리한 상황"
+        },
+        {
+          "word": "poor Father",
+          "mean": "가엾은 아버지(신을 나약한 존재로 투사하는 인간의 오류)"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Neville's critique",
+          "desc": "신을 외부의 고통받는 존재로 여기는 종교적 환상을 비판하며, 신은 인간의 상상력 그 자체임을 암시함."
+        }
+      ]
+    },
+    {
+      "en": "They go to help poor Father who has created the world and gave it to his children.",
+      "ko": "그들은 세상을 창조하여 자녀들에게 주신 가엾은 아버지를 도우러 갑니다.",
+      "vocab": [
+        {
+          "word": "created the world",
+          "mean": "세상을 창조하다"
+        },
+        {
+          "word": "gave it to his children",
+          "mean": "그것을 자녀들에게 주다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Irony",
+          "desc": "창조주를 돕겠다는 인간의 오만을 지적하며, 이미 모든 것을 주신 신의 본질을 망각한 상태를 꼬집음."
+        }
+      ]
+    },
+    {
+      "en": "Now he brought up another interesting point of the scientific attitude towards life.",
+      "ko": "이제 그는 삶에 대한 과학적 태도에 관한 또 다른 흥미로운 점을 제기했습니다.",
+      "vocab": [
+        {
+          "word": "scientific attitude",
+          "mean": "과학적 태도"
+        },
+        {
+          "word": "brought up",
+          "mean": "제기하다, 언급하다"
+        }
+      ],
+      "grammar": [
+        {
+          "tag": "Introduction",
+          "desc": "네빌 고다드는 과학적 유물론이 가진 허무주의적 관점을 비판하기 위해 서두를 엽니다."
         }
       ]
     },
     {
       "en": "Having discovered the little molecule or the little atom and the wonderful construction, that is, theoretically – having discovered this wonderful orderly construction of the bricks that make up the world, their attitude is one of orderly insignificance because they believe the world is gradually burning itself out, so no matter how orderly it is, if they really believe the sun will eventually go out and the earth will consume all its resources, what other attitude could they adopt than all dressed up with nowhere to go, because if eventually it is all going to be in nothing anyway, no matter how orderly it is today, it could only be orderly insignificance, but I tell you, as one who has seen beyond the veil, there is no such thing as coming to an end.",
-      "ko": "작은 분자나 작은 원자 그리고 그 놀라운 구조를 발견한 것, 즉 이론적으로는—세상을 구성하는 벽돌들의 이 놀랍고 질서 정연한 구조를 발견한 것, 그들의 태도는 질서 정연한 무의미함 그 자체입니다. 왜냐하면 그들은 세상이 점차 스스로 불타고 있다고 믿기 때문입니다. 그래서 아무리 질서 정연하다 할지라도, 만약 그들이 정말로 태양이 결국 꺼지고 지구가 모든 자원을 소모할 것이라고 믿는다면, 갈 곳 없는 멋쟁이 신세 외에 그들이 어떤 다른 태도를 취할 수 있겠습니까? 왜냐하면 결국 어차피 모든 것이 아무것도 아닌 상태로 돌아갈 것이라면, 오늘 아무리 질서 정연하다 해도 그것은 질서 정연한 무의미함일 뿐일 테니까요. 그러나 베일 너머를 본 사람으로서 내가 여러분에게 말하노니, 끝에 도달한다는 그런 것은 존재하지 않습니다.",
+      "ko": "작은 분자나 원자, 그리고 그 경이로운 구조를 발견하고—즉 이론적으로 말이죠—세상을 구성하는 벽돌들의 이 경이롭고 질서 정연한 구조를 발견했음에도, 그들의 태도는 '질서 정연한 무의미함'입니다. 왜냐하면 그들은 세상이 점차 타버리고 있다고 믿기 때문입니다. 그러니 아무리 질서가 있다 한들, 만약 그들이 태양이 결국 꺼지고 지구가 모든 자원을 소진할 것이라고 진정으로 믿는다면, '갈 곳 없는 화려한 차림' 외에 어떤 태도를 취할 수 있겠습니까? 어차피 결국 모든 것이 무(無)로 돌아갈 것이라면, 오늘 아무리 질서 정연하다 해도 그것은 오직 '질서 정연한 무의미함'일 뿐입니다. 하지만 나는 베일 너머를 본 자로서 여러분께 말씀드립니다. 끝이라는 것은 존재하지 않습니다.",
       "vocab": [
         {
-          "word": "molecule",
-          "mean": "분자"
+          "word": "orderly insignificance",
+          "mean": "질서 정연한 무의미함"
         },
         {
-          "word": "atom",
-          "mean": "원자"
-        },
-        {
-          "word": "construction",
-          "mean": "구조"
-        },
-        {
-          "word": "insignificance",
-          "mean": "무의미함"
-        },
-        {
-          "word": "burn out",
-          "mean": "다 타버리다"
-        },
-        {
-          "word": "all dressed up with nowhere to go",
-          "mean": "갈 곳 없는 멋쟁이 (차려입었으나 갈 곳이 없는 상태, 헛수고)"
+          "word": "burning itself out",
+          "mean": "스스로 타버리다(열역학적 종말론)"
         },
         {
           "word": "beyond the veil",
-          "mean": "베일 너머 (영적 세계, 물질계의 장막 뒤)"
+          "mean": "베일 너머(현상계 너머의 실재)"
         }
       ],
       "grammar": [
         {
-          "tag": "분사구문",
-          "mean": "Having discovered로 시작하여 과학자들이 물질의 구조를 발견한 행위를 나타냄."
-        },
-        {
-          "tag": "가정법/조건문",
-          "mean": "if they really believe... 구조를 통해 물질주의적 세계관의 허망함을 지적함."
+          "tag": "Neville's Philosophy",
+          "desc": "네빌은 물질주의 과학이 우주를 기계적이고 일시적인 것으로 보는 시각을 '질서 정연한 무의미함'이라 비판하며, 의식의 영원성을 강조합니다."
         }
       ]
     },
     {
       "en": "Life is forever and forever and forever – and forever you are moving up this everlasting pilgrimage revealing the infinite glories of your Father.",
-      "ko": "생명은 영원하고 영원하고 또 영원하며—영원히 여러분은 아버지의 무한한 영광을 드러내며 이 영원한 순례길을 올라가고 있습니다.",
+      "ko": "생명은 영원하고 영원하고 또 영원합니다. 그리고 여러분은 영원히 이 끝없는 순례의 길을 오르며 여러분 아버지의 무한한 영광을 드러내고 있습니다.",
       "vocab": [
-        {
-          "word": "forever",
-          "mean": "영원히"
-        },
         {
           "word": "everlasting pilgrimage",
           "mean": "영원한 순례"
@@ -17964,70 +17095,62 @@
       ],
       "grammar": [
         {
-          "tag": "분사구문",
-          "mean": "revealing the infinite glories of your Father는 네빌 고다드의 핵심 사상인 인간의 본질(상상력/아버지)의 무한성을 나타냄."
+          "tag": "Bible Reference",
+          "desc": "요한복음 14장 9절 등에서 언급되는 '아버지'는 외부의 신이 아닌, 우리 내면의 'I AM'을 의미합니다."
         }
       ]
     },
     {
       "en": "So go out wisely today – go out determined to become more selective, more discreet in your choice of ideas you will entertain and single out the idea that would bless an individual and produce in yourself the emotional response that you have witnessed that state in his world, and know at that moment of response, you planted for that individual, and he is rooted in you, there is no such thing as he will not be found in your world for he is rooted in you.",
-      "ko": "그러므로 오늘 현명하게 나아가십시오. 받아들일 생각을 선택함에 있어 더욱 선별적이고 분별력 있겠다고 결단하며 나아가십시오. 그리고 어떤 개인을 축복할 생각을 골라내어, 그 상태가 그의 세계에 나타났을 때 마주하게 될 감정적 반응을 당신 안에서 만들어내십시오. 그 반응의 순간에 당신이 그 개인을 위해 심었다는 것과, 그가 당신 안에 뿌리내렸음을 아십시오. 그가 당신의 세계에서 발견되지 않을 일란은 존재하지 않습니다. 왜냐하면 그는 당신 안에 뿌리내려 있기 때문입니다.",
+      "ko": "그러니 오늘 지혜롭게 나아가십시오. 당신이 품을 생각들을 선택함에 있어 더욱 선별적이고 신중해지기로 결심하고, 타인을 축복하며 그 사람의 세계에서 당신이 목격했던 그 상태에 대한 감정적 반응을 당신 안에서 일으킬 생각을 골라내십시오. 그리고 그 반응의 순간에 당신이 그 사람을 위해 심었음을, 그리고 그가 당신 안에 뿌리내렸음을 아십시오. 그가 당신의 세계에서 발견되지 않을 일은 없습니다. 왜냐하면 그는 당신 안에 뿌리내리고 있기 때문입니다.",
       "vocab": [
         {
-          "word": "selectivie",
+          "word": "selective",
           "mean": "선별적인"
         },
         {
           "word": "discreet",
-          "mean": "분별력 있는, 신중한"
+          "mean": "신중한"
         },
         {
           "word": "entertain",
-          "mean": "(생각 등을) 품다, 마음에 두다"
+          "mean": "마음속에 품다"
         },
         {
-          "word": "single out",
-          "mean": "골라내다, 선발하다"
-        },
-        {
-          "word": "root",
-          "mean": "뿌리 내리게 하다"
+          "word": "rooted",
+          "mean": "뿌리내린"
         }
       ],
       "grammar": [
         {
-          "tag": "Imperative Structure",
-          "desc": "명령문(So go out...)을 통해 네빌 고다드는 청중에게 상상력의 의식적 사용을 실천하라고 강력하게 권고합니다."
+          "tag": "Neville's Law",
+          "desc": "타인을 향한 상상적 행위가 곧 그를 내면의 세계에 심는 것임을 강조함"
         },
         {
-          "tag": "Neville's Mysticism",
-          "desc": "'모든 사람이 당신 안에 뿌리내려 있다'는 표현은 외부에 객관적인 타인이 존재하는 것이 아니라, 모든 인간이 곧 나의 의식(상상력)의 확장이라는 비원(Non-duality)적 세계관을 드러냅니다."
+          "tag": "Unity",
+          "desc": "모든 타인이 관찰자의 의식 안에 존재한다는 일원론적 관점"
         }
       ]
     },
     {
       "en": "Everyone is rooted in you – therefore you will not lose them.",
-      "ko": "모든 사람이 당신 안에 뿌리내려 있습니다. 그러므로 당신은 그들을 잃지 않을 것입니다.",
+      "ko": "모든 사람은 당신 안에 뿌리내리고 있습니다. 그러므로 당신은 그들을 잃지 않을 것입니다.",
       "vocab": [
         {
-          "word": "therefore",
-          "mean": "그러므로"
-        },
-        {
-          "word": "lose",
-          "mean": "잃다"
+          "word": "rooted in",
+          "mean": "~에 뿌리내린"
         }
       ],
       "grammar": [
         {
-          "tag": "Connection of Consciousness",
-          "desc": "타인을 상상 속에서 축복하는 행위는 이미 그들과의 영원한 연결을 확정하는 것임을 강조합니다."
+          "tag": "Solipsism",
+          "desc": "네빌 고다드의 핵심 사상으로, 외부 세계는 내면의 투영임을 나타냄"
         }
       ]
     },
     {
       "en": "It is planted relative to that being and that being is going to harvest it, and you will know the harvest when it appears in his world.",
-      "ko": "그것은 그 존재와 관련하여 심어졌고, 그 존재는 그것을 거두어들이게 될 것이며, 당신은 그 수확이 그의 세계에 나타날 때 그것을 알게 될 것입니다.",
+      "ko": "그것은 그 존재와 관련하여 심어졌고, 그 존재가 그것을 거둘 것입니다. 그리고 당신은 그 수확이 그의 세계에 나타날 때 그것을 알게 될 것입니다.",
       "vocab": [
         {
           "word": "relative to",
@@ -18035,65 +17158,51 @@
         },
         {
           "word": "harvest",
-          "mean": "수확하다, 거두어들이다"
+          "mean": "수확"
         }
       ],
       "grammar": [
         {
           "tag": "Law of Sowing and Reaping",
-          "desc": "성경의 파종과 수확의 법칙(갈라디아서 6:7)을 차용하여, 상상의 씨앗이 반드시 현실의 열매로 나타남을 설명합니다."
+          "desc": "성경적 원리를 상상력의 법칙으로 재해석함"
         }
       ]
     },
     {
       "en": "You simply plant and let the harvest take care of itself.",
-      "ko": "당신은 그저 심기만 하고 수확은 저절로 알아서 되도록 내버려두십시오.",
+      "ko": "당신은 그저 심기만 하십시오. 수확은 스스로 알아서 하게 두십시오.",
       "vocab": [
         {
-          "word": "simply",
-          "mean": "단지, 그저"
-        },
-        {
           "word": "take care of itself",
-          "mean": "저절로 해결되다, 알아서 되다"
+          "mean": "저절로 해결되다"
         }
       ],
       "grammar": [
         {
-          "tag": "Detachment from Outcome",
-          "desc": "과정을 통제하려 애쓰지 말고, 씨앗(상상)을 심은 뒤에는 그 결과(현실화)를 상상의 법칙에 온전히 맡기라는 무위(Effortlessness)의 가르침입니다."
+          "tag": "Detachment",
+          "desc": "상상 후 결과에 집착하지 않고 법칙에 맡기는 태도"
         }
       ]
     },
     {
       "en": "Now my time is up.",
-      "ko": "자, 제 시간이 다 되었습니다.",
-      "vocab": [
-        {
-          "word": "time is up",
-          "mean": "시간이 다 되다"
-        }
-      ],
-      "grammar": [
-        {
-          "tag": "Lecture Conclusion",
-          "desc": "강연을 마무리하는 일상적인 전환구입니다."
-        }
-      ]
+      "ko": "이제 제 시간은 다 되었습니다.",
+      "vocab": [],
+      "grammar": []
     },
     {
       "en": "Now let us go into the silence.",
-      "ko": "자, 이제 침묵 속으로 들어갑시다.",
+      "ko": "이제 침묵 속으로 들어갑시다.",
       "vocab": [
         {
-          "word": "silence",
-          "mean": "침묵, 명상"
+          "word": "the silence",
+          "mean": "침묵(명상 상태)"
         }
       ],
       "grammar": [
         {
-          "tag": "The Silence",
-          "desc": "네빌 고다드가 강연 끝에 자주 유도하는 '침묵'은 에고의 생각을 멈추고 참된 자아(I AM)와 합일하는 명상 상태를 의미합니다."
+          "tag": "Meditation",
+          "desc": "네빌 고다드가 강조하는 의식의 상태를 바꾸기 위한 명상 기법"
         }
       ]
     }
