@@ -914,10 +914,14 @@ function App() {
   const chunkInfo = `[${chunkIdx + 1}/${totalChunks} 구간]`;
   const schemaObj = null; // 이미 promptText에 JSON 형식이 명시되어 있다면 null 유지  // 1. 가장 가볍고 빠른 lite 모델을 1순위로 고정
 
-    const models = [
-      "gemini-2.5-flash",      // 표준 고속 모델 (팝업 목록에 있는 이름으로 맞춰주세요)
-      "gemini-3.1-pro-preview" // 정밀 분석 모델 (팝업 목록에 있는 경우 추가)
-    ];
+   const models = [
+    "gemini-3.1-flash-lite",   // 1순위: 최신 3.1 초고속 경량 모델 (가장 빠르고 무료 한도 넉넉함)
+    "gemini-2.5-flash-lite",   // 2순위: 검증된 2.5 초고속 경량 모델
+    "gemini-flash-lite-latest",// 3순위: 최신 경량 별칭
+    "gemini-2.5-flash",        // 4순위: 안정적인 2.5 표준 모델
+    "gemini-3-flash-preview",  // 5순위: 최신 3.0 표준 모델
+    "gemini-flash-latest"      // 6순위: 최신 표준 별칭
+  ];
 
     let lastErr = "";
 
