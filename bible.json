@@ -1,5 +1,21 @@
 [
   {
+    "id": "The Story Of Judas_Genesis 1:1_thecentralfigurethestaris",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 14,
+    "bookNameEn": "Genesis",
+    "bookNameKo": "창세기",
+    "chapter": 1,
+    "verse": 1,
+    "ref": "Genesis 1:1",
+    "refKo": "창세기 1:1",
+    "en": "The central figure, the star, is Christ, and the whole play is about Christ from Genesis to Revelation, but there are many parts that reveal it.",
+    "ko": "중심 인물, 즉 스타는 그리스도이며, 창세기부터 요한계시록까지 전체 연극은 그리스도에 관한 것이지만, 그것을 드러내는 많은 역할들이 있습니다.",
+    "quoteInText": "Genesis to Revelation",
+    "krv": "태초에 하나님이 천지를 창조하시니라",
+    "nevilleContext": "네빌은 성경의 시작(창세기)부터 끝(요한계시록)까지의 모든 내용이 역사적 사실이 아니라 인간 안에서 일어나는 그리스도의 신비적 각성 드라마임을 강조하기 위해 인용함."
+  },
+  {
     "id": "bible_01_001_002",
     "sourceTitle": "A Movement Within God",
     "sentenceNo": 101,
@@ -564,6 +580,22 @@
     "nevilleContext": "네빌 고다드는 성경의 인물인 '에서(Esau)'와 '야곱(Jacob)'의 이야기를 감각의 지배(육체적 현실)와 상상의 지배를 다루는 신비적 은유로 해석하며, 본문에서 'Esau'는 육체적 감각과 친숙한 상태 혹은 과거의 감각적 자아를 상징적으로 비유하는 용어로 사용합니다."
   },
   {
+    "id": "The Seven Eyes Of God_Genesis 27:21_isaacthefatherwhowasblind",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 108,
+    "bookNameEn": "Genesis",
+    "bookNameKo": "창세기",
+    "chapter": 27,
+    "verse": 21,
+    "ref": "Genesis 27:21",
+    "refKo": "창세기 27:21",
+    "en": "Isaac, the father, who was blind said, “Come close that I may touch you. Come closer.”",
+    "ko": "눈이 멀었던 아버지 이삭이 말했습니다. \"내가 너를 만질 수 있도록 가까이 오거라. 더 가까이 오거라.\"",
+    "quoteInText": "Come close that I may touch you. Come closer.",
+    "krv": "이삭이 야곱에게 이르되 내 아들아 가까이 오라 네가 과연 내 아들 에스라 인지 아닌지 내가 너를 더하려 하노라",
+    "nevilleContext": "네빌 고다드는 이삭이 눈이 멀었다는 점을 육체적 감각(오감)의 차단을 의미하며, 참된 창조는 외적 시각이 아니라 내적 촉각(감각적 상상력)을 통해 이루어진다는 것을 보여주는 성경적 비유로 해석합니다."
+  },
+  {
     "id": "Esau And Jacob_Genesis 27:36_surelyheiswellnamedthesup",
     "sourceTitle": "Esau And Jacob",
     "sentenceNo": 58,
@@ -1016,6 +1048,22 @@
     "nevilleContext": "가정법 과거('would be')와 접속사 'while on the other hand'를 대조하여 성경의 문자주의를 배격하고 심리적 해석의 우월성을 주장합니다."
   },
   {
+    "id": "The Seven Eyes Of God_Leviticus 18:21_youhaveworshippedelohiman",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 186,
+    "bookNameEn": "Leviticus",
+    "bookNameKo": "레위기",
+    "chapter": 18,
+    "verse": 21,
+    "ref": "Leviticus 18:21",
+    "refKo": "레위기 18:21",
+    "en": "You have worshipped Elohim and sacrificed to Molech.",
+    "ko": "여러분은 엘로힘을 경배하기도 했고 몰렉에게 제사를 드리기도 했습니다.",
+    "quoteInText": "Molech",
+    "krv": "너는 결코 자녀를 몰렉에게 주어 불에 바르게 함으로 네 하나님의 이름을 욕되게 하지 말라 나는 여호와니라",
+    "nevilleContext": "네빌 고다드는 성경의 인물과 신들을 역사적 실존 인물이 아니라 인간 내면의 의식 상태(State of Consciousness)로 해석하며, 엘로힘(참된 창조의식)과 몰렉(외적인 두려움과 물질적 희생을 요구하는 의식) 모두 인간이 거쳐 가는 내면의 경험임을 강조합니다."
+  },
+  {
     "id": "bible_04_011_029",
     "sourceTitle": "Book 11. The Law And The Promise",
     "sentenceNo": 462,
@@ -1228,6 +1276,22 @@
     "kjv": "...choose you this day whom ye will serve...",
     "krv": "너희가 섬길 자를 오늘날 택하라",
     "nevilleContext": "구약 성경 구절을 인용하여 성경이 인간의 심리학적 메커니즘을 다룬 책임을 증명합니다."
+  },
+  {
+    "id": "The Seven Eyes Of God_Judges 16:19_wearetoldagaininjudges171",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 110,
+    "bookNameEn": "Judges",
+    "bookNameKo": "사사기",
+    "chapter": 16,
+    "verse": 19,
+    "ref": "Judges 16:19",
+    "refKo": "사사기 16:19",
+    "en": "We are told again in Judges 17:19 how the seven locks were shaved from the head of Samson and then the Philistines came and gouged out his eyes and he was eyeless in Gaza.",
+    "ko": "사사기 17장 19절에서 우리는 삼손의 머리에서 일곱 가닥의 머리카락이 깎였고, 그 후 블레셋 사람들 이 와서 그의 눈을 빼었으며 그가 가자에서 눈이 멀게 되었다는 이야기를 다시 듣게 됩니다.",
+    "quoteInText": "how the seven locks were shaved from the head of Samson and then the Philistines came and gouged out his eyes and he was eyeless in Gaza",
+    "krv": "델릴라가 그에게 무릎을 고 자게 하고 사람을 불러 그 머리털 일곱 가닥을 밀고 괴롭게 하여 보았더니 그 힘이 제게서 떠났더라 블레셋 사람이 그를 잡아 그 눈을 빼고 끌고 가사에 내려가 놋 줄로 매고 그로 옥에서 맷돌을 돌리게 하였더라",
+    "nevilleContext": "네빌은 사사기의 삼손 이야기를 외형적 역사나 신화가 아닌, 인간 내면의 상상력과 촉각적 감지 능력(머리털과 눈)의 상징적 알레고리로 해석합니다."
   },
   {
     "id": "bible_09_003_009",
@@ -2718,6 +2782,22 @@
     "nevilleContext": "네빌 고다드는 이사야서의 '거룩한 산'을 외적인 지리가 아니라 영적 의식의 차원으로 해석하여, 하나님의 의식 안에서는 어떤 상태나 피조물도 결코 영원히 소실되지 않음을 설명합니다."
   },
   {
+    "id": "The Seven Eyes Of God_Isaiah 14:12_thefirstappearsonlyoncein",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 9,
+    "bookNameEn": "Isaiah",
+    "bookNameKo": "이사야",
+    "chapter": 14,
+    "verse": 12,
+    "ref": "Isaiah 14:12",
+    "refKo": "이사야 14:12",
+    "en": "The first appears only once in the Bible in Isaiah 14 ~ Lucifer, the morning star.",
+    "ko": "첫 번째 것은 성경에서 이사야 14장에 단 한 번 나타납니다. 바로 샛별인 루시퍼입니다.",
+    "quoteInText": "Isaiah 14 ~ Lucifer, the morning star... how he is fallen and cut down to the ground",
+    "krv": "",
+    "nevilleContext": "기독교 신학에서 사탄으로 오해되는 루시퍼(계명성/샛별)를 네빌은 인간 의식이 물질 세계로 투영되기 위해 겪는 '거룩한 추락(Fall)'의 첫 번째 단계로 해석합니다."
+  },
+  {
     "id": "bible_23_014_024",
     "sourceTitle": "Book 14. He Breaks The Shell",
     "sentenceNo": 124,
@@ -2824,6 +2904,38 @@
     "kjv": "The voice of him that crieth in the wilderness, Prepare ye the way of the LORD, make straight in the desert a highway for our God.",
     "krv": "외치는 자의 소리여 이르되 너희는 광야에서 여호와의 길을 예비하라 사막에서 우리 하나님의 대로를 평탄하게 하라",
     "nevilleContext": "인간적 혼란의 광야 한가운데서도 내면의 'I AM'은 자신이 확신하는 존재 상태를 현실로 불러내는 창조의 음성입니다."
+  },
+  {
+    "id": "The Story Of Judas_Isaiah 40:6_thegrasswitherstheflowerf",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 160,
+    "bookNameEn": "Isaiah",
+    "bookNameKo": "이사야",
+    "chapter": 40,
+    "verse": 6,
+    "ref": "Isaiah 40:6",
+    "refKo": "이사야 40:6",
+    "en": "The grass withers, the flower fades but the word of our God will stand forever.”",
+    "ko": "풀은 마르고 꽃은 시드나 우리 하나님의 말씀은 영영히 서리라.”",
+    "quoteInText": "All flesh is grass, and all its beauty is like the flower of the field.",
+    "krv": "모든 육체는 풀이요 그의 모든 아름다움은 들의 꽃과 같으니",
+    "nevilleContext": "현상계의 육체와 인간의 외적 자아가 궁극적 실재가 아니라 일시적인 연극 속의 배역에 불과함을 성경 구절을 통해 증명함."
+  },
+  {
+    "id": "The Story Of Judas_Isaiah 40:8_andthewordistheplayfromge",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 161,
+    "bookNameEn": "Isaiah",
+    "bookNameKo": "이사야",
+    "chapter": 40,
+    "verse": 8,
+    "ref": "Isaiah 40:8",
+    "refKo": "이사야 40:8",
+    "en": "And the “Word” is the play from Genesis to Revelation.",
+    "ko": "그리고 그 “말씀”은 창세기부터 요한계시록까지의 연극입니다.",
+    "quoteInText": "The grass withers, the flower fades but the word of our God will stand forever.",
+    "krv": "풀은 마르고 꽃은 시드나 우리 하나님의 말씀은 영원히 서리라 하라",
+    "nevilleContext": "사라지는 육신(풀) 뒤에 영원히 존재하는 하나님의 말씀, 즉 인간 내면의 상상력과 영적 드라마의 영원성을 강조함."
   },
   {
     "id": "bible_23_041_010",
@@ -3394,6 +3506,22 @@
     "nevilleContext": "성경 속 토기장이(potter)와 진흙의 비유를 외부의 하나님이 아니라 인간의 '상상력(Imagination)'이 자신의 운명과 성격을 빚어내는 주체라는 신비주의적 관점으로 재해석하고 있습니다."
   },
   {
+    "id": "The Seven Eyes Of God_Jeremiah 19:5_theyaredoingthatrightnowo",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 66,
+    "bookNameEn": "Jeremiah",
+    "bookNameKo": "예레미야",
+    "chapter": 19,
+    "verse": 5,
+    "ref": "Jeremiah 19:5",
+    "refKo": "예레미야 19:5",
+    "en": "They are doing that right now, only they call it Nationalism, and they offer up their sons and daughters to Molech, though the Voice said, “I do not command them to do this and cause Judah to fall into sin.”",
+    "ko": "그들은 지금도 그것을 행하고 있으며, 단지 그것을 국가주의라 부를 뿐이고, '내가 이것을 명한 적이 없으며 유다가 죄에 빠지게 하지도 않았다'는 음성이 있었음에도 불구하고 자신의 아들딸을 몰렉에게 제물로 바치고 있습니다.",
+    "quoteInText": "I do not command them to do this and cause Judah to fall into sin",
+    "krv": "또 그들이 바알을 위하여 산당을 건축하였고 자기 아들들을 바알에게 번제물로 불살라 드렸나니 이는 내가 명령하거나 말하거나 내 마음에 생각하게 한 것이 아니니라",
+    "nevilleContext": "하나님은 인간에게 인신공제나 파괴적인 희생을 요구한 적이 없으며, 이는 전부 인간이 만들어낸 맹목적 투사임을 강조하기 위해 인용되었습니다."
+  },
+  {
     "id": "bible_24_020_009",
     "sourceTitle": "Book 13. Resurrection",
     "sentenceNo": 213,
@@ -3446,6 +3574,22 @@
     "kjv": "Ask ye now, and see whether a man doth travail with child? wherefore do I see every man with his hands on his loins, as a woman in travail, and all faces are turned into paleness?",
     "krv": "너희는 남자가 해산하는가를 물어보라 어째서 모든 남자가 손을 자기 허리에 짓고 해산하는 여인 같이 두려워하여 모든 얼굴이 파랗게 질렸는가",
     "nevilleContext": "네빌 고다드는 외적 역사적 사건이 아니라 인간의 내면(의식) 안에서 신성(그리스도)이 태어나는 영적 각성의 과정을 구약의 해산 비유로 해석합니다."
+  },
+  {
+    "id": "The Seven Eyes Of God_Jeremiah 32:35_butthevoicesaidicommandth",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 16,
+    "bookNameEn": "Jeremiah",
+    "bookNameKo": "예레미야",
+    "chapter": 32,
+    "verse": 35,
+    "ref": "Jeremiah 32:35",
+    "refKo": "예레미야 32:35",
+    "en": "But the Voice said, “I command them not, neither came it unto my mind, that they should do this abomination to cause Judah to sin.”",
+    "ko": "그러나 그 음성은 말했다. \"나는 그들에게 명령한 적도 없고, 내 마음에 떠올린 적도 없다, 그들이 유다로 하여금 죄를 범하게 하려고 이 가증한 일을 행하라고 말이다.\"",
+    "quoteInText": "I command them not, neither came it unto my mind, that they should do this abomination to cause Judah to sin",
+    "krv": "힌놈의 아들의 골짜기에 벤힌놈의 사당을 건축하였으며 자기들의 자녀를 몰록 앞에 불에 사르게 하였느니라 그들이 이런 가증한 일을 행하여 유다로 범죄케 하 내가 명령한 것도 아니요 내 마음에 온 것도 아니니라",
+    "nevilleContext": "네빌 고다드는 외부의 신(몰록)에게 인신공제를 바치는 행위가 진정한 하나님의 뜻이 아님을 성경 구절을 인용하여 강조합니다. 하나님은 외부에 제물을 바치거나 두려움으로 달래야 하는 대상이 아니라, 인간의 내면(상상력) 그 자체임을 깨우쳐 줍니다."
   },
   {
     "id": "bible_26_001_001",
@@ -3888,6 +4032,22 @@
     "nevilleContext": "[학개 2:7 및 고린도전서 15:47 동시 인용] 상상력은 모든 인간(만국)이 진정으로 갈망하고 사모하는 모든 소망의 실체입니다."
   },
   {
+    "id": "The Seven Eyes Of God_Zechariah 3:9_itconcernstheseveneyesofg",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 3,
+    "bookNameEn": "Zechariah",
+    "bookNameKo": "스가랴",
+    "chapter": 3,
+    "verse": 9,
+    "ref": "Zechariah 3:9",
+    "refKo": "스가랴 3:9",
+    "en": "It concerns the Seven Eyes of God, from the visions of Zechariah.",
+    "ko": "그것은 스가랴의 환상에서 나온 하나님의 일곱 눈에 관한 것입니다.",
+    "quoteInText": "the Seven Eyes of God, from the visions of Zechariah. He saw a stone with seven facets... the seven eyes of God",
+    "krv": "",
+    "nevilleContext": "네빌 고다드는 스가랴서의 '일곱 눈을 가진 돌'을 인간의 의식 안에 내재된 신성한 창조의 비전들로 해석합니다."
+  },
+  {
     "id": "bible_38_004_006",
     "sourceTitle": "Book 2. Your Faith Is Your Fortune (외 3개 강의·저서)",
     "sentenceNo": 271,
@@ -3904,6 +4064,22 @@
     "kjv": "...Not by might, nor by power, but by my spirit, saith the LORD of hosts.",
     "krv": "만군의 여호와께서 말씀하시되 이는 힘으로 되지 아니하며 능으로 되지 아니하고 오직 나의 신으로 되느니라",
     "nevilleContext": "Not by A nor by B 구조를 통해 외적인 노력이나 인간적 수단의 한계를 부정하고 내적 의식의 힘을 강조합니다."
+  },
+  {
+    "id": "The Seven Eyes Of God_Zechariah 4:10_theseventhisjesusorjehova",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 38,
+    "bookNameEn": "Zechariah",
+    "bookNameKo": "스가랴",
+    "chapter": 4,
+    "verse": 10,
+    "ref": "Zechariah 4:10",
+    "refKo": "스가랴 4:10",
+    "en": "The seventh is Jesus, or “Jehovah saves,” or “rescue.”",
+    "ko": "일곱 번째는 예수, 즉 \"여호와는 구원이시다\" 혹은 \"구원\"입니다.",
+    "quoteInText": "The seventh is Jesus, or “Jehovah saves,” or “rescue.” ... the seventh eye",
+    "krv": "작은 일의 날이라고 멸시하는 자가 누구냐 이 일곱은 온 세상에 두루 행하는 여호와의 눈이라 하니라 그리하여 그들이 스룹바벨의 손에 다림줄이 있음을 보고 기뻐하리라",
+    "nevilleContext": "스가랴서에 등장하는 '온 세상에 두루 행하는 여호와의 일곱 눈'을 인간 의식의 진화 단계와 구원(예수)의 작용 방식으로 해석하여 적용하고 있습니다."
   },
   {
     "id": "bible_38_008_005",
@@ -5054,6 +5230,22 @@
     "nevilleContext": "to the one who endures 구조를 사용하여, 마음의 상태를 끝까지 흔들림 없이 유지하는 '인내(Endurance)'가 창조의 완성에 필수적임을 성경 구절과 함께 강조합니다."
   },
   {
+    "id": "The Seven Eyes Of God_Matthew 25:2_thesamemeaningisinthestor",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 159,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 25,
+    "verse": 2,
+    "ref": "Matthew 25:2",
+    "refKo": "마태복음 25:2",
+    "en": "The same meaning is in the story of the five foolish virgins.",
+    "ko": "다섯 미련한 처녀들의 이야기에도 똑같은 의미가 담겨 있습니다.",
+    "quoteInText": "five foolish virgins",
+    "krv": "그 중에 다섯은 미련하고 다섯은 슬기 있는지라",
+    "nevilleContext": "성경의 열 처녀 비유에서 '다섯 미련한 처녀'를 인간의 오감(five senses)에만 의존하며 영적으로 잠들어 있는 상태로 해석함."
+  },
+  {
     "id": "Feed My Sheep_Matthew 25:15_toonehegivesfivetalentsto",
     "sourceTitle": "Feed My Sheep",
     "sentenceNo": 6,
@@ -5238,6 +5430,102 @@
     "nevilleContext": "타인에게 행하는 모든 부정적인 상상은 곧 자기 내면의 그리스도에게 행하는 것과 같습니다."
   },
   {
+    "id": "The Story Of Judas_Matthew 26:48_sojudasbetraysthelordforn",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 55,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 26,
+    "verse": 48,
+    "ref": "Matthew 26:48",
+    "refKo": "마태복음 26:48",
+    "en": "So Judas betrays the Lord, for no one knew him, but Judas told them, “when I kiss him you will know him.”",
+    "ko": "그러므로 유다가 주를 배반합니다. 왜냐하면 아무도 그를 알지 못했지만, 유다가 그들에게 말하기를 '내가 입맞추는 자가 그이니 그를 잡으라'고 했기 때문입니다.",
+    "quoteInText": "when I kiss him you will know him",
+    "krv": "예수를 파는 자가 그들에게 부호를 가르쳐 이르되 내가 입맞추는 자가 그이니 그를 잡으라 한지라",
+    "nevilleContext": "유다의 입맞춤은 단순한 배반이 아니라, 눈에 보이지 않던 창조적 실체(그리스도/상상력)를 세상에 드러내어 인식하게 만드는 영적 각인의 행위로 해석됩니다."
+  },
+  {
+    "id": "The Story Of Judas_Matthew 26:50_wearetoldthatwhenjudascam",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 92,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 26,
+    "verse": 50,
+    "ref": "Matthew 26:50",
+    "refKo": "마태복음 26:50",
+    "en": "We are told that when Judas came and kissed Jesus that Jesus said to him, “Friend, why are you here?”",
+    "ko": "우리는 유다가 와서 예수께 입맞추었을 때 예수께서 그에게 \"친구여, 네가 어찌하여 여기에 왔느냐?\"라고 말씀하셨다고 듣습니다.",
+    "quoteInText": "Friend, why are you here?",
+    "krv": "예수께서 가라사대 친구여 네가 무엇을 하려고 왔는지 행하라 하신대 이에 그들이 와서 예수께 손을 대어 잡는지라",
+    "nevilleContext": "전통적 성경 번역의 오류를 지적하며 유다에게 하신 예수의 말씀이 실제로는 '네가 해야 할 일을 빨리 하라'는 의미의 상상력 발동 명령임을 강조하는 대목입니다."
+  },
+  {
+    "id": "The Story Of Judas_Matthew 27:2_theseareineveryageandever",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 16,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 27,
+    "verse": 2,
+    "ref": "Matthew 27:2",
+    "refKo": "마태복음 27:2",
+    "en": "These are in every age and every time.",
+    "ko": "이것들은 모든 시대와 모든 시점에 존재합니다.",
+    "quoteInText": "Pilate",
+    "krv": "결박하여 총독 빌라도에게 넘겨 주니라",
+    "nevilleContext": "본디오 빌라도 역시 외적인 인물이 아니라 인간 의식 안에서 작용하는 정치적·세속적 상태를 나타내는 배역으로 해석함."
+  },
+  {
+    "id": "The Story Of Judas_Matthew 27:5_thenhewentandhangedhimsel",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 112,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 27,
+    "verse": 5,
+    "ref": "Matthew 27:5",
+    "refKo": "마태복음 27:5",
+    "en": "“Then he went and hanged himself to a tree.”",
+    "ko": "\"이에 유다가 스스를 나무에 매달아 죽은지라.\"",
+    "quoteInText": "Then he went and hanged himself to a tree.",
+    "krv": "유다가 은을 성전에 던져 넣고 물러가서 스스로 목매어 죽은지라",
+    "nevilleContext": "네빌 고다드는 유다의 자살을 역사적 사건이 아니라, 상상력의 비밀(유다)이 육체(나무)라는 상태 속으로 들어와 소모되거나 변형되는 신비적 드라마로 재해석합니다."
+  },
+  {
+    "id": "The Story Of Judas_Matthew 27:7_theyboughtthepottersfield",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 176,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 27,
+    "verse": 7,
+    "ref": "Matthew 27:7",
+    "refKo": "마태복음 27:7",
+    "en": "They bought the potter’s field.",
+    "ko": "그들은 토기장이의 밭을 샀습니다.",
+    "quoteInText": "They bought the potter’s field",
+    "krv": "의논한 후 이것으로 토기장이의 밭을 사서 나그네의 매장지를 삼았으니",
+    "nevilleContext": "토기장이의 밭(potter's field)이라는 성경 구절을 통해 '토기장이(potter)'의 원어가 가진 '만드는 자(maker)' 혹은 '장인(세공사)'의 의미를 심리학적으로 풀어냅니다."
+  },
+  {
+    "id": "The Story Of Judas_Matthew 27:9_wearetoldthatjudasbetraye",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 175,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 27,
+    "verse": 9,
+    "ref": "Matthew 27:9",
+    "refKo": "마태복음 27:9",
+    "en": "We are told that Judas betrayed his Lord for thirty pieces of silver and then he was said to have turned it back to the priest.",
+    "ko": "우리는 유다가 은 서른 냥에 그의 주를 배신했고, 그 후에 그것을 제사장에게 돌려주었다고 들었습니다.",
+    "quoteInText": "Judas betrayed his Lord for thirty pieces of silver and then he was said to have turned it back to the priest",
+    "krv": "이에 선지자 예레미야로 하신 말씀이 이루어졌나니 일렀으되 그들이 그 가격 매겨진 자 곧 이스라엘 자손 중에서 가격 매긴 자의 가격 곧 은 삼십을 가지고",
+    "nevilleContext": "유다가 은 30냥을 받고 예수를 팔았다는 성경 구절을 인용하며, 이는 역사적 배신이 아니라 인간 의식이 겪는 영적 충만함과 대가 지불의 상징으로 해석합니다."
+  },
+  {
     "id": "Release Barabbas And Crucify Jesus_Matthew 27:17_whomwillyouhavemereleaseu",
     "sourceTitle": "Release Barabbas And Crucify Jesus",
     "sentenceNo": 33,
@@ -5316,6 +5604,22 @@
     "quoteInText": "He saved as he saved others; himself he cannot save.",
     "krv": "저가 남은 구원하였으되 자기는 구원할 수 없도다 저가 이스라엘의 왕이로다 지금 십자가에서 내려올지어다 그러면 우리가 믿겠노라",
     "nevilleContext": "예수가 십자가에 못 박혔을 때 군중과 종교 지도자들이 비웃던 성경 구절을 인용하며, 네빌은 이것이 문자적 역사적 사실이 아니라 인간의 오해에서 비롯된 거짓 진술이며 진정한 구원은 타인을 상상 속에서 구원하는 것임을 역설합니다."
+  },
+  {
+    "id": "The Seven Eyes Of God_Matthew 27:46_mandoesnotknowgodwillactu",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 132,
+    "bookNameEn": "Matthew",
+    "bookNameKo": "마태복음",
+    "chapter": 27,
+    "verse": 46,
+    "ref": "Matthew 27:46",
+    "refKo": "마태복음 27:46",
+    "en": "Man does not know God will actually redeem him and he cries, “My God, why hast thou forsaken me?”",
+    "ko": "인간은 하나님이 실제로 자신을 구속하실 것임을 알지 못하며, 그는 \"나의 하나님이여, 어찌하여 나를 버리셨나이까?\"라며 울부짖습니다.",
+    "quoteInText": "My God, why hast thou forsaken me?",
+    "krv": "제구시쯤에 예수께서 크게 소리 질러 가라사대 엘리 엘리 라마 사박다니 하시니 이는 곧 나의 하나님, 나의 하나님, 어찌하여 나를 버리셨나이까 하는 뜻이라",
+    "nevilleContext": "인간이 영적 각성 직전 겪는 절대적 고립과 무지의 상태, 곧 옛 자아가 죽어가는 십자가의 절규로 해석합니다."
   },
   {
     "id": "bible_40_027_051",
@@ -8014,6 +8318,22 @@
     "nevilleContext": "나사로의 부활 사건을 언급하며, 이는 썩어 죽은 자를 살려내는 상상할 수 없는 영적 환상(인간의 의식이 죽음에서 깨어나는 과정)을 상징한다고 설명합니다."
   },
   {
+    "id": "The Story Of Judas_John 11:49_theseareineveryageandever",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 16,
+    "bookNameEn": "John",
+    "bookNameKo": "요한복음",
+    "chapter": 11,
+    "verse": 49,
+    "ref": "John 11:49",
+    "refKo": "요한복음 11:49",
+    "en": "These are in every age and every time.",
+    "ko": "이것들은 모든 시대와 모든 시점에 존재합니다.",
+    "quoteInText": "High Priest Caiaphas",
+    "krv": "그 중에 한 사람 그 해의 대제사장인 가야바가 그들에게 말하되 너희가 아무 것도 알지 못하는도다",
+    "nevilleContext": "복음서의 대제사장 가야바를 인간 내면의 특정 심리적 상태를 대변하는 연극적 캐릭터로 봄."
+  },
+  {
     "id": "bible_43_012_024",
     "sourceTitle": "A State Called Moses (외 3개 강의·저서)",
     "sentenceNo": 59,
@@ -8396,6 +8716,22 @@
     "nevilleContext": "네빌 고다드는 성경의 인물과 나무, 포도나무의 비유를 외적인 역사적 인물이 아니라 인간 내면의 상상력과 의식 상태를 상징하는 신비적 알레고리로 해석합니다."
   },
   {
+    "id": "The Seven Eyes Of God_John 15:11_thesethingshaveispokentha",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 154,
+    "bookNameEn": "John",
+    "bookNameKo": "요한복음",
+    "chapter": 15,
+    "verse": 11,
+    "ref": "John 15:11",
+    "refKo": "요한복음 15:11",
+    "en": "“These things have I spoken that my joy may remain in you.”",
+    "ko": "“내가 이것을 너희에게 이름은 내 기쁨이 너희 안에 있어…”",
+    "quoteInText": "These things have I spoken that my joy may remain in you.",
+    "krv": "내가 이것을 너희에게 이름은 내 기쁨이 너희 안에 있어 너희 기쁨을 충만하게 하려 함이니라",
+    "nevilleContext": "인간이 상상력을 통해 타인을 사랑하고 창조를 확증할 때 느끼는 기쁨이 곧 그리스도(하나님)의 기쁨과 일치함을 나타내는 인용구입니다."
+  },
+  {
     "id": "Feed My Sheep_John 15:14_inolongercallyouservantfo",
     "sourceTitle": "Feed My Sheep",
     "sentenceNo": 46,
@@ -8598,6 +8934,22 @@
     "kjv": "I came out from the Father, and I came into the world; again I am leaving the world and I am going unto the Father.",
     "krv": "나는 아버지에게서 나와 세상에 왔고, 다시 세상을 떠나 아버지께로 가노라.",
     "nevilleContext": "근원(Father)으로부터의 투사와 현현, 그리고 깨달음을 통한 귀환이라는 인간 의식의 우주적 여정을 나타내는 성경 구절입니다."
+  },
+  {
+    "id": "The Seven Eyes Of God_John 17:5_forifchrististhecenterthe",
+    "sourceTitle": "The Seven Eyes Of God",
+    "sentenceNo": 83,
+    "bookNameEn": "John",
+    "bookNameKo": "요한복음",
+    "chapter": 17,
+    "verse": 5,
+    "ref": "John 17:5",
+    "refKo": "요한복음 17:5",
+    "en": "For if Christ is the center, then I can say, “Return to me the glory that was mine before the world was.",
+    "ko": "왜냐하면 만약 그리스도가 중심이라면, 나는 이렇게 말할 수 있기 때문입니다. \"세상이 있기 전에 내게 속했던 영광을 내게 돌려주소서.\"",
+    "quoteInText": "Return to me the glory that was mine before the world was",
+    "krv": "아버지여 창세 전에 내가 아버지와 함께 가졌던 영화로써 지금도 아버지와 함께 나를 영화롭게 하옵소서",
+    "nevilleContext": "세상 창조 이전부터 존재했던 영광과 자아의 본래 상태로 돌아가는 것을 상상력의 본질로 설명함."
   },
   {
     "id": "The Four Mighty Ones_John 17:11_hesaidihavekepteverything",
@@ -9866,6 +10218,22 @@
     "nevilleContext": "네빌 고다드는 성경의 천국(kingdom)이나 영적 상태가 육신의 눈이나 귀, 세상의 지식으로 파악할 수 있는 물리적 장소가 아니라 오직 의식의 각성을 통해서만 체험되는 차원임을 강조하기 위해 이 구절을 사용합니다."
   },
   {
+    "id": "The Story Of Judas_1 Corinthians 2:11_wearetoldincorinthianswho",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 108,
+    "bookNameEn": "1 Corinthians",
+    "bookNameKo": "고린도전서",
+    "chapter": 2,
+    "verse": 11,
+    "ref": "1 Corinthians 2:11",
+    "refKo": "고린도전서 2:11",
+    "en": "We are told in Corinthians, “Who knows the thoughts of a man but the spirit of man who dwells in him.”",
+    "ko": "고린도전서에서 우리는 다음과 같이 전해 듣습니다. \"사람의 일을 사람의 속에 있는 영 외에는 누가 알리요\"",
+    "quoteInText": "Who knows the thoughts of a man but the spirit of man who dwells in him.",
+    "krv": "사람의 일을 사람의 속에 있는 영 외에는 누가 알리요 이와 같이 하나님의 일도 하나님의 영 외에는 아무도 알지 못하느니라",
+    "nevilleContext": "하나님의 영과 인간의 영(상상력)이 하나이며, 인간 자신의 내면만이 자신의 깊은 생각과 창조의 본질을 알 수 있음을 뜻하는 네빌의 핵심 논증입니다."
+  },
+  {
     "id": "bible_46_002_014",
     "sourceTitle": "Book 7. Out Of This World",
     "sentenceNo": 22,
@@ -10488,6 +10856,22 @@
     "quoteInText": "for the living God is within you. Ye are the temple of the living God",
     "krv": "하나님의 성전과 우상이 어찌 일치가 되리요 우리는 살아 계신 하나님의 성전이라 이와 같이 하나님이 가라사대 내가 저희 가운데 거하며 두루 행하여 나는 저희 하나님이 되고 저희는 나의 백성이 되리라 하셨느니라",
     "nevilleContext": "하나님이 성전 건물이나 외적 대상이 아니라 인간의 내면(의식)에 존재함을 증명하는 핵심 성경 구절로 사용함."
+  },
+  {
+    "id": "The Story Of Judas_2 Corinthians 7:8_paulwroteabitterlettertot",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 40,
+    "bookNameEn": "2 Corinthians",
+    "bookNameKo": "고린도후서",
+    "chapter": 7,
+    "verse": 8,
+    "ref": "2 Corinthians 7:8",
+    "refKo": "고린도후서 7:8",
+    "en": "Paul wrote a bitter letter to the Corinthians and he said, “I do not repent or change my attitude toward you.”",
+    "ko": "바울은 고린도 교회 사람들에게 쓴맛 나는 편지를 쓰며 이렇게 말했습니다. \"나는 너희를 향한 나의 태도를 뉘우치지도 않고 바꾸지도 않노라.\"",
+    "quoteInText": "I do not repent or change my attitude toward you.",
+    "krv": "그러므로 내가 편지로 너희를 근심하게 한 것을 후회하였으나 지금은 후회하지 아니함은 그 편지가 너희로 잠시만 근심하게 한 줄을 앎이라",
+    "nevilleContext": "바울의 서신을 인용하여 참된 영적 진리를 선포한 자는 결과에 대해 염려할지언정 그 선포 행위 자체를 후회(repent)하지 않는다는 심리적 태도를 대변함."
   },
   {
     "id": "bible_47_012_002",
@@ -11568,6 +11952,22 @@
     "nevilleContext": "성막의 '휘장(the veil)'은 인간의 육체적 감각과 세속적 차원을 가르는 상징입니다. 네빌은 신성한 약속의 체험이 육신을 입고 있는 지상에서 성취되지 않더라도, 육신의 장막을 벗어난 '휘장 너머'의 차원에서 어김없이 완결된다는 확신을 전하기 위해 이 성경적 표현을 사용합니다."
   },
   {
+    "id": "The Story Of Judas_Hebrews 7:21_andanothertimewhenjesusis",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 41,
+    "bookNameEn": "Hebrews",
+    "bookNameKo": "히브리서",
+    "chapter": 7,
+    "verse": 21,
+    "ref": "Hebrews 7:21",
+    "refKo": "히브리서 7:21",
+    "en": "And another time when Jesus is made a member of the order of Melchizedek he says, “I do not repent.”",
+    "ko": "그리고 예수님이 멜기세덱 반차의 일원이 되신 또 다른 때에, 그는 이렇게 말씀하십니다. \"나는 뉘우치지 않노라.\"",
+    "quoteInText": "I do not repent",
+    "krv": "(저들은 맹세 없이 제사장이 되었으되 오직 자기에게 말씀하신 이는 주께 말씀하시되 주께서 맹세하시고 뉘우치지 아니하시리니 네가 영원히 제사장이라 하셨도다)",
+    "nevilleContext": "시편 110:4과 히브리서 7:21의 '뉘우치지 아니하시리라(do not repent)'는 표현을 빌려, 하나님의 영원하고 변치 않는 신성한 법령과 의식의 확고함을 설명함."
+  },
+  {
     "id": "bible_58_009_022",
     "sourceTitle": "Book 10. Seedtime And Harvest",
     "sentenceNo": 579,
@@ -12236,6 +12636,22 @@
     "nevilleContext": "요한계시록 3장 20절의 직서적 인용으로, 의식과 소망의 합일을 만찬에 비유한 신비주의적 표현입니다."
   },
   {
+    "id": "The Story Of Judas_Revelation 4:4_theseareineveryageandever",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 16,
+    "bookNameEn": "Revelation",
+    "bookNameKo": "요한계시록",
+    "chapter": 4,
+    "verse": 4,
+    "ref": "Revelation 4:4",
+    "refKo": "요한계시록 4:4",
+    "en": "These are in every age and every time.",
+    "ko": "이것들은 모든 시대와 모든 시점에 존재합니다.",
+    "quoteInText": "the four-and-twenty elders",
+    "krv": "또 보좌에 둘려 이십사 보좌들이 있고 그 보좌들 위에 이십사 장로들이 흰 옷을 입고 머리에 금 면류관을 쓰고 앉았더라",
+    "nevilleContext": "요한계시록에 등장하는 24 장로를 역사적 존재가 아닌 의식의 구성 요소나 영원한 연극의 배역 중 하나로 해석함."
+  },
+  {
     "id": "The Four Mighty Ones_Revelation 4:6_godisoneandhisnameisonebu",
     "sourceTitle": "The Four Mighty Ones",
     "sentenceNo": 123,
@@ -12384,5 +12800,37 @@
     "kjv": "I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star.",
     "krv": "나 예수는 교회들을 위하여 내 사자를 보내어 이것들을 너희에게 증거하게 하였노라 나는 다윗의 뿌리요 자손이니 곧 광명한 새벽 별이라 하시더라",
     "nevilleContext": "창조주이신 아버지와 피조물인 자손이 동일한 인물임을 나타내는 네빌 특유의 신비주의적 해석입니다."
+  },
+  {
+    "id": "The Story Of Judas_Revelation 22:21_thecentralfigurethestaris",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 14,
+    "bookNameEn": "Revelation",
+    "bookNameKo": "요한계시록",
+    "chapter": 22,
+    "verse": 21,
+    "ref": "Revelation 22:21",
+    "refKo": "요한계시록 22:21",
+    "en": "The central figure, the star, is Christ, and the whole play is about Christ from Genesis to Revelation, but there are many parts that reveal it.",
+    "ko": "중심 인물, 즉 스타는 그리스도이며, 창세기부터 요한계시록까지 전체 연극은 그리스도에 관한 것이지만, 그것을 드러내는 많은 역할들이 있습니다.",
+    "quoteInText": "Genesis to Revelation",
+    "krv": "주 예수의 은혜가 모든 자들에게 갈지어다 아멘",
+    "nevilleContext": "성경의 처음과 끝을 언급하여 성경 전체가 하나의 완결된 영적 연극 각본임을 설명함."
+  },
+  {
+    "id": "The Story Of Judas_Hermetica_iamallimaginationandiwear",
+    "sourceTitle": "The Story Of Judas",
+    "sentenceNo": 89,
+    "bookNameEn": "Hermetica",
+    "bookNameKo": "헤르메티카",
+    "chapter": 1,
+    "verse": 1,
+    "ref": "Hermetica",
+    "refKo": "헤르메티카",
+    "en": "I am all Imagination and I wear this mask until I go through all the parts, and then I am He, for the purpose of the play is to awaken us, “for God alone acts in all existing beings and men.”",
+    "ko": "나는 온통 상상력(Imagination)이며, 모든 배역을 거쳐 연기할 때까지 이 가면을 쓰고, 그런 다음 나는 그분(He)이 됩니다. 왜냐하면 연극의 목적은 우리를 깨우는 것이기 때문입니다. “오직 하나님만이 존재하는 모든 피조물과 인간 안에서 행하시기 때문입니다.”",
+    "quoteInText": "for God alone acts in all existing beings and men",
+    "krv": "오직 하나님만이 존재하는 모든 피조물과 인간 안에서 행하신다.",
+    "nevilleContext": "네빌 고다드가 자주 인용하는 헤르메스 트리스메기스투스의 문헌 구절로, 현상 세계의 모든 행동과 존재의 배후에는 단 하나의 실재인 하나님(상상력)만이 역사하고 있음을 나타냅니다."
   }
 ]
