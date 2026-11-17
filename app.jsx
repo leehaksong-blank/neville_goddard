@@ -2,7 +2,7 @@ const { useState, useEffect, useMemo } = React;
 
 // 1. 네빌 고다드 14권 정규 저서 (book1.json ~ book14.json)
 const BOOKS = [
-  { bookNum: 1, year: 1939, title: "At Your Command", koTitle: "당신의 명령대로", url: "https://thenevillegoddard.com/at-your-command/" },
+  { bookNum: 1, year: 1939, title: "At Your Command(book)", koTitle: "당신의 명령대로", url: "https://thenevillegoddard.com/at-your-command/" },
   { bookNum: 2, year: 1941, title: "Your Faith Is Your Fortune", koTitle: "당신의 믿음이 당신의 행운이다", url: "https://thenevillegoddard.com/your-faith-is-your-fortune/" },
   { bookNum: 3, year: 1942, title: "Freedom For All", koTitle: "모두를 위한 자유", url: "https://thenevillegoddard.com/freedom-for-all/" },
   { bookNum: 4, year: 1944, title: "Feeling Is The Secret", koTitle: "느낌이 비밀이다", url: "https://thenevillegoddard.com/feeling-is-the-secret/" },
@@ -740,7 +740,6 @@ function App() {
     loadJsonFile("bible.json", null);
     loadJsonFile("neville_data.json", null);
     for (let i = 1; i <= 8; i++) loadJsonFile("era" + i + ".json", null);
-    for (let v = 1; v <= 6; v++) loadJsonFile("vol" + v + ".json", null);
     BOOKS.forEach(b => loadJsonFile("book" + b.bookNum + ".json", b.title));
     fetchAll294Lectures();
   }, []);
