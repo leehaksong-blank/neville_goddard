@@ -441,7 +441,15 @@ function App() {
 
   // Gemini 모델 순차 호출
   const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount, lecTitleLabel = "") => {
-    const models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash"];
+    const models = [
+    "gemini-3.1-flash-lite",   // 1순위: 최신 3.1 초고속 경량 모델 (가장 빠르고 무료 한도 넉넉함)
+    "gemini-2.5-flash-lite",   // 2순위: 검증된 2.5 초고속 경량 모델
+    "gemini-flash-lite-latest",// 3순위: 최신 경량 별칭
+    "gemini-2.5-flash",        // 4순위: 안정적인 2.5 표준 모델
+    "gemini-3-flash-preview",  // 5순위: 최신 3.0 표준 모델
+    "gemini-flash-latest"      // 6순위: 최신 표준 별칭
+  ];
+
     let lastError = null;
 
     for (let m = 0; m < models.length; m++) {
