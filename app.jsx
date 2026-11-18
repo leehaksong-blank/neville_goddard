@@ -1477,7 +1477,7 @@ function App() {
 
             {/* 2. 294개 강의 연도별 8기 분류 */}
             <div className="text-[11px] text-amber-400 font-bold mb-1 pt-2 border-t border-slate-800 flex justify-between items-center">
-              <span>📅 294개 강의 연도별 8기 분류 (era1~8.json)</span>
+              <span>📅 276개 강의 연도별 8기 분류 (era1~8.json)</span>
               {loadingLectures && <span className="text-[10px] text-amber-300 animate-pulse">동기화중...</span>}
             </div>
 
@@ -1504,7 +1504,7 @@ function App() {
                     <div className="bg-slate-950 p-2 space-y-1 max-h-80 overflow-y-auto border-t border-slate-800">
                       {loadingLectures && subList.length === 0 ? (
                         <div className="text-xs text-amber-400 p-3 text-center">
-                          ⏳ 294개 전체 강의를 연도별로 배분하는 중...
+                          ⏳ 276개 전체 강의를 연도별로 배분하는 중...
                         </div>
                       ) : (
                         subList.map((lec) => {
