@@ -439,17 +439,15 @@ function App() {
     }
   };
 
-  // Gemini 모델 순차 호출
-  const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount, lecTitleLabel = "") => {
+const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, currentCount, lecTitleLabel = "") => {
+    // 콘솔에서 작동 확인된 실제 보유 모델 중 무료 할당량이 넉넉한 경량 모델 우선 배치
     const models = [
-    "gemini-3.1-flash-lite",   // 1순위: 최신 3.1 초고속 경량 모델 (가장 빠르고 무료 한도 넉넉함)
-    "gemini-2.5-flash-lite",   // 2순위: 검증된 2.5 초고속 경량 모델
-    "gemini-flash-lite-latest",// 3순위: 최신 경량 별칭
-    "gemini-2.5-flash",        // 4순위: 안정적인 2.5 표준 모델
-    "gemini-3-flash-preview",  // 5순위: 최신 3.0 표준 모델
-    "gemini-flash-latest"      // 6순위: 최신 표준 별칭
-  ];
-
+      "gemini-3.1-flash-lite",
+      "gemini-2.5-flash-lite",
+      "gemini-flash-lite-latest",
+      "gemini-2.5-flash",
+      "gemini-flash-latest"
+    ];
     let lastError = null;
 
     for (let m = 0; m < models.length; m++) {
@@ -477,8 +475,22 @@ function App() {
 
           const data = await res.json();
           if (data.error) {
-            lastError = new Error(data.error.message);
-            await sleep(2000);
+            const errMsg = data.error.message || "";
+            lastError = new Error(`[${modelName}] ${errMsg}`);
+
+            // 하루 한도 초과(per day / limit: 20) 또는 미지원 모델이면 재시도 없이 즉시 다음 모델로 이동
+            if (
+              errMsg.includes("per day") ||
+              errMsg.includes("limit: 20") ||
+              errMsg.includes("no longer available") ||
+              errMsg.includes("not found") ||
+              res.status === 404
+            ) {
+              break;
+            }
+
+            // 분당 속도 제한(RPM)일 때만 8초 대기 후 재시도[cite: 3]
+            await sleep(8000);
             continue;
           }
 
