@@ -30,6 +30,91 @@ const ERAS = [
   { era: 8, title: "제8기 (1969 ~ 1972년)", sub: "말기 강연 & 최종 유산", startYear: 1969, endYear: 1972 }
 ];
 
+
+// 2-1. 성경 66권 마스터 목록 (성경 구절 탭 왼쪽 사이드바 메뉴용)
+const BIBLE_BOOKS_66 = [
+  { order: 1, en: "Genesis", ko: "창세기", test: "OT" },
+  { order: 2, en: "Exodus", ko: "출애굽기", test: "OT" },
+  { order: 3, en: "Leviticus", ko: "레위기", test: "OT" },
+  { order: 4, en: "Numbers", ko: "민수기", test: "OT" },
+  { order: 5, en: "Deuteronomy", ko: "신명기", test: "OT" },
+  { order: 6, en: "Joshua", ko: "여호수아", test: "OT" },
+  { order: 7, en: "Judges", ko: "사사기", test: "OT" },
+  { order: 8, en: "Ruth", ko: "룻기", test: "OT" },
+  { order: 9, en: "1 Samuel", ko: "사무엘상", test: "OT" },
+  { order: 10, en: "2 Samuel", ko: "사무엘하", test: "OT" },
+  { order: 11, en: "1 Kings", ko: "열왕기상", test: "OT" },
+  { order: 12, en: "2 Kings", ko: "열왕기하", test: "OT" },
+  { order: 13, en: "1 Chronicles", ko: "역대상", test: "OT" },
+  { order: 14, en: "2 Chronicles", ko: "역대하", test: "OT" },
+  { order: 15, en: "Ezra", ko: "에스라", test: "OT" },
+  { order: 16, en: "Nehemiah", ko: "느헤미야", test: "OT" },
+  { order: 17, en: "Esther", ko: "에스더", test: "OT" },
+  { order: 18, en: "Job", ko: "욥기", test: "OT" },
+  { order: 19, en: "Psalm", ko: "시편", test: "OT" },
+  { order: 20, en: "Proverbs", ko: "잠언", test: "OT" },
+  { order: 21, en: "Ecclesiastes", ko: "전도서", test: "OT" },
+  { order: 22, en: "Song of Solomon", ko: "아가", test: "OT" },
+  { order: 23, en: "Isaiah", ko: "이사야", test: "OT" },
+  { order: 24, en: "Jeremiah", ko: "예레미야", test: "OT" },
+  { order: 25, en: "Lamentations", ko: "예레미야애가", test: "OT" },
+  { order: 26, en: "Ezekiel", ko: "에스겔", test: "OT" },
+  { order: 27, en: "Daniel", ko: "다니엘", test: "OT" },
+  { order: 28, en: "Hosea", ko: "호세아", test: "OT" },
+  { order: 29, en: "Joel", ko: "요엘", test: "OT" },
+  { order: 30, en: "Amos", ko: "아모스", test: "OT" },
+  { order: 31, en: "Obadiah", ko: "오바댜", test: "OT" },
+  { order: 32, en: "Jonah", ko: "요나", test: "OT" },
+  { order: 33, en: "Micah", ko: "미가", test: "OT" },
+  { order: 34, en: "Nahum", ko: "나훔", test: "OT" },
+  { order: 35, en: "Habakkuk", ko: "하박국", test: "OT" },
+  { order: 36, en: "Zephaniah", ko: "스바냐", test: "OT" },
+  { order: 37, en: "Haggai", ko: "학개", test: "OT" },
+  { order: 38, en: "Zechariah", ko: "스가랴", test: "OT" },
+  { order: 39, en: "Malachi", ko: "말라기", test: "OT" },
+  { order: 40, en: "Matthew", ko: "마태복음", test: "NT" },
+  { order: 41, en: "Mark", ko: "마가복음", test: "NT" },
+  { order: 42, en: "Luke", ko: "누가복음", test: "NT" },
+  { order: 43, en: "John", ko: "요한복음", test: "NT" },
+  { order: 44, en: "Acts", ko: "사도행전", test: "NT" },
+  { order: 45, en: "Romans", ko: "로마서", test: "NT" },
+  { order: 46, en: "1 Corinthians", ko: "고린도전서", test: "NT" },
+  { order: 47, en: "2 Corinthians", ko: "고린도후서", test: "NT" },
+  { order: 48, en: "Galatians", ko: "갈라디아서", test: "NT" },
+  { order: 49, en: "Ephesians", ko: "에베소서", test: "NT" },
+  { order: 50, en: "Philippians", ko: "빌립보서", test: "NT" },
+  { order: 51, en: "Colossians", ko: "골로새서", test: "NT" },
+  { order: 52, en: "1 Thessalonians", ko: "데살로니가전서", test: "NT" },
+  { order: 53, en: "2 Thessalonians", ko: "데살로니가후서", test: "NT" },
+  { order: 54, en: "1 Timothy", ko: "디모데전서", test: "NT" },
+  { order: 55, en: "2 Timothy", ko: "디모데후서", test: "NT" },
+  { order: 56, en: "Titus", ko: "디도서", test: "NT" },
+  { order: 57, en: "Philemon", ko: "빌레몬서", test: "NT" },
+  { order: 58, en: "Hebrews", ko: "히브리서", test: "NT" },
+  { order: 59, en: "James", ko: "야고보서", test: "NT" },
+  { order: 60, en: "1 Peter", ko: "베드로전서", test: "NT" },
+  { order: 61, en: "2 Peter", ko: "베드로후서", test: "NT" },
+  { order: 62, en: "1 John", ko: "요한일서", test: "NT" },
+  { order: 63, en: "2 John", ko: "요한이서", test: "NT" },
+  { order: 64, en: "3 John", ko: "요한삼서", test: "NT" },
+  { order: 65, en: "Jude", ko: "유다서", test: "NT" },
+  { order: 66, en: "Revelation", ko: "요한계시록", test: "NT" }
+];
+
+const matchBibleBook = (item, bookObj) => {
+  if (!item || !bookObj) return false;
+  const ko = (item.bookNameKo || "").trim();
+  const en = (item.bookNameEn || "").trim().toLowerCase();
+  const ref = (item.ref || "").trim().toLowerCase();
+  const refKo = (item.refKo || "").trim();
+  const targetEn = bookObj.en.toLowerCase();
+  if (ko && ko === bookObj.ko) return true;
+  if (en && (en === targetEn || (targetEn === "psalm" && en === "psalms") || (targetEn === "revelation" && en === "revelations"))) return true;
+  if (refKo && refKo.startsWith(bookObj.ko + " ")) return true;
+  if (ref && (ref.startsWith(targetEn + " ") || (targetEn === "psalm" && ref.startsWith("psalms ")))) return true;
+  return false;
+};
+
 const INDEX_URLS = [
   "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-1",
   "https://www.neville-goddard.com/neville-goddard-lectures/read-neville-goddard-lectures-on-line-2",
@@ -160,6 +245,7 @@ function App() {
   const [loadingLectures, setLoadingLectures] = useState(false);
   const [loadedFiles, setLoadedFiles] = useState({});
   const [bibleSearch, setBibleSearch] = useState("");
+  const [selectedBibleBook, setSelectedBibleBook] = useState("ALL");
 
   // ★ 연속 자동 실행 상태 및 정지 플래그
   const [batchRunning, setBatchRunning] = useState(false);
@@ -489,7 +575,7 @@ const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, curre
               break;
             }
 
-            // 분당 속도 제한(RPM)일 때만 8초 대기 후 재시도[cite: 3]
+            // 분당 속도 제한(RPM)일 때만 8초 대기 후 재시도
             await sleep(8000);
             continue;
           }
@@ -940,7 +1026,10 @@ const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, curre
     }, 150);
   };
 
+  const selectedBibleBookObj = BIBLE_BOOKS_66.find(bk => bk.ko === selectedBibleBook) || null;
+
   const filteredBibleList = bibleList.filter(b => {
+    if (selectedBibleBookObj && !matchBibleBook(b, selectedBibleBookObj)) return false;
     if (!bibleSearch.trim()) return true;
     const q = bibleSearch.toLowerCase();
     return (
@@ -975,6 +1064,60 @@ const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, curre
         </div>
 
         <div className="flex-1 overflow-y-auto space-y-2 pr-1">
+          {activeTab === "bible" ? (
+            <div className="space-y-1.5">
+              <button
+                onClick={() => setSelectedBibleBook("ALL")}
+                className={"w-full text-left px-3 py-2.5 rounded-lg text-xs font-bold transition flex justify-between items-center " + (selectedBibleBook === "ALL" ? "bg-emerald-500 text-slate-950" : "bg-slate-800 hover:bg-slate-700 text-slate-200")}
+              >
+                <span>📖 전체 성경 구절 보기</span>
+                <span className="text-[10px] px-1.5 py-0.5 rounded bg-black/20">{bibleList.length}</span>
+              </button>
+
+              <div className="text-[11px] text-emerald-400 font-bold pt-2 pb-0.5">📜 구약 성경 (창세기 ~ 말라기)</div>
+              {BIBLE_BOOKS_66.filter(bk => bk.test === "OT").map(book => {
+                const count = bibleList.filter(b => matchBibleBook(b, book)).length;
+                if (count === 0) return null;
+                const isSel = selectedBibleBook === book.ko;
+                return (
+                  <button
+                    key={book.order}
+                    onClick={() => setSelectedBibleBook(book.ko)}
+                    className={"w-full text-left px-3 py-2 rounded-lg text-xs transition flex justify-between items-center " + (isSel ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/50 font-bold" : "bg-slate-950/60 text-slate-200 hover:bg-slate-800")}
+                  >
+                    <span className="truncate pr-2">
+                      {book.order}. {book.ko} <span className="text-[10px] text-slate-400">({book.en})</span>
+                    </span>
+                    <span className="text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded font-bold shrink-0">
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
+
+              <div className="text-[11px] text-amber-400 font-bold pt-3 pb-0.5 border-t border-slate-800">✝️ 신약 성경 (마태복음 ~ 요한계시록)</div>
+              {BIBLE_BOOKS_66.filter(bk => bk.test === "NT").map(book => {
+                const count = bibleList.filter(b => matchBibleBook(b, book)).length;
+                if (count === 0) return null;
+                const isSel = selectedBibleBook === book.ko;
+                return (
+                  <button
+                    key={book.order}
+                    onClick={() => setSelectedBibleBook(book.ko)}
+                    className={"w-full text-left px-3 py-2 rounded-lg text-xs transition flex justify-between items-center " + (isSel ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/50 font-bold" : "bg-slate-950/60 text-slate-200 hover:bg-slate-800")}
+                  >
+                    <span className="truncate pr-2">
+                      {book.order}. {book.ko} <span className="text-[10px] text-slate-400">({book.en})</span>
+                    </span>
+                    <span className="text-[10px] bg-amber-600 text-white px-1.5 py-0.5 rounded font-bold shrink-0">
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          ) : (
+            <>
           {/* 1. 네빌 고다드 14권 정규 저서 */}
           <div className="mb-3">
             <div className="text-[11px] text-emerald-400 font-bold mb-1">📖 정규 출간 단행본 (book1~14.json)</div>
@@ -1096,6 +1239,8 @@ const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, curre
               </div>
             );
           })}
+            </>
+          )}
         </div>
       </aside>
 
@@ -1127,7 +1272,9 @@ const callGeminiWithFallback = async (promptText, chunkIndex, totalChunks, curre
           <div>
             <div className="flex flex-wrap justify-between items-center gap-3 mb-4 pb-3 border-b">
               <div>
-                <h2 className="text-2xl font-bold">✝️ 네빌 고다드 성경 인용 아카이브 ({bibleList.length}구절)</h2>
+                <h2 className="text-2xl font-bold">
+                  ✝️ 네빌 고다드 성경 인용 아카이브 {selectedBibleBook !== "ALL" ? `— ${selectedBibleBook}` : ""} ({filteredBibleList.length}구절)
+                </h2>
                 <p className="text-xs text-slate-500 mt-1">
                   깃허브의 bible.json 및 강독 노트에서 추출된 성경 구절과 원문(KJV/개역한글)·네빌 해설입니다.
                 </p>
