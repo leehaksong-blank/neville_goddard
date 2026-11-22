@@ -191,7 +191,7 @@ const getEraForTitle = (title, yearMap) => {
 };
 
 function ViewerApp() {
-  const [activeTab, setActiveTab] = useState("lecture");
+  const [activeTab, setActiveTab] = useState("lecture"); // "lecture" | "bible" | "bookmarks"
   const [openBooksMenu, setOpenBooksMenu] = useState(true);
   const [openEra, setOpenEra] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -204,6 +204,24 @@ function ViewerApp() {
   const [quizMode, setQuizMode] = useState(false);
   const [bibleSearch, setBibleSearch] = useState("");
   const [selectedBibleBook, setSelectedBibleBook] = useState("ALL");
+
+  // ★ 다중 책갈피 상태 (localStorage 자동 저장)
+  const [bookmarks, setBookmarks] = useState(() => {
+    try {
+      const saved = localStorage.getItem("neville_viewer_bookmarks");
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
+  const [pendingScroll, setPendingScroll] = useState(null);
+  const [highlightedIdx, setHighlightedIdx] = useState(null);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem("neville_viewer_bookmarks", JSON.stringify(bookmarks));
+    } catch (e) {}
+  }, [bookmarks]);
 
   // 배포된 JSON 데이터 일괄 로드
   useEffect(() => {
@@ -261,7 +279,6 @@ function ViewerApp() {
       setLectureYears(mergedYears);
       setBibleList(loadedBible);
 
-      // 초기 선택 항목 자동 지정 (데이터가 있는 첫 번째 저서 또는 첫 번째 강연)
       const firstAvailableBook = BOOKS.find(b => (mergedStore[b.title] || []).length > 0);
       if (firstAvailableBook) {
         setSelectedLec({
@@ -285,6 +302,68 @@ function ViewerApp() {
     loadAllData();
     return () => { isMounted = false; };
   }, []);
+
+  // ★ 책갈피 클릭 후 해당 저서/강연이 렌더링되면 정확한 문장 위치로 부드럽게 스크롤 + 하이라이트
+  useEffect(() => {
+    if (!pendingScroll || !selectedLec || selectedLec.title !== pendingScroll.title) return;
+    if (activeTab === "bible") return;
+
+    const timer = setTimeout(() => {
+      const el = document.getElementById("sentence-" + pendingScroll.sentenceIndex);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        setHighlightedIdx(pendingScroll.sentenceIndex);
+        setTimeout(() => setHighlightedIdx(null), 2500);
+      }
+      setPendingScroll(null);
+    }, 120);
+
+    return () => clearTimeout(timer);
+  }, [pendingScroll, selectedLec, activeTab]);
+
+  // ★ 책갈피 추가/해제 토글
+  const toggleBookmark = (idx, sentenceObj) => {
+    if (!selectedLec) return;
+    const bmId = `${selectedLec.title}_${idx}`;
+    setBookmarks(prev => {
+      const exists = prev.some(b => b.id === bmId);
+      if (exists) {
+        return prev.filter(b => b.id !== bmId);
+      }
+      const newBm = {
+        id: bmId,
+        isBook: !!selectedLec.isBook,
+        num: selectedLec.num || null,
+        title: selectedLec.title,
+        koTitle: selectedLec.koTitle || "",
+        sentenceIndex: idx,
+        enPreview: (sentenceObj.en || "").slice(0, 75),
+        koPreview: (sentenceObj.ko || "").slice(0, 55),
+        createdAt: Date.now()
+      };
+      return [newBm, ...prev];
+    });
+  };
+
+  const removeBookmark = (id, e) => {
+    if (e) e.stopPropagation();
+    setBookmarks(prev => prev.filter(b => b.id !== id));
+  };
+
+  // ★ 책갈피 클릭 시 해당 저서/강연 및 문장으로 이동
+  const handleJumpToBookmark = (bm) => {
+    setActiveTab("bookmarks");
+    if (bm.isBook) {
+      setOpenBooksMenu(true);
+      setSelectedLec({ isBook: true, num: bm.num, title: bm.title, koTitle: bm.koTitle });
+    } else {
+      setOpenEra(getEraForTitle(bm.title, lectureYears));
+      setSelectedLec({ isBook: false, title: bm.title });
+    }
+    setPendingScroll({ title: bm.title, sentenceIndex: bm.sentenceIndex });
+  };
+
+  const bookmarkIdSet = useMemo(() => new Set(bookmarks.map(b => b.id)), [bookmarks]);
 
   // 로드된 강연 목록 (저서 제외)
   const loadedLectures = useMemo(() => {
@@ -357,23 +436,85 @@ function ViewerApp() {
         <div className="text-xs text-amber-400 font-bold uppercase tracking-wider mb-1">Neville Goddard Archive</div>
         <h1 className="text-lg font-bold mb-2">네빌 고다드 강독 아카이브</h1>
 
-        <div className="grid grid-cols-2 gap-1.5 bg-slate-950 p-1 rounded-lg mb-3 border border-slate-800">
+        {/* 상단 3분할 탭: 강독 / 성경 / 책갈피 */}
+        <div className="grid grid-cols-3 gap-1 bg-slate-950 p-1 rounded-lg mb-3 border border-slate-800">
           <button
             onClick={() => setActiveTab("lecture")}
-            className={"py-2 rounded text-xs font-bold transition " + (activeTab === "lecture" ? "bg-amber-500 text-slate-950" : "text-slate-400 hover:text-white")}
+            className={"py-2 rounded text-[11px] font-bold transition " + (activeTab === "lecture" ? "bg-amber-500 text-slate-950" : "text-slate-400 hover:text-white")}
           >
-            📚 강독 노트 ({totalNotesCount})
+            📚 강독 ({totalNotesCount})
           </button>
           <button
             onClick={() => setActiveTab("bible")}
-            className={"py-2 rounded text-xs font-bold transition " + (activeTab === "bible" ? "bg-emerald-500 text-slate-950" : "text-slate-400 hover:text-white")}
+            className={"py-2 rounded text-[11px] font-bold transition " + (activeTab === "bible" ? "bg-emerald-500 text-slate-950" : "text-slate-400 hover:text-white")}
           >
-            ✝️ 성경 구절 ({bibleList.length})
+            ✝️ 성경 ({bibleList.length})
+          </button>
+          <button
+            onClick={() => setActiveTab("bookmarks")}
+            className={"py-2 rounded text-[11px] font-bold transition " + (activeTab === "bookmarks" ? "bg-sky-400 text-slate-950" : "text-slate-400 hover:text-white")}
+          >
+            🔖 책갈피 ({bookmarks.length})
           </button>
         </div>
 
         <div className="flex-1 overflow-y-auto space-y-2 pr-1">
-          {activeTab === "bible" ? (
+          {activeTab === "bookmarks" ? (
+            <div className="space-y-2">
+              <div className="flex justify-between items-center text-[11px] text-sky-400 font-bold pb-1 border-b border-slate-800">
+                <span>🔖 저장된 책갈피 ({bookmarks.length})</span>
+                {bookmarks.length > 0 && (
+                  <button
+                    onClick={() => {
+                      if (confirm("저장된 모든 책갈피를 삭제할까요?")) setBookmarks([]);
+                    }}
+                    className="text-[10px] text-slate-400 hover:text-red-400 font-normal"
+                  >
+                    전체 삭제
+                  </button>
+                )}
+              </div>
+
+              {bookmarks.length === 0 ? (
+                <div className="text-xs text-slate-400 bg-slate-950/60 p-4 rounded-lg text-center leading-relaxed">
+                  아직 저장된 책갈피가 없습니다.
+                  <br />
+                  <br />
+                  읽다가 기억하고 싶은 문장의
+                  <br />
+                  <span className="text-amber-400 font-bold">[☆ 책갈피]</span> 버튼을 눌러보세요!
+                </div>
+              ) : (
+                bookmarks.map(bm => (
+                  <div
+                    key={bm.id}
+                    onClick={() => handleJumpToBookmark(bm)}
+                    className="group cursor-pointer bg-slate-800/80 hover:bg-slate-800 border border-slate-700 hover:border-sky-400/60 rounded-lg p-2.5 transition"
+                  >
+                    <div className="flex justify-between items-start gap-2 mb-1">
+                      <div className="text-xs font-bold text-amber-300 truncate">
+                        {bm.isBook ? `📖 Book ${bm.num}. ` : "📅 "}
+                        {bm.title}
+                      </div>
+                      <button
+                        onClick={(e) => removeBookmark(bm.id, e)}
+                        title="책갈피 삭제"
+                        className="text-slate-500 hover:text-red-400 text-xs font-bold px-1 shrink-0"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <div className="inline-block text-[10px] bg-sky-500/20 text-sky-300 px-1.5 py-0.5 rounded font-bold mb-1">
+                      Sentence {String(bm.sentenceIndex + 1).padStart(2, "0")}
+                    </div>
+                    <div className="text-[11px] text-slate-200 line-clamp-2 leading-snug">
+                      {bm.koPreview || bm.enPreview}
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          ) : activeTab === "bible" ? (
             <div className="space-y-1.5">
               <button
                 onClick={() => setSelectedBibleBook("ALL")}
@@ -662,51 +803,77 @@ function ViewerApp() {
               </div>
             ) : (
               <div className="space-y-6">
-                {sentences.map((s, idx) => (
-                  <div key={idx} className="print-card bg-white p-6 rounded-xl border shadow-sm">
-                    <div className="flex justify-between items-center mb-2 border-b pb-2">
-                      <span style={{ fontFamily: "Georgia, serif", fontSize: "17pt", color: "#292929" }} className="font-bold">
-                        Sentence {String(idx + 1).padStart(2, "0")}
-                      </span>
-                      <button
-                        onClick={() => speak(s.en)}
-                        className="no-print px-3 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
-                      >
-                        🔊 발음 듣기
-                      </button>
-                    </div>
-
-                    <p style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }} className="mb-3">
-                      {s.en}
-                    </p>
-
-                    <p
-                      style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}
-                      className={"p-3 bg-stone-50 border-l-4 border-stone-800 rounded mb-4 " + (quizMode ? "blur-sm hover:blur-none transition cursor-pointer" : "")}
+                {sentences.map((s, idx) => {
+                  const isBookmarked = bookmarkIdSet.has(`${selectedLec.title}_${idx}`);
+                  const isHighlighted = highlightedIdx === idx;
+                  return (
+                    <div
+                      key={idx}
+                      id={"sentence-" + idx}
+                      className={
+                        "print-card p-6 rounded-xl border shadow-sm transition-all duration-500 " +
+                        (isHighlighted
+                          ? "bg-amber-50/70 border-amber-400 ring-2 ring-amber-400"
+                          : "bg-white")
+                      }
                     >
-                      {s.ko}
-                    </p>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-dashed" style={{ fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}>
-                      <div>
-                        <div className="font-bold mb-1">[핵심 어휘 및 숙어]</div>
-                        <ul className="list-disc pl-5 space-y-1">
-                          {(s.vocab || []).map((v, i) => (
-                            <li key={i}><b>{v.word}</b> : {v.mean}</li>
-                          ))}
-                        </ul>
+                      <div className="flex justify-between items-center mb-2 border-b pb-2 gap-2">
+                        <span style={{ fontFamily: "Georgia, serif", fontSize: "17pt", color: "#292929" }} className="font-bold">
+                          Sentence {String(idx + 1).padStart(2, "0")}
+                        </span>
+                        <div className="no-print flex items-center gap-1.5">
+                          <button
+                            onClick={() => toggleBookmark(idx, s)}
+                            className={
+                              "px-2.5 py-1 rounded text-xs font-bold transition " +
+                              (isBookmarked
+                                ? "bg-sky-500 text-white hover:bg-sky-600"
+                                : "bg-slate-100 text-slate-600 hover:bg-slate-200")
+                            }
+                          >
+                            {isBookmarked ? "★ 저장됨" : "☆ 책갈피"}
+                          </button>
+                          <button
+                            onClick={() => speak(s.en)}
+                            className="px-3 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
+                          >
+                            🔊 발음 듣기
+                          </button>
+                        </div>
                       </div>
-                      <div>
-                        <div className="font-bold mb-1">[구문 및 문법 해설]</div>
-                        <ul className="list-disc pl-5 space-y-1">
-                          {(s.grammar || []).map((g, i) => (
-                            <li key={i}><b>{g.tag}</b> — {g.desc}</li>
-                          ))}
-                        </ul>
+
+                      <p style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }} className="mb-3">
+                        {s.en}
+                      </p>
+
+                      <p
+                        style={{ fontFamily: "Georgia, serif", fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}
+                        className={"p-3 bg-stone-50 border-l-4 border-stone-800 rounded mb-4 " + (quizMode ? "blur-sm hover:blur-none transition cursor-pointer" : "")}
+                      >
+                        {s.ko}
+                      </p>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-dashed" style={{ fontSize: "14pt", lineHeight: "1.55", color: "#292929" }}>
+                        <div>
+                          <div className="font-bold mb-1">[핵심 어휘 및 숙어]</div>
+                          <ul className="list-disc pl-5 space-y-1">
+                            {(s.vocab || []).map((v, i) => (
+                              <li key={i}><b>{v.word}</b> : {v.mean}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        <div>
+                          <div className="font-bold mb-1">[구문 및 문법 해설]</div>
+                          <ul className="list-disc pl-5 space-y-1">
+                            {(s.grammar || []).map((g, i) => (
+                              <li key={i}><b>{g.tag}</b> — {g.desc}</li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>
