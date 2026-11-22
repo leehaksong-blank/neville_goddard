@@ -190,6 +190,11 @@ const getEraForTitle = (title, yearMap) => {
   return 1;
 };
 
+// 성경 구절 고유 ID 생성
+const getBibleItemId = (b) => {
+  return b.id || `${b.sourceTitle || ""}_${b.sentenceNo || ""}_${b.ref || ""}_${(b.en || "").slice(0, 20)}`;
+};
+
 function ViewerApp() {
   const [activeTab, setActiveTab] = useState("lecture"); // "lecture" | "bible" | "bookmarks"
   const [openBooksMenu, setOpenBooksMenu] = useState(true);
@@ -205,7 +210,7 @@ function ViewerApp() {
   const [bibleSearch, setBibleSearch] = useState("");
   const [selectedBibleBook, setSelectedBibleBook] = useState("ALL");
 
-  // ★ 다중 책갈피 상태 (localStorage 자동 저장)
+  // ★ 다중 책갈피 상태 (강독 문장 + 성경 구절 통합 저장)
   const [bookmarks, setBookmarks] = useState(() => {
     try {
       const saved = localStorage.getItem("neville_viewer_bookmarks");
@@ -216,6 +221,7 @@ function ViewerApp() {
   });
   const [pendingScroll, setPendingScroll] = useState(null);
   const [highlightedIdx, setHighlightedIdx] = useState(null);
+  const [highlightedBibleId, setHighlightedBibleId] = useState(null);
 
   useEffect(() => {
     try {
@@ -303,10 +309,25 @@ function ViewerApp() {
     return () => { isMounted = false; };
   }, []);
 
-  // ★ 책갈피 클릭 후 해당 저서/강연이 렌더링되면 정확한 문장 위치로 부드럽게 스크롤 + 하이라이트
+  // ★ 책갈피 클릭 후 해당 문장 또는 성경 구절로 부드럽게 스크롤 + 하이라이트
   useEffect(() => {
-    if (!pendingScroll || !selectedLec || selectedLec.title !== pendingScroll.title) return;
-    if (activeTab === "bible") return;
+    if (!pendingScroll) return;
+
+    if (pendingScroll.type === "bible") {
+      if (activeTab !== "bible") return;
+      const timer = setTimeout(() => {
+        const el = document.getElementById("bible-card-" + pendingScroll.bibleId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          setHighlightedBibleId(pendingScroll.bibleId);
+          setTimeout(() => setHighlightedBibleId(null), 2500);
+        }
+        setPendingScroll(null);
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+
+    if (!selectedLec || selectedLec.title !== pendingScroll.title || activeTab === "bible") return;
 
     const timer = setTimeout(() => {
       const el = document.getElementById("sentence-" + pendingScroll.sentenceIndex);
@@ -321,17 +342,16 @@ function ViewerApp() {
     return () => clearTimeout(timer);
   }, [pendingScroll, selectedLec, activeTab]);
 
-  // ★ 책갈피 추가/해제 토글
+  // ★ 강독 문장 책갈피 토글
   const toggleBookmark = (idx, sentenceObj) => {
     if (!selectedLec) return;
     const bmId = `${selectedLec.title}_${idx}`;
     setBookmarks(prev => {
       const exists = prev.some(b => b.id === bmId);
-      if (exists) {
-        return prev.filter(b => b.id !== bmId);
-      }
+      if (exists) return prev.filter(b => b.id !== bmId);
       const newBm = {
         id: bmId,
+        type: "lecture",
         isBook: !!selectedLec.isBook,
         num: selectedLec.num || null,
         title: selectedLec.title,
@@ -345,13 +365,44 @@ function ViewerApp() {
     });
   };
 
+  // ★ 성경 구절 책갈피 토글
+  const toggleBibleBookmark = (bibleObj) => {
+    const bId = getBibleItemId(bibleObj);
+    const bmId = `bible_${bId}`;
+    setBookmarks(prev => {
+      const exists = prev.some(b => b.id === bmId);
+      if (exists) return prev.filter(b => b.id !== bmId);
+      const newBm = {
+        id: bmId,
+        type: "bible",
+        bibleId: bId,
+        ref: bibleObj.ref || "",
+        refKo: bibleObj.refKo || bibleObj.ref || "",
+        sourceTitle: bibleObj.sourceTitle || "",
+        sentenceNo: bibleObj.sentenceNo || "",
+        enPreview: (bibleObj.en || "").slice(0, 75),
+        koPreview: (bibleObj.ko || "").slice(0, 55),
+        createdAt: Date.now()
+      };
+      return [newBm, ...prev];
+    });
+  };
+
   const removeBookmark = (id, e) => {
     if (e) e.stopPropagation();
     setBookmarks(prev => prev.filter(b => b.id !== id));
   };
 
-  // ★ 책갈피 클릭 시 해당 저서/강연 및 문장으로 이동
+  // ★ 책갈피 클릭 시 이동
   const handleJumpToBookmark = (bm) => {
+    if (bm.type === "bible") {
+      setSelectedBibleBook("ALL");
+      setBibleSearch("");
+      setActiveTab("bible");
+      setPendingScroll({ type: "bible", bibleId: bm.bibleId });
+      return;
+    }
+
     setActiveTab("bookmarks");
     if (bm.isBook) {
       setOpenBooksMenu(true);
@@ -360,7 +411,7 @@ function ViewerApp() {
       setOpenEra(getEraForTitle(bm.title, lectureYears));
       setSelectedLec({ isBook: false, title: bm.title });
     }
-    setPendingScroll({ title: bm.title, sentenceIndex: bm.sentenceIndex });
+    setPendingScroll({ type: "lecture", title: bm.title, sentenceIndex: bm.sentenceIndex });
   };
 
   const bookmarkIdSet = useMemo(() => new Set(bookmarks.map(b => b.id)), [bookmarks]);
@@ -480,7 +531,7 @@ function ViewerApp() {
                   아직 저장된 책갈피가 없습니다.
                   <br />
                   <br />
-                  읽다가 기억하고 싶은 문장의
+                  강독 문장이나 성경 구절의
                   <br />
                   <span className="text-amber-400 font-bold">[☆ 책갈피]</span> 버튼을 눌러보세요!
                 </div>
@@ -492,9 +543,10 @@ function ViewerApp() {
                     className="group cursor-pointer bg-slate-800/80 hover:bg-slate-800 border border-slate-700 hover:border-sky-400/60 rounded-lg p-2.5 transition"
                   >
                     <div className="flex justify-between items-start gap-2 mb-1">
-                      <div className="text-xs font-bold text-amber-300 truncate">
-                        {bm.isBook ? `📖 Book ${bm.num}. ` : "📅 "}
-                        {bm.title}
+                      <div className={"text-xs font-bold truncate " + (bm.type === "bible" ? "text-emerald-300" : "text-amber-300")}>
+                        {bm.type === "bible"
+                          ? `✝️ ${bm.refKo || bm.ref}`
+                          : (bm.isBook ? `📖 Book ${bm.num}. ` : "📅 ") + bm.title}
                       </div>
                       <button
                         onClick={(e) => removeBookmark(bm.id, e)}
@@ -504,9 +556,15 @@ function ViewerApp() {
                         ✕
                       </button>
                     </div>
-                    <div className="inline-block text-[10px] bg-sky-500/20 text-sky-300 px-1.5 py-0.5 rounded font-bold mb-1">
-                      Sentence {String(bm.sentenceIndex + 1).padStart(2, "0")}
-                    </div>
+                    {bm.type === "bible" ? (
+                      <div className="inline-block text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded font-bold mb-1 truncate max-w-full">
+                        성경 · {bm.sourceTitle}
+                      </div>
+                    ) : (
+                      <div className="inline-block text-[10px] bg-sky-500/20 text-sky-300 px-1.5 py-0.5 rounded font-bold mb-1">
+                        Sentence {String(bm.sentenceIndex + 1).padStart(2, "0")}
+                      </div>
+                    )}
                     <div className="text-[11px] text-slate-200 line-clamp-2 leading-snug">
                       {bm.koPreview || bm.enPreview}
                     </div>
@@ -715,39 +773,64 @@ function ViewerApp() {
               </div>
             ) : (
               <div className="space-y-4">
-                {filteredBibleList.map((b, idx) => (
-                  <div key={b.id || idx} className="bg-white p-5 rounded-xl border shadow-sm space-y-2">
-                    <div className="flex flex-wrap justify-between items-center gap-2 border-b pb-2">
-                      <span className="text-sm font-bold text-emerald-800">
-                        #{idx + 1}. 📖 {b.refKo || b.ref} ({b.ref})
-                      </span>
-                      <div className="flex items-center gap-2">
-                        <button
-                          onClick={() => speak(b.en)}
-                          className="px-2.5 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
-                        >
-                          🔊 인용문 발음
-                        </button>
-                        <span className="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded font-bold">
-                          출처: {b.sourceTitle} (문장 #{b.sentenceNo})
+                {filteredBibleList.map((b, idx) => {
+                  const bId = getBibleItemId(b);
+                  const isBookmarked = bookmarkIdSet.has(`bible_${bId}`);
+                  const isHighlighted = highlightedBibleId === bId;
+                  return (
+                    <div
+                      key={bId + "_" + idx}
+                      id={"bible-card-" + bId}
+                      className={
+                        "p-5 rounded-xl border shadow-sm space-y-2 transition-all duration-500 " +
+                        (isHighlighted
+                          ? "bg-emerald-50/80 border-emerald-500 ring-2 ring-emerald-400"
+                          : "bg-white")
+                      }
+                    >
+                      <div className="flex flex-wrap justify-between items-center gap-2 border-b pb-2">
+                        <span className="text-sm font-bold text-emerald-800">
+                          #{idx + 1}. 📖 {b.refKo || b.ref} ({b.ref})
                         </span>
+                        <div className="flex flex-wrap items-center gap-1.5">
+                          <button
+                            onClick={() => toggleBibleBookmark(b)}
+                            className={
+                              "px-2.5 py-1 rounded text-xs font-bold transition " +
+                              (isBookmarked
+                                ? "bg-sky-500 text-white hover:bg-sky-600"
+                                : "bg-slate-100 text-slate-600 hover:bg-slate-200")
+                            }
+                          >
+                            {isBookmarked ? "★ 저장됨" : "☆ 책갈피"}
+                          </button>
+                          <button
+                            onClick={() => speak(b.en)}
+                            className="px-2.5 py-1 bg-amber-100 text-amber-900 rounded text-xs font-bold hover:bg-amber-200"
+                          >
+                            🔊 인용문 발음
+                          </button>
+                          <span className="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded font-bold">
+                            출처: {b.sourceTitle} (문장 #{b.sentenceNo})
+                          </span>
+                        </div>
                       </div>
+                      <p style={{ fontFamily: "Georgia, serif", fontSize: "13.5pt" }} className="text-slate-900">{b.en}</p>
+                      <p className="text-sm text-slate-700 bg-stone-50 p-2.5 rounded border-l-4 border-stone-700">{b.ko}</p>
+                      {b.kjv && (
+                        <div className="text-xs text-slate-700 bg-emerald-50/70 p-3 rounded border border-emerald-200 space-y-1">
+                          <div><b>[KJV 성경 원문]</b> {b.kjv}</div>
+                          {b.krv && <div><b>[한국어 성경 원문]</b> {b.krv}</div>}
+                        </div>
+                      )}
+                      {b.nevilleContext && (
+                        <div className="text-xs text-amber-950 bg-amber-50 p-3 rounded border border-amber-200">
+                          <b>💡 네빌 고다드 영적 해설:</b> {b.nevilleContext}
+                        </div>
+                      )}
                     </div>
-                    <p style={{ fontFamily: "Georgia, serif", fontSize: "13.5pt" }} className="text-slate-900">{b.en}</p>
-                    <p className="text-sm text-slate-700 bg-stone-50 p-2.5 rounded border-l-4 border-stone-700">{b.ko}</p>
-                    {b.kjv && (
-                      <div className="text-xs text-slate-700 bg-emerald-50/70 p-3 rounded border border-emerald-200 space-y-1">
-                        <div><b>[KJV 성경 원문]</b> {b.kjv}</div>
-                        {b.krv && <div><b>[한국어 성경 원문]</b> {b.krv}</div>}
-                      </div>
-                    )}
-                    {b.nevilleContext && (
-                      <div className="text-xs text-amber-950 bg-amber-50 p-3 rounded border border-amber-200">
-                        <b>💡 네빌 고다드 영적 해설:</b> {b.nevilleContext}
-                      </div>
-                    )}
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>
